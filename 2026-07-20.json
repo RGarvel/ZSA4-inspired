@@ -134,7 +134,7 @@
     "date": "2026-07-20",
     "category": "product_tool",
     "title": "Zro：编程代理的私有推理服务，Product Hunt日榜第二",
-    "raw summary": "Zro于7月16日在Product Hunt发布，获得488票，位列当日第二。Zro是一个面向编程代理的私有推理端点服务，在欧盟基础设施上提供开放权重编程模型的快速优化推理，支持零请求保留、不训练客户数据。它提供了与开发者现有工具集成的设置路径，解决了AI编程中的隐私和数据安全问题。MoonMath团队开发的Zro瞄准了日益增长的AI编程代理市场，特别是在欧洲市场对数据合规性要求较高的场景。",
+    "raw_summary": "Zro于7月16日在Product Hunt发布，获得488票，位列当日第二。Zro是一个面向编程代理的私有推理端点服务，在欧盟基础设施上提供开放权重编程模型的快速优化推理，支持零请求保留、不训练客户数据。它提供了与开发者现有工具集成的设置路径，解决了AI编程中的隐私和数据安全问题。MoonMath团队开发的Zro瞄准了日益增长的AI编程代理市场，特别是在欧洲市场对数据合规性要求较高的场景。",
     "source": "Product Hunt / Hunted.space",
     "url": "https://www.producthunt.com/products/zro",
     "keywords": ["Zro", "MoonMath", "私有推理", "编程代理", "数据隐私", "Product Hunt"],
