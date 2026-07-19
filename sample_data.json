@@ -1,0 +1,41 @@
+[
+  {
+    "id": "sample_001",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "示例：GPT-5 发布",
+    "summary": "OpenAI 发布了 GPT-5，在多个基准测试中表现优异...",
+    "source": "机器之心",
+    "url": "https://example.com/article",
+    "importance": 5,
+    "is_major_event": true,
+    "keywords": ["GPT-5", "OpenAI", "模型发布"],
+    "original_language": "zh"
+  },
+  {
+    "id": "sample_002",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "示例：某 AI 公司完成 1 亿美元融资",
+    "summary": "AI 初创公司 XYZ 宣布完成 1 亿美元 C 轮融资...",
+    "source": "36氪",
+    "url": "https://example.com/funding",
+    "importance": 4,
+    "is_major_event": false,
+    "keywords": ["融资", "C轮", "AI"],
+    "original_language": "zh"
+  },
+  {
+    "id": "sample_003",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "示例：超实用的 AI 编程助手",
+    "summary": "一款新的 AI 编程工具上线，支持代码补全和调试...",
+    "source": "Product Hunt",
+    "url": "https://example.com/product",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": ["工具", "编程", "AI"],
+    "original_language": "en"
+  }
+]
