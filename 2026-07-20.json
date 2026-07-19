@@ -26,6 +26,7 @@
   },
   {
     "id": "20260720_003",
+    "date": "2026-07-20",
     "category": "ai_tech",
     "title": "Meta 发布 Muse Spark 1.1：面向代理任务和编程的多模态推理模型",
     "summary": "Meta Superintelligence Labs于7月9日发布Muse Spark 1.1，这是一个专为代理任务（agentic tasks）、代码生成和多模态推理设计的模型。该模型具备100万token上下文压缩能力，支持工具使用和计算机操作。与之前免费开放的Muse不同，Spark 1.1以收费API形式推出，定价为$1.25/百万token。Meta此举直接挑战Anthropic和OpenAI在企业级AI编程和代理市场的领先地位。同时Meta还宣布正在开发开源变体。",
