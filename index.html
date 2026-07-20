@@ -286,7 +286,11 @@
 
     function getFilteredData() {
       let filtered = allData.filter(item => {
-        // Show last 7 days of data
+        // Respect the selected date
+        if (currentDate) {
+          return item.date === currentDate;
+        }
+        // Default: show last 7 days
         const itemDate = new Date(item.date);
         const today = new Date();
         const diffDays = Math.floor((today - itemDate) / (1000 * 60 * 60 * 24));
