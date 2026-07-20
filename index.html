@@ -181,7 +181,9 @@
         <small class="text-muted ms-2" style="font-size: 0.75rem;">Inspiration Daily</small>
       </a>
       <div class="d-flex align-items-center gap-2">
-        <input type="date" id="dateSelector" class="date-selector">
+        <select id="dateSelector" class="date-selector">
+          <option value="">加载中...</option>
+        </select>
         <select id="categoryFilter" class="date-selector">
           <option value="all">全部类别</option>
           <option value="ai_tech">AI 技术</option>
@@ -247,19 +249,41 @@
     let allData = [];
     let currentDate = '';
     let currentCategory = 'all';
+    let availableDates = [];
 
     // Initialize
     document.addEventListener('DOMContentLoaded', async () => {
       await loadData();
+      populateDateSelector();
       setupEventListeners();
       
-      // Set today's date
-      const today = new Date().toISOString().split('T')[0];
-      document.getElementById('dateSelector').value = today;
-      currentDate = today;
+      // Set default to most recent date
+      if (availableDates.length > 0) {
+        currentDate = availableDates[0];
+        document.getElementById('dateSelector').value = currentDate;
+      }
       
       render();
     });
+
+    function populateDateSelector() {
+      // Extract unique dates from data, sorted descending
+      const dateSet = new Set();
+      allData.forEach(item => {
+        if (item.date) dateSet.add(item.date);
+      });
+      availableDates = Array.from(dateSet).sort().reverse();
+      
+      const selector = document.getElementById('dateSelector');
+      selector.innerHTML = '';
+      
+      availableDates.forEach(date => {
+        const option = document.createElement('option');
+        option.value = date;
+        option.textContent = date;
+        selector.appendChild(option);
+      });
+    }
 
     async function loadData() {
       try {
@@ -286,15 +310,8 @@
 
     function getFilteredData() {
       let filtered = allData.filter(item => {
-        // Respect the selected date
-        if (currentDate) {
-          return item.date === currentDate;
-        }
-        // Default: show last 7 days
-        const itemDate = new Date(item.date);
-        const today = new Date();
-        const diffDays = Math.floor((today - itemDate) / (1000 * 60 * 60 * 24));
-        return diffDays >= 0 && diffDays <= 7;
+        // Strict date filtering — only show selected date
+        return item.date === currentDate;
       });
       
       // Normalize categories: map non-standard categories to standard ones
