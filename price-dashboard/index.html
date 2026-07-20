@@ -227,13 +227,13 @@
         </div>
         <div class="col-md-3">
           <label class="form-label">厂商</label>
-          <select class="form-select" id="vendorFilter" onchange="renderTable()">
+          <select class="form-select" id="vendorFilter" onchange="renderTable(); refreshRecommendation();">
             <option value="all">全部厂商</option>
           </select>
         </div>
         <div class="col-md-2">
           <label class="form-label">Tier</label>
-          <select class="form-select" id="tierFilter" onchange="renderTable()">
+          <select class="form-select" id="tierFilter" onchange="renderTable(); refreshRecommendation();">
             <option value="all">全部</option>
             <option value="free">免费</option>
             <option value="budget">经济</option>
@@ -243,7 +243,7 @@
         </div>
         <div class="col-md-2">
           <label class="form-label">搜索</label>
-          <input type="text" class="form-control" id="searchBox" placeholder="模型名称..." oninput="renderTable()">
+          <input type="text" class="form-control" id="searchBox" placeholder="模型名称..." oninput="renderTable(); refreshRecommendation();">
         </div>
         <div class="col-md-2">
           <label class="form-label">&nbsp;</label>
@@ -321,6 +321,14 @@
         option.textContent = vendor;
         select.appendChild(option);
       });
+    }
+
+    // Re-render recommendation when filters change
+    function refreshRecommendation() {
+      const taskType = document.getElementById('taskType').value;
+      if (taskType) {
+        updateRecommendation();
+      }
     }
 
     function getFilteredModels() {
@@ -481,7 +489,8 @@
         return;
       }
       
-      let candidates = allModels.filter(m => m.categories.includes(taskType));
+      // Use filtered models, not all models
+      let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
       
       if (candidates.length === 0) {
         card.classList.remove('show');
