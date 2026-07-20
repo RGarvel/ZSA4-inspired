@@ -26,11 +26,58 @@
       background-color: var(--bg-primary);
       color: var(--text-primary);
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    body.light-mode {
+      --bg-primary: #f6f8fa;
+      --bg-secondary: #ffffff;
+      --bg-card: #ffffff;
+      --text-primary: #1f2328;
+      --text-secondary: #656d76;
+      --accent-blue: #0969da;
+      --accent-green: #1a7f37;
+      --accent-purple: #8250df;
+      --accent-orange: #9a6700;
+      --accent-red: #cf222e;
+      --border-color: #d0d7de;
     }
     
     .navbar {
       background-color: var(--bg-secondary) !important;
       border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .back-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(188, 140, 255, 0.05));
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+    
+    .back-link:hover {
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(188, 140, 255, 0.1));
+      transform: translateX(-3px);
+      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.2);
+    }
+    
+    .back-link i {
+      transition: transform 0.3s ease;
+    }
+    
+    .back-link:hover i {
+      transform: translateX(-2px);
     }
     
     .control-bar {
@@ -90,6 +137,23 @@
       padding: 1.5rem;
       margin-bottom: 1.5rem;
       height: 400px;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .theme-toggle-btn {
+      background: none;
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 8px;
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.1rem;
+    }
+    
+    .theme-toggle-btn:hover {
+      border-color: var(--accent-blue);
+      background-color: rgba(88, 166, 255, 0.1);
     }
     
     .data-table {
@@ -189,11 +253,17 @@
 <body>
   <nav class="navbar navbar-dark">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
         <i class="bi bi-bar-chart-line-fill" style="color: var(--accent-blue);"></i>
         <span>AI 模型价格对比仪表盘</span>
       </a>
-      <small class="text-muted" id="lastUpdated">数据更新于: 加载中...</small>
+      <a class="back-link ms-auto" href="../index.html">
+        <i class="bi bi-house-door"></i> 返回首页
+      </a>
+      <button class="theme-toggle-btn ms-2" onclick="toggleTheme()" title="切换亮暗模式">
+        <i class="bi bi-moon-fill" id="themeIcon"></i>
+      </button>
+      <small class="text-muted ms-2" id="lastUpdated">数据更新于: 加载中...</small>
     </div>
   </nav>
 
@@ -294,7 +364,27 @@
     let sortField = 'quality_score';
     let sortDirection = 'desc';
 
+    // Theme management
+    let isDarkMode = localStorage.getItem('theme') !== 'light';
+    
+    function applyTheme() {
+      if (isDarkMode) {
+        document.body.classList.remove('light-mode');
+        document.getElementById('themeIcon').className = 'bi bi-moon-fill';
+      } else {
+        document.body.classList.add('light-mode');
+        document.getElementById('themeIcon').className = 'bi bi-sun-fill';
+      }
+    }
+    
+    function toggleTheme() {
+      isDarkMode = !isDarkMode;
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+      applyTheme();
+    }
+
     document.addEventListener('DOMContentLoaded', async () => {
+      applyTheme();
       await loadModels();
       populateVendorFilter();
       renderTable();
@@ -568,23 +658,23 @@
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
-            legend: { labels: { color: '#e6edf3' } },
+            legend: { labels: { color: isDarkMode ? '#e6edf3' : '#1f2328' } },
             title: {
               display: true,
               text: '输入/输出价格对比 (前10个模型)',
-              color: '#e6edf3',
+              color: isDarkMode ? '#e6edf3' : '#1f2328',
               font: { size: 16 }
             }
           },
           scales: {
             x: {
-              ticks: { color: '#8b949e', maxRotation: 45 },
-              grid: { color: 'rgba(48, 54, 61, 0.5)' }
+              ticks: { color: isDarkMode ? '#8b949e' : '#656d76', maxRotation: 45 },
+              grid: { color: isDarkMode ? 'rgba(48, 54, 61, 0.5)' : 'rgba(208, 215, 222, 0.5)' }
             },
             y: {
               beginAtZero: true,
-              ticks: { color: '#8b949e', callback: v => '$' + v },
-              grid: { color: 'rgba(48, 54, 61, 0.5)' }
+              ticks: { color: isDarkMode ? '#8b949e' : '#656d76', callback: v => '$' + v },
+              grid: { color: isDarkMode ? 'rgba(48, 54, 61, 0.5)' : 'rgba(208, 215, 222, 0.5)' }
             }
           }
         }

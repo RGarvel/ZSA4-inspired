@@ -49,17 +49,32 @@
     .back-link {
       color: var(--text-primary);
       text-decoration: none;
-      padding: 0.3rem 0.6rem;
-      border: 1px solid var(--border-color);
-      border-radius: 8px;
-      transition: all 0.2s;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
       font-size: 0.85rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(188, 140, 255, 0.05));
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
     }
     
     .back-link:hover {
       color: var(--accent-blue);
       border-color: var(--accent-blue);
-      background-color: rgba(88, 166, 255, 0.1);
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(188, 140, 255, 0.1));
+      transform: translateX(-3px);
+      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.2);
+    }
+    
+    .back-link i {
+      transition: transform 0.3s ease;
+    }
+    
+    .back-link:hover i {
+      transform: translateX(-2px);
     }
     
     .theme-toggle-btn {
@@ -212,15 +227,6 @@
         url: '../ai-model-price-dashboard/index.html',
         status: 'live',
         statusText: '已上线'
-      },
-      {
-        name: '灵感日报',
-        icon: '💡',
-        description: '每日 AI 技术与创业灵感推送，多 Agent 并行采集，自动提炼创业建议和小项目灵感。支持日期筛选、分类筛选、重大事件标记。',
-        tags: ['HTML', 'Bootstrap', 'Multi-Agent', 'GitHub Pages'],
-        url: '../index.html',
-        status: 'live',
-        statusText: '已上线'
       }
     ];
 
@@ -260,9 +266,14 @@
               <div class="project-tags mb-3">
                 ${project.tags.map(t => `<span class="badge bg-secondary">${t}</span>`).join('')}
               </div>
-              <a href="${project.url}" class="project-link">
-                访问项目 <i class="bi bi-box-arrow-up-right"></i>
-              </a>
+              <div class="d-flex gap-2 mt-auto">
+                <a href="${project.url}" class="project-link flex-grow-1">
+                  访问项目 <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <a href="../index.html" class="back-link" style="padding: 0.5rem 0.8rem; font-size: 0.8rem;" title="返回首页">
+                  <i class="bi bi-house-door"></i>
+                </a>
+              </div>
             </div>
           </div>
         `;
