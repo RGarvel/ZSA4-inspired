@@ -1,24 +1,5 @@
 [
   {
-    "id": "st-10",
-    "date": "2026-07-29",
-    "category": "startup",
-    "title": "西班牙 NeuralTrust 融资 1720 万欧元保护企业 AI 代理",
-    "raw_summary": "巴塞罗那 AI 安全初创公司 NeuralTrust 于 7 月 29 日完成 1720 万欧元融资，专注于为企业 AI 代理提供安全和治理解决方案。随着 AI 代理在企业中的普及，代理安全和身份验证成为新兴赛道。",
-    "source": "EU-Startups",
-    "url": "https://www.eu-startups.com/2025/01/genesy-secures-e5-million-in-landmark-funding-to-further-b2b-sales-with-ai-powered-agents/",
-    "keywords": [
-      "NeuralTrust",
-      "AI安全",
-      "代理治理",
-      "西班牙",
-      "融资"
-    ],
-    "original_language": "en",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
     "id": "ait-13",
     "date": "2026-07-20",
     "category": "ai_tech",
