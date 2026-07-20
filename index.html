@@ -293,6 +293,14 @@
         return diffDays >= 0 && diffDays <= 7;
       });
       
+      // Normalize categories: map non-standard categories to standard ones
+      filtered = filtered.map(item => {
+        if (item.category === 'developer_tool' || item.category === 'ai_model') {
+          return { ...item, category: 'product_tool' };
+        }
+        return item;
+      });
+      
       if (currentCategory !== 'all') {
         filtered = filtered.filter(item => item.category === currentCategory);
       }
