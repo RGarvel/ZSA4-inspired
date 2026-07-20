@@ -3,65 +3,65 @@
   "insights": [
     {
       "type": "startup_advice",
-      "title": "AI 实施服务赛道爆发：从模型层向下游延伸是确定性趋势",
-      "summary": "Anthropic×Blackstone 推出 Ode（15亿美元）、微软培训销售团队推广自有 MAI 模型、Meta 首次对 AI API 收费——三大信号叠加表明：2026 年下半年 AI 行业的竞争焦点正从'谁有最好的模型'转向'谁能最好地帮企业用上 AI'。创业机会在于：①垂直行业的 AI 实施咨询公司（类似 Ode 的 niche 版本）；②AI 迁移工具——帮企业从 OpenAI/Anthropic API 迁移到自有模型或开源模型；③AI 成本优化工具，因为 Meta 收费后企业面临更大成本压力。",
-      "related_news": ["st-11", "ait-17", "ait-22"],
-      "tags": ["AI实施", "企业服务", "垂直行业"]
+      "title": "端侧AI推理将成为下一个百亿级赛道",
+      "summary": "Bonsai 27B在手机上以3.9GB体积流畅运行27B模型，标志着端侧AI推理技术已经成熟。结合PrismML的三元量化方案和Apache 2.0开源许可，端侧AI工具链正在形成。\n\n具体行动项：\n1. 开发针对垂直场景的端侧AI微调服务（如医疗问诊、法律咨询），利用Qwen3.6等开源基座模型+三元量化，打造行业专用端侧模型\n2. 构建离线AI工具面向隐私敏感行业：医疗影像分析（本地处理患者数据）、金融风控（本地处理交易数据）\n3. 边缘AI芯片适配层：为NPU/MCU等异构硬件提供统一的模型部署SDK\n\n竞品参考：PrismML（量化方案）、Apple on-device ML（生态参考）。窗口期6-12个月。",
+      "related_news": ["ait-6", "pt-2"],
+      "tags": ["端侧AI", "量化", "边缘计算", "隐私"]
     },
     {
       "type": "startup_advice",
-      "title": "AI 代理身份管理是 Emerging 赛道：Oak（6000万）+ NeuralTrust（1720万欧）",
-      "summary": "两周内两笔融资都指向同一个问题：当 AI 代理无处不在，谁来证明'你是你'？Oak 解决 AI 代理的身份验证，NeuralTrust 解决企业 AI 代理的安全治理。这个赛道的早期机会包括：①AI 代理的身份认证 SDK（类似 JWT 但针对 AI）；②AI 代理行为审计日志工具；③企业 AI 代理的权限管理系统。市场窗口极窄——建议在 2026 年底前完成 MVP。",
-      "related_news": ["st-5", "st-10"],
-      "tags": ["AI代理", "身份管理", "安全治理"]
+      "title": "AI Agent测试与可靠性平台需求爆发",
+      "summary": "Patronus AI获得5000万美元B轮融资，专注于AI Agent的数字世界压力测试。同时Cursor零日漏洞事件暴露了AI工具安全性的系统性风险。两个信号叠加表明：随着AI Agent在企业中的大规模部署，Agent的可靠性测试、安全审计、红队演练将成为刚需。\n\n具体行动项：\n1. 开发Agent行为监控SaaS平台，类似Datadog但专攻AI Agent——监控Agent的工具调用序列、API请求模式、异常行为\n2. AI工具供应链安全扫描服务——自动检测AI编程工具、Agent框架中的依赖漏洞和配置错误\n3. 面向企业的AI Agent合规性评估工具，自动生成符合ISO/IEC 42001（AI管理体系）的审计报告\n\n市场规模估算：到2027年，AI Agent测试工具市场预计达50亿美元。",
+      "related_news": ["st-5", "ait-4"],
+      "tags": ["AI Agent", "安全", "测试", "可靠性"]
     },
     {
       "type": "startup_advice",
-      "title": "物理 AI / 具身智能赛道加速：Mistral Robostral + WAIC 机器人展 + 日本主权 AI 工厂",
-      "summary": "过去一周密集出现三个信号：Mistral 发布 Robostral Navigate 机器人导航模型、WAIC 2026 具身智能成最大亮点（四足/人形机器人集体亮相）、日本 Noetra 联盟部署 27500 块 Rubin GPU 构建主权 AI 机器人基础设施。物理 AI 正在从概念走向规模化部署。创业机会：①机器人仿真环境生成工具；②具身 AI 数据集标注平台；③低成本机器人感知模块（视觉+语言融合）。",
-      "related_news": ["ait-24", "pt-15", "ait-6", "ait-15"],
-      "tags": ["具身智能", "物理AI", "机器人"]
+      "title": "职业专用AI工具市场即将爆发",
+      "summary": "Anthropic推出Claude for Teachers，ChatGPT Work面向团队协作，AirJelly聚焦工作流管理——AI正在从通用聊天机器人向职业专用工具演进。教师、医生、律师、设计师等专业人士都需要针对其工作流深度定制的AI工具。\n\n具体行动项：\n1. 选择1-2个专业领域（如建筑设计师、独立开发者），构建端到端的AI工作流工具\n2. 关键差异化：深度集成该专业的现有工具链（如建筑师集成AutoCAD/Revit），而非简单的聊天界面\n3. 数据壁垒：积累该领域的专业数据集，形成竞品难以复制的优势",
+      "related_news": ["ait-5", "pt-1", "pt-3"],
+      "tags": ["垂直AI", "职业工具", "工作流"]
     },
     {
       "type": "side_project",
-      "title": "AI 模型价格对比仪表盘",
-      "summary": "本周出现了 GPT-5.6、Grok 4.5（$2/百万token）、Muse Spark 1.1 等多款新模型，价格战激烈但各家定价差异大。做一个可视化的模型价格对比工具：输入任务类型（编码/推理/图像），自动推荐性价比最高的模型。技术实现简单，数据价值高。",
+      "title": "基于Bonsai 27B的离线AI笔记助手",
+      "summary": "利用Bonsai 27B的端侧推理能力，构建一个完全离线的AI笔记整理工具。用户可以在手机上用自然语言搜索和整理笔记，所有数据本地处理，不依赖云端API。适合隐私敏感用户和教育工作者。\n\n实现思路：\n- 使用Bonsai 27B的1-bit量化模型作为本地推理引擎\n- 构建向量索引（ChromaDB/FAISS）实现语义搜索\n- 支持Markdown和PDF输入\n- 纯Python实现，打包为移动端APK",
+      "difficulty": "medium",
+      "estimated_time": "2-3周",
+      "tech_stack": ["Python", "Bonsai 27B", "FAISS", "ChromaDB", "TFLite"],
+      "related_news": ["ait-6", "pt-2"]
+    },
+    {
+      "type": "side_project",
+      "title": "AI工具安全评分浏览器插件",
+      "summary": "受Cursor零日漏洞启发，开发一个浏览器插件，帮助用户评估AI编程工具的安全性。可以检查工具的权限请求、网络通信、代码执行行为，并与已知漏洞数据库比对。\n\n实现思路：\n- 监听浏览器中的AI工具页面，分析其请求模式和权限\n- 接入NVD/CVE数据库进行漏洞匹配\n- 生成可视化的安全评分和风险提示\n- 添加社区报告功能，用户可以提交发现的异常行为",
       "difficulty": "easy",
-      "estimated_time": "3-5天",
-      "tech_stack": ["Python", "Streamlit/Gradio", "API"],
-      "related_news": ["ait-23", "ait-22", "pt-5"]
+      "estimated_time": "1-2周",
+      "tech_stack": ["JavaScript", "Chrome Extension API", "NVD API", "CVE API"],
+      "related_news": ["ait-4"]
     },
     {
       "type": "side_project",
-      "title": "开源模型本地部署指南生成器",
-      "summary": "GLM-5.2（MIT许可）、Inkling（开放权重）、Kimi K3（计划开源）——本周至少有 3 个高质量开源模型发布。做一个工具：用户输入硬件配置（GPU型号+显存），自动生成最优的本地部署方案和量化策略。可以用 Ollama + llama.cpp 做后端。",
+      "title": "ChatGPT Work竞品分析仪表盘",
+      "summary": "基于ChatGPT Work的发布，构建一个竞品分析工具，对比OpenAI、Anthropic、Google、Meta在生产力工具方向的布局。自动抓取各公司的最新发布、融资信息和功能更新，生成可视化对比报告。\n\n实现思路：\n- 使用RSS/API定期抓取各公司博客和新闻\n- NLP分析提取关键功能和战略信号\n- 交互式仪表盘展示竞争格局变化趋势",
       "difficulty": "medium",
       "estimated_time": "1-2周",
-      "tech_stack": ["Python", "Ollama", "llama.cpp", "Web前端"],
-      "related_news": ["ait-21", "pt-13", "ait-1"]
-    },
-    {
-      "type": "side_project",
-      "title": "AI 新闻去重聚合器",
-      "summary": "本周同一事件（如 Grok 4.5 发布）被 20+ 个媒体报道。做一个 RSS/爬虫聚合器，自动去重同一事件的不同报道，按时间线整理。这对个人追踪 AI 动态非常有价值。",
-      "difficulty": "medium",
-      "estimated_time": "1周",
-      "tech_stack": ["Python", "Feedparser", "SQLite", "FastAPI"],
-      "related_news": ["ait-23", "ait-22", "ait-20"]
+      "tech_stack": ["Python", "FastAPI", "Streamlit", "NLP"],
+      "related_news": ["ait-8", "ait-9", "pt-4", "pt-5"]
     },
     {
       "type": "industry_insight",
-      "title": "开源 vs 闭源的十字路口：Meta 收费 vs Thinking Machines 开源",
-      "summary": "本周出现了一个关键转折：Meta 首次对 AI 模型收费（Muse Spark 1.1 API），而 Mira Murati 的 Thinking Machines 选择开源 Inkling。这标志着开源/闭源路线之争进入新阶段——曾经开源阵营的 Meta 开始收费，而新入局者选择开源差异化。长期来看，开源模型可能成为中小企业的标配基础设施，而闭源模型则聚焦最高端的推理和代理能力。",
-      "related_news": ["ait-22", "pt-13", "ait-21"],
-      "tags": ["开源vs闭源", "商业模式", "AI民主化"]
+      "title": "AI基础设施从'算力竞赛'转向'算力变现'",
+      "summary": "Meta与Anthropic的100亿美元算力租赁协议标志着AI基础设施的商业化进入新阶段。Meta在裁员8000人的同时投入1450亿美元资本支出建设AI数据中心，现在通过租赁算力将巨额投资转化为持续收入。这与Google推迟Gemini 3.5 Pro形成鲜明对比——拥有过剩算力的公司开始变现，而追赶中的公司面临资金和时间双重压力。这一趋势将加速AI行业的马太效应。\n\n关键信号：AI基础设施正在从成本中心转变为利润中心，类似云计算的发展历程。",
+      "related_news": ["ait-1", "ait-3"],
+      "tags": ["AI基础设施", "算力经济", "商业模式"]
     },
     {
       "type": "industry_insight",
-      "title": "AI 代理（Agent）从概念验证走向生产部署",
-      "summary": "一周内至少 5 条新闻指向同一趋势：Anthropic 推出 Ode 帮助企业部署 AI 代理、OpenAI 推出 ChatGPT Work 持久代理、Clark 云电脑 AI 同事、Unabyss MCP 上下文层、Oak AI 代理身份管理。AI 代理正在从'聊天机器人升级'演变为'企业基础设施'。关键信号：投资人和大企业开始认真讨论代理的安全、治理、成本和实施，说明这个赛道已经过了 hype 阶段。",
-      "related_news": ["st-11", "pt-6", "pt-9", "pt-1", "st-5"],
-      "tags": ["AI代理", "企业部署", "持久化工作流"]
+      "title": "AI原生工作空间正在取代传统软件",
+      "summary": "从本周的多条新闻可以看出一个清晰趋势：AI正在从工具变为工作空间本身。ChatGPT Work整合了笔记、文档、协作；Codex进入ChatGPT桌面应用成为默认视图；AirJelly作为常驻桌面的AI代理接管了任务管理。传统软件（Evernote、Notion、Jira）正在被AI原生的工作空间取代。\n\n影响：1）软件行业的护城河从功能转向数据和AI能力；2）创业者应优先考虑AI原生设计，而非在传统软件上加AI功能；3）投资方向应关注那些能提供'一站式AI工作空间'的公司。",
+      "related_news": ["ait-8", "pt-1", "pt-4", "pt-5"],
+      "tags": ["AI工作空间", "生产力", "软件范式转移"]
     }
   ]
 }
