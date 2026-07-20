@@ -31,6 +31,131 @@
       border-bottom: 1px solid var(--border-color);
     }
     
+    .date-selector {
+      background-color: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .date-selector:focus {
+      border-color: var(--accent-blue);
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.2);
+    }
+    
+    .date-selector option {
+      background-color: var(--bg-card);
+      color: var(--text-primary);
+    }
+    
+    .stats-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    
+    .stats-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-green);
+    }
+    
+    .stats-label {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+    
+    .summary-section {
+      margin-bottom: 2rem;
+    }
+    
+    .summary-title {
+      color: var(--accent-purple);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .summary-content {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      padding: 0.75rem;
+      background-color: var(--bg-secondary);
+      border-radius: 8px;
+      border-left: 3px solid var(--accent-purple);
+    }
+    
+    /* Inspiration Section */
+    .inspiration-card {
+      background: linear-gradient(135deg, rgba(210, 153, 34, 0.1), rgba(188, 140, 255, 0.05));
+      border: 1px solid rgba(210, 153, 34, 0.3);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    
+    .inspiration-card.startup_advice {
+      border-left: 4px solid var(--accent-green);
+    }
+    
+    .inspiration-card.side_project {
+      border-left: 4px solid var(--accent-blue);
+    }
+    
+    .inspiration-type-badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    .inspiration-type-badge.startup_advice {
+      background-color: rgba(63, 185, 80, 0.2);
+      color: var(--accent-green);
+    }
+    
+    .inspiration-type-badge.side_project {
+      background-color: rgba(88, 166, 255, 0.2);
+      color: var(--accent-blue);
+    }
+    
+    .difficulty-badge {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    
+    .difficulty-badge.easy {
+      background-color: rgba(63, 185, 80, 0.2);
+      color: var(--accent-green);
+    }
+    
+    .difficulty-badge.medium {
+      background-color: rgba(210, 153, 34, 0.2);
+      color: var(--accent-orange);
+    }
+    
+    .difficulty-badge.hard {
+      background-color: rgba(255, 82, 82, 0.2);
+      color: #ff5252;
+    }
+    
+    .tech-stack-tags .badge {
+      background-color: rgba(88, 166, 255, 0.15);
+      color: var(--accent-blue);
+      margin-right: 0.25rem;
+    }
+    
     .category-badge {
       padding: 0.25rem 0.75rem;
       border-radius: 20px;
@@ -88,86 +213,14 @@
       border: 1px solid rgba(255, 82, 82, 0.3);
     }
     
-    .date-selector {
-      background-color: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      color: var(--text-primary);
-      border-radius: 8px;
-      padding: 0.5rem 1rem;
-    }
-    
-    .date-selector:focus {
-      border-color: var(--accent-blue);
-      box-shadow: 0 0 0 0.2rem rgba(88, 166, 255, 0.25);
-    }
-    
-    .filter-btn {
-      background-color: var(--bg-secondary);
-      border: 1px solid var(--border-color);
-      color: var(--text-secondary);
-      border-radius: 8px;
-      padding: 0.5rem 1rem;
-      transition: all 0.2s;
-    }
-    
-    .filter-btn:hover, .filter-btn.active {
-      background-color: var(--accent-blue);
-      color: white;
-      border-color: var(--accent-blue);
-    }
-    
     .article-link {
-      color: var(--accent-blue);
+      color: var(--text-primary);
       text-decoration: none;
-      transition: color 0.2s;
+      font-weight: 500;
     }
     
     .article-link:hover {
-      color: var(--accent-purple);
-      text-decoration: underline;
-    }
-    
-    .stats-card {
-      background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    
-    .stats-number {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--accent-green);
-    }
-    
-    .stats-label {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-    }
-    
-    .summary-section {
-      margin-bottom: 2rem;
-    }
-    
-    .summary-title {
-      color: var(--accent-purple);
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .summary-content {
-      color: var(--text-secondary);
-      font-size: 0.9rem;
-      line-height: 1.6;
-      padding: 0.75rem;
-      background-color: var(--bg-secondary);
-      border-radius: 8px;
-      border-left: 3px solid var(--accent-purple);
+      color: var(--accent-blue);
     }
   </style>
 </head>
@@ -200,18 +253,18 @@
       <div class="col-md-4">
         <div class="stats-card">
           <div class="stats-number" id="totalCount">0</div>
-          <div class="stats-label">今日灵感总数</div>
+          <div class="stats-label">总资讯</div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="stats-card">
-          <div class="stats-number" id="majorCount" style="color: #ff5252;">0</div>
+          <div class="stats-number" id="majorCount">0</div>
           <div class="stats-label">重大事件</div>
         </div>
       </div>
       <div class="col-md-4">
         <div class="stats-card">
-          <div class="stats-number" id="avgImportance" style="color: var(--accent-purple);">0</div>
+          <div class="stats-number" id="avgImportance">0</div>
           <div class="stats-label">平均重要性</div>
         </div>
       </div>
@@ -227,6 +280,14 @@
     <!-- Articles -->
     <div id="articlesContainer">
       <!-- Dynamically populated -->
+    </div>
+
+    <!-- Today's Inspiration -->
+    <div id="inspirationSection" class="mt-5" style="display: none;">
+      <h4 class="mb-3"><i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i> 今日灵感</h4>
+      <div id="inspirationContainer">
+        <!-- Dynamically populated -->
+      </div>
     </div>
 
     <!-- Empty State -->
@@ -362,6 +423,13 @@
       const container = document.getElementById('articlesContainer');
       const emptyState = document.getElementById('emptyState');
       
+      // Load inspiration for the selected date
+      if (currentDate) {
+        loadInspiration(currentDate);
+      } else {
+        document.getElementById('inspirationSection').style.display = 'none';
+      }
+      
       // Update stats
       document.getElementById('totalCount').textContent = articles.length;
       document.getElementById('majorCount').textContent = articles.filter(a => a.is_major_event).length;
@@ -467,6 +535,91 @@
       currentCategory = category;
       document.getElementById('categoryFilter').value = category;
       render();
+    }
+
+    // Inspiration data
+    let inspirationData = null;
+
+    async function loadInspiration(date) {
+      try {
+        const resp = await fetch(`./data/inspiration_${date}.json`);
+        if (!resp.ok) {
+          inspirationData = null;
+          document.getElementById('inspirationSection').style.display = 'none';
+          return;
+        }
+        inspirationData = await resp.json();
+        renderInspiration();
+      } catch (e) {
+        inspirationData = null;
+        document.getElementById('inspirationSection').style.display = 'none';
+      }
+    }
+
+    function renderInspiration() {
+      if (!inspirationData || !inspirationData.insights || inspirationData.insights.length === 0) {
+        document.getElementById('inspirationSection').style.display = 'none';
+        return;
+      }
+      
+      const container = document.getElementById('inspirationContainer');
+      let html = '';
+      
+      inspirationData.insights.forEach(insight => {
+        if (insight.type === 'startup_advice') {
+          html += `
+            <div class="inspiration-card startup_advice">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="inspiration-type-badge startup_advice">创业建议</span>
+                ${insight.tags ? insight.tags.map(t => `<span class="badge bg-secondary" style="font-size:0.7rem">${t}</span>`).join('') : ''}
+              </div>
+              <h6 class="mb-2" style="color: var(--text-primary); font-weight: 600;">${insight.title}</h6>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">${insight.summary}</p>
+              ${insight.action_items ? `
+                <div class="mt-2">
+                  <strong style="font-size: 0.8rem; color: var(--accent-green);">行动建议：</strong>
+                  <ul class="mb-0" style="font-size: 0.85rem; color: var(--text-secondary);">
+                    ${insight.action_items.map(a => `<li>${a}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+              ${insight.related_news ? `
+                <div class="mt-2" style="font-size: 0.75rem; color: var(--text-secondary);">
+                  关联新闻：${insight.related_news.join(', ')}
+                </div>
+              ` : ''}
+            </div>
+          `;
+        } else if (insight.type === 'side_project') {
+          html += `
+            <div class="inspiration-card side_project">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="inspiration-type-badge side_project">小项目</span>
+                <span class="difficulty-badge ${insight.difficulty || 'medium'}">${
+                  insight.difficulty === 'easy' ? '🟢 简单' : 
+                  insight.difficulty === 'hard' ? '🔴 困难' : '🟡 中等'
+                }</span>
+                ${insight.estimated_time ? `<span style="font-size: 0.75rem; color: var(--text-secondary);">⏱ ${insight.estimated_time}</span>` : ''}
+              </div>
+              <h6 class="mb-2" style="color: var(--text-primary); font-weight: 600;">${insight.title}</h6>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">${insight.summary}</p>
+              ${insight.tech_stack ? `
+                <div class="tech-stack-tags mt-2">
+                  ${insight.tech_stack.map(t => `<span class="badge">${t}</span>`).join('')}
+                </div>
+              ` : ''}
+              ${insight.related_news ? `
+                <div class="mt-2" style="font-size: 0.75rem; color: var(--text-secondary);">
+                  灵感来源：${insight.related_news.join(', ')}
+                </div>
+              ` : ''}
+            </div>
+          `;
+        }
+      });
+      
+      container.innerHTML = html;
+      document.getElementById('inspirationSection').style.display = 'block';
     }
   </script>
 </body>
