@@ -20,15 +20,30 @@
       --border-color: #30363d;
     }
     
+    body.light-mode {
+      --bg-primary: #f6f8fa;
+      --bg-secondary: #ffffff;
+      --bg-card: #ffffff;
+      --text-primary: #1f2328;
+      --text-secondary: #656d76;
+      --accent-blue: #0969da;
+      --accent-green: #1a7f37;
+      --accent-purple: #8250df;
+      --accent-orange: #9a6700;
+      --border-color: #d0d7de;
+    }
+    
     body {
       background-color: var(--bg-primary);
       color: var(--text-primary);
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
     }
     
     .navbar {
       background-color: var(--bg-secondary) !important;
       border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.3s, border-color 0.3s;
     }
     
     .date-selector {
@@ -38,6 +53,7 @@
       border-radius: 8px;
       padding: 0.5rem 1rem;
       font-size: 0.9rem;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
     }
     
     .date-selector:focus {
@@ -57,6 +73,7 @@
       border-radius: 12px;
       padding: 1.25rem;
       text-align: center;
+      transition: background-color 0.3s, border-color 0.3s;
     }
     
     .stats-number {
@@ -101,6 +118,11 @@
       border-radius: 12px;
       padding: 1.25rem;
       margin-bottom: 1rem;
+      transition: background-color 0.3s;
+    }
+    
+    body.light-mode .inspiration-card {
+      background: linear-gradient(135deg, rgba(154, 103, 0, 0.08), rgba(130, 80, 223, 0.05));
     }
     
     .inspiration-card.startup_advice {
@@ -156,22 +178,30 @@
       margin-right: 0.25rem;
     }
     
-    .category-badge {
-      padding: 0.25rem 0.75rem;
+    /* Category tabs */
+    .category-tab {
+      padding: 0.5rem 1rem;
       border-radius: 20px;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.2s;
-      border: 1px solid transparent;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-secondary);
+      color: var(--text-secondary);
+      user-select: none;
     }
     
-    .category-badge:hover {
+    .category-tab:hover {
       transform: translateY(-1px);
+      border-color: var(--accent-blue);
     }
     
-    .category-badge.active {
-      box-shadow: 0 0 0 2px var(--accent-blue);
+    .category-tab.active {
+      background-color: var(--accent-blue);
+      color: white;
+      border-color: var(--accent-blue);
+      box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.3);
     }
     
     .card {
@@ -222,34 +252,64 @@
     .article-link:hover {
       color: var(--accent-blue);
     }
+    
+    .theme-toggle-btn {
+      background: none;
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 8px;
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.1rem;
+    }
+    
+    .theme-toggle-btn:hover {
+      border-color: var(--accent-blue);
+      background-color: rgba(88, 166, 255, 0.1);
+    }
+    
+    .playground-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      padding: 0.3rem 0.6rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      transition: all 0.2s;
+      font-size: 0.85rem;
+    }
+    
+    .playground-link:hover {
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+      background-color: rgba(88, 166, 255, 0.1);
+    }
   </style>
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-dark">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
         <i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i>
         <span>灵感日报</span>
         <small class="text-muted ms-2" style="font-size: 0.75rem;">Inspiration Daily</small>
       </a>
-      <div class="d-flex align-items-center gap-2">
-        <select id="dateSelector" class="date-selector">
-          <option value="">加载中...</option>
-        </select>
-        <select id="categoryFilter" class="date-selector">
-          <option value="all">全部类别</option>
-          <option value="ai_tech">AI 技术</option>
-          <option value="startup">创业动态</option>
-          <option value="product_tool">产品工具</option>
-        </select>
-      </div>
+      <a class="playground-link ms-auto" href="project/playground/index.html">
+        <i class="bi bi-play-btn-fill"></i> Playground
+      </a>
+      <button class="theme-toggle-btn ms-2" onclick="toggleTheme()" title="切换亮暗模式">
+        <i class="bi bi-moon-fill" id="themeIcon"></i>
+      </button>
+      <select id="dateSelector" class="date-selector ms-2">
+        <option value="">加载中...</option>
+      </select>
     </div>
   </nav>
 
   <div class="container mt-4">
     <!-- Stats -->
-    <div class="row g-3 mb-4">
+    <div class="row g-3 mb-3">
       <div class="col-md-4">
         <div class="stats-card">
           <div class="stats-number" id="totalCount">0</div>
@@ -270,10 +330,21 @@
       </div>
     </div>
 
-    <!-- Category Summary -->
+    <!-- Category Tabs -->
     <div class="mb-4">
-      <div class="d-flex flex-wrap gap-2" id="categorySummary">
-        <!-- Dynamically populated -->
+      <div class="d-flex flex-wrap gap-2" id="categoryTabs">
+        <span class="category-tab active" data-category="all" onclick="filterByCategory('all')">
+          <i class="bi bi-grid"></i> 全部
+        </span>
+        <span class="category-tab" data-category="ai_tech" onclick="filterByCategory('ai_tech')">
+          <i class="bi bi-cpu"></i> AI 技术 (<span class="cat-count">0</span>)
+        </span>
+        <span class="category-tab" data-category="startup" onclick="filterByCategory('startup')">
+          <i class="bi bi-rocket-takeoff"></i> 创业动态 (<span class="cat-count">0</span>)
+        </span>
+        <span class="category-tab" data-category="product_tool" onclick="filterByCategory('product_tool')">
+          <i class="bi bi-tools"></i> 产品工具 (<span class="cat-count">0</span>)
+        </span>
       </div>
     </div>
 
@@ -293,7 +364,7 @@
     <!-- Empty State -->
     <div id="emptyState" class="text-center py-5" style="display: none;">
       <i class="bi bi-inbox" style="font-size: 3rem; color: var(--text-secondary);"></i>
-      <p class="mt-3 text-muted">暂无内容，请选择日期或类别</p>
+      <p class="mt-3 text-muted">暂无内容，请选择日期</p>
     </div>
   </div>
 
@@ -312,11 +383,30 @@
     let currentCategory = 'all';
     let availableDates = [];
 
+    // Theme management
+    let isDarkMode = localStorage.getItem('theme') !== 'light';
+    
+    function applyTheme() {
+      if (isDarkMode) {
+        document.body.classList.remove('light-mode');
+        document.getElementById('themeIcon').className = 'bi bi-moon-fill';
+      } else {
+        document.body.classList.add('light-mode');
+        document.getElementById('themeIcon').className = 'bi bi-sun-fill';
+      }
+    }
+    
+    function toggleTheme() {
+      isDarkMode = !isDarkMode;
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+      applyTheme();
+    }
+
     // Initialize
     document.addEventListener('DOMContentLoaded', async () => {
+      applyTheme();
       await loadData();
       populateDateSelector();
-      setupEventListeners();
       
       // Set default to most recent date
       if (availableDates.length > 0) {
@@ -327,8 +417,14 @@
       render();
     });
 
+    document.getElementById('dateSelector').addEventListener('change', (e) => {
+      currentDate = e.target.value;
+      currentCategory = 'all';
+      updateCategoryTabs();
+      render();
+    });
+
     function populateDateSelector() {
-      // Extract unique dates from data, sorted descending
       const dateSet = new Set();
       allData.forEach(item => {
         if (item.date) dateSet.add(item.date);
@@ -357,25 +453,12 @@
       }
     }
 
-    function setupEventListeners() {
-      document.getElementById('dateSelector').addEventListener('change', (e) => {
-        currentDate = e.target.value;
-        render();
-      });
-
-      document.getElementById('categoryFilter').addEventListener('change', (e) => {
-        currentCategory = e.target.value;
-        render();
-      });
-    }
-
     function getFilteredData() {
       let filtered = allData.filter(item => {
-        // Strict date filtering — only show selected date
         return item.date === currentDate;
       });
       
-      // Normalize categories: map non-standard categories to standard ones
+      // Normalize categories
       filtered = filtered.map(item => {
         if (item.category === 'developer_tool' || item.category === 'ai_model') {
           return { ...item, category: 'product_tool' };
@@ -388,6 +471,18 @@
       }
       
       return filtered.sort((a, b) => b.importance - a.importance);
+    }
+
+    function getAllDateCategoryCounts() {
+      // Get category counts for the current date (not filtered)
+      const dayData = allData.filter(item => item.date === currentDate);
+      const counts = { ai_tech: 0, startup: 0, product_tool: 0 };
+      dayData.forEach(item => {
+        let cat = item.category;
+        if (cat === 'developer_tool' || cat === 'ai_model') cat = 'product_tool';
+        if (counts.hasOwnProperty(cat)) counts[cat]++;
+      });
+      return counts;
     }
 
     function getCategoryLabel(category) {
@@ -409,7 +504,6 @@
     }
 
     function renderStars(importance) {
-      // Handle missing/null importance
       if (importance == null || importance === undefined) importance = 0;
       let stars = '';
       for (let i = 1; i <= 5; i++) {
@@ -418,12 +512,36 @@
       return stars;
     }
 
+    function updateCategoryTabs() {
+      const counts = getAllDateCategoryCounts();
+      
+      // Update counts in tabs (always show full day counts)
+      document.querySelectorAll('.category-tab[data-category]').forEach(tab => {
+        const cat = tab.dataset.category;
+        const countSpan = tab.querySelector('.cat-count');
+        if (countSpan && counts.hasOwnProperty(cat)) {
+          countSpan.textContent = counts[cat];
+        }
+      });
+      
+      // Update active state
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        tab.classList.toggle('active', tab.dataset.category === currentCategory);
+      });
+    }
+
+    function filterByCategory(category) {
+      currentCategory = category;
+      updateCategoryTabs();
+      render();
+    }
+
     function render() {
       const articles = getFilteredData();
       const container = document.getElementById('articlesContainer');
       const emptyState = document.getElementById('emptyState');
       
-      // Load inspiration for the selected date
+      // Load inspiration
       if (currentDate) {
         loadInspiration(currentDate);
       } else {
@@ -434,11 +552,11 @@
       document.getElementById('totalCount').textContent = articles.length;
       document.getElementById('majorCount').textContent = articles.filter(a => a.is_major_event).length;
       document.getElementById('avgImportance').textContent = articles.length > 0 
-        ? (articles.reduce((sum, a) => sum + a.importance, 0) / articles.length).toFixed(1)
+        ? (articles.reduce((sum, a) => sum + (a.importance || 0), 0) / articles.length).toFixed(1)
         : '0';
       
-      // Render category summary
-      renderCategorySummary(articles);
+      // Update category tab counts
+      updateCategoryTabs();
       
       // Render articles
       if (articles.length === 0) {
@@ -507,34 +625,6 @@
       });
       
       container.innerHTML = html;
-    }
-
-    function renderCategorySummary(articles) {
-      const container = document.getElementById('categorySummary');
-      const categories = ['ai_tech', 'startup', 'product_tool'];
-      
-      let html = '';
-      categories.forEach(cat => {
-        const count = articles.filter(a => a.category === cat).length;
-        const isActive = currentCategory === cat;
-        html += `
-          <span class="category-badge ${isActive ? 'active' : ''}" 
-                style="background-color: ${isActive ? 'var(--accent-blue)' : 'var(--bg-secondary)'}; 
-                       color: ${isActive ? 'white' : 'var(--text-secondary)'};"
-                onclick="filterByCategory('${cat}')">
-            <i class="bi bi-${getCategoryIcon(cat)}"></i>
-            ${getCategoryLabel(cat)} (${count})
-          </span>
-        `;
-      });
-      
-      container.innerHTML = html;
-    }
-
-    function filterByCategory(category) {
-      currentCategory = category;
-      document.getElementById('categoryFilter').value = category;
-      render();
     }
 
     // Inspiration data

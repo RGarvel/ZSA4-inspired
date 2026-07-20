@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground | 灵感日报</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-card: #1c2333;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --accent-blue: #58a6ff;
+      --accent-green: #3fb950;
+      --accent-purple: #bc8cff;
+      --accent-orange: #d29922;
+      --border-color: #30363d;
+    }
+    
+    body.light-mode {
+      --bg-primary: #f6f8fa;
+      --bg-secondary: #ffffff;
+      --bg-card: #ffffff;
+      --text-primary: #1f2328;
+      --text-secondary: #656d76;
+      --accent-blue: #0969da;
+      --accent-green: #1a7f37;
+      --accent-purple: #8250df;
+      --accent-orange: #9a6700;
+      --border-color: #d0d7de;
+    }
+    
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    
+    .navbar {
+      background-color: var(--bg-secondary) !important;
+      border-bottom: 1px solid var(--border-color);
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .back-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      padding: 0.3rem 0.6rem;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      transition: all 0.2s;
+      font-size: 0.85rem;
+    }
+    
+    .back-link:hover {
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+      background-color: rgba(88, 166, 255, 0.1);
+    }
+    
+    .theme-toggle-btn {
+      background: none;
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 8px;
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.1rem;
+    }
+    
+    .theme-toggle-btn:hover {
+      border-color: var(--accent-blue);
+      background-color: rgba(88, 166, 255, 0.1);
+    }
+    
+    .hero-section {
+      text-align: center;
+      padding: 3rem 0;
+      margin-bottom: 2rem;
+    }
+    
+    .hero-section h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero-section p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+    }
+    
+    .project-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      border-color: var(--accent-blue);
+    }
+    
+    .project-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .project-card h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .project-card p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.6;
+      flex-grow: 1;
+    }
+    
+    .project-tags .badge {
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+    
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent-blue);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    
+    .project-link:hover {
+      opacity: 0.9;
+      color: white;
+      transform: translateX(2px);
+    }
+    
+    .status-badge {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    
+    .status-badge.live {
+      background-color: rgba(63, 185, 80, 0.2);
+      color: var(--accent-green);
+    }
+    
+    .status-badge.dev {
+      background-color: rgba(210, 153, 34, 0.2);
+      color: var(--accent-orange);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+        <i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i>
+        <span>灵感日报</span>
+      </a>
+      <div class="d-flex align-items-center gap-2 ms-auto">
+        <a class="back-link" href="../index.html">
+          <i class="bi bi-arrow-left"></i> 返回首页
+        </a>
+        <button class="theme-toggle-btn" onclick="toggleTheme()" title="切换亮暗模式">
+          <i class="bi bi-moon-fill" id="themeIcon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="hero-section">
+      <h1>🚀 Playground</h1>
+      <p>基于每日灵感衍生的项目和工具</p>
+    </div>
+
+    <div class="row g-4" id="projectsContainer">
+      <!-- Projects will be rendered here -->
+    </div>
+  </div>
+
+  <script>
+    const projects = [
+      {
+        name: 'AI 模型价格对比仪表盘',
+        icon: '📊',
+        description: '直观对比 20 个主流 AI 模型的定价，支持按任务类型（编码/推理/图像）自动推荐性价比最高的模型。内置多模型对比、排序筛选、可视化图表等功能。',
+        tags: ['JavaScript', 'Chart.js', 'Dark Mode', 'Responsive'],
+        url: '../ai-model-price-dashboard/index.html',
+        status: 'live',
+        statusText: '已上线'
+      },
+      {
+        name: '灵感日报',
+        icon: '💡',
+        description: '每日 AI 技术与创业灵感推送，多 Agent 并行采集，自动提炼创业建议和小项目灵感。支持日期筛选、分类筛选、重大事件标记。',
+        tags: ['HTML', 'Bootstrap', 'Multi-Agent', 'GitHub Pages'],
+        url: '../index.html',
+        status: 'live',
+        statusText: '已上线'
+      }
+    ];
+
+    // Theme management
+    let isDarkMode = localStorage.getItem('theme') !== 'light';
+    
+    function applyTheme() {
+      if (isDarkMode) {
+        document.body.classList.remove('light-mode');
+        document.getElementById('themeIcon').className = 'bi bi-moon-fill';
+      } else {
+        document.body.classList.add('light-mode');
+        document.getElementById('themeIcon').className = 'bi bi-sun-fill';
+      }
+    }
+    
+    function toggleTheme() {
+      isDarkMode = !isDarkMode;
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+      applyTheme();
+    }
+
+    function renderProjects() {
+      const container = document.getElementById('projectsContainer');
+      let html = '';
+      
+      projects.forEach(project => {
+        html += `
+          <div class="col-md-6 col-lg-4">
+            <div class="project-card">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="project-icon">${project.icon}</div>
+                <span class="status-badge ${project.status}">${project.statusText}</span>
+              </div>
+              <h3>${project.name}</h3>
+              <p>${project.description}</p>
+              <div class="project-tags mb-3">
+                ${project.tags.map(t => `<span class="badge bg-secondary">${t}</span>`).join('')}
+              </div>
+              <a href="${project.url}" class="project-link">
+                访问项目 <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        `;
+      });
+      
+      container.innerHTML = html;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      applyTheme();
+      renderProjects();
+    });
+  </script>
+</body>
+</html>
