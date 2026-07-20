@@ -3,61 +3,65 @@
   "insights": [
     {
       "type": "startup_advice",
-      "title": "端侧 AI Agent 手机：抓住 WAIC 2026 的最后一波红利",
-      "summary": "Nubia 发布 NaviX Ultra 号称全球首款 AI Agent 手机，StepFun 和 Honor 也展示了 AI 原生手机方案。端侧 AI 正在从概念走向硬件落地。创业建议：开发面向端侧 AI 手机的专用应用商店或插件生态，聚焦离线可用的 AI 代理工具（如本地笔记整理、离线翻译、端侧图像识别）。这类应用无需云端算力，契合隐私趋势，且可借助手机厂商预装渠道快速获客。参考：ait-16（Nubia AI Agent 手机）、ait-15（WAIC 具身智能）。",
-      "related_news": ["ait-16", "ait-15"],
-      "tags": ["端侧AI", "AI手机", "硬件创业", "WAIC"]
+      "title": "AI 实施服务赛道爆发：从模型层向下游延伸是确定性趋势",
+      "summary": "Anthropic×Blackstone 推出 Ode（15亿美元）、微软培训销售团队推广自有 MAI 模型、Meta 首次对 AI API 收费——三大信号叠加表明：2026 年下半年 AI 行业的竞争焦点正从'谁有最好的模型'转向'谁能最好地帮企业用上 AI'。创业机会在于：①垂直行业的 AI 实施咨询公司（类似 Ode 的 niche 版本）；②AI 迁移工具——帮企业从 OpenAI/Anthropic API 迁移到自有模型或开源模型；③AI 成本优化工具，因为 Meta 收费后企业面临更大成本压力。",
+      "related_news": ["st-11", "ait-17", "ait-22"],
+      "tags": ["AI实施", "企业服务", "垂直行业"]
     },
     {
       "type": "startup_advice",
-      "title": "AI 代理数据安全：Grok Build 泄露事件催生的新赛道",
-      "summary": "xAI 的 Grok Build 因默认上传完整 Git 仓库引发安全危机，Hugging Face 也披露了 AI 代理入侵事件。这标志着 AI 开发工具的安全问题从理论走向现实。创业机会：开发专门针对 AI 代理/编程助手的代码安全审计工具，类似传统 SAST/DAST 但面向 AI 生成的代码和 AI 工具的上传行为。或者做 AI 代理的身份验证和数据隔离中间件——正如 Oak 融资 6000 万美元解决 AI 代理身份问题一样，安全是第二大刚需。参考：ait-14（Grok Build 泄露）、ait-9（Hugging Face 入侵）。",
-      "related_news": ["ait-14", "ait-9", "st-5"],
-      "tags": ["AI安全", "代码安全", "代理治理", "创业机会"]
+      "title": "AI 代理身份管理是 Emerging 赛道：Oak（6000万）+ NeuralTrust（1720万欧）",
+      "summary": "两周内两笔融资都指向同一个问题：当 AI 代理无处不在，谁来证明'你是你'？Oak 解决 AI 代理的身份验证，NeuralTrust 解决企业 AI 代理的安全治理。这个赛道的早期机会包括：①AI 代理的身份认证 SDK（类似 JWT 但针对 AI）；②AI 代理行为审计日志工具；③企业 AI 代理的权限管理系统。市场窗口极窄——建议在 2026 年底前完成 MVP。",
+      "related_news": ["st-5", "st-10"],
+      "tags": ["AI代理", "身份管理", "安全治理"]
+    },
+    {
+      "type": "startup_advice",
+      "title": "物理 AI / 具身智能赛道加速：Mistral Robostral + WAIC 机器人展 + 日本主权 AI 工厂",
+      "summary": "过去一周密集出现三个信号：Mistral 发布 Robostral Navigate 机器人导航模型、WAIC 2026 具身智能成最大亮点（四足/人形机器人集体亮相）、日本 Noetra 联盟部署 27500 块 Rubin GPU 构建主权 AI 机器人基础设施。物理 AI 正在从概念走向规模化部署。创业机会：①机器人仿真环境生成工具；②具身 AI 数据集标注平台；③低成本机器人感知模块（视觉+语言融合）。",
+      "related_news": ["ait-24", "pt-15", "ait-6", "ait-15"],
+      "tags": ["具身智能", "物理AI", "机器人"]
     },
     {
       "type": "side_project",
-      "title": "AI 模型价格最优路由网关",
-      "summary": "开发一个轻量级 API 网关，同时接入 OpenAI GPT-5.6、Anthropic Claude（Sonnet/Fable/Mythos）、本地开源模型（如 Kimi K3、Inkling），根据任务类型自动路由到最便宜的模型。例如：简单问答→Luna/Terra，代码→Sol/Sonnet，复杂推理→Fable/Opus。内置成本追踪仪表盘。参考：ait-13（Fable 5 收费变化）、pt-5（GPT-5.6 分层）、pt-6（ChatGPT Work）。",
+      "title": "AI 模型价格对比仪表盘",
+      "summary": "本周出现了 GPT-5.6、Grok 4.5（$2/百万token）、Muse Spark 1.1 等多款新模型，价格战激烈但各家定价差异大。做一个可视化的模型价格对比工具：输入任务类型（编码/推理/图像），自动推荐性价比最高的模型。技术实现简单，数据价值高。",
       "difficulty": "easy",
+      "estimated_time": "3-5天",
+      "tech_stack": ["Python", "Streamlit/Gradio", "API"],
+      "related_news": ["ait-23", "ait-22", "pt-5"]
+    },
+    {
+      "type": "side_project",
+      "title": "开源模型本地部署指南生成器",
+      "summary": "GLM-5.2（MIT许可）、Inkling（开放权重）、Kimi K3（计划开源）——本周至少有 3 个高质量开源模型发布。做一个工具：用户输入硬件配置（GPU型号+显存），自动生成最优的本地部署方案和量化策略。可以用 Ollama + llama.cpp 做后端。",
+      "difficulty": "medium",
       "estimated_time": "1-2周",
-      "tech_stack": ["Python", "FastAPI", "SQLite", "OpenAI/Anthropic SDK"],
-      "related_news": ["ait-13", "pt-5", "pt-6"],
-      "tags": ["AI网关", "成本优化", "多模型路由"]
+      "tech_stack": ["Python", "Ollama", "llama.cpp", "Web前端"],
+      "related_news": ["ait-21", "pt-13", "ait-1"]
     },
     {
       "type": "side_project",
-      "title": "AI 代理数据隐私扫描器",
-      "summary": "仿照 cereblab 的方法，开发一个 CLI 工具，监控 AI 编程助手（VS Code 扩展、JetBrains 插件等）的网络请求，检测是否有敏感文件（.env、私钥、数据库配置）被意外上传。支持主流 AI 编程工具，输出可视化报告。难度：中等。技术栈：Python + mitmproxy/Trio + 正则表达式匹配敏感模式。预估时间：2-3 周。参考：ait-14。",
+      "title": "AI 新闻去重聚合器",
+      "summary": "本周同一事件（如 Grok 4.5 发布）被 20+ 个媒体报道。做一个 RSS/爬虫聚合器，自动去重同一事件的不同报道，按时间线整理。这对个人追踪 AI 动态非常有价值。",
       "difficulty": "medium",
-      "estimated_time": "2-3周",
-      "tech_stack": ["Python", "mitmproxy", "正则表达式", "CLI"],
-      "related_news": ["ait-14"],
-      "tags": ["AI安全", "开源工具", "开发者工具"]
-    },
-    {
-      "type": "side_project",
-      "title": "端侧 AI 模型一键部署工具",
-      "summary": "基于 Kimi K3（2.8T 开源 MoE，ait-1）和 Inkling（975B MoE，ait-12）等开源大模型的发布趋势，开发一个 CLI 部署工具：输入模型名称→自动选择量化方案（INT4/INT8/FP8）→选择推理后端（llama.cpp/ONNX/OpenVINO）→一键生成 Docker 镜像或 Android APK。关键功能：(1) 硬件探测（自动检测可用 GPU/TPU/NPU）；(2) 模型压缩（AWQ/GPTQ 量化）；(3) 性能基准测试报告。参考：ait-1、ait-12、pt-2（BaseRT 证明端侧推理有巨大性能优势）。",
-      "difficulty": "medium",
-      "estimated_time": "3-4周",
-      "tech_stack": ["Python", "llama.cpp", "ONNX", "Docker", "AWQ量化"],
-      "related_news": ["ait-1", "ait-12", "pt-2"],
-      "tags": ["端侧AI", "开源模型", "部署工具"]
+      "estimated_time": "1周",
+      "tech_stack": ["Python", "Feedparser", "SQLite", "FastAPI"],
+      "related_news": ["ait-23", "ait-22", "ait-20"]
     },
     {
       "type": "industry_insight",
-      "title": "AI 代理从云端走向端侧：两条并行趋势交汇",
-      "summary": "本周出现两个看似独立的事件——Nubia 发布 AI Agent 手机（ait-16）和 AGIBOT/JAKA 展示具身智能机器人（ait-15）——实则指向同一趋势：AI 代理正在从云端服务器走向物理世界中的各种终端设备。手机是个人 AI 代理载体，机器人是工业/家庭 AI 代理载体。这个交汇点意味着：(1) 边缘推理框架需求爆发（如 BaseRT 在 Apple Silicon 上的突破 pt-2）；(2) 需要新的中间件来管理跨设备的 AI 代理通信；(3) 端侧数据隐私将成为产品核心卖点。参考：ait-16、ait-15、pt-2。",
-      "related_news": ["ait-16", "ait-15", "pt-2"],
-      "tags": ["边缘AI", "AI代理", "具身智能", "趋势预测"]
+      "title": "开源 vs 闭源的十字路口：Meta 收费 vs Thinking Machines 开源",
+      "summary": "本周出现了一个关键转折：Meta 首次对 AI 模型收费（Muse Spark 1.1 API），而 Mira Murati 的 Thinking Machines 选择开源 Inkling。这标志着开源/闭源路线之争进入新阶段——曾经开源阵营的 Meta 开始收费，而新入局者选择开源差异化。长期来看，开源模型可能成为中小企业的标配基础设施，而闭源模型则聚焦最高端的推理和代理能力。",
+      "related_news": ["ait-22", "pt-13", "ait-21"],
+      "tags": ["开源vs闭源", "商业模式", "AI民主化"]
     },
     {
       "type": "industry_insight",
-      "title": "Anthropic Fable 5 收费化：AI 模型商业化的分水岭",
-      "summary": "Anthropic 从 7 月 20 日起对 Fable 5 收费（ait-13），标志着旗舰 AI 模型从'免费推广抢用户'进入'精细化变现'阶段。这与 OpenAI 推出 GPT-5.6 分层架构（pt-5）、ChatGPT Work 持久代理（pt-6）形成对比——头部玩家都在探索不同的商业模式。对创业者的启示：不要只做模型层的竞争者，而应做'模型之上的应用层'，利用各家的差异化定价策略找到套利空间（如同时支持多个模型的价格最优路由）。参考：ait-13、pt-5、pt-6。",
-      "related_news": ["ait-13", "pt-5", "pt-6"],
-      "tags": ["AI商业化", "模型定价", "创业策略"]
+      "title": "AI 代理（Agent）从概念验证走向生产部署",
+      "summary": "一周内至少 5 条新闻指向同一趋势：Anthropic 推出 Ode 帮助企业部署 AI 代理、OpenAI 推出 ChatGPT Work 持久代理、Clark 云电脑 AI 同事、Unabyss MCP 上下文层、Oak AI 代理身份管理。AI 代理正在从'聊天机器人升级'演变为'企业基础设施'。关键信号：投资人和大企业开始认真讨论代理的安全、治理、成本和实施，说明这个赛道已经过了 hype 阶段。",
+      "related_news": ["st-11", "pt-6", "pt-9", "pt-1", "st-5"],
+      "tags": ["AI代理", "企业部署", "持久化工作流"]
     }
   ]
 }
