@@ -56,6 +56,17 @@
       color: var(--text-primary);
     }
     
+    /* Unified navbar text styling for both themes */
+    .navbar .text-muted,
+    .navbar small.text-muted {
+      color: var(--text-secondary) !important;
+      opacity: 0.8;
+    }
+    
+    .navbar-brand i.bi-bar-chart-line-fill {
+      color: var(--accent-blue) !important;
+    }
+    
     .back-link {
       color: var(--text-primary);
       text-decoration: none;
@@ -101,19 +112,6 @@
     
     .back-link:hover i {
       transform: translateX(-2px);
-    }
-    
-    /* Light mode navbar overrides */
-    body.light-mode .navbar-brand i.bi-bar-chart-line-fill {
-      color: #0969da !important;
-    }
-    
-    body.light-mode .navbar-brand span {
-      color: #1f2328 !important;
-    }
-    
-    body.light-mode .navbar small.text-muted {
-      color: #4a5568 !important;
     }
     
     .control-bar {
@@ -228,46 +226,10 @@
       width: 100%;
     }
     
-    .data-table table th,
-    .data-table table td {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-    }
-    
-    /* Override Bootstrap table row background */
-    .data-table tbody tr {
-      background-color: var(--bg-card) !important;
-      border-bottom: 1px solid var(--border-color);
-    }
-    
-    .data-table tbody tr:hover td {
-      background-color: rgba(88, 166, 255, 0.05) !important;
-    }
-    
-    .data-table tbody tr:nth-of-type(even) {
-      background-color: var(--bg-secondary) !important;
-    }
-    
-    /* Table header styles */
-    .data-table th {
-      background-color: var(--bg-secondary);
-      color: var(--text-primary);
-      border-bottom: 2px solid var(--border-color);
-      font-weight: 600;
-      cursor: pointer;
-      user-select: none;
-      padding: 12px 8px;
-    }
-    
-    .data-table th:hover {
-      background-color: var(--bg-card);
-    }
-    
-    .data-table td {
-      border-bottom: 1px solid var(--border-color);
-      vertical-align: middle;
-      padding: 10px 8px;
-    }
+    /* Table header styles — also covered by consolidated rules below */
+    .data-table th { cursor: pointer; user-select: none; padding: 12px 8px; }
+    .data-table th:hover { background-color: var(--bg-card); }
+    .data-table td { vertical-align: middle; padding: 10px 8px; }
     
     .tier-badge {
       font-size: 0.7rem;
@@ -333,30 +295,34 @@
       font-weight: 500;
     }
     
-    /* Bootstrap table overrides for theme consistency */
-    .table > :not(caption) > * > * {
+    /* Bootstrap table theme overrides — single consolidated rule set */
+    .table > :not(caption) > * > *,
+    .data-table td,
+    .data-table th {
       background-color: var(--bg-card);
       color: var(--text-primary);
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 8px;
+      vertical-align: middle;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     
-    .table-hover > tbody > tr:hover > * {
+    .table > thead > * > *,
+    .data-table th {
+      background-color: var(--bg-secondary);
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+      border-bottom: 2px solid var(--border-color);
+    }
+    
+    .table-hover > tbody > tr:hover > *,
+    .data-table tbody tr:hover td {
       background-color: rgba(88, 166, 255, 0.05) !important;
     }
     
-    .table > thead > * > * {
-      background-color: var(--bg-secondary);
-      color: var(--text-primary);
-    }
-    
-    /* Ensure table cells have proper borders */
-    .table > :not(caption) > * > * {
-      border-bottom: 1px solid var(--border-color);
-    }
-    
-    .table > tbody > tr > td {
-      background-color: var(--bg-card) !important;
-    }
-    
+    .data-table tbody tr:nth-of-type(even),
     .table > tbody > tr:nth-of-type(even) > td {
       background-color: var(--bg-secondary) !important;
     }
@@ -618,10 +584,16 @@
       if (price === '/' || price === 0) return price === 0 ? '免费' : '/';
       return price.toFixed(2);
     }
-
+    
     function formatImagePrice(price) {
       if (price === '/' || price === 0) return price === 0 ? '免费' : '/';
       return '$' + parseFloat(price).toFixed(2);
+    }
+    
+    function fmtPrice(val, isImage = false) {
+      if (val === '/' || val === 0) return val === 0 ? '免费' : '/';
+      const num = parseFloat(val);
+      return (isImage ? '$' : '') + num.toFixed(2);
     }
 
     function sortBy(field) {
@@ -711,33 +683,24 @@
       const card = document.getElementById('recommendationCard');
       const content = document.getElementById('recommendationContent');
       
-      if (!taskType) {
-        card.classList.remove('show');
-        return;
-      }
+      if (!taskType) { card.classList.remove('show'); return; }
       
-      // Use filtered models, not all models
       let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
+      if (!candidates.length) { card.classList.remove('show'); return; }
       
-      if (candidates.length === 0) {
-        card.classList.remove('show');
-        return;
-      }
+      // Unified scoring: weight quality vs price based on task type
+      const weights = { coding: [0.4, 0.6], reasoning: [0.6, 0.4], image: [0.5, 0.5] };
+      const [wQ, wP] = weights[taskType] || [0.5, 0.5];
+      const priceFn = {
+        coding: m => (m.input_price_per_1m + m.output_price_per_1m) / 2,
+        reasoning: m => m.output_price_per_1m / 2,
+        image: m => m.image_generation_price || 0
+      }[taskType] ?? (() => 0);
       
-      candidates = candidates.map(m => {
-        let score;
-        if (taskType === 'coding') {
-          const priceScore = 100 - Math.min(100, (m.input_price_per_1m + m.output_price_per_1m) / 2);
-          score = m.quality_score * 0.4 + priceScore * 0.6;
-        } else if (taskType === 'reasoning') {
-          const priceScore = 100 - Math.min(100, m.output_price_per_1m / 2);
-          score = m.quality_score * 0.6 + priceScore * 0.4;
-        } else if (taskType === 'image') {
-          const priceScore = 100 - Math.min(100, (m.image_generation_price || 0) * 100);
-          score = m.quality_score * 0.5 + priceScore * 0.5;
-        }
-        return { ...m, score: Math.round(score) };
-      });
+      candidates = candidates.map(m => ({
+        ...m,
+        score: Math.round(m.quality_score * wQ + (100 - Math.min(100, priceFn(m))) * wP)
+      }));
       
       candidates.sort((a, b) => b.score - a.score);
       const best = candidates[0];
@@ -752,9 +715,9 @@
             <p class="mb-1"><strong>性价比评分:</strong> <span style="color: var(--accent-green); font-weight: 600;">${best.score}/100</span></p>
           </div>
           <div class="col-md-6">
-            <p class="mb-1"><strong>输入价格:</strong> $${formatPrice(best.input_price_per_1m)}/M tokens</p>
-            <p class="mb-1"><strong>输出价格:</strong> $${formatPrice(best.output_price_per_1m)}/M tokens</p>
-            <p class="mb-1"><strong>图像价格:</strong> ${formatImagePrice(best.image_generation_price)}</p>
+            <p class="mb-1"><strong>输入价格:</strong> $${fmtPrice(best.input_price_per_1m)}/M tokens</p>
+            <p class="mb-1"><strong>输出价格:</strong> $${fmtPrice(best.output_price_per_1m)}/M tokens</p>
+            <p class="mb-1"><strong>图像价格:</strong> ${fmtPrice(best.image_generation_price, true)}</p>
             <p class="mb-0"><strong>上下文窗口:</strong> ${best.context_window > 0 ? best.context_window.toLocaleString() + ' tokens' : '-'}</p>
           </div>
         </div>
@@ -764,206 +727,89 @@
     function updateChart() {
       const ctx = document.getElementById('priceChart').getContext('2d');
       
-      if (priceChart) {
-        priceChart.destroy();
-      }
+      if (priceChart) { priceChart.destroy(); }
       
-      // Use sorted models from table, or fall back to filtered
-      let models;
-      if (compareList.length > 0) {
-        models = allModels.filter(m => compareList.includes(m.model_id));
-      } else if (_sortedModels && _sortedModels.length > 0) {
-        // Use the same sorted order as the table
-        models = _sortedModels.slice(0, 10);
-      } else {
-        models = getFilteredModels().slice(0, 10);
-      }
+      // Select models: compare > sorted > filtered
+      let models = compareList.length > 0
+        ? allModels.filter(m => compareList.includes(m.model_id))
+        : (_sortedModels && _sortedModels.length) ? _sortedModels.slice(0, 10) : getFilteredModels().slice(0, 10);
       
-      // Determine which performance metric to show based on task type
       const taskType = document.getElementById('taskType')?.value || 'coding';
-      const performanceLabel = {
-        coding: '编码性能',
-        reasoning: '推理性能', 
-        image: '图像性能'
-      }[taskType] || '质量评分';
-      const performanceData = models.map(m => m.quality_score);
+      const perfLabel = { coding: '编码性能', reasoning: '推理性能', image: '图像性能' }[taskType] || '质量评分';
+      const perfData = models.map(m => m.quality_score);
       
       const maxPrice = Math.max(...models.map(m => m.output_price_per_1m));
-      const maxScore = Math.max(...performanceData);
-      const minScore = Math.min(...performanceData);
+      const maxScore = Math.max(...perfData), minScore = Math.min(...perfData);
       const scoreRange = maxScore - minScore;
-      const pricePadding = Math.max(maxPrice * 0.15, 1);
-      const scorePadding = Math.max(scoreRange * 0.2, 5);
+      const pricePad = Math.max(maxPrice * 0.15, 1);
+      const scorePad = Math.max(scoreRange * 0.2, 5);
+      
       const datasets = [
-        {
-          label: '输入价格 ($/M)',
-          data: models.map(m => m.input_price_per_1m),
-          backgroundColor: 'rgba(88, 166, 255, 0.6)',
-          borderColor: 'rgba(88, 166, 255, 1)',
-          borderWidth: 1,
-          type: 'bar',
-          yAxisID: 'y',
-          order: 2
-        },
-        {
-          label: '输出价格 ($/M)',
-          data: models.map(m => m.output_price_per_1m),
-          backgroundColor: 'rgba(210, 153, 34, 0.6)',
-          borderColor: 'rgba(210, 153, 34, 1)',
-          borderWidth: 1,
-          type: 'bar',
-          yAxisID: 'y',
-          order: 2
-        },
-        {
-          label: performanceLabel,
-          data: performanceData,
-          borderColor: 'rgba(63, 185, 80, 1)',
-          backgroundColor: 'rgba(63, 185, 80, 0.1)',
-          borderWidth: 3,
-          type: 'line',
-          pointBackgroundColor: 'rgba(63, 185, 80, 1)',
-          pointBorderColor: '#fff',
-          pointBorderWidth: 2,
-          pointRadius: 5,
-          pointHoverRadius: 8,
-          tension: 0.3,
-          fill: false,
-          yAxisID: 'y1',
-          order: 1
-        }
+        { label: '输入价格 ($/M)', data: models.map(m => m.input_price_per_1m), backgroundColor: 'rgba(88,166,255,0.6)', borderColor: 'rgba(88,166,255,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
+        { label: '输出价格 ($/M)', data: models.map(m => m.output_price_per_1m), backgroundColor: 'rgba(210,153,34,0.6)', borderColor: 'rgba(210,153,34,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
+        { label: perfLabel, data: perfData, borderColor: 'rgba(63,185,80,1)', backgroundColor: 'rgba(63,185,80,0.1)', borderWidth: 3, type: 'line', pointBackgroundColor: 'rgba(63,185,80,1)', pointBorderColor: '#fff', pointBorderWidth: 2, pointRadius: 5, pointHoverRadius: 8, tension: 0.3, fill: false, yAxisID: 'y1', order: 1 }
       ];
       
-      const yMax = Math.ceil((maxPrice + pricePadding) / 5) * 5;
-      const scoreMin = Math.max(0, Math.floor(minScore - scorePadding));
-      const scoreMax = Math.ceil((maxScore + scorePadding) / 5) * 5;
+      const yMax = Math.ceil((maxPrice + pricePad) / 5) * 5;
+      const scoreMin = Math.max(0, Math.floor(minScore - scorePad));
+      const scoreMax = Math.ceil((maxScore + scorePad) / 5) * 5;
+      
+      // Color helpers based on theme
+      const dk = isDarkMode;
+      const txt = dk ? '#e6edf3' : '#1f2328';
+      const muted = dk ? '#8b949e' : '#656d76';
+      const grid = dk ? 'rgba(48,54,61,0.5)' : 'rgba(208,215,222,0.5)';
       
       priceChart = new Chart(ctx, {
         type: 'bar',
-        data: {
-          labels: models.map(m => m.name),
-          datasets: datasets
-        },
+        data: { labels: models.map(m => m.name), datasets },
         options: {
           responsive: true,
           maintainAspectRatio: false,
-          interaction: {
-            mode: 'index',
-            intersect: false
-          },
+          interaction: { mode: 'index', intersect: false },
           plugins: {
-            legend: { 
-              labels: { color: isDarkMode ? '#e6edf3' : '#1f2328' },
+            legend: {
+              labels: { color: txt },
               position: 'top',
               onClick: function(e, legendItem, legend) {
-                const index = legendItem.datasetIndex;
-                const ci = legend.chart;
-                const meta = ci.getDatasetMeta(index);
-                if (!meta.hidden) {
-                  meta.hidden = true;
-                  legendItem.text = '~~' + legendItem.text + '~~';
-                } else {
-                  meta.hidden = false;
-                  legendItem.text = legendItem._orig.text || legendItem.text;
-                }
+                const idx = legendItem.datasetIndex, ci = legend.chart, meta = ci.getDatasetMeta(idx);
+                if (!meta.hidden) { meta.hidden = true; legendItem.text = '~~' + legendItem.text + '~~'; }
+                else { meta.hidden = false; legendItem.text = legendItem._orig.text || legendItem.text; }
                 ci.update();
               }
             },
             tooltip: {
-              callbacks: {
-                labelColor: function(context) {
-                  return {
-                    borderColor: context.dataset.borderColor,
-                    backgroundColor: context.dataset.backgroundColor
-                  };
-                }
-              }
+              callbacks: { labelColor: ctx => ({ borderColor: ctx.dataset.borderColor, backgroundColor: ctx.dataset.backgroundColor }) }
             },
             title: {
               display: true,
               text: compareList.length > 0 ? '选中模型对比' : '输入/输出价格对比 (前10个模型)',
-              color: isDarkMode ? '#e6edf3' : '#1f2328',
+              color: txt,
               font: { size: 16 }
             }
           },
           scales: {
-            x: {
-              ticks: { color: isDarkMode ? '#8b949e' : '#656d76', maxRotation: 45 },
-              grid: { color: isDarkMode ? 'rgba(48, 54, 61, 0.5)' : 'rgba(208, 215, 222, 0.5)' }
-            },
-            y: {
-              type: 'linear',
-              display: true,
-              position: 'left',
-              min: 0,
-              max: yMax,
-              title: {
-                display: true,
-                text: '价格 ($/M)',
-                color: isDarkMode ? '#e6edf3' : '#1f2328'
-              },
-              ticks: { color: isDarkMode ? '#8b949e' : '#656d76', callback: v => '$' + v },
-              grid: { color: isDarkMode ? 'rgba(48, 54, 61, 0.5)' : 'rgba(208, 215, 222, 0.5)' }
-            },
-            y1: {
-              type: 'linear',
-              display: true,
-              position: 'right',
-              min: scoreMin,
-              max: scoreMax,
-              title: {
-                display: true,
-                text: performanceLabel,
-                color: isDarkMode ? '#e6edf3' : '#1f2328'
-              },
-              ticks: { color: isDarkMode ? '#8b949e' : '#656d76' },
-              grid: { drawOnChartArea: false }
-            }
+            x: { ticks: { color: muted, maxRotation: 45 }, grid: { color: grid } },
+            y: { type: 'linear', display: true, position: 'left', min: 0, max: yMax, title: { display: true, text: '价格 ($/M)', color: txt }, ticks: { color: muted, callback: v => '$' + v }, grid: { color: grid } },
+            y1: { type: 'linear', display: true, position: 'right', min: scoreMin, max: scoreMax, title: { display: true, text: perfLabel, color: txt }, ticks: { color: muted }, grid: { drawOnChartArea: false } }
           },
           onHover: function(event, elements) {
-            if (this.canvas) {
-              this.canvas.style.cursor = elements.length > 0 ? 'pointer' : 'default';
-            }
-            // Dim non-active datasets on hover
-            const activeDatasets = {};
-            elements.forEach(el => {
-              activeDatasets[el.datasetIndex] = true;
-            });
-            this.data.datasets.forEach((dataset, index) => {
-              if (activeDatasets[index]) {
-                dataset.backgroundColor = getOriginalBg(index);
-                dataset.borderColor = getOriginalBorder(index);
-                dataset.pointRadius = dataset.type === 'line' ? 5 : undefined;
-                if (dataset.type === 'line') {
-                  dataset.borderWidth = 3;
-                }
-              } else {
-                if (dataset.type === 'line') {
-                  dataset.borderColor = 'rgba(63, 185, 80, 0.15)';
-                  dataset.backgroundColor = 'rgba(63, 185, 80, 0.02)';
-                  dataset.pointRadius = 2;
-                  dataset.borderWidth = 1;
-                } else {
-                  dataset.backgroundColor = 'rgba(128, 128, 128, 0.15)';
-                  dataset.borderColor = 'rgba(128, 128, 128, 0.1)';
-                }
-              }
+            if (this.canvas) this.canvas.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+            const active = {};
+            elements.forEach(el => active[el.datasetIndex] = true);
+            this.data.datasets.forEach((ds, i) => {
+              if (active[i]) { ds.backgroundColor = getOrigBg(i); ds.borderColor = getOrigBorder(i); ds.pointRadius = ds.type === 'line' ? 5 : undefined; if (ds.type === 'line') ds.borderWidth = 3; }
+              else if (ds.type === 'line') { ds.borderColor = 'rgba(63,185,80,0.15)'; ds.backgroundColor = 'rgba(63,185,80,0.02)'; ds.pointRadius = 2; ds.borderWidth = 1; }
+              else { ds.backgroundColor = 'rgba(128,128,128,0.15)'; ds.borderColor = 'rgba(128,128,128,0.1)'; }
             });
             this.update('none');
           },
-          animation: {
-            duration: 300
-          }
+          animation: { duration: 300 }
         }
       });
       
-      // Store original colors for restore on mouse leave
-      function getOriginalBg(i) {
-        return datasets[i].backgroundColor;
-      }
-      function getOriginalBorder(i) {
-        return datasets[i].borderColor;
-      }
+      function getOrigBg(i) { return datasets[i].backgroundColor; }
+      function getOrigBorder(i) { return datasets[i].borderColor; }
     }
 
     function resetFilters() {
