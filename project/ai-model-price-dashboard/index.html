@@ -631,37 +631,83 @@
         priceChart.destroy();
       }
       
-      const models = getFilteredModels().slice(0, 10);
+      // Use selected models for comparison, or default to first 10
+      let models;
+      if (compareList.length > 0) {
+        models = allModels.filter(m => compareList.includes(m.model_id));
+      } else {
+        models = getFilteredModels().slice(0, 10);
+      }
+      
+      // Determine which performance metric to show based on task type
+      let performanceLabel, performanceData;
+      const taskType = document.getElementById('taskType')?.value || 'coding';
+      
+      if (taskType === 'coding') {
+        performanceLabel = '编码性能';
+        performanceData = models.map(m => m.quality_score);
+      } else if (taskType === 'reasoning') {
+        performanceLabel = '推理性能';
+        performanceData = models.map(m => m.quality_score);
+      } else if (taskType === 'image') {
+        performanceLabel = '图像性能';
+        performanceData = models.map(m => m.quality_score);
+      } else {
+        performanceLabel = '质量评分';
+        performanceData = models.map(m => m.quality_score);
+      }
+      
+      const datasets = [
+        {
+          label: '输入价格 ($/M)',
+          data: models.map(m => m.input_price_per_1m),
+          backgroundColor: 'rgba(88, 166, 255, 0.6)',
+          borderColor: 'rgba(88, 166, 255, 1)',
+          borderWidth: 1,
+          type: 'bar',
+          yAxisID: 'y'
+        },
+        {
+          label: '输出价格 ($/M)',
+          data: models.map(m => m.output_price_per_1m),
+          backgroundColor: 'rgba(210, 153, 34, 0.6)',
+          borderColor: 'rgba(210, 153, 34, 1)',
+          borderWidth: 1,
+          type: 'bar',
+          yAxisID: 'y'
+        },
+        {
+          label: performanceLabel,
+          data: performanceData,
+          borderColor: 'rgba(63, 185, 80, 1)',
+          backgroundColor: 'rgba(63, 185, 80, 0.1)',
+          borderWidth: 2,
+          type: 'line',
+          pointBackgroundColor: 'rgba(63, 185, 80, 1)',
+          pointBorderColor: '#fff',
+          pointBorderWidth: 2,
+          pointRadius: 4,
+          yAxisID: 'y1'
+        }
+      ];
       
       priceChart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: models.map(m => m.name),
-          datasets: [
-            {
-              label: '输入价格 ($/M)',
-              data: models.map(m => m.input_price_per_1m),
-              backgroundColor: 'rgba(88, 166, 255, 0.6)',
-              borderColor: 'rgba(88, 166, 255, 1)',
-              borderWidth: 1
-            },
-            {
-              label: '输出价格 ($/M)',
-              data: models.map(m => m.output_price_per_1m),
-              backgroundColor: 'rgba(210, 153, 34, 0.6)',
-              borderColor: 'rgba(210, 153, 34, 1)',
-              borderWidth: 1
-            }
-          ]
+          datasets: datasets
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           plugins: {
-            legend: { labels: { color: isDarkMode ? '#e6edf3' : '#1f2328' } },
+            legend: { 
+              labels: { color: isDarkMode ? '#e6edf3' : '#1f2328' },
+              position: 'top'
+            },
             title: {
               display: true,
-              text: '输入/输出价格对比 (前10个模型)',
+              text: compareList.length > 0 ? '选中模型对比' : '输入/输出价格对比 (前10个模型)',
               color: isDarkMode ? '#e6edf3' : '#1f2328',
               font: { size: 16 }
             }
@@ -672,9 +718,31 @@
               grid: { color: isDarkMode ? 'rgba(48, 54, 61, 0.5)' : 'rgba(208, 215, 222, 0.5)' }
             },
             y: {
+              type: 'linear',
+              display: true,
+              position: 'left',
               beginAtZero: true,
+              title: {
+                display: true,
+                text: '价格 ($/M)',
+                color: isDarkMode ? '#e6edf3' : '#1f2328'
+              },
               ticks: { color: isDarkMode ? '#8b949e' : '#656d76', callback: v => '$' + v },
               grid: { color: isDarkMode ? 'rgba(48, 54, 61, 0.5)' : 'rgba(208, 215, 222, 0.5)' }
+            },
+            y1: {
+              type: 'linear',
+              display: true,
+              position: 'right',
+              beginAtZero: true,
+              max: 100,
+              title: {
+                display: true,
+                text: performanceLabel,
+                color: isDarkMode ? '#e6edf3' : '#1f2328'
+              },
+              ticks: { color: isDarkMode ? '#8b949e' : '#656d76' },
+              grid: { drawOnChartArea: false }
             }
           }
         }
