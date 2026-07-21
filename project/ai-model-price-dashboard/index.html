@@ -88,17 +88,32 @@
       color: var(--text-secondary) !important;
     }
     
+    /* Force navbar small text to use CSS variable for theme support */
     .navbar small.text-muted {
-      color: #9da5b1 !important;
+      color: var(--text-secondary) !important;
+      opacity: 0.8;
     }
     
     /* Navbar icon text color fix */
-    .navbar i.bi-bar-chart-line-fill {
+    .navbar-brand i.bi-bar-chart-line-fill {
       color: var(--accent-blue) !important;
     }
     
     .back-link:hover i {
       transform: translateX(-2px);
+    }
+    
+    /* Light mode navbar overrides */
+    body.light-mode .navbar-brand i.bi-bar-chart-line-fill {
+      color: #0969da !important;
+    }
+    
+    body.light-mode .navbar-brand span {
+      color: #1f2328 !important;
+    }
+    
+    body.light-mode .navbar small.text-muted {
+      color: #4a5568 !important;
     }
     
     .control-bar {
@@ -222,12 +237,18 @@
     /* Override Bootstrap table row background */
     .data-table tbody tr {
       background-color: var(--bg-card) !important;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .data-table tbody tr:hover td {
+      background-color: rgba(88, 166, 255, 0.05) !important;
     }
     
     .data-table tbody tr:nth-of-type(even) {
-      background-color: rgba(255,255,255,0.02) !important;
+      background-color: var(--bg-secondary) !important;
     }
     
+    /* Table header styles */
     .data-table th {
       background-color: var(--bg-secondary);
       color: var(--text-primary);
@@ -235,6 +256,7 @@
       font-weight: 600;
       cursor: pointer;
       user-select: none;
+      padding: 12px 8px;
     }
     
     .data-table th:hover {
@@ -244,10 +266,7 @@
     .data-table td {
       border-bottom: 1px solid var(--border-color);
       vertical-align: middle;
-    }
-    
-    .data-table tr:hover td {
-      background-color: rgba(88, 166, 255, 0.05);
+      padding: 10px 8px;
     }
     
     .tier-badge {
@@ -314,97 +333,32 @@
       font-weight: 500;
     }
     
-    /* Light mode overrides for visibility */
-    body.light-mode .keyword-badge {
-      background-color: rgba(9, 105, 218, 0.12);
-      color: #0969da;
-      font-weight: 500;
+    /* Bootstrap table overrides for theme consistency */
+    .table > :not(caption) > * > * {
+      background-color: var(--bg-card);
+      color: var(--text-primary);
     }
     
-    body.light-mode .navbar-brand span {
-      color: #1f2328 !important;
+    .table-hover > tbody > tr:hover > * {
+      background-color: rgba(88, 166, 255, 0.05) !important;
     }
     
-    body.light-mode .navbar-brand i.bi-bar-chart-line-fill {
-      color: #0969da !important;
+    .table > thead > * > * {
+      background-color: var(--bg-secondary);
+      color: var(--text-primary);
     }
     
-    body.light-mode .back-link {
-      color: #24292f;
+    /* Ensure table cells have proper borders */
+    .table > :not(caption) > * > * {
+      border-bottom: 1px solid var(--border-color);
     }
     
-    body.light-mode .back-link:hover {
-      color: #0969da;
+    .table > tbody > tr > td {
+      background-color: var(--bg-card) !important;
     }
     
-    body.light-mode .back-link i {
-      color: #0969da;
-    }
-    
-    body.light-mode .theme-toggle-btn i {
-      color: #1f2328;
-    }
-    
-    body.light-mode .form-select,
-    body.light-mode .form-control {
-      color: #1f2328;
-    }
-    
-    body.light-mode .form-select option {
-      color: #1f2328;
-      background-color: #ffffff;
-    }
-    
-    body.light-mode .data-table th {
-      color: #1f2328;
-    }
-    
-    body.light-mode .data-table td {
-      color: #24292f;
-    }
-    
-    body.light-mode .tier-badge.premium {
-      background-color: rgba(130, 80, 223, 0.12);
-      color: #8250df;
-    }
-    
-    body.light-mode .tier-badge.standard {
-      background-color: rgba(9, 105, 218, 0.12);
-      color: #0969da;
-    }
-    
-    body.light-mode .tier-badge.budget {
-      background-color: rgba(154, 103, 0, 0.12);
-      color: #9a6700;
-    }
-    
-    body.light-mode .tier-badge.free {
-      background-color: rgba(26, 127, 55, 0.12);
-      color: #1a7f37;
-    }
-    
-    body.light-mode .quality-score.high { color: #1a7f37; }
-    body.light-mode .quality-score.medium { color: #9a6700; }
-    body.light-mode .quality-score.low { color: #cf222e; }
-    
-    body.light-mode .recommendation-card {
-      background: linear-gradient(135deg, rgba(26, 127, 55, 0.08), rgba(9, 105, 218, 0.06));
-    }
-    
-    body.light-mode .comparison-panel {
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
-    
-    body.light-mode .control-bar {
-      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-    }
-    
-    body.light-mode .footer {
-      color: #4a5568;
-    }
-    
-    body.light-mode .text-muted {
-      color: #4a5568 !important;
+    .table > tbody > tr:nth-of-type(even) > td {
+      background-color: var(--bg-secondary) !important;
     }
     
     @media (max-width: 768px) {
@@ -420,7 +374,7 @@
   <nav class="navbar" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="/ZSA4-inspired/">
-        <i class="bi bi-bar-chart-line-fill" style="color: var(--accent-blue);"></i>
+        <i class="bi bi-bar-chart-line-fill"></i>
         <span>AI 模型价格对比仪表盘</span>
       </a>
       <a class="back-link ms-auto" href="/ZSA4-inspired/">
@@ -826,31 +780,20 @@
       }
       
       // Determine which performance metric to show based on task type
-      let performanceLabel, performanceData;
       const taskType = document.getElementById('taskType')?.value || 'coding';
-      
-      if (taskType === 'coding') {
-        performanceLabel = '编码性能';
-        performanceData = models.map(m => m.quality_score);
-      } else if (taskType === 'reasoning') {
-        performanceLabel = '推理性能';
-        performanceData = models.map(m => m.quality_score);
-      } else if (taskType === 'image') {
-        performanceLabel = '图像性能';
-        performanceData = models.map(m => m.quality_score);
-      } else {
-        performanceLabel = '质量评分';
-        performanceData = models.map(m => m.quality_score);
-      }
+      const performanceLabel = {
+        coding: '编码性能',
+        reasoning: '推理性能', 
+        image: '图像性能'
+      }[taskType] || '质量评分';
+      const performanceData = models.map(m => m.quality_score);
       
       const maxPrice = Math.max(...models.map(m => m.output_price_per_1m));
-      const maxInputPrice = Math.max(...models.map(m => m.input_price_per_1m));
       const maxScore = Math.max(...performanceData);
       const minScore = Math.min(...performanceData);
       const scoreRange = maxScore - minScore;
       const pricePadding = Math.max(maxPrice * 0.15, 1);
       const scorePadding = Math.max(scoreRange * 0.2, 5);
-      
       const datasets = [
         {
           label: '输入价格 ($/M)',
