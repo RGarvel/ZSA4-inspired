@@ -41,9 +41,16 @@
     }
     
     .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background-color: var(--bg-secondary) !important;
       border-bottom: 1px solid var(--border-color);
       transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .navbar-brand span {
+      color: var(--text-primary);
     }
     
     .back-link {
@@ -186,10 +193,70 @@
       background-color: rgba(210, 153, 34, 0.2);
       color: var(--accent-orange);
     }
+    
+    /* Light mode overrides for visibility */
+    body.light-mode .status-badge.live {
+      background-color: rgba(26, 127, 55, 0.12);
+      color: #1a7f37;
+    }
+    
+    body.light-mode .status-badge.dev {
+      background-color: rgba(154, 103, 0, 0.12);
+      color: #9a6700;
+    }
+    
+    body.light-mode .back-link {
+      color: #24292f;
+    }
+    
+    body.light-mode .back-link:hover {
+      color: #0969da;
+    }
+    
+    body.light-mode .back-link i {
+      color: #0969da;
+    }
+    
+    body.light-mode .navbar-brand span {
+      color: #1f2328 !important;
+    }
+    
+    body.light-mode .navbar-brand i.bi-lightbulb-fill {
+      color: #9a6700 !important;
+    }
+    
+    body.light-mode .theme-toggle-btn i {
+      color: #1f2328;
+    }
+    
+    body.light-mode .project-card p {
+      color: #4a5568;
+    }
+    
+    body.light-mode .hero-section h1 {
+      color: #1f2328;
+    }
+    
+    body.light-mode .hero-section p {
+      color: #4a5568;
+    }
+    
+    body.light-mode .project-card h3 {
+      color: #1f2328;
+    }
+    
+    body.light-mode .badge.bg-secondary {
+      background-color: rgba(9, 105, 218, 0.12);
+      color: #0969da;
+    }
+    
+    body.light-mode .project-card {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark">
+  <nav class="navbar" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="/ZSA4-inspired/">
         <i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i>
@@ -285,6 +352,16 @@
     document.addEventListener('DOMContentLoaded', () => {
       applyTheme();
       renderProjects();
+    });
+    
+    // Scroll to top when clicking navbar blank area
+    document.getElementById('mainNavbar').addEventListener('click', function(e) {
+      const target = e.target;
+      const isLink = target.tagName === 'A' || target.closest('a');
+      const isBtn = target.tagName === 'BUTTON' || target.closest('button');
+      if (!isLink && !isBtn) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     });
   </script>
 </body>

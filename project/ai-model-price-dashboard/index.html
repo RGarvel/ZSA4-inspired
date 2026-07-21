@@ -13,7 +13,7 @@
       --bg-secondary: #161b22;
       --bg-card: #1c2333;
       --text-primary: #e6edf3;
-      --text-secondary: #8b949e;
+      --text-secondary: #9da5b1;
       --accent-blue: #58a6ff;
       --accent-green: #3fb950;
       --accent-purple: #bc8cff;
@@ -34,7 +34,7 @@
       --bg-secondary: #ffffff;
       --bg-card: #ffffff;
       --text-primary: #1f2328;
-      --text-secondary: #656d76;
+      --text-secondary: #4a5568;
       --accent-blue: #0969da;
       --accent-green: #1a7f37;
       --accent-purple: #8250df;
@@ -44,9 +44,16 @@
     }
     
     .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background-color: var(--bg-secondary) !important;
       border-bottom: 1px solid var(--border-color);
       transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .navbar-brand span {
+      color: var(--text-primary);
     }
     
     .back-link {
@@ -243,6 +250,109 @@
       font-size: 0.85rem;
     }
     
+    /* Keyword badges for categories */
+    .keyword-badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      background-color: rgba(88, 166, 255, 0.15);
+      color: var(--accent-blue);
+      font-weight: 500;
+    }
+    
+    /* Light mode overrides for visibility */
+    body.light-mode .keyword-badge {
+      background-color: rgba(9, 105, 218, 0.12);
+      color: #0969da;
+      font-weight: 500;
+    }
+    
+    body.light-mode .navbar-brand span {
+      color: #1f2328 !important;
+    }
+    
+    body.light-mode .navbar-brand i.bi-bar-chart-line-fill {
+      color: #0969da !important;
+    }
+    
+    body.light-mode .back-link {
+      color: #24292f;
+    }
+    
+    body.light-mode .back-link:hover {
+      color: #0969da;
+    }
+    
+    body.light-mode .back-link i {
+      color: #0969da;
+    }
+    
+    body.light-mode .theme-toggle-btn i {
+      color: #1f2328;
+    }
+    
+    body.light-mode .form-select,
+    body.light-mode .form-control {
+      color: #1f2328;
+    }
+    
+    body.light-mode .form-select option {
+      color: #1f2328;
+      background-color: #ffffff;
+    }
+    
+    body.light-mode .data-table th {
+      color: #1f2328;
+    }
+    
+    body.light-mode .data-table td {
+      color: #24292f;
+    }
+    
+    body.light-mode .tier-badge.premium {
+      background-color: rgba(130, 80, 223, 0.12);
+      color: #8250df;
+    }
+    
+    body.light-mode .tier-badge.standard {
+      background-color: rgba(9, 105, 218, 0.12);
+      color: #0969da;
+    }
+    
+    body.light-mode .tier-badge.budget {
+      background-color: rgba(154, 103, 0, 0.12);
+      color: #9a6700;
+    }
+    
+    body.light-mode .tier-badge.free {
+      background-color: rgba(26, 127, 55, 0.12);
+      color: #1a7f37;
+    }
+    
+    body.light-mode .quality-score.high { color: #1a7f37; }
+    body.light-mode .quality-score.medium { color: #9a6700; }
+    body.light-mode .quality-score.low { color: #cf222e; }
+    
+    body.light-mode .recommendation-card {
+      background: linear-gradient(135deg, rgba(26, 127, 55, 0.08), rgba(9, 105, 218, 0.06));
+    }
+    
+    body.light-mode .comparison-panel {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    
+    body.light-mode .control-bar {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    
+    body.light-mode .footer {
+      color: #4a5568;
+    }
+    
+    body.light-mode .text-muted {
+      color: #4a5568 !important;
+    }
+    
     @media (max-width: 768px) {
       .chart-container { height: 300px; padding: 1rem; }
       .control-bar .row { margin: 0; }
@@ -251,7 +361,7 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark">
+  <nav class="navbar" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="/ZSA4-inspired/">
         <i class="bi bi-bar-chart-line-fill" style="color: var(--accent-blue);"></i>
@@ -383,6 +493,16 @@
       applyTheme();
     }
 
+    // Scroll to top when clicking navbar blank area
+    document.getElementById('mainNavbar').addEventListener('click', function(e) {
+      const target = e.target;
+      const isLink = target.tagName === 'A' || target.closest('a');
+      const isBtn = target.tagName === 'BUTTON' || target.closest('button');
+      if (!isLink && !isBtn) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+
     document.addEventListener('DOMContentLoaded', async () => {
       applyTheme();
       await loadModels();
@@ -463,7 +583,7 @@
             <td>$${formatPrice(model.output_price_per_1m)}</td>
             <td>${formatImagePrice(model.image_generation_price)}</td>
             <td><span class="quality-score ${qualityClass}">${model.quality_score}</span></td>
-            <td>${model.categories.slice(0, 3).map(c => `<span class="badge bg-secondary me-1" style="font-size:0.65rem">${c}</span>`).join('')}</td>
+            <td>${model.categories.slice(0, 3).map(c => `<span class="keyword-badge" style="font-size:0.65rem">${c}</span>`).join('')}</td>
             <td>
               <button class="btn btn-sm compare-btn ${isComparing ? 'compare-selected' : 'btn-outline-secondary'}" 
                       onclick="toggleCompare('${model.model_id}')">
