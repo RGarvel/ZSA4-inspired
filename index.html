@@ -76,6 +76,24 @@
       transition: background-color 0.3s, border-color 0.3s;
     }
     
+    .stats-card.major-event-card {
+      cursor: pointer;
+    }
+    
+    .stats-card.major-event-card:hover {
+      border-color: #ff6b6b;
+      box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
+    }
+    
+    .stats-card.major-event-card.active {
+      border-color: #ff6b6b;
+      background-color: rgba(255, 107, 107, 0.1);
+    }
+    
+    .stats-card.major-event-card.active .stats-number {
+      color: #ff6b6b;
+    }
+    
     .stats-number {
       font-size: 2rem;
       font-weight: 700;
@@ -333,9 +351,9 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="stats-card">
+        <div class="stats-card major-event-card" id="majorCountCard" onclick="toggleMajorEvents()" title="点击筛选重大事件">
           <div class="stats-number" id="majorCount">0</div>
-          <div class="stats-label">重大事件</div>
+          <div class="stats-label">重大事件 <i class="bi bi-funnel"></i></div>
         </div>
       </div>
       <div class="col-md-4">
@@ -346,9 +364,9 @@
       </div>
     </div>
 
-    <!-- Category Tabs + Major Events Filter -->
+    <!-- Category Tabs -->
     <div class="mb-4">
-      <div class="d-flex flex-wrap gap-2 align-items-center" id="categoryTabs">
+      <div class="d-flex flex-wrap gap-2" id="categoryTabs">
         <span class="category-tab active" data-category="all" onclick="filterByCategory('all')">
           <i class="bi bi-grid"></i> 全部
         </span>
@@ -363,9 +381,6 @@
         </span>
         <span class="category-tab" data-category="academic_paper" onclick="filterByCategory('academic_paper')">
           <i class="bi bi-journal-text"></i> 学术论文 (<span class="cat-count">0</span>)
-        </span>
-        <span class="category-tab" id="majorEventsBtn" onclick="toggleMajorEvents()" style="cursor: pointer;">
-          <i class="bi bi-exclamation-triangle"></i> 重大事件
         </span>
       </div>
     </div>
@@ -478,13 +493,11 @@
 
     function toggleMajorEvents() {
       showMajorEventsOnly = !showMajorEventsOnly;
-      const btn = document.getElementById('majorEventsBtn');
+      const card = document.getElementById('majorCountCard');
       if (showMajorEventsOnly) {
-        btn.classList.add('major-event-active');
-        btn.innerHTML = '<i class="bi bi-exclamation-circle-fill"></i> 仅看重大事件';
+        card.classList.add('active');
       } else {
-        btn.classList.remove('major-event-active');
-        btn.innerHTML = '<i class="bi bi-exclamation-triangle"></i> 重大事件';
+        card.classList.remove('active');
       }
       render();
     }
