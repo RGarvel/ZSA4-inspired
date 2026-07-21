@@ -1,0 +1,80 @@
+[
+  {
+    "id": "st-1001",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "GigaAI计划香港IPO，估值达30亿美元",
+    "raw_summary": "北京具身智能与通用机器人初创公司GigaAI（极视角）正计划于2026年内进行香港IPO。CEO黄冠宣布，公司即将完成新一轮融资，估值将达30亿美元。此前三个月内已完成四轮A轮融资，合计融资约7390万美元。此举标志着中国具身智能赛道首个冲击港股的标志性事件。",
+    "source": "The Standard HK / GuruFocus / Asia Business Outlook",
+    "url": "https://www.thestandard.com.hk/innovation/article/337784/Embodied-AI-startup-GigaAI-plans-Hong-Kong-IPO-at-US3b-valuation",
+    "keywords": ["GigaAI", "香港IPO", "具身智能", "机器人", "估值30亿美元"],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1002",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "CuspAI获4.5亿美元B轮融资，杰夫·贝索斯与英国政府联合投资",
+    "raw_summary": "剑桥AI材料发现初创公司CuspAI完成4.5亿美元B轮融资，由Kleiner Perkins和NEA领投，杰夫·贝索斯及英国政府主权AI基金参投，公司估值达26亿美元。CuspAI利用生成式AI模拟预测材料成分性能，应用于半导体、能源和气候领域。这是英国AI创业史上最大单笔融资之一。",
+    "source": "The Guardian / CoinAlertNews / CryptoBriefing",
+    "url": "https://www.theguardian.com/technology/2026/jul/20/jeff-bezos-uk-government-invest-in-2bn-british-startup-cuspai",
+    "keywords": ["CuspAI", "贝索斯", "B轮融资", "AI材料发现", "英国政府", "Kleiner Perkins"],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1003",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "月之暗面Kimi K3模型引发订阅洪峰，ARR突破3亿美元",
+    "raw_summary": "中国AI初创公司月之暗面（Moonshot AI）发布2.8万亿参数开源模型Kimi K3，直接挑战Anthropic和OpenAI领先系统。上线48小时后需求激增导致Kimi订阅服务暂停，现有用户优先。公司年度经常性收入（ARR）已达3亿美元。与此同时，OpenAI已收购Ona用于Codex项目。",
+    "source": "Cryptonomist / Bloomberg / WindowsNews.AI",
+    "url": "https://en.cryptonomist.ch/2026/07/20/moonshot-ai-ipo-growth/",
+    "keywords": ["月之暗面", "Moonshot AI", "Kimi K3", "订阅暂停", "ARR 3亿美元", "开源模型"],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1004",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "李开复01.ai筹备香港IPO，目标2027年上市",
+    "raw_summary": "李开复创办的AI公司01.ai正在推进Pre-IPO轮融资，目标2027年在香港上市。公司在世界人工智能大会（上海）上透露，正在拆除红筹架构以准备港股IPO，并预计明年成为中国首家实现单季度盈利的AI 2.0公司。公司战略已从预训练转向企业级AI服务销售。",
+    "source": "Bloomberg / The Next Web",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-20/ai-pioneer-kai-fu-lee-s-startup-targets-hong-kong-ipo-next-year",
+    "keywords": ["01.ai", "李开复", "香港IPO", "Pre-IPO", "红筹架构", "AI盈利"],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1005",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "MENA地区2026上半年融资17亿美元，7月加速至7.83亿美元",
+    "raw_summary": "中东和北非（MENA）地区2026年上半年共完成242轮融资，总额17亿美元，尽管地缘政治动荡仍保持投资活力。7月首周即达到7.83亿美元（57笔交易），其中沙特AI基础设施初创公司Think获得800万美元种子前轮投资。区域AI和气候科技成为投资主力。",
+    "source": "Wamda / Arab News / Saudi Press",
+    "url": "https://www.wamda.com/2026/07/mena-startups-raise-1-7-billion-h1-2026-despite-regional-uncertainty",
+    "keywords": ["MENA", "中东", "创业融资", "Think", "AI基础设施", "沙特"],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-1006",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "推理基础设施初创Infinity获1500万美元融资",
+    "raw_summary": "AI推理基础设施公司Infinity完成1500万美元融资，估值1亿美元。投资方包括Touring Capital、Principal VC以及来自OpenAI和Anthropic的研究人员。同期Neo公司完成1亿美元融资，致力于将软件转变为自主系统以保护企业安全。",
+    "source": "TechCrunch / TechStartups",
+    "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
+    "keywords": ["Infinity", "AI推理", "种子轮融资", "Neo", "自主系统"],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  }
+]

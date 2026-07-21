@@ -1,0 +1,67 @@
+[
+  {
+    "id": "pt-1001",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "Anthropic Fable 5 定价规则生效：Max/Team Premium 永久包含，Pro 用户不享",
+    "raw_summary": "自2026年7月20日起（7月21日正式执行），Anthropic 将 Claude Fable 5 设为 Max 和 Team Premium 订阅的永久功能。Pro 和 Team Standard 用户无法获得 Fable 5。API 定价为输入 $10/百万 token、输出 $50/百万 token，缓存写入 5 分钟 $12.50/百万、1 小时 $20/百万，缓存读取 $1/百万。此前 Fable 5 因出口管制被禁约三周，已于7月1日解除管制恢复访问。",
+    "source": "LaoZhang AI Blog / Anthropic 官方",
+    "url": "https://blog.laozhang.ai/en/posts/claude-fable-5-usage-credit-cost",
+    "keywords": ["Anthropic", "Fable 5", "pricing", "subscription", "Claude", "API定价"],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "pt-1002",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "中国 Moonshot AI 发布 Kimi K3：2.8万亿参数 MoE 模型，7月27日开放权重",
+    "raw_summary": "Moonshot AI 于7月16日发布 Kimi K3 旗舰模型，采用2.8万亿参数混合专家架构，支持100万 token 上下文窗口和持续推理模式。全量模型权重将于7月27日开源。该发布在 WAIC 上海世界人工智能大会上展出，引发全球市场关注，被视为中国在基础大模型领域缩小与 Anthropic/OpenAI 差距的关键一步。",
+    "source": "AP News / HowAIWorks / Moonshot AI 官方博客",
+    "url": "https://howaiworks.ai/blog/moonshot-kimi-k3-release-announcement",
+    "keywords": ["Moonshot AI", "Kimi K3", "MoE", "开源模型", "中国AI", "WAIC"],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "pt-1003",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "阿里巴巴发布 Qwen3.8-Max 预览版：2.4万亿参数多模态模型",
+    "raw_summary": "7月19日阿里巴巴 Qwen 团队发布了 Qwen3.8-Max-Preview 预览版，这是一个2.4万亿参数的多模态大模型，被描述为在基准测试中仅次于 Fable 5。发布仅数日后 Moonshot AI 发布 Kimi K3，凸显中美 AI 竞争加剧。阿里巴巴股价在香港市场上涨逾5%。",
+    "source": "Bloomberg / MarkTechPost",
+    "url": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/",
+    "keywords": ["阿里巴巴", "Qwen", "多模态", "大模型", "中美AI竞争"],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "pt-1004",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "欧盟 AI 法案执法临近：2026年8月2日启动，罚款高达3500万欧元或7%全球营业额",
+    "raw_summary": "欧盟《AI法案》将于2026年8月2日正式进入执法阶段，距此不足两周。违规罚款可达3500万欧元或全球营业额的7%。首批适用义务针对营销和销售团队日常使用的工具，包括聊天机器人和AI生成内容。爱尔兰正成为欧盟主要AI执法枢纽。2026年修正案新增禁止AI生成非自愿色情内容的条款。",
+    "source": "LinkedIn / EU Digital Strategy / AI in Europe",
+    "url": "https://www.linkedin.com/pulse/eu-ai-act-starts-enforcing-less-than-30-days-teams-first-pricope--yqate",
+    "keywords": ["EU AI Act", "监管", "合规", "执法", "GDPR", "AI治理"],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-1005",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "Google Gemini 3.5 Pro 再次延期：原定6月发布，7月仍未确定上线日期",
+    "raw_summary": "Google Gemini 3.5 Pro 原计划在6月发布（Google I/O 承诺），但已两次延期。截至7月17日仍未确认新发布日期。据报四名高级研究员离职加入竞争对手，且训练数据更新后性能未达内部预期。该模型定位为200万token上下文窗口和Deep Think推理模式，面向Ultra订阅用户（$250/月）。",
+    "source": "TechPillow / AwesomeAgents / FactCheckRadar",
+    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
+    "keywords": ["Google", "Gemini", "延期", "Deep Think", "AI竞争"],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  }
+]

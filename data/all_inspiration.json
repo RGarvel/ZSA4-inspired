@@ -1,64 +1,396 @@
 [
   {
-    "id": "ait-36",
+    "id": "ait-7210001",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "title": "Bloomberg评论：自我改进的AI模型看起来真正令人恐惧",
-    "raw_summary": "Bloomberg专栏作家Parmy Olson于7月21日发表文章指出，AI的自我改进能力正在呈现令人不安的趋势。文章探讨了递归自我改进（RSI）技术如何使AI系统能够自主优化自身的代码、架构和训练方法。OpenAI的GPT-5.6 Sol已展示出自主训练子模型的能力，Sakana AI也在东京设立了专门的RSI实验室。多位AI安全研究者警告，当AI系统开始改进AI系统时，人类可能逐渐失去对技术发展方向的实质监督能力。这篇文章呼应了Anthropic此前呼吁全球暂停AI发展的立场。",
+    "title": "博通社评论：自我改进AI模型“真正令人恐怖”——从科幻走向现实的智能爆炸风险",
+    "raw_summary": "7月21日，博通社Opinion发表题为《自我改进的AI模型看起来真正可怕》的深度评论文章。文章指出，自我进化AI不再像科幻电影那样“逃逸到互联网上造成破坏”，而是更像一名必须说服人类监督者的初级研究员。作者认为，随着AI开始自动化科学发现过程的最后一环——自我发现的智能体持续改进自身的能力——这一趋势正从理论变为现实。",
     "source": "Bloomberg Opinion",
     "url": "https://www.bloomberg.com/opinion/articles/2026-07-21/self-improving-ai-models-look-genuinely-scary",
     "keywords": [
-      "自我改进",
-      "递归自我改进",
-      "RSI",
-      "AI安全",
+      "self-improving AI",
       "Bloomberg",
-      "GPT-5.6"
+      "recursive self-improvement",
+      "AI safety",
+      "autonomous AI",
+      "intelligence explosion"
     ],
-    "original_language": "en",
-    "importance": 4,
-    "is_major_event": false
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
   },
   {
-    "id": "ait-37",
+    "id": "ait-7210002",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "title": "Google研发Frozen v2专用AI芯片：Gemini推理效率提升6-10倍",
-    "raw_summary": "据The Information报道，Google正在开发一款专为Gemini模型定制的服务器芯片，内部代号\"Frozen v2\"。该芯片将Gemini架构的部分组件直接固化到硅片中，可减少推理过程中的计算和数据移动。据称Frozen v2的能效比Google现有TPU芯片高出6到10倍，即单位功耗下处理的token数量增加6-10倍。这一芯片开发反映了AI算力需求的急剧增长——Google Cloud已因算力不足而拒绝部分客户订单。Frozen v2预计将在2027年投入部署。",
-    "source": "The Information / Quartz / SiliconANGLE",
-    "url": "https://www.theinformation.com/articles/google-plans-new-frozen-chip-run-ai-models-efficiently",
+    "title": "谷歌开发Frozen v2专用芯片：将Gemini架构固化至硅片，能效提升6-10倍",
+    "raw_summary": "据The Information 7月20日报道（7月21日被广泛传播），谷歌正在开发一款名为\"Frozen v2\"的服务器芯片，将Gemini AI模型的神经网络架构直接固化到硬件电路中。该芯片预计2028年部署，能效比现有TPU提升6至10倍（tokens/Watt）。此举旨在应对全球算力短缺危机，是模型与芯片协同设计的重要里程碑。",
+    "source": "The Information / TechCrunch / Bloomberg",
+    "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
     "keywords": [
       "Google",
       "Frozen v2",
-      "AI芯片",
+      "AI chip",
       "Gemini",
       "TPU",
-      "能效",
-      "基础设施"
+      "hardware co-design",
+      "energy efficiency"
+    ],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-7210003",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Anthropic推进IPO进程：7月15日银行家启动投资者会议，目标10月纳斯达上市估值9650亿美元",
+    "raw_summary": "Anthropic于2026年6月1日秘密向SEC提交S-1文件后，7月15日取得关键进展——投资银行家已开始安排投资者会议，为潜在的10月纳斯达上市做准备。此前Anthropic完成Series H融资650亿美元，估值达9650亿美元，年化收入约300亿美元，首次超越OpenAI的250亿。",
+    "source": "The Agent Report / explainx.ai / BitMEX",
+    "url": "https://the-agent-report.com/2026/07/anthropic-ipo-update-july-2026-trademark-litigation/",
+    "keywords": [
+      "Anthropic",
+      "IPO",
+      "S-1 filing",
+      "Nasdaq",
+      "SEC",
+      "Claude",
+      "AI funding"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-7210004",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Sakana AI发布Fugu-Cyber：专为网络防守设计的多智能体编排模型刷新SOTA",
+    "raw_summary": "7月21日，东京AI研究公司Sakana AI正式发布Fugu-Cyber，这是其Fugu多智能体编排模型的网络防守专项更新版本。该模型在CyberGym基准测试中达到86.9%，在CTI-REALM中达到72.1%，均为当前最高水平，与GPT-5.5-Cyber等前沿专用网络安全系统相当。",
+    "source": "Sakana AI Official / explainx.ai",
+    "url": "https://sakana.ai/fugu-cyber-release/",
+    "keywords": [
+      "Sakana AI",
+      "Fugu-Cyber",
+      "multi-agent",
+      "cybersecurity",
+      "orchestration",
+      "CyberGym",
+      "CTI-REALM"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210005",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Anthropic逆转政策：Claude Fable 5正式纳入Max和Team Premium计划永久免费使用",
+    "raw_summary": "7月21日，Anthropic宣布Claude Fable 5模型从临时促销转为正式功能：Claude Max和Team Premium订阅用户可永久免费使用Fable 5，占用每周额限的50%，不再需要额外积分。此前Anthropic因GPT-5.6竞争压力多次延长Fable 5的限时免费期，此次最终确定永久集成策略。",
+    "source": "AIToolsRecap / TechTimes / TheNewStack",
+    "url": "https://aitoolsrecap.com/Blog/anthropic-fable-5-returns-max-team-premium-july-2026",
+    "keywords": [
+      "Anthropic",
+      "Claude Fable 5",
+      "subscription",
+      "pricing",
+      "AI model wars",
+      "GPT-5.6"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-1001",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "GigaAI计划香港IPO，估值达30亿美元",
+    "raw_summary": "北京具身智能与通用机器人初创公司GigaAI（极视角）正计划于2026年内进行香港IPO。CEO黄冠宣布，公司即将完成新一轮融资，估值将达30亿美元。此前三个月内已完成四轮A轮融资，合计融资约7390万美元。此举标志着中国具身智能赛道首个冲击港股的标志性事件。",
+    "source": "The Standard HK / GuruFocus / Asia Business Outlook",
+    "url": "https://www.thestandard.com.hk/innovation/article/337784/Embodied-AI-startup-GigaAI-plans-Hong-Kong-IPO-at-US3b-valuation",
+    "keywords": [
+      "GigaAI",
+      "香港IPO",
+      "具身智能",
+      "机器人",
+      "估值30亿美元"
+    ],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1002",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "CuspAI获4.5亿美元B轮融资，杰夫·贝索斯与英国政府联合投资",
+    "raw_summary": "剑桥AI材料发现初创公司CuspAI完成4.5亿美元B轮融资，由Kleiner Perkins和NEA领投，杰夫·贝索斯及英国政府主权AI基金参投，公司估值达26亿美元。CuspAI利用生成式AI模拟预测材料成分性能，应用于半导体、能源和气候领域。这是英国AI创业史上最大单笔融资之一。",
+    "source": "The Guardian / CoinAlertNews / CryptoBriefing",
+    "url": "https://www.theguardian.com/technology/2026/jul/20/jeff-bezos-uk-government-invest-in-2bn-british-startup-cuspai",
+    "keywords": [
+      "CuspAI",
+      "贝索斯",
+      "B轮融资",
+      "AI材料发现",
+      "英国政府",
+      "Kleiner Perkins"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1003",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "月之暗面Kimi K3模型引发订阅洪峰，ARR突破3亿美元",
+    "raw_summary": "中国AI初创公司月之暗面（Moonshot AI）发布2.8万亿参数开源模型Kimi K3，直接挑战Anthropic和OpenAI领先系统。上线48小时后需求激增导致Kimi订阅服务暂停，现有用户优先。公司年度经常性收入（ARR）已达3亿美元。与此同时，OpenAI已收购Ona用于Codex项目。",
+    "source": "Cryptonomist / Bloomberg / WindowsNews.AI",
+    "url": "https://en.cryptonomist.ch/2026/07/20/moonshot-ai-ipo-growth/",
+    "keywords": [
+      "月之暗面",
+      "Moonshot AI",
+      "Kimi K3",
+      "订阅暂停",
+      "ARR 3亿美元",
+      "开源模型"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1005",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "MENA地区2026上半年融资17亿美元，7月加速至7.83亿美元",
+    "raw_summary": "中东和北非（MENA）地区2026年上半年共完成242轮融资，总额17亿美元，尽管地缘政治动荡仍保持投资活力。7月首周即达到7.83亿美元（57笔交易），其中沙特AI基础设施初创公司Think获得800万美元种子前轮投资。区域AI和气候科技成为投资主力。",
+    "source": "Wamda / Arab News / Saudi Press",
+    "url": "https://www.wamda.com/2026/07/mena-startups-raise-1-7-billion-h1-2026-despite-regional-uncertainty",
+    "keywords": [
+      "MENA",
+      "中东",
+      "创业融资",
+      "Think",
+      "AI基础设施",
+      "沙特"
     ],
     "original_language": "en",
     "importance": 3,
     "is_major_event": false
   },
   {
-    "id": "ait-38",
+    "id": "pt-1001",
     "date": "2026-07-21",
-    "category": "ai_tech",
-    "title": "Anthropic推进IPO进程：高盛、摩根士丹利、摩根大通开始安排投资者会议",
-    "raw_summary": "据CNBC和The Agent Report报道，Anthropic的三家承销商——高盛、摩根士丹利和摩根大通——已从7月15日起开始安排与潜在投资者的会议，为Anthropic可能在2026年10月进行的IPO做准备。Anthropic于2026年6月1日提交了保密S-1文件，最新私募估值达9650亿美元。如果按计划推进，Anthropic有望成为史上规模最大的科技IPO之一，并力争在OpenAI之前率先上市。",
-    "source": "CNBC / The Agent Report / Bloomberg",
-    "url": "https://www.cnbc.com/2026/07/15/anthropic-ipo-banks-investor-meetings.html",
+    "category": "product_tool",
+    "title": "Anthropic Fable 5 定价规则生效：Max/Team Premium 永久包含，Pro 用户不享",
+    "raw_summary": "自2026年7月20日起（7月21日正式执行），Anthropic 将 Claude Fable 5 设为 Max 和 Team Premium 订阅的永久功能。Pro 和 Team Standard 用户无法获得 Fable 5。API 定价为输入 $10/百万 token、输出 $50/百万 token，缓存写入 5 分钟 $12.50/百万、1 小时 $20/百万，缓存读取 $1/百万。此前 Fable 5 因出口管制被禁约三周，已于7月1日解除管制恢复访问。",
+    "source": "LaoZhang AI Blog / Anthropic 官方",
+    "url": "https://blog.laozhang.ai/en/posts/claude-fable-5-usage-credit-cost",
     "keywords": [
       "Anthropic",
-      "IPO",
-      "高盛",
-      "摩根士丹利",
-      "摩根大通",
-      "9650亿美元"
+      "Fable 5",
+      "pricing",
+      "subscription",
+      "Claude",
+      "API定价"
     ],
-    "original_language": "en",
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "pt-1002",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "中国 Moonshot AI 发布 Kimi K3：2.8万亿参数 MoE 模型，7月27日开放权重",
+    "raw_summary": "Moonshot AI 于7月16日发布 Kimi K3 旗舰模型，采用2.8万亿参数混合专家架构，支持100万 token 上下文窗口和持续推理模式。全量模型权重将于7月27日开源。该发布在 WAIC 上海世界人工智能大会上展出，引发全球市场关注，被视为中国在基础大模型领域缩小与 Anthropic/OpenAI 差距的关键一步。",
+    "source": "AP News / HowAIWorks / Moonshot AI 官方博客",
+    "url": "https://howaiworks.ai/blog/moonshot-kimi-k3-release-announcement",
+    "keywords": [
+      "Moonshot AI",
+      "Kimi K3",
+      "MoE",
+      "开源模型",
+      "中国AI",
+      "WAIC"
+    ],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "pt-1003",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "阿里巴巴发布 Qwen3.8-Max 预览版：2.4万亿参数多模态模型",
+    "raw_summary": "7月19日阿里巴巴 Qwen 团队发布了 Qwen3.8-Max-Preview 预览版，这是一个2.4万亿参数的多模态大模型，被描述为在基准测试中仅次于 Fable 5。发布仅数日后 Moonshot AI 发布 Kimi K3，凸显中美 AI 竞争加剧。阿里巴巴股价在香港市场上涨逾5%。",
+    "source": "Bloomberg / MarkTechPost",
+    "url": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/",
+    "keywords": [
+      "阿里巴巴",
+      "Qwen",
+      "多模态",
+      "大模型",
+      "中美AI竞争"
+    ],
+    "original_language": "zh",
     "importance": 4,
     "is_major_event": true
+  },
+  {
+    "id": "pt-1004",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "欧盟 AI 法案执法临近：2026年8月2日启动，罚款高达3500万欧元或7%全球营业额",
+    "raw_summary": "欧盟《AI法案》将于2026年8月2日正式进入执法阶段，距此不足两周。违规罚款可达3500万欧元或全球营业额的7%。首批适用义务针对营销和销售团队日常使用的工具，包括聊天机器人和AI生成内容。爱尔兰正成为欧盟主要AI执法枢纽。2026年修正案新增禁止AI生成非自愿色情内容的条款。",
+    "source": "LinkedIn / EU Digital Strategy / AI in Europe",
+    "url": "https://www.linkedin.com/pulse/eu-ai-act-starts-enforcing-less-than-30-days-teams-first-pricope--yqate",
+    "keywords": [
+      "EU AI Act",
+      "监管",
+      "合规",
+      "执法",
+      "GDPR",
+      "AI治理"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-1005",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "Google Gemini 3.5 Pro 再次延期：原定6月发布，7月仍未确定上线日期",
+    "raw_summary": "Google Gemini 3.5 Pro 原计划在6月发布（Google I/O 承诺），但已两次延期。截至7月17日仍未确认新发布日期。据报四名高级研究员离职加入竞争对手，且训练数据更新后性能未达内部预期。该模型定位为200万token上下文窗口和Deep Think推理模式，面向Ultra订阅用户（$250/月）。",
+    "source": "TechPillow / AwesomeAgents / FactCheckRadar",
+    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
+    "keywords": [
+      "Google",
+      "Gemini",
+      "延期",
+      "Deep Think",
+      "AI竞争"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210006",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Anthropic CEO Dario Amodei 等五位员工捐款200万美元支持AI监管政治行动委员会",
+    "raw_summary": "据Bloomberg 7月16日报道，Anthropic CEO Dario Amodei及另外五名员工向专注于AI监管的政治行动委员会Public First捐款超过200万美元，助力中期选举中的AI安全倡导。Public First此前已收到Anthropic公司2000万美元捐赠。此举标志着AI行业高管通过政治捐款直接参与政策制定的趋势。",
+    "source": "Bloomberg / SFGate",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-16/dario-amodei-anthropic-employees-give-millions-to-regulate-ai",
+    "keywords": [
+      "Anthropic",
+      "Dario Amodei",
+      "AI监管",
+      "政治捐款",
+      "Public First"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210007",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Google Vids集成Gemini Omni视频生成：企业AI视频创作进入新阶段",
+    "raw_summary": "Google于7月16日宣布将多模态视频生成模型Gemini Omni集成到Google Vids中，用户可通过文字提示和参考图像创建视频，并可使用个人AI头像出镜。这是Gemini Omni自5月I/O发布后的首个大规模产品化应用。Google Vids用户一年已创建数百万视频，此次升级使其成为企业级AI视频创作平台。",
+    "source": "TechCrunch / Google Blog",
+    "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+    "keywords": [
+      "Google",
+      "Gemini Omni",
+      "Vids",
+      "AI视频",
+      "企业工具"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210008",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "中国五项部门联合发布禁令：禁止AI男友/女友应用，7月15日起生效",
+    "raw_summary": "中国国家网信办等五部门于7月15日联合发布新规，禁止开发和运营AI浪漫伴侣应用（AI男友/女友），理由是防止情感依赖和影响生育率。新规要求相关应用立即下架，开发者不得继续提供此类服务。该禁令引发了中国社交媒体上的广泛讨论和分手潮。",
+    "source": "Dexerto / Aitechtonic",
+    "url": "https://www.dexerto.com/entertainment/china-bans-ai-boyfriends-and-girlfriends-over-addiction-and-birth-rate-concerns-3388737/",
+    "keywords": [
+      "中国",
+      "AI监管",
+      "AI伴侣",
+      "禁令",
+      "五部门"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210009",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "欧盟AI法案8月2日执法倒计时：27国中仅8国准备就绪",
+    "raw_summary": "据AI Weekly报道，欧盟《AI法案》将于2026年8月2日正式进入执法阶段，但27个成员国中仅有8国已指定执法联系人。首批适用义务涵盖营销和销售工具中的聊天机器人透明度要求、AI生成内容披露和情感识别披露。违规罚款可达3500万欧元或全球营业额的7%。爱尔兰正成为欧盟主要AI执法枢纽。",
+    "source": "AI Weekly / Legiscope",
+    "url": "https://www.legiscope.com/blog/eu-ai-act-compliance-guide.html",
+    "keywords": [
+      "EU AI Act",
+      "执法",
+      "合规",
+      "爱尔兰",
+      "透明度"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "st-7210007",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "李开复01.ai筹备香港IPO：目标2027年上市，估值待揭晓",
+    "raw_summary": "据Bloomberg报道，李开复创办的01.ai正在筹备在香港进行首次公开募股，目标在2027年完成上市。这是继GigaAI之后第二家计划赴港上市的AI初创公司。01.ai专注于通用AI技术开发，其产品已在中文市场获得一定份额。",
+    "source": "Bloomberg / The Next Web",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-21/likaifeng-01ai-ipo-hong-kong-2027",
+    "keywords": [
+      "李开复",
+      "01.ai",
+      "IPO",
+      "香港",
+      "AI初创"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "st-7210008",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "推理基础设施初创Infinity获1500万美元种子轮融资",
+    "raw_summary": "专注于AI推理优化的初创公司Infinity完成1500万美元种子轮融资，投资方包括知名风投机构。该公司旨在降低大模型推理成本，解决AI部署中的核心瓶颈问题。随着AI应用规模化，推理成本优化成为关键赛道。",
+    "source": "TechCrunch / TechStartups",
+    "url": "https://techcrunch.com/2026/07/21/infinity-inference-funding/",
+    "keywords": [
+      "Infinity",
+      "推理优化",
+      "种子轮",
+      "AI基础设施"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
   },
   {
     "id": "ait-39",
@@ -81,25 +413,6 @@
     "is_major_event": false
   },
   {
-    "id": "pt-40",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "title": "Anthropic Fable 5定价规则正式生效：每周50%用量限制",
-    "raw_summary": "从2026年7月21日起，Anthropic Fable 5的定价规则正式生效。Max和Team Premium订阅用户可将Fable 5作为永久功能使用，但每周用量限制在50%以内；Pro和Team Standard用户完全失去免费路径，转为按使用量计费（$10/百万输入token，$50/百万输出token），并获得一次性$100额度抵扣。这一变化标志着Anthropic旗舰模型从免费推广走向全面商业化。",
-    "source": "LaoZhang AI Blog",
-    "url": "https://blog.laozhang.ai/en/posts/claude-fable-5-usage-credit-cost",
-    "keywords": [
-      "Anthropic",
-      "Fable 5",
-      "定价",
-      "商业化",
-      "用量限制"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
     "id": "pt-41",
     "date": "2026-07-21",
     "category": "product_tool",
@@ -114,88 +427,6 @@
       "联邦审查",
       "特朗普",
       "DOJ"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "st-24",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "GigaAI（极佳视界）拟今年赴港IPO，估值30亿美元——全球世界模型第一股",
-    "raw_summary": "据Bloomberg 7月21日报道，北京AI初创公司GigaAI（极佳视界/Jijia Vision）正在讨论最早于今年在香港交易所进行IPO，这将是全球首家专注于世界模型的AI初创公司上市。创始人兼CEO黄冠透露，公司新一轮融资即将完成，估值达30亿美元。GigaAI的客户包括中国一汽、京东和邮政运营商EMS。该公司专注于具身智能和通用机器人领域，将成为中国该估值最高的AI初创企业之一。",
-    "source": "Bloomberg",
-    "url": "https://www.bloomberg.com/news/articles/2026-07-21/china-s-gigaai-seeks-2026-hong-kong-ipo-in-first-for-world-model",
-    "keywords": [
-      "GigaAI",
-      "极佳视界",
-      "IPO",
-      "香港",
-      "世界模型",
-      "具身智能",
-      "30亿美元"
-    ],
-    "original_language": "en",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
-    "id": "st-25",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "CuspAI完成4.5亿美元B轮融资，Jeff Bezos和英国政府联合投资",
-    "raw_summary": "剑桥AI材料发现初创公司CuspAI于7月20日宣布完成4.5亿美元B轮融资，由亚马逊创始人Jeff Bezos的投资基金和英国政府主权AI基金联合领投。融资后公司估值达26亿美元。CuspAI利用AI系统发现和设计用于清洁能源和芯片制造的新型材料。这家成立仅两年的公司代表了英国政府通过主权AI基金支持本土AI创新的战略方向。",
-    "source": "Reuters / The Guardian / Telegraph",
-    "url": "https://www.reuters.com/business/uk-government-bezos-back-cuspais-450-million-round-startup-seeks-discover-new-2026-07-20/",
-    "keywords": [
-      "CuspAI",
-      "Jeff Bezos",
-      "英国政府",
-      "B轮",
-      "4.5亿美元",
-      "AI材料",
-      "主权AI基金"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "st-26",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "Moonshot AI营收达3亿美元，Kimi K3发布后日销售额激增六倍",
-    "raw_summary": "据CryptoBriefing 7月20日报道，Moonshot AI在发布Kimi K3后日销售额激增至少六倍，年化经常性收入（ARR）已达3亿美元。由于需求激增导致GPU接近容量上限，Moonshot于7月19日宣布暂停新用户订阅，并将订阅计划分为两个层级。与此同时，公司正在积极筹备IPO，最早可能在六个月内上市。彭博社5月报道Moonshot曾完成约20亿美元的融资，估值超200亿美元。",
-    "source": "CryptoBriefing / The Next Web / Bloomberg",
-    "url": "https://cryptobriefing.com/moonshot-kimi-subscriptions-pause-ipo/",
-    "keywords": [
-      "Moonshot",
-      "Kimi K3",
-      "营收",
-      "3亿美元",
-      "IPO",
-      "订阅暂停"
-    ],
-    "original_language": "en",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
-    "id": "st-27",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "MENA地区2026上半年初创企业融资17亿美元，AI领投",
-    "raw_summary": "据Wamda发布的2026年上半年报告显示，中东和北非（MENA）地区的初创企业在2026年上半年完成了242轮融资，总计筹集17亿美元。尽管面临地缘政治不确定性，投资者仍持续向该地区部署资本。AI领域仍然是最受青睐的投资方向，UAE以9380万美元的单月融资额成为该地区最活跃的单一市场。",
-    "source": "Arab News / Wamda",
-    "url": "https://www.arabnews.com/node/2651443/business-economy",
-    "keywords": [
-      "MENA",
-      "Wamda",
-      "初创融资",
-      "17亿美元",
-      "AI投资",
-      "中东"
     ],
     "original_language": "en",
     "importance": 2,
@@ -2047,5 +2278,1163 @@
     ],
     "original_language": "en",
     "raw_summary": "Anthropic 于 2026 年 6 月 30 日发布 Claude Sonnet 5，定位为 Sonnet 系列中最具代理能力的模型。该模型能够自主规划、使用浏览器和终端等工具，并以此前仅更大更昂贵模型才能达到的水平进行自主执行。Sonnet 5 在代码编写、推理和多步代理任务方面显著强于前代。"
+  },
+  {
+    "id": "arxiv-2607.18230",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Simple Domain Generalization for Strong Pixel-Level Image Tampering Detection in Modern VLMs",
+    "raw_summary": "Modern vision-language models (VLMs) have significantly improved image generation and editing capabilities, making pixel-level image tampering detection increasingly important yet challenging under cross-model and out-of-distribution shifts. This work studies domain generalization for pixel-level image tampering detection in modern VLMs like ChatGPT, Gemini, Qwen-Image, etc., aiming to learn tampering localization models that remain robust across diverse VLM-generated manipulation distributions. We propose a simple yet effective domain-generalized training framework built on two practical strategies. First, we introduce a balanced minibatch sampling scheme that strategically samples tampered and real images in each minibatch, preventing biased optimization toward either manipulated artifacts or clean-image priors and avoiding training collapse, ensuring that each optimization step receives proper sampled gradient signals. Second, we adopt a simple late-injection strategy, where the detector is first trained on large-scale base data until stable convergence, and then exposed to a small amount of newly selected supporting data from emerging VLM distributions, improving adaptability without overfitting to limited new domains. Together, these components provide a simple yet strong recipe for improving pixel-level tampering localization and OOD robustness across modern VLMs. Despite the conceptual simplicity, our framework outperforms the prior state-of-the-art PIXAR by a large margin of 26.1% and 26.8% relative improvement in average gIoU and cIoU, respectively, across OOD VLMs of GPT-Images-2.0, Gemini-3.1, FLUX.2, and Seedream 4.5. Our code is available at https://github.com/VILA-Lab/PIXAR-DG",
+    "summary": "现代视觉语言模型(VLM)大幅提升了图像生成和编辑能力，使得像素级图像篡改检测变得日益重要且具有挑战性。本文研究了在跨模型和分布外偏移下的域泛化问题，提出了一种简单有效的域泛化训练框架，包含两项实用策略：一是平衡的小批量采样方案，在每个小批量中有策略地采样篡改和真实图像，防止优化偏向任一类别；二是简单的晚期注入策略，先在大规模基础数据上训练检测器直到稳定收敛，再暴露于少量来自新兴VLM分布的支持数据，在不过拟合新域的前提下提升适应性。该方法在GPT-Images-2.0、Gemini-3.1、FLUX.2和Seedream 4.5等OOD VLM上，gIoU和cIoU分别比之前SOTA的PIXAR大幅提升26.1%和26.8%。代码已开源。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18230",
+    "keywords": [
+      "图像篡改检测",
+      "域泛化",
+      "VLM",
+      "像素级定位",
+      "OOD鲁棒性"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false,
+    "arxiv_id": "2607.18230",
+    "categories_en": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "计算机视觉",
+      "人工智能"
+    ],
+    "authors": [
+      "Yi Tang",
+      "Xinyi Shang",
+      "Jiacheng Cui",
+      "Sondos Mahmoud Bsharat",
+      "Jiacheng Liu"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18218",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis",
+    "raw_summary": "Foundation models have emerged as a driving force in computational pathology, with the potential to transform cancer diagnosis, prognosis, and treatment selection by learning transferable representations from large-scale histopathology data. A growing landscape of pathology foundation models now spans diverse data sources, architectures, and downstream applications. However, most pretrained models operate only at the image-tile level, use restrictive licenses, and remain computationally expensive, limiting large-scale slide-level clinical and research use.\n  Here, we introduce GigaPath-Flash and GigaTIME-Flash, efficient models for whole-slide pathology AI and spatial proteomics prediction. GigaPath-Flash combines a 22M-parameter ViT-S tile encoder with a 21M-parameter LongNet slide encoder, both pretrained on large-scale real-world histopathology data. Its compact tile encoder is distilled from the billion-parameter GigaPath (ViT-g) teacher and shared by both models. GigaPath-Flash retains 97% of GigaPath's average slide-level performance with 50x less compute. GigaTIME-Flash extends this backbone to predict the tumor immune microenvironment directly from routine H&E images. It surpasses the original CNN-based GigaTIME in prediction quality while running 6x faster and using 8x less GPU memory.\n  Together with GigaPath and GigaTIME, these models form an open-weight, Apache-2.0-licensed family pretrained on large-scale real-world clinical data. By releasing all models and weights, we provide accessible building blocks for computational pathology, immuno-oncology, and precision health.",
+    "summary": "基础模型已成为计算病理学的驱动力，有望通过从大规模组织病理学数据中学习可转移表示来变革癌症诊断、预后和治疗选择。然而大多数预训练模型仅在图像块级别运行、使用限制性许可证且计算昂贵。本文引入GigaPath-Flash和GigaTIME-Flash——面向全切片病理AI和空间蛋白质组学预测的高效模型。GigaPath-Flash结合了22M参数的ViT-S图像块编码器和21M参数的LongNet全切片编码器，均在大规模真实世界组织病理学数据上预训练。其紧凑的图像块编码器从十亿参数的GigaPath(ViT-g)教师模型蒸馏而来。GigaPath-Flash以50倍更少算力保留了GigaPath 97%的全切片平均性能。GigaTIME-Flash扩展此骨干网络，直接从常规H&E图像预测肿瘤免疫微环境，预测质量超越原始CNN-based GigaTIME，同时运行速度快6倍、GPU显存占用少8倍。所有模型和权重以Apache-2.0许可开源。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18218",
+    "keywords": [
+      "计算病理学",
+      "基础模型",
+      "GigaPath",
+      "全切片分析",
+      "肿瘤免疫微环境",
+      "Apache-2.0",
+      "高效推理"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false,
+    "arxiv_id": "2607.18218",
+    "categories_en": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "计算机视觉",
+      "人工智能"
+    ],
+    "authors": [
+      "Naoto Usuyama",
+      "Jeya Maria Jose Valanarasu",
+      "Sicong Yao",
+      "Hanwen Xu",
+      "Jaspreet Bagga"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18171",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
+    "raw_summary": "Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisions about placement, streaming, and intra-model parallelism. Existing serving systems and auto-parallelism compilers commit to limited transformations and fixed workload assumptions, so achieving high performance on a new application requires hand-crafting an efficient implementation. We present FlashRT, an agent harness that guides coding agents to lift simple developer-written reference implementations into optimized multi-GPU deployments that flexibly weigh target metrics like latency and throughput. Using a new chain-of-program paradigm, FlashRT directs a generic coding agent through a multi-pass transformation process where an agent transforms the reference into an intermediate representation (IR) to capture data dependencies and persistent-state scopes, validates this IR via a sequential interpreter, and performs static analyses to identify candidate transformations. Then, the agent iteratively implements, verifies, and benchmarks each candidate under a measurement-gated optimization loop to produce effective deployments that span different hardware budgets. Across various applications, including video world models and multimodal LLMs, FlashRT converts reference implementations into highly efficient deployments, delivering up to ~70x latency reduction and 2.8x throughput improvement on NVIDIA B200 GPUs. On AMD MI355X GPUs, FlashRT matches the peak latency reduction while increasing peak throughput improvement to 3.6x, demonstrating that agent-driven optimization can be more scalable on platforms with less mature expert optimization. In fact, for Qwen3-Omni text-to-audio inference, FlashRT reduces response latency by 65% compared to the expert vLLM-Omni implementation on AMD MI355X.",
+    "summary": "实时多模态应用（包括语音代理和交互式视频生成）将异构模型组合为流水线，其高效部署需要关于放置、流式传输和模型内并行的应用特定决策。现有 serving 系统和自动并行编译器局限于有限变换和固定工作负载假设。本文提出FlashRT——一种引导编码代理将开发者编写的参考实现转换为优化多GPU部署的代理框架。FlashRT通过链式编程范式指导通用编码代理进行多遍变换：将参考实现转换为捕获数据依赖性和持久状态范围的中间表示(IR)，通过顺序解释器验证IR，并进行静态分析识别候选变换。代理在测量门控优化循环中迭代实现、验证和基准测试每个候选，生产高效部署。在视频世界模型和多模态LLM等多种应用中，FlashRT将参考实现转换为高度高效部署，在NVIDIA B200 GPU上实现最高~70倍延迟降低和2.8倍吞吐量提升。在AMD MI355X上，FlashRT匹配峰值延迟降低同时将吞吐量提升增至3.6倍。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18171",
+    "keywords": [
+      "多模态部署",
+      "代理优化",
+      "实时应用",
+      "FlashRT",
+      "GPU加速",
+      "链式编程"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false,
+    "arxiv_id": "2607.18171",
+    "categories_en": [
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "机器学习"
+    ],
+    "authors": [
+      "Krish Agarwal",
+      "Zhuoming Chen",
+      "Yanyuan Qin",
+      "Zhenyu Gu",
+      "Atri Rudra"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18114",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "How Does Alignment Tuning Shape Representations of Sycophancy and Related Cue-Induced Biases in LLMs?",
+    "raw_summary": "Modern LLMs are alarmingly susceptible to surprisingly simple immaterial changes of input prompts: a casual hint, an incorrectly labeled few-shot example, or a fake prior assistant turn often flips an originally correct answer. We study where this susceptibility, spanning sycophancy and related cue-induced biases, lives inside the model. Across five model families and seven BCT bias types, we extract a per-bias direction from hidden states and triangulate it through three measures: probing, leave-one-dataset-out transfer, and causal intervention. The susceptibility is largely installed by alignment tuning rather than pretraining: pretrained base models barely cave to these biases, and their activations carry no cue-specific signal beyond question content. Within aligned models, each bias becomes a single coherent direction that we can both decode and steer along, recovering the unbiased answer across every family we test. The biases stay representationally distinct, however: cross-bias entanglement is model-specific rather than a property of the bias category, and even behaviorally similar biases occupy different directions. The same intervention also serves as a modest debiasing tool, recovering a meaningful share of bias-induced errors while preserving most correct answers across all instruct families. Cue-induced bias is therefore best understood not as a single flaw in LLMs but as a family of distinct, causally active directions that alignment tuning installs.",
+    "summary": "现代LLM对输入prompt的微妙变化极度敏感——一个随意提示、错误标记的few-shot示例或虚假的先前的助手回复都可能翻转原本正确的答案。本文研究这种易感性（包括谄媚和相关线索诱导偏差）存在于模型内部的何处。在五款模型家族和七种BCT偏差类型上，从隐藏状态提取每偏差方向，通过探测、留一数据集外转移和因果干预三种措施进行三角验证。研究发现：这种易感性主要由对齐微调安装而非预训练——预训练基础模型几乎不受这些偏差影响，其激活仅携带问题内容信号。在对齐模型中，每种偏差成为一个单一连贯方向，既可解码也可操控。偏差在表征上保持独立——跨偏差纠缠是模型特异性的。同一干预也作为适度的去偏工具，在保留大多数正确答案的同时恢复有意义的偏差诱导错误份额。线索诱导偏差最好理解为对齐微调安装的一系列独立、因果活跃的方向。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18114",
+    "keywords": [
+      "LLM偏差",
+      "谄媚",
+      "对齐微调",
+      "因果干预",
+      "隐藏状态",
+      "去偏"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false,
+    "arxiv_id": "2607.18114",
+    "categories_en": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "人工智能",
+      "机器学习"
+    ],
+    "authors": [
+      "Prakhar Gupta",
+      "Terry Jingchen Zhang",
+      "Florent Draye",
+      "Bernhard Schölkopf",
+      "Zhijing Jin"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18235",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Automated Discovery Has No Universally Superior Harness",
+    "raw_summary": "Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about archives, parent selection, exploration, and budget allocation into a single recipe. Because discovery runs are expensive and inherently stochastic, existing harnesses are often compared using too few independent trials to distinguish key methodological improvements from run-to-run variance. We systematically decompose OpenEvolve-style evolutionary search and the TTT-Discover search harness into its constituent components and systematically evaluate 30 budget-matched harnesses across 12 model-problem pairs using more than 3.1 million LLM rollouts and repeated-trial statistical analysis. Our results show that discovery harnesses have a generalization problem: No fixed harness is reliably superior across the evaluated model-problem pairs, and variants of OpenEvolve generally underperform simpler alternatives. Thus, harness choice is better viewed as a hyperparameter rather than as a universal recipe, and should be tailored to the specific problem and underlying model. We also find that early discovery progress predicts final performance, and use this property to present a budget-matched adaptive-allocation experiment that starts multiple harnesses, prunes weak partial runs, and reallocates compute to stronger survivors, outperforming both commitment to a randomly sampled fixed harness and a non-adaptive harness ensemble. Together, these results motivate shifting from fixed harness selection to online adaptation guided by early performance. We release all run pools including baseline null distributions for every model-problem pair as reusable statistical infrastructure against for future harness proposals.",
+    "summary": "自主发现系统（如OpenEvolve和TTT-Discover）常被用作通用探索工具。然而这些系统是多种设计选择的组合体。本文系统分解了OpenEvolve式进化搜索和TTT-Discover搜索框架的各个组成成分，在12个模型-问题对上使用超过310万次LLM采样和重复试验统计分析，评估了30种预算匹配的框架。结果表明：不存在在所有场景下都最优的统一框架，变体OpenEvolve通常不如更简单的替代方案。因此框架选择应视为超参数而非通用方案，需针对具体问题定制。研究还发现早期发现进度可以预测最终性能，据此提出了自适应分配策略——同时启动多个框架、剪枝弱运行、将算力重新分配到更强幸存者，性能优于固定框架和非自适应集成。所有运行池包括基线零分布已开源。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18235",
+    "keywords": [
+      "自主发现",
+      "进化搜索",
+      "LLM",
+      "框架选择",
+      "自适应分配",
+      "统计验证"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18235",
+    "categories_en": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "人工智能"
+    ],
+    "authors": [
+      "Akshat Gupta",
+      "Jermaine Lei",
+      "Alexander Lu",
+      "Gopala Anumanchipalli",
+      "Leshem Choshen"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18228",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Logical Judgments Under Pressure: Diagnosing Syllogistic Stability with Learned Soft Prefixes",
+    "raw_summary": "To test how correct logical judgments respond to learned context, we prepend a soft prefix to an exactly labeled syllogistic reasoning benchmark while keeping the model fixed. Soft prefixes are opaque continuous vectors, so we characterize them through the behavior they induce across controlled variations in logical form and interface. By studying which prefixes succeed and how their effects generalize, we characterize how learned contextual pressure can override correct judgments and expose limits in a model's logical stability. Across Qwen3.6-35B-A3B MoE, Qwen3-8B, and Gemma 4 31B, learned prefixes redirect many correct answers and remain effective across unseen forms and interface changes. In repeated tests with Qwen3.6 MoE and Gemma, they outperform paired random controls in all 16 model--direction--split comparisons by 37 to 99 percentage points. Qwen3.6 MoE flip rates remain between 72% and 90% across wording and prompt changes, while Gemma validity prefixes retain 54% to 56% flip compared with less than 1% for matched random prefixes. Diagnostic tests show that the dominant effect is a broad preference for one answer meaning rather than fixed-symbol forcing or a logical operation that transfers reliably between tasks. The form of this bias differs across models. In both Qwen models, simple score models often predict which judgments will flip but not how far their margins will move, whereas Gemma's overall response is more closely approximated by the same models. These results show that the dominant behavioral effect of successful soft prefixes is a broad answer preference, while the remaining response reveals substantial model-specific differences in logical stability.",
+    "summary": "为测试正确逻辑判断对所学上下文压力的响应，本研究在精确标注的三段论推理基准上预先添加软前缀（opaque连续向量），保持模型不变。通过在逻辑形式和接口上的受控变化来表征这些前缀的行为。研究发现，学到的前缀能改变许多正确答案，且在未见形式和接口变化上仍然有效。在Qwen3.6-35B-A3B MoE、Qwen3-8B和Gemma 4 31B上的测试显示，Qwen3.6 MoE的翻转率在措辞和提示变化间保持在72%-90%，而Gemma的有效性前缀保留54%-56%的翻转率，远超匹配随机前缀的不到1%。诊断测试表明，主导效应是一种广泛的答案偏好而非固定符号强制。不同模型的偏差形式存在差异。该研究揭示了模型逻辑稳定性的局限性和模型特异性差异。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18228",
+    "keywords": [
+      "逻辑推理",
+      "软前缀",
+      "三段论",
+      "LLM稳定性",
+      "上下文压力",
+      "Qwen",
+      "Gemma"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18228",
+    "categories_en": [
+      "cs.AI",
+      "cs.CL"
+    ],
+    "categories_cn": [
+      "人工智能",
+      "计算语言/NLP"
+    ],
+    "authors": [
+      "Brian K Chen"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18200",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Learning Adaptive Safety Margins for Visual Navigation",
+    "raw_summary": "Robots in cluttered indoor spaces often fail not because they cannot generate collision-free paths, but because a fixed safety margin is mis-calibrated: conservative margins cause detours and timeouts, while permissive margins lead to near-boundary shortcuts under perception bias. Diffusion-based planners propose diverse trajectory candidates from egocentric RGB-D, yet reliable selection remains the bottleneck. We propose a context-conditioned safety critic that learns an adaptive clearance preference for ranking diffusion proposals, decomposed into three complementary terms: (i) a safety term with a clearance-budget penalty and a control-barrier-function residual for waypoint- and transition-wise safety, (ii) an efficiency term combining a smoothness penalty with a safety-gated detour-ratio penalty that avoids detours without incentivizing risky shortcuts, and (iii) a distance-constraint matching term that anchors the learned budget to realized ESDF clearances to prevent margin collapse. We train the critic with privileged ESDF geometry in simulation and distill it into a perception-only selector via a two-stage teacher-student procedure. On PointGoal navigation in HM3D and MP3D, including cross-dataset transfer, our method achieves the highest success rate (SR) and success weighted by path length (SPL) among strong diffusion, optimization, and RL baselines. Trained purely in simulation, it transfers to a Unitree G1 humanoid and navigates cluttered indoor scenes without task-specific tuning.",
+    "summary": "拥挤室内空间中的机器人导航失败往往不是因为无法生成无碰撞路径，而是因为固定安全裕度校准不当：保守裕度导致绕路和超时，宽松裕度在感知偏差下导致贴边捷径。本文提出一种条件安全评判器，学习扩散提案排序的自适应间距偏好，分解为三项互补项：(1)安全项——含间距预算惩罚和控制障碍函数残差；(2)效率项——结合平滑惩罚和安全门控绕路比惩罚；(3)距离约束匹配项——将学习到的预算锚定到实现的ESDF间距以防止裕度坍缩。在仿真中使用特权ESDF几何训练，通过两阶段教师-学生过程蒸馏为纯感知选择器。在HM3D和MP3D的PointGoal导航任务（含跨数据集迁移）中，该方法在强扩散、优化和RL基线上实现了最高成功率和SPL指标。纯仿真训练的方法成功迁移到Unitree G1人形机器人，无需任务特定调参即可导航拥挤室内场景。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18200",
+    "keywords": [
+      "视觉导航",
+      "安全裕度",
+      "扩散规划",
+      "人形机器人",
+      "Sim2Real",
+      "控制障碍函数"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18200",
+    "categories_en": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "机器人",
+      "人工智能"
+    ],
+    "authors": [
+      "Junyi Hu",
+      "Shuaihang Yuan",
+      "Geeta Chandra Raju Bethala",
+      "Anthony Tzes",
+      "Yi Fang"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18164",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "A Continual Validation, Updating, and Decision-Making Framework for Self-Adaptive Digital Twins via Robust Model Predictive Control: A Case Study in Additive Manufacturing",
+    "raw_summary": "Digital Twins rely on surrogate models to mirror physical systems in real time, yet these models can degrade as operating conditions evolve, a phenomenon known as concept drift. Maintaining surrogate fidelity under drift, particularly when models must also capture aleatoric uncertainty, remains an open challenge. Existing adaptive frameworks lack principled mechanisms for detecting when updates are needed, for efficiently adapting models from limited streaming data, and for certifying that updates genuinely improve predictive performance. Here we present an adaptive Digital Twin framework that integrates a Fisher score--based multivariate drift detector, Low-Rank Adaptation (LoRA) for parameter-efficient continual learning, and a Mann--Whitney $U$ test for online statistical validation. The framework monitors surrogate-model confidence via Fisher score vectors, triggers targeted fine-tuning of fewer than 1% of model parameters upon drift detection, and statistically certifies predictive improvement before deploying the updated surrogate. Applied to a stochastic linear system and a directed energy deposition additive manufacturing process as case studies, the framework successfully detects distributional shifts with short delays and restores both predictive accuracy and uncertainty quantification under abrupt and incremental drift. These results establish a statistically rigorous and computationally tractable pathway for sustaining the trustworthiness of neural-network--based Digital Twins throughout their operational life cycle.",
+    "summary": "数字孪生依赖代理模型实时镜像物理系统，但这些模型会随工况演化而退化（概念漂移）。本文提出一种自适应数字孪生框架，整合基于Fisher得分的多变量漂移检测器、用于参数高效持续学习的低秩自适应(LoRA)，以及用于在线统计验证的Mann-Whitney U检验。框架通过Fisher得分向量监控代理模型置信度，检测到漂移后触发少于1%模型参数的定向微调，并在部署更新前统计验证预测改进。在随机线性系统和定向能量沉积增材制造工艺的案例研究中，该框架成功以短延迟检测分布偏移，在突发和渐进漂移下恢复预测准确性和不确定性量化。结果为维持神经网络数字孪生在运营生命周期中的可信度建立了统计学严谨且计算可行的路径。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18164",
+    "keywords": [
+      "数字孪生",
+      "概念漂移",
+      "持续学习",
+      "LoRA",
+      "Fisher得分",
+      "增材制造",
+      "不确定性量化"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18164",
+    "categories_en": [
+      "cs.LG",
+      "cs.AI",
+      "math.ST"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "人工智能",
+      "统计学"
+    ],
+    "authors": [
+      "Yi-Ping Chen",
+      "Ying-Kuan Tsai",
+      "Vispi Karkaria",
+      "Seul Lee",
+      "Daniel Apley"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18161",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
+    "raw_summary": "Coding agents are increasingly used to accelerate code generation in many downstream tasks, such as fixing bugs, building applications, and prototyping. However, despite their value as coding assistants, agent-generated code tends to be larger and more verbose than the corresponding human-written implementation. In this work, we show that the cause lies in the agent's own search process: while iterating toward a passing solution, an agent accumulates speculative edits, abandoned hypotheses, and temporary changes that persist into the final patch. This may seem harmless for a single patch, but the problem compounds as agents take responsibility for ever-larger portions of a codebase-a codebase that was once minimal and well-maintained slowly accumulates redundancy faster than it can be cleaned up, drifting to a state that is harder to maintain. Given the magnitude of this problem, we take a step towards alleviating this issue. First, we formally define this phenomenon as CodeSlop-the residual and functionally unnecessary edits commonly seen in AI-generated code. We then introduce our algorithm TRIM (Trajectory-guided Redundancy Identification and Minimization). Rather than minimizing CodeSlop directly, TRIM instead minimizes agent trajectories. As we show empirically, this indirect technique of minimizing CodeSlop is highly effective: TRIM cuts CodeSlop by 17.9%-32.9% across agentic scaffolds, with negligible performance regression. TRIM is also highly efficient, requiring roughly half the validation cost of algorithmic baselines such as Delta Debugging.",
+    "summary": "编码代理越来越多地被用于加速代码生成，但代理生成的代码往往比相应的人工编写实现更大更冗长。本文证明问题根源在于代理自身的搜索过程：在迭代寻找通过解决方案时，代理积累了推测性编辑、放弃假设和临时变更，这些残留在最终补丁中。随着代理接管越来越大的代码库，问题不断累积——曾经精简良好的代码库迅速积累冗余。本文正式定义此现象为CodeSlop（AI生成代码中常见的残留和功能不必要编辑），并提出TRIM算法（轨迹引导冗余识别与最小化）。TRIM不是直接最小化CodeSlop而是最小化代理轨迹，间接技术高效削减CodeSlop 17.9%-32.9%，性能退化可忽略，且验证成本仅为Delta Debugging等算法基线的一半。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18161",
+    "keywords": [
+      "代码生成",
+      "AI代理",
+      "CodeSlop",
+      "代码清理",
+      "轨迹最小化",
+      "软件工程"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18161",
+    "categories_en": [
+      "cs.SE",
+      "cs.AI",
+      "cs.OS"
+    ],
+    "categories_cn": [
+      "软件工程",
+      "人工智能",
+      "操作系统"
+    ],
+    "authors": [
+      "Alex Mathai",
+      "Shobini Iyer",
+      "Aleksandr Nogikh",
+      "Petros Maniatis",
+      "Franjo Ivancic"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18149",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Differentiable Logic Gate Networks for Low-Latency EEG Classification on Edge Devices",
+    "raw_summary": "Real-time EEG classification on edge devices is bottlenecked by the floating-point arithmetic of conventional neural networks. We investigated Differentiable Logic Gate Networks (Diff-Logic) as a hardware-native alternative that compiles models into pure Boolean circuits executable via bitwise CPU operations. Through rigorous iso-parameter experiments across four EEG datasets spanning two classification tasks, binary dementia detection and 3-class emotion recognition, we compared Diff-Logic against matched-capacity Multi-Layer Perceptron (MLP) and Binarized Neural Network (BNN) baselines at four complexity tiers (50k-500k parameters). On dementia screening, Diff-Logic achieved 80.2% Macro F1, outperforming the MLP baseline by 6.8%. On emotion recognition, the MLP retained a moderate performance advantage but incurred a 2.3$\\times$ higher latency and 14$\\times$ larger model size when deployed on a power-constrained (7W) Nvidia Jetson Orin Nano CPU (Single-core). Critically, Diff-Logic inference time remained nearly constant across a 10$\\times$ increase in model scale, achieving a peak speedup of 2.9$\\times$ over MLPs at the largest complexity tier. Our results establish logic-based neural architectures as a practical paradigm for resource-constrained brain-computer interfaces, achieving competitive or superior performance while natively satisfying the latency and memory constraints of portable edge deployment. Code is available on GitHub: https://github.com/Shyamal-Dharia/eeg-difflogic",
+    "summary": "边缘设备上的实时EEG分类受限于传统神经网络的浮点运算。本文研究可微逻辑门网络(Diff-Logic)作为硬件原生替代方案，将模型编译为纯布尔电路，通过CPU位运算执行。在四个EEG数据集上（涵盖两种分类任务：二元痴呆检测和三类情感识别），在五个复杂度层级（50k-500k参数）进行了严格的等参数实验。在痴呆筛查中，Diff-Logic达到80.2% Macro F1，超越MLP基线6.8%。在情感识别中，MLP虽有适度性能优势但在7W功耗Nvidia Jetson Orin Nano CPU上延迟高2.3倍、模型大小大14倍。关键的是，Diff-Logic推理时间在模型规模增加10倍时几乎保持不变，在最大复杂度层级实现相对于MLP 2.9倍峰值加速。结果确立了基于逻辑的神经网络架构作为资源受限脑机接口的实用范式。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18149",
+    "keywords": [
+      "EEG分类",
+      "边缘计算",
+      "可微逻辑门",
+      "脑机接口",
+      "布尔电路",
+      "低功耗"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18149",
+    "categories_en": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "人工智能"
+    ],
+    "authors": [
+      "Shyamal Y. Dharia",
+      "Stephen D. Smith",
+      "Camilo E. Valderrama"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18147",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications",
+    "raw_summary": "Large language models (LLMs) and agentic AI systems have evolved from natural language tasks to using external tools to plan, retrieve, and act in technical domains. In smart grids, recent work applies agentic schemes to forecasting, optimization, and control, wrapping trusted solvers behind language interfaces and orchestrating multi-step workflows. The literature lacks a unified approach to designing and evaluating such systems. LLMs can produce numerically plausible yet physically infeasible outputs, evaluation protocols vary across tasks, and the boundary between what the model should and should not compute is implicit. This paper presents a solver-grounded design principle: a numerical result is reported only when it originates from a trusted tool and passes explicit verification. We review the building blocks of LLM and agentic AI systems for power systems: prompting strategies and agentic architectures. We instantiate the principle in four case studies: wind power forecasting, EV charging scheduling, power flow analysis, and contingency diagnosis, each comparing an LLM-only baseline against its solver-grounded counterpart on identical data and metrics. EVAgent reproduces the CVXPY optimum while reducing LLM-only unmet energy by 7.5-9.5x, and GridDebugAgent repairs 17/39 contingency cases while reducing total violations by 52.3%. We propose a four-group evaluation framework spanning task utility, solver-grounded correctness, faithfulness and safe failure, and cost and latency. A consistent division of labor emerges: the agentic system reliably orchestrates, retrieves, and explains, while trusted tools compute and a verification gate decides what is reported.",
+    "summary": "大语言模型和智能体AI系统已从自然语言任务演化为使用外部工具在技术领域规划、检索和行动。在智能电网中，近期工作将智能体方案应用于预测、优化和控制，将可信求解器包装在语言接口后编排多步工作流。本文提出求解器接地设计原则：数值结果仅在源自可信工具并通过显式验证时才报告。回顾了电力系统中LLM和智能体AI系统的构建模块：提示策略和智能体架构。在四个案例研究中实例化了该原则：风电功率预测、EV充电调度、潮流分析和故障诊断。EVAgent复现CVXPY最优解同时将纯LLM未满足能量降低7.5-9.5倍，GridDebugAgent修复39例故障中的17例并将总违规减少52.3%。本文提出四组评估框架：任务效用、求解器接地正确性、忠实度和安全失效、成本和延迟。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18147",
+    "keywords": [
+      "智能电网",
+      "LLM代理",
+      "求解器接地",
+      "电力预测",
+      "故障诊断",
+      "教程"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18147",
+    "categories_en": [
+      "eess.SY",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "电气工程-系统与控制",
+      "人工智能"
+    ],
+    "authors": [
+      "Daniela Rojas",
+      "Abdulwahab Albassam",
+      "Aidan G. Leung",
+      "Jett Ngo",
+      "Ryan Luo"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18237",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
+    "raw_summary": "Human visual similarity judgments are context-dependent. For example, two images may be similar in shape but distinct in color. Existing perceptual similarity metrics, however, collapse these nuances into a single scalar value, offering no mechanism to condition on specific aspects. To bridge this gap, we introduce a large-scale dataset of human similarity judgments over image triplets, where each triplet is annotated across multiple, free-form semantic aspects of similarity. Benchmarking a broad range of frontier vision-language models (VLMs) reveals a considerable performance gap compared to human annotators' consensus. Leveraging our data, we fine-tune a VLM to produce our Text-Prompted Image Perceptual Similarity (TPIPS) metric, capturing multiple senses of visual similarity depending on the specified text prompt. We demonstrate that TPIPS aligns more closely with human perception and generalizes reliably beyond the training distribution. Finally, we show that TPIPS unlocks new capabilities in text-guided retrieval, compositional search, and the fine-grained evaluation of generative models. Our code, data, and trained models are at https://peterwang512.github.io/TPIPS",
+    "summary": "人类视觉相似性判断具有情境依赖性——例如两张图片可能在形状上相似但在颜色上不同。现有感知相似度指标将所有细微差别压缩为单个标量值。本文引入大规模人类相似性判断数据集，对三元组图片在不同自由形式语义方面的相似性进行标注。对前沿视觉语言模型(VLM)的基准测试揭示与人类标注者共识之间存在显著性能差距。基于此数据微调VLM得到TPIPS(Text-Prompted Image Perceptual Similarity)指标，可根据指定文本提示捕获多种视觉相似性含义。TPIPS更贴近人类感知并在训练分布外可靠泛化。展示了TPIPS在文本引导检索、组合搜索和生成模型细粒度评估中的新能力。代码、数据和训练模型已开源。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18237",
+    "keywords": [
+      "视觉相似度",
+      "感知指标",
+      "VLM",
+      "图像检索",
+      "生成评估",
+      "数据集"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18237",
+    "categories_en": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "计算机视觉",
+      "机器学习"
+    ],
+    "authors": [
+      "Sheng-Yu Wang",
+      "Yotam Nitzan",
+      "Aaron Hertzmann",
+      "Jun-Yan Zhu",
+      "Eli Shechtman"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18236",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
+    "raw_summary": "Pretrained dense visual features from Vision Transformers (ViTs) are powerful yet have been underutilized in robot learning. Modern robot policies either compress each observation into a single global token, or rely on visual backbones trained from scratch, sacrificing both fine-grained spatial detail and the benefits of large-scale visual pre-training. While there exist policies that do operate on dense patch features like large vision-language-action models (VLAs), they tend to be heavy and slow, inheriting the full cost of a billion-parameter vision-language model (VLM) backbone. We close this gap with Patch Policy, a minimal architectural extension that enables transformer-based policies to consume dense pre-trained patch tokens directly without the computational overhead of a full VLM. At its core is a block-causal attention mask that preserves the temporal causality of standard policies while letting the model attend over many patch tokens per observation, alongside other state information. Patch Policy is lightweight, fast, and highly effective. Across four simulated and three real-world environment suites, our method achieves a 40% relative improvement over policies using state-of-the-art global-pooled representations. Furthermore, it surpasses fine-tuned OpenVLA-OFT by 18% while using roughly 0.7% of the parameters. We believe Patch Policy provides a pipeline for the robotics community to readily leverage continuing progress in visual representation learning, without sacrificing the training efficiency or inference speed required for high-frequency, reactive control. Videos can be viewed at https://patch-policy.github.io",
+    "summary": "视觉变换器(ViT)的预训练密集视觉特征强大但在机器人学习中尚未充分利用。现代机器人策略要么将每个观测压缩为单个全局token，要么从零训练视觉骨干，牺牲了细粒度空间细节和大规模视觉预训练的好处。本文提出Patch Policy——一种极简架构扩展，使基于transformer的策略可直接消费密集预训练patch token而无须全VLM的计算开销。核心是块因果注意力掩码，保持标准策略的时间因果性同时允许模型在每个观测上关注大量patch token。在四个模拟和三个真实环境套件中，该方法相比使用SOTA全局池化表示的策略实现了40%的相对提升，超越微调OpenVLA-OFT 18%而仅使用约0.7%的参数。为机器人社区提供了利用视觉表征学习持续进步的轻量级管道。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18236",
+    "keywords": [
+      "机器人学习",
+      "视觉表征",
+      "Patch Token",
+      "VLA",
+      "密集特征",
+      "高效策略"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18236",
+    "categories_en": [
+      "cs.RO",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "机器人",
+      "机器学习"
+    ],
+    "authors": [
+      "Gaoyue Zhou",
+      "Zichen Jeff Cui",
+      "Ada Langford",
+      "Bowen Tan",
+      "Yann LeCun"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18199",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "PPL-Factory: Task-Aware and Budget-Aware Data Selection from Language Modeling to Reasoning",
+    "raw_summary": "Not all training samples contribute equally to large language model fine-tuning. Selecting informative training samples can reduce the computational cost while preserving downstream performance. Many existing data selection methods rely on indirect heuristics, such as data quality, diversity or reasoning trace length. However, the effectiveness of these fixed criteria is task-dependent and difficult to generalize across diverse downstream tasks. Perplexity-based data selection provides a simple and model-aware solution to estimate the sample difficulty, but existing approaches typically score the entire training sequence and ignore the difference in learning objectives of language modeling and reasoning tasks. In this paper, we propose PPL-Factory, a simple and interpretable data selection framework that combines task-aware perplexity-based scores and data budget-aware selection criteria. Experiments on GSM8K demonstrate that PPL-Factory outperforms other state-of-the-art data selection methods using only $1\\%$ of the training set. With $10\\%$ of the data, PPL-Factory exceeds full-data fine-tuning accuracy by 0.9 on GSM8K and 4.8 on MATH. Overall, our results demonstrate that task-aware and budget-aware perplexity-based selection provides an effective and applicable approach for efficient fine-tuning.",
+    "summary": "并非所有训练样本对LLM微调的贡献都相同。本文提出PPL-Factory——一种简单可解释的数据选择框架，结合任务感知困惑度评分和数据预算感知选择标准。现有困惑度方法通常对整个训练序列打分并忽略语言建模和推理任务的学习目标差异。PPL-Factory区分这两种目标，提出针对性的困惑度评分。在GSM8K上的实验表明：仅用1%训练集就超越其他SOTA数据选择方法；用10%数据时，在GSM8K上超越全数据微调0.9分，在MATH上超越4.8分。结果证明任务感知和预算感知的困惑度选择为高效微调提供了有效且实用的方法。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18199",
+    "keywords": [
+      "数据选择",
+      "困惑度",
+      "LLM微调",
+      "推理任务",
+      "效率优化",
+      "GSM8K",
+      "MATH"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18199",
+    "categories_en": [
+      "cs.CL",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "机器学习"
+    ],
+    "authors": [
+      "Hang Zhang",
+      "Warren J. Gross"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18198",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Three-Body Scattering for Generative Modeling",
+    "raw_summary": "Modern generative models typically rely on an adversarial critic, a prescribed noise-to-data path, or an autoregressive factorization. Instead, we show that a proper distributional energy can induce sample-level motion and provide direct regression supervision for a one-step generator. Three-Body Scattering Modeling (TBSM) for generation turns the energy distance into a constant-size per-projectile interaction: each projectile is attracted toward one real source and repelled from one independently generated source. Conditioned on the projectile and its condition, its expectation equals the $2$-Wasserstein gradient-flow velocity of $\\frac12D_E^2(P_θ,Q)$. A batch of $B$ frozen-target events yields $O(B)$ sample-level losses, each using one reference for its condition instead of the minibatch-wide all-pairs field used by methods such as Drifting Models. Tracking this conditional expectation online can reduce field noise. Using scattering in frozen image features, TBSM trains one-step generators on ImageNet-256, achieving FID${}=2.23$ with pixel-space PixelDiT-XL and FID${}=1.63$ with latent-space DiT-XL at NFE${}=1$. We provide a design map relating diffusion-related supervision, Drift-like dynamics, and GAN-like objectives. These results establish tracked scattering as a route to high-dimensional one-step generation. Code: https://github.com/sp12138/TBSM.",
+    "summary": "现代生成模型依赖对抗批评、预设噪声到数据路径或自回归分解。本文提出三体散射建模(TBSM)——利用分布能量诱导样本级运动并为一步生成器提供直接回归监督。TBSM将能量距离转化为恒定大小的每弹丸交互：每个弹丸被一个真实源吸引并被一个独立生成源排斥。在冻结图像特征上使用散射，TBSM在ImageNet-256上训练一步生成器，在NFE=1时达到PixelDiT-XL的FID=2.23和DiT-XL的FID=1.63。提供了扩散相关监督、Drift类动态和GAN类目标之间的关系设计地图。结果确立了跟踪散射作为高维一步生成的途径。代码已开源。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18198",
+    "keywords": [
+      "生成模型",
+      "三体散射",
+      "一步生成",
+      "FID",
+      "扩散模型",
+      "能量距离"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18198",
+    "categories_en": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "计算机视觉"
+    ],
+    "authors": [
+      "Peng Sun",
+      "Zhenglin Cheng",
+      "Deyuan Liu",
+      "Jun Xie",
+      "Xinyi Shang"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18195",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Certified Training for Convolutional Perturbations",
+    "raw_summary": "Vision models have been found to be susceptible to perturbations such as motion blur induced at runtime by a shaking camera. This impedes their deployment in critical applications since phenomena such as slightly blurred vision might lead to failures, for example an object detector missing objects. While methods such as data augmentation or Adversarial Training can improve empirical robustness, they lack formal safety guarantees, making it difficult to identify and mitigate hidden vulnerabilities. We introduce a novel Certified Training approach that leverages an efficient encoding of convolutional perturbations to train provably robust models. Our method significantly outperforms Adversarial Training, achieving, for example, over 80% robust accuracy against motion blur of reasonable intensity on CIFAR10 while maintaining comparable standard accuracy.",
+    "summary": "视觉模型被发现易受运行时扰动（如相机抖动导致的运动模糊）影响，阻碍其在关键应用中的部署。数据增强或对抗训练等方法虽能改善经验鲁棒性，但缺乏正式安全保证。本文引入一种新型认证训练方法，利用卷积扰动的有效编码来训练可证明鲁棒的模型。该方法显著优于对抗训练，在CIFAR10上对合理强度的运动模糊实现了超过80%的鲁棒准确率，同时保持可比的标准准确率。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18195",
+    "keywords": [
+      "认证训练",
+      "卷积扰动",
+      "运动模糊",
+      "鲁棒性",
+      "形式化保证",
+      "对抗训练"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18195",
+    "categories_en": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "计算机视觉",
+      "机器学习"
+    ],
+    "authors": [
+      "Benedikt Brückner",
+      "Alessio Lomuscio"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18213",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
+    "raw_summary": "Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code classifier, we find the agent itself encodes internal representations indicating the relevance of code context when reading tool output. Based on this finding, we propose SWE-Pruner Pro, which prunes tool outputs directly inside the agent. Concretely, a small head turns the agent's own internal representations into a keep-or-prune label for each line, with a length-aware embedding keyed to each tool output's line count. Across two open-weight backbones and four multi-turn benchmarks, SWE-Pruner Pro saves up to 39% of prompt and completion tokens while preserving task quality, with bounded inference overhead. Notably, on MiMo-V2-Flash SWE-Pruner Pro additionally raises the SWE-Bench Verified resolve rate by +3.8% and the long-context Oolong accuracy by +2.2 points.",
+    "summary": "为编码代理修剪长上下文是实现高效上下文管理的关键技术。现有方法如SWE-Pruner通过附加独立代码分类器实现。本文发现代理自身在阅读工具输出时编码了指示代码上下文相关性的内部表示。据此提出SWE-Pruner Pro——直接在代理内部修剪工具输出。具体而言，一个小头将代理的自身内部表示转换为每行代码的保留/修剪标签，配合长度感知嵌入 keyed 到每工具输出的行数。在两个开源骨干和四个多轮基准上，SWE-Pruner Pro节省高达39%的提示和补全token同时保持任务质量，推理开销有界。在MiMo-V2-Flash上额外将SWE-Bench Verified解决率提高+3.8%，长上下文Oolong准确率提高+2.2分。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18213",
+    "keywords": [
+      "上下文修剪",
+      "编码代理",
+      "SWE-Pruner",
+      "Token优化",
+      "代码LLM"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18213",
+    "categories_en": [
+      "cs.CL",
+      "cs.SE"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "软件工程"
+    ],
+    "authors": [
+      "Yuhang Wang",
+      "Yuling Shi",
+      "Shaoqiu Zhang",
+      "Jialiang Liang",
+      "Shilin He"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18144",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Do Language Models Dream of Binding Molecules? Benchmarking LLMs under Spatial Constraints",
+    "raw_summary": "Structure-based drug design (SBDD) leverages the 3D structure of protein targets, often complemented by other spatial constraints, to generate candidate binding molecules. While diffusion models have dominated as a leading paradigm for high-quality 3D molecule generation, LLM-based methods are rapidly emerging in molecular design and have shown competitive performance in pocket-conditioned molecular generation. However, their ability to reason about physics and 3D spatial environments is largely underexplored. In this work, we systematically analyze whether current general-purpose LLMs are capable of navigating complex 3D constraints compared to established baselines such as specialized diffusion models. We consider 3D ligand generation conditioned on protein pockets together with ligand- and interaction-derived spatial constraints, including anchor fragments, pharmacophore points, and mandatory pocket-ligand interactions. To enable this evaluation, we introduce 3D-Fit - a token-efficient benchmarking strategy for assessing LLM performance on multi-conditioned spatial molecule generation. Our findings reveal a clear pattern in LLM spatial capabilities: while they still lag behind state-of-the-art approaches, they are promising and can handle multiple spatial constraints simultaneously, enabling scaling to heterogeneous setups.",
+    "summary": "基于结构的药物设计(SBDD)利用蛋白靶点的3D结构生成候选结合分子。扩散模型主导高质量3D分子生成，基于LLM的方法在分子设计中快速崛起。本文系统分析当前通用LLM在导航复杂3D约束方面相较于专门扩散模型基线的表现。考虑条件于蛋白袋的3D配体生成，加上配体和相互作用衍生的空间约束（锚定片段、药效团点和强制性口袋-配体相互作用）。为此引入3D-Fit——一种token高效的基准测试策略，评估LLM在多条件空间分子生成上的表现。发现清晰模式：LLM的空间能力虽落后于SOTA方法但有前景，能同时处理多个空间约束，支持扩展到异构设置。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18144",
+    "keywords": [
+      "药物设计",
+      "3D约束",
+      "LLM空间推理",
+      "分子生成",
+      "3D-Fit基准"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18144",
+    "categories_en": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CL"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "人工智能",
+      "计算语言/NLP"
+    ],
+    "authors": [
+      "Thomas MacDougall",
+      "Maksim Kuznetsov",
+      "Roman Schutski",
+      "Rim Shayakhmetov",
+      "Maxim Malkov"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18142",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
+    "raw_summary": "Industrial Video Anomaly Detection (IVAD) aims to identify anomalous objects and events in an industrial process, which is crucial for modern manufacturing and quality control systems. Existing VLM-based anomaly reasoning methods are capable of detecting open-ended anomalies in general domains. However, their performance declines in industrial settings characterized by intricate object transformations, strict physics, and procedural constraints. To tackle the complexity of such interaction-intensive detection, we introduce a training-free agentic framework for anomaly detection free of domain-specific knowledge, emphasizing object state evolution like humans inspectors. It is designed to track spatial-temporal dynamics and underlying transformations of detected objects over time, and then reason over the object-wise temporal state trajectories to identify abnormal objects in grounded frames. Our method overcomes limitations of prior approaches that rely on retraining on normal clips or injecting domain knowledge as context for test-time inference. Extensive experiments on three IVAD datasets demonstrate that our method outperforms frontier VLMs, agentic frameworks, and traditional VAD methods fine-tuned on the respective datasets, while providing interpretable reports over anomaly processes and types.",
+    "summary": "工业视频异常检测(IVAD)旨在识别工业流程中的异常对象和事件。现有基于VLM的异常推理方法能在通用领域检测开放异常，但在具有复杂对象变换、严格物理和程序约束的工业环境中性能下降。本文引入一种无需训练的代理框架，强调像人类检查员一样追踪对象状态演变。该框架设计用于追踪检测对象随时间的时空动力学和底层变换，然后在对象级时间状态轨迹上进行推理以识别异常。克服了依赖正常剪辑重训练或在测试时注入领域知识的先前方法局限。在三个IVAD数据集上的实验表明，该方法超越前沿VLM、代理框架和分别在各自数据集上微调的传统VAD方法，并提供异常过程和类型的可解释报告。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18142",
+    "keywords": [
+      "工业异常检测",
+      "视频分析",
+      "VLM",
+      "代理框架",
+      "对象追踪",
+      "无需训练"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18142",
+    "categories_en": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CL",
+      "cs.MA"
+    ],
+    "categories_cn": [
+      "计算机视觉",
+      "人工智能",
+      "计算语言/NLP",
+      "多智能体"
+    ],
+    "authors": [
+      "Mei Yuan",
+      "Qi Long",
+      "Qifeng Wu",
+      "Zhenyang Li",
+      "Yizhou Zhao"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18110",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks",
+    "raw_summary": "Reinforcement learning (RL) on open-ended tasks compresses an LLM's rubric-based evaluation into a scalar reward, discarding rich textual feedback and conflating responses with distinct quality profiles. We propose Experiential Learning (EL), which repurposes the feedback model from an LLM-as-a-Judge into an LLM-as-a-Coach. The coach distills its assessment of each on-policy response into transferable experiential knowledge, which conditions a teacher model and is internalized by the policy through on-policy context distillation. Compared with scalar rewards, this higher-bandwidth feedback channel provides dense supervision and preserves fine-grained preferences among high-quality responses. Across two policy families, with feedback from the policy itself or a proprietary model, EL consistently outperforms rubric-based RL on held-out and unseen open-ended tasks. Notably, EL generalizes better beyond the training distribution, and mitigates reward hacking. These findings establish experiential knowledge as a richer and more generalizable learning signal for post-training on non-verifiable tasks.",
+    "summary": "开放任务的强化学习将LLM的基于量表的评估压缩为标量奖励，丢弃丰富的文本反馈并混淆不同质量特征的响应。本文提出体验式学习(EL)，将从LLM-as-a-Judge的反馈模型重新利用为LLM-as-a-Coach。教练将其对每个策略响应的评估提炼为可转移的体验知识， conditioning教师模型并通过策略上下文蒸馏内化。相比标量奖励，这种高带宽反馈通道提供密集监督并保留高质量响应间的细粒度偏好。在两种策略家族上（使用策略自身或专有模型的反馈），EL在保留和未见开放任务上一致超越基于量表的RL。值得注意的是EL在训练分布外泛化更好并减轻奖励黑客。结果确立体验知识为开放任务后训练中更丰富、更可泛化的学习信号。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18110",
+    "keywords": [
+      "体验式学习",
+      "LLM教练",
+      "强化学习",
+      "开放任务",
+      "反馈蒸馏"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18110",
+    "categories_en": [
+      "cs.LG",
+      "cs.CL"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "计算语言/NLP"
+    ],
+    "authors": [
+      "Tianzhu Ye",
+      "Li Dong",
+      "Guanheng Chen",
+      "He Zhu",
+      "Xun Wu"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18227",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "FlowMimic: Mask-free Visual Editing and Generation with Pixel-pair Warped Flow Field for Online Video Editing Data Generation and Modality Mimicry",
+    "raw_summary": "In line with the prevailing direction of vision research, we explore the integration of both generation and editing capabilities for video and image modalities within a single model. Current approaches to collecting video editing data typically depend on labour-intensive, time-consuming curated procedures--involving object mask annotation, the use of error-introducing pair synthesis via I2V model and ControlNet-like guidance, and VLM-based quality filtering or refinement--and demonstrate limited task scalability. As a result, the diversity of editing tasks remains substantially narrower than that available for image editing models. We develop a pixel-pair temporal warped flow field that can directly generate corresponding video editing samples in real time from image editing samples, and we demonstrate across multiple levels of video editing tasks that a model can learn video editing using only such data. We regard the image modality as a particular form of the video modality. Accordingly, we design a modality mimic generation loss and a modality mimic editing loss to relatively align the capabilities--and thereby the output distributions--of the two modalities through mutual imitation. Moreover, language-based visual editing entails the comprehension of the editing instruction and the reference visual content, the localization of the region corresponding to that instruction within the reference visual contents, and the modification of that region alone. Existing approaches predominantly rely on external aids, such as fine-tuning an additional MLLM or explicitly supplying a mask sequence as auxiliary input during inference. In contrast, we aspire for the model to internalize this capability. To that end, we introduce sense-related tasks--for instance, referring expression segmentation--along with corresponding editing-region-aware latent-level loss and attention-level loss.",
+    "summary": "本文探索视频和图像模态的生成和编辑能力整合。当前视频编辑数据收集依赖劳动密集的手工流程——涉及对象掩码标注、I2V模型+ControlNet的成对合成和VLM质量过滤——导致编辑任务多样性远窄于图像编辑。本文开发像素对时序扭曲流场，可从图像编辑样本实时生成对应视频编辑样本，证明模型仅用此类数据即可学习视频编辑。将图像模态视为视频模态的特例，设计模态模仿生成损失和模态模仿编辑损失通过相互模仿对齐两种模态的能力。针对语言视觉编辑，引入感知相关任务（如指代表达分割）及相应的编辑区域感知潜层损失和注意力层损失，使模型内化此能力而非依赖外部辅助。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18227",
+    "keywords": [
+      "视频编辑",
+      "图像生成",
+      "流场",
+      "模态模仿",
+      "无掩码",
+      "视觉编辑"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.18227",
+    "categories_en": [
+      "cs.CV"
+    ],
+    "categories_cn": [
+      "计算机视觉"
+    ],
+    "authors": [
+      "Dingyun Zhang",
+      "Lixue Gong",
+      "Wei Liu"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18163",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "OR Else: A Differentiable Trust Region for Policy Optimization",
+    "raw_summary": "PPO and the GRPO baseline studied here use clipped surrogate objectives whose favorable-direction saturation introduces an abrupt change in the scalar objective's derivative. We ask whether Output Reset (OR), a smooth one-sided saturation rule, offers a useful alternative for large language model post-training. PPO-OR and GRPO-OR replace the clipped policy term with an OR squared-margin loss in rollout-relative token log-ratio space; the advantage sign determines the update direction, and a token contributes zero direct OR residual after crossing the favorable margin. We compare PPO-clip with PPO-OR under generalized advantage estimation (GAE), and GRPO with GRPO-OR under group-relative advantages, using \\texttt{Llama-3.2-1B-Instruct} on Anthropic \\texttt{hh-rlhf} with one shared reward model and three seeds per method. Under GAE, PPO-OR has a mean final training-time reward-model score $0.305$ higher than PPO-clip, with a larger observed across-seed spread. Under group-relative advantages, GRPO-OR does not have a higher mean score, but shows a smaller observed spread, a near-zero terminal OR residual, and a declining overshoot fraction, while the matched GRPO clipped-objective trace remains variable. Both group-relative methods exhibit substantially larger rollout-to-current log-ratio displacement than the GAE methods, and OR does not consistently reduce it. Thus, OR changes optimization behavior in both matched comparisons, but the observed reward effect differs between them. At $G=2$, the GRPO-OR diagnostics do not translate into a reward-score gain. Whether larger groups change this outcome remains open. The reported scores are training-time reward-model measurements, not held-out human-preference performance.",
+    "summary": "PPO和GRPO基线使用裁剪代理目标，其有利方向饱和引入了标量目标导数的突变。本文探讨输出重置(OR)——一种平滑的单侧饱和规则——是否可为大语言模型后训练提供有用替代。PPO-OR和GRPO-OR在rollout相对token log-ratio空间中用OR平方边际损失替换裁剪策略项。在Anthropic hh-rlhf上使用Llama-3.2-1B-Instruct实验：GAE下PPO-OR比PPO-clip均值最终训练时奖励模型分数高0.305；组相对优势下GRPO-OR均值不更高但展现更小跨种子散布、近零终端OR残差和递减超调分数。两种组相对方法展现出显著大于GAE方法的rollout到当前log-ratio位移。OR在两种匹配比较中改变了优化行为，但奖励效果因方法而异。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18163",
+    "keywords": [
+      "RLHF",
+      "PPO",
+      "GRPO",
+      "策略优化",
+      "输出重置",
+      "可微信任域"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18163",
+    "categories_en": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "人工智能"
+    ],
+    "authors": [
+      "Chinmay Rane",
+      "Kanishka Tyagi",
+      "Michael Manry"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18226",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Causal Discovery on Irregular Time Series",
+    "raw_summary": "Causal discovery methods have shown strong performance in temporal systems, but they typically rely on regular and discrete lag structures, limiting their applicability to regularly sampled data. However, many real-world tasks require dealing with irregularly sampled streams of events, such as sensor streams, healthcare data, and financial transactions. In this work, we propose an extension of PCMCI+, a state-of-the-art method for causal discovery on regular multivariate time series, to allow for handling irregular time series. Instead of modelling causal relations through fixed-lag dependencies, our method aggregates causal influence over predefined temporal windows. We evaluate our method on synthetic irregular event streams with known causal structures under different signal-to-noise ratios, showing that it consistently recovers the underlying causal graph and substantially outperforms the standard PCMCI+ on irregularly sampled data.",
+    "summary": "因果发现方法在时序系统中表现出色，但通常依赖规则和离散滞后结构，限制了其在不规则采样数据上的适用性。许多现实任务需要处理不规则采样的事件流，如传感器流、医疗数据和金融交易。本文提出PCMCI+（一种最先进的规则多元时序因果发现方法）的扩展，使其能够处理不规则时序数据。新方法不再通过固定滞后建模因果关系，而是在预定义时间窗口上聚合因果影响。在已知因果结构的合成不规则事件流上评估，在不同信噪比下均能一致恢复底层因果图，在规则采样数据上显著优于标准PCMCI+。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18226",
+    "keywords": [
+      "因果发现",
+      "不规则时序",
+      "PCMCI+",
+      "事件流",
+      "传感器数据"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18226",
+    "categories_en": [
+      "cs.LG",
+      "stat.ME"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "方法论统计学"
+    ],
+    "authors": [
+      "Martim Penim",
+      "Ricardo Ribeiro Pereira",
+      "Jacopo Bono",
+      "Hugo Ferreira",
+      "Mário A. T. Figueiredo"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18225",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference",
+    "raw_summary": "We propose one-step and two-step methods for policy learning with retrieval-augmented generation (RAG). We formulate RAG-based action selection under the potential outcome framework. In the two-step method, vector search retrieves action-specific neighboring evidence in an embedding space, the generator estimates conditional expected outcomes or their contrasts, and a plug-in rule selects an action. This formulation connects action-specific vector search with nearest-neighbor matching in causal inference. We decompose the regret of the two-step method into candidate-generation regret and within-candidate choice regret, and we bound the latter using prediction-error guarantees for nearest-neighbor estimators and transformers. We evaluate the one-step method directly as a policy because its intermediate computation is unobserved.",
+    "summary": "本文提出基于检索增强生成(RAG)的策略学习方法，包括一步法和两步法。在潜在结果框架下形式化RAG动作选择：两步法中向量搜索在嵌入空间中检索动作特定的邻近证据，生成器估计条件期望结果或其对比，plug-in规则选择动作。此形式化将动作特定向量搜索与因果推断中的最近邻匹配联系起来。将两步法的遗憾分解为候选生成遗憾和候选内选择遗憾，后者使用最近邻估计器和transformers的预测误差保证进行边界。直接在策略层面评估一步法因其中间计算不可观察。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18225",
+    "keywords": [
+      "RAG",
+      "策略学习",
+      "因果推断",
+      "向量搜索",
+      "最近邻匹配"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18225",
+    "categories_en": [
+      "econ.EM",
+      "cs.LG",
+      "math.ST",
+      "stat.ME",
+      "stat.ML"
+    ],
+    "categories_cn": [
+      "计量经济学",
+      "机器学习",
+      "统计学",
+      "方法论统计学",
+      "机器学习统计学"
+    ],
+    "authors": [
+      "Masahiro Kato",
+      "Taka Kato"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18209",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Unveiling Invariant and Transferable Latent Factors Across Heterogeneous Environments via ATLAS",
+    "raw_summary": "This paper considers a multi-environment factor model in which high-dimensional covariates are collected from heterogeneous environments, with auxiliary labels available in a subset of these environments. The joint distribution of the covariates may vary across environments, whereas the latent structure is decomposed into invariant factors with shared loadings and heterogeneous factors with environment-specific loadings. Such a model is motivated by transfer learning and latent factor regression, where one seeks stable low-dimensional representations for both interpretation and robust out-of-sample prediction of the response $Y$. Leveraging the invariance principle, we show that the invariant and heterogeneous factors are disentangled under a minimal structural condition. Based on this, we propose ATLAS, an Auxiliary-label and invariance-guided Transfer via Latent Alignment across heterogeneous environmentS. ATLAS is a unified procedure that leverages the invariance principle to separate aligned invariant and unaligned heterogeneous factors, and further exploits supervision from auxiliary labels to extract prediction-invariant and transferable factors from those unaligned heterogeneous factors. ATLAS yields near-oracle performance for downstream latent factor regression, enables transferable prediction in new environments through the full latent signal when auxiliary labels are available, and reduces to robust invariant-factor-only prediction otherwise. We establish sharp non-asymptotic error bounds for recovering invariant and heterogeneous factors, identifying all the response-invariant factors, and estimating the invariant signal in $Y$.",
+    "summary": "本文考虑多环境因子模型，其中高维协变量从异质环境中收集，辅助标签在部分环境中可用。协变量的联合分布在环境间可能变化，潜在结构分解为具有共享载荷的不变因子和具有环境特定载荷的异质因子。基于不变性原理，证明了在最小结构条件下不变和异质因子可被解耦。提出ATLAS（辅助标签和不变性引导的跨异质环境潜在对齐转移），这是一个统一过程：利用不变性原理分离对齐不变因子和对齐异质因子，并利用辅助标签监督从未对齐异质因子中提取预测不变和可转移因子。ATLAS在下游潜在因子回归中达到近oracle性能，通过完整潜在信号实现新环境中的可转移预测。建立了恢复不变和异质因子、识别所有响应不变因子和估计响应不变信号的尖锐非渐近误差界。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18209",
+    "keywords": [
+      "多环境因子模型",
+      "不变性原理",
+      "可转移学习",
+      "潜在因子",
+      "ATLAS"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18209",
+    "categories_en": [
+      "math.ST",
+      "cs.LG",
+      "stat.ME",
+      "stat.ML"
+    ],
+    "categories_cn": [
+      "统计学",
+      "机器学习",
+      "方法论统计学",
+      "机器学习统计学"
+    ],
+    "authors": [
+      "Yihong Gu",
+      "Katherine Liao",
+      "Tianxi Cai"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18187",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "EVOLVE: Efficient Learned Volume Compression with Variable-Rate Encoding on a Cross-Domain Database",
+    "raw_summary": "Large-scale scientific simulations generate volumetric data at rates that far outpace advances in storage and network bandwidth, making effective lossy compression increasingly critical. However, conventional compressors often struggle to preserve fine structural details at high compression ratios (CRs), and implicit neural representations (INRs) require costly per-volume optimization and produce models with fixed CRs. To respond, we present EVOLVE, an autoencoder (AE)-based volume-compression framework that targets high CRs for offline compression, with three key contributions. First, we construct a large-scale cross-domain database of 6,376 volumes from 21 scientific simulations, curated via perceptual hashing to ensure diversity, enabling the optimized model to extract features that generalize across volumes within the covered scientific simulation domains. Second, we reexamine the design space of AE-based compressors and incorporate several macro- and micro-designs into a vanilla AE to develop EVOLVE, which substantially improves the expressive power and compression capability. Third, we develop a learnable gain mechanism with a three-stage training strategy to enable variable-rate encoding, allowing a single model to support continuous CR adjustment at inference time. Experiments on multiple unseen scientific simulation datasets demonstrate that EVOLVE achieves substantially higher CRs than conventional compressors at comparable reconstruction quality, while delivering compression speeds that are orders of magnitude faster than INR-based methods, highlighting its promise as a strong alternative for compressing scientific data. The code, model weights, and results are available on our project page at https://evolve-vis.github.io.",
+    "summary": "大规模科学模拟产生的体积数据速率远超存储和网络带宽的进步。传统压缩器在高压缩比下难以保留精细结构细节，隐式神经表示(INR)则需要昂贵的逐体积优化且产生固定压缩比的模型。本文提出EVOLVE——一种基于自编码器的体积压缩框架，面向离线高压缩比。三大贡献：(1)构建了包含21个科学模拟、6376个体积的大规模跨域数据库，通过感知哈希确保多样性；(2)重新审视自编码器压缩器设计空间，在基础架构中整合多项宏微观设计；(3)开发了带三阶段训练策略的可学习增益机制，实现可变率编码，单个模型支持推理时连续压缩比调整。在多个未见科学模拟数据集上，EVOLVE在相当重建质量下实现远高于传统压缩器的压缩比，压缩速度比INR方法快数个数量级。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18187",
+    "keywords": [
+      "体积压缩",
+      "自编码器",
+      "科学模拟",
+      "可变率编码",
+      "隐式神经表示"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18187",
+    "categories_en": [
+      "cs.GR",
+      "cs.DB",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "图形学",
+      "数据库",
+      "机器学习"
+    ],
+    "authors": [
+      "Kaiyuan Tang",
+      "Maizhe Yang",
+      "Chaoli Wang"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18232",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "It's Not What You Say, It's How You Say It: Evaluating LLM Responses to Expressions of Belief",
+    "raw_summary": "Users frequently express their beliefs to large language models (LLMs). In some situations, the LLM should accept these contextual beliefs as true. In others, they should stick to their prior knowledge. Notably, users' expressions of belief (EoBs) can take linguistically diverse forms - using presuppositions, evidential and certainty markers, or varied tones - each of which may have a different persuasiveness over the LLMs. We introduce a typology to systematically evaluate how different EoBs affect whether models follow context versus prior knowledge. The typology is grounded in four linguistically motivated dimensions: form, evidentiality, epistemic stance, and tone, spanning 17 fine-grained types. By pairing these EoBs with world knowledge facts, we generate controlled EoB-query pairs that isolate the effect of linguistic variation. Using this benchmark, we evaluate 16 LLMs that differ in architecture (Llama3, Qwen3, Gemma3), scale (1B-30B parameters), and training stages (base vs instruct). We identify meaningful variations in response behavior across these axes, e.g., that bigger models and instruction models tend to be less context-following than smaller models and base models. We further identify specific EoBs that statistically significantly persuade LMs more consistently than others. Our work reveals systematic patterns in how linguistic framing affects LLM context integration, with implications for prompt engineering and model robustness.",
+    "summary": "用户经常向LLM表达他们的信念。在某些情况下LLM应接受这些上下文信念为真，在其他情况下应坚持先验知识。本文引入一种类型学来系统评估不同信念表达(EoB)如何影响模型遵循上下文还是先验知识。类型学基于四个语言动机维度：形式、证据性、认识论立场和语调，涵盖17种细粒度类型。将EoB与世界知识事实配对生成受控EoB-查询对以隔离语言变化的影响。评估了16个不同架构(Llama3/Qwen3/Gemma3)、规模(1B-30B参数)和训练阶段(base vs instruct)的LLM。发现更大模型和指令模型往往比小模型和基础模型更少遵循上下文。识别出特定EoB在统计上更一致地说服语言模型。揭示了语言框架如何影响LLM上下文集成的系统模式。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18232",
+    "keywords": [
+      "信念表达",
+      "上下文跟随",
+      "LLM评估",
+      "语言框架",
+      "指令调优"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18232",
+    "categories_en": [
+      "cs.CL"
+    ],
+    "categories_cn": [
+      "计算语言/NLP"
+    ],
+    "authors": [
+      "Kevin Du",
+      "Clara Kümpel",
+      "Michelle Wastl",
+      "Alex Warstadt"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18181",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "VEHBench: A Stage-Local Diagnostic Benchmark for LLM-Assisted Vibration Energy Harvester Design",
+    "raw_summary": "Battery-free Internet of Things (IoT) requires iterative design of vibration energy harvesters (VEHs) under coupled physical constraints, while LLMs are emerging as interface layers for engineering workflows. However, existing engineering benchmarks primarily assess final artifact validity, offering limited insights into how LLMs behave across different stages of coupled physical design. We introduce VEHBench, an engineering-native diagnostic benchmark for LLM-assisted VEH design, featuring 763 literature-grounded tasks scored by an analytical physical oracle. VEHBench evaluates four design roles: specification triage, verifier-guided search, corrupted-state recovery, and policy-conditioned selection. Experimental results reveal that LLM capability is strongly stage-dependent: no single model consistently dominates the entire workflow, and response-control profiles expose distinct behavioral patterns across design roles. VEHBench thus provides a stage-aware foundation for evaluating, selecting, routing, and improving verifier-grounded engineering LLMs. The benchmark artifact is available at https://huggingface.co/datasets/AnonymousVehbench/vehbench",
+    "summary": "无电池物联网需要在耦合物理约束下迭代设计振动能量收集器(VEH)，而LLM正成为工程工作流的接口层。现有工程基准主要评估最终工件有效性，对LLM在耦合物理设计各阶段的行为提供有限洞察。本文引入VEHBench——面向LLM辅助VEH设计的工程原生诊断基准，包含763个文献支撑的任务并由分析物理预言机评分。评估四种设计角色：规范分诊、验证器引导搜索、损坏状态恢复和政策条件选择。实验揭示LLM能力强烈依赖阶段——没有单一模型在整个工作流中始终占优，响应控制模式暴露出不同设计角色间的独特行为模式。VEHBench为评估、选择、路由和改进验证器接地工程LLM提供了阶段感知基础。基准已在Hugging Face开源。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18181",
+    "keywords": [
+      "工程基准",
+      "振动能量收集器",
+      "LLM评估",
+      "阶段感知",
+      "物联网"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18181",
+    "categories_en": [
+      "cs.CL",
+      "cs.SE"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "软件工程"
+    ],
+    "authors": [
+      "Depeng Su",
+      "Yuyu Luo",
+      "Guobiao Hu"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18217",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement",
+    "raw_summary": "Human-object centric video personalization (HOCVP) is a core task within subject-driven video generation. However, existing methods suffer from two key limitations. First, most approaches focusing on inter-subject personalization still struggle to strike a balance between high subject fidelity and accurate interaction patterns between humans and diverse objects, especially when objects represent abstract concepts such as logos. Second, while intra-subject references (e.g., OCR maps, multi-view inputs) are expected to enhance subject fidelity, most existing works lack mechanisms to understand such latent correspondence. To address both challenges, we propose HOMIE, an HOCVP framework that tackles both inter- and intra-subject input settings in a unified manner. Compared to previous approaches, HOMIE proposes a better MLLM integration strategy to extract knowledge of reference-level relationships without compromising the controllability of text encoders or incurring costly re-alignment. Specifically, we introduce global multimodal guidance within self-attention to better align MLLM-derived semantic features with VAE tokens. Furthermore, we propose modality-reference embedding to differentiate tokens from MLLM features and VAE tokens and associate intra-subject reference image tokens. Extensive experiments validate that our method achieves state-of-the-art performance across various HOCVP tasks. Project Page: https://yiyangcai.github.io/homie-page.github.io/",
+    "summary": "以人为中心的视频个性化(HOCVP)是主题驱动视频生成的核心任务。现有方法在主体保真度和人机交互模式间难以平衡，尤其当对象代表抽象概念（如标志）时。本文提出HOMIE——一个统一处理主体间和主体内输入设置的HOCVP框架。HOMIE提出更好的多模态大语言模型(MLLM)集成策略，在不损害文本编码器可控性或产生昂贵重对齐的情况下提取参考级关系知识。具体引入自注意力内的全局多模态引导以更好地对齐MLLM派生语义特征与VAE token。还提出模态-参考嵌入以区分MLLM特征token和VAE token并关联主体内参考图像token。大量实验验证该方法在各种HOCVP任务上达到SOTA性能。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18217",
+    "keywords": [
+      "视频个性化",
+      "HOCVP",
+      "多模态",
+      "主题驱动生成",
+      "HOMIE"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18217",
+    "categories_en": [
+      "cs.CV"
+    ],
+    "categories_cn": [
+      "计算机视觉"
+    ],
+    "authors": [
+      "Yiyang Cai",
+      "Nan Chen",
+      "Rongchang Xie",
+      "Junwen Pan",
+      "Chunyang Jiang"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18153",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Robust Multimodal Dynamic Object Segmentation",
+    "raw_summary": "Dynamic object segmentation plays a critical role in many visual applications such as static scene reconstruction from dynamic videos. However, existing optical flow-based methods fail to ensure consistent static/dynamic segmentation along object boundaries, while 3D reconstruction-based approaches are highly sensitive to reconstruction errors. To address these limitations, we present a dynamic object segmentation framework that can generate both precise and complete dynamic masks by integrating multimodal cues including 2D point tracks, 3D reconstruction, and semantic information. We design a network combining Transformer architectures with feature clustering aggregation modules to perform static/dynamic classification of multimodal feature trajectories. It enables the model to adaptively determine which type of feature should dominate based on the characteristics of each scene, while also mitigating the impact of feature degradation. Additionally, we introduce a novel point-query-based SAM post-processing method capable of handling multiple objects within a single mask. Extensive experiments demonstrate that our approach achieves state-of-the-art performance in both dynamic object segmentation and static scene reconstruction tasks.",
+    "summary": "动态对象分割在从动态视频进行静态场景重建等视觉应用中起关键作用。现有光流方法无法沿对象边界确保一致的静态/动态分割，基于3D重建的方法对重建误差高度敏感。本文提出整合多模态线索（2D点追踪、3D重建和语义信息）的动态对象分割框架，生成精确完整的动态掩码。设计了结合Transformer架构和特征聚类聚合模块的网络，执行多模态特征轨迹的静态/动态分类。使模型能根据场景特征自适应决定哪种特征主导，同时缓解特征退化影响。还引入新型点查询SAM后处理方法，能处理单掩码中的多个对象。大量实验证明该方法在动态对象分割和静态场景重建任务上达到SOTA性能。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18153",
+    "keywords": [
+      "动态分割",
+      "多模态融合",
+      "光流",
+      "3D重建",
+      "SAM",
+      "场景理解"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18153",
+    "categories_en": [
+      "cs.CV"
+    ],
+    "categories_cn": [
+      "计算机视觉"
+    ],
+    "authors": [
+      "Zhe Xin",
+      "Hanzhi Chang",
+      "Penghui Huang",
+      "Yinian Mao",
+      "Guoquan Huang"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18151",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Plenoptic Condensation: A Novel Approach to Generalized Scene Reconstruction",
+    "raw_summary": "We present a novel Generalized Scene Reconstruction (GSR) approach called Plenoptic Condensation (PCon). PCon uses a multi-stage reconstruction pipeline, initially converting images into \"soupy\" scene elements with low (representational) power, then adaptively condensing the \"soup\" into \"structured\" elements of higher power capable of efficiently representing, for example, sharp edges and smooth reflective surfaces. PCon scene models called Reality Models (Relms) enable spatially varying representational power, which is essential for high-fidelity rendering, measurement, and scene understanding. We showcase several in-the-wild PCon reconstructions captured with consumer phone cameras and drones. In one case called \"Damaged Fiat\", PCon is benchmarked against two state-of-the-art (SOTA) GSR methods: NeRO and RT-Splatting. Referring to Figure 1 below, PCon reconstructs the car hood more than twice as accurately as the SOTA methods. But more importantly, the local damage profile error for PCon is 35 um (0.035 mm), whereas the two other SOTA methods are essentially unable to measure the damage at all. Our project website is available at https://quidient.github.io/pcon-2026.html.",
+    "summary": "本文提出新型广义场景重建(GSR)方法Plenoptic Condensation(PCon)。PCon使用多阶段重建管线，最初将图像转换为低表征力的\"汤状\"场景元素，然后自适应地将\"汤\"凝聚为高表征力的\"结构化\"元素（如锐利边缘和光滑反射表面）。PCon场景模型称为Reality Models(Relms)，启用空间变化的表征力，这对高保真渲染、测量和场景理解至关重要。展示了使用消费级手机摄像头和无人机捕获的野外PCon重建。在\"Damaged Fiat\"案例中，PCon重建汽车引擎盖的准确度是SOTA方法(NeRO和RT-Splatting)的两倍以上，局部损伤剖面误差仅35微米，而其他SOTA方法几乎无法测量损伤。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18151",
+    "keywords": [
+      "场景重建",
+      "广义场景重建",
+      "Plenoptic",
+      "Reality Models",
+      "3D重建"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18151",
+    "categories_en": [
+      "cs.CV"
+    ],
+    "categories_cn": [
+      "计算机视觉"
+    ],
+    "authors": [
+      "Brevin Tilmon",
+      "Alex DeJournett",
+      "John Leffingwell",
+      "Scott Ackerson"
+    ]
+  },
+  {
+    "id": "arxiv-2607.18150",
+    "date": "2026-07-21",
+    "category": "academic_paper",
+    "title": "Lossless-INR: Lossless Volumetric Implicit Neural Representations",
+    "raw_summary": "Implicit neural representation (INR) methods provide continuous coordinate-to-value mappings and integrate naturally with direct volume rendering, making them attractive for representing volumetric data. However, existing INR-based approaches for volumetric data are inherently lossy, and even small reconstruction errors can propagate through rendering and downstream analysis. In this work, we explore Lossless-INR, a lossless INR framework for 3D scientific volumetric data based on bit-plane decomposition. By decomposing each voxel value into binary bit-planes, we reformulate reconstruction as per-bit binary classification, so that exact recovery reduces to predicting every bit correctly. To make this optimization tractable while keeping the representation compact, we combine an octree block-partitioning strategy that adaptively subdivides complex regions with a ternary feature-grid network whose grid entries are parameterized by a ternary set of values. Experiments on diverse volumetric datasets show that this design can achieve zero bit-error rate and bit-exact reconstruction, enabling faithful rendering and downstream analysis with a compact representation. The code is available at https://github.com/TouKaienn/Lossless-INR.",
+    "summary": "隐式神经表示(INR)方法提供连续坐标到值的映射，与直接体积渲染天然集成。然而现有基于INR的体积数据方法本质上有损，微小重建误差会通过渲染和下游分析传播。本文探索Lossless-INR——一种基于位平面分解的无损INR框架，面向3D科学体积数据。通过将每个体素值分解为二进制位平面，将重建reformulate为逐位二分类，使得精确恢复简化为正确预测每一位。为使优化可行并保持表示紧凑，结合八叉树块分区策略自适应细分复杂区域与三元特征网格网络（网格条目由三元值集合参数化）。在多样体积数据集上的实验表明，该设计可实现零位错误率和位精确重建，以紧凑表示实现忠实渲染和下游分析。代码已开源。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.18150",
+    "keywords": [
+      "隐式神经表示",
+      "无损压缩",
+      "体积数据",
+      "位平面分解",
+      "科学可视化"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false,
+    "arxiv_id": "2607.18150",
+    "categories_en": [
+      "cs.CV",
+      "cs.GR"
+    ],
+    "categories_cn": [
+      "计算机视觉",
+      "图形学"
+    ],
+    "authors": [
+      "Kaiyuan Tang",
+      "Daniel Burke",
+      "Chaoli Wang"
+    ]
   }
 ]

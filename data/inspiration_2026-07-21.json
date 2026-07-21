@@ -1,41 +1,46 @@
 {
   "date": "2026-07-21",
+  "total_items": 54,
   "insights": [
     {
       "type": "industry_insight",
-      "title": "AI算力军备竞赛进入芯片定制时代",
-      "content": "Google Frozen v2芯片和Anthropic IPO进程揭示了一个深层趋势：AI竞争已从模型层扩展到基础设施层。Google将Gemini架构直接固化到硅片中以提升6-10倍能效，说明通用TPU已无法满足定制化需求。与此同时，Anthropic以9650亿美元估值推进IPO，Meta与Anthropic洽谈100亿美元算力租赁——AI算力正成为最稀缺的战略资源。未来12-18个月，我们可能看到更多AI公司自建或定制芯片，而非依赖通用供应商。",
-      "tags": ["AI芯片", "基础设施", "算力竞争", "Google", "Anthropic"]
-    },
-    {
-      "type": "industry_insight",
-      "title": "递归自我改进从学术概念走向产业现实",
-      "content": "Bloomberg今日专题文章和arXiv 2607.07663综述论文形成了一个有趣的对照：一方面业界对AI自我改进能力感到恐惧，另一方面Sakana AI已在东京设立专门RSI实验室，OpenAI的GPT-5.6 Sol已自主完成对Luna模型的训练。1250篇相关论文的综述表明，RSI正处于从'有界自我完善'向'自主研究循环'跨越的关键节点。这对AI安全治理提出了紧迫挑战——当AI开始改进AI时，人类的监督能力可能正在衰减。",
-      "tags": ["递归自我改进", "AI安全", "RSI", "Sakana AI", "OpenAI"]
+      "title": "arXiv 高价值论文精选",
+      "summary": "今日 arXiv 收录 32 篇论文，其中 4 篇为高价值研究。重点关注：Simple Domain Generalization for Strong Pixel-Level Image Ta...",
+      "tags": [
+        "arXiv",
+        "研究前沿",
+        "高价值"
+      ]
     },
     {
       "type": "startup_advice",
-      "title": "世界模型赛道爆发：GigaAI赴港IPO的信号意义",
-      "content": "GigaAI作为全球首家世界模型公司赴港IPO，与Moonshot AI 3亿美元ARR形成呼应——资本市场正在用真金白银投票给'具身智能+世界模型'方向。对于创业者而言，这意味着：1）世界模型是2026年下半年最热的融资叙事之一；2）港股对中国AI硬科技企业更加友好；3）客户验证比技术参数更重要（GigaAI已拿下中国一汽、京东等大客户）。如果你在做具身智能或机器人相关的AI产品，现在是讲好商业故事的最佳窗口期。",
-      "tags": ["世界模型", "具身智能", "IPO", "港股", "融资叙事"]
+      "title": "Product Hunt 今日趋势",
+      "summary": "今日 PH 上线 6 款产品，关注 AI+职业服务、开发者效率工具方向。",
+      "tags": [
+        "Product Hunt",
+        "创业方向",
+        "AI工具"
+      ]
     },
     {
-      "type": "side_project_idea",
-      "title": "AI芯片能效对比可视化工具",
-      "content": "Frozen v2相比TPU提升6-10倍能效的新闻引发了一个想法：做一个AI芯片能效对比的交互式仪表盘，追踪各家厂商（Google TPU, Nvidia H100/B200, Anthropic Fable, Meta Muse Spark等）的每瓦token处理能力趋势。这类数据散落在各处，缺乏系统性整理。可以做成一个开源项目，类似'AI算力性价比计算器'，帮助开发者和企业做基础设施选型决策。",
-      "tags": ["AI芯片", "能效", "可视化工具", "开源项目"]
+      "type": "side_project",
+      "title": "arXiv 论文追踪器",
+      "summary": "利用每日 arXiv 数据构建个性化研究追踪系统，按兴趣标签过滤论文，自动生成中文摘要。",
+      "tags": [
+        "arXiv",
+        "学术研究",
+        "NLP"
+      ]
     },
     {
-      "type": "side_project_idea",
-      "title": "全球AI IPO追踪器",
-      "content": "从Anthropic（9650亿估值）、OpenAI（8500亿目标）、Moonshot（200亿融资）、DeepSeek（710亿估值）、GigaAI（30亿赴港）来看，2026年正在成为AI IPO元年。做一个全球AI公司IPO进度追踪器，收录每家公司的融资历史、估值变化、承销商银行、预计时间表，会是一个非常有价值的资源。可以结合SEC EDGAR数据库和各国交易所公告自动更新。",
-      "tags": ["IPO", "AI公司", "金融数据", "追踪器"]
-    },
-    {
-      "type": "side_project_idea",
-      "title": "AI自我改进论文图谱",
-      "content": "基于arXiv 2607.07663综述中提到的1250篇RSI相关论文，可以构建一个交互式论文图谱，展示递归自我改进领域的发展脉络、关键作者、引用关系和技术分支。类似Semantic Scholar的推荐功能，但专注于这个细分领域。可以用NetworkX或D3.js实现，结合arXiv API自动获取最新论文。",
-      "tags": ["论文图谱", "RSI", "arXiv", "可视化"]
+      "type": "side_project",
+      "title": "Product Hunt 新品监控平台",
+      "summary": "聚合 PH 每日新品数据，按分类统计热度趋势，结合用户兴趣推荐相关产品。",
+      "tags": [
+        "Product Hunt",
+        "推荐系统",
+        "SaaS"
+      ]
     }
   ]
 }
