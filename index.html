@@ -133,6 +133,10 @@
       border-left: 4px solid var(--accent-blue);
     }
     
+    .inspiration-card.industry_insight {
+      border-left: 4px solid var(--accent-purple);
+    }
+    
     .inspiration-type-badge {
       font-size: 0.75rem;
       padding: 0.25rem 0.5rem;
@@ -149,6 +153,11 @@
     .inspiration-type-badge.side_project {
       background-color: rgba(88, 166, 255, 0.2);
       color: var(--accent-blue);
+    }
+    
+    .inspiration-type-badge.industry_insight {
+      background-color: rgba(188, 140, 255, 0.2);
+      color: var(--accent-purple);
     }
     
     .difficulty-badge {
@@ -677,7 +686,26 @@
       let html = '';
       
       inspirationData.insights.forEach(insight => {
-        if (insight.type === 'startup_advice') {
+        if (insight.type === 'industry_insight') {
+          html += `
+            <div class="inspiration-card industry_insight">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <span class="inspiration-type-badge industry_insight">行业洞察</span>
+                ${insight.tags ? insight.tags.map(t => `<span class="badge bg-info" style="font-size:0.7rem">${t}</span>`).join('') : ''}
+              </div>
+              <h6 class="mb-2" style="color: var(--text-primary); font-weight: 600;">${insight.title}</h6>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">${insight.summary}</p>
+              ${insight.key_points ? `
+                <div class="mt-2">
+                  <strong style="font-size: 0.8rem; color: var(--accent-blue);">关键点：</strong>
+                  <ul class="mb-0" style="font-size: 0.85rem; color: var(--text-secondary);">
+                    ${insight.key_points.map(p => `<li>${p}</li>`).join('')}
+                  </ul>
+                </div>
+              ` : ''}
+            </div>
+          `;
+        } else if (insight.type === 'startup_advice') {
           html += `
             <div class="inspiration-card startup_advice">
               <div class="d-flex align-items-center gap-2 mb-2">
