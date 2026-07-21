@@ -23,7 +23,7 @@
     "keywords": [
       "cs.CL"
     ],
-    "importance": 5
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18142v1-e8a6",
@@ -36,7 +36,7 @@
     "keywords": [
       "cs.CV"
     ],
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18144v1-a6cb",
@@ -49,7 +49,7 @@
     "keywords": [
       "cs.LG"
     ],
-    "importance": 5
+    "importance": 4
   },
   {
     "id": "arxiv-2607.18147v1-f432",
@@ -62,7 +62,7 @@
     "keywords": [
       "cs.AI"
     ],
-    "importance": 5
+    "importance": 3
   },
   {
     "id": "arxiv-2607.18149v1-4b75",
@@ -88,7 +88,7 @@
     "keywords": [
       "cs.CV"
     ],
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18151v1-6616",
@@ -101,7 +101,7 @@
     "keywords": [
       "cs.CV"
     ],
-    "importance": 3
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18153v1-c420",
@@ -153,7 +153,7 @@
     "keywords": [
       "cs.LG"
     ],
-    "importance": 3
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18171v1-17fe",
@@ -179,7 +179,7 @@
     "keywords": [
       "cs.CL"
     ],
-    "importance": 5
+    "importance": 4
   },
   {
     "id": "arxiv-2607.18187v1-48ca",
@@ -205,7 +205,7 @@
     "keywords": [
       "cs.CV"
     ],
-    "importance": 3
+    "importance": 1
   },
   {
     "id": "arxiv-2607.18198v1-3557",
@@ -231,7 +231,7 @@
     "keywords": [
       "cs.CL"
     ],
-    "importance": 5
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18200v1-4aa3",
@@ -296,7 +296,7 @@
     "keywords": [
       "cs.CV"
     ],
-    "importance": 3
+    "importance": 4
   },
   {
     "id": "arxiv-2607.18225v1-d547",
@@ -322,7 +322,7 @@
     "keywords": [
       "cs.LG"
     ],
-    "importance": 3
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18227v1-1dc4",
@@ -335,7 +335,7 @@
     "keywords": [
       "cs.CV"
     ],
-    "importance": 3
+    "importance": 4
   },
   {
     "id": "arxiv-2607.18228v1-94e9",
@@ -374,7 +374,7 @@
     "keywords": [
       "cs.CL"
     ],
-    "importance": 5
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18235v1-c306",
@@ -387,7 +387,7 @@
     "keywords": [
       "cs.CL"
     ],
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "arxiv-2607.18236v1-2a3c",
@@ -674,7 +674,7 @@
     "summary": "据泄露信息，Anthropic 预计于 2026 年 7 月 20-21 日发布 Claude Opus 5，作为 Opus 系列的重大升级。主要亮点包括：100 万 token 超长上下文窗口、更强的推理和编码能力。此次发布时机恰逢美国解除出口管制后 Claude Fable 5 和 Mythos 5 恢复全球访问权限。",
     "source": "WinCentral",
     "url": "https://thewincentral.com/claude-opus-5-leaks-july-2026-launch-1m-context-window/",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "Claude Opus 5",
@@ -713,7 +713,7 @@
     "summary": "ArXiv TLDR 整理了 2026 年 7 月 13-19 日一周内最受关注的十大 AI/ML 论文：1) CausalDS——评估 LLM 代理因果推理能力的新基准；2) QANTA 2026 多模态 QA 代理；3) 程序流程图辅助代码生成；4) Cost-Governed RAG——多租户 LLM 系统的成本归因架构；5) PROBE——评估 LLM 代码生成的新基准。",
     "source": "ArXiv TLDR / arXiv.org",
     "url": "https://arxivtldr.org/weekly",
-    "importance": 1,
+    "importance": 2,
     "is_major_event": false,
     "keywords": [
       "arXiv",
@@ -755,7 +755,7 @@
     "summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines 发布了 Inkling，一个 975B 参数的混合专家（MoE）开源模型。该模型在多项基准测试中表现优异，被视为挑战 OpenAI 和 Anthropic 主导地位的重要力量。",
     "source": "TechCrunch / Bloomberg",
     "url": "https://techcrunch.com/2026/07/19/thinking-machines-inkling-mira-murati/",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "Thinking Machines",
@@ -795,7 +795,7 @@
     "summary": "据纽约时报和多家媒体 7 月 19 日报道，Meta 与 Anthropic 正在早期谈判一项可能价值高达 100 亿美元的算力租赁协议，为期两年。该交易凸显 AI 开发所需算力的高度稀缺性。Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施，其首个 AI 数据中心超级集群 Prometheus 将于 2026 年上线。Meta 还计划从 9 月开始量产自研 AI 芯片。",
     "source": "GuruFocus / New York Times / Reuters",
     "url": "https://www.gurufocus.com/news/8966047/meta-meta-in-talks-with-anthropic-for-10-billion-ai-compute-agreement",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "Meta",
@@ -1066,7 +1066,7 @@
       "上下文持久化"
     ],
     "original_language": "en",
-    "importance": 3
+    "importance": 2
   },
   {
     "id": "pt-23",
@@ -1117,7 +1117,7 @@
       "SEO"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "pt-26",
@@ -1163,7 +1163,7 @@
     "summary": "据 CNBC 7 月 17 日报道，特朗普政府现在直接控制哪些合作伙伴可以获得 OpenAI 和 Anthropic 的前沿 AI 模型访问权限。Anthropic 的 Project Glasswing 和 OpenAI 的 Daybreak 合作伙伴名单在添加新客户前都需要获得政府明确批准。政府曾在 6 月因国家安全问题封锁了 Claude Mythos 5 和 Fable 5。",
     "source": "CNBC / AI Weekly",
     "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "白宫",
@@ -1318,7 +1318,7 @@
       "ARR"
     ],
     "original_language": "zh",
-    "importance": 5,
+    "importance": 1,
     "is_major_event": true
   },
   {
@@ -1405,7 +1405,7 @@
     "summary": "月之暗面（Moonshot AI）于 7 月 16 日正式发布 Kimi K3，这是一个 2.8 万亿参数的混合专家（MoE）模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，原生支持视觉能力。模型拥有 100 万 token 上下文窗口，在 Terminal Bench 2.1 上得分 88.3、FrontierSWE 上 81.2、GPQA-Diamond 上 93.5、MathVision 上 94.3，相比 K2 实现约 2.5 倍的缩放效率提升。完整开源权重计划于 7 月 27 日前释放。发布后 48 小时内需求激增导致 GPU 接近容量上限，Moonshot 于 7 月 19 日宣布暂停新用户订阅。彭博社报道 Moonshot 年化经常性收入已达 3 亿美元，正准备在香港上市。",
     "source": "AI Weekly / Bloomberg / Kimi Blog",
     "url": "https://www.kimi.com/blog/kimi-k3",
-    "importance": 5,
+    "importance": 1,
     "is_major_event": true,
     "keywords": [
       "Moonshot",
@@ -1446,7 +1446,7 @@
     "summary": "在上海世界人工智能大会 WAIC 7 月 16 日的开幕式上，华为公开展示了其 Atlas 950 SuperPoD 超算集群，基础配置将 1024 个昇腾芯片链接在一起，可扩展至 8192 个 NPU。该集群提供 1 EFLOPS FP8 和 2 EFLOPS FP4 算力，配备 256TB 统一内存，分布在 160 个机柜中。华为声称其算力和内存分别达到英伟达 NVL144 的 6.7 倍和 15 倍。",
     "source": "华为中央 / AI Weekly",
     "url": "https://www.huaweicentral.com/huawei-atlas-950-superpod/",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "华为",
@@ -1467,7 +1467,7 @@
     "summary": "7 月 16 日，29 个国家在上海签署协议，成立世界人工智能合作组织 WAICO，这是一个独立的政府间机构，总部设在上海。创始签署国包括俄罗斯、白俄罗斯、塞尔维亚、古巴、巴西、委内瑞拉、巴基斯坦、哈萨克斯坦、印度尼西亚和老挝。习近平在 WAIC 演讲中承诺五年内为发展中国家提供 5000 个 AI 培训机会。",
     "source": "新华社 / AI Weekly",
     "url": "https://english.news.cn/20260716/2fb3c068a5ec4efbbeb6a88acf155175/c.html",
-    "importance": 5,
+    "importance": 1,
     "is_major_event": true,
     "keywords": [
       "WAICO",
@@ -1497,7 +1497,7 @@
       "AI笔记"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "pt-34",
@@ -1515,7 +1515,7 @@
       "文本生成游戏"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "pt-35",
@@ -1581,7 +1581,7 @@
     "summary": "Roblox 于 2026 年 7 月 16 日宣布推出 AI 驱动的游戏创建功能'Build'，允许用户通过手机上的文字提示直接设计游戏，无需任何编程经验。该功能将简单的文本描述转化为基础游戏原型，大幅降低了游戏开发门槛。",
     "source": "TechCrunch",
     "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature/",
-    "importance": 1,
+    "importance": 2,
     "is_major_event": false,
     "keywords": [
       "Roblox",
@@ -1608,7 +1608,7 @@
       "1000万美元"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "st-23",
@@ -1663,7 +1663,7 @@
       "持续学习"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false
   },
   {
@@ -1692,7 +1692,7 @@
     "summary": "OpenAI 在 MIT Technology Review 上披露了其内部自动化红队 LLM GPT-Red 的技术细节。该工具用于对抗性训练 GPT-5.6，使其抵御提示注入攻击。结果显示，在 GPT-5 上成功率超过 90% 的攻击在 GPT-5.6 上降至不到 23%。GPT-Red 的攻击成功率为 84%，远超人类红队测试员的 13%。GPT-Red 发现了一类之前未知的虚假思维链注入方式。",
     "source": "MIT Technology Review",
     "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
-    "importance": 3,
+    "importance": 4,
     "is_major_event": false,
     "keywords": [
       "OpenAI",
@@ -1721,7 +1721,7 @@
       "多模态"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false
   },
   {
@@ -1749,7 +1749,7 @@
     "summary": "Spotify 联合创始人 Daniel Ek 参与的预防性健康初创公司 Neko Health 于 7 月 15 日宣布完成 7 亿美元 C 轮融资，由 Lightspeed Venture Partners 和 O.G. Venture Partners 领投，马克·扎克伯格以个人身份参与投资。Neko Health 开发 AI 驱动的全身体扫描和血液检测技术，用于早期疾病检测。",
     "source": "TechCrunch / Artificial Intelligence News",
     "url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "Neko Health",
@@ -1778,7 +1778,7 @@
       "企业服务"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false
   },
   {
@@ -1843,7 +1843,7 @@
     "summary": "印度 AI 编程初创公司 Emergent 于 7 月 15 日宣布完成 1.3 亿美元 C 轮融资，由 Creaegis 领投，估值达 15 亿美元，正式成为印度 2026 年第六家独角兽企业。Emergent 成立于 2025 年初，是一家总部位于班加罗尔和旧金山的'氛围编码'平台。",
     "source": "TechCrunch / YourStory / BeamStart",
     "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "Emergent",
@@ -1871,7 +1871,7 @@
       "风投"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "st-5",
@@ -1881,7 +1881,7 @@
     "summary": "以色列身份管理初创公司 Oak 于 7 月 15 日低调推出，宣布获得 6000 万美元种子轮融资。该公司由连续创业者 Shai Morag 联合创立，旨在解决 AI 代理激增带来的身份验证和身份管理混乱问题。",
     "source": "TechCrunch",
     "url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth/",
-    "importance": 1,
+    "importance": 2,
     "is_major_event": false,
     "keywords": [
       "Oak",
@@ -1926,7 +1926,7 @@
       "周榜第一"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 2
   },
   {
     "id": "st-15",
@@ -1944,7 +1944,7 @@
       "上市潮"
     ],
     "original_language": "zh",
-    "importance": 5,
+    "importance": 1,
     "is_major_event": true
   },
   {
@@ -1973,7 +1973,7 @@
     "summary": "中国 AI 大模型公司 DeepSeek 据报正在洽谈新一轮约 15 亿美元融资，估值达 710 亿美元。DeepSeek 由梁文峰于 2023 年创立，此前获得中国量化对冲基金幻方量化的单独投资。创始人梁文峰的个人财富已增至 380 亿美元。DeepSeek 计划于 2027 年完成 IPO 首秀。",
     "source": "TechCrunch / EconoTimes / Caproasia",
     "url": "https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/",
-    "importance": 5,
+    "importance": 1,
     "is_major_event": true,
     "keywords": [
       "DeepSeek",
@@ -2074,7 +2074,7 @@
       "开源模型"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false
   },
   {
@@ -2103,7 +2103,7 @@
     "summary": "OpenAI 在 2026 年 7 月推出了 ChatGPT Work，这是一个能够在项目中持续运行数小时的 AI 代理。与传统聊天界面不同，ChatGPT Work 可以长时间跟踪项目进度、自动维持上下文连续性，并在数小时内自主完成复杂的多步骤任务。",
     "source": "Anicca / The Verge",
     "url": "https://anicca.co.uk/blog/2026-07-11-ai-in-marketing-management/",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "ChatGPT Work",
@@ -2131,7 +2131,7 @@
       "硬件专利"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false
   },
   {
@@ -2168,7 +2168,7 @@
       "编码AI"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false
   },
   {
@@ -2186,7 +2186,7 @@
       "产品调整"
     ],
     "original_language": "zh",
-    "importance": 1,
+    "importance": 2,
     "is_major_event": false
   },
   {
@@ -2251,7 +2251,7 @@
     "summary": "OpenAI 于 2026 年 7 月 9 日正式向公众开放 GPT-5.6 系列模型，包括三个子型号：GPT-5.6 Sol（旗舰）、GPT-5.6 Terra（默认模型）和 GPT-5.6 Luna（轻量）。这是 OpenAI 首次采用分层定价架构，其中 Terra 作为 ChatGPT 默认模型降低了用户使用门槛。",
     "source": "Wireread / NeuroVerdict",
     "url": "https://wireread.com/news/gpt-5-6-family-terra-default-efficiency-analysis",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "GPT-5.6",
@@ -2299,7 +2299,7 @@
       "价格战"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false
   },
   {
@@ -2403,7 +2403,7 @@
     "summary": "Anthropic 于 2026 年 6 月 30 日发布 Claude Sonnet 5，定位为 Sonnet 系列中最具代理能力的模型。该模型能够自主规划、使用浏览器和终端等工具，并以此前仅更大更昂贵模型才能达到的水平进行自主执行。Sonnet 5 在代码编写、推理和多步代理任务方面显著强于前代。",
     "source": "Anthropic / TechCrunch",
     "url": "https://www.anthropic.com/news/claude-sonnet-5",
-    "importance": 3,
+    "importance": 1,
     "is_major_event": false,
     "keywords": [
       "Claude Sonnet 5",
