@@ -593,27 +593,23 @@
       let html = '';
       Object.keys(grouped).forEach(category => {
         const items = grouped[category];
-        const isPaper = category === 'academic_paper';
-        const maxShow = isPaper ? 5 : items.length;
-        const hasMore = isPaper && items.length > 5;
+        const maxShow = 5; // Show max 5 per category
+        const hasMore = items.length > maxShow;
+        const sectionId = 'section-' + category.replace(/[_\s]+/g, '-');
         
         html += `
           <div class="summary-section">
             <div class="summary-title">
               <i class="bi bi-${getCategoryIcon(category)}"></i>
-              ${getCategoryLabel(category)} (${items.length}${hasMore ? ' (显示前5篇)' : ''})
+              ${getCategoryLabel(category)} (${items.length})
+              ${hasMore ? `<button class="btn btn-sm btn-link p-0 ms-2 toggle-btn" onclick="toggleSection('${sectionId}', this)" data-showing="${maxShow}" data-total="${items.length}"><i class="bi bi-chevron-down"></i> 展开全部</button>` : ''}
             </div>
-            ${hasMore ? `
-            <button class="btn btn-sm btn-outline-secondary mt-2" onclick="togglePapers(this)" data-total="${items.length}">
-              <i class="bi bi-chevron-down"></i> 展开全部 ${items.length - 5} 篇论文
-            </button>
-            ` : ''}
         `;
         
         items.forEach((article, index) => {
-          const hidden = isPaper && index >= 5 ? ' style="display: none;"' : '';
+          const hidden = index >= maxShow ? ' style="display: none;"' : '';
           html += `
-            <div class="card mb-3"${hidden}>
+            <div class="card mb-3"${hidden} data-section="${sectionId}">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h5 class="card-title mb-0">
@@ -737,26 +733,36 @@
       document.getElementById('inspirationSection').style.display = 'block';
     }
 
-    function togglePapers(btn) {
+    function toggleSection(sectionId, btn) {
       const total = parseInt(btn.dataset.total);
+      const showing = parseInt(btn.dataset.showing);
       const isExpanded = btn.dataset.expanded === 'true';
       
-      // Toggle all hidden paper cards
-      document.querySelectorAll('#articlesContainer .card[style*="display: none"]').forEach(card => {
+      // Find all cards in this section
+      const cards = document.querySelectorAll(`.card[data-section="${sectionId}"]`);
+      
+      cards.forEach((card, index) => {
         if (isExpanded) {
-          card.style.display = 'none';
+          // Collapse: hide items beyond showing limit
+          if (index >= showing) {
+            card.style.display = 'none';
+          } else {
+            card.style.display = 'block';
+          }
         } else {
+          // Expand: show all
           card.style.display = 'block';
         }
       });
       
-      // Update button text
+      // Update button state
+      btn.dataset.expanded = isExpanded ? 'false' : 'true';
       if (isExpanded) {
-        btn.innerHTML = '<i class="bi bi-chevron-down"></i> 展开全部 ' + (total - 5) + ' 篇论文';
-        btn.dataset.expanded = 'false';
+        btn.innerHTML = '<i class="bi bi-chevron-down"></i> 展开全部';
+        btn.dataset.showing = showing;
       } else {
-        btn.innerHTML = '<i class="bi bi-chevron-up"></i> 收起超出部分';
-        btn.dataset.expanded = 'true';
+        btn.innerHTML = '<i class="bi bi-chevron-up"></i> 收起';
+        btn.dataset.showing = total;
       }
     }
   </script>
