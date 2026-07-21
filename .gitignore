@@ -1,0 +1,3 @@
+# Task subagent temp files
+data/task_*.json
+data/tmp_*.json
