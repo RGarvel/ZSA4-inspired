@@ -646,10 +646,13 @@
         
         html += `
           <div class="summary-section">
-            <div class="summary-title">
-              <i class="bi bi-${getCategoryIcon(category)}"></i>
-              ${getCategoryLabel(category)} (${items.length})
+            <div class="summary-title d-flex justify-content-between align-items-center">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-${getCategoryIcon(category)}"></i>
+                ${getCategoryLabel(category)} (${items.length})
+              </div>
               ${hasMore ? `<button class="toggle-expand-btn" id="btn-${sectionId}" onclick="toggleSection('${sectionId}', '${sectionId}')" data-expanded="false" title="展开全部"><i class="bi bi-chevron-down"></i></button>` : ''}
+            </div>
             </div>
         `;
         
