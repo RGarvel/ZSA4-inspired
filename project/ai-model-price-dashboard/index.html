@@ -524,13 +524,18 @@
 
     async function loadModels() {
       try {
-        const response = await fetch('./data/models.json');
-        if (!response.ok) throw new Error('Failed to load data');
+        // Use absolute URL to avoid relative path issues on GitHub Pages
+        const baseURL = window.location.origin + '/ZSA4-inspired/';
+        const response = await fetch(baseURL + 'project/ai-model-price-dashboard/data/models.json');
+        if (!response.ok) throw new Error(`Failed to load data: ${response.status}`);
         const data = await response.json();
         allModels = data.models;
         if ($el.lastUpdated) $el.lastUpdated.textContent = `数据更新于: ${data.updated_at}`;
       } catch (error) {
         console.error('Error loading data:', error);
+        if (!$el.tableBody.innerHTML) {
+          $el.tableBody.innerHTML = '<tr><td colspan="10" class="text-center text-danger">数据加载失败，请刷新页面重试</td></tr>';
+        }
       }
     }
 
