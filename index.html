@@ -181,7 +181,41 @@
       color: var(--text-primary);
     }
     
-    /* Card styling - dark mode fix */
+    .toggle-expand-btn {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--border-color);
+      background-color: var(--bg-card);
+      color: var(--text-secondary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      padding: 0;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+    }
+    
+    .toggle-expand-btn:hover {
+      border-color: var(--accent-blue);
+      color: var(--accent-blue);
+      background-color: rgba(88, 166, 255, 0.1);
+    }
+    
+    .toggle-expand-btn.expanded {
+      border-color: var(--accent-purple);
+      color: var(--accent-purple);
+      background-color: rgba(188, 140, 255, 0.1);
+    }
+    
+    .toggle-expand-btn.expanded:hover {
+      border-color: var(--accent-purple);
+      color: var(--accent-purple);
+      background-color: rgba(188, 140, 255, 0.2);
+    }
+    
     .card {
       background-color: var(--bg-card) !important;
       border: 1px solid var(--border-color) !important;
@@ -353,7 +387,7 @@
       <div class="col-md-4">
         <div class="stats-card major-event-card" id="majorCountCard" onclick="toggleMajorEvents()" title="点击筛选重大事件">
           <div class="stats-number" id="majorCount">0</div>
-          <div class="stats-label">重大事件 <i class="bi bi-funnel"></i></div>
+          <div class="stats-label">重大事件</div>
         </div>
       </div>
       <div class="col-md-4">
@@ -609,7 +643,7 @@
             <div class="summary-title">
               <i class="bi bi-${getCategoryIcon(category)}"></i>
               ${getCategoryLabel(category)} (${items.length})
-              ${hasMore ? `<button class="btn btn-sm btn-link p-0 ms-2 toggle-btn" onclick="toggleSection('${sectionId}', this)" data-showing="${maxShow}" data-total="${items.length}"><i class="bi bi-chevron-down"></i> 展开全部</button>` : ''}
+              ${hasMore ? `<button class="toggle-expand-btn" id="btn-${sectionId}" onclick="toggleSection('${sectionId}', '${sectionId}')" data-expanded="false"><i class="bi bi-plus-lg"></i></button>` : ''}
             </div>
         `;
         
@@ -758,16 +792,15 @@
       document.getElementById('inspirationSection').style.display = 'block';
     }
 
-    function toggleSection(sectionId, btn) {
-      const total = parseInt(btn.dataset.total);
-      const showing = parseInt(btn.dataset.showing);
+    function toggleSection(sectionId, btnId) {
+      const btn = document.getElementById('btn-' + btnId);
       const isExpanded = btn.dataset.expanded === 'true';
       
       const cards = document.querySelectorAll(`.card[data-section="${sectionId}"]`);
       
       cards.forEach((card, index) => {
         if (isExpanded) {
-          if (index >= showing) {
+          if (index >= 5) {
             card.style.display = 'none';
           } else {
             card.style.display = 'block';
@@ -779,11 +812,11 @@
       
       btn.dataset.expanded = isExpanded ? 'false' : 'true';
       if (isExpanded) {
-        btn.innerHTML = '<i class="bi bi-chevron-down"></i> 展开全部';
-        btn.dataset.showing = showing;
+        btn.classList.remove('expanded');
+        btn.innerHTML = '<i class="bi bi-plus-lg"></i>';
       } else {
-        btn.innerHTML = '<i class="bi bi-chevron-up"></i> 收起';
-        btn.dataset.showing = total;
+        btn.classList.add('expanded');
+        btn.innerHTML = '<i class="bi bi-dash-lg"></i>';
       }
     }
 
