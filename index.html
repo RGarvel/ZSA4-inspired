@@ -113,6 +113,12 @@
       border-color: var(--accent-blue);
     }
     
+    .category-tab.major-event-active {
+      background-color: rgba(255, 107, 107, 0.2);
+      border-color: #ff6b6b;
+      color: #ff6b6b;
+    }
+    
     .article-link {
       color: var(--text-primary);
       text-decoration: none;
@@ -155,6 +161,17 @@
       padding-bottom: 0.5rem;
       border-bottom: 1px solid var(--border-color);
       color: var(--text-primary);
+    }
+    
+    /* Card styling - dark mode fix */
+    .card {
+      background-color: var(--bg-card) !important;
+      border: 1px solid var(--border-color) !important;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    
+    .card-body {
+      background-color: transparent !important;
     }
     
     .inspiration-card {
@@ -329,9 +346,9 @@
       </div>
     </div>
 
-    <!-- Category Tabs -->
+    <!-- Category Tabs + Major Events Filter -->
     <div class="mb-4">
-      <div class="d-flex flex-wrap gap-2" id="categoryTabs">
+      <div class="d-flex flex-wrap gap-2 align-items-center" id="categoryTabs">
         <span class="category-tab active" data-category="all" onclick="filterByCategory('all')">
           <i class="bi bi-grid"></i> 全部
         </span>
@@ -346,6 +363,9 @@
         </span>
         <span class="category-tab" data-category="academic_paper" onclick="filterByCategory('academic_paper')">
           <i class="bi bi-journal-text"></i> 学术论文 (<span class="cat-count">0</span>)
+        </span>
+        <span class="category-tab" id="majorEventsBtn" onclick="toggleMajorEvents()" style="cursor: pointer;">
+          <i class="bi bi-exclamation-triangle"></i> 重大事件
         </span>
       </div>
     </div>
@@ -377,7 +397,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Data structure
     const DATA_URL = './data/all_inspiration.json';
     
     let allData = [];
@@ -400,17 +419,14 @@
       applyTheme();
     }
     
-    // Initialize theme
     applyTheme();
 
-    // Data loading
     async function loadData() {
       try {
         const response = await fetch(DATA_URL);
         if (!response.ok) throw new Error('Failed to load data');
         allData = await response.json();
         
-        // Normalize categories
         allData = allData.map(item => {
           if (item.category === 'developer_tool' || item.category === 'ai_model') {
             return { ...item, category: 'product_tool' };
@@ -418,11 +434,9 @@
           return item;
         });
         
-        // Extract available dates
         const dateSet = new Set(allData.map(item => item.date));
         availableDates = Array.from(dateSet).sort().reverse();
         
-        // Populate date selector
         const selector = document.getElementById('dateSelector');
         selector.innerHTML = '<option value="">选择日期</option>';
         availableDates.forEach(date => {
@@ -432,7 +446,6 @@
           selector.appendChild(option);
         });
         
-        // Load inspiration for selected date
         if (currentDate) {
           loadInspiration(currentDate);
         }
@@ -443,11 +456,8 @@
     }
 
     function getFilteredData() {
-      let filtered = allData.filter(item => {
-        return item.date === currentDate;
-      });
+      let filtered = allData.filter(item => item.date === currentDate);
       
-      // Normalize categories
       filtered = filtered.map(item => {
         if (item.category === 'developer_tool' || item.category === 'ai_model') {
           return { ...item, category: 'product_tool' };
@@ -459,7 +469,6 @@
         filtered = filtered.filter(item => item.category === currentCategory);
       }
       
-      // Filter by major events only
       if (showMajorEventsOnly) {
         filtered = filtered.filter(item => item.is_major_event);
       }
@@ -471,17 +480,16 @@
       showMajorEventsOnly = !showMajorEventsOnly;
       const btn = document.getElementById('majorEventsBtn');
       if (showMajorEventsOnly) {
-        btn.classList.add('active');
+        btn.classList.add('major-event-active');
         btn.innerHTML = '<i class="bi bi-exclamation-circle-fill"></i> 仅看重大事件';
       } else {
-        btn.classList.remove('active');
+        btn.classList.remove('major-event-active');
         btn.innerHTML = '<i class="bi bi-exclamation-triangle"></i> 重大事件';
       }
       render();
     }
 
     function getAllDateCategoryCounts() {
-      // Get category counts for the current date (not filtered)
       const dayData = allData.filter(item => item.date === currentDate);
       const counts = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0 };
       dayData.forEach(item => {
@@ -523,8 +531,6 @@
 
     function updateCategoryTabs() {
       const counts = getAllDateCategoryCounts();
-      
-      // Update counts in tabs (always show full day counts)
       document.querySelectorAll('.category-tab[data-category]').forEach(tab => {
         const cat = tab.dataset.category;
         const countSpan = tab.querySelector('.cat-count');
@@ -532,8 +538,6 @@
           countSpan.textContent = counts[cat];
         }
       });
-      
-      // Update active state
       document.querySelectorAll('.category-tab').forEach(tab => {
         tab.classList.toggle('active', tab.dataset.category === currentCategory);
       });
@@ -550,24 +554,20 @@
       const container = document.getElementById('articlesContainer');
       const emptyState = document.getElementById('emptyState');
       
-      // Load inspiration
       if (currentDate) {
         loadInspiration(currentDate);
       } else {
         document.getElementById('inspirationSection').style.display = 'none';
       }
       
-      // Update stats
       document.getElementById('totalCount').textContent = articles.length;
       document.getElementById('majorCount').textContent = articles.filter(a => a.is_major_event).length;
       document.getElementById('avgImportance').textContent = articles.length > 0 
         ? (articles.reduce((sum, a) => sum + (a.importance || 0), 0) / articles.length).toFixed(1)
         : '0';
       
-      // Update category tab counts
       updateCategoryTabs();
       
-      // Render articles
       if (articles.length === 0) {
         container.innerHTML = '';
         emptyState.style.display = 'block';
@@ -576,7 +576,6 @@
       
       emptyState.style.display = 'none';
       
-      // Group by category
       const grouped = {};
       articles.forEach(article => {
         if (!grouped[article.category]) {
@@ -588,7 +587,7 @@
       let html = '';
       Object.keys(grouped).forEach(category => {
         const items = grouped[category];
-        const maxShow = 5; // Show max 5 per category
+        const maxShow = 5;
         const hasMore = items.length > maxShow;
         const sectionId = 'section-' + category.replace(/[_\s]+/g, '-');
         
@@ -643,7 +642,6 @@
       container.innerHTML = html;
     }
 
-    // Inspiration data
     let inspirationData = null;
 
     async function loadInspiration(date) {
@@ -752,24 +750,20 @@
       const showing = parseInt(btn.dataset.showing);
       const isExpanded = btn.dataset.expanded === 'true';
       
-      // Find all cards in this section
       const cards = document.querySelectorAll(`.card[data-section="${sectionId}"]`);
       
       cards.forEach((card, index) => {
         if (isExpanded) {
-          // Collapse: hide items beyond showing limit
           if (index >= showing) {
             card.style.display = 'none';
           } else {
             card.style.display = 'block';
           }
         } else {
-          // Expand: show all
           card.style.display = 'block';
         }
       });
       
-      // Update button state
       btn.dataset.expanded = isExpanded ? 'false' : 'true';
       if (isExpanded) {
         btn.innerHTML = '<i class="bi bi-chevron-down"></i> 展开全部';
@@ -780,7 +774,6 @@
       }
     }
 
-    // Event listeners
     document.getElementById('dateSelector').addEventListener('change', function(e) {
       currentDate = e.target.value;
       currentCategory = 'all';
@@ -788,10 +781,8 @@
       render();
     });
 
-    // Initialize
     document.addEventListener('DOMContentLoaded', () => {
       loadData().then(() => {
-        // Auto-select the latest date
         if (availableDates.length > 0) {
           currentDate = availableDates[0];
           document.getElementById('dateSelector').value = currentDate;
