@@ -27,7 +27,6 @@
 ## 创业类
 
 ### 资讯
-- 36氪: https://36kr.com/feed
 - 虎嗅: https://www.huxiu.com/rss
 - TechCrunch: https://techcrunch.com/feed/
 - StrictlyVC: https://strictlyvc.substack.com/feed
