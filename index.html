@@ -85,6 +85,20 @@
       box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2);
     }
     
+    body.light-mode .stats-card.major-event-card:hover {
+      border-color: #cf222e;
+      box-shadow: 0 0 0 2px rgba(207, 34, 46, 0.15);
+    }
+    
+    body.light-mode .stats-card.major-event-card.active {
+      border-color: #cf222e;
+      background-color: rgba(207, 34, 46, 0.08);
+    }
+    
+    body.light-mode .stats-card.major-event-card.active .stats-number {
+      color: #cf222e;
+    }
+    
     .stats-card.major-event-card.active {
       border-color: #ff6b6b;
       background-color: rgba(255, 107, 107, 0.1);
@@ -125,16 +139,30 @@
       color: var(--accent-blue);
     }
     
+    .category-tab:hover i {
+      color: var(--accent-blue) !important;
+    }
+    
     .category-tab.active {
       background-color: var(--accent-blue);
       color: white;
       border-color: var(--accent-blue);
     }
     
+    .category-tab i {
+      transition: color 0.2s;
+    }
+    
     .category-tab.major-event-active {
       background-color: rgba(255, 107, 107, 0.2);
       border-color: #ff6b6b;
       color: #ff6b6b;
+    }
+    
+    body.light-mode .category-tab.major-event-active {
+      background-color: rgba(207, 34, 46, 0.1);
+      border-color: #cf222e;
+      color: #cf222e;
     }
     
     .article-link {
@@ -148,12 +176,21 @@
       color: var(--accent-blue);
     }
     
+    body.light-mode .article-link {
+      color: #1f2328;
+    }
+    
+    body.light-mode .article-link:hover {
+      color: #0969da;
+    }
+    
     .source-tag {
       font-size: 0.75rem;
       padding: 0.2rem 0.5rem;
       border-radius: 4px;
-      background-color: rgba(88, 166, 255, 0.1);
+      background-color: rgba(88, 166, 255, 0.15);
       color: var(--accent-blue);
+      font-weight: 500;
     }
     
     .importance-stars .bi-star {
@@ -162,19 +199,35 @@
     
     .importance-stars .bi-star-fill {
       color: var(--accent-orange) !important;
+      font-size: 1rem !important;
       text-shadow: 0 0 4px rgba(210, 153, 34, 0.4);
     }
     
     .importance-stars .bi-star.empty {
-      opacity: 0.7;
+      opacity: 0.35;
+    }
+    
+    .keyword-badge {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      background-color: rgba(188, 140, 255, 0.15);
+      color: var(--accent-purple);
+      font-weight: 500;
+    }
+    
+    body.light-mode .keyword-badge {
+      background-color: rgba(130, 80, 223, 0.12);
+      color: #8250df;
     }
     
     .major-event-badge {
       background-color: rgba(255, 107, 107, 0.2);
-      color: #ff6b6b;
+      color: #ff8a80;
       font-size: 0.7rem;
       padding: 0.2rem 0.5rem;
       border-radius: 4px;
+      font-weight: 600;
     }
     
     .summary-section {
@@ -287,6 +340,21 @@
     .inspiration-type-badge.industry_insight {
       background-color: rgba(188, 140, 255, 0.2);
       color: var(--accent-purple);
+    }
+    
+    body.light-mode .inspiration-type-badge.startup_advice {
+      background-color: rgba(26, 127, 55, 0.12);
+      color: #1a7f37;
+    }
+    
+    body.light-mode .inspiration-type-badge.side_project {
+      background-color: rgba(9, 105, 218, 0.12);
+      color: #0969da;
+    }
+    
+    body.light-mode .inspiration-type-badge.industry_insight {
+      background-color: rgba(130, 80, 223, 0.12);
+      color: #8250df;
     }
     
     .difficulty-badge {
@@ -423,6 +491,70 @@
     
     body.light-mode .difficulty-badge {
       font-weight: 600;
+    }
+    
+    body.light-mode .inspiration-card .badge.bg-info {
+      background-color: rgba(88, 166, 255, 0.15) !important;
+      color: #0969da !important;
+      font-weight: 600;
+    }
+    
+    body.light-mode .inspiration-card .badge.bg-secondary {
+      background-color: rgba(9, 105, 218, 0.12) !important;
+      color: #0969da !important;
+      font-weight: 500;
+    }
+    
+    body.light-mode .category-tab .cat-count {
+      color: #24292f !important;
+      font-weight: 600;
+    }
+    
+    body.light-mode .difficulty-badge.easy {
+      background-color: rgba(26, 127, 55, 0.12) !important;
+      color: #1a7f37 !important;
+    }
+    
+    body.light-mode .difficulty-badge.medium {
+      background-color: rgba(154, 103, 0, 0.12) !important;
+      color: #9a6700 !important;
+    }
+    
+    body.light-mode .difficulty-badge.hard {
+      background-color: rgba(207, 34, 46, 0.1) !important;
+      color: #cf222e !important;
+    }
+    
+    body.light-mode .tech-stack-tags .badge {
+      background-color: rgba(9, 105, 218, 0.12) !important;
+      color: #0969da !important;
+      font-weight: 500;
+    }
+    
+    body.light-mode .inspiration-card h6,
+    body.light-mode .inspiration-card strong {
+      color: #1f2328 !important;
+    }
+    
+    body.light-mode .inspiration-card p,
+    body.light-mode .inspiration-card div[style*="font-size: 0.75rem"] {
+      color: #4a5568 !important;
+    }
+    
+    body.light-mode .stats-card .stats-number {
+      color: #0969da;
+    }
+    
+    body.light-mode .stats-card .stats-label {
+      color: #4a5568 !important;
+    }
+    
+    .empty-state-icon {
+      color: var(--text-secondary);
+    }
+    
+    body.light-mode .empty-state-icon {
+      color: #656d76;
     }
     
     body.light-mode .stats-card {
@@ -768,7 +900,7 @@
                 
                 ${article.keywords && article.keywords.length > 0 ? `
                   <div class="mt-2">
-                    ${article.keywords.map(k => `<span class="badge bg-secondary me-1" style="font-size: 0.75rem;">${k}</span>`).join('')}
+                    ${article.keywords.map(k => `<span class="keyword-badge me-1" style="font-size: 0.75rem;">${k}</span>`).join('')}
                   </div>
                 ` : ''}
               </div>
