@@ -345,6 +345,33 @@
       color: var(--accent-purple);
     }
     
+    body.light-mode .inspiration-card.startup_advice {
+      border-left-color: var(--accent-green);
+    }
+    
+    body.light-mode .inspiration-card.side_project {
+      border-left-color: var(--accent-blue);
+    }
+    
+    body.light-mode .inspiration-card.industry_insight {
+      border-left-color: var(--accent-purple);
+    }
+    
+    body.light-mode .inspiration-type-badge.startup_advice {
+      background-color: rgba(26, 127, 55, 0.12) !important;
+      color: var(--accent-green);
+    }
+    
+    body.light-mode .inspiration-type-badge.side_project {
+      background-color: rgba(9, 105, 218, 0.12) !important;
+      color: var(--accent-blue);
+    }
+    
+    body.light-mode .inspiration-type-badge.industry_insight {
+      background-color: rgba(130, 80, 223, 0.12) !important;
+      color: var(--accent-purple);
+    }
+    
     body.light-mode .inspiration-type-badge.startup_advice {
       background-color: rgba(26, 127, 55, 0.12);
       color: #1a7f37;
@@ -447,45 +474,42 @@
       color: var(--text-primary);
     }
     
-    /* ===== Light Mode Enhancements ===== */
-    body.light-mode .navbar {
-      border-bottom: 1px solid var(--border-color);
-    }
-    
+    /* ===== Light Mode Enhancements — unified via CSS variables ===== */
     body.light-mode .navbar-brand span,
     body.light-mode .navbar-brand small {
-      color: #1f2328 !important;
+      color: var(--text-primary) !important;
     }
     
     body.light-mode .navbar-brand i.bi-lightbulb-fill {
-      color: #9a6700 !important;
+      color: var(--accent-orange) !important;
     }
     
     body.light-mode .playground-link i.bi-play-btn-fill {
-      color: #0969da;
+      color: var(--accent-blue);
     }
     
     body.light-mode .theme-toggle-btn i {
-      color: #1f2328;
+      color: var(--text-primary);
     }
     
     body.light-mode .date-selector option {
-      color: #1f2328;
+      background-color: var(--bg-card);
+      color: var(--text-primary);
     }
     
     body.light-mode .source-tag {
-      color: #0969da;
+      color: var(--accent-blue);
       background-color: rgba(9, 105, 218, 0.1);
     }
     
     body.light-mode .major-event-badge {
-      color: #cf222e;
+      color: var(--accent-red, #cf222e);
       background-color: rgba(207, 34, 46, 0.1);
       font-weight: 600;
     }
     
     body.light-mode .importance-stars .bi-star {
-      color: #b0b8c3;
+      color: var(--text-secondary);
     }
     
     body.light-mode .importance-stars .bi-star.empty {
@@ -498,66 +522,41 @@
     
     body.light-mode .inspiration-card .badge.bg-info {
       background-color: rgba(88, 166, 255, 0.15) !important;
-      color: #0969da !important;
+      color: var(--accent-blue) !important;
       font-weight: 600;
     }
     
     body.light-mode .inspiration-card .badge.bg-secondary {
       background-color: rgba(9, 105, 218, 0.12) !important;
-      color: #0969da !important;
+      color: var(--accent-blue) !important;
       font-weight: 500;
     }
     
     body.light-mode .category-tab .cat-count {
-      color: #24292f !important;
+      color: var(--text-primary) !important;
       font-weight: 600;
-    }
-    
-    body.light-mode .difficulty-badge.easy {
-      background-color: rgba(26, 127, 55, 0.12) !important;
-      color: #1a7f37 !important;
-    }
-    
-    body.light-mode .difficulty-badge.medium {
-      background-color: rgba(154, 103, 0, 0.12) !important;
-      color: #9a6700 !important;
-    }
-    
-    body.light-mode .difficulty-badge.hard {
-      background-color: rgba(207, 34, 46, 0.1) !important;
-      color: #cf222e !important;
-    }
-    
-    body.light-mode .tech-stack-tags .badge {
-      background-color: rgba(9, 105, 218, 0.12) !important;
-      color: #0969da !important;
-      font-weight: 500;
     }
     
     body.light-mode .inspiration-card h6,
     body.light-mode .inspiration-card strong {
-      color: #1f2328 !important;
+      color: var(--text-primary) !important;
     }
     
     body.light-mode .inspiration-card p,
     body.light-mode .inspiration-card div[style*="font-size: 0.75rem"] {
-      color: #4a5568 !important;
+      color: var(--text-secondary) !important;
     }
     
     body.light-mode .stats-card .stats-number {
-      color: #0969da;
+      color: var(--accent-blue);
     }
     
     body.light-mode .stats-card .stats-label {
-      color: #4a5568 !important;
-    }
-    
-    .empty-state-icon {
-      color: var(--text-secondary);
+      color: var(--text-secondary) !important;
     }
     
     body.light-mode .empty-state-icon {
-      color: #656d76;
+      color: var(--text-secondary);
     }
     
     body.light-mode .stats-card {
@@ -566,15 +565,37 @@
     
     body.light-mode .category-tab:not(.active) {
       font-weight: 500;
-      color: #24292f;
+      color: var(--text-primary);
     }
     
     body.light-mode .card-text {
-      color: #4a5568 !important;
+      color: var(--text-secondary) !important;
     }
     
     body.light-mode .text-muted {
-      color: #656d76 !important;
+      color: var(--text-secondary) !important;
+    }
+    
+    /* Difficulty badge light-mode overrides */
+    body.light-mode .difficulty-badge.easy {
+      background-color: rgba(26, 127, 55, 0.12) !important;
+      color: var(--accent-green) !important;
+    }
+    
+    body.light-mode .difficulty-badge.medium {
+      background-color: rgba(154, 103, 0, 0.12) !important;
+      color: var(--accent-orange) !important;
+    }
+    
+    body.light-mode .difficulty-badge.hard {
+      background-color: rgba(207, 34, 46, 0.1) !important;
+      color: var(--accent-red, #cf222e) !important;
+    }
+    
+    body.light-mode .tech-stack-tags .badge {
+      background-color: rgba(9, 105, 218, 0.12) !important;
+      color: var(--accent-blue) !important;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -700,12 +721,8 @@
         if (!response.ok) throw new Error('Failed to load data');
         allData = await response.json();
         
-        allData = allData.map(item => {
-          if (item.category === 'developer_tool' || item.category === 'ai_model') {
-            return { ...item, category: 'product_tool' };
-          }
-          return item;
-        });
+        // Normalize categories once at load time
+        allData = allData.map(item => ({ ...item, category: normalizeCategory(item.category) }));
         
         const dateSet = new Set(allData.map(item => item.date));
         availableDates = Array.from(dateSet).sort().reverse();
@@ -731,13 +748,6 @@
     function getFilteredData() {
       let filtered = allData.filter(item => item.date === currentDate);
       
-      filtered = filtered.map(item => {
-        if (item.category === 'developer_tool' || item.category === 'ai_model') {
-          return { ...item, category: 'product_tool' };
-        }
-        return item;
-      });
-      
       if (currentCategory !== 'all') {
         filtered = filtered.filter(item => item.category === currentCategory);
       }
@@ -761,43 +771,32 @@
     }
 
     function getAllDateCategoryCounts() {
-      const dayData = allData.filter(item => item.date === currentDate);
       const counts = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0 };
-      dayData.forEach(item => {
-        let cat = item.category;
-        if (cat === 'developer_tool' || cat === 'ai_model') cat = 'product_tool';
-        if (counts.hasOwnProperty(cat)) counts[cat]++;
+      allData.filter(item => item.date === currentDate).forEach(item => {
+        if (counts.hasOwnProperty(item.category)) counts[item.category]++;
       });
       return counts;
     }
 
     function getCategoryIcon(category) {
-      const icons = {
-        'ai_tech': 'cpu',
-        'startup': 'rocket-takeoff',
-        'product_tool': 'tool',
-        'academic_paper': 'journal-text'
-      };
-      return icons[category] || 'tag';
+      return { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' }[category] || 'tag';
     }
-
+    
     function getCategoryLabel(category) {
-      const labels = {
-        'ai_tech': 'AI 技术',
-        'startup': '创业动态',
-        'product_tool': '产品工具',
-        'academic_paper': '学术论文'
-      };
-      return labels[category] || category;
+      return { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' }[category] || category;
     }
-
+    
+    function normalizeCategory(cat) {
+      return (cat === 'developer_tool' || cat === 'ai_model') ? 'product_tool' : cat;
+    }
+    
     function renderStars(importance) {
       if (importance == null || importance === undefined) importance = 0;
-      let stars = '';
+      let s = '';
       for (let i = 1; i <= 5; i++) {
-        stars += i <= importance ? '<i class="bi bi-star-fill"></i>' : '<i class="bi bi-star empty"></i>';
+        s += i <= importance ? '<i class="bi bi-star-fill"></i>' : '<i class="bi bi-star empty"></i>';
       }
-      return stars;
+      return s;
     }
 
     function updateCategoryTabs() {
@@ -945,8 +944,15 @@
       }
     }
 
+    // Inspiration insight type config: label, badge-class, accent-color, extra-fields
+    const INSIGHT_CONFIG = {
+      industry_insight: { label: '行业洞察', badge: 'bg-info', accent: 'var(--accent-blue)', extraKey: 'key_points', extraLabel: '关键点' },
+      startup_advice:   { label: '创业建议', badge: 'bg-secondary', accent: 'var(--accent-green)', extraKey: 'action_items', extraLabel: '行动建议', relatedLabel: '关联新闻' },
+      side_project:     { label: '小项目', badge: '', accent: '', extraKey: 'tech_stack', extraLabel: '技术栈', relatedLabel: '灵感来源', hasDifficulty: true }
+    };
+    
     function renderInspiration() {
-      if (!inspirationData || !inspirationData.insights || inspirationData.insights.length === 0) {
+      if (!inspirationData || !inspirationData.insights?.length) {
         document.getElementById('inspirationSection').style.display = 'none';
         return;
       }
@@ -955,75 +961,43 @@
       let html = '';
       
       inspirationData.insights.forEach(insight => {
-        if (insight.type === 'industry_insight') {
-          html += `
-            <div class="inspiration-card industry_insight">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <span class="inspiration-type-badge industry_insight">行业洞察</span>
-                ${insight.tags ? insight.tags.map(t => `<span class="badge bg-info" style="font-size:0.7rem">${t}</span>`).join('') : ''}
-              </div>
-              <h6 class="mb-2" style="color: var(--text-primary); font-weight: 600;">${insight.title}</h6>
-              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">${insight.summary}</p>
-              ${insight.key_points ? `
-                <div class="mt-2">
-                  <strong style="font-size: 0.8rem; color: var(--accent-blue);">关键点：</strong>
-                  <ul class="mb-0" style="font-size: 0.85rem; color: var(--text-secondary);">
-                    ${insight.key_points.map(p => `<li>${p}</li>`).join('')}
-                  </ul>
-                </div>
-              ` : ''}
-            </div>
-          `;
-        } else if (insight.type === 'startup_advice') {
-          html += `
-            <div class="inspiration-card startup_advice">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <span class="inspiration-type-badge startup_advice">创业建议</span>
-                ${insight.tags ? insight.tags.map(t => `<span class="badge bg-secondary" style="font-size:0.7rem">${t}</span>`).join('') : ''}
-              </div>
-              <h6 class="mb-2" style="color: var(--text-primary); font-weight: 600;">${insight.title}</h6>
-              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">${insight.summary}</p>
-              ${insight.action_items ? `
-                <div class="mt-2">
-                  <strong style="font-size: 0.8rem; color: var(--accent-green);">行动建议：</strong>
-                  <ul class="mb-0" style="font-size: 0.85rem; color: var(--text-secondary);">
-                    ${insight.action_items.map(a => `<li>${a}</li>`).join('')}
-                  </ul>
-                </div>
-              ` : ''}
-              ${insight.related_news ? `
-                <div class="mt-2" style="font-size: 0.75rem; color: var(--text-secondary);">
-                  关联新闻：${insight.related_news.join(', ')}
-                </div>
-              ` : ''}
-            </div>
-          `;
-        } else if (insight.type === 'side_project') {
-          html += `
-            <div class="inspiration-card side_project">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <span class="inspiration-type-badge side_project">小项目</span>
-                <span class="difficulty-badge ${insight.difficulty || 'medium'}">${
-                  insight.difficulty === 'easy' ? '🟢 简单' : 
-                  insight.difficulty === 'hard' ? '🔴 困难' : '🟡 中等'
-                }</span>
-                ${insight.estimated_time ? `<span style="font-size: 0.75rem; color: var(--text-secondary);">⏱ ${insight.estimated_time}</span>` : ''}
-              </div>
-              <h6 class="mb-2" style="color: var(--text-primary); font-weight: 600;">${insight.title}</h6>
-              <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">${insight.summary}</p>
-              ${insight.tech_stack ? `
-                <div class="tech-stack-tags mt-2">
-                  ${insight.tech_stack.map(t => `<span class="badge">${t}</span>`).join('')}
-                </div>
-              ` : ''}
-              ${insight.related_news ? `
-                <div class="mt-2" style="font-size: 0.75rem; color: var(--text-secondary);">
-                  灵感来源：${insight.related_news.join(', ')}
-                </div>
-              ` : ''}
-            </div>
-          `;
+        const cfg = INSIGHT_CONFIG[insight.type] || INSIGHT_CONFIG.industry_insight;
+        const difficultyMap = { easy: '🟢 简单', medium: '🟡 中等', hard: '🔴 困难' };
+        
+        html += `<div class="inspiration-card ${insight.type}">`;
+        html += `<div class="d-flex align-items-center gap-2 mb-2">`;
+        html += `<span class="inspiration-type-badge ${insight.type}">${cfg.label}</span>`;
+        
+        // Tags
+        if (insight.tags?.length) {
+          html += insight.tags.map(t => `<span class="badge ${cfg.badge}" style="font-size:0.7rem">${t}</span>`).join('');
         }
+        
+        // Side project extras
+        if (cfg.hasDifficulty) {
+          html += `<span class="difficulty-badge ${insight.difficulty || 'medium'}">${difficultyMap[insight.difficulty] || '🟡 中等'}</span>`;
+          if (insight.estimated_time) html += `<span style="font-size:0.75rem;color:var(--text-secondary)">⏱ ${insight.estimated_time}</span>`;
+        }
+        html += '</div>';
+        
+        // Title + Summary
+        html += `<h6 class="mb-2" style="color:var(--text-primary);font-weight:600">${insight.title}</h6>`;
+        html += `<p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6">${insight.summary}</p>`;
+        
+        // Extra section (key_points / action_items / tech_stack)
+        if (insight[cfg.extraKey]?.length) {
+          html += `<div class="mt-2"><strong style="font-size:0.8rem;color:${cfg.accent || 'var(--text-secondary)'}">${cfg.extraLabel}：</strong>`;
+          html += `<ul class="mb-0" style="font-size:0.85rem;color:var(--text-secondary)">`;
+          html += insight[cfg.extraKey].map(x => `<li>${x}</li>`).join('');
+          html += '</ul></div>';
+        }
+        
+        // Related news
+        if (insight.related_news?.length) {
+          html += `<div class="mt-2" style="font-size:0.75rem;color:var(--text-secondary)">${cfg.relatedLabel || '关联'}：${insight.related_news.join(', ')}</div>`;
+        }
+        
+        html += '</div>';
       });
       
       container.innerHTML = html;

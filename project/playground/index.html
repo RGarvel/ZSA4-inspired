@@ -194,60 +194,38 @@
       color: var(--accent-orange);
     }
     
-    /* Light mode overrides for visibility */
-    body.light-mode .status-badge.live {
-      background-color: rgba(26, 127, 55, 0.12);
-      color: #1a7f37;
-    }
-    
-    body.light-mode .status-badge.dev {
-      background-color: rgba(154, 103, 0, 0.12);
-      color: #9a6700;
-    }
-    
-    body.light-mode .back-link {
-      color: #24292f;
-    }
-    
-    body.light-mode .back-link:hover {
-      color: #0969da;
-    }
-    
-    body.light-mode .back-link i {
-      color: #0969da;
-    }
-    
+    /* Unified light-mode overrides via CSS variables */
     body.light-mode .navbar-brand span {
-      color: #1f2328 !important;
+      color: var(--text-primary) !important;
     }
     
     body.light-mode .navbar-brand i.bi-lightbulb-fill {
-      color: #9a6700 !important;
+      color: var(--accent-orange) !important;
     }
     
-    body.light-mode .theme-toggle-btn i {
-      color: #1f2328;
+    body.light-mode .theme-toggle-btn i,
+    body.light-mode .back-link {
+      color: var(--text-primary);
+    }
+    
+    body.light-mode .back-link:hover,
+    body.light-mode .back-link i {
+      color: var(--accent-blue);
     }
     
     body.light-mode .project-card p {
-      color: #4a5568;
+      color: var(--text-secondary);
     }
     
-    body.light-mode .hero-section h1 {
-      color: #1f2328;
-    }
-    
-    body.light-mode .hero-section p {
-      color: #4a5568;
-    }
-    
+    body.light-mode .hero-section h1,
+    body.light-mode .hero-section p,
     body.light-mode .project-card h3 {
-      color: #1f2328;
+      color: var(--text-primary);
     }
     
     body.light-mode .badge.bg-secondary {
       background-color: rgba(9, 105, 218, 0.12);
-      color: #0969da;
+      color: var(--accent-blue);
     }
     
     body.light-mode .project-card {
@@ -301,18 +279,13 @@
     let isDarkMode = localStorage.getItem('theme') !== 'light';
     
     function applyTheme() {
-      if (isDarkMode) {
-        document.body.classList.remove('light-mode');
-        document.getElementById('themeIcon').className = 'bi bi-moon-fill';
-      } else {
-        document.body.classList.add('light-mode');
-        document.getElementById('themeIcon').className = 'bi bi-sun-fill';
-      }
+      document.body.classList.toggle('light-mode', !isDarkMode);
+      document.getElementById('themeIcon').className = isDarkMode ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     }
     
     function toggleTheme() {
       isDarkMode = !isDarkMode;
-      localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
       applyTheme();
     }
 
