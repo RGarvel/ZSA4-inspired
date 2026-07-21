@@ -163,11 +163,33 @@
       background-color: rgba(88, 166, 255, 0.1);
     }
     
+    .data-table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      -ms-overflow-style: auto;
+    }
+    
+    .data-table-wrapper::-webkit-scrollbar {
+      height: 6px;
+    }
+    
+    .data-table-wrapper::-webkit-scrollbar-track {
+      background: var(--bg-secondary);
+      border-radius: 3px;
+    }
+    
+    .data-table-wrapper::-webkit-scrollbar-thumb {
+      background: var(--border-color);
+      border-radius: 3px;
+    }
+    
     .data-table {
       background-color: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: 12px;
-      overflow: hidden;
+      min-width: 700px;
+      width: 100%;
     }
     
     .data-table table {
@@ -357,6 +379,8 @@
       .chart-container { height: 300px; padding: 1rem; }
       .control-bar .row { margin: 0; }
       .control-bar .col-md-3, .control-bar .col-md-2 { margin-bottom: 0.5rem; }
+      .data-table-wrapper { margin: 0 -0.5rem; border-radius: 0; }
+      .data-table { min-width: 700px; }
     }
   </style>
 </head>
@@ -438,8 +462,9 @@
       <canvas id="priceChart"></canvas>
     </div>
 
-    <div class="data-table">
-      <table class="table table-hover">
+    <div class="data-table-wrapper">
+      <div class="data-table">
+        <table class="table table-hover">
         <thead>
           <tr>
             <th style="width: 5%;">#</th>
@@ -455,7 +480,8 @@
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
-      </table>
+        </table>
+      </div>
     </div>
   </div>
 
