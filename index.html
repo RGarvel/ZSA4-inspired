@@ -25,7 +25,7 @@
       --bg-secondary: #ffffff;
       --bg-card: #ffffff;
       --text-primary: #1f2328;
-      --text-secondary: #656d76;
+      --text-secondary: #4a5568;
       --accent-blue: #0969da;
       --accent-green: #1a7f37;
       --accent-purple: #8250df;
@@ -166,7 +166,7 @@
     }
     
     .importance-stars .bi-star.empty {
-      opacity: 0.5;
+      opacity: 0.7;
     }
     
     .major-event-badge {
@@ -353,6 +353,10 @@
       background-color: rgba(88, 166, 255, 0.1);
     }
     
+    .playground-link i {
+      color: var(--accent-blue);
+    }
+    
     .theme-toggle-btn {
       background: none;
       border: 1px solid var(--border-color);
@@ -367,16 +371,86 @@
       border-color: var(--accent-blue);
       color: var(--accent-blue);
     }
+    
+    .theme-toggle-btn i {
+      color: var(--text-primary);
+    }
+    
+    /* ===== Light Mode Enhancements ===== */
+    body.light-mode .navbar {
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    body.light-mode .navbar-brand span,
+    body.light-mode .navbar-brand small {
+      color: #1f2328 !important;
+    }
+    
+    body.light-mode .navbar-brand i.bi-lightbulb-fill {
+      color: #9a6700 !important;
+    }
+    
+    body.light-mode .playground-link i.bi-play-btn-fill {
+      color: #0969da;
+    }
+    
+    body.light-mode .theme-toggle-btn i {
+      color: #1f2328;
+    }
+    
+    body.light-mode .date-selector option {
+      color: #1f2328;
+    }
+    
+    body.light-mode .source-tag {
+      color: #0969da;
+      background-color: rgba(9, 105, 218, 0.1);
+    }
+    
+    body.light-mode .major-event-badge {
+      color: #cf222e;
+      background-color: rgba(207, 34, 46, 0.1);
+      font-weight: 600;
+    }
+    
+    body.light-mode .importance-stars .bi-star {
+      color: #b0b8c3;
+    }
+    
+    body.light-mode .importance-stars .bi-star.empty {
+      opacity: 0.6;
+    }
+    
+    body.light-mode .difficulty-badge {
+      font-weight: 600;
+    }
+    
+    body.light-mode .stats-card {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    
+    body.light-mode .category-tab:not(.active) {
+      font-weight: 500;
+      color: #24292f;
+    }
+    
+    body.light-mode .card-text {
+      color: #4a5568 !important;
+    }
+    
+    body.light-mode .text-muted {
+      color: #656d76 !important;
+    }
   </style>
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-dark">
+  <nav class="navbar" id="mainNavbar">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
-        <i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i>
-        <span>灵感日报</span>
-        <small class="text-muted ms-2" style="font-size: 0.75rem;">Inspiration Daily</small>
+        <i class="bi bi-lightbulb-fill" id="navbarBrandIcon" style="color: var(--accent-orange);"></i>
+        <span id="navbarBrandText" style="color: var(--text-primary);">灵感日报</span>
+        <small class="ms-2" id="navbarBrandSub" style="font-size: 0.75rem; color: var(--text-secondary);">Inspiration Daily</small>
       </a>
       <a class="playground-link ms-auto" href="project/playground/index.html">
         <i class="bi bi-play-btn-fill"></i> Playground
