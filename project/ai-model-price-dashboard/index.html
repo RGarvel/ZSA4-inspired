@@ -473,6 +473,7 @@
     let compareList = [];
     let sortField = 'quality_score';
     let sortDirection = 'desc';
+    let _sortedModels = [];
 
     // Theme management
     let isDarkMode = localStorage.getItem('theme') !== 'light';
@@ -568,6 +569,9 @@
         return 0;
       });
       
+      // Store sorted models for chart sync
+      _sortedModels = models;
+      
       let html = '';
       models.forEach((model, index) => {
         const qualityClass = model.quality_score >= 90 ? 'high' : model.quality_score >= 75 ? 'medium' : 'low';
@@ -616,6 +620,7 @@
         sortDirection = field === 'name' ? 'asc' : 'desc';
       }
       renderTable();
+      updateChart();
     }
 
     function toggleCompare(modelId) {
@@ -751,10 +756,13 @@
         priceChart.destroy();
       }
       
-      // Use selected models for comparison, or default to first 10
+      // Use sorted models from table, or fall back to filtered
       let models;
       if (compareList.length > 0) {
         models = allModels.filter(m => compareList.includes(m.model_id));
+      } else if (_sortedModels && _sortedModels.length > 0) {
+        // Use the same sorted order as the table
+        models = _sortedModels.slice(0, 10);
       } else {
         models = getFilteredModels().slice(0, 10);
       }
