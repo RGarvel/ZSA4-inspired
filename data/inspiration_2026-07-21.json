@@ -4,8 +4,45 @@
   "insights": [
     {
       "type": "industry_insight",
-      "title": "今日新增 47 条 AI/产品资讯",
-      "summary": "Product Hunt 15 款新产品 + arXiv 32 篇论文"
+      "title": "arXiv 今日聚焦：AI代理、医学影像与智能电网",
+      "summary": "今日 arXiv 收录 32 篇论文，涵盖 cs.CL/cs.CV/cs.LG 等领域。重点关注：TRIM 减少 AI 生成代码冗余 18-33%；GigaPath-Flash 轻量病理学模型（43M参数，50x更快）；FlowMimic 无掩码视觉编辑技术。",
+      "tags": [
+        "arXiv",
+        "研究前沿",
+        "代码优化",
+        "医学AI"
+      ]
+    },
+    {
+      "type": "startup_advice",
+      "title": "Product Hunt 趋势：AI职业代理与开发者工具受关注",
+      "summary": "今日 PH 上线 15 款产品，其中 AI 职业代理 Double、开源 SEO 工具 OpenSEO 获得最多关注。创业者可关注：AI+职业服务、开发者效率工具、浏览器扩展方向。",
+      "tags": [
+        "Product Hunt",
+        "创业方向",
+        "AI职业",
+        "开发者工具"
+      ]
+    },
+    {
+      "type": "side_project",
+      "title": "基于 arXiv 论文的 AI 研究追踪器",
+      "summary": "利用每日 arXiv 数据构建个性化研究追踪系统，按兴趣标签过滤论文，自动生成中文摘要，适合学术工作者和 AI 研究者使用。",
+      "tags": [
+        "arXiv",
+        "学术研究",
+        "NLP"
+      ]
+    },
+    {
+      "type": "side_project",
+      "title": "Product Hunt 新品监控与推荐平台",
+      "summary": "聚合 PH 每日新品数据，按分类统计热度趋势，结合用户兴趣推荐相关产品，可作为独立 SaaS 或浏览器插件开发。",
+      "tags": [
+        "Product Hunt",
+        "推荐系统",
+        "SaaS"
+      ]
     }
   ]
 }
