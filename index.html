@@ -218,6 +218,10 @@
       background-color: rgba(188, 140, 255, 0.2) !important;
     }
     
+    .toggle-expand-btn .bi {
+      font-size: 0.9rem;
+    }
+    
     .card {
       background-color: var(--bg-card) !important;
       border: 1px solid var(--border-color) !important;
@@ -645,7 +649,6 @@
             <div class="summary-title">
               <i class="bi bi-${getCategoryIcon(category)}"></i>
               ${getCategoryLabel(category)} (${items.length})
-              ${hasMore ? `<button class="toggle-expand-btn" id="btn-${sectionId}" onclick="toggleSection('${sectionId}', '${sectionId}')" data-expanded="false"><i class="bi bi-plus-lg"></i></button>` : ''}
             </div>
         `;
         
@@ -684,6 +687,16 @@
             </div>
           `;
         });
+        
+        if (hasMore) {
+          html += `
+            <div class="text-center mt-3">
+              <button class="toggle-expand-btn" id="btn-${sectionId}" onclick="toggleSection('${sectionId}', '${sectionId}')" data-expanded="false" title="展开全部">
+                <i class="bi bi-chevron-down"></i>
+              </button>
+            </div>
+          `;
+        }
         
         html += '</div>';
       });
@@ -815,10 +828,10 @@
       btn.dataset.expanded = isExpanded ? 'false' : 'true';
       if (isExpanded) {
         btn.classList.remove('expanded');
-        btn.innerHTML = '<i class="bi bi-plus-lg"></i>';
+        btn.innerHTML = '<i class="bi bi-chevron-down"></i>';
       } else {
         btn.classList.add('expanded');
-        btn.innerHTML = '<i class="bi bi-dash-lg"></i>';
+        btn.innerHTML = '<i class="bi bi-chevron-up"></i>';
       }
     }
 
