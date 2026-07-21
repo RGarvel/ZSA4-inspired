@@ -4,384 +4,416 @@
     "title": "LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Reinforcement learning (RL) on open-ended tasks compresses an LLM's rubric-based evaluation into a scalar reward, discarding rich textual feedback and conflating responses with distinct quality profil",
     "url": "https://arxiv.org/abs/2607.18110v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18114v1-c95f",
     "title": "How Does Alignment Tuning Shape Representations of Sycophancy and Related Cue-Induced Biases in LLMs?",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Modern LLMs are alarmingly susceptible to surprisingly simple immaterial changes of input prompts: a casual hint, an incorrectly labeled few-shot example, or a fake prior assistant turn often flips an",
     "url": "https://arxiv.org/abs/2607.18114v1",
     "source": "arXiv",
     "keywords": [
       "cs.CL"
-    ]
+    ],
+    "importance": "high"
   },
   {
     "id": "arxiv-2607.18142v1-e8a6",
     "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Industrial Video Anomaly Detection (IVAD) aims to identify anomalous objects and events in an industrial process, which is crucial for modern manufacturing and quality control systems. Existing VLM-ba",
     "url": "https://arxiv.org/abs/2607.18142v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18144v1-a6cb",
     "title": "Do Language Models Dream of Binding Molecules? Benchmarking LLMs under Spatial Constraints",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Structure-based drug design (SBDD) leverages the 3D structure of protein targets, often complemented by other spatial constraints, to generate candidate binding molecules. While diffusion models have",
     "url": "https://arxiv.org/abs/2607.18144v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "high"
   },
   {
     "id": "arxiv-2607.18147v1-f432",
     "title": "LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Large language models (LLMs) and agentic AI systems have evolved from natural language tasks to using external tools to plan, retrieve, and act in technical domains. In smart grids, recent work applie",
     "url": "https://arxiv.org/abs/2607.18147v1",
     "source": "arXiv",
     "keywords": [
       "cs.AI"
-    ]
+    ],
+    "importance": "high"
   },
   {
     "id": "arxiv-2607.18149v1-4b75",
     "title": "Differentiable Logic Gate Networks for Low-Latency EEG Classification on Edge Devices",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Real-time EEG classification on edge devices is bottlenecked by the floating-point arithmetic of conventional neural networks. We investigated Diff-Logic as a hardware-native alternative that compile",
     "url": "https://arxiv.org/abs/2607.18149v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18150v1-8cf3",
     "title": "Lossless-INR: Lossless Volumetric Implicit Neural Representations",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Implicit neural representation (INR) methods provide continuous coordinate-to-value mappings and integrate naturally with direct volume rendering, making them attractive for representing volumetric da",
     "url": "https://arxiv.org/abs/2607.18150v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18151v1-6616",
     "title": "Plenoptic Condensation: A Novel Approach to Generalized Scene Reconstruction",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "We present a novel Generalized Scene Reconstruction (GSR) approach called Plenoptic Condensation (PCon). PCon uses a multi-stage reconstruction pipeline, initially converting images into \"soupy\" scene",
     "url": "https://arxiv.org/abs/2607.18151v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18153v1-c420",
     "title": "Robust Multimodal Dynamic Object Segmentation",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Dynamic object segmentation plays a critical role in many visual applications such as static scene reconstruction from dynamic videos. However, existing optical flow-based methods fail to ensure consi",
     "url": "https://arxiv.org/abs/2607.18153v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18161v1-d0f0",
     "title": "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Coding agents are increasingly used to accelerate code generation in many downstream tasks, such as fixing bugs, building applications, and prototyping. However, despite their value as coding assistan",
     "url": "https://arxiv.org/abs/2607.18161v1",
     "source": "arXiv",
     "keywords": [
       "cs.SE"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18163v1-020f",
     "title": "OR Else: A Differentiable Trust Region for Policy Optimization",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "PPO and the GRPO baseline studied here use clipped surrogate objectives whose favorable-direction saturation introduces an abrupt change in the scalar objective's derivative. We ask whether Output Res",
     "url": "https://arxiv.org/abs/2607.18163v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18164v1-068a",
     "title": "A Continual Validation, Updating, and Decision-Making Framework for Self-Adaptive Digital Twins via Robust Model Predictive Control: A Case Study in Additive Manufacturing",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Digital Twins rely on surrogate models to mirror physical systems in real time, yet these models can degrade as operating conditions evolve, a phenomenon known as concept drift. Maintaining surrogate",
     "url": "https://arxiv.org/abs/2607.18164v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18171v1-17fe",
     "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisio",
     "url": "https://arxiv.org/abs/2607.18171v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18181v1-ddf7",
     "title": "VEHBench: A Stage-Local Diagnostic Benchmark for LLM-Assisted Vibration Energy Harvester Design",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Battery-free Internet of Things (IoT) requires iterative design of vibration energy harvesters (VEHs) under coupled physical constraints, while LLMs are emerging as interface layers for engineering wo",
     "url": "https://arxiv.org/abs/2607.18181v1",
     "source": "arXiv",
     "keywords": [
       "cs.CL"
-    ]
+    ],
+    "importance": "high"
   },
   {
     "id": "arxiv-2607.18187v1-48ca",
     "title": "EVOLVE: Efficient Learned Volume Compression with Variable-Rate Encoding on a Cross-Domain Database",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Large-scale scientific simulations generate volumetric data at rates that far outpace advances in storage and network bandwidth, making effective lossy compression increasingly critical. However, conv",
     "url": "https://arxiv.org/abs/2607.18187v1",
     "source": "arXiv",
     "keywords": [
       "cs.GR"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18195v1-2cd9",
     "title": "Certified Training for Convolutional Perturbations",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Vision models have been found to be susceptible to perturbations such as motion blur induced at runtime by a shaking camera. This impedes their deployment in critical applications since phenomena such",
     "url": "https://arxiv.org/abs/2607.18195v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18198v1-3557",
     "title": "Three-Body Scattering for Generative Modeling",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Modern generative models typically rely on an adversarial critic, a prescribed noise-to-data path, or an autoregressive factorization. Instead, we show that a proper distributional energy can induce s",
     "url": "https://arxiv.org/abs/2607.18198v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18199v1-58b2",
     "title": "PPL-Factory: Task-Aware and Budget-Aware Data Selection from Language Modeling to Reasoning",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Not all training samples contribute equally to large language model fine-tuning. Selecting informative training samples can reduce the computational cost while preserving downstream performance. Many",
     "url": "https://arxiv.org/abs/2607.18199v1",
     "source": "arXiv",
     "keywords": [
       "cs.CL"
-    ]
+    ],
+    "importance": "high"
   },
   {
     "id": "arxiv-2607.18200v1-4aa3",
     "title": "Learning Adaptive Safety Margins for Visual Navigation",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Robots in cluttered indoor spaces often fail not because they cannot generate collision-free paths, but because a fixed safety margin is mis-calibrated: conservative margins cause detours and timeouts",
     "url": "https://arxiv.org/abs/2607.18200v1",
     "source": "arXiv",
     "keywords": [
       "cs.RO"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18209v1-6d19",
     "title": "Unveiling Invariant and Transferable Latent Factors Across Heterogeneous Environments via ATLAS",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "This paper considers a multi-environment factor model in which high-dimensional covariates are collected from heterogeneous environments, with auxiliary labels available in a subset of these environme",
     "url": "https://arxiv.org/abs/2607.18209v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18213v1-13e5",
     "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code",
     "url": "https://arxiv.org/abs/2607.18213v1",
     "source": "arXiv",
     "keywords": [
       "cs.CL"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18217v1-4581",
     "title": "HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Human-object centric video personalization (HOCVP) is a core task within subject-driven video generation. However, existing methods suffer from two key limitations. First, most approaches focusing on",
     "url": "https://arxiv.org/abs/2607.18217v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18218v1-1de6",
     "title": "GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Foundation models have emerged as a driving force in computational pathology, with the potential to transform cancer diagnosis, prognosis, and treatment selection by learning transferable representati",
     "url": "https://arxiv.org/abs/2607.18218v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18225v1-d547",
     "title": "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "We propose one-step and two-step methods for policy learning with retrieval-augmented generation (RAG). We formulate RAG-based action selection under the potential outcome framework. In the two-step m",
     "url": "https://arxiv.org/abs/2607.18225v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18226v1-d655",
     "title": "Causal Discovery on Irregular Time Series",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Causal discovery methods have shown strong performance in temporal systems, but they typically rely on regular and discrete lag structures, limiting their applicability to regularly sampled data. Howe",
     "url": "https://arxiv.org/abs/2607.18226v1",
     "source": "arXiv",
     "keywords": [
       "cs.LG"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18227v1-1dc4",
     "title": "FlowMimic: Mask-free Visual Editing and Generation with Pixel-pair Warped Flow Field for Online Video Editing Data Generation and Modality Mimicry",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "In line with the prevailing direction of vision research, we explore the integration of both generation and editing capabilities for video and image modalities within a single model. Current approache",
     "url": "https://arxiv.org/abs/2607.18227v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18228v1-94e9",
     "title": "Logical Judgments Under Pressure: Diagnosing Syllogistic Stability with Learned Soft Prefixes",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "To test how correct logical judgments respond to learned context, we prepend a soft prefix to an exactly labeled syllogistic reasoning benchmark while keeping the model fixed. Soft prefixes are opaque",
     "url": "https://arxiv.org/abs/2607.18228v1",
     "source": "arXiv",
     "keywords": [
       "cs.AI"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18230v1-4a2b",
     "title": "Simple Domain Generalization for Strong Pixel-Level Image Tampering Detection in Modern VLMs",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Modern vision-language models (VLMs) have significantly improved image generation and editing capabilities, making pixel-level image tampering detection increasingly important yet challenging under cr",
     "url": "https://arxiv.org/abs/2607.18230v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "medium"
   },
   {
     "id": "arxiv-2607.18232v1-5457",
     "title": "It's Not What You Say, It's How You Say It: Evaluating LLM Responses to Expressions of Belief",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Users frequently express their beliefs to large language models (LLMs). In some situations, the LLM should accept these contextual beliefs as true. In others, they should stick to their prior knowledg",
     "url": "https://arxiv.org/abs/2607.18232v1",
     "source": "arXiv",
     "keywords": [
       "cs.CL"
-    ]
+    ],
+    "importance": "high"
   },
   {
     "id": "arxiv-2607.18235v1-c306",
     "title": "Automated Discovery Has No Universally Superior Harness",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about ar",
     "url": "https://arxiv.org/abs/2607.18235v1",
     "source": "arXiv",
     "keywords": [
       "cs.CL"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18236v1-2a3c",
     "title": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Pretrained dense visual features from Vision Transformers (ViTs) are powerful yet have been underutilized in robot learning. Modern robot policies either compress each observation into a single global",
     "url": "https://arxiv.org/abs/2607.18236v1",
     "source": "arXiv",
     "keywords": [
       "cs.RO"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "arxiv-2607.18237v1-b426",
     "title": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
     "date": "2026-07-21",
     "category": "ai_tech",
-    "summary": "",
+    "summary": "Human visual similarity judgments are context-dependent. For example, two images may be similar in shape but distinct in color. Existing perceptual similarity metrics, however, collapse these nuances",
     "url": "https://arxiv.org/abs/2607.18237v1",
     "source": "arXiv",
     "keywords": [
       "cs.CV"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-1005e99f",
@@ -393,7 +425,8 @@
     "source": "Product Hunt",
     "keywords": [
       "AI Security / Open Source"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-14077b8a",
@@ -405,7 +438,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Mac Productivity / AI Memory"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-305a080d",
@@ -417,7 +451,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Mac Utility / Productivity"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-507908d6",
@@ -429,7 +464,8 @@
     "source": "Product Hunt",
     "keywords": [
       "AI Marketing / Social Media"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-5a23f9fd",
@@ -441,7 +477,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Browser Extension / Content Filtering"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-5d53c764",
@@ -453,7 +490,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Developer Tool / Open Source / SEO"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-627d06b8",
@@ -465,7 +503,8 @@
     "source": "Product Hunt",
     "keywords": [
       "AI Analytics / Brand Monitoring"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-7537bb3a",
@@ -477,7 +516,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Analytics / Privacy"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-843fc954",
@@ -489,7 +529,8 @@
     "source": "Product Hunt",
     "keywords": [
       "AI Security / Consumer"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-88989d85",
@@ -501,7 +542,8 @@
     "source": "Product Hunt",
     "keywords": [
       "AI Career Agent"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-9207353f",
@@ -513,7 +555,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Chrome Extension / Productivity"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-a02efb66",
@@ -525,7 +568,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Analytics / Privacy"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-a0acc51b",
@@ -537,7 +581,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Developer Security Tool"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-a1deab01",
@@ -549,7 +594,8 @@
     "source": "Product Hunt",
     "keywords": [
       "Developer Tool / Open Source"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ph-b966b240",
@@ -561,7 +607,8 @@
     "source": "Product Hunt",
     "keywords": [
       "AI Developer Tool"
-    ]
+    ],
+    "importance": "low"
   },
   {
     "id": "ait-13",
@@ -579,7 +626,7 @@
       "商业化"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -597,7 +644,7 @@
       "开发者工具"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -616,7 +663,7 @@
       "隐私"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -627,7 +674,7 @@
     "summary": "据泄露信息，Anthropic 预计于 2026 年 7 月 20-21 日发布 Claude Opus 5，作为 Opus 系列的重大升级。主要亮点包括：100 万 token 超长上下文窗口、更强的推理和编码能力。此次发布时机恰逢美国解除出口管制后 Claude Fable 5 和 Mythos 5 恢复全球访问权限。",
     "source": "WinCentral",
     "url": "https://thewincentral.com/claude-opus-5-leaks-july-2026-launch-1m-context-window/",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "Claude Opus 5",
@@ -655,7 +702,7 @@
       "Product Hunt"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -666,7 +713,7 @@
     "summary": "ArXiv TLDR 整理了 2026 年 7 月 13-19 日一周内最受关注的十大 AI/ML 论文：1) CausalDS——评估 LLM 代理因果推理能力的新基准；2) QANTA 2026 多模态 QA 代理；3) 程序流程图辅助代码生成；4) Cost-Governed RAG——多租户 LLM 系统的成本归因架构；5) PROBE——评估 LLM 代码生成的新基准。",
     "source": "ArXiv TLDR / arXiv.org",
     "url": "https://arxivtldr.org/weekly",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "arXiv",
@@ -688,7 +735,7 @@
     "summary": "Anthropic 与 Blackstone 联合推出 Ode，一家价值 15 亿美元的 AI 实施服务公司，旨在帮助企业部署和使用 AI 模型。这标志着 AI 模型厂商开始向下游实施服务延伸，构建更完整的 AI 价值链。",
     "source": "TechCrunch / Bloomberg",
     "url": "https://techcrunch.com/2026/07/19/anthropic-blackstone-ode-ai-implementation/",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Anthropic",
@@ -708,7 +755,7 @@
     "summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines 发布了 Inkling，一个 975B 参数的混合专家（MoE）开源模型。该模型在多项基准测试中表现优异，被视为挑战 OpenAI 和 Anthropic 主导地位的重要力量。",
     "source": "TechCrunch / Bloomberg",
     "url": "https://techcrunch.com/2026/07/19/thinking-machines-inkling-mira-murati/",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "Thinking Machines",
@@ -737,7 +784,7 @@
       "隐私"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -748,7 +795,7 @@
     "summary": "据纽约时报和多家媒体 7 月 19 日报道，Meta 与 Anthropic 正在早期谈判一项可能价值高达 100 亿美元的算力租赁协议，为期两年。该交易凸显 AI 开发所需算力的高度稀缺性。Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施，其首个 AI 数据中心超级集群 Prometheus 将于 2026 年上线。Meta 还计划从 9 月开始量产自研 AI 芯片。",
     "source": "GuruFocus / New York Times / Reuters",
     "url": "https://www.gurufocus.com/news/8966047/meta-meta-in-talks-with-anthropic-for-10-billion-ai-compute-agreement",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "Meta",
@@ -769,7 +816,7 @@
     "summary": "Google DeepMind 官方确认将 Gemini 3.5 Pro 的发布日期推迟，并取消了原始的基础模型版本，转而进行更深层次的预训练周期。据 9to5Google 报道，Google 在 6 月底更新了训练数据以提升编码能力，但结果令人失望，导致进一步延期。Gemini 3.5 Pro 将拥有 200 万 token 上下文窗口，通过 Google Cloud AI 平台和 API 端点提供。",
     "source": "9to5Google / HackerNoon",
     "url": "https://hackernoon.com/google-delays-gemini-35-pro-to-july-17-the-strategic-play-behind-the-scrapped-base-model",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Google DeepMind",
@@ -789,7 +836,7 @@
     "summary": "Hugging Face 披露了一起自主 AI 代理入侵事件：恶意数据集利用了两个代码执行路径——远程代码数据集加载器和数据集配置中的模板注入——在处理 worker 上执行代码，随后提升到节点访问权限并横向移动以窃取云和集群凭据。HF 使用开源 GLM 5.2 对超过 17000 个攻击事件进行了法医分析。",
     "source": "Hugging Face Blog / AI Weekly",
     "url": "https://huggingface.co/blog/security-incident-july-2026",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Hugging Face",
@@ -810,7 +857,7 @@
     "summary": "Unabyss 是一个 MCP 原生的自更新上下文层，解决 AI 助手跨应用记忆缺失的核心痛点。它将用户的 Notion、Slack、Gmail、GitHub、LinkedIn 等 20+ 日常应用中的数据自动提取、结构化并存储为持久化上下文库。该产品于 2026 年 5 月 25 日在 Product Hunt 发布，获得 659 票登顶日榜第一。",
     "source": "Product Hunt / GitHub PH AI Digest",
     "url": "https://www.producthunt.com/products/unabyss",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "AI context layer",
@@ -836,7 +883,8 @@
       "SaaS营销",
       "互动展示"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-17",
@@ -852,7 +900,8 @@
       "画布",
       "生产力"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-18",
@@ -868,7 +917,8 @@
       "企业工具",
       "知识管理"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-19",
@@ -884,7 +934,8 @@
       "营销工具",
       "快速演示"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-2",
@@ -894,7 +945,7 @@
     "summary": "BaseRT 是由 BaseCompute 团队开发的面向 Apple Silicon（M4/M5）的原生 Metal 推理运行时，专为大规模语言模型优化。据官方博客声称，BaseRT 比 llama.cpp 快约 6.4 倍、比 MLX 快约 3.9 倍。该项目同时发布了学术论文（arXiv: 2607.00501）。",
     "source": "Best of Product Hunt / arXiv",
     "url": "https://bestofproducthunt.wordpress.com/2026/07/19/basert-apple-m5-optimized/",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Apple Silicon",
@@ -920,7 +971,8 @@
       "文档编辑",
       "开发者工具"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-8",
@@ -939,7 +991,7 @@
       "融资"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -959,7 +1011,7 @@
       "端侧AI"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -978,7 +1030,7 @@
       "商业智能"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -996,7 +1048,8 @@
       "月之暗面",
       "AI前沿"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-22",
@@ -1012,7 +1065,8 @@
       "跨应用",
       "上下文持久化"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "medium"
   },
   {
     "id": "pt-23",
@@ -1028,7 +1082,8 @@
       "决策辅助",
       "个人AI"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-24",
@@ -1044,7 +1099,8 @@
       "网页任务",
       "无代码"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-25",
@@ -1060,7 +1116,8 @@
       "可见性",
       "SEO"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-26",
@@ -1076,7 +1133,8 @@
       "隐私",
       "桌面工具"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "ait-16",
@@ -1094,7 +1152,7 @@
       "WAIC"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -1105,7 +1163,7 @@
     "summary": "据 CNBC 7 月 17 日报道，特朗普政府现在直接控制哪些合作伙伴可以获得 OpenAI 和 Anthropic 的前沿 AI 模型访问权限。Anthropic 的 Project Glasswing 和 OpenAI 的 Daybreak 合作伙伴名单在添加新客户前都需要获得政府明确批准。政府曾在 6 月因国家安全问题封锁了 Claude Mythos 5 和 Fable 5。",
     "source": "CNBC / AI Weekly",
     "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "白宫",
@@ -1126,7 +1184,7 @@
     "summary": "由软银、索尼、本田、NEC 和丰田旗下 Preferred Networks 领导的约 44 家公司联盟——新成立的 Noetra Corp——将部署 27500 块英伟达 Rubin GPU 和 13750 块 Vera CPU（382 个 NVL72 机架，140MW），作为日本经济产业省 FRONTia 项目的主计算层，目标是打造面向实体 AI 和机器人的主权多模态基础模型。",
     "source": "AI Weekly / Nikkei Asia",
     "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/softbank-sony-honda-spearhead-work-on-japan-ai-with-nvidia-chips",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "日本",
@@ -1155,7 +1213,8 @@
       "B2B",
       "AI代理"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-28",
@@ -1171,7 +1230,8 @@
       "提示工程",
       "自动化"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-29",
@@ -1188,7 +1248,8 @@
       "渗透测试",
       "企业安全"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-30",
@@ -1204,7 +1265,8 @@
       "知识图谱",
       "运营自动化"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-31",
@@ -1220,7 +1282,8 @@
       "论文检索",
       "知识图谱"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-32",
@@ -1236,7 +1299,8 @@
       "Web应用",
       "开发工具"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-12",
@@ -1254,7 +1318,7 @@
       "ARR"
     ],
     "original_language": "zh",
-    "importance": 5,
+    "importance": "high",
     "is_major_event": true
   },
   {
@@ -1272,7 +1336,8 @@
       "A轮",
       "3500万欧元"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-21",
@@ -1289,7 +1354,8 @@
       "10亿欧元",
       "表格基础模型"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-6",
@@ -1299,7 +1365,7 @@
     "summary": "位于加州埃尔塞贡多的核能初创公司 Valar Atomics 正在洽谈新一轮 10 亿美元股权融资，公司估值约为 60 亿美元。Valar Atomics 专注于小型模块化核反应堆（SMR）技术，旨在为 AI 数据中心和高性能计算提供清洁、稳定的基载电力。",
     "source": "TechCrunch / The Information",
     "url": "https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Valar Atomics",
@@ -1319,7 +1385,7 @@
     "summary": "根据 Crunchbase 数据，2026 年 7 月 11 日至 7 月 17 日期间，美国 AI 初创公司在十大最大融资轮次中吸收了约 35 亿美元资金。该周融资覆盖了多个 AI 细分赛道，包括大语言模型基础设施、AI 编程工具、AI 驱动机器人、以及 AI 安全等领域。",
     "source": "Logicity / Crunchbase",
     "url": "https://logicity.in/en/blog/ai-startups-raised-3-5b-in-one-week-here-s-where-it-went",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "AI funding",
@@ -1339,7 +1405,7 @@
     "summary": "月之暗面（Moonshot AI）于 7 月 16 日正式发布 Kimi K3，这是一个 2.8 万亿参数的混合专家（MoE）模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，原生支持视觉能力。模型拥有 100 万 token 上下文窗口，在 Terminal Bench 2.1 上得分 88.3、FrontierSWE 上 81.2、GPQA-Diamond 上 93.5、MathVision 上 94.3，相比 K2 实现约 2.5 倍的缩放效率提升。完整开源权重计划于 7 月 27 日前释放。发布后 48 小时内需求激增导致 GPU 接近容量上限，Moonshot 于 7 月 19 日宣布暂停新用户订阅。彭博社报道 Moonshot 年化经常性收入已达 3 亿美元，正准备在香港上市。",
     "source": "AI Weekly / Bloomberg / Kimi Blog",
     "url": "https://www.kimi.com/blog/kimi-k3",
-    "importance": 5,
+    "importance": "high",
     "is_major_event": true,
     "keywords": [
       "Moonshot",
@@ -1369,7 +1435,7 @@
       "AI竞争"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -1380,7 +1446,7 @@
     "summary": "在上海世界人工智能大会 WAIC 7 月 16 日的开幕式上，华为公开展示了其 Atlas 950 SuperPoD 超算集群，基础配置将 1024 个昇腾芯片链接在一起，可扩展至 8192 个 NPU。该集群提供 1 EFLOPS FP8 和 2 EFLOPS FP4 算力，配备 256TB 统一内存，分布在 160 个机柜中。华为声称其算力和内存分别达到英伟达 NVL144 的 6.7 倍和 15 倍。",
     "source": "华为中央 / AI Weekly",
     "url": "https://www.huaweicentral.com/huawei-atlas-950-superpod/",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "华为",
@@ -1401,7 +1467,7 @@
     "summary": "7 月 16 日，29 个国家在上海签署协议，成立世界人工智能合作组织 WAICO，这是一个独立的政府间机构，总部设在上海。创始签署国包括俄罗斯、白俄罗斯、塞尔维亚、古巴、巴西、委内瑞拉、巴基斯坦、哈萨克斯坦、印度尼西亚和老挝。习近平在 WAIC 演讲中承诺五年内为发展中国家提供 5000 个 AI 培训机会。",
     "source": "新华社 / AI Weekly",
     "url": "https://english.news.cn/20260716/2fb3c068a5ec4efbbeb6a88acf155175/c.html",
-    "importance": 5,
+    "importance": "high",
     "is_major_event": true,
     "keywords": [
       "WAICO",
@@ -1430,7 +1496,8 @@
       "NotebookLM",
       "AI笔记"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-34",
@@ -1447,7 +1514,8 @@
       "移动端",
       "文本生成游戏"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-35",
@@ -1464,7 +1532,8 @@
       "代码分析",
       "本地工具"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-36",
@@ -1481,7 +1550,8 @@
       "34B参数",
       "开源模型"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-4",
@@ -1491,7 +1561,7 @@
     "summary": "LM Studio 于 2026 年 7 月 16 日发布 Bionic，一款专为开源模型设计的独立 AI 代理应用。Bionic 专注于实际工作任务：提供 Code 项目（仓库级内联 diff、代理搜索）和 Work 项目（文档、PDF、幻灯片、电子表格处理）两种模式。默认本地运行，代码不会离开用户机器。",
     "source": "LM Studio / 9to5Mac",
     "url": "https://9to5mac.com/2026/07/16/lm-studio-expands-beyond-chat-with-bionic/",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "LM Studio",
@@ -1511,7 +1581,7 @@
     "summary": "Roblox 于 2026 年 7 月 16 日宣布推出 AI 驱动的游戏创建功能'Build'，允许用户通过手机上的文字提示直接设计游戏，无需任何编程经验。该功能将简单的文本描述转化为基础游戏原型，大幅降低了游戏开发门槛。",
     "source": "TechCrunch",
     "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature/",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Roblox",
@@ -1537,7 +1607,8 @@
       "AI车辆检测",
       "1000万美元"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-23",
@@ -1553,7 +1624,8 @@
       "海洋保护",
       "1000万美元"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-3",
@@ -1563,7 +1635,7 @@
     "summary": "AI 驱动的旅行代理平台 Fora 于 7 月 16 日宣布完成 6000 万美元 D 轮融资，由 Forerunner 和 Tactile Ventures 领投，Insight Partners 和 Thrive Capital 跟投，公司估值达到 10 亿美元。Fora 已支持超过 15,000 名顾问，通过平台已预订超过 30 亿美元的旅行服务。",
     "source": "TechCrunch / Travolution",
     "url": "https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Fora",
@@ -1591,7 +1663,7 @@
       "持续学习"
     ],
     "original_language": "zh",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false
   },
   {
@@ -1609,7 +1681,8 @@
       "vibe coding",
       "Claude"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "ait-4",
@@ -1619,7 +1692,7 @@
     "summary": "OpenAI 在 MIT Technology Review 上披露了其内部自动化红队 LLM GPT-Red 的技术细节。该工具用于对抗性训练 GPT-5.6，使其抵御提示注入攻击。结果显示，在 GPT-5 上成功率超过 90% 的攻击在 GPT-5.6 上降至不到 23%。GPT-Red 的攻击成功率为 84%，远超人类红队测试员的 13%。GPT-Red 发现了一类之前未知的虚假思维链注入方式。",
     "source": "MIT Technology Review",
     "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "OpenAI",
@@ -1648,7 +1721,7 @@
       "多模态"
     ],
     "original_language": "zh",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false
   },
   {
@@ -1665,7 +1738,8 @@
       "提示注入",
       "通信基础设施"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-1",
@@ -1675,7 +1749,7 @@
     "summary": "Spotify 联合创始人 Daniel Ek 参与的预防性健康初创公司 Neko Health 于 7 月 15 日宣布完成 7 亿美元 C 轮融资，由 Lightspeed Venture Partners 和 O.G. Venture Partners 领投，马克·扎克伯格以个人身份参与投资。Neko Health 开发 AI 驱动的全身体扫描和血液检测技术，用于早期疾病检测。",
     "source": "TechCrunch / Artificial Intelligence News",
     "url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "Neko Health",
@@ -1704,7 +1778,7 @@
       "企业服务"
     ],
     "original_language": "zh",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false
   },
   {
@@ -1723,7 +1797,7 @@
       "澳大利亚"
     ],
     "original_language": "zh",
-    "importance": 2,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -1741,7 +1815,8 @@
       "Lightspeed Faction",
       "Coinbase Ventures"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-18",
@@ -1757,7 +1832,8 @@
       "种子轮",
       "GTMfund"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-2",
@@ -1767,7 +1843,7 @@
     "summary": "印度 AI 编程初创公司 Emergent 于 7 月 15 日宣布完成 1.3 亿美元 C 轮融资，由 Creaegis 领投，估值达 15 亿美元，正式成为印度 2026 年第六家独角兽企业。Emergent 成立于 2025 年初，是一家总部位于班加罗尔和旧金山的'氛围编码'平台。",
     "source": "TechCrunch / YourStory / BeamStart",
     "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "Emergent",
@@ -1794,7 +1870,8 @@
       "基金",
       "风投"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-5",
@@ -1804,7 +1881,7 @@
     "summary": "以色列身份管理初创公司 Oak 于 7 月 15 日低调推出，宣布获得 6000 万美元种子轮融资。该公司由连续创业者 Shai Morag 联合创立，旨在解决 AI 代理激增带来的身份验证和身份管理混乱问题。",
     "source": "TechCrunch",
     "url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth/",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false,
     "keywords": [
       "Oak",
@@ -1831,7 +1908,8 @@
       "Amoo",
       "智能体"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-38",
@@ -1847,7 +1925,8 @@
       "Product Hunt",
       "周榜第一"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-15",
@@ -1865,7 +1944,7 @@
       "上市潮"
     ],
     "original_language": "zh",
-    "importance": 5,
+    "importance": "high",
     "is_major_event": true
   },
   {
@@ -1883,7 +1962,8 @@
       "2亿美元",
       "宇树科技"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-4",
@@ -1893,7 +1973,7 @@
     "summary": "中国 AI 大模型公司 DeepSeek 据报正在洽谈新一轮约 15 亿美元融资，估值达 710 亿美元。DeepSeek 由梁文峰于 2023 年创立，此前获得中国量化对冲基金幻方量化的单独投资。创始人梁文峰的个人财富已增至 380 亿美元。DeepSeek 计划于 2027 年完成 IPO 首秀。",
     "source": "TechCrunch / EconoTimes / Caproasia",
     "url": "https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/",
-    "importance": 5,
+    "importance": "high",
     "is_major_event": true,
     "keywords": [
       "DeepSeek",
@@ -1921,7 +2001,8 @@
       "AI Agent",
       "隐私保护"
     ],
-    "original_language": "zh"
+    "original_language": "zh",
+    "importance": "low"
   },
   {
     "id": "ait-29",
@@ -1938,7 +2019,8 @@
       "商业秘密",
       "AI硬件"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-39",
@@ -1955,7 +2037,8 @@
       "WAICO",
       "AI政策"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "st-14",
@@ -1972,7 +2055,7 @@
       "融资"
     ],
     "original_language": "zh",
-    "importance": 2,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -1991,7 +2074,7 @@
       "开源模型"
     ],
     "original_language": "zh",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false
   },
   {
@@ -2009,7 +2092,8 @@
       "清华大学",
       "DeepMind"
     ],
-    "original_language": "zh"
+    "original_language": "zh",
+    "importance": "low"
   },
   {
     "id": "pt-6",
@@ -2019,7 +2103,7 @@
     "summary": "OpenAI 在 2026 年 7 月推出了 ChatGPT Work，这是一个能够在项目中持续运行数小时的 AI 代理。与传统聊天界面不同，ChatGPT Work 可以长时间跟踪项目进度、自动维持上下文连续性，并在数小时内自主完成复杂的多步骤任务。",
     "source": "Anicca / The Verge",
     "url": "https://anicca.co.uk/blog/2026-07-11-ai-in-marketing-management/",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "ChatGPT Work",
@@ -2047,7 +2131,7 @@
       "硬件专利"
     ],
     "original_language": "zh",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false
   },
   {
@@ -2065,7 +2149,8 @@
       "Cycle Double Cover",
       "数学证明"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "ait-22",
@@ -2083,7 +2168,7 @@
       "编码AI"
     ],
     "original_language": "zh",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false
   },
   {
@@ -2101,7 +2186,7 @@
       "产品调整"
     ],
     "original_language": "zh",
-    "importance": 2,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -2119,7 +2204,8 @@
       "AI编程",
       "Superintelligence Labs"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "ait-33",
@@ -2136,7 +2222,8 @@
       "自主训练",
       "递归自我改进"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-14",
@@ -2153,7 +2240,7 @@
       "创作者同意"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -2164,7 +2251,7 @@
     "summary": "OpenAI 于 2026 年 7 月 9 日正式向公众开放 GPT-5.6 系列模型，包括三个子型号：GPT-5.6 Sol（旗舰）、GPT-5.6 Terra（默认模型）和 GPT-5.6 Luna（轻量）。这是 OpenAI 首次采用分层定价架构，其中 Terra 作为 ChatGPT 默认模型降低了用户使用门槛。",
     "source": "Wireread / NeuroVerdict",
     "url": "https://wireread.com/news/gpt-5-6-family-terra-default-efficiency-analysis",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "GPT-5.6",
@@ -2193,7 +2280,7 @@
       "IDOR检测"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -2212,7 +2299,7 @@
       "价格战"
     ],
     "original_language": "zh",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false
   },
   {
@@ -2231,7 +2318,7 @@
       "RGB视觉"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -2249,7 +2336,8 @@
       "SpaceX",
       "编码模型"
     ],
-    "original_language": "en"
+    "original_language": "en",
+    "importance": "low"
   },
   {
     "id": "pt-15",
@@ -2267,7 +2355,7 @@
       "物理AI"
     ],
     "original_language": "zh",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -2285,7 +2373,8 @@
       "开源",
       "OpenRouter"
     ],
-    "original_language": "zh"
+    "original_language": "zh",
+    "importance": "low"
   },
   {
     "id": "st-9",
@@ -2303,7 +2392,7 @@
       "金融科技"
     ],
     "original_language": "en",
-    "importance": 3,
+    "importance": "low",
     "is_major_event": false
   },
   {
@@ -2314,7 +2403,7 @@
     "summary": "Anthropic 于 2026 年 6 月 30 日发布 Claude Sonnet 5，定位为 Sonnet 系列中最具代理能力的模型。该模型能够自主规划、使用浏览器和终端等工具，并以此前仅更大更昂贵模型才能达到的水平进行自主执行。Sonnet 5 在代码编写、推理和多步代理任务方面显著强于前代。",
     "source": "Anthropic / TechCrunch",
     "url": "https://www.anthropic.com/news/claude-sonnet-5",
-    "importance": 4,
+    "importance": "medium",
     "is_major_event": false,
     "keywords": [
       "Claude Sonnet 5",
