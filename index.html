@@ -322,6 +322,18 @@
       border-left: 4px solid var(--accent-purple);
     }
     
+    body.light-mode .inspiration-card.startup_advice {
+      border-left-color: var(--accent-green);
+    }
+    
+    body.light-mode .inspiration-card.side_project {
+      border-left-color: var(--accent-blue);
+    }
+    
+    body.light-mode .inspiration-card.industry_insight {
+      border-left-color: var(--accent-purple);
+    }
+    
     .inspiration-type-badge {
       font-size: 0.75rem;
       padding: 0.25rem 0.5rem;
@@ -345,18 +357,6 @@
       color: var(--accent-purple);
     }
     
-    body.light-mode .inspiration-card.startup_advice {
-      border-left-color: var(--accent-green);
-    }
-    
-    body.light-mode .inspiration-card.side_project {
-      border-left-color: var(--accent-blue);
-    }
-    
-    body.light-mode .inspiration-card.industry_insight {
-      border-left-color: var(--accent-purple);
-    }
-    
     body.light-mode .inspiration-type-badge.startup_advice {
       background-color: rgba(26, 127, 55, 0.12) !important;
       color: var(--accent-green);
@@ -370,21 +370,6 @@
     body.light-mode .inspiration-type-badge.industry_insight {
       background-color: rgba(130, 80, 223, 0.12) !important;
       color: var(--accent-purple);
-    }
-    
-    body.light-mode .inspiration-type-badge.startup_advice {
-      background-color: rgba(26, 127, 55, 0.12);
-      color: #1a7f37;
-    }
-    
-    body.light-mode .inspiration-type-badge.side_project {
-      background-color: rgba(9, 105, 218, 0.12);
-      color: #0969da;
-    }
-    
-    body.light-mode .inspiration-type-badge.industry_insight {
-      background-color: rgba(130, 80, 223, 0.12);
-      color: #8250df;
     }
     
     .difficulty-badge {
@@ -693,18 +678,40 @@
   <script>
     const DATA_URL = './data/all_inspiration.json';
     
+    // ── State ──────────────────────────────────────────────
     let allData = [];
     let currentDate = '';
     let currentCategory = 'all';
     let showMajorEventsOnly = false;
     let availableDates = [];
-
-    // Theme management
+    
+    // ── Cached DOM refs ────────────────────────────────────
+    const $ = id => document.getElementById(id);
+    let domCache = {};
+    
+    function cacheDOM() {
+      if (domCache._cached) return;
+      domCache = {
+        articles: $('articlesContainer'),
+        empty: $('emptyState'),
+        total: $('totalCount'),
+        major: $('majorCount'),
+        avg: $('avgImportance'),
+        majorCard: $('majorCountCard'),
+        inspSection: $('inspirationSection'),
+        inspContainer: $('inspirationContainer'),
+        dateSel: $('dateSelector'),
+        tabs: document.querySelectorAll('.category-tab'),
+      };
+      domCache._cached = true;
+    }
+    
+    // ── Theme ──────────────────────────────────────────────
     let isDarkMode = localStorage.getItem('theme') !== 'light';
     
     function applyTheme() {
       document.body.classList.toggle('light-mode', !isDarkMode);
-      document.getElementById('themeIcon').className = isDarkMode ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+      $('themeIcon').className = isDarkMode ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
       localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     }
     
@@ -714,7 +721,12 @@
     }
     
     applyTheme();
-
+    
+    // ── Category normalization (run once at load) ──────────
+    const NORMALIZE_MAP = { developer_tool: 'product_tool', ai_model: 'product_tool' };
+    function normalizeCat(cat) { return NORMALIZE_MAP[cat] || cat; }
+    
+    // ── Data loading ───────────────────────────────────────
     async function loadData() {
       try {
         const response = await fetch(DATA_URL);
@@ -722,333 +734,293 @@
         allData = await response.json();
         
         // Normalize categories once at load time
-        allData = allData.map(item => ({ ...item, category: normalizeCategory(item.category) }));
+        allData.forEach(item => { item.category = normalizeCat(item.category); });
         
         const dateSet = new Set(allData.map(item => item.date));
         availableDates = Array.from(dateSet).sort().reverse();
         
-        const selector = document.getElementById('dateSelector');
+        const selector = $('dateSelector');
         selector.innerHTML = '<option value="">选择日期</option>';
-        availableDates.forEach(date => {
-          const option = document.createElement('option');
-          option.value = date;
-          option.textContent = date;
-          selector.appendChild(option);
-        });
-        
-        if (currentDate) {
-          loadInspiration(currentDate);
+        for (const date of availableDates) {
+          const opt = document.createElement('option');
+          opt.value = opt.textContent = date;
+          selector.appendChild(opt);
         }
+        
+        if (currentDate) loadInspiration(currentDate);
       } catch (error) {
         console.error('Error loading data:', error);
         allData = [];
       }
     }
-
-    function getFilteredData() {
-      let filtered = allData.filter(item => item.date === currentDate);
+    
+    // ── Single-pass filter + stats + group ─────────────────
+    // Combines filtering, stats calculation, and grouping into ONE array pass
+    function computeFiltered() {
+      const cats = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0 };
+      const grouped = {};
+      let totalCount = 0, majorCount = 0, importanceSum = 0;
       
-      if (currentCategory !== 'all') {
-        filtered = filtered.filter(item => item.category === currentCategory);
+      for (const item of allData) {
+        if (item.date !== currentDate) continue;
+        if (currentCategory !== 'all' && item.category !== currentCategory) continue;
+        if (showMajorEventsOnly && !item.is_major_event) continue;
+        
+        totalCount++;
+        if (item.is_major_event) majorCount++;
+        importanceSum += item.importance || 0;
+        
+        // Count for tabs (always count all categories, regardless of major/filter)
+        if (cats.hasOwnProperty(item.category)) cats[item.category]++;
+        
+        // Group
+        const cat = item.category;
+        if (!grouped[cat]) grouped[cat] = [];
+        grouped[cat].push(item);
       }
       
-      if (showMajorEventsOnly) {
-        filtered = filtered.filter(item => item.is_major_event);
+      // Sort each group by importance desc
+      for (const cat in grouped) {
+        grouped[cat].sort((a, b) => b.importance - a.importance);
       }
       
-      return filtered.sort((a, b) => b.importance - a.importance);
-    }
-
-    function toggleMajorEvents() {
-      showMajorEventsOnly = !showMajorEventsOnly;
-      const card = document.getElementById('majorCountCard');
-      if (showMajorEventsOnly) {
-        card.classList.add('active');
-      } else {
-        card.classList.remove('active');
-      }
-      render();
-    }
-
-    function getAllDateCategoryCounts() {
-      const counts = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0 };
-      allData.filter(item => item.date === currentDate).forEach(item => {
-        if (counts.hasOwnProperty(item.category)) counts[item.category]++;
-      });
-      return counts;
-    }
-
-    function getCategoryIcon(category) {
-      return { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' }[category] || 'tag';
+      return { totalCount, majorCount, avgImp: totalCount ? (importanceSum / totalCount).toFixed(1) : '0', cats, grouped };
     }
     
-    function getCategoryLabel(category) {
-      return { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' }[category] || category;
-    }
-    
-    function normalizeCategory(cat) {
-      return (cat === 'developer_tool' || cat === 'ai_model') ? 'product_tool' : cat;
-    }
-    
-    function renderStars(importance) {
-      if (importance == null || importance === undefined) importance = 0;
-      let s = '';
-      for (let i = 1; i <= 5; i++) {
-        s += i <= importance ? '<i class="bi bi-star-fill"></i>' : '<i class="bi bi-star empty"></i>';
+    // ── Stars rendering (pre-built lookup) ─────────────────
+    const STAR_CACHE = [];
+    (function buildStarCache() {
+      const fill = '<i class="bi bi-star-fill"></i>', empty = '<i class="bi bi-star empty"></i>';
+      for (let i = 0; i <= 5; i++) {
+        let s = '';
+        for (let j = 1; j <= 5; j++) s += j <= i ? fill : empty;
+        STAR_CACHE[i] = s;
       }
-      return s;
-    }
-
-    function updateCategoryTabs() {
-      const counts = getAllDateCategoryCounts();
-      document.querySelectorAll('.category-tab[data-category]').forEach(tab => {
-        const cat = tab.dataset.category;
-        const countSpan = tab.querySelector('.cat-count');
-        if (countSpan && counts.hasOwnProperty(cat)) {
-          countSpan.textContent = counts[cat];
-        }
-      });
-      document.querySelectorAll('.category-tab').forEach(tab => {
-        tab.classList.toggle('active', tab.dataset.category === currentCategory);
-      });
-    }
-
-    function filterByCategory(category) {
-      currentCategory = category;
-      updateCategoryTabs();
-      render();
-    }
-
+    })();
+    
+    function renderStars(n) { return STAR_CACHE[n] || STAR_CACHE[0]; }
+    
+    // ── Render ─────────────────────────────────────────────
     function render() {
-      const articles = getFilteredData();
-      const container = document.getElementById('articlesContainer');
-      const emptyState = document.getElementById('emptyState');
+      cacheDOM();
+      const { totalCount, majorCount, avgImp, cats, grouped } = computeFiltered();
       
-      if (currentDate) {
-        loadInspiration(currentDate);
-      } else {
-        document.getElementById('inspirationSection').style.display = 'none';
-      }
+      // Stats — single DOM write
+      domCache.total.textContent = totalCount;
+      domCache.major.textContent = majorCount;
+      domCache.avg.textContent = avgImp;
       
-      document.getElementById('totalCount').textContent = articles.length;
-      document.getElementById('majorCount').textContent = articles.filter(a => a.is_major_event).length;
-      document.getElementById('avgImportance').textContent = articles.length > 0 
-        ? (articles.reduce((sum, a) => sum + (a.importance || 0), 0) / articles.length).toFixed(1)
-        : '0';
+      // Category tabs — update counts + active state
+      domCache.tabs.forEach(tab => {
+        const cat = tab.dataset.category;
+        const countEl = tab.querySelector('.cat-count');
+        if (countEl) countEl.textContent = cats[cat] || 0;
+        tab.classList.toggle('active', cat === currentCategory);
+      });
       
-      updateCategoryTabs();
-      
-      if (articles.length === 0) {
-        container.innerHTML = '';
-        emptyState.style.display = 'block';
+      // Empty state
+      if (totalCount === 0) {
+        domCache.articles.innerHTML = '';
+        domCache.empty.style.display = 'block';
         return;
       }
+      domCache.empty.style.display = 'none';
       
-      emptyState.style.display = 'none';
+      // Build HTML using array join (faster than +=)
+      const parts = [];
+      const MAX_SHOW = 5;
       
-      const grouped = {};
-      articles.forEach(article => {
-        if (!grouped[article.category]) {
-          grouped[article.category] = [];
+      for (const cat in grouped) {
+        const items = grouped[cat];
+        const hasMore = items.length > MAX_SHOW;
+        const secId = 'sec-' + cat.replace(/[_\s]+/g, '-');
+        const iconMap = { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' };
+        const labelMap = { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' };
+        
+        parts.push(
+          `<div class="summary-section">`,
+          `<div class="summary-title d-flex justify-content-between align-items-center">`,
+          `<div class="d-flex align-items-center gap-2">`,
+          `<i class="bi bi-${iconMap[cat] || 'tag'}"></i>`,
+          `${labelMap[cat] || cat} (${items.length})`,
+          `</div>`,
+          `<div class="d-flex align-items-center gap-2">`,
+          hasMore ? `<button class="toggle-expand-btn" id="btn-${secId}" onclick="toggleSection('${secId}')" data-expanded="false" title="展开全部"><i class="bi bi-chevron-down"></i></button>` : '',
+          `</div></div>`
+        );
+        
+        for (let i = 0; i < items.length; i++) {
+          const a = items[i];
+          const hidden = i >= MAX_SHOW ? ' style="display:none"' : '';
+          parts.push(
+            `<div class="card mb-3"${hidden} data-section="${secId}">`,
+            `<div class="card-body">`,
+            `<div class="d-flex justify-content-between align-items-start mb-2">`,
+            `<h5 class="card-title mb-0"><a href="${a.url}" target="_blank" class="article-link">${a.title}</a></h5>`,
+            a.is_major_event ? '<span class="major-event-badge">重大事件</span>' : '',
+            `</div>`,
+            `<p class="card-text" style="color:var(--text-secondary);font-size:0.9rem">${a.raw_summary || a.summary || '暂无摘要'}</p>`,
+            `<div class="d-flex justify-content-between align-items-center mt-3">`,
+            `<div class="d-flex align-items-center gap-2">`,
+            `<span class="source-tag">${a.source}</span>`,
+            `<span class="importance-stars">${renderStars(a.importance)}</span>`,
+            `</div>`,
+            `<small class="text-muted">${a.date}</small>`,
+            `</div>`
+          );
+          
+          if (a.keywords?.length) {
+            parts.push(
+              `<div class="mt-2">`,
+              a.keywords.map(k => `<span class="keyword-badge me-1" style="font-size:0.75rem">${k}</span>`).join(''),
+              `</div>`
+            );
+          }
+          
+          parts.push(`</div></div>`);
         }
-        grouped[article.category].push(article);
-      });
-      
-      let html = '';
-      Object.keys(grouped).forEach(category => {
-        const items = grouped[category];
-        const maxShow = 5;
-        const hasMore = items.length > maxShow;
-        const sectionId = 'section-' + category.replace(/[_\s]+/g, '-');
-        
-        html += `
-          <div class="summary-section">
-            <div class="summary-title d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-${getCategoryIcon(category)}"></i>
-                ${getCategoryLabel(category)} (${items.length})
-              </div>
-              <div class="d-flex align-items-center gap-2">
-                ${hasMore ? `<button class="toggle-expand-btn" id="btn-${sectionId}" onclick="toggleSection('${sectionId}', '${sectionId}')" data-expanded="false" title="展开全部"><i class="bi bi-chevron-down"></i></button>` : ''}
-              </div>
-            </div>
-        `;
-        
-        items.forEach((article, index) => {
-          const hidden = index >= maxShow ? ' style="display: none;"' : '';
-          html += `
-            <div class="card mb-3"${hidden} data-section="${sectionId}">
-              <div class="card-body">
-                <div class="d-flex justify-content-between align-items-start mb-2">
-                  <h5 class="card-title mb-0">
-                    <a href="${article.url}" target="_blank" class="article-link">
-                      ${article.title}
-                    </a>
-                  </h5>
-                  ${article.is_major_event ? '<span class="major-event-badge">重大事件</span>' : ''}
-                </div>
-                
-                <p class="card-text" style="color: var(--text-secondary); font-size: 0.9rem;">
-                  ${article.raw_summary || article.summary || '暂无摘要'}
-                </p>
-                
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <span class="source-tag">${article.source}</span>
-                    <span class="importance-stars">${renderStars(article.importance)}</span>
-                  </div>
-                  <small class="text-muted">${article.date}</small>
-                </div>
-                
-                ${article.keywords && article.keywords.length > 0 ? `
-                  <div class="mt-2">
-                    ${article.keywords.map(k => `<span class="keyword-badge me-1" style="font-size: 0.75rem;">${k}</span>`).join('')}
-                  </div>
-                ` : ''}
-              </div>
-            </div>
-          `;
-        });
         
         if (hasMore) {
-          html += `
-            <div class="text-center mt-3">
-              <button class="toggle-expand-btn" id="btn-${sectionId}" onclick="toggleSection('${sectionId}', '${sectionId}')" data-expanded="false" title="展开全部">
-                <i class="bi bi-chevron-down"></i>
-              </button>
-            </div>
-          `;
+          parts.push(
+            `<div class="text-center mt-3">`,
+            `<button class="toggle-expand-btn" id="btn-${secId}" onclick="toggleSection('${secId}')" data-expanded="false" title="展开全部"><i class="bi bi-chevron-down"></i></button>`,
+            `</div>`
+          );
         }
         
-        html += '</div>';
-      });
+        parts.push('</div>');
+      }
       
-      container.innerHTML = html;
+      domCache.articles.innerHTML = parts.join('');
     }
-
+    
+    // ── Inspiration rendering ──────────────────────────────
+    const INSIGHT_CFG = {
+      industry_insight: { label: '行业洞察', badge: 'bg-info', accent: 'var(--accent-blue)', extraKey: 'key_points', extraLabel: '关键点' },
+      startup_advice:   { label: '创业建议', badge: 'bg-secondary', accent: 'var(--accent-green)', extraKey: 'action_items', extraLabel: '行动建议', relatedLabel: '关联新闻' },
+      side_project:     { label: '小项目', badge: '', accent: '', extraKey: 'tech_stack', extraLabel: '技术栈', relatedLabel: '灵感来源', hasDifficulty: true }
+    };
+    
+    const DIFFICULTY_LABELS = { easy: '🟢 简单', medium: '🟡 中等', hard: '🔴 困难' };
+    
     let inspirationData = null;
-
+    
     async function loadInspiration(date) {
       try {
         const resp = await fetch(`./data/inspiration_${date}.json`);
         if (!resp.ok) {
           inspirationData = null;
-          document.getElementById('inspirationSection').style.display = 'none';
+          domCache.inspSection.style.display = 'none';
           return;
         }
         inspirationData = await resp.json();
         renderInspiration();
       } catch (e) {
         inspirationData = null;
-        document.getElementById('inspirationSection').style.display = 'none';
+        domCache.inspSection.style.display = 'none';
       }
     }
-
-    // Inspiration insight type config: label, badge-class, accent-color, extra-fields
-    const INSIGHT_CONFIG = {
-      industry_insight: { label: '行业洞察', badge: 'bg-info', accent: 'var(--accent-blue)', extraKey: 'key_points', extraLabel: '关键点' },
-      startup_advice:   { label: '创业建议', badge: 'bg-secondary', accent: 'var(--accent-green)', extraKey: 'action_items', extraLabel: '行动建议', relatedLabel: '关联新闻' },
-      side_project:     { label: '小项目', badge: '', accent: '', extraKey: 'tech_stack', extraLabel: '技术栈', relatedLabel: '灵感来源', hasDifficulty: true }
-    };
     
     function renderInspiration() {
       if (!inspirationData || !inspirationData.insights?.length) {
-        document.getElementById('inspirationSection').style.display = 'none';
+        domCache.inspSection.style.display = 'none';
         return;
       }
       
-      const container = document.getElementById('inspirationContainer');
-      let html = '';
+      const parts = [];
       
-      inspirationData.insights.forEach(insight => {
-        const cfg = INSIGHT_CONFIG[insight.type] || INSIGHT_CONFIG.industry_insight;
-        const difficultyMap = { easy: '🟢 简单', medium: '🟡 中等', hard: '🔴 困难' };
+      for (const insight of inspirationData.insights) {
+        const cfg = INSIGHT_CFG[insight.type] || INSIGHT_CFG.industry_insight;
         
-        html += `<div class="inspiration-card ${insight.type}">`;
-        html += `<div class="d-flex align-items-center gap-2 mb-2">`;
-        html += `<span class="inspiration-type-badge ${insight.type}">${cfg.label}</span>`;
+        parts.push(`<div class="inspiration-card ${insight.type}">`);
+        parts.push('<div class="d-flex align-items-center gap-2 mb-2">');
+        parts.push(`<span class="inspiration-type-badge ${insight.type}">${cfg.label}</span>`);
         
-        // Tags
         if (insight.tags?.length) {
-          html += insight.tags.map(t => `<span class="badge ${cfg.badge}" style="font-size:0.7rem">${t}</span>`).join('');
+          parts.push(insight.tags.map(t => `<span class="badge ${cfg.badge}" style="font-size:0.7rem">${t}</span>`).join(''));
         }
         
-        // Side project extras
         if (cfg.hasDifficulty) {
-          html += `<span class="difficulty-badge ${insight.difficulty || 'medium'}">${difficultyMap[insight.difficulty] || '🟡 中等'}</span>`;
-          if (insight.estimated_time) html += `<span style="font-size:0.75rem;color:var(--text-secondary)">⏱ ${insight.estimated_time}</span>`;
+          parts.push(`<span class="difficulty-badge ${insight.difficulty || 'medium'}">${DIFFICULTY_LABELS[insight.difficulty] || '🟡 中等'}</span>`);
+          if (insight.estimated_time) parts.push(`<span style="font-size:0.75rem;color:var(--text-secondary)">⏱ ${insight.estimated_time}</span>`);
         }
-        html += '</div>';
+        parts.push('</div>');
         
-        // Title + Summary
-        html += `<h6 class="mb-2" style="color:var(--text-primary);font-weight:600">${insight.title}</h6>`;
-        html += `<p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6">${insight.summary}</p>`;
+        parts.push(`<h6 class="mb-2" style="color:var(--text-primary);font-weight:600">${insight.title}</h6>`);
+        parts.push(`<p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6">${insight.summary}</p>`);
         
-        // Extra section (key_points / action_items / tech_stack)
         if (insight[cfg.extraKey]?.length) {
-          html += `<div class="mt-2"><strong style="font-size:0.8rem;color:${cfg.accent || 'var(--text-secondary)'}">${cfg.extraLabel}：</strong>`;
-          html += `<ul class="mb-0" style="font-size:0.85rem;color:var(--text-secondary)">`;
-          html += insight[cfg.extraKey].map(x => `<li>${x}</li>`).join('');
-          html += '</ul></div>';
+          parts.push(`<div class="mt-2"><strong style="font-size:0.8rem;color:${cfg.accent || 'var(--text-secondary)'}">${cfg.extraLabel}：</strong>`);
+          parts.push(`<ul class="mb-0" style="font-size:0.85rem;color:var(--text-secondary)">`);
+          parts.push(insight[cfg.extraKey].map(x => `<li>${x}</li>`).join(''));
+          parts.push('</ul></div>');
         }
         
-        // Related news
         if (insight.related_news?.length) {
-          html += `<div class="mt-2" style="font-size:0.75rem;color:var(--text-secondary)">${cfg.relatedLabel || '关联'}：${insight.related_news.join(', ')}</div>`;
+          parts.push(`<div class="mt-2" style="font-size:0.75rem;color:var(--text-secondary)">${cfg.relatedLabel || '关联'}：${insight.related_news.join(', ')}</div>`);
         }
         
-        html += '</div>';
-      });
+        parts.push('</div>');
+      }
       
-      container.innerHTML = html;
-      document.getElementById('inspirationSection').style.display = 'block';
+      domCache.inspContainer.innerHTML = parts.join('');
+      domCache.inspSection.style.display = 'block';
     }
-
-    function toggleSection(sectionId, btnId) {
-      const btn = document.getElementById('btn-' + btnId);
+    
+    // ── Toggle section (uses cached refs, no querySelectorAll) ──
+    const sectionCards = {}; // Cache: sectionId -> NodeList
+    
+    function toggleSection(sectionId) {
+      const btn = $('btn-' + sectionId);
+      if (!btn) return;
+      
       const isExpanded = btn.dataset.expanded === 'true';
       
-      const cards = document.querySelectorAll(`.card[data-section="${sectionId}"]`);
+      // Get or cache card references
+      if (!sectionCards[sectionId]) {
+        sectionCards[sectionId] = document.querySelectorAll(`.card[data-section="${sectionId}"]`);
+      }
+      const cards = sectionCards[sectionId];
       
-      cards.forEach((card, index) => {
-        if (isExpanded) {
-          if (index >= 5) {
-            card.style.display = 'none';
-          } else {
-            card.style.display = 'block';
-          }
-        } else {
-          card.style.display = 'block';
-        }
-      });
+      for (let i = 0; i < cards.length; i++) {
+        cards[i].style.display = isExpanded ? (i < 5 ? 'block' : 'none') : 'block';
+      }
       
       btn.dataset.expanded = isExpanded ? 'false' : 'true';
-      if (isExpanded) {
-        btn.classList.remove('expanded');
-        btn.innerHTML = '<i class="bi bi-chevron-down"></i>';
-      } else {
-        btn.classList.add('expanded');
-        btn.innerHTML = '<i class="bi bi-chevron-up"></i>';
-      }
+      btn.classList.toggle('expanded', !isExpanded);
+      btn.innerHTML = isExpanded ? '<i class="bi bi-chevron-down"></i>' : '<i class="bi bi-chevron-up"></i>';
     }
-
-    document.getElementById('dateSelector').addEventListener('change', function(e) {
+    
+    // ── Event handlers ─────────────────────────────────────
+    function toggleMajorEvents() {
+      showMajorEventsOnly = !showMajorEventsOnly;
+      domCache.majorCard.classList.toggle('active', showMajorEventsOnly);
+      render();
+    }
+    
+    function filterByCategory(cat) {
+      currentCategory = cat;
+      render();
+    }
+    
+    $('dateSelector').addEventListener('change', function(e) {
       if (!e.target.value) {
-        // Prevent empty selection - revert to last valid date
         e.target.value = currentDate;
         return;
       }
       currentDate = e.target.value;
       currentCategory = 'all';
       showMajorEventsOnly = false;
+      // Clear section card cache on date change
+      for (const k in sectionCards) delete sectionCards[k];
       render();
     });
-
+    
     document.addEventListener('DOMContentLoaded', () => {
       loadData().then(() => {
         if (availableDates.length > 0) {
           currentDate = availableDates[0];
-          document.getElementById('dateSelector').value = currentDate;
+          $('dateSelector').value = currentDate;
           render();
         }
       });

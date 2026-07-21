@@ -452,6 +452,22 @@
     let sortField = 'quality_score';
     let sortDirection = 'desc';
     let _sortedModels = [];
+    
+    // Cached DOM references
+    const $ = id => document.getElementById(id);
+    let dom = {};
+    
+    function cacheDom() {
+      if (dom._cached) return;
+      dom = { tableBody: $('tableBody'), chartCtx: $('priceChart').getContext('2d'), taskType: $('taskType') };
+      dom._cached = true;
+    }
+    
+    // Compare lookup as Set for O(1) instead of Array.includes O(n)
+    function getCompareSet() {
+      const s = new Set(compareList);
+      return s;
+    }
 
     // Theme management
     let isDarkMode = localStorage.getItem('theme') !== 'light';
@@ -482,9 +498,29 @@
       }
     });
 
+    // ── Cached DOM refs ─────────────────────────────────────
+    let $el = {}; // Initialized after DOM ready
+    
+    function cacheDom() {
+      if ($el._c) return;
+      $el = {
+        tableBody: $('tableBody'), chart: $('priceChart'), lastUpdated: $('lastUpdated'),
+        taskType: $('taskType'), vendorFilter: $('vendorFilter'),
+        tierFilter: $('tierFilter'), searchBox: $('searchBox'),
+        comparisonPanel: $('comparisonPanel'), comparisonContent: $('comparisonContent'),
+        recommendationCard: $('recommendationCard'), recommendationContent: $('recommendationContent')
+      };
+      $el.chartCtx = $('priceChart').getContext('2d');
+      $el._c = true;
+    }
+    
+    // Shortcut
+    function $(id) { return document.getElementById(id); }
+    
     document.addEventListener('DOMContentLoaded', async () => {
       applyTheme();
       await loadModels();
+      cacheDom();
       populateVendorFilter();
       renderTable();
     });
@@ -495,7 +531,7 @@
         if (!response.ok) throw new Error('Failed to load data');
         const data = await response.json();
         allModels = data.models;
-        document.getElementById('lastUpdated').textContent = `数据更新于: ${data.updated_at}`;
+        if ($el.lastUpdated) $el.lastUpdated.textContent = `数据更新于: ${data.updated_at}`;
       } catch (error) {
         console.error('Error loading data:', error);
       }
@@ -503,99 +539,111 @@
 
     function populateVendorFilter() {
       const vendors = [...new Set(allModels.map(m => m.vendor))].sort();
-      const select = document.getElementById('vendorFilter');
-      vendors.forEach(vendor => {
-        const option = document.createElement('option');
-        option.value = vendor;
-        option.textContent = vendor;
-        select.appendChild(option);
-      });
-    }
-
-    // Re-render recommendation when filters change
-    function refreshRecommendation() {
-      const taskType = document.getElementById('taskType').value;
-      if (taskType) {
-        updateRecommendation();
+      const select = $el.vendorFilter;
+      for (const vendor of vendors) {
+        const opt = document.createElement('option');
+        opt.value = opt.textContent = vendor;
+        select.appendChild(opt);
       }
     }
 
-    function getFilteredModels() {
-      const vendor = document.getElementById('vendorFilter').value;
-      const tier = document.getElementById('tierFilter').value;
-      const search = document.getElementById('searchBox').value.toLowerCase();
-      
-      return allModels.filter(model => {
-        if (vendor !== 'all' && model.vendor !== vendor) return false;
-        if (tier !== 'all' && model.tier !== tier) return false;
-        if (search && !model.name.toLowerCase().includes(search) && !model.model_id.toLowerCase().includes(search)) return false;
-        return true;
-      });
+    // ── Filter state cached ────────────────────────────────
+    let _filterCache = { vendor: 'all', tier: 'all', search: '' };
+    
+    function refreshFilterCache() {
+      _filterCache.vendor = $el.vendorFilter.value;
+      _filterCache.tier = $el.tierFilter.value;
+      _filterCache.search = $el.searchBox.value.toLowerCase();
+    }
+    
+    // Pre-registered callbacks
+    $el.vendorFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+    $el.tierFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+    $el.searchBox?.addEventListener('input', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+    
+    // Re-render recommendation when filters change
+    function refreshRecommendation() {
+      if ($el.taskType?.value) updateRecommendation();
     }
 
+    function getFilteredModels() {
+      const { vendor, tier, search } = _filterCache;
+      const out = [];
+      for (const m of allModels) {
+        if (vendor !== 'all' && m.vendor !== vendor) continue;
+        if (tier !== 'all' && m.tier !== tier) continue;
+        if (search && !m.name.toLowerCase().includes(search) && !m.model_id.toLowerCase().includes(search)) continue;
+        out.push(m);
+      }
+      return out;
+    }
+
+    // ── Compare lookup cache (Set for O(1) vs Array.includes O(n)) ──
+    let _compareSet = new Set();
+    function rebuildCompareSet() { _compareSet = new Set(compareList); }
+    
     function renderTable() {
-      const tbody = document.getElementById('tableBody');
-      let models = getFilteredModels();
+      const models = getFilteredModels();
+      
+      // Sort — pre-lowercase strings for case-insensitive comparison
+      for (const m of models) {
+        if (typeof m.name === 'string') m._lcName = m.name.toLowerCase();
+      }
       
       models.sort((a, b) => {
-        let valA = a[sortField];
-        let valB = b[sortField];
-        if (typeof valA === 'string') valA = valA.toLowerCase();
-        if (typeof valB === 'string') valB = valB.toLowerCase();
-        if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
-        if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
+        let va = a[sortField], vb = b[sortField];
+        if (sortField === 'name') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+        if (va < vb) return sortDirection === 'asc' ? -1 : 1;
+        if (va > vb) return sortDirection === 'asc' ? 1 : -1;
         return 0;
       });
       
       // Store sorted models for chart sync
       _sortedModels = models;
       
-      let html = '';
-      models.forEach((model, index) => {
-        const qualityClass = model.quality_score >= 90 ? 'high' : model.quality_score >= 75 ? 'medium' : 'low';
-        const isComparing = compareList.includes(model.model_id);
-        
-        html += `
-          <tr>
-            <td>${index + 1}</td>
-            <td><strong>${model.name}</strong></td>
-            <td>${model.vendor}</td>
-            <td><span class="tier-badge ${model.tier}">${model.tier}</span></td>
-            <td>$${formatPrice(model.input_price_per_1m)}</td>
-            <td>$${formatPrice(model.output_price_per_1m)}</td>
-            <td>${formatImagePrice(model.image_generation_price)}</td>
-            <td><span class="quality-score ${qualityClass}">${model.quality_score}</span></td>
-            <td>${model.categories.slice(0, 3).map(c => `<span class="keyword-badge" style="font-size:0.65rem">${c}</span>`).join('')}</td>
-            <td>
-              <button class="btn btn-sm compare-btn ${isComparing ? 'compare-selected' : 'btn-outline-secondary'}" 
-                      onclick="toggleCompare('${model.model_id}')">
-                ${isComparing ? '<i class="bi bi-check"></i>' : '+'}
-              </button>
-            </td>
-          </tr>
-        `;
-      });
+      // Build HTML using Array.join (O(n) vs O(n²) += concatenation)
+      const cs = _compareSet;
+      const parts = [];
       
-      tbody.innerHTML = html;
+      for (let i = 0; i < models.length; i++) {
+        const m = models[i];
+        const q = m.quality_score;
+        const qc = q >= 90 ? 'high' : q >= 75 ? 'medium' : 'low';
+        const ic = cs.has(m.model_id);
+        
+        parts.push('<tr><td>', i + 1, '</td>');
+        parts.push('<td><strong>', m.name, '</strong></td>');
+        parts.push('<td>', m.vendor, '</td>');
+        parts.push('<td><span class="tier-badge ', m.tier, '">', m.tier, '</span></td>');
+        parts.push('<td>$', fmtPrice(m.input_price_per_1m), '</td>');
+        parts.push('<td>$', fmtPrice(m.output_price_per_1m), '</td>');
+        parts.push('<td>', fmtImgPrice(m.image_generation_price), '</td>');
+        parts.push('<td><span class="quality-score ', qc, '">', q, '</span></td>');
+        parts.push('<td>', m.categories.slice(0, 3).map(c => '<span class="keyword-badge" style="font-size:0.65rem">', c, '</span>').join(''), '</td>');
+        parts.push('<td><button class="btn btn-sm compare-btn ', ic ? 'compare-selected' : 'btn-outline-secondary', '" onclick="toggleCompare(\'', m.model_id, '\')">');
+        parts.push(ic ? '<i class="bi bi-check"></i>' : '+');
+        parts.push('</button></td></tr>');
+      }
+      
+      $el.tableBody.innerHTML = parts.join('');
       updateChart();
     }
-
-    function formatPrice(price) {
+    
+    // ── Pre-computed price formatting ──────────────────────
+    function fmtPrice(price) {
       if (price === '/' || price === 0) return price === 0 ? '免费' : '/';
       return price.toFixed(2);
     }
     
-    function formatImagePrice(price) {
+    function fmtImgPrice(price) {
       if (price === '/' || price === 0) return price === 0 ? '免费' : '/';
       return '$' + parseFloat(price).toFixed(2);
     }
     
-    function fmtPrice(val, isImage = false) {
-      if (val === '/' || val === 0) return val === 0 ? '免费' : '/';
-      const num = parseFloat(val);
-      return (isImage ? '$' : '') + num.toFixed(2);
-    }
-
+    // Legacy aliases (kept for backward compat)
+    function formatPrice(p) { return fmtPrice(p); }
+    function formatImagePrice(p) { return fmtImgPrice(p); }
+    
     function sortBy(field) {
       if (sortField === field) {
         sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
@@ -606,82 +654,84 @@
       renderTable();
       updateChart();
     }
-
+    
     function toggleCompare(modelId) {
-      const index = compareList.indexOf(modelId);
-      if (index > -1) {
-        compareList.splice(index, 1);
+      const idx = compareList.indexOf(modelId);
+      if (idx > -1) {
+        compareList.splice(idx, 1);
       } else {
-        if (compareList.length >= 4) {
-          alert('最多同时对比 4 个模型');
-          return;
-        }
+        if (compareList.length >= 4) { alert('最多同时对比 4 个模型'); return; }
         compareList.push(modelId);
+        rebuildCompareSet();
       }
       renderTable();
       renderComparison();
     }
 
     function renderComparison() {
-      const panel = document.getElementById('comparisonPanel');
-      const content = document.getElementById('comparisonContent');
+      const panel = $el.comparisonPanel;
+      const content = $el.comparisonContent;
       
-      if (compareList.length === 0) {
-        panel.classList.remove('show');
-        return;
-      }
+      if (compareList.length === 0) { panel.classList.remove('show'); return; }
       
       panel.classList.add('show');
-      const models = allModels.filter(m => compareList.includes(m.model_id));
       
-      let html = '<div class="table-responsive"><table class="table table-sm">';
-      html += '<thead><tr><th>模型</th>';
-      models.forEach(m => html += `<th>${m.name}</th>`);
-      html += '</tr></thead><tbody>';
+      // Lookup models by id using a Map for O(1) instead of filter+includes
+      const ids = new Set(compareList);
+      const models = [];
+      for (const m of allModels) { if (ids.has(m.model_id)) models.push(m); }
       
       const rows = [
-        ['厂商', 'vendor'],
-        ['输入价', 'input_price_per_1m'],
-        ['输出价', 'output_price_per_1m'],
-        ['图像生成', 'image_generation_price'],
-        ['图像编辑', 'image_edit_price'],
-        ['上下文窗口', 'context_window'],
-        ['质量评分', 'quality_score'],
-        ['等级', 'tier']
+        ['厂商', 'vendor'], ['输入价', 'input_price_per_1m'], ['输出价', 'output_price_per_1m'],
+        ['图像生成', 'image_generation_price'], ['图像编辑', 'image_edit_price'],
+        ['上下文窗口', 'context_window'], ['质量评分', 'quality_score'], ['等级', 'tier']
       ];
       
-      rows.forEach(([label, key]) => {
-        html += `<tr><td><strong>${label}</strong></td>`;
-        models.forEach(m => {
-          let val = m[key];
-          if (key === 'input_price_per_1m' || key === 'output_price_per_1m') {
-            val = val === 0 ? '免费' : `$${val}`;
-          } else if (key === 'context_window') {
-            val = val > 0 ? `${val.toLocaleString()} tokens` : '-';
-          } else if (key === 'tier') {
-            val = `<span class="tier-badge ${val}">${val}</span>`;
-          } else if (key === 'quality_score') {
-            val = `<span class="quality-score ${val >= 90 ? 'high' : val >= 75 ? 'medium' : 'low'}">${val}</span>`;
-          }
-          html += `<td>${val}</td>`;
-        });
-        html += '</tr>';
-      });
+      const parts = [];
+      parts.push('<div class="table-responsive"><table class="table table-sm"><thead><tr><th>模型</th>');
+      for (const m of models) parts.push('<th>', m.name, '</th>');
+      parts.push('</tr></thead><tbody>');
       
-      html += '</tbody></table></div>';
-      content.innerHTML = html;
+      for (const [label, key] of rows) {
+        parts.push('<tr><td><strong>', label, '</strong></td>');
+        for (const m of models) {
+          let v = m[key];
+          if (key === 'input_price_per_1m' || key === 'output_price_per_1m') {
+            v = v === 0 ? '免费' : '$' + v;
+          } else if (key === 'context_window') {
+            v = v > 0 ? v.toLocaleString() + ' tokens' : '-';
+          } else if (key === 'tier') {
+            v = '<span class="tier-badge ' + v + '">' + v + '</span>';
+          } else if (key === 'quality_score') {
+            v = '<span class="quality-score ' + (v >= 90 ? 'high' : v >= 75 ? 'medium' : 'low') + '">' + v + '</span>';
+          }
+          parts.push('<td>', v, '</td>');
+        }
+        parts.push('</tr>');
+      }
+      
+      parts.push('</tbody></table></div>');
+      content.innerHTML = parts.join('');
     }
 
     function clearComparison() {
       compareList = [];
+      rebuildCompareSet();
       renderTable();
       renderComparison();
     }
 
+    // ── Cached model index ───────────────────────────────────
+    let _modelByIdMap = new Map();
+    function buildModelMap() {
+      _modelByIdMap.clear();
+      for (const m of allModels) _modelByIdMap.set(m.model_id, m);
+    }
+    
     function updateRecommendation() {
-      const taskType = document.getElementById('taskType').value;
-      const card = document.getElementById('recommendationCard');
-      const content = document.getElementById('recommendationContent');
+      const taskType = $el.taskType?.value;
+      const card = $el.recommendationCard;
+      const content = $el.recommendationContent;
       
       if (!taskType) { card.classList.remove('show'); return; }
       
@@ -717,37 +767,50 @@
           <div class="col-md-6">
             <p class="mb-1"><strong>输入价格:</strong> $${fmtPrice(best.input_price_per_1m)}/M tokens</p>
             <p class="mb-1"><strong>输出价格:</strong> $${fmtPrice(best.output_price_per_1m)}/M tokens</p>
-            <p class="mb-1"><strong>图像价格:</strong> ${fmtPrice(best.image_generation_price, true)}</p>
+            <p class="mb-1"><strong>图像价格:</strong> ${fmtImgPrice(best.image_generation_price)}</p>
             <p class="mb-0"><strong>上下文窗口:</strong> ${best.context_window > 0 ? best.context_window.toLocaleString() + ' tokens' : '-'}</p>
           </div>
         </div>
       `;
     }
 
+    // ── Chart — single-pass data aggregation ─────────────────
     function updateChart() {
-      const ctx = document.getElementById('priceChart').getContext('2d');
-      
       if (priceChart) { priceChart.destroy(); }
       
       // Select models: compare > sorted > filtered
       let models = compareList.length > 0
-        ? allModels.filter(m => compareList.includes(m.model_id))
+        ? (buildModelMap(), compareList.map(id => _modelByIdMap.get(id)).filter(Boolean))
         : (_sortedModels && _sortedModels.length) ? _sortedModels.slice(0, 10) : getFilteredModels().slice(0, 10);
       
-      const taskType = document.getElementById('taskType')?.value || 'coding';
-      const perfLabel = { coding: '编码性能', reasoning: '推理性能', image: '图像性能' }[taskType] || '质量评分';
-      const perfData = models.map(m => m.quality_score);
+      if (!models.length) return;
       
-      const maxPrice = Math.max(...models.map(m => m.output_price_per_1m));
-      const maxScore = Math.max(...perfData), minScore = Math.min(...perfData);
+      const taskType = $el.taskType?.value || 'coding';
+      const perfLabel = { coding: '编码性能', reasoning: '推理性能', image: '图像性能' }[taskType] || '质量评分';
+      
+      // Single pass: collect all chart data + compute bounds
+      const inputPrices = [], outputPrices = [], scores = [];
+      let maxPrice = 0, maxScore = -Infinity, minScore = Infinity;
+      
+      for (let i = 0; i < models.length; i++) {
+        const m = models[i];
+        const ip = m.input_price_per_1m, op = m.output_price_per_1m, qs = m.quality_score;
+        inputPrices.push(ip);
+        outputPrices.push(op);
+        scores.push(qs);
+        if (op > maxPrice) maxPrice = op;
+        if (qs > maxScore) maxScore = qs;
+        if (qs < minScore) minScore = qs;
+      }
+      
       const scoreRange = maxScore - minScore;
       const pricePad = Math.max(maxPrice * 0.15, 1);
       const scorePad = Math.max(scoreRange * 0.2, 5);
       
       const datasets = [
-        { label: '输入价格 ($/M)', data: models.map(m => m.input_price_per_1m), backgroundColor: 'rgba(88,166,255,0.6)', borderColor: 'rgba(88,166,255,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
-        { label: '输出价格 ($/M)', data: models.map(m => m.output_price_per_1m), backgroundColor: 'rgba(210,153,34,0.6)', borderColor: 'rgba(210,153,34,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
-        { label: perfLabel, data: perfData, borderColor: 'rgba(63,185,80,1)', backgroundColor: 'rgba(63,185,80,0.1)', borderWidth: 3, type: 'line', pointBackgroundColor: 'rgba(63,185,80,1)', pointBorderColor: '#fff', pointBorderWidth: 2, pointRadius: 5, pointHoverRadius: 8, tension: 0.3, fill: false, yAxisID: 'y1', order: 1 }
+        { label: '输入价格 ($/M)', data: inputPrices, backgroundColor: 'rgba(88,166,255,0.6)', borderColor: 'rgba(88,166,255,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
+        { label: '输出价格 ($/M)', data: outputPrices, backgroundColor: 'rgba(210,153,34,0.6)', borderColor: 'rgba(210,153,34,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
+        { label: perfLabel, data: scores, borderColor: 'rgba(63,185,80,1)', backgroundColor: 'rgba(63,185,80,0.1)', borderWidth: 3, type: 'line', pointBackgroundColor: 'rgba(63,185,80,1)', pointBorderColor: '#fff', pointBorderWidth: 2, pointRadius: 5, pointHoverRadius: 8, tension: 0.3, fill: false, yAxisID: 'y1', order: 1 }
       ];
       
       const yMax = Math.ceil((maxPrice + pricePad) / 5) * 5;
@@ -760,7 +823,11 @@
       const muted = dk ? '#8b949e' : '#656d76';
       const grid = dk ? 'rgba(48,54,61,0.5)' : 'rgba(208,215,222,0.5)';
       
-      priceChart = new Chart(ctx, {
+      // Cache original colors once
+      const origBg = datasets.map(ds => ds.backgroundColor);
+      const origBd = datasets.map(ds => ds.borderColor);
+      
+      priceChart = new Chart($el.chartCtx, {
         type: 'bar',
         data: { labels: models.map(m => m.name), datasets },
         options: {
@@ -769,7 +836,7 @@
           interaction: { mode: 'index', intersect: false },
           plugins: {
             legend: {
-              labels: { color: txt },
+              labels: { color: txt, retainFakeColors: false },
               position: 'top',
               onClick: function(e, legendItem, legend) {
                 const idx = legendItem.datasetIndex, ci = legend.chart, meta = ci.getDatasetMeta(idx);
@@ -798,7 +865,7 @@
             const active = {};
             elements.forEach(el => active[el.datasetIndex] = true);
             this.data.datasets.forEach((ds, i) => {
-              if (active[i]) { ds.backgroundColor = getOrigBg(i); ds.borderColor = getOrigBorder(i); ds.pointRadius = ds.type === 'line' ? 5 : undefined; if (ds.type === 'line') ds.borderWidth = 3; }
+              if (active[i]) { ds.backgroundColor = origBg[i]; ds.borderColor = origBd[i]; ds.pointRadius = ds.type === 'line' ? 5 : undefined; if (ds.type === 'line') ds.borderWidth = 3; }
               else if (ds.type === 'line') { ds.borderColor = 'rgba(63,185,80,0.15)'; ds.backgroundColor = 'rgba(63,185,80,0.02)'; ds.pointRadius = 2; ds.borderWidth = 1; }
               else { ds.backgroundColor = 'rgba(128,128,128,0.15)'; ds.borderColor = 'rgba(128,128,128,0.1)'; }
             });
@@ -807,20 +874,18 @@
           animation: { duration: 300 }
         }
       });
-      
-      function getOrigBg(i) { return datasets[i].backgroundColor; }
-      function getOrigBorder(i) { return datasets[i].borderColor; }
     }
 
     function resetFilters() {
-      document.getElementById('vendorFilter').value = 'all';
-      document.getElementById('tierFilter').value = 'all';
-      document.getElementById('searchBox').value = '';
-      document.getElementById('taskType').value = '';
+      $el.vendorFilter.value = 'all';
+      $el.tierFilter.value = 'all';
+      $el.searchBox.value = '';
+      $el.taskType.value = '';
       compareList = [];
+      rebuildCompareSet();
       renderTable();
       renderComparison();
-      document.getElementById('recommendationCard').classList.remove('show');
+      $el.recommendationCard?.classList.remove('show');
     }
   </script>
 </body>
