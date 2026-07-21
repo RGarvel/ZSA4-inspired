@@ -182,38 +182,40 @@
     }
     
     .toggle-expand-btn {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      border: 1px solid var(--border-color);
-      background-color: var(--bg-card);
-      color: var(--text-secondary);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: all 0.2s;
-      padding: 0;
-      font-size: 0.8rem;
-      margin-left: 0.5rem;
+      width: 28px !important;
+      height: 28px !important;
+      border-radius: 50% !important;
+      border: 1px solid var(--border-color) !important;
+      background-color: var(--bg-card) !important;
+      color: var(--text-secondary) !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      cursor: pointer !important;
+      transition: all 0.2s !important;
+      padding: 0 !important;
+      font-size: 0.8rem !important;
+      margin-left: 0.5rem !important;
+      text-decoration: none !important;
+      line-height: 1 !important;
     }
     
     .toggle-expand-btn:hover {
-      border-color: var(--accent-blue);
-      color: var(--accent-blue);
-      background-color: rgba(88, 166, 255, 0.1);
+      border-color: var(--accent-blue) !important;
+      color: var(--accent-blue) !important;
+      background-color: rgba(88, 166, 255, 0.1) !important;
     }
     
     .toggle-expand-btn.expanded {
-      border-color: var(--accent-purple);
-      color: var(--accent-purple);
-      background-color: rgba(188, 140, 255, 0.1);
+      border-color: var(--accent-purple) !important;
+      color: var(--accent-purple) !important;
+      background-color: rgba(188, 140, 255, 0.1) !important;
     }
     
     .toggle-expand-btn.expanded:hover {
-      border-color: var(--accent-purple);
-      color: var(--accent-purple);
-      background-color: rgba(188, 140, 255, 0.2);
+      border-color: var(--accent-purple) !important;
+      color: var(--accent-purple) !important;
+      background-color: rgba(188, 140, 255, 0.2) !important;
     }
     
     .card {
@@ -821,6 +823,11 @@
     }
 
     document.getElementById('dateSelector').addEventListener('change', function(e) {
+      if (!e.target.value) {
+        // Prevent empty selection - revert to last valid date
+        e.target.value = currentDate;
+        return;
+      }
       currentDate = e.target.value;
       currentCategory = 'all';
       showMajorEventsOnly = false;
