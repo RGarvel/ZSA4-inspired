@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-21",
+  "insights": [
+    {
+      "type": "startup_advice",
+      "title": "AI材料发现赛道爆发：从芯片到清洁能源的下一个风口",
+      "summary": "CuspAI以26亿美元估值完成4.5亿美元B轮融资，并联合NVIDIA、Meta等45家企业启动AI材料工厂。这是AI+科学发现的又一里程碑。结合01.ai转向推理层和Apple Intelligence中国落地，可以判断：AI正在从'模型层'向'物理世界层'渗透。创业者应关注AI在材料科学、药物研发、能源等领域的交叉机会，这些领域有明确的ROI和付费意愿，不像纯ChatGPT替代品那样容易被大厂碾压。建议切入方向：垂直行业的AI材料模拟平台、AI辅助的药物筛选工具。",
+      "related_news": ["st-6", "ait-19", "st-7"],
+      "tags": ["AI科学", "材料发现", "CuspAI", "硬科技创业"]
+    },
+    {
+      "type": "startup_advice",
+      "title": "中国开源模型崛起：MIT许可+低价策略正在重塑全球格局",
+      "summary": "过去7天出现了两个标志性事件：Moonshot AI发布全球最大开源模型Kimi K3（2.8T参数，$3/M tokens输入），Z.ai发布GLM-5.2（MIT许可、1M上下文，超越MiniMax-M3）。两者都采用极低定价+完全开源策略，正面挑战OpenAI和Anthropic的闭源生态。具体创业行动项：① 基于Kimi K3 API构建垂直行业代码审查工具（利用其$3/M的超低API成本）；② 开发GLM-5.2的中文微调数据集和Prompt模板库；③ 搭建开源模型对比评测网站，吸引开发者流量后变现。开源模型降低了创业门槛，中小团队可以用极低成本获得接近GPT-5.6的能力。",
+      "related_news": ["ait-12", "ait-18", "ait-17"],
+      "tags": ["开源模型", "中国AI", "Kimi K3", "GLM-5.2", "低价策略"]
+    },
+    {
+      "type": "side_project",
+      "title": "基于Kimi K3 API的本地AI编程助手",
+      "summary": "Kimi K3刚发布就因过载暴露了巨大需求。你可以利用其$3/M tokens的超低定价，构建一个本地优先的编程助手：前端用Python+FastAPI，后端调用Kimi K3 API，集成VS Code插件。核心差异化：针对中文开发者优化提示词模板，内置常见代码库的最佳实践。技术栈简单，适合1-2人团队在2周内完成MVP。",
+      "difficulty": "medium",
+      "estimated_time": "1-2周",
+      "tech_stack": ["Python", "FastAPI", "Kimi K3 API", "VS Code Extension API"],
+      "related_news": ["ait-12", "ait-17"]
+    },
+    {
+      "type": "side_project",
+      "title": "AI新闻聚合与趋势分析工具",
+      "summary": "借鉴AI Weekly的模式，构建一个自动化的AI行业新闻聚合器。使用Python爬虫定期抓取TechCrunch、36Kr、VentureBeat、AI Weekly等来源，用LLM做分类和摘要，前端用Streamlit或Gradio展示。核心价值：为中文用户提供一站式AI资讯入口，特别关注中美AI竞争格局变化。技术栈极简，周末即可搭出原型。可考虑加入RSS订阅功能和邮件推送。",
+      "difficulty": "easy",
+      "estimated_time": "3-5天",
+      "tech_stack": ["Python", "Streamlit", "LLM API", "RSS/爬虫"],
+      "related_news": ["ait-14", "ait-20", "ait-21"]
+    },
+    {
+      "type": "side_project",
+      "title": "Apple Intelligence China Qwen集成教程平台",
+      "summary": "Apple Intelligence刚获中国批准（7月15日），大量中国苹果用户即将迎来AI功能。可以做一个教程/指南平台，帮助用户配置和使用Qwen驱动的Apple Intelligence。也可以做一个浏览器插件，在Safari中增强Apple Intelligence的中文能力。这是一个时效性极强的项目，窗口期可能只有几周。",
+      "difficulty": "easy",
+      "estimated_time": "1周",
+      "tech_stack": ["JavaScript", "Safari Extension API", "Qwen API"],
+      "related_news": ["ait-13"]
+    },
+    {
+      "type": "industry_insight",
+      "title": "AI硬件元年：从芯片到音箱，AI公司集体下场造硬件",
+      "summary": "本周出现了一个清晰的趋势信号：AI公司不再只做软件。OpenAI发布Jony Ive设计的智能音箱（ait-14），CuspAI用AI发现芯片新材料（ait-19），三星发布UFS 5.0端侧AI存储（ait-21），Moonshot的Kimi K3导致服务器过载（ait-12）。这四件事共同指向一个结论：AI的竞争正在从模型层扩展到物理基础设施层。软件公司将变成硬件公司，硬件公司将变成AI公司。对于创业者来说，这意味着'AI+硬件'的交叉领域将涌现大量机会——无论是AI驱动的智能家居、可穿戴设备，还是AI优化的芯片设计工具。",
+      "related_news": ["ait-14", "ait-19", "ait-21", "ait-12"],
+      "tags": ["AI硬件", "跨界融合", "基础设施", "Jony Ive"]
+    },
+    {
+      "type": "industry_insight",
+      "title": "中国AI监管松绑：Apple Intelligence获批标志全球化拐点",
+      "summary": "Apple Intelligence获中国批准（ait-13）是一个具有象征意义的全球AI治理拐点。此前中国是唯一一个Apple Intelligence未开放的主要市场，原因是找不到合规的本地AI合作伙伴。现在通过阿里巴巴Qwen和百度，苹果找到了合规路径。这可能成为其他外国AI服务的模板——通过与中国本土AI公司合作来满足监管要求。反过来，这也为Qwen等中国模型打开了全球合作的大门。值得关注的是，01.ai正拆除红筹结构冲刺香港IPO（st-7），说明中国AI公司正在从'国内竞争'转向'全球资本运作'。",
+      "related_news": ["ait-13", "st-7"],
+      "tags": ["AI监管", "中国", "全球化", "合规"]
+    }
+  ]
+}

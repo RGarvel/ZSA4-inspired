@@ -1,135 +1,87 @@
 [
   {
-    "id": "ait-1",
-    "date": "2026-07-17",
-    "category": "ai_tech",
-    "title": "Meta与Anthropic达成高达100亿美元的AI算力租赁协议",
-    "raw_summary": "据纽约时报报道，Meta正与Anthropic就一项潜在的算力租赁协议进行谈判，交易金额可能高达100亿美元，为期两年。该协议将使Anthropic能够使用Meta的数据中心算力来支持其Claude系列AI模型的训练和推理。这是Anthropic在2026年签订的第三份大型算力协议，此前已与SpaceX达成协议。此举标志着AI基础设施领域的竞争正在加剧，同时也显示了Anthropic对算力的巨大需求。Meta则通过此举将其庞大的AI基础设施投资转化为收入来源。",
-    "source": "Reuters/NYT",
-    "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
-    "keywords": ["Meta", "Anthropic", "算力", "AI基础设施", "Claude"],
+    "id": "pt-8",
+    "date": "2026-07-20",
+    "category": "product_tool",
+    "title": "AI Weekly News：每日AI新闻聚合工具更新",
+    "raw_summary": "AI Weekly于7月21日发布最新一期AI新闻汇总，覆盖了过去一周最重要的AI行业动态，包括Kimi K3服务器过载、Apple Intelligence中国获批、OpenAI智能音箱硬件计划等。该工具追踪113个AI实体，每日精选顶级AI故事并提供现场更新，是AI从业者获取行业全景的高效工具。",
+    "source": "AI Weekly",
+    "url": "https://aiweekly.co/ai-news-today",
+    "keywords": [
+      "AI Weekly",
+      "新闻聚合",
+      "AI动态",
+      "行业追踪"
+    ],
     "original_language": "zh"
   },
   {
-    "id": "ait-2",
-    "date": "2026-07-16",
-    "category": "ai_tech",
-    "title": "Google DeepMind发布生物弹性计划，助力疫苗设计",
-    "raw_summary": "Google DeepMind与Isomorphic Labs联合发布了一项名为\"生物弹性\"的新计划，旨在帮助政府和研究人员预防、检测和应对生物威胁。该计划建立在AlphaFold的基础上，向可信研究人员开放DeepMind最新的AI系统，以加速已知和新发威胁的疫苗及其他对策的设计。DeepMind同时表示将加强AI在生物学领域的安全使用，防止技术被滥用。",
-    "source": "Google DeepMind",
-    "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
-    "keywords": ["DeepMind", "AlphaFold", "疫苗", "生物安全", "AI医疗"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-3",
-    "date": "2026-07-16",
-    "category": "ai_tech",
-    "title": "Gemini 3.5 Pro发布日期再次推迟，编码能力未达预期",
-    "raw_summary": "据彭博社报道，Google的Gemini 3.5 Pro旗舰AI模型发布时间再次延迟，原因是公司在编码等关键能力上未能达到内部目标。此前Google CEO Sundar Pichai在5月的I/O大会上承诺该模型将在6月发布。这是Google连续第二次推迟Gemini 3.5 Pro的发布。与此同时，OpenAI的GPT-5.6已于7月9日正式发布，Google面临更大的竞争压力。",
-    "source": "Bloomberg",
-    "url": "https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals",
-    "keywords": ["Google", "Gemini", "延迟", "编码", "AI竞争"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-4",
-    "date": "2026-07-15",
-    "category": "ai_tech",
-    "title": "Cursor曝出零日漏洞，七个月未修复引发安全争议",
-    "raw_summary": "安全研究者公开披露了AI编程IDE Cursor中的一个严重零日漏洞。该漏洞已在Cursor中存在至少八个月，自2025年12月就被报告但未被修复。该漏洞允许恶意代码在被攻击者打开中毒仓库时静默执行。Cursor在过去七个月内发布了197个更新，但均未修复此问题。研究者最终选择公开披露以促使行动。该事件在Hacker News上引发热烈讨论，引发了关于负责任披露与完全披露的争论。",
-    "source": "Mindgard/Decipher",
-    "url": "https://decipher.sc/2026/07/15/bug-in-cursor-allows-simple-rce/",
-    "keywords": ["Cursor", "零日漏洞", "AI安全", "编程IDE", "RCE"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-5",
-    "date": "2026-07-14",
-    "category": "ai_tech",
-    "title": "Anthropic推出Claude for Teachers，免费为K-12教师提供AI服务",
-    "raw_summary": "Anthropic于7月14日宣布推出Claude for Teachers，向美国K-12教育工作者免费提供Claude高级功能直至2027年6月30日。该产品包含Claude Code和Cowork功能，内置全美50个州的教学标准，支持课程规划、班级数据分析、学生评估等工作。这是Anthropic在教育领域的重大布局，旨在培养年轻一代用户对Claude产品的依赖。",
-    "source": "Anthropic/Forbes",
-    "url": "https://www.anthropic.com/news/claude-for-teachers",
-    "keywords": ["Anthropic", "Claude", "教育", "K-12", "免费AI"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-6",
-    "date": "2026-07-14",
-    "category": "ai_tech",
-    "title": "PrismML发布Bonsai 27B：首款可在手机上流畅运行的27B大模型",
-    "raw_summary": "PrismML于7月14日发布Bonsai 27B，这是世界上首个可在智能手机上流畅运行的270亿参数级大语言模型。该模型通过对Qwen3.6-27B进行后训练压缩，采用三元量化和1-bit量化技术，将模型体积压缩至仅3.9GB，可在iPhone 17 Pro上以每秒11个token的速度运行。该模型采用Apache 2.0许可证开源，标志着端侧AI的重大突破。",
-    "source": "PrismML/TechPillow",
-    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
-    "keywords": ["Bonsai", "端侧AI", "量化", "手机运行", "开源"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-7",
-    "date": "2026-07-13",
-    "category": "ai_tech",
-    "title": "ChatGPT恢复WhatsApp接入，支持图像、语音和多语言聊天",
-    "raw_summary": "OpenAI宣布ChatGPT在欧洲经济区（EEA）重新上线WhatsApp版本。用户无需ChatGPT账户即可通过官方号码+1-800-242-8478发送消息，支持文本、图像上传、语音留言、图片生成等功能，并可多用语言交流。绑定ChatGPT账户可获得更高的使用限额。此外，ChatGPT也在韩国Kakao和部分市场的Viber上线。",
-    "source": "OpenAI",
-    "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-    "keywords": ["ChatGPT", "WhatsApp", "多模态", "EEA", "OpenAI"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-8",
-    "date": "2026-07-10",
-    "category": "ai_tech",
-    "title": "OpenAI发布ChatGPT Work，基于GPT-5.6的团队协作工具",
-    "raw_summary": "OpenAI于7月10日发布ChatGPT Work，这是一个基于GPT-5.6的团队协作工具，可将分散的笔记、草稿和想法整合成完整的工作成果。该功能已面向所有桌面用户开放，并在随后几天内在Plus、Pro、Business、Enterprise和Edu等移动端计划中逐步推出。ChatGPT Work集成了团队工具的上下文信息，支持项目管理和自动化工作流。",
-    "source": "OpenAI",
-    "url": "https://community.openai.com/t/chatgpt-work-take-on-your-most-ambitious-tasks/1386184",
-    "keywords": ["ChatGPT Work", "GPT-5.6", "团队协作", "生产力", "OpenAI"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-9",
-    "date": "2026-07-09",
-    "category": "ai_tech",
-    "title": "OpenAI正式发布GPT-5.6：三档模型覆盖全场景",
-    "raw_summary": "OpenAI于7月9日正式发布GPT-5.6系列模型，包含三个级别：Luna（成本效率最高）、Terra（平衡型日常任务）和Sol（旗舰级最强性能）。GPT-5.6在多项基准测试中表现优异，特别是编码和复杂推理能力显著提升。该模型通过ChatGPT、Codex和API三种渠道同时发布，其中Ultra模式在发布时即启用。OpenAI还同步更新了Bio Bug Bounty计划，奖金提升至5万美元。",
-    "source": "OpenAI/Wikipedia",
-    "url": "https://openai.com/index/gpt-5-6/",
-    "keywords": ["GPT-5.6", "OpenAI", "LLM", "Sol", "Terra", "Luna"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-10",
-    "date": "2026-07-09",
-    "category": "ai_tech",
-    "title": "OpenAI发布GPT-Live全双工语音模型",
-    "raw_summary": "OpenAI于7月8日发布GPT-Live语音模型（GPT-Live-1和GPT-Live-1 mini），采用全双工架构，可同时听和说，使AI语音对话更加自然。该模型改进了对话中的打断处理和轮替机制，支持实时翻译功能，并可结合AI生成视觉内容。GPT-Live已集成到ChatGPT中，取代了之前的Advanced Voice Mode。",
-    "source": "OpenAI/TechCrunch",
-    "url": "https://openai.com/index/introducing-gpt-live/",
-    "keywords": ["GPT-Live", "语音模型", "全双工", "ChatGPT", "OpenAI"],
-    "original_language": "en"
-  },
-  {
-    "id": "ait-11",
-    "date": "2026-07-08",
-    "category": "ai_tech",
-    "title": "Meta发布Muse Image AI，使用Instagram公开照片生成图像",
-    "raw_summary": "Meta于7月7日发布Muse Image AI图像生成功能，该功能来自Meta超级智能实验室，可在Meta AI应用、meta.ai、Instagram Stories（美国）和WhatsApp中使用。然而，该功能默认使用用户的Instagram公开照片作为AI图像生成的参考素材，引发了隐私担忧。随后在用户抗议和SAG-AFTRA的反对下，Meta于7月12日移除了自动使用公开照片的功能，改为可选开关。",
-    "source": "Meta/Beckmann AI",
-    "url": "https://beckmann.ai/en/ai-models/2026-07/meta-muse-image-instagram-photos-privacy",
-    "keywords": ["Meta", "Muse Image", "隐私", "Instagram", "AI生成"],
-    "original_language": "en"
-  },
-  {
-    "id": "st-1",
-    "date": "2026-07-15",
+    "id": "st-7",
+    "date": "2026-07-20",
     "category": "startup",
-    "title": "印度AI编程初创公司Emergent完成1.3亿美元C轮融资，估值达15亿美元成为独角兽",
-    "raw_summary": "印度AI编程初创公司Emergent于7月15日宣布完成1.3亿美元的C轮融资，投后估值达15亿美元，较六个月前飙升五倍。Emergent成立于班加罗尔，是一家\"vibe coding\"平台，允许非技术人员构建全栈生产级Web和移动应用。该公司此前在1月已完成7000万美元的B轮融资，估值3亿美元。Emergent成为2026年印度第三个AI独角兽企业。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-    "keywords": ["Emergent", "C轮", "独角兽", "AI编程", "印度"],
-    "original_language": "en"
+    "title": "李开复01.ai筹备2027年香港IPO，目标成为AI 2.0单季盈利企业",
+    "raw_summary": "李开复创办的中国AI公司01.ai于7月20日宣布正在推进2027年香港IPO计划。公司正在拆除红筹结构（中国企业常见的离岸上市架构），并目标在明年实现单季度盈利。李开复表示01.ai将成为中国首家AI 2.0公司实现盈利。此前01.ai已停止预训练路线，转而专注于推理和应用层AI。",
+    "source": "Bloomberg/TestingCatalog",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-20/ai-pioneer-kai-fu-lee-s-startup-targets-hong-kong-ipo-next-year",
+    "keywords": [
+      "01.ai",
+      "李开复",
+      "香港IPO",
+      "AI 2.0",
+      "盈利"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "st-6",
+    "date": "2026-07-20",
+    "category": "startup",
+    "title": "CuspAI完成4.5亿美元B轮融资，估值26亿美元",
+    "raw_summary": "剑桥AI材料发现初创公司CuspAI于7月20日宣布完成4.5亿美元Series B融资，估值达26亿美元。本轮由Kleiner Perkins和NEA领投，Jeff Bezos通过Bezos Expeditions跟投，英国政府主权AI基金也参与其中。CuspAI成立于两年前，专注于利用AI加速半导体和清洁能源领域的新材料发现。该公司同时启动了与NVIDIA、Meta等45家企业的AI材料工厂合作。",
+    "source": "Bloomberg/Guardian/CNBC",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-20/bezos-backs-startup-focused-on-material-discovery-for-chipmaking",
+    "keywords": [
+      "CuspAI",
+      "B轮",
+      "Jeff Bezos",
+      "材料发现",
+      "NVIDIA"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-13",
+    "date": "2026-07-20",
+    "category": "ai_tech",
+    "title": "Apple Intelligence获中国批准，阿里巴巴Qwen驱动",
+    "raw_summary": "中国网信办于7月15日正式批准Apple Intelligence在中国落地，结束了长达22个月的等待。根据批准条件，Apple Intelligence在中国将使用阿里巴巴的Qwen模型处理语言和文本生成，百度负责视觉搜索。这是中国监管机构首次批准外国AI助手的本地化运营，标志着中美AI监管格局的重大变化。苹果此前因无法找到符合中国法规的本地AI合作伙伴而被迫在中国市场暂时禁用该功能。",
+    "source": "TechCrunch/Bloomberg",
+    "url": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
+    "keywords": [
+      "Apple Intelligence",
+      "阿里巴巴",
+      "Qwen",
+      "中国审批",
+      "百度"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-12",
+    "date": "2026-07-20",
+    "category": "ai_tech",
+    "title": "Moonshot AI Kimi K3遭遇服务器过载：2.8万亿参数模型需求远超预期",
+    "raw_summary": "Moonshot AI于7月16日发布Kimi K3后，因用户量激增导致服务器过载，订阅服务一度不可用。该公司于7月20日宣布正在加速部署新硬件，但尚未公布全面恢复的时间表。Kimi K3是全球最大的开源AI模型，拥有2.8万亿参数，采用稀疏MoE架构（896个专家中每次推理激活16个），原生视觉支持和100万token上下文窗口。定价为每百万输入token 3美元、输出15美元、缓存0.30美元。完整开源权重预计7月27日发布。",
+    "source": "Reuters/Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-20/moonshot-s-kimi-k3-may-be-more-about-memory-than-compute",
+    "keywords": [
+      "Moonshot AI",
+      "Kimi K3",
+      "服务器过载",
+      "MoE",
+      "开源模型"
+    ],
+    "original_language": "zh"
   },
   {
     "id": "st-2",
@@ -139,40 +91,13 @@
     "raw_summary": "班加罗尔快速药品配送初创公司Plazza于7月20日宣布完成1500万美元A轮融资，由Accel、Elevation Capital和Nexus Venture Partners联合领投，All In Capital和Better Capital跟投。Plazza成立于约一年前，此前仅完成140万美元的种子轮。公司计划在年底前将班加罗尔的门店扩展至20家，专注于AI驱动的药品即时配送服务。",
     "source": "Business Standard/Hindu BusinessLine",
     "url": "https://www.business-standard.com/companies/start-ups/plazza-raises-15-million-to-scale-ai-powered-medicine-delivery-126071900450_1.html",
-    "keywords": ["Plazza", "A轮", "药品配送", "印度", "Accel"],
-    "original_language": "en"
-  },
-  {
-    "id": "st-3",
-    "date": "2026-07-15",
-    "category": "startup",
-    "title": "E3 Electric.Ai完成100亿卢比A轮融资，打造AI电动摩托车",
-    "raw_summary": "班加罗尔深度科技电动车出行初创公司E3 Electric.Ai于7月15日宣布完成100亿卢比（约1050万美元）的A轮融资，由BluVenture Holdings领投，采用股权加债务混合方式。该公司由前TVS Motor电动汽车负责人P Sanjeev于2024年创立，正在为其首款产品E3 TRION AI电动摩托车的商业化发布做准备。",
-    "source": "YourStory/Economic Times",
-    "url": "https://yourstory.com/2026/07/e3-electricai-rs-100-cr-series-a-round-led-by-bluventure",
-    "keywords": ["E3 Electric.Ai", "A轮", "电动车", "AI", "印度"],
-    "original_language": "en"
-  },
-  {
-    "id": "st-4",
-    "date": "2026-07-18",
-    "category": "startup",
-    "title": "印度初创公司一周融资3.46亿美元，AI领域领投",
-    "raw_summary": "截至7月18日的一周内，印度初创公司共完成20笔融资，总额达3.46亿美元，较前一周的1.32亿美元增长162%。AI领域成为本轮融资的最大亮点，包括Emergent的1.3亿美元C轮在内，多笔大额融资推动了市场回暖。这标志着印度风投市场在经历数月低迷后重新活跃起来。",
-    "source": "SquaredTech/Tice",
-    "url": "https://www.tice.news/tice-trending/india-startup-funding-week-july-18-2026-12175881",
-    "keywords": ["印度", "风投", "融资", "AI", "创业"],
-    "original_language": "en"
-  },
-  {
-    "id": "st-5",
-    "date": "2026-07-16",
-    "category": "startup",
-    "title": "Patronus AI完成5000万美元B轮融资，构建AI Agent数字测试世界",
-    "raw_summary": "Patronus AI于7月16日宣布完成5000万美元B轮融资，公司总融资额达7000万美元。Patronus开发\"数字世界模型\"，创建网站和内部系统的副本，在这些环境中通过强化学习对AI Agent进行压力测试。随着AI Agent在企业中的广泛应用，对Agent可靠性的测试需求激增，投资者对该领域表现出强烈兴趣。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
-    "keywords": ["Patronus AI", "B轮", "AI Agent", "测试", "数字世界"],
+    "keywords": [
+      "Plazza",
+      "A轮",
+      "药品配送",
+      "印度",
+      "Accel"
+    ],
     "original_language": "en"
   },
   {
@@ -183,41 +108,150 @@
     "raw_summary": "AirJelly是一款常驻macOS桌面的主动式AI助手，在后台默默观察用户在Slack、Zoom、Docs和Calendar等应用中的活动。它不只是被动等待指令，而是自动捕捉用户意图——构建任务、会议和消息的生活时间线。它能预见下一步该做什么，创建任务、准备简报、发送提醒，并跟踪个人互动以防遗漏后续事项。采用本地隐私模型，所有数据处理均在本地完成。",
     "source": "Product Hunt",
     "url": "https://www.producthunt.com/products/airjelly",
-    "keywords": ["AirJelly", "桌面AI", "任务管理", "macOS", "隐私"],
+    "keywords": [
+      "AirJelly",
+      "桌面AI",
+      "任务管理",
+      "macOS",
+      "隐私"
+    ],
     "original_language": "en"
   },
   {
-    "id": "pt-2",
-    "date": "2026-07-14",
-    "category": "product_tool",
-    "title": "Bonsai 27B：手机端运行的270亿参数大模型工具",
-    "raw_summary": "PrismML于7月14日发布Bonsai 27B，不仅是AI模型，更是一个可在手机本地运行的推理工具。采用三元量化和1-bit量化技术，将Qwen3.6-27B压缩至3.9GB，可在iPhone 17 Pro上以11 tokens/秒的速度运行。支持工具调用功能，采用Apache 2.0开源许可，为移动端AI应用开辟了新路径。配套工具链也已开源，开发者可直接在自己的设备上部署。",
-    "source": "PrismML/TechPillow",
-    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
-    "keywords": ["Bonsai", "端侧推理", "量化", "移动端AI", "开源"],
+    "id": "ait-14",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "OpenAI首个硬件设备曝光：Jony Ive设计的无屏智能音箱",
+    "raw_summary": "据彭博社记者Mark Gurman报道，OpenAI的首款消费级硬件设备将是一款由Jony Ive参与设计的无屏幕智能音箱。该设备没有显示屏，可在家中各个房间之间移动，核心特色是AI的'个性'和与用户的连接能力。OpenAI计划在2026年底首次展示该设备，2027年正式发售，定价约200美元。这标志着OpenAI从纯软件公司向硬件领域的首次重大拓展。",
+    "source": "Bloomberg/TechCrunch",
+    "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
+    "keywords": [
+      "OpenAI",
+      "Jony Ive",
+      "智能音箱",
+      "硬件",
+      "无屏设备"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-15",
+    "date": "2026-07-18",
+    "category": "ai_tech",
+    "title": "Cars24使用OpenAI语音和聊天Agent处理每月超100万次对话",
+    "raw_summary": "印度二手车交易平台Cars24宣布已部署OpenAI驱动的语音和聊天Agent，每月处理超过100万次对话。这些Agent覆盖了购车、售车、融资、跟进和客户支持等关键环节，帮助公司挽回了12%的流失客户线索。这是AI Agent在传统行业中规模化应用的典型案例，展示了AI在复杂业务流程中的实际ROI。该案例于7月16日由OpenAI官方发布。",
+    "source": "OpenAI/Creati.ai",
+    "url": "https://openai.com/index/cars24/",
+    "keywords": [
+      "Cars24",
+      "OpenAI",
+      "语音Agent",
+      "印度",
+      "商业应用"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "st-4",
+    "date": "2026-07-18",
+    "category": "startup",
+    "title": "印度初创公司一周融资3.46亿美元，AI领域领投",
+    "raw_summary": "截至7月18日的一周内，印度初创公司共完成20笔融资，总额达3.46亿美元，较前一周的1.32亿美元增长162%。AI领域成为本轮融资的最大亮点，包括Emergent的1.3亿美元C轮在内，多笔大额融资推动了市场回暖。这标志着印度风投市场在经历数月低迷后重新活跃起来。",
+    "source": "SquaredTech/Tice",
+    "url": "https://www.tice.news/tice-trending/india-startup-funding-week-july-18-2026-12175881",
+    "keywords": [
+      "印度",
+      "风投",
+      "融资",
+      "AI",
+      "创业"
+    ],
     "original_language": "en"
   },
   {
-    "id": "pt-3",
-    "date": "2026-07-14",
-    "category": "product_tool",
-    "title": "Claude for Teachers：专为教育工作者打造的AI工具套件",
-    "raw_summary": "Anthropic于7月14日发布Claude for Teachers，这是一款专门为K-12教育工作者设计的AI工具套件。内置全美50个州的教学标准，支持课程规划、班级数据分析、学生评估、作业批改等教学日常工作。包含Claude Code和Cowork功能，教师可以让Claude独立完成部分工作任务。免费向美国K-12教师开放至2027年6月30日，需验证教师身份。",
-    "source": "Anthropic/Forbes",
-    "url": "https://www.anthropic.com/news/claude-for-teachers",
-    "keywords": ["Claude for Teachers", "教育AI", "课程规划", "Anthropic", "免费工具"],
-    "original_language": "en"
+    "id": "ait-20",
+    "date": "2026-07-17",
+    "category": "ai_tech",
+    "title": "OpenAI广告收入远低于预期，距25亿美元目标差距巨大",
+    "raw_summary": "据Blogs Grocliq报道，2026年OpenAI的广告收入预计将远低于其25亿美元的年度目标。根据Emarketer数据，OpenAI、微软、Google和Amazon四家的AI广告总收入加起来也不到10亿美元。OpenAI此前曾宣称其AI广告收入alone将达到25亿美元，但实际进展缓慢。这一差距引发了投资者对OpenAI商业模式可持续性的担忧，尤其是在竞争日益激烈的AI市场中。",
+    "source": "Blogs Grocliq/Emarketer",
+    "url": "https://blogs.grocliq.com/2026/07/20/openai-appears-to-be-missing-its-sales-goals-by-a-vast-margin/",
+    "keywords": [
+      "OpenAI",
+      "广告收入",
+      "商业模式",
+      "投资者",
+      "竞争"
+    ],
+    "original_language": "zh"
   },
   {
-    "id": "pt-4",
-    "date": "2026-07-14",
-    "category": "product_tool",
-    "title": "ChatGPT统一搜索功能上线，跨聊天/项目/图片/文档一键检索",
-    "raw_summary": "OpenAI于7月14日在全平台（Web、iOS、Android）上线ChatGPT统一搜索功能，用户可以在一个地方搜索聊天记录、项目、图片和文档。该功能对所有付费层级（Free、Go、Plus、Pro、Business、Enterprise）同时开放全球发布。搜索功能由AI增强，支持语义理解和自然语言查询，大幅提升了用户在ChatGPT生态内查找历史信息的效率。",
-    "source": "Releasebot/TechTimes",
-    "url": "https://releasebot.io/updates/openai/chatgpt",
-    "keywords": ["ChatGPT", "搜索", "知识库", "OpenAI", "生产力工具"],
-    "original_language": "en"
+    "id": "ait-19",
+    "date": "2026-07-17",
+    "category": "ai_tech",
+    "title": "CuspAI发布AI材料工厂：NVIDIA、Meta等45家企业共建材料发现网络",
+    "raw_summary": "英国AI材料发现初创公司CuspAI于7月16日发起'AI材料工厂'(AI Materials Foundry)，联合NVIDIA、Meta等45家机构组成全球网络，利用AI加速半导体、清洁能源和先进制造领域的新材料发现。该项目将数据、实验室、算力和科学专业知识整合到一个智能体平台中，设立北美、欧洲和亚太三大区域枢纽。CuspAI声称80%的材料研究目标仍未实现突破，该平台旨在解决这一瓶颈。",
+    "source": "BusinessWire/IntelligentCIO",
+    "url": "https://www.businesswire.com/news/home/20260716196996/en/CuspAI-Launches-AI-Materials-Foundry-a-Global-Network-to-Accelerate-Breakthrough-Discoveries",
+    "keywords": [
+      "CuspAI",
+      "AI材料",
+      "NVIDIA",
+      "Meta",
+      "材料发现"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-18",
+    "date": "2026-07-17",
+    "category": "ai_tech",
+    "title": "Z.ai发布GLM-5.2：中国MIT许可AI模型挑战美国巨头",
+    "raw_summary": "中国AI初创公司Z.ai发布的GLM-5.2模型在Artificial Analysis Intelligence Index v4.1中排名第四，超越了MiniMax-M3和DeepSeek V4 Pro等美国系统。该模型采用MIT许可证开源，无任何地区限制，拥有100万token上下文窗口（是其前代的5倍），在三个长程编程基准测试中均为开源模型之首。该模型定价低廉，被认为是给DeepSeek带来的'既视感'——以极低价格提供接近闭源模型的性能。",
+    "source": "ChinaTechNews/Yahoo Finance",
+    "url": "https://www.chinatechnews.com/2026/07/02/124817-chinese-ai-model-glm-5-2-poses-challenge-to-anthropic-and-openai",
+    "keywords": [
+      "Z.ai",
+      "GLM-5.2",
+      "MIT许可",
+      "开源",
+      "中国AI"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-16",
+    "date": "2026-07-17",
+    "category": "ai_tech",
+    "title": "Anthropic CEO警告：AI将在2026-2027年匹配'天才之国'",
+    "raw_summary": "Anthropic CEO Dario Amodei在7月17日的演讲中发出警告，称AI系统的整体能力有望在2026至2027年间达到甚至超越'天才之国'（nation of geniuses）的水平——即整个国家的人口智力总和。这一预测标志着AI能力评估框架的重大转变，从单一模型能力转向整体社会影响力的衡量。Amodei同时强调需要建立相应的治理框架来应对这一变革。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/ai/anthropic-ceo-dario-amodei-warns-ai-will-match-country-of-geniuses-by-2026",
+    "keywords": [
+      "Anthropic",
+      "Dario Amodei",
+      "AI能力",
+      "治理",
+      "预测"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-1",
+    "date": "2026-07-17",
+    "category": "ai_tech",
+    "title": "Meta与Anthropic达成高达100亿美元的AI算力租赁协议",
+    "raw_summary": "据纽约时报报道，Meta正与Anthropic就一项潜在的算力租赁协议进行谈判，交易金额可能高达100亿美元，为期两年。该协议将使Anthropic能够使用Meta的数据中心算力来支持其Claude系列AI模型的训练和推理。这是Anthropic在2026年签订的第三份大型算力协议，此前已与SpaceX达成协议。此举标志着AI基础设施领域的竞争正在加剧，同时也显示了Anthropic对算力的巨大需求。Meta则通过此举将其庞大的AI基础设施投资转化为收入来源。",
+    "source": "Reuters/NYT",
+    "url": "https://www.nytimes.com/2026/07/17/technology/meta-anthropic-ai-computing-power.html",
+    "keywords": [
+      "Meta",
+      "Anthropic",
+      "算力",
+      "AI基础设施",
+      "Claude"
+    ],
+    "original_language": "zh"
   },
   {
     "id": "pt-5",
@@ -227,7 +261,115 @@
     "raw_summary": "OpenAI于7月9日发布更新，将Codex正式集成到ChatGPT桌面应用中（macOS和Windows）。Codex现在可作为ChatGPT的默认视图，支持直接在应用内编辑Markdown和代码、使用PR Chat审查GitHub Pull Request、连接自定义域名发布Sites。同时利用GPT-5.6提升了Computer Use的性能，改进了任务和子代理的活动追踪体验。",
     "source": "OpenAI",
     "url": "https://developers.openai.com/codex/changelog/?type=codex-app",
-    "keywords": ["Codex", "ChatGPT桌面", "PR Chat", "GitHub", "开发工具"],
+    "keywords": [
+      "Codex",
+      "ChatGPT桌面",
+      "PR Chat",
+      "GitHub",
+      "开发工具"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "pt-7",
+    "date": "2026-07-16",
+    "category": "product_tool",
+    "title": "LM Studio Bionic：本地优先的开源AI编程Agent工具",
+    "raw_summary": "LM Studio于7月16日发布Bionic，一款专为开源模型打造的独立AI编程Agent应用。Bionic提供两种项目模式：代码项目（支持仓库级别的内联diff编辑和智能搜索）和工作项目（处理文档、PDF、演示文稿和电子表格）。默认本地运行确保代码不离开用户机器，同时可无缝切换到云端模型处理重型任务。LM Studio承诺Zero Data Retention，为注重隐私的开发者提供了Cursor和Claude Code之外的替代选择。",
+    "source": "9to5Mac/LM Studio",
+    "url": "https://9to5mac.com/2026/07/16/lm-studio-expands-beyond-chat-with-bionic-a-new-ai-agent-app-for-open-models/",
+    "keywords": [
+      "LM Studio",
+      "Bionic",
+      "AI编程Agent",
+      "开源",
+      "隐私"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-21",
+    "date": "2026-07-16",
+    "category": "ai_tech",
+    "title": "Samsung UFS 5.0发布：业界最快存储方案支持端侧AI",
+    "raw_summary": "三星电子于7月8日在其全球新闻室发布了业界最快的UFS 5.0存储解决方案，数据传输速度高达10.8GB/s，专为下一代端侧AI应用设计。该存储方案将显著提升智能手机和边缘设备的AI推理速度，使更复杂的本地AI模型能够在设备上运行而无需依赖云端。这是AI硬件基础设施领域的重要进展，与端侧AI模型（如Bonsai 27B）的发展形成互补。",
+    "source": "Samsung Semiconductor",
+    "url": "https://news.samsungsemiconductor.com/global/",
+    "keywords": [
+      "三星",
+      "UFS 5.0",
+      "端侧AI",
+      "存储",
+      "AI硬件"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-17",
+    "date": "2026-07-16",
+    "category": "ai_tech",
+    "title": "LM Studio发布Bionic：面向开源模型的独立AI编程Agent",
+    "raw_summary": "LM Studio于7月16日发布Bionic，这是一款专为开源模型打造的独立AI编程Agent应用。与Claude Code或Cursor不同，Bionic默认在本地运行——代码不会离开用户机器，但可以切换到云端模型处理更重的任务。Bionic提供'代码项目'（支持仓库级别的内联diff和智能搜索）和'工作项目'（处理文档、PDF、演示文稿和电子表格）两种模式。LM Studio承诺Zero Data Retention保证，为注重隐私的开发者提供了新的选择。",
+    "source": "9to5Mac/LM Studio",
+    "url": "https://9to5mac.com/2026/07/16/lm-studio-expands-beyond-chat-with-bionic-a-new-ai-agent-app-for-open-models/",
+    "keywords": [
+      "LM Studio",
+      "Bionic",
+      "开源模型",
+      "AI编程",
+      "隐私"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "ait-2",
+    "date": "2026-07-16",
+    "category": "ai_tech",
+    "title": "Google DeepMind发布生物弹性计划，助力疫苗设计",
+    "raw_summary": "Google DeepMind与Isomorphic Labs联合发布了一项名为\"生物弹性\"的新计划，旨在帮助政府和研究人员预防、检测和应对生物威胁。该计划建立在AlphaFold的基础上，向可信研究人员开放DeepMind最新的AI系统，以加速已知和新发威胁的疫苗及其他对策的设计。DeepMind同时表示将加强AI在生物学领域的安全使用，防止技术被滥用。",
+    "source": "Google DeepMind",
+    "url": "https://deepmind.google/blog/our-approach-to-bioresilience/",
+    "keywords": [
+      "DeepMind",
+      "AlphaFold",
+      "疫苗",
+      "生物安全",
+      "AI医疗"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-3",
+    "date": "2026-07-16",
+    "category": "ai_tech",
+    "title": "Gemini 3.5 Pro发布日期再次推迟，编码能力未达预期",
+    "raw_summary": "据彭博社报道，Google的Gemini 3.5 Pro旗舰AI模型发布时间再次延迟，原因是公司在编码等关键能力上未能达到内部目标。此前Google CEO Sundar Pichai在5月的I/O大会上承诺该模型将在6月发布。这是Google连续第二次推迟Gemini 3.5 Pro的发布。与此同时，OpenAI的GPT-5.6已于7月9日正式发布，Google面临更大的竞争压力。",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals",
+    "keywords": [
+      "Google",
+      "Gemini",
+      "延迟",
+      "编码",
+      "AI竞争"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "st-5",
+    "date": "2026-07-16",
+    "category": "startup",
+    "title": "Patronus AI完成5000万美元B轮融资，构建AI Agent数字测试世界",
+    "raw_summary": "Patronus AI于7月16日宣布完成5000万美元B轮融资，公司总融资额达7000万美元。Patronus开发\"数字世界模型\"，创建网站和内部系统的副本，在这些环境中通过强化学习对AI Agent进行压力测试。随着AI Agent在企业中的广泛应用，对Agent可靠性的测试需求激增，投资者对该领域表现出强烈兴趣。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/",
+    "keywords": [
+      "Patronus AI",
+      "B轮",
+      "AI Agent",
+      "测试",
+      "数字世界"
+    ],
     "original_language": "en"
   },
   {
@@ -238,7 +380,235 @@
     "raw_summary": "2026世界人工智能大会（WAIC）于7月17日至20日在上海举办，展出108款AI芯片、261个大模型、208款具身智能终端产品和超过300台真实机器人。华为首次展出了8192芯片集群的Atlas 950超算系统。大会还见证了WAICO（世界人工智能合作组织）的成立，29个国家签署了创始协议。这是近年来规模最大、信息密度最高的一届WAIC。",
     "source": "36Kr/新华网",
     "url": "https://eu.36kr.com/en/p/3896827901200259",
-    "keywords": ["WAIC", "AI芯片", "大模型", "机器人", "上海"],
+    "keywords": [
+      "WAIC",
+      "AI芯片",
+      "大模型",
+      "机器人",
+      "上海"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-4",
+    "date": "2026-07-15",
+    "category": "ai_tech",
+    "title": "Cursor曝出零日漏洞，七个月未修复引发安全争议",
+    "raw_summary": "安全研究者公开披露了AI编程IDE Cursor中的一个严重零日漏洞。该漏洞已在Cursor中存在至少八个月，自2025年12月就被报告但未被修复。该漏洞允许恶意代码在被攻击者打开中毒仓库时静默执行。Cursor在过去七个月内发布了197个更新，但均未修复此问题。研究者最终选择公开披露以促使行动。该事件在Hacker News上引发热烈讨论，引发了关于负责任披露与完全披露的争论。",
+    "source": "Mindgard/Decipher",
+    "url": "https://decipher.sc/2026/07/15/bug-in-cursor-allows-simple-rce/",
+    "keywords": [
+      "Cursor",
+      "零日漏洞",
+      "AI安全",
+      "编程IDE",
+      "RCE"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "st-1",
+    "date": "2026-07-15",
+    "category": "startup",
+    "title": "印度AI编程初创公司Emergent完成1.3亿美元C轮融资，估值达15亿美元成为独角兽",
+    "raw_summary": "印度AI编程初创公司Emergent于7月15日宣布完成1.3亿美元的C轮融资，投后估值达15亿美元，较六个月前飙升五倍。Emergent成立于班加罗尔，是一家\"vibe coding\"平台，允许非技术人员构建全栈生产级Web和移动应用。该公司此前在1月已完成7000万美元的B轮融资，估值3亿美元。Emergent成为2026年印度第三个AI独角兽企业。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+    "keywords": [
+      "Emergent",
+      "C轮",
+      "独角兽",
+      "AI编程",
+      "印度"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "st-3",
+    "date": "2026-07-15",
+    "category": "startup",
+    "title": "E3 Electric.Ai完成100亿卢比A轮融资，打造AI电动摩托车",
+    "raw_summary": "班加罗尔深度科技电动车出行初创公司E3 Electric.Ai于7月15日宣布完成100亿卢比（约1050万美元）的A轮融资，由BluVenture Holdings领投，采用股权加债务混合方式。该公司由前TVS Motor电动汽车负责人P Sanjeev于2024年创立，正在为其首款产品E3 TRION AI电动摩托车的商业化发布做准备。",
+    "source": "YourStory/Economic Times",
+    "url": "https://yourstory.com/2026/07/e3-electricai-rs-100-cr-series-a-round-led-by-bluventure",
+    "keywords": [
+      "E3 Electric.Ai",
+      "A轮",
+      "电动车",
+      "AI",
+      "印度"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-5",
+    "date": "2026-07-14",
+    "category": "ai_tech",
+    "title": "Anthropic推出Claude for Teachers，免费为K-12教师提供AI服务",
+    "raw_summary": "Anthropic于7月14日宣布推出Claude for Teachers，向美国K-12教育工作者免费提供Claude高级功能直至2027年6月30日。该产品包含Claude Code和Cowork功能，内置全美50个州的教学标准，支持课程规划、班级数据分析、学生评估等工作。这是Anthropic在教育领域的重大布局，旨在培养年轻一代用户对Claude产品的依赖。",
+    "source": "Anthropic/Forbes",
+    "url": "https://www.anthropic.com/news/claude-for-teachers",
+    "keywords": [
+      "Anthropic",
+      "Claude",
+      "教育",
+      "K-12",
+      "免费AI"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-6",
+    "date": "2026-07-14",
+    "category": "ai_tech",
+    "title": "PrismML发布Bonsai 27B：首款可在手机上流畅运行的27B大模型",
+    "raw_summary": "PrismML于7月14日发布Bonsai 27B，这是世界上首个可在智能手机上流畅运行的270亿参数级大语言模型。该模型通过对Qwen3.6-27B进行后训练压缩，采用三元量化和1-bit量化技术，将模型体积压缩至仅3.9GB，可在iPhone 17 Pro上以每秒11个token的速度运行。该模型采用Apache 2.0许可证开源，标志着端侧AI的重大突破。",
+    "source": "PrismML/TechPillow",
+    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
+    "keywords": [
+      "Bonsai",
+      "端侧AI",
+      "量化",
+      "手机运行",
+      "开源"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "pt-2",
+    "date": "2026-07-14",
+    "category": "product_tool",
+    "title": "Bonsai 27B：手机端运行的270亿参数大模型工具",
+    "raw_summary": "PrismML于7月14日发布Bonsai 27B，不仅是AI模型，更是一个可在手机本地运行的推理工具。采用三元量化和1-bit量化技术，将Qwen3.6-27B压缩至3.9GB，可在iPhone 17 Pro上以11 tokens/秒的速度运行。支持工具调用功能，采用Apache 2.0开源许可，为移动端AI应用开辟了新路径。配套工具链也已开源，开发者可直接在自己的设备上部署。",
+    "source": "PrismML/TechPillow",
+    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
+    "keywords": [
+      "Bonsai",
+      "端侧推理",
+      "量化",
+      "移动端AI",
+      "开源"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "pt-3",
+    "date": "2026-07-14",
+    "category": "product_tool",
+    "title": "Claude for Teachers：专为教育工作者打造的AI工具套件",
+    "raw_summary": "Anthropic于7月14日发布Claude for Teachers，这是一款专门为K-12教育工作者设计的AI工具套件。内置全美50个州的教学标准，支持课程规划、班级数据分析、学生评估、作业批改等教学日常工作。包含Claude Code和Cowork功能，教师可以让Claude独立完成部分工作任务。免费向美国K-12教师开放至2027年6月30日，需验证教师身份。",
+    "source": "Anthropic/Forbes",
+    "url": "https://www.anthropic.com/news/claude-for-teachers",
+    "keywords": [
+      "Claude for Teachers",
+      "教育AI",
+      "课程规划",
+      "Anthropic",
+      "免费工具"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "pt-4",
+    "date": "2026-07-14",
+    "category": "product_tool",
+    "title": "ChatGPT统一搜索功能上线，跨聊天/项目/图片/文档一键检索",
+    "raw_summary": "OpenAI于7月14日在全平台（Web、iOS、Android）上线ChatGPT统一搜索功能，用户可以在一个地方搜索聊天记录、项目、图片和文档。该功能对所有付费层级（Free、Go、Plus、Pro、Business、Enterprise）同时开放全球发布。搜索功能由AI增强，支持语义理解和自然语言查询，大幅提升了用户在ChatGPT生态内查找历史信息的效率。",
+    "source": "Releasebot/TechTimes",
+    "url": "https://releasebot.io/updates/openai/chatgpt",
+    "keywords": [
+      "ChatGPT",
+      "搜索",
+      "知识库",
+      "OpenAI",
+      "生产力工具"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-7",
+    "date": "2026-07-13",
+    "category": "ai_tech",
+    "title": "ChatGPT恢复WhatsApp接入，支持图像、语音和多语言聊天",
+    "raw_summary": "OpenAI宣布ChatGPT在欧洲经济区（EEA）重新上线WhatsApp版本。用户无需ChatGPT账户即可通过官方号码+1-800-242-8478发送消息，支持文本、图像上传、语音留言、图片生成等功能，并可多用语言交流。绑定ChatGPT账户可获得更高的使用限额。此外，ChatGPT也在韩国Kakao和部分市场的Viber上线。",
+    "source": "OpenAI",
+    "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+    "keywords": [
+      "ChatGPT",
+      "WhatsApp",
+      "多模态",
+      "EEA",
+      "OpenAI"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-8",
+    "date": "2026-07-10",
+    "category": "ai_tech",
+    "title": "OpenAI发布ChatGPT Work，基于GPT-5.6的团队协作工具",
+    "raw_summary": "OpenAI于7月10日发布ChatGPT Work，这是一个基于GPT-5.6的团队协作工具，可将分散的笔记、草稿和想法整合成完整的工作成果。该功能已面向所有桌面用户开放，并在随后几天内在Plus、Pro、Business、Enterprise和Edu等移动端计划中逐步推出。ChatGPT Work集成了团队工具的上下文信息，支持项目管理和自动化工作流。",
+    "source": "OpenAI",
+    "url": "https://community.openai.com/t/chatgpt-work-take-on-your-most-ambitious-tasks/1386184",
+    "keywords": [
+      "ChatGPT Work",
+      "GPT-5.6",
+      "团队协作",
+      "生产力",
+      "OpenAI"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-9",
+    "date": "2026-07-09",
+    "category": "ai_tech",
+    "title": "OpenAI正式发布GPT-5.6：三档模型覆盖全场景",
+    "raw_summary": "OpenAI于7月9日正式发布GPT-5.6系列模型，包含三个级别：Luna（成本效率最高）、Terra（平衡型日常任务）和Sol（旗舰级最强性能）。GPT-5.6在多项基准测试中表现优异，特别是编码和复杂推理能力显著提升。该模型通过ChatGPT、Codex和API三种渠道同时发布，其中Ultra模式在发布时即启用。OpenAI还同步更新了Bio Bug Bounty计划，奖金提升至5万美元。",
+    "source": "OpenAI/Wikipedia",
+    "url": "https://openai.com/index/gpt-5-6/",
+    "keywords": [
+      "GPT-5.6",
+      "OpenAI",
+      "LLM",
+      "Sol",
+      "Terra",
+      "Luna"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-10",
+    "date": "2026-07-09",
+    "category": "ai_tech",
+    "title": "OpenAI发布GPT-Live全双工语音模型",
+    "raw_summary": "OpenAI于7月8日发布GPT-Live语音模型（GPT-Live-1和GPT-Live-1 mini），采用全双工架构，可同时听和说，使AI语音对话更加自然。该模型改进了对话中的打断处理和轮替机制，支持实时翻译功能，并可结合AI生成视觉内容。GPT-Live已集成到ChatGPT中，取代了之前的Advanced Voice Mode。",
+    "source": "OpenAI/TechCrunch",
+    "url": "https://openai.com/index/introducing-gpt-live/",
+    "keywords": [
+      "GPT-Live",
+      "语音模型",
+      "全双工",
+      "ChatGPT",
+      "OpenAI"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-11",
+    "date": "2026-07-08",
+    "category": "ai_tech",
+    "title": "Meta发布Muse Image AI，使用Instagram公开照片生成图像",
+    "raw_summary": "Meta于7月7日发布Muse Image AI图像生成功能，该功能来自Meta超级智能实验室，可在Meta AI应用、meta.ai、Instagram Stories（美国）和WhatsApp中使用。然而，该功能默认使用用户的Instagram公开照片作为AI图像生成的参考素材，引发了隐私担忧。随后在用户抗议和SAG-AFTRA的反对下，Meta于7月12日移除了自动使用公开照片的功能，改为可选开关。",
+    "source": "Meta/Beckmann AI",
+    "url": "https://beckmann.ai/en/ai-models/2026-07/meta-muse-image-instagram-photos-privacy",
+    "keywords": [
+      "Meta",
+      "Muse Image",
+      "隐私",
+      "Instagram",
+      "AI生成"
+    ],
     "original_language": "en"
   }
 ]
