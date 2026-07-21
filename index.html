@@ -763,6 +763,10 @@
       
       for (const item of allData) {
         if (item.date !== currentDate) continue;
+        
+        // Count ALL categories regardless of active filter (so tabs always show real counts)
+        if (cats.hasOwnProperty(item.category)) cats[item.category]++;
+        
         if (currentCategory !== 'all' && item.category !== currentCategory) continue;
         if (showMajorEventsOnly && !item.is_major_event) continue;
         
@@ -770,10 +774,7 @@
         if (item.is_major_event) majorCount++;
         importanceSum += item.importance || 0;
         
-        // Count for tabs (always count all categories, regardless of major/filter)
-        if (cats.hasOwnProperty(item.category)) cats[item.category]++;
-        
-        // Group
+        // Group only filtered items
         const cat = item.category;
         if (!grouped[cat]) grouped[cat] = [];
         grouped[cat].push(item);
