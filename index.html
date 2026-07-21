@@ -41,6 +41,9 @@
     }
     
     .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
       background-color: var(--bg-secondary) !important;
       border-bottom: 1px solid var(--border-color);
       transition: background-color 0.3s, border-color 0.3s;
@@ -596,7 +599,7 @@
     </div>
   </nav>
 
-  <div class="container mt-4">
+  <div class="container mt-4" id="mainContainer">
     <!-- Stats -->
     <div class="row g-3 mb-3">
       <div class="col-md-4">
@@ -1075,6 +1078,13 @@
           render();
         }
       });
+    });
+    
+    // Click navbar blank area to scroll to top
+    document.querySelector('.navbar').addEventListener('click', function(e) {
+      if (e.target === this || e.target.tagName === 'NAV' || (e.target.classList.contains('container') && e.target === e.currentTarget)) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     });
   </script>
 </body>
