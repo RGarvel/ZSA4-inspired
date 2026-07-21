@@ -345,6 +345,9 @@
         <span class="category-tab" data-category="product_tool" onclick="filterByCategory('product_tool')">
           <i class="bi bi-tools"></i> 产品工具 (<span class="cat-count">0</span>)
         </span>
+        <span class="category-tab" data-category="academic_paper" onclick="filterByCategory('academic_paper')">
+          <i class="bi bi-journal-text"></i> 学术论文 (<span class="cat-count">0</span>)
+        </span>
       </div>
     </div>
 
@@ -498,9 +501,20 @@
       const icons = {
         'ai_tech': 'cpu',
         'startup': 'rocket-takeoff',
-        'product_tool': 'tool'
+        'product_tool': 'tool',
+        'academic_paper': 'journal-text'
       };
       return icons[category] || 'tag';
+    }
+
+    function getCategoryLabel(category) {
+      const labels = {
+        'ai_tech': 'AI 技术',
+        'startup': '创业动态',
+        'product_tool': '产品工具',
+        'academic_paper': '学术论文'
+      };
+      return labels[category] || category;
     }
 
     function renderStars(importance) {
@@ -578,17 +592,28 @@
       
       let html = '';
       Object.keys(grouped).forEach(category => {
+        const items = grouped[category];
+        const isPaper = category === 'academic_paper';
+        const maxShow = isPaper ? 5 : items.length;
+        const hasMore = isPaper && items.length > 5;
+        
         html += `
           <div class="summary-section">
             <div class="summary-title">
               <i class="bi bi-${getCategoryIcon(category)}"></i>
-              ${getCategoryLabel(category)} (${grouped[category].length})
+              ${getCategoryLabel(category)} (${items.length}${hasMore ? ' (显示前5篇)' : ''})
             </div>
+            ${hasMore ? `
+            <button class="btn btn-sm btn-outline-secondary mt-2" onclick="togglePapers(this)" data-total="${items.length}">
+              <i class="bi bi-chevron-down"></i> 展开全部 ${items.length - 5} 篇论文
+            </button>
+            ` : ''}
         `;
         
-        grouped[category].forEach(article => {
+        items.forEach((article, index) => {
+          const hidden = isPaper && index >= 5 ? ' style="display: none;"' : '';
           html += `
-            <div class="card mb-3">
+            <div class="card mb-3"${hidden}>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h5 class="card-title mb-0">
@@ -710,6 +735,29 @@
       
       container.innerHTML = html;
       document.getElementById('inspirationSection').style.display = 'block';
+    }
+
+    function togglePapers(btn) {
+      const total = parseInt(btn.dataset.total);
+      const isExpanded = btn.dataset.expanded === 'true';
+      
+      // Toggle all hidden paper cards
+      document.querySelectorAll('#articlesContainer .card[style*="display: none"]').forEach(card => {
+        if (isExpanded) {
+          card.style.display = 'none';
+        } else {
+          card.style.display = 'block';
+        }
+      });
+      
+      // Update button text
+      if (isExpanded) {
+        btn.innerHTML = '<i class="bi bi-chevron-down"></i> 展开全部 ' + (total - 5) + ' 篇论文';
+        btn.dataset.expanded = 'false';
+      } else {
+        btn.innerHTML = '<i class="bi bi-chevron-up"></i> 收起超出部分';
+        btn.dataset.expanded = 'true';
+      }
     }
   </script>
 </body>
