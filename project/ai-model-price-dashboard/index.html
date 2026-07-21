@@ -88,6 +88,15 @@
       color: var(--text-secondary) !important;
     }
     
+    .navbar small.text-muted {
+      color: #9da5b1 !important;
+    }
+    
+    /* Navbar icon text color fix */
+    .navbar i.bi-bar-chart-line-fill {
+      color: var(--accent-blue) !important;
+    }
+    
     .back-link:hover i {
       transform: translateX(-2px);
     }
@@ -212,7 +221,11 @@
     
     /* Override Bootstrap table row background */
     .data-table tbody tr {
-      background-color: transparent;
+      background-color: var(--bg-card) !important;
+    }
+    
+    .data-table tbody tr:nth-of-type(even) {
+      background-color: rgba(255,255,255,0.02) !important;
     }
     
     .data-table th {
