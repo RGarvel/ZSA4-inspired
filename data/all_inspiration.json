@@ -1,614 +1,205 @@
 [
   {
-    "id": "arxiv-2607.18110v1-82f5",
-    "title": "LLM-as-a-Coach: Experiential Learning for Non-Verifiable Tasks",
+    "id": "ait-36",
     "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Reinforcement learning (RL) on open-ended tasks compresses an LLM's rubric-based evaluation into a scalar reward, discarding rich textual feedback and conflating responses with distinct quality profil",
-    "url": "https://arxiv.org/abs/2607.18110v1",
-    "source": "arXiv",
+    "category": "ai_tech",
+    "title": "Bloomberg评论：自我改进的AI模型看起来真正令人恐惧",
+    "raw_summary": "Bloomberg专栏作家Parmy Olson于7月21日发表文章指出，AI的自我改进能力正在呈现令人不安的趋势。文章探讨了递归自我改进（RSI）技术如何使AI系统能够自主优化自身的代码、架构和训练方法。OpenAI的GPT-5.6 Sol已展示出自主训练子模型的能力，Sakana AI也在东京设立了专门的RSI实验室。多位AI安全研究者警告，当AI系统开始改进AI系统时，人类可能逐渐失去对技术发展方向的实质监督能力。这篇文章呼应了Anthropic此前呼吁全球暂停AI发展的立场。",
+    "source": "Bloomberg Opinion",
+    "url": "https://www.bloomberg.com/opinion/articles/2026-07-21/self-improving-ai-models-look-genuinely-scary",
     "keywords": [
-      "cs.LG"
+      "自我改进",
+      "递归自我改进",
+      "RSI",
+      "AI安全",
+      "Bloomberg",
+      "GPT-5.6"
     ],
-    "importance": 3
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
   },
   {
-    "id": "arxiv-2607.18114v1-c95f",
-    "title": "How Does Alignment Tuning Shape Representations of Sycophancy and Related Cue-Induced Biases in LLMs?",
+    "id": "ait-37",
     "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Modern LLMs are alarmingly susceptible to surprisingly simple immaterial changes of input prompts: a casual hint, an incorrectly labeled few-shot example, or a fake prior assistant turn often flips an",
-    "url": "https://arxiv.org/abs/2607.18114v1",
-    "source": "arXiv",
+    "category": "ai_tech",
+    "title": "Google研发Frozen v2专用AI芯片：Gemini推理效率提升6-10倍",
+    "raw_summary": "据The Information报道，Google正在开发一款专为Gemini模型定制的服务器芯片，内部代号\"Frozen v2\"。该芯片将Gemini架构的部分组件直接固化到硅片中，可减少推理过程中的计算和数据移动。据称Frozen v2的能效比Google现有TPU芯片高出6到10倍，即单位功耗下处理的token数量增加6-10倍。这一芯片开发反映了AI算力需求的急剧增长——Google Cloud已因算力不足而拒绝部分客户订单。Frozen v2预计将在2027年投入部署。",
+    "source": "The Information / Quartz / SiliconANGLE",
+    "url": "https://www.theinformation.com/articles/google-plans-new-frozen-chip-run-ai-models-efficiently",
     "keywords": [
-      "cs.CL"
+      "Google",
+      "Frozen v2",
+      "AI芯片",
+      "Gemini",
+      "TPU",
+      "能效",
+      "基础设施"
     ],
-    "importance": 2
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   },
   {
-    "id": "arxiv-2607.18142v1-e8a6",
-    "title": "O-VAD: Industrial Video Anomaly Detection through Object-Centric Tracking and Reasoning",
+    "id": "ait-38",
     "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Industrial Video Anomaly Detection (IVAD) aims to identify anomalous objects and events in an industrial process, which is crucial for modern manufacturing and quality control systems. Existing VLM-ba",
-    "url": "https://arxiv.org/abs/2607.18142v1",
-    "source": "arXiv",
+    "category": "ai_tech",
+    "title": "Anthropic推进IPO进程：高盛、摩根士丹利、摩根大通开始安排投资者会议",
+    "raw_summary": "据CNBC和The Agent Report报道，Anthropic的三家承销商——高盛、摩根士丹利和摩根大通——已从7月15日起开始安排与潜在投资者的会议，为Anthropic可能在2026年10月进行的IPO做准备。Anthropic于2026年6月1日提交了保密S-1文件，最新私募估值达9650亿美元。如果按计划推进，Anthropic有望成为史上规模最大的科技IPO之一，并力争在OpenAI之前率先上市。",
+    "source": "CNBC / The Agent Report / Bloomberg",
+    "url": "https://www.cnbc.com/2026/07/15/anthropic-ipo-banks-investor-meetings.html",
     "keywords": [
-      "cs.CV"
+      "Anthropic",
+      "IPO",
+      "高盛",
+      "摩根士丹利",
+      "摩根大通",
+      "9650亿美元"
     ],
-    "importance": 2
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
   },
   {
-    "id": "arxiv-2607.18144v1-a6cb",
-    "title": "Do Language Models Dream of Binding Molecules? Benchmarking LLMs under Spatial Constraints",
+    "id": "ait-39",
     "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Structure-based drug design (SBDD) leverages the 3D structure of protein targets, often complemented by other spatial constraints, to generate candidate binding molecules. While diffusion models have",
-    "url": "https://arxiv.org/abs/2607.18144v1",
+    "category": "ai_tech",
+    "title": "arXiv综述论文：递归自我改进AI的分类学——从有界自我完善到自主研究循环",
+    "raw_summary": "arXiv论文2607.07663系统性地分类了1250篇关于AI自我改进的研究论文，将AI自我改进分为两个主要类别：有界自我完善（bounded self-refinement）——收敛性、可评估的，已成为工业实践；以及开放式递归自我改进（RSI）——仍处于受限于 grounding 要求、坍缩动力学和算力约束的阶段。该综述为理解当前AI自我改进技术的成熟度提供了系统性框架。",
     "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07663",
     "keywords": [
-      "cs.LG"
+      "递归自我改进",
+      "RSI",
+      "arXiv",
+      "综述",
+      "AI安全",
+      "自我完善"
     ],
-    "importance": 4
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   },
   {
-    "id": "arxiv-2607.18147v1-f432",
-    "title": "LLMs and Agentic AI Systems for Smart Grids: A Tutorial on Architectures and Applications",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Large language models (LLMs) and agentic AI systems have evolved from natural language tasks to using external tools to plan, retrieve, and act in technical domains. In smart grids, recent work applie",
-    "url": "https://arxiv.org/abs/2607.18147v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.AI"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18149v1-4b75",
-    "title": "Differentiable Logic Gate Networks for Low-Latency EEG Classification on Edge Devices",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Real-time EEG classification on edge devices is bottlenecked by the floating-point arithmetic of conventional neural networks. We investigated Diff-Logic as a hardware-native alternative that compile",
-    "url": "https://arxiv.org/abs/2607.18149v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18150v1-8cf3",
-    "title": "Lossless-INR: Lossless Volumetric Implicit Neural Representations",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Implicit neural representation (INR) methods provide continuous coordinate-to-value mappings and integrate naturally with direct volume rendering, making them attractive for representing volumetric da",
-    "url": "https://arxiv.org/abs/2607.18150v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 2
-  },
-  {
-    "id": "arxiv-2607.18151v1-6616",
-    "title": "Plenoptic Condensation: A Novel Approach to Generalized Scene Reconstruction",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "We present a novel Generalized Scene Reconstruction (GSR) approach called Plenoptic Condensation (PCon). PCon uses a multi-stage reconstruction pipeline, initially converting images into \"soupy\" scene",
-    "url": "https://arxiv.org/abs/2607.18151v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 2
-  },
-  {
-    "id": "arxiv-2607.18153v1-c420",
-    "title": "Robust Multimodal Dynamic Object Segmentation",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Dynamic object segmentation plays a critical role in many visual applications such as static scene reconstruction from dynamic videos. However, existing optical flow-based methods fail to ensure consi",
-    "url": "https://arxiv.org/abs/2607.18153v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18161v1-d0f0",
-    "title": "TRIM: Reducing AI-Generated CodeSlop via Agent Trajectory Minimization",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Coding agents are increasingly used to accelerate code generation in many downstream tasks, such as fixing bugs, building applications, and prototyping. However, despite their value as coding assistan",
-    "url": "https://arxiv.org/abs/2607.18161v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.SE"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18163v1-020f",
-    "title": "OR Else: A Differentiable Trust Region for Policy Optimization",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "PPO and the GRPO baseline studied here use clipped surrogate objectives whose favorable-direction saturation introduces an abrupt change in the scalar objective's derivative. We ask whether Output Res",
-    "url": "https://arxiv.org/abs/2607.18163v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18164v1-068a",
-    "title": "A Continual Validation, Updating, and Decision-Making Framework for Self-Adaptive Digital Twins via Robust Model Predictive Control: A Case Study in Additive Manufacturing",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Digital Twins rely on surrogate models to mirror physical systems in real time, yet these models can degrade as operating conditions evolve, a phenomenon known as concept drift. Maintaining surrogate",
-    "url": "https://arxiv.org/abs/2607.18164v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 2
-  },
-  {
-    "id": "arxiv-2607.18171v1-17fe",
-    "title": "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Real-time multimodal applications, including voice agents and interactive video generation, compose heterogeneous models into pipelines whose efficient deployment requires application-specific decisio",
-    "url": "https://arxiv.org/abs/2607.18171v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18181v1-ddf7",
-    "title": "VEHBench: A Stage-Local Diagnostic Benchmark for LLM-Assisted Vibration Energy Harvester Design",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Battery-free Internet of Things (IoT) requires iterative design of vibration energy harvesters (VEHs) under coupled physical constraints, while LLMs are emerging as interface layers for engineering wo",
-    "url": "https://arxiv.org/abs/2607.18181v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CL"
-    ],
-    "importance": 4
-  },
-  {
-    "id": "arxiv-2607.18187v1-48ca",
-    "title": "EVOLVE: Efficient Learned Volume Compression with Variable-Rate Encoding on a Cross-Domain Database",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Large-scale scientific simulations generate volumetric data at rates that far outpace advances in storage and network bandwidth, making effective lossy compression increasingly critical. However, conv",
-    "url": "https://arxiv.org/abs/2607.18187v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.GR"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18195v1-2cd9",
-    "title": "Certified Training for Convolutional Perturbations",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Vision models have been found to be susceptible to perturbations such as motion blur induced at runtime by a shaking camera. This impedes their deployment in critical applications since phenomena such",
-    "url": "https://arxiv.org/abs/2607.18195v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18198v1-3557",
-    "title": "Three-Body Scattering for Generative Modeling",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Modern generative models typically rely on an adversarial critic, a prescribed noise-to-data path, or an autoregressive factorization. Instead, we show that a proper distributional energy can induce s",
-    "url": "https://arxiv.org/abs/2607.18198v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18199v1-58b2",
-    "title": "PPL-Factory: Task-Aware and Budget-Aware Data Selection from Language Modeling to Reasoning",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Not all training samples contribute equally to large language model fine-tuning. Selecting informative training samples can reduce the computational cost while preserving downstream performance. Many",
-    "url": "https://arxiv.org/abs/2607.18199v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CL"
-    ],
-    "importance": 2
-  },
-  {
-    "id": "arxiv-2607.18200v1-4aa3",
-    "title": "Learning Adaptive Safety Margins for Visual Navigation",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Robots in cluttered indoor spaces often fail not because they cannot generate collision-free paths, but because a fixed safety margin is mis-calibrated: conservative margins cause detours and timeouts",
-    "url": "https://arxiv.org/abs/2607.18200v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.RO"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18209v1-6d19",
-    "title": "Unveiling Invariant and Transferable Latent Factors Across Heterogeneous Environments via ATLAS",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "This paper considers a multi-environment factor model in which high-dimensional covariates are collected from heterogeneous environments, with auxiliary labels available in a subset of these environme",
-    "url": "https://arxiv.org/abs/2607.18209v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18213v1-13e5",
-    "title": "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Pruning long context for coding agents has been a vital technology for efficient context management. While existing context pruning methods such as SWE-Pruner realize this by attaching a separate code",
-    "url": "https://arxiv.org/abs/2607.18213v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CL"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18217v1-4581",
-    "title": "HOMIE: Human-object Centric Video Personalization via Multimodal Intelligent Enchancement",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Human-object centric video personalization (HOCVP) is a core task within subject-driven video generation. However, existing methods suffer from two key limitations. First, most approaches focusing on",
-    "url": "https://arxiv.org/abs/2607.18217v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18218v1-1de6",
-    "title": "GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Foundation models have emerged as a driving force in computational pathology, with the potential to transform cancer diagnosis, prognosis, and treatment selection by learning transferable representati",
-    "url": "https://arxiv.org/abs/2607.18218v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 4
-  },
-  {
-    "id": "arxiv-2607.18225v1-d547",
-    "title": "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "We propose one-step and two-step methods for policy learning with retrieval-augmented generation (RAG). We formulate RAG-based action selection under the potential outcome framework. In the two-step m",
-    "url": "https://arxiv.org/abs/2607.18225v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18226v1-d655",
-    "title": "Causal Discovery on Irregular Time Series",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Causal discovery methods have shown strong performance in temporal systems, but they typically rely on regular and discrete lag structures, limiting their applicability to regularly sampled data. Howe",
-    "url": "https://arxiv.org/abs/2607.18226v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.LG"
-    ],
-    "importance": 2
-  },
-  {
-    "id": "arxiv-2607.18227v1-1dc4",
-    "title": "FlowMimic: Mask-free Visual Editing and Generation with Pixel-pair Warped Flow Field for Online Video Editing Data Generation and Modality Mimicry",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "In line with the prevailing direction of vision research, we explore the integration of both generation and editing capabilities for video and image modalities within a single model. Current approache",
-    "url": "https://arxiv.org/abs/2607.18227v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 4
-  },
-  {
-    "id": "arxiv-2607.18228v1-94e9",
-    "title": "Logical Judgments Under Pressure: Diagnosing Syllogistic Stability with Learned Soft Prefixes",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "To test how correct logical judgments respond to learned context, we prepend a soft prefix to an exactly labeled syllogistic reasoning benchmark while keeping the model fixed. Soft prefixes are opaque",
-    "url": "https://arxiv.org/abs/2607.18228v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.AI"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18230v1-4a2b",
-    "title": "Simple Domain Generalization for Strong Pixel-Level Image Tampering Detection in Modern VLMs",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Modern vision-language models (VLMs) have significantly improved image generation and editing capabilities, making pixel-level image tampering detection increasingly important yet challenging under cr",
-    "url": "https://arxiv.org/abs/2607.18230v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 3
-  },
-  {
-    "id": "arxiv-2607.18232v1-5457",
-    "title": "It's Not What You Say, It's How You Say It: Evaluating LLM Responses to Expressions of Belief",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Users frequently express their beliefs to large language models (LLMs). In some situations, the LLM should accept these contextual beliefs as true. In others, they should stick to their prior knowledg",
-    "url": "https://arxiv.org/abs/2607.18232v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CL"
-    ],
-    "importance": 2
-  },
-  {
-    "id": "arxiv-2607.18235v1-c306",
-    "title": "Automated Discovery Has No Universally Superior Harness",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Autonomous discovery systems such as OpenEvolve and TTT-Discover are often used as general-purpose harnesses. However, in practice these are composite systems combining several design choices about ar",
-    "url": "https://arxiv.org/abs/2607.18235v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CL"
-    ],
-    "importance": 2
-  },
-  {
-    "id": "arxiv-2607.18236v1-2a3c",
-    "title": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Pretrained dense visual features from Vision Transformers (ViTs) are powerful yet have been underutilized in robot learning. Modern robot policies either compress each observation into a single global",
-    "url": "https://arxiv.org/abs/2607.18236v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.RO"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "arxiv-2607.18237v1-b426",
-    "title": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
-    "date": "2026-07-21",
-    "category": "academic_paper",
-    "summary": "Human visual similarity judgments are context-dependent. For example, two images may be similar in shape but distinct in color. Existing perceptual similarity metrics, however, collapse these nuances",
-    "url": "https://arxiv.org/abs/2607.18237v1",
-    "source": "arXiv",
-    "keywords": [
-      "cs.CV"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-1005e99f",
-    "title": "Panguard.AI",
+    "id": "pt-40",
     "date": "2026-07-21",
     "category": "product_tool",
-    "summary": "专为AI智能体构建的开源恶意软件扫描器和运行时防护工具，保护AI代理在执行任务时的安全性。",
-    "url": "https://www.producthunt.com/products/panguard-ai",
-    "source": "Product Hunt",
+    "title": "Anthropic Fable 5定价规则正式生效：每周50%用量限制",
+    "raw_summary": "从2026年7月21日起，Anthropic Fable 5的定价规则正式生效。Max和Team Premium订阅用户可将Fable 5作为永久功能使用，但每周用量限制在50%以内；Pro和Team Standard用户完全失去免费路径，转为按使用量计费（$10/百万输入token，$50/百万输出token），并获得一次性$100额度抵扣。这一变化标志着Anthropic旗舰模型从免费推广走向全面商业化。",
+    "source": "LaoZhang AI Blog",
+    "url": "https://blog.laozhang.ai/en/posts/claude-fable-5-usage-credit-cost",
     "keywords": [
-      "AI Security / Open Source"
+      "Anthropic",
+      "Fable 5",
+      "定价",
+      "商业化",
+      "用量限制"
     ],
-    "importance": 1
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
   },
   {
-    "id": "ph-14077b8a",
-    "title": "Rewisp",
+    "id": "pt-41",
     "date": "2026-07-21",
     "category": "product_tool",
-    "summary": "Mac平台的背景记忆层，用户看到的内容均可被记住和检索，口号为\"看一次，永远可问\"，打造个人知识记忆系统。",
-    "url": "https://www.producthunt.com/products/rewisp-an-ambient-memory-for-your-mac",
-    "source": "Product Hunt",
+    "title": "AI法律立法进展：2026年美国各州AI立法放缓，联邦审查 looming",
+    "raw_summary": "据AI Weekly报道，截至2026年7月1日，美国各州已颁布109项AI法律和28项数据中心法律。但立法速度明显放缓——2026年至今29个州通过了AI立法，而2025年同期为39个州。这一放缓与特朗普政府的AI任务组和DOJ AI诉讼任务组对州级AI法律的联邦审查有关。各州正在等待联邦层面的明确信号。",
+    "source": "AI Weekly",
+    "url": "https://aiweekly.co/alerts/state-ai-lawmaking-slows-in-2026-as-trump-task-force-looms",
     "keywords": [
-      "Mac Productivity / AI Memory"
+      "AI监管",
+      "美国",
+      "州立法",
+      "联邦审查",
+      "特朗普",
+      "DOJ"
     ],
-    "importance": 1
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
   },
   {
-    "id": "ph-305a080d",
-    "title": "Tansei",
+    "id": "st-24",
     "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "轻量级Mac搁架工具，为移动办公用户提供快速访问常用工具和资源的便捷入口。",
-    "url": "https://www.producthunt.com/products/tansei-a-simple-shelf-for-your-mac",
-    "source": "Product Hunt",
+    "category": "startup",
+    "title": "GigaAI（极佳视界）拟今年赴港IPO，估值30亿美元——全球世界模型第一股",
+    "raw_summary": "据Bloomberg 7月21日报道，北京AI初创公司GigaAI（极佳视界/Jijia Vision）正在讨论最早于今年在香港交易所进行IPO，这将是全球首家专注于世界模型的AI初创公司上市。创始人兼CEO黄冠透露，公司新一轮融资即将完成，估值达30亿美元。GigaAI的客户包括中国一汽、京东和邮政运营商EMS。该公司专注于具身智能和通用机器人领域，将成为中国该估值最高的AI初创企业之一。",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-21/china-s-gigaai-seeks-2026-hong-kong-ipo-in-first-for-world-model",
     "keywords": [
-      "Mac Utility / Productivity"
+      "GigaAI",
+      "极佳视界",
+      "IPO",
+      "香港",
+      "世界模型",
+      "具身智能",
+      "30亿美元"
     ],
-    "importance": 1
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   },
   {
-    "id": "ph-507908d6",
-    "title": "SocialKaptan",
+    "id": "st-25",
     "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "自动化LinkedIn和Instagram增长的工具，消除重复性社交媒体运营工作，实现内容发布和互动自动化。",
-    "url": "https://www.producthunt.com/products/socialkaptan",
-    "source": "Product Hunt",
+    "category": "startup",
+    "title": "CuspAI完成4.5亿美元B轮融资，Jeff Bezos和英国政府联合投资",
+    "raw_summary": "剑桥AI材料发现初创公司CuspAI于7月20日宣布完成4.5亿美元B轮融资，由亚马逊创始人Jeff Bezos的投资基金和英国政府主权AI基金联合领投。融资后公司估值达26亿美元。CuspAI利用AI系统发现和设计用于清洁能源和芯片制造的新型材料。这家成立仅两年的公司代表了英国政府通过主权AI基金支持本土AI创新的战略方向。",
+    "source": "Reuters / The Guardian / Telegraph",
+    "url": "https://www.reuters.com/business/uk-government-bezos-back-cuspais-450-million-round-startup-seeks-discover-new-2026-07-20/",
     "keywords": [
-      "AI Marketing / Social Media"
+      "CuspAI",
+      "Jeff Bezos",
+      "英国政府",
+      "B轮",
+      "4.5亿美元",
+      "AI材料",
+      "主权AI基金"
     ],
-    "importance": 1
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
   },
   {
-    "id": "ph-5a23f9fd",
-    "title": "KillAI",
+    "id": "st-26",
     "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "浏览器扩展插件，可过滤YouTube信息流中的AI生成内容，帮助用户区分真实视频和AI合成视频。",
-    "url": "https://www.producthunt.com/products/killai",
-    "source": "Product Hunt",
+    "category": "startup",
+    "title": "Moonshot AI营收达3亿美元，Kimi K3发布后日销售额激增六倍",
+    "raw_summary": "据CryptoBriefing 7月20日报道，Moonshot AI在发布Kimi K3后日销售额激增至少六倍，年化经常性收入（ARR）已达3亿美元。由于需求激增导致GPU接近容量上限，Moonshot于7月19日宣布暂停新用户订阅，并将订阅计划分为两个层级。与此同时，公司正在积极筹备IPO，最早可能在六个月内上市。彭博社5月报道Moonshot曾完成约20亿美元的融资，估值超200亿美元。",
+    "source": "CryptoBriefing / The Next Web / Bloomberg",
+    "url": "https://cryptobriefing.com/moonshot-kimi-subscriptions-pause-ipo/",
     "keywords": [
-      "Browser Extension / Content Filtering"
+      "Moonshot",
+      "Kimi K3",
+      "营收",
+      "3亿美元",
+      "IPO",
+      "订阅暂停"
     ],
-    "importance": 1
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   },
   {
-    "id": "ph-5d53c764",
-    "title": "OpenSEO",
+    "id": "st-27",
     "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "开源版Ahrefs替代品，为偏好自托管或免费方案的团队提供专业级SEO工具，包括关键词研究、竞品分析、反向链接和站点审计功能。当日最高票产品。",
-    "url": "https://www.producthunt.com/products/openseo",
-    "source": "Product Hunt",
+    "category": "startup",
+    "title": "MENA地区2026上半年初创企业融资17亿美元，AI领投",
+    "raw_summary": "据Wamda发布的2026年上半年报告显示，中东和北非（MENA）地区的初创企业在2026年上半年完成了242轮融资，总计筹集17亿美元。尽管面临地缘政治不确定性，投资者仍持续向该地区部署资本。AI领域仍然是最受青睐的投资方向，UAE以9380万美元的单月融资额成为该地区最活跃的单一市场。",
+    "source": "Arab News / Wamda",
+    "url": "https://www.arabnews.com/node/2651443/business-economy",
     "keywords": [
-      "Developer Tool / Open Source / SEO"
+      "MENA",
+      "Wamda",
+      "初创融资",
+      "17亿美元",
+      "AI投资",
+      "中东"
     ],
-    "importance": 1
-  },
-  {
-    "id": "ph-627d06b8",
-    "title": "CitedSpy",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "品牌提及追踪工具，在ChatGPT、Claude、Perplexity等AI平台上一站式监控品牌被引用情况，提供数据面板。",
-    "url": "https://www.producthunt.com/products/citedspy",
-    "source": "Product Hunt",
-    "keywords": [
-      "AI Analytics / Brand Monitoring"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-7537bb3a",
-    "title": "Pelagic Analytics",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "Google Analytics替代品，专注于帮助网站有机流量增长的数据分析平台。",
-    "url": "https://www.producthunt.com/products/pelagic-analytics",
-    "source": "Product Hunt",
-    "keywords": [
-      "Analytics / Privacy"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-843fc954",
-    "title": "Recume",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "利用AI检测汽车 listings 中的诈骗信息，帮助买家在交易前识别虚假车辆广告，避免经济损失。",
-    "url": "https://www.producthunt.com/products/recume",
-    "source": "Product Hunt",
-    "keywords": [
-      "AI Security / Consumer"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-88989d85",
-    "title": "Double",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "AI职业助手，自动化求职流程，帮助用户更快找到工作。通过智能匹配、简历优化和面试准备等功能提升求职效率。",
-    "url": "https://www.producthunt.com/products/double-6",
-    "source": "Product Hunt",
-    "keywords": [
-      "AI Career Agent"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-9207353f",
-    "title": "ReadyStill",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "Chrome扩展插件，拍摄一张截图后自动格式化，适用于多种使用场景，省去手动裁剪调整的时间。",
-    "url": "https://www.producthunt.com/products/readystill",
-    "source": "Product Hunt",
-    "keywords": [
-      "Chrome Extension / Productivity"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-a02efb66",
-    "title": "Kobbe",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "隐私友好的网页分析工具，在一个面板中同时覆盖流量数据和收入数据，对标Google Analytics。",
-    "url": "https://www.producthunt.com/products/kobbe",
-    "source": "Product Hunt",
-    "keywords": [
-      "Analytics / Privacy"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-a0acc51b",
-    "title": "HeimWall",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "安全拦截工具，在密钥和敏感凭证泄漏到Cursor、Claude等AI编码工具之前进行拦截，保护开发者凭据安全。",
-    "url": "https://www.producthunt.com/products/heimwall",
-    "source": "Product Hunt",
-    "keywords": [
-      "Developer Security Tool"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-a1deab01",
-    "title": "BaseRT",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "开源推理运行时，据报道在Apple硬件上比llama.cpp快6.4倍、比MLX快3.9倍，专注于高性能本地模型推理。",
-    "url": "https://www.producthunt.com/products/basert",
-    "source": "Product Hunt",
-    "keywords": [
-      "Developer Tool / Open Source"
-    ],
-    "importance": 1
-  },
-  {
-    "id": "ph-b966b240",
-    "title": "ArchiMind (Solon)",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "summary": "AI驱动的GitHub仓库分析工具，能够解析代码库结构并生成结构化的架构洞察报告，帮助开发者理解大型项目。",
-    "url": "https://www.producthunt.com/products/solon-2",
-    "source": "Product Hunt",
-    "keywords": [
-      "AI Developer Tool"
-    ],
-    "importance": 1
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "ait-13",
@@ -884,7 +475,8 @@
       "互动展示"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-17",
@@ -901,7 +493,8 @@
       "生产力"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-18",
@@ -918,7 +511,8 @@
       "知识管理"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-19",
@@ -935,7 +529,8 @@
       "快速演示"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-2",
@@ -972,7 +567,8 @@
       "开发者工具"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-8",
@@ -1049,7 +645,8 @@
       "AI前沿"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-22",
@@ -1066,7 +663,8 @@
       "上下文持久化"
     ],
     "original_language": "en",
-    "importance": 2
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "pt-23",
@@ -1083,7 +681,8 @@
       "个人AI"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-24",
@@ -1100,7 +699,8 @@
       "无代码"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-25",
@@ -1117,7 +717,8 @@
       "SEO"
     ],
     "original_language": "en",
-    "importance": 2
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "pt-26",
@@ -1134,7 +735,8 @@
       "桌面工具"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "ait-16",
@@ -1214,7 +816,8 @@
       "AI代理"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-28",
@@ -1231,7 +834,8 @@
       "自动化"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-29",
@@ -1249,7 +853,8 @@
       "企业安全"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-30",
@@ -1266,7 +871,8 @@
       "运营自动化"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-31",
@@ -1283,7 +889,8 @@
       "知识图谱"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-32",
@@ -1300,7 +907,8 @@
       "开发工具"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-12",
@@ -1337,7 +945,8 @@
       "3500万欧元"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-21",
@@ -1355,7 +964,8 @@
       "表格基础模型"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-6",
@@ -1497,7 +1107,8 @@
       "AI笔记"
     ],
     "original_language": "en",
-    "importance": 2
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "pt-34",
@@ -1515,7 +1126,8 @@
       "文本生成游戏"
     ],
     "original_language": "en",
-    "importance": 2
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "pt-35",
@@ -1533,7 +1145,8 @@
       "本地工具"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-36",
@@ -1551,7 +1164,8 @@
       "开源模型"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-4",
@@ -1608,7 +1222,8 @@
       "1000万美元"
     ],
     "original_language": "en",
-    "importance": 2
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "st-23",
@@ -1625,7 +1240,8 @@
       "1000万美元"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-3",
@@ -1682,7 +1298,8 @@
       "Claude"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "ait-4",
@@ -1739,7 +1356,8 @@
       "通信基础设施"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-1",
@@ -1816,7 +1434,8 @@
       "Coinbase Ventures"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-18",
@@ -1833,7 +1452,8 @@
       "GTMfund"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-2",
@@ -1871,7 +1491,8 @@
       "风投"
     ],
     "original_language": "en",
-    "importance": 2
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "st-5",
@@ -1909,7 +1530,8 @@
       "智能体"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-38",
@@ -1926,7 +1548,8 @@
       "周榜第一"
     ],
     "original_language": "en",
-    "importance": 2
+    "importance": 2,
+    "is_major_event": false
   },
   {
     "id": "st-15",
@@ -1963,7 +1586,8 @@
       "宇树科技"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-4",
@@ -2002,7 +1626,8 @@
       "隐私保护"
     ],
     "original_language": "zh",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "ait-29",
@@ -2020,7 +1645,8 @@
       "AI硬件"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-39",
@@ -2038,7 +1664,8 @@
       "AI政策"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-14",
@@ -2093,7 +1720,8 @@
       "DeepMind"
     ],
     "original_language": "zh",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-6",
@@ -2150,7 +1778,8 @@
       "数学证明"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "ait-22",
@@ -2205,7 +1834,8 @@
       "Superintelligence Labs"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "ait-33",
@@ -2223,7 +1853,8 @@
       "递归自我改进"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-14",
@@ -2337,7 +1968,8 @@
       "编码模型"
     ],
     "original_language": "en",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "pt-15",
@@ -2374,7 +2006,8 @@
       "OpenRouter"
     ],
     "original_language": "zh",
-    "importance": 1
+    "importance": 1,
+    "is_major_event": false
   },
   {
     "id": "st-9",
