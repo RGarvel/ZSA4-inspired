@@ -3436,5 +3436,44 @@
       "Daniel Burke",
       "Chaoli Wang"
     ]
+  },
+  {
+    "id": "st-1004",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "李开复01.ai筹备香港IPO，目标2027年上市",
+    "raw_summary": "李开复创办的AI公司01.ai正在推进Pre-IPO轮融资，目标2027年在香港上市。公司在世界人工智能大会（上海）上透露，正在拆除红筹架构以准备港股IPO，并预计明年成为中国首家实现单季度盈利的AI 2.0公司。公司战略已从预训练转向企业级AI服务销售。",
+    "source": "Bloomberg / The Next Web",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-20/ai-pioneer-kai-fu-lee-s-startup-targets-hong-kong-ipo-next-year",
+    "keywords": [
+      "01.ai",
+      "李开复",
+      "香港IPO",
+      "Pre-IPO",
+      "红筹架构",
+      "AI盈利"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1006",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "推理基础设施初创Infinity获1500万美元融资",
+    "raw_summary": "AI推理基础设施公司Infinity完成1500万美元融资，估值1亿美元。投资方包括Touring Capital、Principal VC以及来自OpenAI和Anthropic的研究人员。同期Neo公司完成1亿美元融资，致力于将软件转变为自主系统以保护企业安全。",
+    "source": "TechCrunch / TechStartups",
+    "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
+    "keywords": [
+      "Infinity",
+      "AI推理",
+      "种子轮融资",
+      "Neo",
+      "自主系统"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   }
 ]
