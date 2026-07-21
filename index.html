@@ -830,12 +830,13 @@
       const parts = [];
       const MAX_SHOW = 5;
       
+      const iconMap = { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' };
+      const labelMap = { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' };
+      
       for (const cat in grouped) {
         const items = grouped[cat];
         const hasMore = items.length > MAX_SHOW;
         const secId = 'sec-' + cat.replace(/[_\s]+/g, '-');
-        const iconMap = { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' };
-        const labelMap = { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' };
         
         parts.push(
           `<div class="summary-section">`,
@@ -1026,10 +1027,14 @@
       });
     });
     
-    // Click navbar blank area to scroll to top
-    document.querySelector('.navbar').addEventListener('click', function(e) {
-      if (e.target === this || e.target.tagName === 'NAV' || (e.target.classList.contains('container') && e.target === e.currentTarget)) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('.navbar');
+      if (navbar) {
+        navbar.addEventListener('click', function(e) {
+          if (e.target === this || e.target.tagName === 'NAV' || (e.target.classList.contains('container') && e.target === e.currentTarget)) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        });
       }
     });
   </script>

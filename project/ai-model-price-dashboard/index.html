@@ -585,14 +585,10 @@
     function renderTable() {
       const models = getFilteredModels();
       
-      // Sort — pre-lowercase strings for case-insensitive comparison
-      for (const m of models) {
-        if (typeof m.name === 'string') m._lcName = m.name.toLowerCase();
-      }
-      
       models.sort((a, b) => {
         let va = a[sortField], vb = b[sortField];
-        if (sortField === 'name') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+        if (sortField === 'name') { va = String(va || '').toLowerCase(); vb = String(vb || '').toLowerCase(); }
+        else { va = Number(va) || 0; vb = Number(vb) || 0; }
         if (va < vb) return sortDirection === 'asc' ? -1 : 1;
         if (va > vb) return sortDirection === 'asc' ? 1 : -1;
         return 0;
@@ -629,15 +625,16 @@
       updateChart();
     }
     
-    // ── Pre-computed price formatting ──────────────────────
     function fmtPrice(price) {
-      if (price === '/' || price === 0) return price === 0 ? '免费' : '/';
-      return price.toFixed(2);
+      if (price == null || price === '' || isNaN(Number(price))) return '/';
+      if (price === '/' || Number(price) === 0) return '免费';
+      return Number(price).toFixed(2);
     }
     
     function fmtImgPrice(price) {
-      if (price === '/' || price === 0) return price === 0 ? '免费' : '/';
-      return '$' + parseFloat(price).toFixed(2);
+      if (price == null || price === '' || isNaN(Number(price))) return '/';
+      if (price === '/' || Number(price) === 0) return '免费';
+      return '$' + Number(price).toFixed(2);
     }
     
     // Legacy aliases (kept for backward compat)
@@ -659,6 +656,7 @@
       const idx = compareList.indexOf(modelId);
       if (idx > -1) {
         compareList.splice(idx, 1);
+        rebuildCompareSet();
       } else {
         if (compareList.length >= 4) { alert('最多同时对比 4 个模型'); return; }
         compareList.push(modelId);
@@ -676,7 +674,7 @@
       
       panel.classList.add('show');
       
-      // Lookup models by id using a Map for O(1) instead of filter+includes
+      // Lookup models by id using a Set for O(1) instead of filter+includes
       const ids = new Set(compareList);
       const models = [];
       for (const m of allModels) { if (ids.has(m.model_id)) models.push(m); }
@@ -689,7 +687,7 @@
       
       const parts = [];
       parts.push('<div class="table-responsive"><table class="table table-sm"><thead><tr><th>模型</th>');
-      for (const m of models) parts.push('<th>', m.name, '</th>');
+      for (const m of models) parts.push('<th>', String(m.name || ''), '</th>');
       parts.push('</tr></thead><tbody>');
       
       for (const [label, key] of rows) {
@@ -697,13 +695,15 @@
         for (const m of models) {
           let v = m[key];
           if (key === 'input_price_per_1m' || key === 'output_price_per_1m') {
-            v = v === 0 ? '免费' : '$' + v;
+            v = (v != null && v !== 0) ? '$' + v : '免费';
           } else if (key === 'context_window') {
-            v = v > 0 ? v.toLocaleString() + ' tokens' : '-';
+            v = (v && v > 0) ? Number(v).toLocaleString() + ' tokens' : '-';
           } else if (key === 'tier') {
-            v = '<span class="tier-badge ' + v + '">' + v + '</span>';
+            v = '<span class="tier-badge ' + String(v || '') + '">' + String(v || '') + '</span>';
           } else if (key === 'quality_score') {
-            v = '<span class="quality-score ' + (v >= 90 ? 'high' : v >= 75 ? 'medium' : 'low') + '">' + v + '</span>';
+            v = '<span class="quality-score ' + (v >= 90 ? 'high' : v >= 75 ? 'medium' : 'low') + '">' + String(v || '-') + '</span>';
+          } else {
+            v = String(v != null ? v : '-');
           }
           parts.push('<td>', v, '</td>');
         }
