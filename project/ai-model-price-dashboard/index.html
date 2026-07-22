@@ -519,8 +519,8 @@
     
     document.addEventListener('DOMContentLoaded', async () => {
       applyTheme();
-      await loadModels();
       cacheDom();
+      await loadModels();
       populateVendorFilter();
       renderTable();
     });
