@@ -14,7 +14,8 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 98,
-      "tier": "premium"
+      "tier": "premium",
+      "open_source": false
     },
     {
       "model_id": "claude-opus-4.8",
@@ -27,20 +28,22 @@
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 97,
-      "tier": "premium"
+      "tier": "premium",
+      "open_source": false
     },
     {
       "model_id": "o3",
       "name": "o3",
       "vendor": "OpenAI",
       "categories": ["reasoning", "coding"],
-      "input_price_per_1m": 15.00,
-      "output_price_per_1m": 60.00,
+      "input_price_per_1m": 2.00,
+      "output_price_per_1m": 8.00,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 96,
-      "tier": "premium"
+      "tier": "premium",
+      "open_source": false
     },
     {
       "model_id": "gpt-5.6-terra",
@@ -53,7 +56,8 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 95,
-      "tier": "premium"
+      "tier": "premium",
+      "open_source": false
     },
     {
       "model_id": "claude-sonnet-4.6",
@@ -66,7 +70,8 @@
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 93,
-      "tier": "premium"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "gemini-3.1-pro",
@@ -79,20 +84,22 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 93,
-      "tier": "premium"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "llama-4-maverick",
       "name": "Llama 4 Maverick",
       "vendor": "Meta",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 0.00,
-      "output_price_per_1m": 0.00,
+      "input_price_per_1m": 0.20,
+      "output_price_per_1m": 0.80,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 92,
-      "tier": "free"
+      "tier": "free",
+      "open_source": true
     },
     {
       "model_id": "gpt-5.6-luna",
@@ -105,33 +112,36 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 90,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "kimi-k3",
       "name": "Kimi K3",
       "vendor": "Moonshot",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 0.50,
-      "output_price_per_1m": 2.00,
+      "input_price_per_1m": 3.00,
+      "output_price_per_1m": 15.00,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 256000,
       "quality_score": 90,
-      "tier": "budget"
+      "tier": "premium",
+      "open_source": true
     },
     {
       "model_id": "grok-4.5",
       "name": "Grok 4.5",
       "vendor": "xAI",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 3.00,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 2.00,
+      "output_price_per_1m": 6.00,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 89,
-      "tier": "premium"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "llama-4-scout",
@@ -144,7 +154,8 @@
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 88,
-      "tier": "free"
+      "tier": "free",
+      "open_source": true
     },
     {
       "model_id": "dall-e-3",
@@ -153,24 +164,26 @@
       "categories": ["image"],
       "input_price_per_1m": 0.00,
       "output_price_per_1m": 0.00,
-      "image_generation_price": 0.08,
-      "image_edit_price": 0.08,
+      "image_generation_price": 0.04,
+      "image_edit_price": 0.04,
       "context_window": 0,
       "quality_score": 88,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "qwen-max",
       "name": "Qwen Max",
       "vendor": "阿里通义",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 0.80,
-      "output_price_per_1m": 2.00,
+      "input_price_per_1m": 1.25,
+      "output_price_per_1m": 3.75,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 87,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "mistral-large",
@@ -183,7 +196,8 @@
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 86,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "deepseek-v3",
@@ -196,7 +210,8 @@
       "image_edit_price": "/",
       "context_window": 64000,
       "quality_score": 85,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "cohere-command-r-plus",
@@ -209,7 +224,8 @@
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 83,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "claude-haiku-4.5",
@@ -222,7 +238,8 @@
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 82,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "step-edge",
@@ -235,7 +252,8 @@
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 82,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "gemini-3-flash",
@@ -248,7 +266,8 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 80,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "gemini-2.0-flash-lite",
@@ -261,20 +280,22 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 68,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "yi-lightning",
       "name": "Yi Lightning",
       "vendor": "零一万物",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 0.10,
-      "output_price_per_1m": 0.10,
+      "input_price_per_1m": 0.14,
+      "output_price_per_1m": 0.14,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 40000,
       "quality_score": 72,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     }
   ]
 }

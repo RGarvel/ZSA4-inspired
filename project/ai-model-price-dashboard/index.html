@@ -426,6 +426,7 @@
             <th style="width: 10%;" onclick="sortBy('input_price_per_1m')">输入价 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 10%;" onclick="sortBy('output_price_per_1m')">输出价 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 10%;">图像</th>
+            <th style="width: 8%;">开源</th>
             <th style="width: 8%;" onclick="sortBy('quality_score')">质量 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 10%;">用途</th>
             <th style="width: 9%;">对比</th>
@@ -631,6 +632,7 @@
         parts.push('<td>$', fmtPrice(m.input_price_per_1m), '</td>');
         parts.push('<td>$', fmtPrice(m.output_price_per_1m), '</td>');
         parts.push('<td>', fmtImgPrice(m.image_generation_price), '</td>');
+        parts.push('<td style="text-align:center;">' + (m.open_source ? '<span class="badge bg-success">开源</span>' : '<span class="badge bg-secondary">闭源</span>') + '</td>');
         parts.push('<td><span class="quality-score ', qc, '">', q, '</span></td>');
         parts.push('<td>', m.categories.slice(0, 3).map(cat => '<span class="keyword-badge" style="font-size:0.65rem">' + cat + '</span>').join(''), '</td>');
         parts.push('<td><button class="btn btn-sm compare-btn ', ic ? 'compare-selected' : 'btn-outline-secondary', '" onclick="toggleCompare(\'', m.model_id, '\')">');
@@ -699,7 +701,7 @@
       const rows = [
         ['厂商', 'vendor'], ['输入价', 'input_price_per_1m'], ['输出价', 'output_price_per_1m'],
         ['图像生成', 'image_generation_price'], ['图像编辑', 'image_edit_price'],
-        ['上下文窗口', 'context_window'], ['质量评分', 'quality_score'], ['等级', 'tier']
+        ['上下文窗口', 'context_window'], ['质量评分', 'quality_score'], ['开源/闭源', 'open_source'], ['等级', 'tier']
       ];
       
       const parts = [];
@@ -719,6 +721,8 @@
             v = '<span class="tier-badge ' + String(v || '') + '">' + String(v || '') + '</span>';
           } else if (key === 'quality_score') {
             v = '<span class="quality-score ' + (v >= 90 ? 'high' : v >= 75 ? 'medium' : 'low') + '">' + String(v || '-') + '</span>';
+          } else if (key === 'open_source') {
+            v = '<span class="' + (v ? 'badge bg-success' : 'badge bg-secondary') + '">' + (v ? '开源' : '闭源') + '</span>';
           } else {
             v = String(v != null ? v : '-');
           }
