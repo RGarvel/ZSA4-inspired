@@ -691,7 +691,7 @@
     let currentDate = '';
     let currentCategory = 'all';
     let showMajorEventsOnly = false;
-    let showInspirationOnly = false;
+    // Inspiration is now a parallel filter tab, not a separate toggle
     let availableDates = [];
     
     // ── Cached DOM refs ────────────────────────────────────
@@ -707,8 +707,7 @@
         major: $('majorCount'),
         avg: $('avgImportance'),
         majorCard: $('majorCountCard'),
-        inspSection: $('inspirationSection'),
-        inspContainer: $('inspirationContainer'),
+
         dateSel: $('dateSelector'),
         tabs: document.querySelectorAll('.category-tab'),
       };
@@ -766,7 +765,7 @@
     // ── Single-pass filter + stats + group ─────────────────
     // Combines filtering, stats calculation, and grouping into ONE array pass
     function computeFiltered() {
-      const cats = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0 };
+      const cats = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0, inspiration: 0 };
       const grouped = {};
       let totalCount = 0, majorCount = 0, importanceSum = 0;
       
@@ -789,6 +788,10 @@
         grouped[cat].push(item);
       }
       
+      // Count insights into total and cats
+      if (hasInspirationData()) {
+        cats['inspiration'] = inspirationData.insights.length;
+      }
       // Sort each group by importance desc
       for (const cat in grouped) {
         grouped[cat].sort((a, b) => b.importance - a.importance);
@@ -820,19 +823,14 @@
       domCache.major.textContent = majorCount;
       domCache.avg.textContent = avgImp;
 
-      // Inspiration-only mode: hide articles, just show inspiration cards
-      if (showInspirationOnly) {
-        domCache.articles.style.display = 'none';
-        domCache.empty.style.display = 'none';
-      } else {
-        domCache.articles.style.display = '';
-        if (totalCount === 0) {
-          domCache.articles.innerHTML = '';
-          domCache.empty.style.display = 'block';
-          return;
-        }
-        domCache.empty.style.display = 'none';
+      // Articles display
+      domCache.articles.style.display = '';
+      if (totalCount === 0 && !hasInspirationData()) {
+        domCache.articles.innerHTML = '';
+        domCache.empty.style.display = 'block';
+        return;
       }
+      domCache.empty.style.display = totalCount === 0 ? 'block' : 'none';
       
       // Category tabs — update counts + active state
       domCache.tabs.forEach(tab => {
@@ -909,6 +907,35 @@
       
       domCache.articles.innerHTML = parts.join('');
       
+      // Render inspiration insights inline if data exists
+      if (hasInspirationData()) {
+        const insights = inspirationData.insights;
+        const filteredInsights = currentCategory === 'inspiration' ? insights : insights;
+        
+        if (currentCategory === 'all') {
+          const sepParts = [];
+          sepParts.push('<div class="inspiration-divider mt-5 mb-3 d-flex align-items-center gap-2">');
+          sepParts.push('<i class="bi bi-lightbulb-fill" style="color: var(--accent-orange); font-size: 1.3rem;"></i>');
+          sepParts.push('<span style="font-size: 1.1rem; font-weight: 600;">今日灵感</span>');
+          sepParts.push('</div>');
+          
+          for (const insight of filteredInsights) {
+            const cfg = INSIGHT_CFG[insight.type] || INSIGHT_CFG.industry_insight;
+            const cardHtml = buildInsightCard(insight, cfg);
+            sepParts.push(cardHtml);
+          }
+          domCache.articles.innerHTML += sepParts.join('\n');
+        } else if (currentCategory === 'inspiration') {
+          const tip = [];
+          tip.push(`<h4 class="mb-3"><i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i> 今日灵感 <small style="color: var(--text-secondary); font-weight: normal;">(${insights.length} 条)</small></h4>`);
+          for (const insight of filteredInsights) {
+            const cfg = INSIGHT_CFG[insight.type] || INSIGHT_CFG.industry_insight;
+            tip.push(buildInsightCard(insight, cfg));
+          }
+          domCache.articles.innerHTML = tip.join('\n');
+        }
+      }
+      
       // Render inspiration section if data exists
       if (inspirationData && inspirationData.insights?.length) {
         renderInspiration();
@@ -934,66 +961,48 @@
     
     let inspirationData = null;
     
+    function hasInspirationData() {
+      return !!(inspirationData && inspirationData.insights && inspirationData.insights.length);
+    }
+    
     async function loadInspiration(date) {
       try {
         const resp = await fetch(`./data/inspiration_${date}.json`);
         if (!resp.ok) {
           inspirationData = null;
-          domCache.inspSection.style.display = 'none';
           return;
         }
         inspirationData = await resp.json();
-        renderInspiration();
       } catch (e) {
         inspirationData = null;
-        domCache.inspSection.style.display = 'none';
       }
     }
     
-    function renderInspiration() {
-      if (!inspirationData || !inspirationData.insights?.length) {
-        domCache.inspSection.style.display = 'none';
-        return;
+    function buildInsightCard(insight, cfg) {
+      let html = '<div class="inspiration-card mb-3">';
+      html += '<div class="d-flex align-items-center gap-2 mb-2 flex-wrap">';
+      html += `<span class="inspiration-type-badge ${insight.type}">${cfg.label}</span>`;
+      if (insight.tags?.length) {
+        html += insight.tags.map(t => `<span class="badge ${cfg.badge}" style="font-size:0.7rem">${t}</span>`).join('');
       }
-      
-      const parts = [];
-      
-      for (const insight of inspirationData.insights) {
-        const cfg = INSIGHT_CFG[insight.type] || INSIGHT_CFG.industry_insight;
-        
-        parts.push(`<div class="inspiration-card ${insight.type}">`);
-        parts.push('<div class="d-flex align-items-center gap-2 mb-2">');
-        parts.push(`<span class="inspiration-type-badge ${insight.type}">${cfg.label}</span>`);
-        
-        if (insight.tags?.length) {
-          parts.push(insight.tags.map(t => `<span class="badge ${cfg.badge}" style="font-size:0.7rem">${t}</span>`).join(''));
-        }
-        
-        if (cfg.hasDifficulty) {
-          parts.push(`<span class="difficulty-badge ${insight.difficulty || 'medium'}">${DIFFICULTY_LABELS[insight.difficulty] || '🟡 中等'}</span>`);
-          if (insight.estimated_time) parts.push(`<span style="font-size:0.75rem;color:var(--text-secondary)">⏱ ${insight.estimated_time}</span>`);
-        }
-        parts.push('</div>');
-        
-        parts.push(`<h6 class="mb-2" style="color:var(--text-primary);font-weight:600">${insight.title}</h6>`);
-        parts.push(`<p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6">${insight.summary}</p>`);
-        
-        if (insight[cfg.extraKey]?.length) {
-          parts.push(`<div class="mt-2"><strong style="font-size:0.8rem;color:${cfg.accent || 'var(--text-secondary)'}">${cfg.extraLabel}：</strong>`);
-          parts.push(`<ul class="mb-0" style="font-size:0.85rem;color:var(--text-secondary)">`);
-          parts.push(insight[cfg.extraKey].map(x => `<li>${x}</li>`).join(''));
-          parts.push('</ul></div>');
-        }
-        
-        if (insight.related_news?.length) {
-          parts.push(`<div class="mt-2" style="font-size:0.75rem;color:var(--text-secondary)">${cfg.relatedLabel || '关联'}：${insight.related_news.join(', ')}</div>`);
-        }
-        
-        parts.push('</div>');
+      if (cfg.hasDifficulty) {
+        html += `<span class="difficulty-badge ${insight.difficulty || 'medium'}">${DIFFICULTY_LABELS[insight.difficulty] || '🟡 中等'}</span>`;
+        if (insight.estimated_time) html += `<span style="font-size:0.75rem;color:var(--text-secondary)">⏱ ${insight.estimated_time}</span>`;
       }
-      
-      domCache.inspContainer.innerHTML = parts.join('');
-      domCache.inspSection.style.display = 'block';
+      html += '</div>';
+      html += `<h6 class="mb-2" style="color:var(--text-primary);font-weight:600">${insight.title}</h6>`;
+      html += `<p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6">${insight.summary}</p>`;
+      if (insight[cfg.extraKey]?.length) {
+        html += `<div class="mt-2"><strong style="font-size:0.8rem;color:${cfg.accent || 'var(--text-secondary)'}">${cfg.extraLabel}：</strong>`;
+        html += `<ul class="mb-0" style="font-size:0.85rem;color:var(--text-secondary)">`;
+        html += insight[cfg.extraKey].map(x => `<li>${x}</li>`).join('');
+        html += '</ul></div>';
+      }
+      if (insight.related_news?.length) {
+        html += `<div class="mt-2" style="font-size:0.75rem;color:var(--text-secondary)">${cfg.relatedLabel || '关联'}：${insight.related_news.join(', ')}</div>`;
+      }
+      html += '</div>';
+      return html;
     }
     
     // ── Toggle section (uses cached refs, no querySelectorAll) ──
@@ -1027,15 +1036,7 @@
       render();
     }
     
-    function toggleInspFilter() {
-      showInspirationOnly = !showInspirationOnly;
-      const btn = $('inspToggleBtn');
-      if (btn) {
-        btn.textContent = showInspirationOnly ? '已开启' : '已关闭';
-        btn.className = showInspirationOnly ? 'btn btn-sm insp-btn-active' : 'btn btn-sm insp-btn-inactive';
-      }
-      render();
-    }
+
 
     function filterByCategory(cat) {
       currentCategory = cat;
@@ -1061,9 +1062,9 @@
         if (availableDates.length > 0) {
           currentDate = availableDates[0];
           $('dateSelector').value = currentDate;
-          loadInspiration(currentDate).finally(() => {
-            setTimeout(render, 50);
-          });
+          loadInspiration(currentDate)
+            .then(() => render())
+            .catch(() => render());
         }
       });
     });
