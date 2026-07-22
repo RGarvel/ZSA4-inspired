@@ -516,20 +516,16 @@
     
     document.addEventListener('DOMContentLoaded', async () => {
       applyTheme();
-      await loadModels();
       cacheDom();
+      await loadModels();
       populateVendorFilter();
       renderTable();
     });
 
     async function loadModels() {
       try {
-        // Build URL from current page path — works for any subdirectory deployment
-        const pathParts = window.location.pathname.split('/');
-        pathParts.pop(); // remove current filename (index.html)
-        pathParts.push('data', 'models.json');
-        const url = new URL(pathParts.join('/'), window.location.origin);
-        const response = await fetch(url);
+        // Use relative path — resolves correctly for GitHub Pages subdirectory deployment
+        const response = await fetch('./data/models.json');
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         allModels = data.models;
