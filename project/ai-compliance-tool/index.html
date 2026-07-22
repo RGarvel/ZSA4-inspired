@@ -20,197 +20,290 @@
       --accent-orange: #d29922;
       --accent-red: #ff5252;
       --border-color: #30363d;
+      --sidebar-width: 320px;
     }
     body.light-mode {
-      --bg-primary: #f6f8fa;
+      --bg-primary: #f0f2f5;
       --bg-secondary: #ffffff;
       --bg-card: #ffffff;
-      --text-primary: #1f2328;
-      --text-secondary: #656d76;
-      --accent-blue: #0969da;
-      --accent-green: #1a7f37;
-      --accent-purple: #8250df;
-      --accent-orange: #9a6700;
-      --accent-red: #cf222e;
-      --border-color: #d0d7de;
+      --text-primary: #1a1a2e;
+      --text-secondary: #6b7280;
+      --accent-blue: #2563eb;
+      --accent-green: #16a34a;
+      --accent-purple: #7c3aed;
+      --accent-orange: #d97706;
+      --accent-red: #dc2626;
+      --border-color: #e5e7eb;
     }
     body {
       background-color: var(--bg-primary);
       color: var(--text-primary);
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      transition: background-color 0.3s, color 0.3s;
+      transition: all 0.3s ease;
     }
+
+    /* ═══════════ NAVBAR ═══════════ */
     .navbar {
       position: sticky; top: 0; z-index: 1000;
-      background-color: var(--bg-secondary) !important;
+      background: linear-gradient(135deg, rgba(22,27,34,0.95), rgba(28,35,51,0.95)) !important;
+      backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-color);
-      transition: background-color 0.3s, border-color 0.3s;
+      padding: 0.6rem 0;
+    }
+    body.light-mode .navbar {
+      background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,242,245,0.95)) !important;
+    }
+    .navbar-brand {
+      font-weight: 700; font-size: 1.05rem; letter-spacing: -0.3px;
     }
     .back-link {
-      color: var(--text-primary); text-decoration: none;
-      padding: 0.5rem 1rem; border-radius: 25px;
-      font-size: 0.85rem; font-weight: 500;
-      display: inline-flex; align-items: center; gap: 0.4rem;
-      background: linear-gradient(135deg, rgba(88,166,255,0.1), rgba(188,140,255,0.05));
-      border: 1px solid var(--border-color); transition: all 0.3s ease;
+      color: var(--text-secondary); text-decoration: none;
+      padding: 0.4rem 0.9rem; border-radius: 20px;
+      font-size: 0.82rem; font-weight: 500;
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      border: 1px solid transparent; transition: all 0.25s ease;
     }
-    .back-link:hover { color: var(--accent-blue); border-color: var(--accent-blue); transform: translateX(-3px); }
+    .back-link:hover { color: var(--accent-blue); border-color: var(--border-color); }
     .theme-toggle-btn {
-      background: none; border: 1px solid var(--border-color); color: var(--text-primary);
-      border-radius: 8px; padding: 0.4rem 0.6rem; cursor: pointer; font-size: 1.1rem; transition: all 0.2s;
+      background: rgba(88,166,255,0.1); border: 1px solid var(--border-color);
+      color: var(--text-primary); border-radius: 10px;
+      padding: 0.35rem 0.55rem; cursor: pointer; font-size: 1.15rem;
+      transition: all 0.25s ease; display: flex; align-items: center; justify-content: center;
     }
-    .theme-toggle-btn:hover { border-color: var(--accent-blue); background-color: rgba(88,166,255,0.1); }
-    
-    /* Main layout */
-    .app-container { display: flex; min-height: calc(100vh - 60px); }
+    .theme-toggle-btn:hover { background: rgba(88,166,255,0.2); border-color: var(--accent-blue); transform: rotate(15deg); }
+
+    /* ═══════════ LAYOUT ═══════════ */
+    .app-container {
+      display: flex; min-height: calc(100vh - 58px);
+    }
     .sidebar {
-      width: 300px; background-color: var(--bg-secondary);
+      width: var(--sidebar-width); background: var(--bg-secondary);
       border-right: 1px solid var(--border-color); overflow-y: auto;
       padding: 1.5rem 0; flex-shrink: 0;
+      position: sticky; top: 58px; height: calc(100vh - 58px);
     }
-    .main-content { flex-grow: 1; padding: 1.5rem 2rem; overflow-y: auto; }
-    
-    /* Scenario card in sidebar */
+    .main-content {
+      flex: 1; padding: 2rem 3rem; max-width: 100%; overflow-x: hidden;
+    }
+
+    /* ═══════════ SCENARIOS ═══════════ */
+    .section-title {
+      padding: 0 1.2rem; margin-bottom: 0.75rem;
+      color: var(--text-secondary); font-size: 0.75rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 1px;
+    }
     .scenario-item {
-      padding: 0.8rem 1.2rem; margin: 0.4rem 0.8rem;
-      border-radius: 8px; cursor: pointer;
-      transition: background-color 0.2s, border-color 0.2s;
+      padding: 0.9rem 1.2rem; margin: 0.35rem 0.8rem;
+      border-radius: 10px; cursor: pointer;
       border: 1px solid transparent;
+      transition: all 0.2s ease;
+      background: transparent;
     }
-    .scenario-item:hover { background-color: rgba(88,166,255,0.08); }
-    .scenario-item.active { background-color: rgba(88,166,255,0.15); border-color: var(--accent-blue); }
-    .scenario-item .icon { font-size: 1.3rem; }
-    .scenario-item .name { font-weight: 500; font-size: 0.9rem; }
-    .scenario-item .desc { font-size: 0.75rem; color: var(--text-secondary); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    
-    /* Score display */
+    .scenario-item:hover { background: rgba(88,166,255,0.06); }
+    .scenario-item.active {
+      background: linear-gradient(135deg, rgba(88,166,255,0.12), rgba(188,140,255,0.06));
+      border-color: var(--accent-blue); box-shadow: 0 2px 8px rgba(88,166,255,0.1);
+    }
+    .scenario-item .icon { font-size: 1.2rem; flex-shrink: 0; }
+    .scenario-item .name { font-weight: 600; font-size: 0.88rem; line-height: 1.3; }
+    .scenario-item .desc { font-size: 0.72rem; color: var(--text-secondary); margin-top: 3px; line-height: 1.3;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    /* ═══════════ SCORE PANEL ═══════════ */
+    .score-panel { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color); }
     .score-display {
-      text-align: center; padding: 1.5rem; margin: 1rem 1.5rem;
-      background: var(--bg-card); border-radius: 12px; border: 1px solid var(--border-color);
+      text-align: center; padding: 1.2rem;
+      background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
+      border-radius: 14px; border: 1px solid var(--border-color);
+      margin: 0 0.8rem;
     }
-    .score-number { font-size: 3rem; font-weight: 700; line-height: 1; }
-    .score-label { font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.5rem; }
+    .score-number {
+      font-size: 2.8rem; font-weight: 800; line-height: 1;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .score-label { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.4rem; font-weight: 500; }
     .risk-badge {
-      display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px;
-      font-size: 0.8rem; font-weight: 600; margin-top: 0.5rem;
+      display: inline-block; padding: 0.2rem 0.7rem; border-radius: 16px;
+      font-size: 0.78rem; font-weight: 600; margin-top: 0.5rem;
     }
-    .risk-low { background-color: rgba(63,185,80,0.2); color: var(--accent-green); }
-    .risk-medium { background-color: rgba(210,153,34,0.2); color: var(--accent-orange); }
-    .risk-high { background-color: rgba(255,82,82,0.2); color: var(--accent-red); }
-    .risk-critical { background-color: rgba(255,0,0,0.25); color: #ff6b6b; }
-    
-    /* Checklist items */
-    .checklist-category { margin-bottom: 1.5rem; }
-    .category-header {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 0.8rem 1rem; background: var(--bg-secondary);
-      border-radius: 8px; margin-bottom: 0.8rem; border: 1px solid var(--border-color);
-      cursor: pointer; user-select: none;
-    }
-    .category-header:hover { border-color: var(--accent-blue); }
-    .category-name { font-weight: 600; font-size: 0.95rem; }
-    .category-progress { font-size: 0.8rem; color: var(--text-secondary); }
-    
-    .check-item {
-      display: flex; align-items: flex-start; gap: 0.8rem;
-      padding: 0.8rem 1rem; margin: 0.4rem 0;
-      background: var(--bg-card); border-radius: 8px;
-      border: 1px solid var(--border-color); transition: all 0.2s;
-    }
-    .check-item:hover { border-color: var(--accent-blue); transform: translateX(2px); }
-    .check-item.checked { border-left: 3px solid var(--accent-green); background: rgba(63,185,80,0.05); }
-    .check-item input[type="checkbox"] {
-      width: 18px; height: 18px; margin-top: 2px; cursor: pointer; accent-color: var(--accent-green);
-    }
-    .check-severity {
-      font-size: 0.65rem; padding: 0.15rem 0.4rem; border-radius: 4px; font-weight: 600;
-    }
-    .severity-critical { background-color: rgba(255,82,82,0.2); color: var(--accent-red); }
-    .severity-high { background-color: rgba(210,153,34,0.2); color: var(--accent-orange); }
-    .severity-medium { background-color: rgba(188,140,255,0.2); color: var(--accent-purple); }
-    .severity-low { background-color: rgba(88,166,255,0.2); color: var(--accent-blue); }
-    
-    .check-text { flex-grow: 1; font-size: 0.85rem; line-height: 1.5; }
-    .check-notes {
-      margin-top: 0.5rem; width: 100%; min-height: 40px; resize: vertical;
-      background: var(--bg-primary); border: 1px solid var(--border-color);
-      color: var(--text-primary); border-radius: 6px; padding: 0.5rem; font-size: 0.8rem;
-    }
-    
-    /* Action buttons */
+    .risk-low { background: rgba(63,185,80,0.18); color: var(--accent-green); }
+    .risk-medium { background: rgba(210,153,34,0.18); color: var(--accent-orange); }
+    .risk-high { background: rgba(255,82,82,0.18); color: var(--accent-red); }
+    .panel-actions { padding: 0 0.8rem; margin-top: 0.75rem; }
+
+    /* ═══════════ DETAIL HEADER ═══════════ */
+    .detail-header { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); }
+    .detail-name { font-weight: 700; font-size: 1.4rem; margin: 0; letter-spacing: -0.3px; }
+    .detail-desc { color: var(--text-secondary); font-size: 0.9rem; margin: 0.5rem 0 0; line-height: 1.6; }
+
+    /* ═══════════ ACTION BAR ═══════════ */
     .action-bar {
       display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;
     }
     .action-btn {
-      padding: 0.4rem 0.8rem; border-radius: 6px; border: 1px solid var(--border-color);
-      background: var(--bg-secondary); color: var(--text-primary); font-size: 0.8rem;
-      cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; gap: 0.3rem;
+      padding: 0.45rem 0.85rem; border-radius: 8px; border: 1px solid var(--border-color);
+      background: var(--bg-card); color: var(--text-primary); font-size: 0.82rem; font-weight: 500;
+      cursor: pointer; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 0.35rem;
     }
-    .action-btn:hover { border-color: var(--accent-blue); background: rgba(88,166,255,0.1); }
-    .action-btn.primary { background: var(--accent-blue); color: #fff; border-color: var(--accent-blue); }
-    
-    /* Charts */
+    .action-btn:hover { border-color: var(--accent-blue); background: rgba(88,166,255,0.08); transform: translateY(-1px); }
+    .action-btn i { font-size: 0.9rem; }
+
+    /* ═══════════ CHECKLIST ═══════════ */
+    .checklist-category { margin-bottom: 1.25rem; }
+    .category-header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.7rem 1rem; background: var(--bg-secondary);
+      border-radius: 10px; margin-bottom: 0.6rem; border: 1px solid var(--border-color);
+      cursor: pointer; user-select: none; transition: all 0.2s;
+    }
+    .category-header:hover { border-color: var(--accent-blue); }
+    .category-header .category-name { font-weight: 600; font-size: 0.9rem; }
+    .category-header .category-progress { font-size: 0.78rem; color: var(--text-secondary); }
+
+    .check-item {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      padding: 0.85rem 1rem; margin: 0.35rem 0;
+      background: var(--bg-card); border-radius: 10px;
+      border: 1px solid var(--border-color); transition: all 0.25s ease;
+    }
+    .check-item:hover { border-color: rgba(88,166,255,0.4); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .check-item.checked {
+      border-left: 3px solid var(--accent-green);
+      background: rgba(63,185,80,0.04);
+    }
+    .check-item input[type="checkbox"] {
+      width: 17px; height: 17px; margin-top: 3px; cursor: pointer; accent-color: var(--accent-green); flex-shrink: 0;
+    }
+    .check-item .check-body { flex: 1; min-width: 0; }
+    .check-item .check-top { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem; }
+    .check-text { flex: 1; font-size: 0.85rem; line-height: 1.5; }
+    .check-severity { font-size: 0.62rem; padding: 0.12rem 0.35rem; border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .severity-critical { background: rgba(255,82,82,0.15); color: var(--accent-red); }
+    .severity-high { background: rgba(210,153,34,0.15); color: var(--accent-orange); }
+    .severity-medium { background: rgba(188,140,255,0.15); color: var(--accent-purple); }
+    .severity-low { background: rgba(88,166,255,0.15); color: var(--accent-blue); }
+    .check-notes {
+      margin-top: 0.4rem; width: 100%; min-height: 36px; resize: vertical;
+      background: var(--bg-primary); border: 1px solid var(--border-color);
+      color: var(--text-primary); border-radius: 8px; padding: 0.45rem 0.6rem;
+      font-size: 0.8rem; transition: border-color 0.2s;
+    }
+    .check-notes:focus { border-color: var(--accent-blue); outline: none; }
+    .check-notes::placeholder { color: var(--text-secondary); opacity: 0.6; }
+
+    /* ═══════════ RECOMMENDATIONS ═══════════ */
+    .recommendations-section { margin-top: 2rem; }
+    .section-heading { font-size: 1rem; font-weight: 700; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+    .rec-list { list-style: none; padding: 0; display: grid; gap: 0.5rem; }
+    .rec-list li {
+      padding: 0.7rem 1rem;
+      background: var(--bg-secondary); border-radius: 10px;
+      border: 1px solid var(--border-color); border-left: 3px solid var(--accent-purple);
+      font-size: 0.85rem; line-height: 1.5; transition: all 0.2s;
+    }
+    .rec-list li:hover { border-color: var(--accent-purple); transform: translateX(3px); }
+
+    /* ═══════════ CHARTS ═══════════ */
+    .charts-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem;
+    }
     .chart-card {
       background: var(--bg-card); border: 1px solid var(--border-color);
-      border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;
+      border-radius: 14px; padding: 1.25rem; transition: all 0.3s;
     }
-    .chart-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; }
-    .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    @media (max-width: 992px) { .charts-grid { grid-template-columns: 1fr; } }
-    
-    /* Recommendations */
-    .rec-list { list-style: none; padding: 0; }
-    .rec-list li {
-      padding: 0.6rem 1rem; margin: 0.4rem 0; background: var(--bg-secondary);
-      border-radius: 8px; border-left: 3px solid var(--accent-purple); font-size: 0.85rem;
-    }
-    
-    /* Timeline */
-    .timeline-item {
-      display: flex; gap: 1rem; padding: 0.8rem 0;
-      border-bottom: 1px solid var(--border-color);
-    }
-    .timeline-date { font-weight: 600; font-size: 0.85rem; min-width: 80px; color: var(--accent-blue); }
-    .timeline-event { font-size: 0.85rem; }
-    
-    /* Filter */
-    .filter-bar { padding: 0.5rem 0.8rem; margin: 0 0.8rem 1rem; display: flex; gap: 0.5rem; }
+    .chart-card:hover { border-color: rgba(88,166,255,0.3); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    .chart-title { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem; }
+    canvas { max-height: 280px; }
+
+    /* ═══════════ FILTER CHIPS ═══════════ */
+    .filter-bar { padding: 0 0.8rem; margin: 0 0 1rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
     .filter-chip {
-      padding: 0.3rem 0.6rem; border-radius: 15px; font-size: 0.75rem;
+      padding: 0.25rem 0.6rem; border-radius: 16px; font-size: 0.72rem; font-weight: 500;
       background: var(--bg-card); border: 1px solid var(--border-color);
-      cursor: pointer; transition: all 0.2s; color: var(--text-primary);
+      cursor: pointer; transition: all 0.2s; color: var(--text-secondary);
+      white-space: nowrap;
     }
-    .filter-chip:hover, .filter-chip.active { border-color: var(--accent-blue); background: rgba(88,166,255,0.15); }
-    
-    /* Scrollbar */
-    .sidebar::-webkit-scrollbar { width: 6px; }
+    .filter-chip:hover, .filter-chip.active {
+      border-color: var(--accent-blue); background: rgba(88,166,255,0.12); color: var(--accent-blue);
+    }
+
+    /* ═══════════ SCROLLBARS ═══════════ */
+    .sidebar::-webkit-scrollbar { width: 5px; }
     .sidebar::-webkit-scrollbar-track { background: transparent; }
     .sidebar::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
-    
-    /* Toast */
-    .toast-container {
-      position: fixed; bottom: 2rem; right: 2rem; z-index: 9999;
-    }
+    .main-content::-webkit-scrollbar { width: 6px; }
+    .main-content::-webkit-scrollbar-track { background: transparent; }
+    .main-content::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
+
+    /* ═══════════ TOAST ═══════════ */
+    .toast-container { position: fixed; bottom: 2rem; right: 2rem; z-index: 9999; }
     .custom-toast {
       background: var(--bg-card); color: var(--text-primary);
-      border: 1px solid var(--border-color); border-radius: 8px;
-      padding: 0.8rem 1.2rem; margin-top: 0.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      animation: slideIn 0.3s ease; font-size: 0.85rem;
+      border: 1px solid var(--border-color); border-radius: 12px;
+      padding: 0.75rem 1.1rem; margin-top: 0.5rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      animation: toastIn 0.3s ease; font-size: 0.83rem; font-weight: 500;
+      display: flex; align-items: center; gap: 0.5rem;
     }
-    @keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes toastIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+    /* ═══════════ WELCOME ═══════════ */
+    .welcome-msg {
+      text-align: center; padding: 5rem 2rem; max-width: 520px; margin: 0 auto;
+    }
+    .welcome-icon { font-size: 4.5rem; margin-bottom: 1.5rem; }
+    .welcome-msg h2 { font-weight: 800; font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
+    .welcome-msg p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; }
+
+    /* ═══════════ MOBILE SIDEBAR TOGGLE ═══════════ */
+    .mobile-nav-toggle {
+      display: none; position: fixed; bottom: 1.5rem; left: 1.5rem; z-index: 1001;
+      width: 48px; height: 48px; border-radius: 14px;
+      background: var(--accent-blue); color: #fff; border: none;
+      font-size: 1.4rem; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(88,166,255,0.35);
+      transition: all 0.25s ease; display: flex; align-items: center; justify-content: center;
+    }
+    .mobile-nav-toggle:active { transform: scale(0.92); }
+    .sidebar-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+      z-index: 998; opacity: 0; transition: opacity 0.3s;
+    }
+    .sidebar-overlay.show { opacity: 1; }
+
+    /* ═══════════ RESPONSIVE ═══════════ */
+    @media (max-width: 992px) {
+      .charts-grid { grid-template-columns: 1fr; }
+      .main-content { padding: 1.25rem 1.5rem; }
+    }
+    @media (max-width: 768px) {
+      .sidebar {
+        position: fixed; left: -340px; top: 0; bottom: 0; z-index: 999;
+        width: 300px; transition: left 0.3s ease;
+        box-shadow: 4px 0 24px rgba(0,0,0,0.3);
+      }
+      .sidebar.open { left: 0; }
+      .mobile-nav-toggle { display: flex; }
+      .sidebar-overlay.show { display: block; }
+      .main-content { padding: 1rem; }
+      .detail-name { font-size: 1.2rem; }
+      .check-item { padding: 0.7rem 0.85rem; }
+      .check-text { font-size: 0.82rem; }
+      .score-number { font-size: 2.4rem; }
+    }
   </style>
 </head>
 <body>
   <nav class="navbar" id="mainNavbar">
-    <div class="container-fluid px-3">
-      <a class="navbar-brand" href="/ZSA4-inspired/index.html" style="font-weight:600;font-size:1rem;">
-        <i class="bi bi-shield-check" style="color:var(--accent-green);margin-right:0.3rem;"></i>
+    <div class="container-fluid px-3 px-lg-4">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="/ZSA4-inspired/index.html">
+        <i class="bi bi-shield-check" style="color:var(--accent-green);font-size:1.25rem;"></i>
         <span style="color:var(--text-primary);">AI合规检查清单</span>
       </a>
       <div class="d-flex align-items-center gap-2 ms-auto">
-        <a class="back-link" href="/ZSA4-inspired/project/playground/">
-          <i class="bi bi-arrow-left"></i> 返回Playground
+        <a class="back-link d-none d-sm-inline-flex" href="/ZSA4-inspired/project/playground/">
+          <i class="bi bi-arrow-left"></i> Playground
         </a>
         <button class="theme-toggle-btn" onclick="toggleTheme()" title="切换亮暗模式">
           <i class="bi bi-moon-fill" id="themeIcon"></i>
@@ -219,59 +312,66 @@
     </div>
   </nav>
 
+  <!-- Mobile nav toggle -->
+  <button class="mobile-nav-toggle" id="mobileNavBtn" onclick="toggleSidebar()">
+    <i class="bi bi-list"></i>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
   <div class="app-container">
     <!-- Sidebar -->
-    <div class="sidebar" id="sidebar">
-      <h6 style="padding:0 1.2rem;margin-bottom:0.5rem;color:var(--text-secondary);font-size:0.8rem;text-transform:uppercase;">场景选择</h6>
+    <aside class="sidebar" id="appSidebar">
+      <h6 class="section-title">场景选择</h6>
       <div class="filter-bar" id="filterBar"></div>
       <div id="scenarioList"></div>
       
-      <!-- Score panel -->
-      <div id="scorePanel" style="display:none;">
+      <div class="score-panel" id="scorePanel" style="display:none;">
         <div class="score-display" id="scoreDisplay">
           <div class="score-number" id="scoreValue">--</div>
           <div class="score-label">综合合规评分</div>
           <div id="riskBadge"></div>
         </div>
-        <div style="padding:0 1rem;">
-          <div class="d-flex gap-2 mb-2">
-            <button class="action-btn flex-fill" onclick="exportReport()"><i class="bi bi-filetype-md"></i> 导出报告</button>
+        <div class="panel-actions">
+          <div class="d-flex gap-2">
+            <button class="action-btn flex-fill" onclick="exportReport()"><i class="bi bi-filetype-md"></i> 导出</button>
             <button class="action-btn flex-fill" onclick="resetAll()"><i class="bi bi-arrow-counterclockwise"></i> 重置</button>
           </div>
         </div>
       </div>
-    </div>
+    </aside>
 
     <!-- Main Content -->
-    <div class="main-content" id="mainContent">
-      <div id="welcomeMessage" class="text-center" style="padding:4rem 2rem;">
-        <div style="font-size:4rem;margin-bottom:1rem;">🛡️</div>
-        <h2 style="margin-bottom:0.5rem;">AI合规检查清单工具</h2>
-        <p style="color:var(--text-secondary);max-width:500px;margin:0 auto;">从左侧选择一个AI应用场景，开始您的合规性评估。所有检查项均可自定义，数据保存在本地。</p>
+    <main class="main-content" id="mainContent">
+      <div class="welcome-msg" id="welcomeMessage">
+        <div class="welcome-icon">🛡️</div>
+        <h2>AI合规检查清单工具</h2>
+        <p>从左侧选择一个AI应用场景，开始您的合规性评估。所有检查项均可自定义，数据保存在浏览器本地。</p>
       </div>
       <div id="scenarioDetail" style="display:none;">
-        <div class="d-flex align-items-center gap-3 mb-3">
-          <h4 id="detailName" style="margin:0;"></h4>
-          <span id="detailRisk" class="risk-badge"></span>
+        <div class="detail-header">
+          <div class="d-flex align-items-center gap-3 flex-wrap">
+            <h3 id="detailName" class="detail-name"></h3>
+            <span id="detailRisk" class="risk-badge"></span>
+          </div>
+          <p id="detailDesc" class="detail-desc"></p>
+          <p><small style="color:var(--text-secondary);">法规：<strong id="detailRegulation" style="color:var(--text-primary);"></strong></small></p>
         </div>
-        <p id="detailDesc" style="color:var(--text-secondary);margin-bottom:1rem;"></p>
-        <p><small style="color:var(--text-secondary);">法规： <strong id="detailRegulation"></strong></small></p>
         
-        <div class="action-bar" id="actionBar">
+        <div class="action-bar">
           <button class="action-btn" onclick="checkAll(true)"><i class="bi bi-check-all"></i> 全部通过</button>
           <button class="action-btn" onclick="checkAll(false)"><i class="bi bi-x-circle"></i> 全部不通过</button>
-          <button class="action-btn" onclick="expandAllCats()"><i class="bi bi-arrows-expand"></i> 展开全部</button>
-          <button class="action-btn" onclick="collapseAllCats()"><i class="bi bi-arrows-collapse"></i> 折叠全部</button>
+          <button class="action-btn" onclick="expandAllCats()"><i class="bi bi-arrows-expand"></i> 展开</button>
+          <button class="action-btn" onclick="collapseAllCats()"><i class="bi bi-arrows-collapse"></i> 折叠</button>
         </div>
         
         <div id="checklistArea"></div>
         
-        <div class="mt-4" id="recommendationsSection">
-          <h6 style="margin-bottom:1rem;"><i class="bi bi-lightbulb" style="color:var(--accent-purple);"></i> 合规建议</h6>
+        <div class="recommendations-section" id="recommendationsSection">
+          <div class="section-heading"><i class="bi bi-lightbulb" style="color:var(--accent-purple);"></i> 合规建议</div>
           <ul class="rec-list" id="recommendationList"></ul>
         </div>
         
-        <div class="charts-grid mt-4">
+        <div class="charts-grid">
           <div class="chart-card">
             <div class="chart-title"><i class="bi bi-pie-chart" style="color:var(--accent-blue);"></i> 风险等级分布</div>
             <canvas id="pieChart"></canvas>
@@ -282,7 +382,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <div class="toast-container" id="toastContainer"></div>
@@ -290,195 +390,138 @@
   <script>
     const $ = id => document.getElementById(id);
     let isDarkMode = localStorage.getItem('ct_theme') !== 'light';
-    let scenarios = [];
-    let regulations = [];
-    let currentScenarioId = '';
-    let userState = {};
-    let pieChart = null;
-    let timelineChart = null;
+    let scenarios = [], regulations = [];
+    let currentScenarioId = '', userState = {};
+    let pieChart = null, timelineChart = null;
     let activeCategoryFilter = 'all';
     let collapsedCategories = new Set();
 
     function applyTheme() {
       document.body.classList.toggle('light-mode', !isDarkMode);
-      const themeIcon = $('themeIcon');
-      if (themeIcon) themeIcon.className = isDarkMode ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+      const icon = $('themeIcon');
+      if (icon) icon.className = isDarkMode ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
       localStorage.setItem('ct_theme', isDarkMode ? 'dark' : 'light');
     }
-    function toggleTheme() {
-      isDarkMode = !isDarkMode;
-      applyTheme();
-    }
+    function toggleTheme() { isDarkMode = !isDarkMode; applyTheme(); }
 
     async function loadData() {
       try {
         const [scResp, regResp] = await Promise.all([
-          fetch('./data/scenarios.json'),
-          fetch('./data/regulations.json')
+          fetch('./data/scenarios.json'), fetch('./data/regulations.json')
         ]);
-        if (!scResp.ok || !regResp.ok) throw new Error('Failed to load data');
+        if (!scResp.ok || !regResp.ok) throw new Error();
         scenarios = (await scResp.json()).scenarios;
         regulations = (await regResp.json()).regulations;
         
         const saved = localStorage.getItem('ct_state');
-        if (saved) {
-          try { userState = JSON.parse(saved); } catch(e) { userState = {}; }
-        }
+        if (saved) try { userState = JSON.parse(saved); } catch(e) { userState = {}; }
         
-        const lastScenario = localStorage.getItem('ct_last_scenario');
-        currentScenarioId = lastScenario && scenarios.find(s => s.id === lastScenario) 
-          ? lastScenario 
-          : (scenarios.length > 0 ? scenarios[0].id : '');
-          
-        renderSidebar();
-        filterBar();
+        const last = localStorage.getItem('ct_last_scenario');
+        currentScenarioId = (last && scenarios.find(s => s.id === last)) ? last : (scenarios[0]?.id || '');
+        
+        renderSidebar(); filterBar();
         if (currentScenarioId) showScenario(currentScenarioId);
       } catch (error) {
         console.error('Error loading data:', error);
-        showToast('加载数据失败，请刷新重试', 'error');
+        showToast('加载数据失败，请刷新重试');
       }
     }
 
     function renderSidebar() {
-      const parts = [];
-      for (const s of scenarios) {
+      const parts = scenarios.map(s => {
         const isActive = s.id === currentScenarioId ? ' active' : '';
-        parts.push(
-          `<div class="scenario-item${isActive}" data-id="${s.id}" onclick="selectScenario('${s.id}')">`,
-          `  <div class="d-flex align-items-center gap-2">`,
-          `    <span class="icon">${s.icon}</span>`,
-          `    <div class="flex-grow-1">`,
-          `      <div class="name">${s.name}</div>`,
-          `      <div class="desc">${s.description}</div>`,
-          `    </div>`,
-          `  </div>`,
-          `</div>`
-        );
-      }
-      $('scenarioList').innerHTML = parts.join('');
+        return `<div class="scenario-item${isActive}" data-id="${s.id}" onclick="selectScenario('${s.id}')">
+          <div class="d-flex align-items-center gap-2">
+            <span class="icon">${s.icon}</span>
+            <div class="flex-grow-1"><div class="name">${s.name}</div><div class="desc">${s.description}</div></div>
+          </div></div>`;
+      }).join('');
+      $('scenarioList').innerHTML = parts;
     }
 
     function filterBar() {
       const cats = [...new Set(scenarios.flatMap(s => s.checks.map(c => c.category)))];
       const parts = [`<span class="filter-chip ${activeCategoryFilter==='all'?'active':''}" onclick="setCatFilter('all')">全部</span>`];
-      for (const cat of cats) {
+      cats.forEach(cat => {
         parts.push(`<span class="filter-chip ${activeCategoryFilter===cat?'active':''}" onclick="setCatFilter('${cat}')">${cat}</span>`);
-      }
+      });
       $('filterBar').innerHTML = parts.join('');
     }
 
     function setCatFilter(cat) {
-      activeCategoryFilter = cat;
-      filterBar();
+      activeCategoryFilter = cat; filterBar();
       if (currentScenarioId) renderChecklist(currentScenarioId);
     }
 
-    function getScenarioChecks(scenario) {
-      return scenario.checks.filter(c => {
-        if (activeCategoryFilter !== 'all') return c.category === activeCategoryFilter;
-        return true;
-      });
+    function getFilteredChecks(scenario) {
+      return scenario.checks.filter(c => activeCategoryFilter === 'all' || c.category === activeCategoryFilter);
     }
 
     function calculateScore(checks) {
-      if (!checks.length) return { score: 0, level: 'none', passedCount: 0, totalCount: 0 };
-      let totalWeight = 0, passedWeight = 0;
+      if (!checks.length) return { score: 0, passedCount: 0, totalCount: 0 };
       const weights = { critical: 4, high: 3, medium: 2, low: 1 };
-      for (const check of checks) {
-        const w = weights[check.severity] || 1;
-        totalWeight += w;
-        const state = userState[check.id];
-        if (state && state.passed) passedWeight += w;
-      }
-      const score = totalWeight > 0 ? Math.round((passedWeight / totalWeight) * 100) : 0;
-      const ratio = checks.length > 0 ? checks.filter(c => userState[c.id]?.passed).length : 0;
-      const levels = [
-        { threshold: 90, level: 'low', label: '低风险', class: 'risk-low' },
-        { threshold: 70, level: 'medium', label: '中风险', class: 'risk-medium' },
-        { threshold: 40, level: 'high', label: '较高风险', class: 'risk-high' },
-        { threshold: 0, level: 'critical', label: '高风险', class: 'risk-critical' }
-      ];
-      const riskLvl = levels.find(l => score >= l.threshold);
-      return { score, level: riskLvl.level, label: riskLvl.label, class: riskLvl.class, ratio, passedCount: ratio, totalCount: checks.length };
+      let totalW = 0, passW = 0;
+      checks.forEach(c => { const w = weights[c.severity] || 1; totalW += w; if (userState[c.id]?.passed) passW += w; });
+      const score = totalW > 0 ? Math.round((passW / totalW) * 100) : 0;
+      const passed = checks.filter(c => userState[c.id]?.passed).length;
+      const levels = [{t:90,l:'低风险',c:'risk-low'},{t:70,l:'中风险',c:'risk-medium'},{t:40,l:'较高风险',c:'risk-high'}];
+      const rl = levels.find(x => score >= x.t) || { l:'高风险', c:'risk-high' };
+      return { score, label: rl.l, cls: rl.c, passedCount: passed, totalCount: checks.length };
     }
 
     function selectScenario(id) {
       currentScenarioId = id;
       localStorage.setItem('ct_last_scenario', id);
-      renderSidebar();
-      showScenario(id);
+      renderSidebar(); closeSidebar(); showScenario(id);
     }
 
     function showScenario(id) {
-      const scenario = scenarios.find(s => s.id === id);
-      if (!scenario) return;
+      const s = scenarios.find(x => x.id === id);
+      if (!s) return;
       $('welcomeMessage').style.display = 'none';
       $('scenarioDetail').style.display = 'block';
       $('scorePanel').style.display = 'block';
-      
-      $('detailName').textContent = scenario.name;
-      $('detailDesc').textContent = scenario.description;
-      $('detailRegulation').textContent = scenario.jurisdiction;
-      
-      renderChecklist(id);
-      updateCharts(id);
+      $('detailName').textContent = s.name;
+      $('detailDesc').textContent = s.description;
+      $('detailRegulation').textContent = s.jurisdiction;
+      renderChecklist(id); updateCharts(id);
     }
 
-    function renderChecklist(scenarioId) {
-      const scenario = scenarios.find(s => s.id === scenarioId);
+    function renderChecklist(sid) {
+      const scenario = scenarios.find(s => s.id === sid);
       if (!scenario) return;
-      const allChecks = scenario.checks;
-      const filteredChecks = allChecks.filter(c => {
-        if (activeCategoryFilter !== 'all') return c.category === activeCategoryFilter;
-        return true;
-      });
-      
+      const filtered = getFilteredChecks(scenario);
       const grouped = {};
-      for (const c of filteredChecks) {
-        if (!grouped[c.category]) grouped[c.category] = [];
-        grouped[c.category].push(c);
-      }
+      filtered.forEach(c => { if (!grouped[c.category]) grouped[c.category] = []; grouped[c.category].push(c); });
       
       const parts = [];
       for (const cat in grouped) {
         const checks = grouped[cat];
         const passed = checks.filter(c => userState[c.id]?.passed).length;
-        const isCollapsed = collapsedCategories.has(`${scenarioId}-${cat}`);
+        const collapsed = collapsedCategories.has(`${sid}-${cat}`);
+        const sevMap = { critical:'严重', high:'高', medium:'中', low:'低' };
         
-        parts.push(
-          `<div class="checklist-category" data-cat="${cat}">`,
-          `  <div class="category-header" onclick="toggleCategory('${cat}', '${scenarioId}')">`,
-          `    <div class="category-name">${cat}</div>`,
-          `    <div class="d-flex align-items-center gap-2">`,
-          `      <span class="category-progress">${passed}/${checks.length} 通过</span>`,
-          `      <i class="bi bi-chevron-${isCollapsed ? 'right' : 'down'}"></i>`,
-          `    </div>`,
-          `  </div>`,
-          `  <div style="display:${isCollapsed ? 'none' : ''}">`
-        );
+        parts.push(`<div class="checklist-category" data-cat="${cat}">`);
+        parts.push(`<div class="category-header" onclick="toggleCategory('${cat}','${sid}')">`);
+        parts.push(`<div class="category-name">${cat}</div>`);
+        parts.push(`<div class="d-flex align-items-center gap-2"><span class="category-progress">${passed}/${checks.length} 通过</span>`);
+        parts.push(`<i class="bi bi-chevron-${collapsed?'right':'down'}"></i></div></div>`);
+        parts.push(`<div style="display:${collapsed?'none':''}">`);
         
-        for (const check of checks) {
-          const state = userState[check.id] || { passed: false, notes: '' };
-          const checkedClass = state.passed ? ' checked' : '';
-          const weights = { critical: '严重', high: '高', medium: '中', low: '低' };
-          
-          parts.push(
-            `<div class="check-item${checkedClass}" data-id="${check.id}">`,
-            `  <input type="checkbox" ${state.passed ? 'checked' : ''} onchange="toggleCheck('${check.id}', this.checked)">`,
-            `  <div class="flex-grow-1">`,
-            `    <div class="d-flex align-items-center gap-2 mb-1">`,
-            `      <span class="check-text">${check.requirement}</span>`,
-            `      <span class="check-severity severity-${check.severity}">${weights[check.severity]}</span>`,
-            `    </div>`,
-            `    <textarea class="check-notes" placeholder="添加备注..." oninput="saveNotes('${check.id}', this.value)">${state.notes || ''}</textarea>`,
-            `  </div>`,
-            `</div>`
-          );
-        }
+        checks.forEach(c => {
+          const st = userState[c.id] || { passed:false, notes:'' };
+          const ckClass = st.passed ? ' checked' : '';
+          parts.push(`<div class="check-item${ckClass}" data-id="${c.id}">`);
+          parts.push(`<input type="checkbox" ${st.passed?'checked':''} onchange="toggleCheck('${c.id}',this.checked)">`);
+          parts.push(`<div class="check-body">`);
+          parts.push(`<div class="check-top"><span class="check-text">${c.requirement}</span>`);
+          parts.push(`<span class="check-severity severity-${c.severity}">${sevMap[c.severity]}</span></div>`);
+          parts.push(`<textarea class="check-notes" placeholder="添加备注..." oninput="saveNotes('${c.id}',this.value)">${st.notes||''}</textarea>`);
+          parts.push(`</div></div>`);
+        });
         
-        parts.push(`  </div></div>`);
+        parts.push(`</div></div>`);
       }
-      
       $('checklistArea').innerHTML = parts.join('');
       updateScore();
     }
@@ -487,286 +530,165 @@
       if (!userState[id]) userState[id] = {};
       userState[id].passed = passed;
       saveUserState();
-      
       const item = document.querySelector(`.check-item[data-id="${id}"]`);
-      if (item) {
-        item.classList.toggle('checked', passed);
-      }
+      if (item) item.classList.toggle('checked', passed);
       updateScore();
     }
 
     function saveNotes(id, value) {
       if (!userState[id]) userState[id] = {};
-      userState[id].notes = value;
-      saveUserState();
+      userState[id].notes = value; saveUserState();
     }
 
     function updateScore() {
       const scenario = scenarios.find(s => s.id === currentScenarioId);
       if (!scenario) return;
-      const checks = getScenarioChecks(scenario);
-      const result = calculateScore(checks);
-      
-      const scoreVal = $('scoreValue');
-      scoreVal.textContent = result.score + '%';
-      
-      if (result.score >= 70) scoreVal.style.color = 'var(--accent-green)';
-      else if (result.score >= 40) scoreVal.style.color = 'var(--accent-orange)';
-      else scoreVal.style.color = 'var(--accent-red)';
-      
-      const badge = $('riskBadge');
-      badge.className = `risk-badge ${result.class}`;
-      badge.textContent = `${result.label} (${result.passedCount}/${result.totalCount})`;
+      const r = calculateScore(getFilteredChecks(scenario));
+      const sv = $('scoreValue');
+      sv.textContent = r.score + '%';
+      sv.style.background = r.score >= 70 ? 'linear-gradient(135deg, var(--accent-green), #34d399)' :
+                            r.score >= 40 ? 'linear-gradient(135deg, var(--accent-orange), #fbbf24)' :
+                            'linear-gradient(135deg, var(--accent-red), #f87171)';
+      sv.style.webkitBackgroundClip = 'text'; sv.style.backgroundClip = 'text';
+      sv.style.webkitTextFillColor = 'transparent';
+      $('riskBadge').className = `risk-badge ${r.cls}`;
+      $('riskBadge').textContent = `${r.label} (${r.passedCount}/${r.totalCount})`;
     }
 
-    function toggleCategory(cat, scenarioId) {
-      const key = `${scenarioId}-${cat}`;
-      if (collapsedCategories.has(key)) collapsedCategories.delete(key);
-      else collapsedCategories.add(key);
-      renderChecklist(scenarioId);
+    function toggleCategory(cat, sid) {
+      const key = `${sid}-${cat}`;
+      collapsedCategories.has(key) ? collapsedCategories.delete(key) : collapsedCategories.add(key);
+      renderChecklist(sid);
     }
 
-    function expandAllCats() {
-      collapsedCategories.clear();
-      renderChecklist(currentScenarioId);
-      showToast('已展开全部分类');
-    }
-
+    function expandAllCats() { collapsedCategories.clear(); renderChecklist(currentScenarioId); showToast('已展开全部'); }
     function collapseAllCats() {
-      scenario = scenarios.find(s => s.id === currentScenarioId);
+      const scenario = scenarios.find(s => s.id === currentScenarioId);
       if (!scenario) return;
-      const cats = [...new Set(scenario.checks.map(c => c.category))];
-      cats.forEach(cat => collapsedCategories.add(`${currentScenarioId}-${cat}`));
-      renderChecklist(currentScenarioId);
-      showToast('已折叠全部分类');
+      [...new Set(scenario.checks.map(c => c.category))].forEach(cat => collapsedCategories.add(`${currentScenarioId}-${cat}`));
+      renderChecklist(currentScenarioId); showToast('已折叠全部');
     }
 
     function checkAll(passed) {
       const scenario = scenarios.find(s => s.id === currentScenarioId);
       if (!scenario) return;
-      const checks = scenario.checks;
-      for (const check of checks) {
-        if (!userState[check.id]) userState[check.id] = {};
-        userState[check.id].passed = passed;
-      }
-      saveUserState();
-      renderChecklist(currentScenarioId);
-      showToast(passed ? '已通过全部检查项' : '已取消全部检查项');
+      scenario.checks.forEach(c => { if (!userState[c.id]) userState[c.id] = {}; userState[c.id].passed = passed; });
+      saveUserState(); renderChecklist(currentScenarioId);
+      showToast(passed ? '✅ 已通过全部检查项' : '❌ 已取消全部检查项');
     }
 
     function resetAll() {
       if (!confirm('确定要重置所有勾选状态吗？')) return;
-      userState = {};
-      saveUserState();
-      renderChecklist(currentScenarioId);
-      updateCharts(currentScenarioId);
+      userState = {}; saveUserState(); renderChecklist(currentScenarioId); updateCharts(currentScenarioId);
       showToast('已重置所有状态');
     }
 
-    function saveUserState() {
-      localStorage.setItem('ct_state', JSON.stringify(userState));
-    }
+    function saveUserState() { localStorage.setItem('ct_state', JSON.stringify(userState)); }
 
     function exportReport() {
       const scenario = scenarios.find(s => s.id === currentScenarioId);
       if (!scenario) return;
-      const checks = scenario.checks;
-      const result = calculateScore(checks);
-      
-      const mdParts = [
-        `# AI合规检查清单报告`,
-        ``,
-        `## 基本信息`,
-        `- **场景**：${scenario.name}`,
-        `- **描述**：${scenario.description}`,
-        `- **适用法规**：${scenario.jurisdiction}`,
-        `- **评估日期**：${new Date().toLocaleDateString('zh-CN')}`,
-        ``,
-        `## 合规评分`,
-        `- **综合得分**：${result.score}%`,
-        `- **风险等级**：${result.label}`,
-        `- **通过情况**：${result.passedCount}/${result.totalCount}`,
-        ``,
-        `## 详细检查`,
-        ``
+      const checks = getFilteredChecks(scenario);
+      const r = calculateScore(checks);
+      const md = [
+        `# AI合规检查清单报告`, '',
+        `## 基本信息`, `- **场景**：${scenario.name}`,
+        `- **描述**：${scenario.description}`, `- **适用法规**：${scenario.jurisdiction}`,
+        `- **评估日期**：${new Date().toLocaleDateString('zh-CN')}`, '',
+        `## 合规评分`, `- **得分**：${r.score}%`, `- **风险**：${r.label}`, `- **通过**：${r.passedCount}/${r.totalCount}`, '',
+        `## 检查清单`, ''
       ];
-      
-      const categories = [...new Set(checks.map(c => c.category))];
-      for (const cat of categories) {
-        const catChecks = checks.filter(c => c.category === cat);
-        mdParts.push(`### ${cat}`);
-        mdParts.push('');
-        mdParts.push('| # | 要求 | 严重程度 | 是否通过 | 备注 |');
-        mdParts.push('|---|------|---------|---------|------|');
-        catChecks.forEach((c, i) => {
-          const state = userState[c.id] || { passed: false, notes: '' };
-          mdParts.push(`| ${i+1} | ${c.requirement} | ${c.severity} | ${state.passed ? '✅ 是' : '❌ 否'} | ${state.notes || '-'} |`);
+      const cats = [...new Set(checks.map(c => c.category))];
+      cats.forEach(cat => {
+        const cc = checks.filter(c => c.category === cat);
+        md.push(`### ${cat}`, '', '| # | 要求 | 严重程度 | 状态 | 备注 |', '|---|------|---------|------|------|');
+        cc.forEach((c, i) => {
+          const st = userState[c.id] || { passed:false, notes:'' };
+          md.push(`| ${i+1} | ${c.requirement} | ${c.severity} | ${st.passed?'✅通过':'❌未通过'} | ${st.notes||'-'} |`);
         });
-        mdParts.push('');
-      }
-      
+        md.push('');
+      });
       if (scenario.recommendations?.length) {
-        mdParts.push('## 合规建议');
-        mdParts.push('');
-        for (const rec of scenario.recommendations) {
-          mdParts.push(`- ${rec}`);
-        }
-        mdParts.push('');
+        md.push('## 建议', ...scenario.recommendations.map(r => `- ${r}`), '');
       }
-      
-      const blob = new Blob([mdParts.join('\n')], { type: 'text/markdown' });
+      const blob = new Blob([md.join('\n')], { type: 'text/markdown' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
-      a.href = url;
-      a.download = `合规检查_${scenario.name}_${new Date().toISOString().split('T')[0]}.md`;
-      a.click();
-      URL.revokeObjectURL(url);
-      showToast('报告已下载');
+      a.href = url; a.download = `合规检查_${scenario.name}_${new Date().toISOString().slice(0,10)}.md`;
+      a.click(); URL.revokeObjectURL(url);
+      showToast('📄 报告已下载');
     }
 
-    function updateCharts(scenarioId) {
-      const scenario = scenarios.find(s => s.id === scenarioId);
+    function updateCharts(sid) {
+      const scenario = scenarios.find(s => s.id === sid);
       if (!scenario) return;
       const checks = scenario.checks;
-      const severityColors = { critical: '#ff5252', high: '#d29922', medium: '#bc8cff', low: '#58a6ff' };
-      const severityLabels = { critical: '严重', high: '高', medium: '中', low: '低' };
+      const sevColors = { critical:'#ff5252', high:'#d29922', medium:'#bc8cff', low:'#58a6ff' };
+      const sevLabels = { critical:'严重', high:'高', medium:'中', low:'低' };
       
-      const pieData = [];
-      const pieBgColors = [];
-      const pieBorderColors = [];
-      
-      for (const sev of ['critical', 'high', 'medium', 'low']) {
-        const sevChecks = checks.filter(c => c.severity === sev);
-        const passed = sevChecks.filter(c => userState[c.id]?.passed).length;
-        const failed = sevChecks.length - passed;
-        
-        if (sevChecks.length > 0) {
-          pieData.push(...[passed, failed]);
-          pieBgColors.push(severityColors[sev]);
-          pieBorderColors.push(severityColors[sev]);
-        }
-      }
-      
-      const pieLabels = [];
-      for (let i = 0; i < pieData.length; i++) {
-        const sevIndex = Math.floor(i / 2);
-        const sevKeys = Object.keys(severityLabels);
-        const sevKey = sevKeys[sevIndex] || 'low';
-        pieLabels.push(`${severityLabels[sevKey]}: ${i % 2 === 0 ? '通过' : '未通过'}`);
-      }
+      const pieData = [], pieBg = [], pieBorder = [], pieLabels = [];
+      ['critical','high','medium','low'].forEach((sev, si) => {
+        const sc = checks.filter(c => c.severity === sev);
+        if (!sc.length) return;
+        const passed = sc.filter(c => userState[c.id]?.passed).length;
+        const failed = sc.length - passed;
+        pieData.push(passed, failed);
+        pieBg.push(sevColors[sev]); pieBorder.push(sevColors[sev]);
+        pieLabels.push(`${sevLabels[sev]}: 通过(${passed})`, `${sevLabels[sev]}: 未通过(${failed})`);
+      });
       
       if (pieChart) pieChart.destroy();
-      const pieCtx = $('pieChart').getContext('2d');
-      pieChart = new Chart(pieCtx, {
+      pieChart = new Chart($('pieChart').getContext('2d'), {
         type: 'doughnut',
-        data: {
-          labels: pieLabels,
-          datasets: [{
-            data: pieData.length > 0 ? pieData : [1],
-            backgroundColor: pieBgColors.length > 0 ? pieBgColors : ['rgba(88,166,255,0.3)'],
-            borderColor: pieBorderColors.length > 0 ? pieBorderColors : ['#58a6ff']
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              position: 'bottom',
-              labels: {
-                color: getComputedStyle(document.body).getPropertyValue('--text-primary').trim(),
-                font: { size: 11 },
-                padding: 8
-              }
-            },
-            tooltip: { enabled: true }
-          },
-          cutout: '60%'
-        }
+        data: { labels: pieLabels, datasets: [{ data: pieData.length?pieData:[1], backgroundColor: pieBg.length?pieBg:['rgba(88,166,255,0.3)'], borderColor: pieBorder.length?pieBorder:['#58a6ff'] }] },
+        options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { color: getComputedStyle(document.body).getPropertyValue('--text-primary').trim(), font: { size: 11 }, padding: 8 } }, tooltip: { enabled: true } }, cutout: '60%' }
       });
       
       const regulation = regulations.find(r => r.id === scenario.regulation_id);
-      const timelineItems = regulation ? regulation.timeline : [];
-      
-      const dates = timelineItems.map(t => t.date);
-      const events = timelineItems.map(t => t.event);
-      
+      const tlItems = regulation ? regulation.timeline : [];
       const today = new Date();
-      const progressValues = [];
-      for (let i = 0; i < dates.length; i++) {
-        const eventDate = new Date(dates[i]);
-        const diff = Math.max(0, Math.round((today - eventDate) / (1000*60*60*24)));
-        progressValues.push(diff);
-      }
+      const tlData = tlItems.map(t => Math.max(0, Math.round((today - new Date(t.date)) / 864e5)));
+      const tlLabels = tlItems.map(t => t.date.slice(5));
+      const tlEvents = tlItems.map(t => t.event);
       
       if (timelineChart) timelineChart.destroy();
-      const tlCtx = $('timelineChart').getContext('2d');
-      timelineChart = new Chart(tlCtx, {
+      timelineChart = new Chart($('timelineChart').getContext('2d'), {
         type: 'bar',
-        data: {
-          labels: dates.map(d => d.slice(5)),
-          datasets: [{
-            label: '距今（天）',
-            data: progressValues.length > 0 ? progressValues : [0],
-            backgroundColor: progressValues.map(v => v < 365 ? 'rgba(63,185,80,0.6)' : 'rgba(88,166,255,0.6)'),
-            borderColor: progressValues.map(v => v < 365 ? '#3fb950' : '#58a6ff'),
-            borderWidth: 1
-          }]
-        },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: {
-              display: true,
-              labels: {
-                color: getComputedStyle(document.body).getPropertyValue('--text-primary').trim(),
-                font: { size: 11 }
-              }
-            },
-            tooltip: {
-              callbacks: {
-                afterLabel: function(ctx) {
-                  if (ctx.dataIndex < events.length) return `事件: ${events[ctx.dataIndex]}`;
-                  return '';
-                }
-              }
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              ticks: { color: '#9da5b1', font: { size: 10 } },
-              grid: { color: 'rgba(48,54,61,0.3)' }
-            },
-            x: {
-              ticks: { color: '#9da5b1', font: { size: 9 }, maxRotation: 45 },
-              grid: { color: 'rgba(48,54,61,0.3)' }
-            }
-          }
-        }
+        data: { labels: tlLabels, datasets: [{ label: '距今（天）', data: tlData.length?tlData:[0], backgroundColor: tlData.map(v=>v<365?'rgba(63,185,80,0.6)':'rgba(88,166,255,0.6)'), borderColor: tlData.map(v=>v<365?'#3fb950':'#58a6ff'), borderWidth: 1 }] },
+        options: { responsive: true, plugins: { legend: { display: true, labels: { color: getComputedStyle(document.body).getPropertyValue('--text-primary').trim(), font:{size:11} } }, tooltip: { callbacks: { afterLabel: ctx => ctx.dataIndex < tlEvents.length ? `📌 ${tlEvents[ctx.dataIndex]}` : '' } } }, scales: { y: { beginAtZero:true, ticks:{color:'#9da5b1',font:{size:10}}, grid:{color:'rgba(48,54,61,0.3)'} }, x: { ticks:{color:'#9da5b1',font:{size:9},maxRotation:45}, grid:{color:'rgba(48,54,61,0.3)'} } } }
       });
     }
 
-    function showToast(message) {
+    // ── Mobile sidebar toggle ──
+    function toggleSidebar() {
+      const sb = $('appSidebar');
+      const ov = $('sidebarOverlay');
+      sb.classList.toggle('open');
+      ov.classList.toggle('show');
+      const btn = $('mobileNavBtn');
+      btn.innerHTML = sb.classList.contains('open') ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+    }
+    function closeSidebar() {
+      $('appSidebar').classList.remove('open');
+      $('sidebarOverlay').classList.remove('show');
+      $('mobileNavBtn').innerHTML = '<i class="bi bi-list"></i>';
+    }
+
+    function showToast(msg) {
       const toast = document.createElement('div');
       toast.className = 'custom-toast';
-      toast.innerHTML = `<i class="bi bi-check-circle" style="color:var(--accent-green);margin-right:0.3rem;"></i>${message}`;
+      toast.innerHTML = `<i class="bi bi-check-circle-fill" style="color:var(--accent-green)"></i>${msg}`;
       $('toastContainer').appendChild(toast);
       setTimeout(() => toast.remove(), 2500);
     }
 
-    document.getElementById('mainNavbar').addEventListener('click', function(e) {
+    $('mainNavbar')?.addEventListener('click', function(e) {
       const target = e.target;
-      const isLink = target.tagName === 'A' || target.closest('a');
-      const isBtn = target.tagName === 'BUTTON' || target.closest('button');
-      if (!isLink && !isBtn) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      if ((target.tagName === 'A' || target.closest('a') || target.tagName === 'BUTTON' || target.closest('button'))) return;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    document.addEventListener('DOMContentLoaded', () => {
-      applyTheme();
-      loadData();
-    });
+    document.addEventListener('DOMContentLoaded', () => { applyTheme(); loadData(); });
   </script>
 </body>
 </html>
