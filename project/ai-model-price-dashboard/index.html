@@ -518,9 +518,9 @@
 
     // Register filter listeners AFTER cacheDom populates $el
     function registerFilterListeners() {
-      $el.vendorFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
-      $el.tierFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
-      $el.searchBox?.addEventListener('input', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+      $el.vendorFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); updateChart(); refreshRecommendation(); });
+      $el.tierFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); updateChart(); refreshRecommendation(); });
+      $el.searchBox?.addEventListener('input', () => { refreshFilterCache(); renderTable(); updateChart(); refreshRecommendation(); });
       $el.taskType?.addEventListener('change', handleTaskTypeChange);
     }
 
@@ -573,6 +573,9 @@
       } else {
         card.classList.remove('show');
       }
+      refreshFilterCache();
+      renderTable();
+      updateChart();
     }
     
     // Re-render recommendation when filters change
