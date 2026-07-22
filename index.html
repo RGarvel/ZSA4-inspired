@@ -909,6 +909,14 @@
       
       domCache.articles.innerHTML = parts.join('');
       
+      // Render inspiration section if data exists
+      if (inspirationData && inspirationData.insights?.length) {
+        renderInspiration();
+        domCache.inspSection.style.display = 'block';
+      } else {
+        domCache.inspSection.style.display = 'none';
+      }
+      
       // Always render inspiration section if data exists
       if (inspirationData && inspirationData.insights?.length) {
         renderInspiration();
@@ -1029,7 +1037,7 @@
     
     function toggleInspFilter() {
       showInspirationOnly = !showInspirationOnly;
-      const btn = $('inspFilterBtn');
+      const btn = $('inspToggleBtn');
       if (btn) {
         btn.textContent = showInspirationOnly ? '已开启' : '已关闭';
         btn.className = showInspirationOnly ? 'btn btn-sm insp-btn-active' : 'btn btn-sm insp-btn-inactive';
@@ -1061,11 +1069,11 @@
         if (availableDates.length > 0) {
           currentDate = availableDates[0];
           $('dateSelector').value = currentDate;
-          // First load inspiration data, then render everything
           loadInspiration(currentDate).finally(() => {
-            // Small delay to ensure DOM is ready
             setTimeout(render, 50);
           });
+        }
+      });
         }
       });
     });
