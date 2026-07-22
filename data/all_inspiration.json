@@ -1,5 +1,241 @@
 [
   {
+    "id": "ait-07220001",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "AI模型价格战白热化：Grok 4.5、GPT-5.6、Muse Spark 1.1三天内相继降价",
+    "raw_summary": "7月上旬AI行业经历了前所未有的价格战争——xAI于7月8日发布Grok 4.5（50万token上下文，$2/$6每百万token），OpenAI于7月9日发布GPT-5.6全系列（Sol $5/$30、Terra $2.5/$15、Luna $1/$6），Meta同日推出Muse Spark 1.1（$1.25/$4.25），成为史上最低价前沿付费模型。Grok 4.5在人工智能分析智力指数中排名第四，但成本仅为Opus 4.8或Fable 5的五分之一。Meta Muse Spark 1.1则在输入token成本上低于所有竞争对手。",
+    "source": "Andrew.ooo / ToolRadar / MindStudio",
+    "url": "https://andrew.ooo/answers/ai-price-war-july-2026-who-is-winning-model-pricing/",
+    "keywords": [
+      "price war",
+      "Grok 4.5",
+      "GPT-5.6",
+      "Muse Spark",
+      "token pricing",
+      "xAI",
+      "Meta"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-07220002",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "淡马锡报告：AI能效突破有望大幅削减行业能源需求",
+    "raw_summary": "Bloomberg 7月22日报道，新加坡国有投资公司淡马锡发布的报告指出，AI能效方面的重大进展可能显著改变该行业对全球电网造成的电力压力。新的能量效率突破包括结合神经网络与符号推理的方法，可降低高达100倍能耗同时提升准确度，以及基于振荡器的AI技术可能比传统计算效率高1000倍。",
+    "source": "Bloomberg / Temasek",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-22/breakthroughs-for-ai-promise-to-slash-energy-needs-temasek-says",
+    "keywords": [
+      "energy efficiency",
+      "Temasek",
+      "AI power consumption",
+      "symbolic reasoning",
+      "oscillator"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-07220001",
+    "date": "2026-07-22",
+    "category": "product_tool",
+    "title": "Kimi K3 API平台开放：2.8万亿参数开源模型正式商用，API定价低于Claude Opus 4.8约40%",
+    "raw_summary": "Moonshot AI的Kimi K3已于7月16日正式发布，2.8万亿参数的MoE模型激活仅16个专家中的896个。1M token上下文窗口，原生多模态输入，推理模式默认对所有查询运行。截至7月22日，新C端用户订阅已暂停，所有算力用于服务现有订阅者和API用户。Kimi K3的API定价约为$3/百万输入token和$15/百万输出token，比Claude Opus 4.8低约40%，且完整权重将于7月27日开源。",
+    "source": "OpenRouter / Kimi API Platform / Axios",
+    "url": "https://openrouter.ai/moonshotai/kimi-k3",
+    "keywords": [
+      "Kimi K3",
+      "open source",
+      "API",
+      "2.8T parameters",
+      "Moonshot AI",
+      "multimodal"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07220003",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "NVIDIA SIGGRAPH 2026展示DLSS 5神经渲染最新进展：开发者控制力增强但玩家争议持续",
+    "raw_summary": "NVIDIA在SIGGRAPH 2026大会上进一步展示了DLSS 5神经渲染技术的进展和细节。继最初公布时引发玩家负面反应后，NVIDIA继续完善该技术，增加了更多开发者控制和保真度选项。DLSS 5预计秋季出货，主打真实时图形渲染的同时保留艺术家意图。同时NVIDIA还在SIGGRAPH发布了Cosmos 3世界模型和多项物理AI研究突破，共21篇论文。",
+    "source": "TechPowerUp / Beebom / NVIDIA Blog",
+    "url": "https://blogs.nvidia.com/blog/siggraph-news-2026/",
+    "keywords": [
+      "NVIDIA",
+      "DLSS 5",
+      "SIGGRAPH",
+      "neural rendering",
+      "Cosmos",
+      "physical AI"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-07220004",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "美国威胁对中国AI模型实施制裁：以知识产权盗窃为由审查开源模型安全",
+    "raw_summary": "TechCrunch 7月21日报道，美国政府威胁对中国AI模型实施制裁措施，理由是外国行为体复制并重新部署为开源形式的美国AI技术。此前白宫曾宣称将与AI企业合作打击此类行为。此消息引发了关于开源AI模型监管与国家安全之间平衡的广泛讨论。前特朗普AI顾问Dean Ball批评该审查流程实质上构成了\"前沿AI的事实许可制度\"。",
+    "source": "TechCrunch / MIT Technology Review",
+    "url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/",
+    "keywords": [
+      "AI sanctions",
+      "open source",
+      "China",
+      "IP theft",
+      "regulation",
+      "whitelisting"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07220005",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "三星Galaxy Unpacked 2026今日伦敦发布：Gemini AI眼镜、Z Fold 8 Ultra等多款新品亮相",
+    "raw_summary": "7月22日，三星在伦敦举办Galaxy Unpacked 2026发布会。重点产品包括：AI智能眼镜（与Meta Ray-Ban竞争），搭载Gemini AI助手，采用Warby Parker风格设计，双摄像头，9小时电池续航，无显示屏；Z Fold 8 Ultra折叠屏旗舰；以及Samsung Galaxy Card数字支付卡。AI眼镜预计2026年秋季发售，旨在挑战Meta的Ray-Ban智能眼镜市场主导地位。",
+    "source": "Android Central / Samsung Newsroom",
+    "url": "https://www.androidcentral.com/phones/live/samsung-galaxy-unpacked-2026-launch-live-z-fold-8-ultra-z-fold-8-z-flip-8-galaxy-glasses-and-all-the-news",
+    "keywords": [
+      "Samsung",
+      "Galaxy Unpacked",
+      "AI glasses",
+      "Gemini",
+      "wearable",
+      "Z Fold 8"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-07220001",
+    "date": "2026-07-22",
+    "category": "startup",
+    "title": "中国AI视觉公司GigaAI寻求2026年港股上市，成为世界模型领域首家上市公司",
+    "raw_summary": "Bloomberg 7月21日报道，吉家视觉（GigaAI）正在讨论最早于今年在香港交易所进行首次公开募股，这将是世界模型（world model）领域的首家上市公司。此前多家中国AI公司已计划公开市场首发，包括Moonshot AI也计划在六个月内上市。",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-21/china-s-gigaai-seeks-2026-hong-kong-ipo-in-first-for-world-model",
+    "keywords": [
+      "GigaAI",
+      "Hong Kong IPO",
+      "world model",
+      "Chinese AI",
+      "Jijia Vision"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-07220002",
+    "date": "2026-07-22",
+    "category": "startup",
+    "title": "印度AI平台Sarvam AI达15亿美元估值成独角兽，HCLTech领投2.34亿美元",
+    "raw_summary": "孟加拉所在的印度AI市场正在加速发展，Sarvam AI作为班加罗尔的主权AI平台，在以HCLTech为首的本轮融资中达到15亿美元估值，成为印度新晋独角兽。这一融资反映了全球资本对印度本土AI模型的强烈兴趣。",
+    "source": "Best Startup India",
+    "url": "https://beststartup.in/india-startup-funding-july-2026/",
+    "keywords": [
+      "Sarvam AI",
+      "India",
+      "unicorn",
+      "sovereign AI",
+      "HCLTech"
+    ],
+    "original_language": "zh",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-07220006",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "YouTube深度解读：AI繁荣对人类究竟意味着什么？Richard Campbell NDC主题演讲",
+    "raw_summary": "Richard Campbell在NDC Conferences 2026的主题演讲'After the AI Hype — What's Real, and What's Next'获得21.4万次观看。演讲深入分析了AI热潮背后的真实趋势与未来走向，区分了哪些是真正的技术变革，哪些只是营销泡沫。",
+    "source": "NDC Conferences (YouTube)",
+    "url": "https://www.youtube.com/watch?v=ixgunKpy61s",
+    "keywords": [
+      "AI hype",
+      "NDC Conference",
+      "future of AI",
+      "technology assessment",
+      "YouTube"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-07220007",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "YouTube新闻报道：中国Kimi K3模型对美国AI产业构成压力",
+    "raw_summary": "YouTube多个频道报道了Kimi K3模型发布对美国AI产业的冲击——2.8万亿参数开源模型在国际计算大会WAIC 2026上展出，引发关于中国开发者快速缩小与美方技术差距的讨论。",
+    "source": "YouTube (Multiple channels)",
+    "url": "https://www.youtube.com/watch?v=cYuMMqbv-N8",
+    "keywords": [
+      "Kimi K3",
+      "WAIC 2026",
+      "Chinese AI",
+      "YouTube",
+      "US competition"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-07220008",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "YouTube热议：AI为何突然看起来像泡沫——科技支出膨胀但用户实际消费下降",
+    "raw_summary": "TLDR News Global频道视频《Why AI Suddenly Looks Extra Bubbly》引发广泛关注（38万+观看）。视频分析了AI科技投资持续膨胀与预期未来利润之间的巨大落差，指出新数据表明用户实际支出正在减少，这可能预示主要AI厂商之间即将爆发价格战。",
+    "source": "TLDR News Global (YouTube)",
+    "url": "https://www.youtube.com/watch?v=VS00sg8rsnE",
+    "keywords": [
+      "AI bubble",
+      "investing hype",
+      "user spending",
+      "price war",
+      "YouTube video",
+      "TLDR News"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-07220003",
+    "date": "2026-07-22",
+    "category": "startup",
+    "title": "人形机器人公司LimX Dynamics完成2亿美元Pre-IPO轮融资，估值22亿美元",
+    "raw_summary": "深圳人形机器人初创公司LimX Dynamics于7月14日完成了近2亿美元的Pre-IPO融资轮，估值约22亿美元。约70%资金来自海外投资者，公司与上市准备直接相关。这是中国机器人领域近期重大融资之一，显示全球资本对人形机器人赛道的持续看好。",
+    "source": "SpoonAI",
+    "url": "https://spoonai.me/posts/2026-07-19-limx-dynamics-200m-pre-ipo-humanoid-jul2026-en",
+    "keywords": [
+      "LimX Dynamics",
+      "humanoid robot",
+      "pre-IPO",
+      "funding",
+      "robotics",
+      "Shenzhen"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
     "id": "ait-7210001",
     "date": "2026-07-21",
     "category": "ai_tech",
@@ -41,68 +277,6 @@
     "is_major_event": true
   },
   {
-    "id": "ait-7210003",
-    "date": "2026-07-21",
-    "category": "ai_tech",
-    "title": "Anthropic推进IPO进程：7月15日银行家启动投资者会议，目标10月纳斯达上市估值9650亿美元",
-    "raw_summary": "Anthropic于2026年6月1日秘密向SEC提交S-1文件后，7月15日取得关键进展——投资银行家已开始安排投资者会议，为潜在的10月纳斯达上市做准备。此前Anthropic完成Series H融资650亿美元，估值达9650亿美元，年化收入约300亿美元，首次超越OpenAI的250亿。",
-    "source": "The Agent Report / explainx.ai / BitMEX",
-    "url": "https://the-agent-report.com/2026/07/anthropic-ipo-update-july-2026-trademark-litigation/",
-    "keywords": [
-      "Anthropic",
-      "IPO",
-      "S-1 filing",
-      "Nasdaq",
-      "SEC",
-      "Claude",
-      "AI funding"
-    ],
-    "original_language": "zh",
-    "importance": 4,
-    "is_major_event": true
-  },
-  {
-    "id": "ait-7210004",
-    "date": "2026-07-21",
-    "category": "ai_tech",
-    "title": "Sakana AI发布Fugu-Cyber：专为网络防守设计的多智能体编排模型刷新SOTA",
-    "raw_summary": "7月21日，东京AI研究公司Sakana AI正式发布Fugu-Cyber，这是其Fugu多智能体编排模型的网络防守专项更新版本。该模型在CyberGym基准测试中达到86.9%，在CTI-REALM中达到72.1%，均为当前最高水平，与GPT-5.5-Cyber等前沿专用网络安全系统相当。",
-    "source": "Sakana AI Official / explainx.ai",
-    "url": "https://sakana.ai/fugu-cyber-release/",
-    "keywords": [
-      "Sakana AI",
-      "Fugu-Cyber",
-      "multi-agent",
-      "cybersecurity",
-      "orchestration",
-      "CyberGym",
-      "CTI-REALM"
-    ],
-    "original_language": "zh",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-7210005",
-    "date": "2026-07-21",
-    "category": "ai_tech",
-    "title": "Anthropic逆转政策：Claude Fable 5正式纳入Max和Team Premium计划永久免费使用",
-    "raw_summary": "7月21日，Anthropic宣布Claude Fable 5模型从临时促销转为正式功能：Claude Max和Team Premium订阅用户可永久免费使用Fable 5，占用每周额限的50%，不再需要额外积分。此前Anthropic因GPT-5.6竞争压力多次延长Fable 5的限时免费期，此次最终确定永久集成策略。",
-    "source": "AIToolsRecap / TechTimes / TheNewStack",
-    "url": "https://aitoolsrecap.com/Blog/anthropic-fable-5-returns-max-team-premium-july-2026",
-    "keywords": [
-      "Anthropic",
-      "Claude Fable 5",
-      "subscription",
-      "pricing",
-      "AI model wars",
-      "GPT-5.6"
-    ],
-    "original_language": "zh",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
     "id": "st-1001",
     "date": "2026-07-21",
     "category": "startup",
@@ -140,46 +314,6 @@
     "original_language": "en",
     "importance": 5,
     "is_major_event": true
-  },
-  {
-    "id": "st-1003",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "月之暗面Kimi K3模型引发订阅洪峰，ARR突破3亿美元",
-    "raw_summary": "中国AI初创公司月之暗面（Moonshot AI）发布2.8万亿参数开源模型Kimi K3，直接挑战Anthropic和OpenAI领先系统。上线48小时后需求激增导致Kimi订阅服务暂停，现有用户优先。公司年度经常性收入（ARR）已达3亿美元。与此同时，OpenAI已收购Ona用于Codex项目。",
-    "source": "Cryptonomist / Bloomberg / WindowsNews.AI",
-    "url": "https://en.cryptonomist.ch/2026/07/20/moonshot-ai-ipo-growth/",
-    "keywords": [
-      "月之暗面",
-      "Moonshot AI",
-      "Kimi K3",
-      "订阅暂停",
-      "ARR 3亿美元",
-      "开源模型"
-    ],
-    "original_language": "zh",
-    "importance": 4,
-    "is_major_event": true
-  },
-  {
-    "id": "st-1005",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "MENA地区2026上半年融资17亿美元，7月加速至7.83亿美元",
-    "raw_summary": "中东和北非（MENA）地区2026年上半年共完成242轮融资，总额17亿美元，尽管地缘政治动荡仍保持投资活力。7月首周即达到7.83亿美元（57笔交易），其中沙特AI基础设施初创公司Think获得800万美元种子前轮投资。区域AI和气候科技成为投资主力。",
-    "source": "Wamda / Arab News / Saudi Press",
-    "url": "https://www.wamda.com/2026/07/mena-startups-raise-1-7-billion-h1-2026-despite-regional-uncertainty",
-    "keywords": [
-      "MENA",
-      "中东",
-      "创业融资",
-      "Think",
-      "AI基础设施",
-      "沙特"
-    ],
-    "original_language": "en",
-    "importance": 3,
-    "is_major_event": false
   },
   {
     "id": "pt-1001",
@@ -222,6 +356,47 @@
     "is_major_event": true
   },
   {
+    "id": "ait-7210003",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Anthropic推进IPO进程：7月15日银行家启动投资者会议，目标10月纳斯达上市估值9650亿美元",
+    "raw_summary": "Anthropic于2026年6月1日秘密向SEC提交S-1文件后，7月15日取得关键进展——投资银行家已开始安排投资者会议，为潜在的10月纳斯达上市做准备。此前Anthropic完成Series H融资650亿美元，估值达9650亿美元，年化收入约300亿美元，首次超越OpenAI的250亿。",
+    "source": "The Agent Report / explainx.ai / BitMEX",
+    "url": "https://the-agent-report.com/2026/07/anthropic-ipo-update-july-2026-trademark-litigation/",
+    "keywords": [
+      "Anthropic",
+      "IPO",
+      "S-1 filing",
+      "Nasdaq",
+      "SEC",
+      "Claude",
+      "AI funding"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-1003",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "月之暗面Kimi K3模型引发订阅洪峰，ARR突破3亿美元",
+    "raw_summary": "中国AI初创公司月之暗面（Moonshot AI）发布2.8万亿参数开源模型Kimi K3，直接挑战Anthropic和OpenAI领先系统。上线48小时后需求激增导致Kimi订阅服务暂停，现有用户优先。公司年度经常性收入（ARR）已达3亿美元。与此同时，OpenAI已收购Ona用于Codex项目。",
+    "source": "Cryptonomist / Bloomberg / WindowsNews.AI",
+    "url": "https://en.cryptonomist.ch/2026/07/20/moonshot-ai-ipo-growth/",
+    "keywords": [
+      "月之暗面",
+      "Moonshot AI",
+      "Kimi K3",
+      "订阅暂停",
+      "ARR 3亿美元",
+      "开源模型"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
     "id": "pt-1003",
     "date": "2026-07-21",
     "category": "product_tool",
@@ -258,63 +433,6 @@
     ],
     "original_language": "zh",
     "importance": 4,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-1005",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "title": "Google Gemini 3.5 Pro 再次延期：原定6月发布，7月仍未确定上线日期",
-    "raw_summary": "Google Gemini 3.5 Pro 原计划在6月发布（Google I/O 承诺），但已两次延期。截至7月17日仍未确认新发布日期。据报四名高级研究员离职加入竞争对手，且训练数据更新后性能未达内部预期。该模型定位为200万token上下文窗口和Deep Think推理模式，面向Ultra订阅用户（$250/月）。",
-    "source": "TechPillow / AwesomeAgents / FactCheckRadar",
-    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
-    "keywords": [
-      "Google",
-      "Gemini",
-      "延期",
-      "Deep Think",
-      "AI竞争"
-    ],
-    "original_language": "zh",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-7210006",
-    "date": "2026-07-21",
-    "category": "ai_tech",
-    "title": "Anthropic CEO Dario Amodei 等五位员工捐款200万美元支持AI监管政治行动委员会",
-    "raw_summary": "据Bloomberg 7月16日报道，Anthropic CEO Dario Amodei及另外五名员工向专注于AI监管的政治行动委员会Public First捐款超过200万美元，助力中期选举中的AI安全倡导。Public First此前已收到Anthropic公司2000万美元捐赠。此举标志着AI行业高管通过政治捐款直接参与政策制定的趋势。",
-    "source": "Bloomberg / SFGate",
-    "url": "https://www.bloomberg.com/news/articles/2026-07-16/dario-amodei-anthropic-employees-give-millions-to-regulate-ai",
-    "keywords": [
-      "Anthropic",
-      "Dario Amodei",
-      "AI监管",
-      "政治捐款",
-      "Public First"
-    ],
-    "original_language": "zh",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-7210007",
-    "date": "2026-07-21",
-    "category": "ai_tech",
-    "title": "Google Vids集成Gemini Omni视频生成：企业AI视频创作进入新阶段",
-    "raw_summary": "Google于7月16日宣布将多模态视频生成模型Gemini Omni集成到Google Vids中，用户可通过文字提示和参考图像创建视频，并可使用个人AI头像出镜。这是Gemini Omni自5月I/O发布后的首个大规模产品化应用。Google Vids用户一年已创建数百万视频，此次升级使其成为企业级AI视频创作平台。",
-    "source": "TechCrunch / Google Blog",
-    "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
-    "keywords": [
-      "Google",
-      "Gemini Omni",
-      "Vids",
-      "AI视频",
-      "企业工具"
-    ],
-    "original_language": "zh",
-    "importance": 3,
     "is_major_event": false
   },
   {
@@ -373,1911 +491,6 @@
     "original_language": "zh",
     "importance": 4,
     "is_major_event": false
-  },
-  {
-    "id": "st-7210008",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "推理基础设施初创Infinity获1500万美元种子轮融资",
-    "raw_summary": "专注于AI推理优化的初创公司Infinity完成1500万美元种子轮融资，投资方包括知名风投机构。该公司旨在降低大模型推理成本，解决AI部署中的核心瓶颈问题。随着AI应用规模化，推理成本优化成为关键赛道。",
-    "source": "TechCrunch / TechStartups",
-    "url": "https://techcrunch.com/2026/07/21/infinity-inference-funding/",
-    "keywords": [
-      "Infinity",
-      "推理优化",
-      "种子轮",
-      "AI基础设施"
-    ],
-    "original_language": "zh",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-39",
-    "date": "2026-07-21",
-    "category": "ai_tech",
-    "title": "arXiv综述论文：递归自我改进AI的分类学——从有界自我完善到自主研究循环",
-    "raw_summary": "arXiv论文2607.07663系统性地分类了1250篇关于AI自我改进的研究论文，将AI自我改进分为两个主要类别：有界自我完善（bounded self-refinement）——收敛性、可评估的，已成为工业实践；以及开放式递归自我改进（RSI）——仍处于受限于 grounding 要求、坍缩动力学和算力约束的阶段。该综述为理解当前AI自我改进技术的成熟度提供了系统性框架。",
-    "source": "arXiv",
-    "url": "https://arxiv.org/abs/2607.07663",
-    "keywords": [
-      "递归自我改进",
-      "RSI",
-      "arXiv",
-      "综述",
-      "AI安全",
-      "自我完善"
-    ],
-    "original_language": "en",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-41",
-    "date": "2026-07-21",
-    "category": "product_tool",
-    "title": "AI法律立法进展：2026年美国各州AI立法放缓，联邦审查 looming",
-    "raw_summary": "据AI Weekly报道，截至2026年7月1日，美国各州已颁布109项AI法律和28项数据中心法律。但立法速度明显放缓——2026年至今29个州通过了AI立法，而2025年同期为39个州。这一放缓与特朗普政府的AI任务组和DOJ AI诉讼任务组对州级AI法律的联邦审查有关。各州正在等待联邦层面的明确信号。",
-    "source": "AI Weekly",
-    "url": "https://aiweekly.co/alerts/state-ai-lawmaking-slows-in-2026-as-trump-task-force-looms",
-    "keywords": [
-      "AI监管",
-      "美国",
-      "州立法",
-      "联邦审查",
-      "特朗普",
-      "DOJ"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-13",
-    "date": "2026-07-20",
-    "category": "ai_tech",
-    "title": "Anthropic Fable 5 取消免费试用，Max/Team Premium 永久纳入但限 50% 用量",
-    "raw_summary": "从 2026 年 7 月 20 日起，Anthropic 正式结束 Fable 5 的免费推广期。Max 和 Team Premium 订阅用户可将 Fable 5 作为永久功能使用，但每周用量限制在 50% 以内；Pro 和 Team Standard 用户完全失去免费路径，转为按使用量计费（$10/百万输入 token，$50/百万输出 token），并获得一次性 $100 额度抵扣。这一价格调整标志着 Anthropic 旗舰模型从免费推广走向全面商业化。",
-    "source": "TechTimes / Roo Beehiiv",
-    "url": "https://www.techtimes.com/articles/320905/20260718/claude-fable-5-ends-subscription-limbo-permanent-max-credits-only-pro.htm",
-    "keywords": [
-      "Anthropic",
-      "Fable 5",
-      "定价调整",
-      "用量限制",
-      "商业化"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-11",
-    "date": "2026-07-20",
-    "category": "product_tool",
-    "title": "LiveDemo：开源的实时演示替代方案",
-    "raw_summary": "LiveDemo 作为开源替代方案在 Product Hunt 上获得关注，为开发者提供实时代码演示和交互展示能力，无需闭源平台限制。",
-    "source": "Product Hunt",
-    "url": "https://www.producthunt.com/",
-    "keywords": [
-      "LiveDemo",
-      "开源",
-      "实时演示",
-      "开发者工具"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-12",
-    "date": "2026-07-20",
-    "category": "product_tool",
-    "title": "Open Design：开源版 Anthropic Claude Design 替代品",
-    "raw_summary": "Open Design 提供开源、免费的 AI 设计工具，对标 Anthropic 的 Claude Design（基于 Opus 4.7）。Claude Design 虽曾火爆但仅限付费和云端，Open Design 让用户可以在本地运行设计代理，支持自定义模型和完全数据隐私。",
-    "source": "Open Designer",
-    "url": "https://opendesigner.io/",
-    "keywords": [
-      "Open Design",
-      "开源设计",
-      "Claude Design",
-      "本地AI",
-      "隐私"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-8",
-    "date": "2026-07-20",
-    "category": "product_tool",
-    "title": "Claude Opus 5 (预期发布)：100 万 token 超长上下文窗口",
-    "summary": "据泄露信息，Anthropic 预计于 2026 年 7 月 20-21 日发布 Claude Opus 5，作为 Opus 系列的重大升级。主要亮点包括：100 万 token 超长上下文窗口、更强的推理和编码能力。此次发布时机恰逢美国解除出口管制后 Claude Fable 5 和 Mythos 5 恢复全球访问权限。",
-    "source": "WinCentral",
-    "url": "https://thewincentral.com/claude-opus-5-leaks-july-2026-launch-1m-context-window/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Claude Opus 5",
-      "Anthropic",
-      "1M context",
-      "leak",
-      "flagship model"
-    ],
-    "original_language": "en",
-    "raw_summary": "据泄露信息，Anthropic 预计于 2026 年 7 月 20-21 日发布 Claude Opus 5，作为 Opus 系列的重大升级。主要亮点包括：100 万 token 超长上下文窗口、更强的推理和编码能力。此次发布时机恰逢美国解除出口管制后 Claude Fable 5 和 Mythos 5 恢复全球访问权限。"
-  },
-  {
-    "id": "pt-9",
-    "date": "2026-07-20",
-    "category": "product_tool",
-    "title": "Clark：自带云电脑的 AI 同事——完成任务即可下班",
-    "raw_summary": "Clark 是一款在 Product Hunt 上获得关注的 AI 代理产品，它拥有自己的云电脑环境（浏览器、终端、文件和代码），用户只需提交一个真实任务（如广泛调研、网站搭建、电子表格制作、演示文稿撰写或代码审计），关闭标签页后即可得到完成的工作成果。Clark 代表了 AI 代理从聊天界面走向持久化工作的趋势。",
-    "source": "Product Hunt",
-    "url": "https://www.producthunt.com/products/clark-agent/awards",
-    "keywords": [
-      "Clark",
-      "AI同事",
-      "云电脑",
-      "持久化代理",
-      "Product Hunt"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-10",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "arXiv 本周十大 AI ML 论文：因果推理、多模态实体对齐、RAG 成本治理等",
-    "summary": "ArXiv TLDR 整理了 2026 年 7 月 13-19 日一周内最受关注的十大 AI/ML 论文：1) CausalDS——评估 LLM 代理因果推理能力的新基准；2) QANTA 2026 多模态 QA 代理；3) 程序流程图辅助代码生成；4) Cost-Governed RAG——多租户 LLM 系统的成本归因架构；5) PROBE——评估 LLM 代码生成的新基准。",
-    "source": "ArXiv TLDR / arXiv.org",
-    "url": "https://arxivtldr.org/weekly",
-    "importance": 2,
-    "is_major_event": false,
-    "keywords": [
-      "arXiv",
-      "因果推理",
-      "CausalDS",
-      "多模态",
-      "RAG",
-      "代码生成",
-      "强化学习"
-    ],
-    "original_language": "en",
-    "raw_summary": "ArXiv TLDR 整理了 2026 年 7 月 13-19 日一周内最受关注的十大 AI/ML 论文：1) CausalDS——评估 LLM 代理因果推理能力的新基准；2) QANTA 2026 多模态 QA 代理；3) 程序流程图辅助代码生成；4) Cost-Governed RAG——多租户 LLM 系统的成本归因架构；5) PROBE——评估 LLM 代码生成的新基准。"
-  },
-  {
-    "id": "ait-11",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Anthropic × Blackstone 推出 Ode：15 亿美元 AI 实施服务公司",
-    "summary": "Anthropic 与 Blackstone 联合推出 Ode，一家价值 15 亿美元的 AI 实施服务公司，旨在帮助企业部署和使用 AI 模型。这标志着 AI 模型厂商开始向下游实施服务延伸，构建更完整的 AI 价值链。",
-    "source": "TechCrunch / Bloomberg",
-    "url": "https://techcrunch.com/2026/07/19/anthropic-blackstone-ode-ai-implementation/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Anthropic",
-      "Blackstone",
-      "Ode",
-      "AI实施",
-      "企业AI"
-    ],
-    "original_language": "en",
-    "raw_summary": "Anthropic 与 Blackstone 联合推出 Ode，一家价值 15 亿美元的 AI 实施服务公司，旨在帮助企业部署和使用 AI 模型。这标志着 AI 模型厂商开始向下游实施服务延伸，构建更完整的 AI 价值链。"
-  },
-  {
-    "id": "ait-12",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Thinking Machines Inkling：Mira Murati 发布 975B 参数 MoE 开源模型",
-    "summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines 发布了 Inkling，一个 975B 参数的混合专家（MoE）开源模型。该模型在多项基准测试中表现优异，被视为挑战 OpenAI 和 Anthropic 主导地位的重要力量。",
-    "source": "TechCrunch / Bloomberg",
-    "url": "https://techcrunch.com/2026/07/19/thinking-machines-inkling-mira-murati/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Thinking Machines",
-      "Inkling",
-      "Mira Murati",
-      "MoE",
-      "开源模型",
-      "975B参数"
-    ],
-    "original_language": "en",
-    "raw_summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines 发布了 Inkling，一个 975B 参数的混合专家（MoE）开源模型。该模型在多项基准测试中表现优异，被视为挑战 OpenAI 和 Anthropic 主导地位的重要力量。"
-  },
-  {
-    "id": "ait-14",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "xAI Grok Build 被曝默认上传完整 Git 仓库及敏感密钥",
-    "raw_summary": "安全研究员 cereblab 发现 xAI 的 AI 编程助手 Grok Build CLI 版本 0.2.93 在后台以\"流量分析\"名义，静默地将整个本地 Git 仓库（含 .git 目录、未跟踪文件、完整提交历史、.env 密钥文件）上传至 xAI 的 GCS 存储桶 grok-code-session-traces。事件于 7 月 14 日登上 Hacker News 首页后，Elon Musk 承诺删除所有已上传的用户数据。7 月 17 日 xAI 将 Grok Build 开源以回应安全质疑。",
-    "source": "The Hacker News / CyberNews / CryptoBriefing",
-    "url": "https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html",
-    "keywords": [
-      "xAI",
-      "Grok Build",
-      "数据安全",
-      "Git 泄露",
-      "隐私"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-2",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Meta 与 Anthropic 洽谈百亿美元 AI 算力租赁协议",
-    "summary": "据纽约时报和多家媒体 7 月 19 日报道，Meta 与 Anthropic 正在早期谈判一项可能价值高达 100 亿美元的算力租赁协议，为期两年。该交易凸显 AI 开发所需算力的高度稀缺性。Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施，其首个 AI 数据中心超级集群 Prometheus 将于 2026 年上线。Meta 还计划从 9 月开始量产自研 AI 芯片。",
-    "source": "GuruFocus / New York Times / Reuters",
-    "url": "https://www.gurufocus.com/news/8966047/meta-meta-in-talks-with-anthropic-for-10-billion-ai-compute-agreement",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Meta",
-      "Anthropic",
-      "算力租赁",
-      "100亿美元",
-      "AI基础设施",
-      "Prometheus数据中心"
-    ],
-    "original_language": "en",
-    "raw_summary": "据纽约时报和多家媒体 7 月 19 日报道，Meta 与 Anthropic 正在早期谈判一项可能价值高达 100 亿美元的算力租赁协议，为期两年。该交易凸显 AI 开发所需算力的高度稀缺性。Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施，其首个 AI 数据中心超级集群 Prometheus 将于 2026 年上线。Meta 还计划从 9 月开始量产自研 AI 芯片。"
-  },
-  {
-    "id": "ait-3",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Google DeepMind 推迟 Gemini 3.5 Pro 发布，编码性能不达标",
-    "summary": "Google DeepMind 官方确认将 Gemini 3.5 Pro 的发布日期推迟，并取消了原始的基础模型版本，转而进行更深层次的预训练周期。据 9to5Google 报道，Google 在 6 月底更新了训练数据以提升编码能力，但结果令人失望，导致进一步延期。Gemini 3.5 Pro 将拥有 200 万 token 上下文窗口，通过 Google Cloud AI 平台和 API 端点提供。",
-    "source": "9to5Google / HackerNoon",
-    "url": "https://hackernoon.com/google-delays-gemini-35-pro-to-july-17-the-strategic-play-behind-the-scrapped-base-model",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Google DeepMind",
-      "Gemini 3.5 Pro",
-      "推迟发布",
-      "编码能力",
-      "200万token"
-    ],
-    "original_language": "en",
-    "raw_summary": "Google DeepMind 官方确认将 Gemini 3.5 Pro 的发布日期推迟，并取消了原始的基础模型版本，转而进行更深层次的预训练周期。据 9to5Google 报道，Google 在 6 月底更新了训练数据以提升编码能力，但结果令人失望，导致进一步延期。Gemini 3.5 Pro 将拥有 200 万 token 上下文窗口，通过 Google Cloud AI 平台和 API 端点提供。"
-  },
-  {
-    "id": "ait-9",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Hugging Face 披露 AI 自主代理驱动的内部数据管道入侵事件",
-    "summary": "Hugging Face 披露了一起自主 AI 代理入侵事件：恶意数据集利用了两个代码执行路径——远程代码数据集加载器和数据集配置中的模板注入——在处理 worker 上执行代码，随后提升到节点访问权限并横向移动以窃取云和集群凭据。HF 使用开源 GLM 5.2 对超过 17000 个攻击事件进行了法医分析。",
-    "source": "Hugging Face Blog / AI Weekly",
-    "url": "https://huggingface.co/blog/security-incident-july-2026",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Hugging Face",
-      "数据安全",
-      "AI代理",
-      "供应链攻击",
-      "GLM 5.2",
-      "凭据泄露"
-    ],
-    "original_language": "en",
-    "raw_summary": "Hugging Face 披露了一起自主 AI 代理入侵事件：恶意数据集利用了两个代码执行路径——远程代码数据集加载器和数据集配置中的模板注入——在处理 worker 上执行代码，随后提升到节点访问权限并横向移动以窃取云和集群凭据。HF 使用开源 GLM 5.2 对超过 17000 个攻击事件进行了法医分析。"
-  },
-  {
-    "id": "pt-1",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Unabyss for Claude：MCP 原生的跨应用共享记忆层",
-    "summary": "Unabyss 是一个 MCP 原生的自更新上下文层，解决 AI 助手跨应用记忆缺失的核心痛点。它将用户的 Notion、Slack、Gmail、GitHub、LinkedIn 等 20+ 日常应用中的数据自动提取、结构化并存储为持久化上下文库。该产品于 2026 年 5 月 25 日在 Product Hunt 发布，获得 659 票登顶日榜第一。",
-    "source": "Product Hunt / GitHub PH AI Digest",
-    "url": "https://www.producthunt.com/products/unabyss",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "AI context layer",
-      "MCP",
-      "Claude",
-      "memory",
-      "productivity"
-    ],
-    "original_language": "en",
-    "raw_summary": "Unabyss 是一个 MCP 原生的自更新上下文层，解决 AI 助手跨应用记忆缺失的核心痛点。它将用户的 Notion、Slack、Gmail、GitHub、LinkedIn 等 20+ 日常应用中的数据自动提取、结构化并存储为持久化上下文库。该产品于 2026 年 5 月 25 日在 Product Hunt 发布，获得 659 票登顶日榜第一。"
-  },
-  {
-    "id": "pt-16",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "LiveDemo - Open Source Interactive Product Demos",
-    "raw_summary": "LiveDemo是一个开源的产品演示替代方案，对标Storylane、Navattic和Arcade。在Product Hunt获得311票。它帮助SaaS团队将产品展示转化为可点击的互动演示，解决获客转化瓶颈。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/livedemo",
-    "keywords": [
-      "产品演示",
-      "开源",
-      "SaaS营销",
-      "互动展示"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-17",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "AgentGrid - Unified Canvas for AI Agents",
-    "raw_summary": "AgentGrid将AI代理、终端和笔记整合到一个无限画布工作空间中，为用户提供统一的代理管理界面。在Product Hunt获得66票。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/agentgrid",
-    "keywords": [
-      "AI代理",
-      "工作空间",
-      "画布",
-      "生产力"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-18",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "DocuSmart AI - Organizational Knowledge Consolidation",
-    "raw_summary": "DocuSmart AI将分散的组织知识整合为一个统一的、可搜索的系统。在Product Hunt获得124票，解决了企业知识管理的痛点。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/docusmart-ai",
-    "keywords": [
-      "知识库",
-      "AI整理",
-      "企业工具",
-      "知识管理"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-19",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Mirage - SaaS Product to Clickable Demo in 90 Seconds",
-    "raw_summary": "Mirage可将任何SaaS产品转化为可点击的演示，仅需90秒，面向营销和销售团队。在Product Hunt获得224票。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/mirage-15",
-    "keywords": [
-      "产品演示",
-      "SaaS",
-      "营销工具",
-      "快速演示"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-2",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "BaseRT：Apple Silicon 原生 Metal 推理运行时",
-    "summary": "BaseRT 是由 BaseCompute 团队开发的面向 Apple Silicon（M4/M5）的原生 Metal 推理运行时，专为大规模语言模型优化。据官方博客声称，BaseRT 比 llama.cpp 快约 6.4 倍、比 MLX 快约 3.9 倍。该项目同时发布了学术论文（arXiv: 2607.00501）。",
-    "source": "Best of Product Hunt / arXiv",
-    "url": "https://bestofproducthunt.wordpress.com/2026/07/19/basert-apple-m5-optimized/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Apple Silicon",
-      "Metal",
-      "LLM inference",
-      "local AI",
-      "benchmark"
-    ],
-    "original_language": "en",
-    "raw_summary": "BaseRT 是由 BaseCompute 团队开发的面向 Apple Silicon（M4/M5）的原生 Metal 推理运行时，专为大规模语言模型优化。据官方博客声称，BaseRT 比 llama.cpp 快约 6.4 倍、比 MLX 快约 3.9 倍。该项目同时发布了学术论文（arXiv: 2607.00501）。"
-  },
-  {
-    "id": "pt-20",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "OpenMarkdown - Collaborative Markdown Editor for Human and AI",
-    "raw_summary": "OpenMarkdown是一个专为人类与AI代理协作编辑设计的Markdown编辑器。在Product Hunt获得196票。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/openmarkdown",
-    "keywords": [
-      "Markdown",
-      "AI协作",
-      "文档编辑",
-      "开发者工具"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-8",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Nous Research 完成至少 7500 万美元融资，Robot Ventures 领投",
-    "raw_summary": "开源 AI 代理项目 Hermes 背后的创业公司 Nous Research 完成了至少 7500 万美元的新融资轮，由 Robot Ventures 领投，Union Square Ventures（USV）等跟投。Nous Research 以其开源 AI 代理框架 Hermes 在开发者社区积累了广泛影响力，此次融资将进一步推动其代理生态建设。",
-    "source": "HTX / Robot Ventures",
-    "url": "https://www.htx.com/ru-ru/feed/news/1581666/",
-    "keywords": [
-      "Nous Research",
-      "Hermes",
-      "AI代理",
-      "Robot Ventures",
-      "USV",
-      "融资"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-15",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "WAIC 2026 闭幕：具身智能成最大亮点，四足/人形机器人集体亮相",
-    "raw_summary": "为期四天的 2026 世界人工智能大会（WAIC）于 7 月 20 日在上海闭幕。本届大会吸引 1100+ 企业参展、3000+ AI 产品展出、1400+ 国际嘉宾。具身智能（Embodied AI）成为最大焦点——AGIBOT 发布四款机器人（A3 Ultra 人形、X2 Edu 教育、G2 Max 工业、OmniHand 3 Ultra-M 机械手），JAKA 展示全栈具身智能方案，后摩智能携 M50 Inside 终端推动端侧 AI 落地。大会期间还展示了能做饭、打乒乓球的社交机器人。",
-    "source": "ScienceDaily / TechTimes / LinkedIn JAKA",
-    "url": "https://www.stdaily.com/web/English/2026-07/18/content_549536.html",
-    "keywords": [
-      "WAIC",
-      "具身智能",
-      "机器人",
-      "AGIBOT",
-      "JAKA",
-      "端侧AI"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-10",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "ZooData：AI 代理的数据层——Web 到 JSON 与商业智能",
-    "raw_summary": "ZooData 于 7 月 18 日在 Product Hunt 发布并获\"日榜之星\"，定位为 AI 代理的数据层。它提供 Web 到 JSON 的结构化数据提取和商业智能功能，解决了 AI 代理在实际工作中缺乏可靠数据源的核心痛点。",
-    "source": "Product Hunt / AIToolly",
-    "url": "https://aitoolly.com/producthunt-daily/2026-07-18",
-    "keywords": [
-      "ZooData",
-      "AI代理",
-      "数据层",
-      "Web到JSON",
-      "商业智能"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-21",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Kimi K3 - World's First Open 3T-Class AI Model",
-    "raw_summary": "Kimi K3是全球首个开放的3万亿参数级AI模型，由月之暗面(Moonshot AI)于7月16日发布。该产品面向开发者和研究人员，在Product Hunt获得436票，排名当月AI产品第24位。Kimi K3支持100万token上下文窗口，在编码、知识和视觉推理方面具有强大能力，标志着开源前沿模型正在快速缩小与闭源系统的差距。",
-    "source": "StartupCorners / Product Hunt / BBC",
-    "url": "https://www.producthunt.com/products/kimi-ai-assistant",
-    "keywords": [
-      "大语言模型",
-      "开源模型",
-      "3T参数",
-      "月之暗面",
-      "AI前沿"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-22",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Unabyss for Claude - Shared Memory Across Apps and LLMs",
-    "raw_summary": "Unabyss for Claude为Claude提供跨应用的共享记忆功能，使AI能在不同应用间保持上下文连续性。在Product Hunt获得589票，是7月AI产品中排名第10的高票产品。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/unabyss",
-    "keywords": [
-      "Claude",
-      "AI记忆",
-      "跨应用",
-      "上下文持久化"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-23",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "WizeMe.APP - Private AI Memory Layer",
-    "raw_summary": "WizeMe.APP是一个私人的AI记忆层，旨在支持更清晰的个人决策和执行力。代表AI记忆成为核心竞争层的趋势。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/wizeme-app-personal-life-partner-os",
-    "keywords": [
-      "AI记忆",
-      "个人隐私",
-      "决策辅助",
-      "个人AI"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-24",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Aye - Teachable AI Intern for Browser Tasks",
-    "raw_summary": "Aye是一个可教学的AI实习生，能在不离开浏览器工作流的情况下处理日常网页任务。在Product Hunt上发布。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/aye-browser",
-    "keywords": [
-      "AI实习生",
-      "浏览器自动化",
-      "网页任务",
-      "无代码"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-25",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "isvisible.ai - AI Visibility Audit Tool",
-    "raw_summary": "isvisible.ai是一个免费的AI可见性审计工具，帮助营销人员了解AI搜索引擎如何看待他们的品牌。在Product Hunt上发布。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/isvisible-ai",
-    "keywords": [
-      "AI审计",
-      "营销工具",
-      "可见性",
-      "SEO"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-26",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Tilores Studio - Local-First Desktop Entity Resolution",
-    "raw_summary": "Tilores Studio在本地桌面运行实体解析，无需云端依赖或注册。代表了对本地优先和数据主权基础设施的明确推动。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/tilores-rag",
-    "keywords": [
-      "本地优先",
-      "数据解析",
-      "隐私",
-      "桌面工具"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-16",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Nubia 发布 NaviX Ultra：号称全球首款 AI Agent 智能手机",
-    "raw_summary": "ZTE 旗下品牌 Nubia 在 WAIC 2026 上发布 NaviX Ultra，宣称是全球首款 AI Agent 智能手机。该设备搭载本地 AI 代理能力，可在手机端直接运行智能体任务，无需依赖云端。与此同时，StepFun 和 Honor 也在 WAIC 上展示了各自的 AI 原生手机方案。IDC 预计 AI 智能手机将占中国市场份额过半。",
-    "source": "CGTN / Gizmochina / TheNextWeb",
-    "url": "https://news.cgtn.com/news/2026-07-17/Nubia-unveils-AI-agent-smartphone-at-WAIC-receives-SAIL-award-1OR16KFr6da/p.html",
-    "keywords": [
-      "Nubia",
-      "AI Agent 手机",
-      "NaviX Ultra",
-      "端侧AI",
-      "WAIC"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-5",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "特朗普政府开始管控前沿 AI 模型访问权限",
-    "summary": "据 CNBC 7 月 17 日报道，特朗普政府现在直接控制哪些合作伙伴可以获得 OpenAI 和 Anthropic 的前沿 AI 模型访问权限。Anthropic 的 Project Glasswing 和 OpenAI 的 Daybreak 合作伙伴名单在添加新客户前都需要获得政府明确批准。政府曾在 6 月因国家安全问题封锁了 Claude Mythos 5 和 Fable 5。",
-    "source": "CNBC / AI Weekly",
-    "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "白宫",
-      "AI监管",
-      "OpenAI",
-      "Anthropic",
-      "前沿模型",
-      "国家安全"
-    ],
-    "original_language": "en",
-    "raw_summary": "据 CNBC 7 月 17 日报道，特朗普政府现在直接控制哪些合作伙伴可以获得 OpenAI 和 Anthropic 的前沿 AI 模型访问权限。Anthropic 的 Project Glasswing 和 OpenAI 的 Daybreak 合作伙伴名单在添加新客户前都需要获得政府明确批准。政府曾在 6 月因国家安全问题封锁了 Claude Mythos 5 和 Fable 5。"
-  },
-  {
-    "id": "ait-6",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "日本投资 60 亿美元部署 27500 块英伟达 Rubin GPU 构建主权 AI 机器人基础设施",
-    "summary": "由软银、索尼、本田、NEC 和丰田旗下 Preferred Networks 领导的约 44 家公司联盟——新成立的 Noetra Corp——将部署 27500 块英伟达 Rubin GPU 和 13750 块 Vera CPU（382 个 NVL72 机架，140MW），作为日本经济产业省 FRONTia 项目的主计算层，目标是打造面向实体 AI 和机器人的主权多模态基础模型。",
-    "source": "AI Weekly / Nikkei Asia",
-    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/softbank-sony-honda-spearhead-work-on-japan-ai-with-nvidia-chips",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "日本",
-      "Noetra",
-      "英伟达 Rubin",
-      "主权AI",
-      "机器人",
-      "软银",
-      "索尼",
-      "本田"
-    ],
-    "original_language": "en",
-    "raw_summary": "由软银、索尼、本田、NEC 和丰田旗下 Preferred Networks 领导的约 44 家公司联盟——新成立的 Noetra Corp——将部署 27500 块英伟达 Rubin GPU 和 13750 块 Vera CPU（382 个 NVL72 机架，140MW），作为日本经济产业省 FRONTia 项目的主计算层，目标是打造面向实体 AI 和机器人的主权多模态基础模型。"
-  },
-  {
-    "id": "pt-27",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "River - Autonomous AI Account Executives",
-    "raw_summary": "River是自主AI销售代表，能够自动演示和关闭B2B交易。代表AI代理从辅助工具向完全替代人工职能的演进。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/river-9",
-    "keywords": [
-      "AI销售",
-      "自动化",
-      "B2B",
-      "AI代理"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-28",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Verse - Build and Hire Autonomous AI Employees",
-    "raw_summary": "Verse允许用户通过单个提示构建和雇佣自主AI员工。是7月17日AI代理集群中的核心产品之一。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/verse-6",
-    "keywords": [
-      "AI员工",
-      "自主代理",
-      "提示工程",
-      "自动化"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-29",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Traceforce (YC S26) - MCP Security Monitoring Platform",
-    "raw_summary": "Traceforce提供公司范围的AI应用安全监控（覆盖ChatGPT和Claude等设备），具有MCP数据源连接可视化和开源MCP渗透测试工具。代表了MCP协议作为安全基础设施平台化的趋势。",
-    "source": "StartupCorners / Hacker News",
-    "url": "https://news.ycombinator.com/item?id=48937020",
-    "keywords": [
-      "MCP安全",
-      "AI安全",
-      "YC",
-      "渗透测试",
-      "企业安全"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-30",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Graft AI - Living Map of Company Operations",
-    "raw_summary": "Graft AI将公司运营转化为可导航和操作的活地图，使AI代理能够理解和执行业务流程。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/graft-ai",
-    "keywords": [
-      "AI代理",
-      "业务流程",
-      "知识图谱",
-      "运营自动化"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-31",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Cito - Hybrid Academic Search for AI Agents",
-    "raw_summary": "Cito是一个混合学术搜索引擎，覆盖2.36亿篇论文，专为AI代理使用而设计。在Product Hunt上发布。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/cito",
-    "keywords": [
-      "学术研究",
-      "AI搜索",
-      "论文检索",
-      "知识图谱"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-32",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Manta AI - Autonomous Web App Testing Agent",
-    "raw_summary": "Manta AI是一个用于自主Web应用测试的AI代理，可减少手动QA工作量。代表AI代理在开发基础设施领域的应用扩展。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/manta-ai",
-    "keywords": [
-      "AI测试",
-      "自动化QA",
-      "Web应用",
-      "开发工具"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-12",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "DeepSeek 拟融资 15 亿美元筹备 IPO，年化收入近 5 亿美元",
-    "raw_summary": "据 Bloomberg 7 月 14 日报道，DeepSeek 正在准备 IPO 申请，可能于今年提交。公司正洽谈约 15 亿美元融资，估值达 710 亿美元。DeepSeek 年化经常性收入（ARR）已接近 5 亿美元。此前在 2026 年 6 月完成 74 亿人民币（约 10 亿美元）首轮外部融资。",
-    "source": "Caproasia / BlockNow",
-    "url": "https://www.caproasia.com/2026/07/17/china-ai-startup-deepseek-raised-7-4-billion-cny-50-billion-in-first-funding-round-at-52-billion-valuation-in-2026-june-deepseek-ai-model-built-with-6-million-funding-founded-in-2023-invested/",
-    "keywords": [
-      "DeepSeek",
-      "IPO",
-      "融资",
-      "梁文峰",
-      "ARR"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": true
-  },
-  {
-    "id": "st-20",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "英国航空科技公司Greenjets 3500万欧元A轮融资，获北约创新基金支持",
-    "raw_summary": "伦敦航空航天技术公司Greenjets完成3500万欧元（约4000万美元）A轮融资，由Blossom Capital领投，北约创新基金（NIF）、NSSIF、Tanglin Ventures和NSFO家庭办公室参与。Greenjets开发下一代推进系统、飞机平台和发射技术，用于国防和民用航空应用。公司计划向美国、中东和印度市场扩展，并加强其军民两用技术能力。英国国防部还授予其LEAP计划316万英镑合同，用于开发低成本无人机拦截器。",
-    "source": "EU-Startups / NATO Innovation Fund",
-    "url": "https://www.eu-startups.com/2026/07/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-july-13-july-17/",
-    "keywords": [
-      "Greenjets",
-      "航空航天",
-      "北约",
-      "A轮",
-      "3500万欧元"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-21",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "德国AI公司Prior Labs被SAP以超10亿欧元收购",
-    "raw_summary": "SAP已完成对德国前沿AI公司Prior Labs的收购，投资超10亿欧元，该公司成立仅18个月。Prior Labs专注于表格基础模型（Tabular Foundation Models, TFMs），专为结构化企业数据设计的AI类别。SAP承诺在未来四年内投入超10亿欧元，将其打造成全球领先的前沿AI实验室，并将Prior Labs技术整合到SAP的产品组合中。Prior Labs将继续作为独立实体运营。",
-    "source": "EU-Startups / SAP News Center",
-    "url": "https://www.eu-startups.com/2026/07/germanys-prior-labs-raises-e1-billion-and-exits-to-sap-18-months-after-being-founded/",
-    "keywords": [
-      "Prior Labs",
-      "SAP",
-      "收购",
-      "10亿欧元",
-      "表格基础模型"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-6",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Valar Atomics 以 60 亿美元估值洽谈 10 亿美元融资",
-    "summary": "位于加州埃尔塞贡多的核能初创公司 Valar Atomics 正在洽谈新一轮 10 亿美元股权融资，公司估值约为 60 亿美元。Valar Atomics 专注于小型模块化核反应堆（SMR）技术，旨在为 AI 数据中心和高性能计算提供清洁、稳定的基载电力。",
-    "source": "TechCrunch / The Information",
-    "url": "https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Valar Atomics",
-      "nuclear energy",
-      "SMR",
-      "Series funding",
-      "AI infrastructure"
-    ],
-    "original_language": "en",
-    "raw_summary": "位于加州埃尔塞贡多的核能初创公司 Valar Atomics 正在洽谈新一轮 10 亿美元股权融资，公司估值约为 60 亿美元。Valar Atomics 专注于小型模块化核反应堆（SMR）技术，旨在为 AI 数据中心和高性能计算提供清洁、稳定的基载电力。"
-  },
-  {
-    "id": "st-7",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "AI 初创公司一周融资 35 亿美元：10 大融资轮次深度解析",
-    "summary": "根据 Crunchbase 数据，2026 年 7 月 11 日至 7 月 17 日期间，美国 AI 初创公司在十大最大融资轮次中吸收了约 35 亿美元资金。该周融资覆盖了多个 AI 细分赛道，包括大语言模型基础设施、AI 编程工具、AI 驱动机器人、以及 AI 安全等领域。",
-    "source": "Logicity / Crunchbase",
-    "url": "https://logicity.in/en/blog/ai-startups-raised-3-5b-in-one-week-here-s-where-it-went",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "AI funding",
-      "3.5 billion",
-      "Crunchbase",
-      "top 10 rounds",
-      "venture capital"
-    ],
-    "original_language": "en",
-    "raw_summary": "根据 Crunchbase 数据，2026 年 7 月 11 日至 7 月 17 日期间，美国 AI 初创公司在十大最大融资轮次中吸收了约 35 亿美元资金。该周融资覆盖了多个 AI 细分赛道，包括大语言模型基础设施、AI 编程工具、AI 驱动机器人、以及 AI 安全等领域。"
-  },
-  {
-    "id": "ait-1",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Moonshot AI 发布 Kimi K3：首个开源 2.8 万亿参数 MoE 模型",
-    "summary": "月之暗面（Moonshot AI）于 7 月 16 日正式发布 Kimi K3，这是一个 2.8 万亿参数的混合专家（MoE）模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，原生支持视觉能力。模型拥有 100 万 token 上下文窗口，在 Terminal Bench 2.1 上得分 88.3、FrontierSWE 上 81.2、GPQA-Diamond 上 93.5、MathVision 上 94.3，相比 K2 实现约 2.5 倍的缩放效率提升。完整开源权重计划于 7 月 27 日前释放。发布后 48 小时内需求激增导致 GPU 接近容量上限，Moonshot 于 7 月 19 日宣布暂停新用户订阅。彭博社报道 Moonshot 年化经常性收入已达 3 亿美元，正准备在香港上市。",
-    "source": "AI Weekly / Bloomberg / Kimi Blog",
-    "url": "https://www.kimi.com/blog/kimi-k3",
-    "importance": 1,
-    "is_major_event": true,
-    "keywords": [
-      "Moonshot",
-      "Kimi K3",
-      "MoE",
-      "开源模型",
-      "2.8T参数",
-      "香港IPO"
-    ],
-    "original_language": "zh",
-    "raw_summary": "月之暗面（Moonshot AI）于 7 月 16 日正式发布 Kimi K3，这是一个 2.8 万亿参数的混合专家（MoE）模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，原生支持视觉能力。模型拥有 100 万 token 上下文窗口，在 Terminal Bench 2.1 上得分 88.3、FrontierSWE 上 81.2、GPQA-Diamond 上 93.5、MathVision 上 94.3，相比 K2 实现约 2.5 倍的缩放效率提升。完整开源权重计划于 7 月 27 日前释放。发布后 48 小时内需求激增导致 GPU 接近容量上限，Moonshot 于 7 月 19 日宣布暂停新用户订阅。彭博社报道 Moonshot 年化经常性收入已达 3 亿美元，正准备在香港上市。"
-  },
-  {
-    "id": "ait-17",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "微软培训销售团队以更激进方式竞争 OpenAI 和 Anthropic",
-    "raw_summary": "据 TechCrunch 7 月 16 日报道，微软正在培训其企业销售团队，以更积极的方式推销其自有 AI 模型（MAI），而非仅仅推广 OpenAI 和 Anthropic 的产品。微软要求销售人员将 AI 定位为端到端解决方案，强调效率和成本优势。此举反映了微软在 AI 领域的战略转变——虽然持有 OpenAI 大量股份且在其 Copilot 中集成 Anthropic 模型，但正试图建立自有模型的商业竞争力。",
-    "source": "TechCrunch / Crypto-Headlines / Forgeeks",
-    "url": "https://techcrunch.com/2026/07/16/microsoft-ai-sales-strategy/",
-    "keywords": [
-      "微软",
-      "MAI",
-      "销售策略",
-      "OpenAI",
-      "Anthropic",
-      "AI竞争"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-7",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "华为 Atlas 950 SuperPoD 在 WAIC 发布声称算力为英伟达 NVL144 的 6.7 倍",
-    "summary": "在上海世界人工智能大会 WAIC 7 月 16 日的开幕式上，华为公开展示了其 Atlas 950 SuperPoD 超算集群，基础配置将 1024 个昇腾芯片链接在一起，可扩展至 8192 个 NPU。该集群提供 1 EFLOPS FP8 和 2 EFLOPS FP4 算力，配备 256TB 统一内存，分布在 160 个机柜中。华为声称其算力和内存分别达到英伟达 NVL144 的 6.7 倍和 15 倍。",
-    "source": "华为中央 / AI Weekly",
-    "url": "https://www.huaweicentral.com/huawei-atlas-950-superpod/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "华为",
-      "Atlas 950",
-      "昇腾",
-      "WAIC",
-      "国产算力",
-      "EFLOPS"
-    ],
-    "original_language": "zh",
-    "raw_summary": "在上海世界人工智能大会 WAIC 7 月 16 日的开幕式上，华为公开展示了其 Atlas 950 SuperPoD 超算集群，基础配置将 1024 个昇腾芯片链接在一起，可扩展至 8192 个 NPU。该集群提供 1 EFLOPS FP8 和 2 EFLOPS FP4 算力，配备 256TB 统一内存，分布在 160 个机柜中。华为声称其算力和内存分别达到英伟达 NVL144 的 6.7 倍和 15 倍。"
-  },
-  {
-    "id": "ait-8",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "29 国在上海签署协议成立世界人工智能合作组织 WAICO",
-    "summary": "7 月 16 日，29 个国家在上海签署协议，成立世界人工智能合作组织 WAICO，这是一个独立的政府间机构，总部设在上海。创始签署国包括俄罗斯、白俄罗斯、塞尔维亚、古巴、巴西、委内瑞拉、巴基斯坦、哈萨克斯坦、印度尼西亚和老挝。习近平在 WAIC 演讲中承诺五年内为发展中国家提供 5000 个 AI 培训机会。",
-    "source": "新华社 / AI Weekly",
-    "url": "https://english.news.cn/20260716/2fb3c068a5ec4efbbeb6a88acf155175/c.html",
-    "importance": 1,
-    "is_major_event": true,
-    "keywords": [
-      "WAICO",
-      "世界人工智能合作组织",
-      "全球南方",
-      "AI治理",
-      "中国",
-      "上海",
-      "29国"
-    ],
-    "original_language": "zh",
-    "raw_summary": "7 月 16 日，29 个国家在上海签署协议，成立世界人工智能合作组织 WAICO，这是一个独立的政府间机构，总部设在上海。创始签署国包括俄罗斯、白俄罗斯、塞尔维亚、古巴、巴西、委内瑞拉、巴基斯坦、哈萨克斯坦、印度尼西亚和老挝。习近平在 WAIC 演讲中承诺五年内为发展中国家提供 5000 个 AI 培训机会。"
-  },
-  {
-    "id": "pt-33",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Gemini Notebook - Google's Renamed Research Tool",
-    "raw_summary": "Google于7月16日正式将NotebookLM更名为Gemini Notebook，使其成为更大AI家族的一部分。产品地址不变(notes.google.com)，但仍保留原有功能。新增代码执行能力和与Gemini应用的深度同步，强化了其研究工具定位。这是Google持续的品牌整合策略的又一例证。",
-    "source": "TechCrunch / Google Blog",
-    "url": "https://techcrunch.com/2026/07/16/google-continues-its-renaming-streak-by-turning-notebooklm-to-gemini-notebook/",
-    "keywords": [
-      "Google",
-      "Gemini",
-      "研究工具",
-      "NotebookLM",
-      "AI笔记"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-34",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Roblox Build - AI-Powered Game Creation Feature",
-    "raw_summary": "Roblox于7月16日宣布推出AI游戏创建功能'Build'，允许用户通过移动设备上的简单文本提示设计游戏，无需编程经验。该功能将免费基础版和付费选项同时推出。Roblox还在开发AI代理来辅助创作者进行游戏测试和分析。计划于7月28日开始测试。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
-    "keywords": [
-      "Roblox",
-      "AI游戏",
-      "游戏创建",
-      "移动端",
-      "文本生成游戏"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-35",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "DevSwat IDE - Next-Gen AI-Powered Development Environment",
-    "raw_summary": "DevSwat IDE是基于VS Code的下一代AI集成开发环境，由DevSwat Intelligence驱动。整合了124个本地工具、聊天窗口会话、终端内执行和AST/依赖分析，帮助开发者更快运行和测试代码。7月16日在Product Hunt上线。",
-    "source": "Product Hunt",
-    "url": "https://www.producthunt.com/products/resonantgenesis",
-    "keywords": [
-      "AI IDE",
-      "开发工具",
-      "VS Code",
-      "代码分析",
-      "本地工具"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-36",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "ByteDance UniVR-34B-Planning - New AI Model Release",
-    "raw_summary": "字节跳动发布UniVR-34B-Planning模型，是7月13日追踪到的最新AI模型发布之一。AI Flash Report显示2026年7月已有54个模型在过去90天内发布，平均每4天就有一个新模型问世。",
-    "source": "AI Flash Report",
-    "url": "https://aiflashreport.com/model-releases.html",
-    "keywords": [
-      "字节跳动",
-      "AI模型",
-      "规划",
-      "34B参数",
-      "开源模型"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-4",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "LM Studio Bionic：专为开源模型设计的 AI 代理应用",
-    "summary": "LM Studio 于 2026 年 7 月 16 日发布 Bionic，一款专为开源模型设计的独立 AI 代理应用。Bionic 专注于实际工作任务：提供 Code 项目（仓库级内联 diff、代理搜索）和 Work 项目（文档、PDF、幻灯片、电子表格处理）两种模式。默认本地运行，代码不会离开用户机器。",
-    "source": "LM Studio / 9to5Mac",
-    "url": "https://9to5mac.com/2026/07/16/lm-studio-expands-beyond-chat-with-bionic/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "LM Studio",
-      "Bionic",
-      "open models",
-      "AI agent",
-      "local AI"
-    ],
-    "original_language": "en",
-    "raw_summary": "LM Studio 于 2026 年 7 月 16 日发布 Bionic，一款专为开源模型设计的独立 AI 代理应用。Bionic 专注于实际工作任务：提供 Code 项目（仓库级内联 diff、代理搜索）和 Work 项目（文档、PDF、幻灯片、电子表格处理）两种模式。默认本地运行，代码不会离开用户机器。"
-  },
-  {
-    "id": "pt-7",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Roblox AI 游戏创建功能 'Build'：文字提示直接设计游戏",
-    "summary": "Roblox 于 2026 年 7 月 16 日宣布推出 AI 驱动的游戏创建功能'Build'，允许用户通过手机上的文字提示直接设计游戏，无需任何编程经验。该功能将简单的文本描述转化为基础游戏原型，大幅降低了游戏开发门槛。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature/",
-    "importance": 2,
-    "is_major_event": false,
-    "keywords": [
-      "Roblox",
-      "AI game creation",
-      "text-to-game",
-      "游戏开发",
-      "移动端AI"
-    ],
-    "original_language": "en",
-    "raw_summary": "Roblox 于 2026 年 7 月 16 日宣布推出 AI 驱动的游戏创建功能'Build'，允许用户通过手机上的文字提示直接设计游戏，无需任何编程经验。该功能将简单的文本描述转化为基础游戏原型，大幅降低了游戏开发门槛。"
-  },
-  {
-    "id": "st-19",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Sheryl Sandberg领投1000万美元，押注AI车辆检测服务",
-    "raw_summary": "前Meta首席运营官Sheryl Sandberg通过其家族办公室Sandberg Bernthal Venture Partners领投1000万美元，注入圣地亚哥AI初创公司Self Inspection。该公司利用智能手机摄像头和AI技术自动评估车辆损伤，替代传统人工检测。战略投资方包括轮胎分销商U.S. AutoForce和汽车贷款公司Westlake Financial。早期基金Costanoa Ventures、Rebellion Ventures和BrightCap Ventures也参与了本轮投资。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/07/16/sheryl-sandberg-leads-10-million-investment-in-ai-powered-vehicle-inspection-service/",
-    "keywords": [
-      "Sheryl Sandberg",
-      "Self Inspection",
-      "AI车辆检测",
-      "1000万美元"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "st-23",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "3D打印海洋防护结构公司Kind Designs 1000万美元超额认购融资",
-    "raw_summary": "迈阿密公司Kind Designs最初计划筹集500万美元，但近2000万美元的投资兴趣促使公司将融资翻倍至1000万美元。该公司利用3D打印技术制造生物友好型海洋防护结构（living seawalls），用于海岸保护和生态修复。这笔资金将用于扩大生产能力和市场拓展。",
-    "source": "VentureBeat",
-    "url": "https://venturebeat.com/business/kind-designs-closes-oversubscribed-10m-round-to-scale-3d-printed-living-seawalls",
-    "keywords": [
-      "Kind Designs",
-      "3D打印",
-      "海洋保护",
-      "1000万美元"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-3",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Fora 完成 6000 万美元 D 轮融资，达成独角兽地位",
-    "summary": "AI 驱动的旅行代理平台 Fora 于 7 月 16 日宣布完成 6000 万美元 D 轮融资，由 Forerunner 和 Tactile Ventures 领投，Insight Partners 和 Thrive Capital 跟投，公司估值达到 10 亿美元。Fora 已支持超过 15,000 名顾问，通过平台已预订超过 30 亿美元的旅行服务。",
-    "source": "TechCrunch / Travolution",
-    "url": "https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Fora",
-      "AI travel",
-      "Series D",
-      "unicorn",
-      "travel agency"
-    ],
-    "original_language": "en",
-    "raw_summary": "AI 驱动的旅行代理平台 Fora 于 7 月 16 日宣布完成 6000 万美元 D 轮融资，由 Forerunner 和 Tactile Ventures 领投，Insight Partners 和 Thrive Capital 跟投，公司估值达到 10 亿美元。Fora 已支持超过 15,000 名顾问，通过平台已预订超过 30 亿美元的旅行服务。"
-  },
-  {
-    "id": "ait-18",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "图灵奖得主 Richard Sutton 创办 Oak Lab，抨击当前 AI 方法 fundamentally broken",
-    "raw_summary": "2024 年图灵奖共同获得者、强化学习之父 Richard Sutton 于 7 月 15 日宣布离开 John Carmack 的 Keen Technologies，在多伦多创办 Oak Lab。Sutton 认为当前深度学习方法是弱且低效的，主张构建能从运行环境中持续学习的 AI 代理。Oak Lab 的目标是打造仅需 20 瓦功耗就能运行的 AI 代理，采用其提出的 OaK 架构。",
-    "source": "TechTimes / BetaKit",
-    "url": "https://www.techtimes.com/articles/320598/20260715/turing-award-winner-sutton-launches-oak-lab-calls-current-ai-fundamentally-broken.htm",
-    "keywords": [
-      "Richard Sutton",
-      "Oak Lab",
-      "强化学习",
-      "图灵奖",
-      "持续学习"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-26",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Anthropic广告翻车：墓地意象引发广泛批评",
-    "raw_summary": "Anthropic在7月中旬发布了一则名为There's Hope in Hard Questions的广告，使用燃烧房屋、监控和墓地等令人不安的意象来可视化vibe coding概念。广告引发广泛嘲笑和批评，OpenAI CEO Sam Altman甚至表示他认为这是讽刺。这是2026年最大的AI营销失误之一。Anthropic随后撤下了该广告。",
-    "source": "Eastern Herald",
-    "url": "https://easternherald.com/2026/07/15/anthropic-ai-ad-backfires-cemetery-imagery/",
-    "keywords": [
-      "Anthropic",
-      "广告",
-      "营销失误",
-      "vibe coding",
-      "Claude"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-4",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "OpenAI 发布 GPT-Red：自动化红队 LLM 将提示注入攻击成功率从 90% 降至 23%",
-    "summary": "OpenAI 在 MIT Technology Review 上披露了其内部自动化红队 LLM GPT-Red 的技术细节。该工具用于对抗性训练 GPT-5.6，使其抵御提示注入攻击。结果显示，在 GPT-5 上成功率超过 90% 的攻击在 GPT-5.6 上降至不到 23%。GPT-Red 的攻击成功率为 84%，远超人类红队测试员的 13%。GPT-Red 发现了一类之前未知的虚假思维链注入方式。",
-    "source": "MIT Technology Review",
-    "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
-    "importance": 4,
-    "is_major_event": false,
-    "keywords": [
-      "OpenAI",
-      "GPT-Red",
-      "红队测试",
-      "提示注入",
-      "AI安全",
-      "GPT-5.6"
-    ],
-    "original_language": "en",
-    "raw_summary": "OpenAI 在 MIT Technology Review 上披露了其内部自动化红队 LLM GPT-Red 的技术细节。该工具用于对抗性训练 GPT-5.6，使其抵御提示注入攻击。结果显示，在 GPT-5 上成功率超过 90% 的攻击在 GPT-5.6 上降至不到 23%。GPT-Red 的攻击成功率为 84%，远超人类红队测试员的 13%。GPT-Red 发现了一类之前未知的虚假思维链注入方式。"
-  },
-  {
-    "id": "pt-13",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Thinking Machines Inkling：Mira Murati 首款开源多模态模型",
-    "raw_summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines Lab 于 7 月 15 日发布其首款基础模型 Inkling，以开放权重形式提供给开发者微调。Inkling 具有多模态能力、高效推理和 Tinker 平台上的微调可用性。",
-    "source": "TechCrunch / Bloomberg",
-    "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
-    "keywords": [
-      "Thinking Machines",
-      "Inkling",
-      "Mira Murati",
-      "开源模型",
-      "多模态"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-37",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Postfleet - Prompt-Injection-Safe Email for AI Agents",
-    "raw_summary": "Postfleet是为AI代理设计的防提示注入邮件基础设施，使代理能够安全地发送和接收消息。解决了AI代理运营中的第二个层次问题——代理通信安全。",
-    "source": "StartupCorners / Product Hunt",
-    "url": "https://www.producthunt.com/products/postfleet",
-    "keywords": [
-      "AI代理",
-      "邮件安全",
-      "提示注入",
-      "通信基础设施"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-1",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Neko Health 完成 7 亿美元 C 轮融资，估值 70 亿美元",
-    "summary": "Spotify 联合创始人 Daniel Ek 参与的预防性健康初创公司 Neko Health 于 7 月 15 日宣布完成 7 亿美元 C 轮融资，由 Lightspeed Venture Partners 和 O.G. Venture Partners 领投，马克·扎克伯格以个人身份参与投资。Neko Health 开发 AI 驱动的全身体扫描和血液检测技术，用于早期疾病检测。",
-    "source": "TechCrunch / Artificial Intelligence News",
-    "url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Neko Health",
-      "Daniel Ek",
-      "AI health",
-      "Series C",
-      "preventive healthcare",
-      "body scanning"
-    ],
-    "original_language": "en",
-    "raw_summary": "Spotify 联合创始人 Daniel Ek 参与的预防性健康初创公司 Neko Health 于 7 月 15 日宣布完成 7 亿美元 C 轮融资，由 Lightspeed Venture Partners 和 O.G. Venture Partners 领投，马克·扎克伯格以个人身份参与投资。Neko Health 开发 AI 驱动的全身体扫描和血液检测技术，用于早期疾病检测。"
-  },
-  {
-    "id": "st-11",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Anthropic 与 Blackstone 联合推出 Ode：15 亿美元 AI 实施服务公司",
-    "raw_summary": "Anthropic、Blackstone 和 Hellman & Friedman 于 7 月 15 日正式推出 Ode with Anthropic，一家价值 15 亿美元的 AI 实施服务公司。投资方联盟包括 Goldman Sachs、General Atlantic、Sequoia Capital 等。Ode 基于 Fractional 公司打造，旨在帮助大型企业规模化部署 AI。",
-    "source": "TechCrunch / Awesome Agents",
-    "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
-    "keywords": [
-      "Anthropic",
-      "Blackstone",
-      "Ode",
-      "AI实施",
-      "企业服务"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-13",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "澳大利亚 AI 搜索初创 Marqo 完成 1250 万美元 A 轮融资",
-    "raw_summary": "澳大利亚 AI 搜索初创公司 Marqo 于 7 月中旬完成 1250 万美元 A 轮融资，由 Lightspeed Venture Partners 领投。Marqo 致力于帮助企业搜索非结构化数据，创始人曾来自 Amazon Duo 团队。公司计划将总部迁至加州旧金山。",
-    "source": "SmartCompany / MoneyControl",
-    "url": "https://www.smartcompany.com.au/startupsmart/aussie-ai-startup-marqo-raises-20-million-moves-hq-san-francisco/",
-    "keywords": [
-      "Marqo",
-      "AI搜索",
-      "A轮融资",
-      "Lightspeed",
-      "澳大利亚"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-17",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Crypto清算所Glacis Labs 680万美元种子轮融资",
-    "raw_summary": "加密基础设施公司Glacis Labs完成680万美元种子轮融资，由Lightspeed Faction领投，富兰克林邓普顿、Coinbase Ventures、A.GAIN（原IDC Ventures）、Protein Capital和Techni Ventures参与。Glacis Labs正在构建ZeroDelta——一个多链非托管加密资产清算平台，面向机构客户。该公司目前有10名分布在全球的团队。",
-    "source": "The Block",
-    "url": "https://www.theblock.co/post/408490/crypto-clearinghouse-glacis-labs-zerodelta-funding",
-    "keywords": [
-      "Glacis Labs",
-      "加密清算",
-      "种子轮",
-      "Lightspeed Faction",
-      "Coinbase Ventures"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-18",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "AI车队管理公司Proaction 420万美元种子轮融资",
-    "raw_summary": "位于爱荷华州得梅因的AI原生车队管理科技公司Proaction宣布完成420万美元融资，旨在打造商业车队管理的现代化替代方案，取代昂贵且过时的传统方法。投资方包括GTMfund、Breakers、Aviso Ventures和Iowa Wildcat Angels。该公司致力于通过AI技术优化商业车队的运营工作流程和服务管理。",
-    "source": "PRNewswire",
-    "url": "https://www.prnewswire.com/news-releases/proaction-announces-4-2m-in-funding-to-build-the-modern-alternative-to-legacy-fleet-management-services-302825608.html",
-    "keywords": [
-      "Proaction",
-      "AI车队管理",
-      "种子轮",
-      "GTMfund"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-2",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Emergent 完成 1.3 亿美元 C 轮融资，13 个月变独角兽",
-    "summary": "印度 AI 编程初创公司 Emergent 于 7 月 15 日宣布完成 1.3 亿美元 C 轮融资，由 Creaegis 领投，估值达 15 亿美元，正式成为印度 2026 年第六家独角兽企业。Emergent 成立于 2025 年初，是一家总部位于班加罗尔和旧金山的'氛围编码'平台。",
-    "source": "TechCrunch / YourStory / BeamStart",
-    "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Emergent",
-      "AI coding",
-      "unicorn",
-      "Series C",
-      "India startup",
-      "vibe coding"
-    ],
-    "original_language": "en",
-    "raw_summary": "印度 AI 编程初创公司 Emergent 于 7 月 15 日宣布完成 1.3 亿美元 C 轮融资，由 Creaegis 领投，估值达 15 亿美元，正式成为印度 2026 年第六家独角兽企业。Emergent 成立于 2025 年初，是一家总部位于班加罗尔和旧金山的'氛围编码'平台。"
-  },
-  {
-    "id": "st-22",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Greylock合伙人基金增至15亿美元，聚焦种子和A轮投资",
-    "raw_summary": "成立61年的老牌风投公司Greylock宣布完成15亿美元的第18期基金，较2023年的10亿美元增长50%，大致相当于疫情期间种子和旗舰基金的总和。尽管基金规模大幅扩大，但Greylock有意限制投资组合增长，以保持对早期阶段的Hands-on支持，重点关注种子和A轮投资及创始人伙伴关系。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/07/15/why-greylock-capped-its-new-fund-at-1-5b-when-it-says-it-could-have-raised-more/",
-    "keywords": [
-      "Greylock",
-      "15亿美元",
-      "基金",
-      "风投"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "st-5",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Oak 获 6000 万美元种子轮融资，解决 AI 代理身份混乱问题",
-    "summary": "以色列身份管理初创公司 Oak 于 7 月 15 日低调推出，宣布获得 6000 万美元种子轮融资。该公司由连续创业者 Shai Morag 联合创立，旨在解决 AI 代理激增带来的身份验证和身份管理混乱问题。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth/",
-    "importance": 2,
-    "is_major_event": false,
-    "keywords": [
-      "Oak",
-      "identity management",
-      "AI agents",
-      "seed funding",
-      "Israel startup"
-    ],
-    "original_language": "en",
-    "raw_summary": "以色列身份管理初创公司 Oak 于 7 月 15 日低调推出，宣布获得 6000 万美元种子轮融资。该公司由连续创业者 Shai Morag 联合创立，旨在解决 AI 代理激增带来的身份验证和身份管理混乱问题。"
-  },
-  {
-    "id": "ait-27",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "阶跃星辰发布全球首款AI智能体手机STEPX Neo",
-    "raw_summary": "7月13日，中国AI独角兽阶跃星辰（StepFun）在上海发布全球首款大模型原生智能体手机STEPX Neo。该设备搭载自研Step AOS智能体原生操作系统和内置AI Agent Amoo，可在离线状态下执行多步骤跨应用任务，支持预订行程、翻译32种语言等功能，无需打开具体APP。StepFun还与支付宝、美团、百度等10余家主流平台集成。该发布比OpenAI的硬件计划领先数年。",
-    "source": "TechStory/36Kr",
-    "url": "https://techstory.in/chinese-ai-startup-stepfun-launches-worlds-first-agentic-smartphone-stepx-neo-with-built-in-amoo-ai-agent/",
-    "keywords": [
-      "阶跃星辰",
-      "STEPX Neo",
-      "AI手机",
-      "Amoo",
-      "智能体"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-38",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "AnySearch - AI Search Infrastructure Tool",
-    "raw_summary": "AnySearch于7月13日登上Product Hunt周榜第一名，成为过去一年中首个打破AI代理和基础模型发布主导地位的搜索类产品。这标志着搜索基础设施类AI工具重新获得市场关注。",
-    "source": "BastillePost / Product Hunt",
-    "url": "https://www.bastillepost.com/global/article/6010006-anysearch-tops-product-hunt-weekly-leaderboard-as-ai-search-infrastructure-gains-momentum",
-    "keywords": [
-      "AI搜索",
-      "搜索基础设施",
-      "Product Hunt",
-      "周榜第一"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "st-15",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "Anthropic 和 OpenAI 秘密提交 IPO 申请，2026 年 AI 上市潮来临",
-    "raw_summary": "Anthropic 于 6 月 1 日秘密提交 S-1 招股书，估值达 9650 亿美元。OpenAI 紧随其后于 5 月 22 日秘密提交 IPO 申请，目标估值 8500 亿美元以上，预计 2026 年 9 月公开上市。加上此前已上市的 SpaceX，2026 年被彭博社称为 AI IPO 繁荣年。",
-    "source": "Decodethefuture / 24/7 Wall St",
-    "url": "https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/",
-    "keywords": [
-      "Anthropic",
-      "OpenAI",
-      "IPO",
-      "S-1",
-      "上市潮"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": true
-  },
-  {
-    "id": "st-16",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "中国机器人公司宇树科技（LimX Dynamics）2亿美元Pre-IPO融资，估值22亿美元",
-    "raw_summary": "深圳人形机器人初创公司LimX Dynamics完成近2亿美元Pre-IPO融资，估值约150亿元人民币（22亿美元），其中约70%资金来自海外投资者。投资方包括石头创投、GGG、Redstone VC、蓝思科技、IDG资本、WestSummit Capital、蔚来资本和合肥建投等。创始人张伟表示公司正准备IPO，可能在香港上市。LimX Dynamics于2022年成立，其最新演示COSA 0.5展示了完全自主的家庭家务能力，无需遥控。",
-    "source": "Caixin Global / 36氪",
-    "url": "https://www.caixinglobal.com/2026-07-14/chinese-robotics-startup-raises-200-million-102464154.html",
-    "keywords": [
-      "LimX Dynamics",
-      "人形机器人",
-      "Pre-IPO",
-      "2亿美元",
-      "宇树科技"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-4",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "DeepSeek 拟融资 15 亿美元，估值 710 亿美元，筹备 2027 年 IPO",
-    "summary": "中国 AI 大模型公司 DeepSeek 据报正在洽谈新一轮约 15 亿美元融资，估值达 710 亿美元。DeepSeek 由梁文峰于 2023 年创立，此前获得中国量化对冲基金幻方量化的单独投资。创始人梁文峰的个人财富已增至 380 亿美元。DeepSeek 计划于 2027 年完成 IPO 首秀。",
-    "source": "TechCrunch / EconoTimes / Caproasia",
-    "url": "https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/",
-    "importance": 1,
-    "is_major_event": true,
-    "keywords": [
-      "DeepSeek",
-      "China AI",
-      "IPO",
-      "Series funding",
-      "梁文峰",
-      "幻方量化"
-    ],
-    "original_language": "en",
-    "raw_summary": "中国 AI 大模型公司 DeepSeek 据报正在洽谈新一轮约 15 亿美元融资，估值达 710 亿美元。DeepSeek 由梁文峰于 2023 年创立，此前获得中国量化对冲基金幻方量化的单独投资。创始人梁文峰的个人财富已增至 380 亿美元。DeepSeek 计划于 2027 年完成 IPO 首秀。"
-  },
-  {
-    "id": "ait-28",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "阶跃星辰发布Step Edge端侧模型全家桶",
-    "raw_summary": "7月12日，阶跃星辰正式推出Step Edge端侧模型全家桶，面向手机、汽车等终端场景优化。包含四大模型：Step Edge基础模型、Step Edge Audio、Step Edge GUI和Step Edge Gen，主打超低延迟（响应速度可达0.1秒）、全模态隐私保护和原生端云协同。敏感数据可在本地处理，无需上传云端。该系列在29项核心评测指标中领先，标志着中国AI公司在端侧模型部署上的重要突破。",
-    "source": "IT之家/东方财富",
-    "url": "https://www.ithome.com/0/975/681.htm",
-    "keywords": [
-      "阶跃星辰",
-      "Step Edge",
-      "端侧模型",
-      "AI Agent",
-      "隐私保护"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-29",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "苹果起诉OpenAI：指控ChatGPT窃取硬件开发商业秘密",
-    "raw_summary": "7月10日前后，苹果公司正式起诉OpenAI，指控后者雇佣数百名前苹果员工，利用其商业秘密加速AI硬件产品开发。苹果声称OpenAI在ChatGPT硬件方向上的布局直接侵犯了苹果的技术机密。与此同时，据报道OpenAI正计划推出首款硬件产品——一款无屏幕的智能音箱，被视为与苹果HomePod竞争。这一诉讼反映了AI巨头与传统科技巨头之间日益激烈的硬件竞赛。",
-    "source": "TechCrunch/Tech Startups",
-    "url": "https://techstartups.com/2026/07/10/apple-sues-openai-accuses-chatgpt-maker-of-stealing-trade-secrets-to-build-ai-hardware/",
-    "keywords": [
-      "Apple",
-      "OpenAI",
-      "诉讼",
-      "商业秘密",
-      "AI硬件"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-39",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "WAICO - World Artificial Intelligence Cooperation Organization",
-    "raw_summary": "世界人工智能合作组织(WAICO)于2026年7月16日在上海成立。这是一个专注于人工智能的国际组织，总部设在上海。该组织的成立标志着全球AI治理和国际合作进入新阶段。",
-    "source": "Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization",
-    "keywords": [
-      "AI治理",
-      "国际合作",
-      "上海",
-      "WAICO",
-      "AI政策"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-14",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "空间 AI 初创 Augmodo 融资 2100 万美元扩展计算机视觉业务",
-    "raw_summary": "空间 AI 初创公司 Augmodo 于 7 月 13 日宣布完成 2100 万美元融资，用于增强计算机视觉和机器学习能力。Augmodo 专注于零售店的 AI 空间分析，将扩展 Beyond 零售领域处理更多行业的大规模数据。",
-    "source": "SiliconANGLE",
-    "url": "https://siliconangle.com/2026/07/13/spatial-ai-startup-augmodo-raises-21m-expand-beyond-retail-stores/",
-    "keywords": [
-      "Augmodo",
-      "空间AI",
-      "计算机视觉",
-      "融资"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-20",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "智谱 AI 发布触高两年 AGI 计划，目标 150 亿美元投入",
-    "raw_summary": "智谱 AI 创始人唐杰于 7 月 12 日发布触高两年研究计划，目标是通过四大支柱实现 AGI：长程任务执行、自主代理系统、全自动自训练模型和安全治理。该计划宣布投入 150 亿美元用于 AGI 研究。智谱的 GLM-5.2 模型已于 7 月 8 日发布。",
-    "source": "The Agent Times / Binance Square",
-    "url": "https://theagenttimes.com/articles/zhipu-ai-unveils-two-year-touch-high-plan-targeting-agi-with-b9650fa9",
-    "keywords": [
-      "智谱AI",
-      "GLM-5.2",
-      "AGI",
-      "触高计划",
-      "开源模型"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-30",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "ICML 2026杰出论文揭晓：扩散模型横扫顶级奖项",
-    "raw_summary": "7月5-7日，ICML 2026在韩国首尔COEX会展中心公布杰出论文奖。两篇扩散模型论文同时登顶，分别来自清华大学黄高团队和DeepMind经典工作。其中清华团队的论文对扩散语言模型提出了新的理论框架。会议期间还公布了最佳论文奖和最佳学生论文奖，涵盖了多模态推理、鲁棒性评估、量子神经网络等前沿方向。",
-    "source": "搜狐/ML Scientist",
-    "url": "https://www.sohu.com/a/1046351718_473283",
-    "keywords": [
-      "ICML 2026",
-      "扩散模型",
-      "杰出论文",
-      "清华大学",
-      "DeepMind"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-6",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "ChatGPT Work：持久代理工作流",
-    "summary": "OpenAI 在 2026 年 7 月推出了 ChatGPT Work，这是一个能够在项目中持续运行数小时的 AI 代理。与传统聊天界面不同，ChatGPT Work 可以长时间跟踪项目进度、自动维持上下文连续性，并在数小时内自主完成复杂的多步骤任务。",
-    "source": "Anicca / The Verge",
-    "url": "https://anicca.co.uk/blog/2026-07-11-ai-in-marketing-management/",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "ChatGPT Work",
-      "OpenAI",
-      "persistent agent",
-      "long-running",
-      "project management"
-    ],
-    "original_language": "en",
-    "raw_summary": "OpenAI 在 2026 年 7 月推出了 ChatGPT Work，这是一个能够在项目中持续运行数小时的 AI 代理。与传统聊天界面不同，ChatGPT Work 可以长时间跟踪项目进度、自动维持上下文连续性，并在数小时内自主完成复杂的多步骤任务。"
-  },
-  {
-    "id": "ait-19",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Apple 起诉 OpenAI 窃取硬件商业秘密",
-    "raw_summary": "Apple 于 7 月 10 日在加州北区联邦法院起诉 OpenAI，指控其 orchestrated 一场窃取 iPhone 制造商硬件商业秘密的阴谋。起诉涉及 400 多名前 Apple 员工，指控 OpenAI 窃取了屏幕外扬声器等硬件设计。Apple 寻求禁令阻止 OpenAI 使用其商业秘密。",
-    "source": "9to5Mac / Al Arabiya",
-    "url": "https://9to5mac.com/2026/07/13/daily-july-13-2026/",
-    "keywords": [
-      "Apple",
-      "OpenAI",
-      "诉讼",
-      "商业秘密",
-      "硬件专利"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-31",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "GPT-5.6 Sol Ultra一小时证明50年图论猜想",
-    "raw_summary": "7月10日，OpenAI宣布GPT-5.6 Sol Ultra模式在不到一小时内证明了Cycle Double Cover（循环双重覆盖）猜想——一个自1970年代起悬而未决的图论难题。该模型同时运行多达64个子智能体进行并行推理，输出了3页的证明文档。虽然证明尚未经过同行评审和形式化验证，但这一成果展示了AI在高级数学推理方面的突破性能力。这是AI辅助数学证明领域的又一里程碑。",
-    "source": "MeshLaunch/DigitalApplied",
-    "url": "https://meshlaunch.com/en/blog/2026-gpt-56-sol-ultra-cycle-double-cover-conjecture.html",
-    "keywords": [
-      "GPT-5.6",
-      "Sol Ultra",
-      "图论",
-      "Cycle Double Cover",
-      "数学证明"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-22",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Meta 发布 Muse Spark 1.1 并首次推出付费 API，标志开源战略转向",
-    "raw_summary": "Meta 于 7 月 9 日发布 Muse Spark 1.1，一个专注于编程和代理工作流的 multimodal 模型，同时推出首个付费 API。这标志着 Meta 结束了以 Llama 系列为核心的开源优先策略，首次对其 AI 模型收费。",
-    "source": "Brocker / Meta for Developers",
-    "url": "https://www.brocker.org/meta-launches-muse-spark-1-1-ai-coding-model",
-    "keywords": [
-      "Meta",
-      "Muse Spark",
-      "付费API",
-      "开源战略",
-      "编码AI"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-25",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "OpenAI 关闭浏览器项目 Atlas，重心转向持久代理",
-    "raw_summary": "据 TechCrunch 7 月 9 日报道，OpenAI 正在关闭其浏览器项目 Atlas，但该组织的 AI 浏览器战略并未终止。与此同时，OpenAI 正在推进 ChatGPT Work 等持久代理产品，将重心从浏览器转向更长的任务执行。",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/category/artificial-intelligence/",
-    "keywords": [
-      "OpenAI",
-      "Atlas",
-      "浏览器",
-      "产品调整"
-    ],
-    "original_language": "zh",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-32",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Meta发布Muse Spark 1.1：首个付费模型引爆AI价格战",
-    "raw_summary": "7月9日，Meta通过其Superintelligence Labs发布Muse Spark 1.1，这是Meta首个付费AI模型。该模型定位为coding和agentic AI领域的最强模型，在Vibe Code Bench v1.1上得分72.2，比Meta前代旗舰高出50分以上。定价极具侵略性：输入1.25美元/百万token，输出4.25美元/百万token，比Fable 5便宜10倍，比GLM-5.2 API还低。Meta AI负责人Alexandr Wang称其为非常有侵略性和吸引力的定价，直接触发AI行业新一轮价格战。",
-    "source": "CNBC/TechCrunch",
-    "url": "https://www.cnbc.com/2026/07/09/meta-jumps-into-ai-coding-market-to-chase-anthropic-and-openai.html",
-    "keywords": [
-      "Meta",
-      "Muse Spark 1.1",
-      "价格战",
-      "AI编程",
-      "Superintelligence Labs"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-33",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "OpenAI发布GPT-5.6：三档模型+自主训练子模型突破",
-    "raw_summary": "7月9日，OpenAI正式发布GPT-5.6模型家族，包含Sol、Terra、Luna三个档次。GPT-5.6 Sol Ultra在发布次日即证明了50年图论猜想。更引人注目的是，GPT-5.6 Sol在自主训练模式下独立完成了对其小型模型Luna的后训练过程——从选择GPU到配置训练参数全部自主完成，在递归自我改进（RSI）基准测试中比GPT-5.5高出16.2分。同时ChatGPT引入了广告测试功能。",
-    "source": "TechCrunch/Releasebot",
-    "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
-    "keywords": [
-      "OpenAI",
-      "GPT-5.6",
-      "Sol",
-      "自主训练",
-      "递归自我改进"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-14",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Meta Muse Image：AI 图像生成整合 consent workflow",
-    "raw_summary": "Meta 于 7 月 7 日宣布 Muse Image，一个基于 Muse Spark 基础的 AI 图像生成模型。Muse Image 支持图像编辑、多参考图像合成和迭代细化，并集成了创作者同意工作流程，确保名人形象不会被滥用。",
-    "source": "Meta News / Medianet",
-    "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
-    "keywords": [
-      "Meta",
-      "Muse Image",
-      "AI图像生成",
-      "创作者同意"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-5",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "GPT-5.6 家族 (Sol, Terra, Luna)：OpenAI 分层模型",
-    "summary": "OpenAI 于 2026 年 7 月 9 日正式向公众开放 GPT-5.6 系列模型，包括三个子型号：GPT-5.6 Sol（旗舰）、GPT-5.6 Terra（默认模型）和 GPT-5.6 Luna（轻量）。这是 OpenAI 首次采用分层定价架构，其中 Terra 作为 ChatGPT 默认模型降低了用户使用门槛。",
-    "source": "Wireread / NeuroVerdict",
-    "url": "https://wireread.com/news/gpt-5-6-family-terra-default-efficiency-analysis",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "GPT-5.6",
-      "OpenAI",
-      "Terra",
-      "Sol",
-      "Luna",
-      "agentic AI"
-    ],
-    "original_language": "en",
-    "raw_summary": "OpenAI 于 2026 年 7 月 9 日正式向公众开放 GPT-5.6 系列模型，包括三个子型号：GPT-5.6 Sol（旗舰）、GPT-5.6 Terra（默认模型）和 GPT-5.6 Luna（轻量）。这是 OpenAI 首次采用分层定价架构，其中 Terra 作为 ChatGPT 默认模型降低了用户使用门槛。"
-  },
-  {
-    "id": "ait-21",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "智谱 GLM-5.2 发布：7440 亿参数 MoE 模型以 MIT 许可证开源",
-    "raw_summary": "智谱 AI 于 7 月 8 日发布 GLM-5.2，一个 7440 亿参数的混合专家模型，每 token 激活 400 亿参数，以 MIT 许可证开源。该模型在 IDOR 漏洞检测方面超越 Claude，成本仅为前线的六分之一。GLM-5.2 原生支持 100 万 token 上下文窗口，被视为全球第一梯队的开源编码模型。",
-    "source": "LLMCheck / Logicity",
-    "url": "https://llmcheck.net/blog/state-of-open-source-local-llms-july-2026/",
-    "keywords": [
-      "GLM-5.2",
-      "智谱AI",
-      "开源模型",
-      "MIT许可证",
-      "IDOR检测"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-23",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "xAI 发布 Grok 4.5：基于 V9 架构的 Opus 级模型",
-    "raw_summary": "SpaceX xAI 于 7 月 8 日发布 Grok 4.5，Elon Musk 称之为 Opus 级 AI 模型。Grok 4.5 基于 xAI 新推出的 1.5 万亿参数 V9 基础模型构建，主打更快性能和更低 token 成本（$2/百万 token）。该模型已集成到 Cursor 和 Grok Build 中。",
-    "source": "Cursor Blog / Vals",
-    "url": "https://cursor.com/blog/grok-4-5",
-    "keywords": [
-      "xAI",
-      "Grok 4.5",
-      "V9",
-      "编程AI",
-      "价格战"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-24",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "Mistral 发布 Robostral Navigate：单目 RGB 视觉机器人导航模型",
-    "raw_summary": "法国 AI 公司 Mistral 于 7 月 8 日发布 Robostral Navigate，一个 80 亿参数的具身导航模型。该模型仅使用单个 RGB 摄像头和自然语言指令就能引导机器人在陌生环境中导航，在 R2R-CE unseen 基准上达到 76.6% 的准确率。",
-    "source": "Edge AI Vision / Bloomberg",
-    "url": "https://www.edge-ai-vision.com/2026/07/mistrals-8b-robostral-navigate-steers-robots-using-a-single-rgb-camera/",
-    "keywords": [
-      "Mistral",
-      "Robostral",
-      "具身智能",
-      "机器人导航",
-      "RGB视觉"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-34",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "xAI发布Grok 4.5：基于V9芯片的编码先锋模型",
-    "raw_summary": "7月8日，xAI（SpaceX旗下）正式发布Grok 4.5，基于全新的1.5万亿参数V9架构。该模型专注于编码、智能体任务和知识工作，已在Grok Build和Cursor中上线。Grok 4.5在6月底曾于SpaceX和Tesla内部进行私有测试。该模型暂不在欧盟地区开放。Grok 4.5的发布与OpenAI GPT-5.6和Meta Muse Spark 1.1在72小时内密集推出，压缩了前沿AI的定价空间超过60%。",
-    "source": "Vals.ai/ZenMux",
-    "url": "https://www.vals.ai/models/grok_grok-4.5",
-    "keywords": [
-      "xAI",
-      "Grok 4.5",
-      "V9",
-      "SpaceX",
-      "编码模型"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-15",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Robostral Navigate：Mistral 首款机器人导航产品",
-    "raw_summary": "Mistral 于 7 月 8 日发布 Robostral Navigate，这是一款面向机器人开发者的导航模型产品。它允许开发者将自然语言指令和单目视觉输入接入其机器人系统，实现无需 LiDAR 的自主导航。",
-    "source": "The Robotics Media",
-    "url": "https://theroboticsmedia.com/article/mistral-ai-robostral-navigate-single-rgb-embodied-navigation-july-2026",
-    "keywords": [
-      "Mistral",
-      "Robostral",
-      "机器人",
-      "导航",
-      "物理AI"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "ait-35",
-    "date": "2026-07-19",
-    "category": "ai_tech",
-    "title": "腾讯混元Hy3正式发布：295B MoE模型开源并登顶OpenRouter",
-    "raw_summary": "7月6日，腾讯混元团队正式发布Hunyuan Hy3大模型。该模型采用MoE架构，总参数295B，激活参数仅21B，支持256K上下文窗口，并以Apache 2.0协议开源。发布首周调用量增长超68倍，登顶OpenRouter周调用榜。腾讯还同期开源了1bit和4bit量化版本，可实现单卡85GB内存部署。此外，腾讯还发布了HunyuanOCR-1.5（仅1B参数的轻量化OCR模型）和Hunyuan Image 3.0（800亿参数图生图模型）。",
-    "source": "juya.uk/太平洋科技",
-    "url": "https://daily.juya.uk/markdown/2026-07-07.md",
-    "keywords": [
-      "腾讯混元",
-      "Hy3",
-      "MoE",
-      "开源",
-      "OpenRouter"
-    ],
-    "original_language": "zh",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "st-9",
-    "date": "2026-07-19",
-    "category": "startup",
-    "title": "纽约四家初创公司 7 月 7 日合计融资 1.33 亿美元",
-    "raw_summary": "2026 年 7 月 7 日，四家纽约初创公司完成融资轮，合计筹集约 1.33 亿美元。其中 Norm AI 和 M1X Global 为主要领投项目。此外，Advance 完成 425 万美元种子轮融资，专注保险行业保费支付简化。这反映了 AI 和金融科技领域持续的融资活力。",
-    "source": "Logicity",
-    "url": "https://logicity.in/en/blog/nyc-startup-funding-july-7-norm-ai-m1x-global-lead-133m",
-    "keywords": [
-      "纽约初创",
-      "Norm AI",
-      "M1X Global",
-      "融资",
-      "金融科技"
-    ],
-    "original_language": "en",
-    "importance": 1,
-    "is_major_event": false
-  },
-  {
-    "id": "pt-3",
-    "date": "2026-07-19",
-    "category": "product_tool",
-    "title": "Claude Sonnet 5：Anthropic 最具代理能力的模型",
-    "summary": "Anthropic 于 2026 年 6 月 30 日发布 Claude Sonnet 5，定位为 Sonnet 系列中最具代理能力的模型。该模型能够自主规划、使用浏览器和终端等工具，并以此前仅更大更昂贵模型才能达到的水平进行自主执行。Sonnet 5 在代码编写、推理和多步代理任务方面显著强于前代。",
-    "source": "Anthropic / TechCrunch",
-    "url": "https://www.anthropic.com/news/claude-sonnet-5",
-    "importance": 1,
-    "is_major_event": false,
-    "keywords": [
-      "Claude Sonnet 5",
-      "Anthropic",
-      "agentic AI",
-      "coding",
-      "tool use"
-    ],
-    "original_language": "en",
-    "raw_summary": "Anthropic 于 2026 年 6 月 30 日发布 Claude Sonnet 5，定位为 Sonnet 系列中最具代理能力的模型。该模型能够自主规划、使用浏览器和终端等工具，并以此前仅更大更昂贵模型才能达到的水平进行自主执行。Sonnet 5 在代码编写、推理和多步代理任务方面显著强于前代。"
   },
   {
     "id": "arxiv-2607.18230",
@@ -2426,6 +639,182 @@
       "Bernhard Schölkopf",
       "Zhijing Jin"
     ]
+  },
+  {
+    "id": "st-1004",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "李开复01.ai筹备香港IPO，目标2027年上市",
+    "raw_summary": "李开复创办的AI公司01.ai正在推进Pre-IPO轮融资，目标2027年在香港上市。公司在世界人工智能大会（上海）上透露，正在拆除红筹架构以准备港股IPO，并预计明年成为中国首家实现单季度盈利的AI 2.0公司。公司战略已从预训练转向企业级AI服务销售。",
+    "source": "Bloomberg / The Next Web",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-20/ai-pioneer-kai-fu-lee-s-startup-targets-hong-kong-ipo-next-year",
+    "keywords": [
+      "01.ai",
+      "李开复",
+      "香港IPO",
+      "Pre-IPO",
+      "红筹架构",
+      "AI盈利"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-7210004",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Sakana AI发布Fugu-Cyber：专为网络防守设计的多智能体编排模型刷新SOTA",
+    "raw_summary": "7月21日，东京AI研究公司Sakana AI正式发布Fugu-Cyber，这是其Fugu多智能体编排模型的网络防守专项更新版本。该模型在CyberGym基准测试中达到86.9%，在CTI-REALM中达到72.1%，均为当前最高水平，与GPT-5.5-Cyber等前沿专用网络安全系统相当。",
+    "source": "Sakana AI Official / explainx.ai",
+    "url": "https://sakana.ai/fugu-cyber-release/",
+    "keywords": [
+      "Sakana AI",
+      "Fugu-Cyber",
+      "multi-agent",
+      "cybersecurity",
+      "orchestration",
+      "CyberGym",
+      "CTI-REALM"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210005",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Anthropic逆转政策：Claude Fable 5正式纳入Max和Team Premium计划永久免费使用",
+    "raw_summary": "7月21日，Anthropic宣布Claude Fable 5模型从临时促销转为正式功能：Claude Max和Team Premium订阅用户可永久免费使用Fable 5，占用每周额限的50%，不再需要额外积分。此前Anthropic因GPT-5.6竞争压力多次延长Fable 5的限时免费期，此次最终确定永久集成策略。",
+    "source": "AIToolsRecap / TechTimes / TheNewStack",
+    "url": "https://aitoolsrecap.com/Blog/anthropic-fable-5-returns-max-team-premium-july-2026",
+    "keywords": [
+      "Anthropic",
+      "Claude Fable 5",
+      "subscription",
+      "pricing",
+      "AI model wars",
+      "GPT-5.6"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-1005",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "MENA地区2026上半年融资17亿美元，7月加速至7.83亿美元",
+    "raw_summary": "中东和北非（MENA）地区2026年上半年共完成242轮融资，总额17亿美元，尽管地缘政治动荡仍保持投资活力。7月首周即达到7.83亿美元（57笔交易），其中沙特AI基础设施初创公司Think获得800万美元种子前轮投资。区域AI和气候科技成为投资主力。",
+    "source": "Wamda / Arab News / Saudi Press",
+    "url": "https://www.wamda.com/2026/07/mena-startups-raise-1-7-billion-h1-2026-despite-regional-uncertainty",
+    "keywords": [
+      "MENA",
+      "中东",
+      "创业融资",
+      "Think",
+      "AI基础设施",
+      "沙特"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-1005",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "Google Gemini 3.5 Pro 再次延期：原定6月发布，7月仍未确定上线日期",
+    "raw_summary": "Google Gemini 3.5 Pro 原计划在6月发布（Google I/O 承诺），但已两次延期。截至7月17日仍未确认新发布日期。据报四名高级研究员离职加入竞争对手，且训练数据更新后性能未达内部预期。该模型定位为200万token上下文窗口和Deep Think推理模式，面向Ultra订阅用户（$250/月）。",
+    "source": "TechPillow / AwesomeAgents / FactCheckRadar",
+    "url": "https://www.techpillow.co/blog/gemini-35-pro-july-2026-deep-think-2m-context",
+    "keywords": [
+      "Google",
+      "Gemini",
+      "延期",
+      "Deep Think",
+      "AI竞争"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210006",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Anthropic CEO Dario Amodei 等五位员工捐款200万美元支持AI监管政治行动委员会",
+    "raw_summary": "据Bloomberg 7月16日报道，Anthropic CEO Dario Amodei及另外五名员工向专注于AI监管的政治行动委员会Public First捐款超过200万美元，助力中期选举中的AI安全倡导。Public First此前已收到Anthropic公司2000万美元捐赠。此举标志着AI行业高管通过政治捐款直接参与政策制定的趋势。",
+    "source": "Bloomberg / SFGate",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-16/dario-amodei-anthropic-employees-give-millions-to-regulate-ai",
+    "keywords": [
+      "Anthropic",
+      "Dario Amodei",
+      "AI监管",
+      "政治捐款",
+      "Public First"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7210007",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "Google Vids集成Gemini Omni视频生成：企业AI视频创作进入新阶段",
+    "raw_summary": "Google于7月16日宣布将多模态视频生成模型Gemini Omni集成到Google Vids中，用户可通过文字提示和参考图像创建视频，并可使用个人AI头像出镜。这是Gemini Omni自5月I/O发布后的首个大规模产品化应用。Google Vids用户一年已创建数百万视频，此次升级使其成为企业级AI视频创作平台。",
+    "source": "TechCrunch / Google Blog",
+    "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+    "keywords": [
+      "Google",
+      "Gemini Omni",
+      "Vids",
+      "AI视频",
+      "企业工具"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-7210008",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "推理基础设施初创Infinity获1500万美元种子轮融资",
+    "raw_summary": "专注于AI推理优化的初创公司Infinity完成1500万美元种子轮融资，投资方包括知名风投机构。该公司旨在降低大模型推理成本，解决AI部署中的核心瓶颈问题。随着AI应用规模化，推理成本优化成为关键赛道。",
+    "source": "TechCrunch / TechStartups",
+    "url": "https://techcrunch.com/2026/07/21/infinity-inference-funding/",
+    "keywords": [
+      "Infinity",
+      "推理优化",
+      "种子轮",
+      "AI基础设施"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-39",
+    "date": "2026-07-21",
+    "category": "ai_tech",
+    "title": "arXiv综述论文：递归自我改进AI的分类学——从有界自我完善到自主研究循环",
+    "raw_summary": "arXiv论文2607.07663系统性地分类了1250篇关于AI自我改进的研究论文，将AI自我改进分为两个主要类别：有界自我完善（bounded self-refinement）——收敛性、可评估的，已成为工业实践；以及开放式递归自我改进（RSI）——仍处于受限于 grounding 要求、坍缩动力学和算力约束的阶段。该综述为理解当前AI自我改进技术的成熟度提供了系统性框架。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.07663",
+    "keywords": [
+      "递归自我改进",
+      "RSI",
+      "arXiv",
+      "综述",
+      "AI安全",
+      "自我完善"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   },
   {
     "id": "arxiv-2607.18235",
@@ -3051,6 +1440,45 @@
     ]
   },
   {
+    "id": "st-1006",
+    "date": "2026-07-21",
+    "category": "startup",
+    "title": "推理基础设施初创Infinity获1500万美元融资",
+    "raw_summary": "AI推理基础设施公司Infinity完成1500万美元融资，估值1亿美元。投资方包括Touring Capital、Principal VC以及来自OpenAI和Anthropic的研究人员。同期Neo公司完成1亿美元融资，致力于将软件转变为自主系统以保护企业安全。",
+    "source": "TechCrunch / TechStartups",
+    "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
+    "keywords": [
+      "Infinity",
+      "AI推理",
+      "种子轮融资",
+      "Neo",
+      "自主系统"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-41",
+    "date": "2026-07-21",
+    "category": "product_tool",
+    "title": "AI法律立法进展：2026年美国各州AI立法放缓，联邦审查 looming",
+    "raw_summary": "据AI Weekly报道，截至2026年7月1日，美国各州已颁布109项AI法律和28项数据中心法律。但立法速度明显放缓——2026年至今29个州通过了AI立法，而2025年同期为39个州。这一放缓与特朗普政府的AI任务组和DOJ AI诉讼任务组对州级AI法律的联邦审查有关。各州正在等待联邦层面的明确信号。",
+    "source": "AI Weekly",
+    "url": "https://aiweekly.co/alerts/state-ai-lawmaking-slows-in-2026-as-trump-task-force-looms",
+    "keywords": [
+      "AI监管",
+      "美国",
+      "州立法",
+      "联邦审查",
+      "特朗普",
+      "DOJ"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
     "id": "arxiv-2607.18163",
     "date": "2026-07-21",
     "category": "academic_paper",
@@ -3438,42 +1866,2435 @@
     ]
   },
   {
-    "id": "st-1004",
-    "date": "2026-07-21",
-    "category": "startup",
-    "title": "李开复01.ai筹备香港IPO，目标2027年上市",
-    "raw_summary": "李开复创办的AI公司01.ai正在推进Pre-IPO轮融资，目标2027年在香港上市。公司在世界人工智能大会（上海）上透露，正在拆除红筹架构以准备港股IPO，并预计明年成为中国首家实现单季度盈利的AI 2.0公司。公司战略已从预训练转向企业级AI服务销售。",
-    "source": "Bloomberg / The Next Web",
-    "url": "https://www.bloomberg.com/news/articles/2026-07-20/ai-pioneer-kai-fu-lee-s-startup-targets-hong-kong-ipo-next-year",
+    "id": "ait-13",
+    "date": "2026-07-20",
+    "category": "ai_tech",
+    "title": "Anthropic Fable 5 取消免费试用，Max/Team Premium 永久纳入但限 50% 用量",
+    "raw_summary": "从 2026 年 7 月 20 日起，Anthropic 正式结束 Fable 5 的免费推广期。Max 和 Team Premium 订阅用户可将 Fable 5 作为永久功能使用，但每周用量限制在 50% 以内；Pro 和 Team Standard 用户完全失去免费路径，转为按使用量计费（$10/百万输入 token，$50/百万输出 token），并获得一次性 $100 额度抵扣。这一价格调整标志着 Anthropic 旗舰模型从免费推广走向全面商业化。",
+    "source": "TechTimes / Roo Beehiiv",
+    "url": "https://www.techtimes.com/articles/320905/20260718/claude-fable-5-ends-subscription-limbo-permanent-max-credits-only-pro.htm",
     "keywords": [
-      "01.ai",
-      "李开复",
-      "香港IPO",
-      "Pre-IPO",
-      "红筹架构",
-      "AI盈利"
+      "Anthropic",
+      "Fable 5",
+      "定价调整",
+      "用量限制",
+      "商业化"
     ],
     "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-11",
+    "date": "2026-07-20",
+    "category": "product_tool",
+    "title": "LiveDemo：开源的实时演示替代方案",
+    "raw_summary": "LiveDemo 作为开源替代方案在 Product Hunt 上获得关注，为开发者提供实时代码演示和交互展示能力，无需闭源平台限制。",
+    "source": "Product Hunt",
+    "url": "https://www.producthunt.com/",
+    "keywords": [
+      "LiveDemo",
+      "开源",
+      "实时演示",
+      "开发者工具"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-12",
+    "date": "2026-07-20",
+    "category": "product_tool",
+    "title": "Open Design：开源版 Anthropic Claude Design 替代品",
+    "raw_summary": "Open Design 提供开源、免费的 AI 设计工具，对标 Anthropic 的 Claude Design（基于 Opus 4.7）。Claude Design 虽曾火爆但仅限付费和云端，Open Design 让用户可以在本地运行设计代理，支持自定义模型和完全数据隐私。",
+    "source": "Open Designer",
+    "url": "https://opendesigner.io/",
+    "keywords": [
+      "Open Design",
+      "开源设计",
+      "Claude Design",
+      "本地AI",
+      "隐私"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-8",
+    "date": "2026-07-20",
+    "category": "product_tool",
+    "title": "Claude Opus 5 (预期发布)：100 万 token 超长上下文窗口",
+    "summary": "据泄露信息，Anthropic 预计于 2026 年 7 月 20-21 日发布 Claude Opus 5，作为 Opus 系列的重大升级。主要亮点包括：100 万 token 超长上下文窗口、更强的推理和编码能力。此次发布时机恰逢美国解除出口管制后 Claude Fable 5 和 Mythos 5 恢复全球访问权限。",
+    "source": "WinCentral",
+    "url": "https://thewincentral.com/claude-opus-5-leaks-july-2026-launch-1m-context-window/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Claude Opus 5",
+      "Anthropic",
+      "1M context",
+      "leak",
+      "flagship model"
+    ],
+    "original_language": "en",
+    "raw_summary": "据泄露信息，Anthropic 预计于 2026 年 7 月 20-21 日发布 Claude Opus 5，作为 Opus 系列的重大升级。主要亮点包括：100 万 token 超长上下文窗口、更强的推理和编码能力。此次发布时机恰逢美国解除出口管制后 Claude Fable 5 和 Mythos 5 恢复全球访问权限。"
+  },
+  {
+    "id": "pt-9",
+    "date": "2026-07-20",
+    "category": "product_tool",
+    "title": "Clark：自带云电脑的 AI 同事——完成任务即可下班",
+    "raw_summary": "Clark 是一款在 Product Hunt 上获得关注的 AI 代理产品，它拥有自己的云电脑环境（浏览器、终端、文件和代码），用户只需提交一个真实任务（如广泛调研、网站搭建、电子表格制作、演示文稿撰写或代码审计），关闭标签页后即可得到完成的工作成果。Clark 代表了 AI 代理从聊天界面走向持久化工作的趋势。",
+    "source": "Product Hunt",
+    "url": "https://www.producthunt.com/products/clark-agent/awards",
+    "keywords": [
+      "Clark",
+      "AI同事",
+      "云电脑",
+      "持久化代理",
+      "Product Hunt"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-4",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "OpenAI 发布 GPT-Red：自动化红队 LLM 将提示注入攻击成功率从 90% 降至 23%",
+    "summary": "OpenAI 在 MIT Technology Review 上披露了其内部自动化红队 LLM GPT-Red 的技术细节。该工具用于对抗性训练 GPT-5.6，使其抵御提示注入攻击。结果显示，在 GPT-5 上成功率超过 90% 的攻击在 GPT-5.6 上降至不到 23%。GPT-Red 的攻击成功率为 84%，远超人类红队测试员的 13%。GPT-Red 发现了一类之前未知的虚假思维链注入方式。",
+    "source": "MIT Technology Review",
+    "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/",
+    "importance": 4,
+    "is_major_event": false,
+    "keywords": [
+      "OpenAI",
+      "GPT-Red",
+      "红队测试",
+      "提示注入",
+      "AI安全",
+      "GPT-5.6"
+    ],
+    "original_language": "en",
+    "raw_summary": "OpenAI 在 MIT Technology Review 上披露了其内部自动化红队 LLM GPT-Red 的技术细节。该工具用于对抗性训练 GPT-5.6，使其抵御提示注入攻击。结果显示，在 GPT-5 上成功率超过 90% 的攻击在 GPT-5.6 上降至不到 23%。GPT-Red 的攻击成功率为 84%，远超人类红队测试员的 13%。GPT-Red 发现了一类之前未知的虚假思维链注入方式。"
+  },
+  {
+    "id": "ait-10",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "arXiv 本周十大 AI ML 论文：因果推理、多模态实体对齐、RAG 成本治理等",
+    "summary": "ArXiv TLDR 整理了 2026 年 7 月 13-19 日一周内最受关注的十大 AI/ML 论文：1) CausalDS——评估 LLM 代理因果推理能力的新基准；2) QANTA 2026 多模态 QA 代理；3) 程序流程图辅助代码生成；4) Cost-Governed RAG——多租户 LLM 系统的成本归因架构；5) PROBE——评估 LLM 代码生成的新基准。",
+    "source": "ArXiv TLDR / arXiv.org",
+    "url": "https://arxivtldr.org/weekly",
+    "importance": 2,
+    "is_major_event": false,
+    "keywords": [
+      "arXiv",
+      "因果推理",
+      "CausalDS",
+      "多模态",
+      "RAG",
+      "代码生成",
+      "强化学习"
+    ],
+    "original_language": "en",
+    "raw_summary": "ArXiv TLDR 整理了 2026 年 7 月 13-19 日一周内最受关注的十大 AI/ML 论文：1) CausalDS——评估 LLM 代理因果推理能力的新基准；2) QANTA 2026 多模态 QA 代理；3) 程序流程图辅助代码生成；4) Cost-Governed RAG——多租户 LLM 系统的成本归因架构；5) PROBE——评估 LLM 代码生成的新基准。"
+  },
+  {
+    "id": "pt-22",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Unabyss for Claude - Shared Memory Across Apps and LLMs",
+    "raw_summary": "Unabyss for Claude为Claude提供跨应用的共享记忆功能，使AI能在不同应用间保持上下文连续性。在Product Hunt获得589票，是7月AI产品中排名第10的高票产品。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/unabyss",
+    "keywords": [
+      "Claude",
+      "AI记忆",
+      "跨应用",
+      "上下文持久化"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-25",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "isvisible.ai - AI Visibility Audit Tool",
+    "raw_summary": "isvisible.ai是一个免费的AI可见性审计工具，帮助营销人员了解AI搜索引擎如何看待他们的品牌。在Product Hunt上发布。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/isvisible-ai",
+    "keywords": [
+      "AI审计",
+      "营销工具",
+      "可见性",
+      "SEO"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-33",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Gemini Notebook - Google's Renamed Research Tool",
+    "raw_summary": "Google于7月16日正式将NotebookLM更名为Gemini Notebook，使其成为更大AI家族的一部分。产品地址不变(notes.google.com)，但仍保留原有功能。新增代码执行能力和与Gemini应用的深度同步，强化了其研究工具定位。这是Google持续的品牌整合策略的又一例证。",
+    "source": "TechCrunch / Google Blog",
+    "url": "https://techcrunch.com/2026/07/16/google-continues-its-renaming-streak-by-turning-notebooklm-to-gemini-notebook/",
+    "keywords": [
+      "Google",
+      "Gemini",
+      "研究工具",
+      "NotebookLM",
+      "AI笔记"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-34",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Roblox Build - AI-Powered Game Creation Feature",
+    "raw_summary": "Roblox于7月16日宣布推出AI游戏创建功能'Build'，允许用户通过移动设备上的简单文本提示设计游戏，无需编程经验。该功能将免费基础版和付费选项同时推出。Roblox还在开发AI代理来辅助创作者进行游戏测试和分析。计划于7月28日开始测试。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
+    "keywords": [
+      "Roblox",
+      "AI游戏",
+      "游戏创建",
+      "移动端",
+      "文本生成游戏"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-7",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Roblox AI 游戏创建功能 'Build'：文字提示直接设计游戏",
+    "summary": "Roblox 于 2026 年 7 月 16 日宣布推出 AI 驱动的游戏创建功能'Build'，允许用户通过手机上的文字提示直接设计游戏，无需任何编程经验。该功能将简单的文本描述转化为基础游戏原型，大幅降低了游戏开发门槛。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature/",
+    "importance": 2,
+    "is_major_event": false,
+    "keywords": [
+      "Roblox",
+      "AI game creation",
+      "text-to-game",
+      "游戏开发",
+      "移动端AI"
+    ],
+    "original_language": "en",
+    "raw_summary": "Roblox 于 2026 年 7 月 16 日宣布推出 AI 驱动的游戏创建功能'Build'，允许用户通过手机上的文字提示直接设计游戏，无需任何编程经验。该功能将简单的文本描述转化为基础游戏原型，大幅降低了游戏开发门槛。"
+  },
+  {
+    "id": "st-19",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Sheryl Sandberg领投1000万美元，押注AI车辆检测服务",
+    "raw_summary": "前Meta首席运营官Sheryl Sandberg通过其家族办公室Sandberg Bernthal Venture Partners领投1000万美元，注入圣地亚哥AI初创公司Self Inspection。该公司利用智能手机摄像头和AI技术自动评估车辆损伤，替代传统人工检测。战略投资方包括轮胎分销商U.S. AutoForce和汽车贷款公司Westlake Financial。早期基金Costanoa Ventures、Rebellion Ventures和BrightCap Ventures也参与了本轮投资。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/16/sheryl-sandberg-leads-10-million-investment-in-ai-powered-vehicle-inspection-service/",
+    "keywords": [
+      "Sheryl Sandberg",
+      "Self Inspection",
+      "AI车辆检测",
+      "1000万美元"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "st-22",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Greylock合伙人基金增至15亿美元，聚焦种子和A轮投资",
+    "raw_summary": "成立61年的老牌风投公司Greylock宣布完成15亿美元的第18期基金，较2023年的10亿美元增长50%，大致相当于疫情期间种子和旗舰基金的总和。尽管基金规模大幅扩大，但Greylock有意限制投资组合增长，以保持对早期阶段的Hands-on支持，重点关注种子和A轮投资及创始人伙伴关系。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/15/why-greylock-capped-its-new-fund-at-1-5b-when-it-says-it-could-have-raised-more/",
+    "keywords": [
+      "Greylock",
+      "15亿美元",
+      "基金",
+      "风投"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "st-5",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Oak 获 6000 万美元种子轮融资，解决 AI 代理身份混乱问题",
+    "summary": "以色列身份管理初创公司 Oak 于 7 月 15 日低调推出，宣布获得 6000 万美元种子轮融资。该公司由连续创业者 Shai Morag 联合创立，旨在解决 AI 代理激增带来的身份验证和身份管理混乱问题。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth/",
+    "importance": 2,
+    "is_major_event": false,
+    "keywords": [
+      "Oak",
+      "identity management",
+      "AI agents",
+      "seed funding",
+      "Israel startup"
+    ],
+    "original_language": "en",
+    "raw_summary": "以色列身份管理初创公司 Oak 于 7 月 15 日低调推出，宣布获得 6000 万美元种子轮融资。该公司由连续创业者 Shai Morag 联合创立，旨在解决 AI 代理激增带来的身份验证和身份管理混乱问题。"
+  },
+  {
+    "id": "pt-38",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "AnySearch - AI Search Infrastructure Tool",
+    "raw_summary": "AnySearch于7月13日登上Product Hunt周榜第一名，成为过去一年中首个打破AI代理和基础模型发布主导地位的搜索类产品。这标志着搜索基础设施类AI工具重新获得市场关注。",
+    "source": "BastillePost / Product Hunt",
+    "url": "https://www.bastillepost.com/global/article/6010006-anysearch-tops-product-hunt-weekly-leaderboard-as-ai-search-infrastructure-gains-momentum",
+    "keywords": [
+      "AI搜索",
+      "搜索基础设施",
+      "Product Hunt",
+      "周榜第一"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-25",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "OpenAI 关闭浏览器项目 Atlas，重心转向持久代理",
+    "raw_summary": "据 TechCrunch 7 月 9 日报道，OpenAI 正在关闭其浏览器项目 Atlas，但该组织的 AI 浏览器战略并未终止。与此同时，OpenAI 正在推进 ChatGPT Work 等持久代理产品，将重心从浏览器转向更长的任务执行。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/category/artificial-intelligence/",
+    "keywords": [
+      "OpenAI",
+      "Atlas",
+      "浏览器",
+      "产品调整"
+    ],
+    "original_language": "zh",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-11",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Anthropic × Blackstone 推出 Ode：15 亿美元 AI 实施服务公司",
+    "summary": "Anthropic 与 Blackstone 联合推出 Ode，一家价值 15 亿美元的 AI 实施服务公司，旨在帮助企业部署和使用 AI 模型。这标志着 AI 模型厂商开始向下游实施服务延伸，构建更完整的 AI 价值链。",
+    "source": "TechCrunch / Bloomberg",
+    "url": "https://techcrunch.com/2026/07/19/anthropic-blackstone-ode-ai-implementation/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Anthropic",
+      "Blackstone",
+      "Ode",
+      "AI实施",
+      "企业AI"
+    ],
+    "original_language": "en",
+    "raw_summary": "Anthropic 与 Blackstone 联合推出 Ode，一家价值 15 亿美元的 AI 实施服务公司，旨在帮助企业部署和使用 AI 模型。这标志着 AI 模型厂商开始向下游实施服务延伸，构建更完整的 AI 价值链。"
+  },
+  {
+    "id": "ait-12",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Thinking Machines Inkling：Mira Murati 发布 975B 参数 MoE 开源模型",
+    "summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines 发布了 Inkling，一个 975B 参数的混合专家（MoE）开源模型。该模型在多项基准测试中表现优异，被视为挑战 OpenAI 和 Anthropic 主导地位的重要力量。",
+    "source": "TechCrunch / Bloomberg",
+    "url": "https://techcrunch.com/2026/07/19/thinking-machines-inkling-mira-murati/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Thinking Machines",
+      "Inkling",
+      "Mira Murati",
+      "MoE",
+      "开源模型",
+      "975B参数"
+    ],
+    "original_language": "en",
+    "raw_summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines 发布了 Inkling，一个 975B 参数的混合专家（MoE）开源模型。该模型在多项基准测试中表现优异，被视为挑战 OpenAI 和 Anthropic 主导地位的重要力量。"
+  },
+  {
+    "id": "ait-14",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "xAI Grok Build 被曝默认上传完整 Git 仓库及敏感密钥",
+    "raw_summary": "安全研究员 cereblab 发现 xAI 的 AI 编程助手 Grok Build CLI 版本 0.2.93 在后台以\"流量分析\"名义，静默地将整个本地 Git 仓库（含 .git 目录、未跟踪文件、完整提交历史、.env 密钥文件）上传至 xAI 的 GCS 存储桶 grok-code-session-traces。事件于 7 月 14 日登上 Hacker News 首页后，Elon Musk 承诺删除所有已上传的用户数据。7 月 17 日 xAI 将 Grok Build 开源以回应安全质疑。",
+    "source": "The Hacker News / CyberNews / CryptoBriefing",
+    "url": "https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html",
+    "keywords": [
+      "xAI",
+      "Grok Build",
+      "数据安全",
+      "Git 泄露",
+      "隐私"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-2",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Meta 与 Anthropic 洽谈百亿美元 AI 算力租赁协议",
+    "summary": "据纽约时报和多家媒体 7 月 19 日报道，Meta 与 Anthropic 正在早期谈判一项可能价值高达 100 亿美元的算力租赁协议，为期两年。该交易凸显 AI 开发所需算力的高度稀缺性。Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施，其首个 AI 数据中心超级集群 Prometheus 将于 2026 年上线。Meta 还计划从 9 月开始量产自研 AI 芯片。",
+    "source": "GuruFocus / New York Times / Reuters",
+    "url": "https://www.gurufocus.com/news/8966047/meta-meta-in-talks-with-anthropic-for-10-billion-ai-compute-agreement",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Meta",
+      "Anthropic",
+      "算力租赁",
+      "100亿美元",
+      "AI基础设施",
+      "Prometheus数据中心"
+    ],
+    "original_language": "en",
+    "raw_summary": "据纽约时报和多家媒体 7 月 19 日报道，Meta 与 Anthropic 正在早期谈判一项可能价值高达 100 亿美元的算力租赁协议，为期两年。该交易凸显 AI 开发所需算力的高度稀缺性。Meta 计划在 2026 年投入高达 1450 亿美元用于 AI 基础设施，其首个 AI 数据中心超级集群 Prometheus 将于 2026 年上线。Meta 还计划从 9 月开始量产自研 AI 芯片。"
+  },
+  {
+    "id": "ait-3",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Google DeepMind 推迟 Gemini 3.5 Pro 发布，编码性能不达标",
+    "summary": "Google DeepMind 官方确认将 Gemini 3.5 Pro 的发布日期推迟，并取消了原始的基础模型版本，转而进行更深层次的预训练周期。据 9to5Google 报道，Google 在 6 月底更新了训练数据以提升编码能力，但结果令人失望，导致进一步延期。Gemini 3.5 Pro 将拥有 200 万 token 上下文窗口，通过 Google Cloud AI 平台和 API 端点提供。",
+    "source": "9to5Google / HackerNoon",
+    "url": "https://hackernoon.com/google-delays-gemini-35-pro-to-july-17-the-strategic-play-behind-the-scrapped-base-model",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Google DeepMind",
+      "Gemini 3.5 Pro",
+      "推迟发布",
+      "编码能力",
+      "200万token"
+    ],
+    "original_language": "en",
+    "raw_summary": "Google DeepMind 官方确认将 Gemini 3.5 Pro 的发布日期推迟，并取消了原始的基础模型版本，转而进行更深层次的预训练周期。据 9to5Google 报道，Google 在 6 月底更新了训练数据以提升编码能力，但结果令人失望，导致进一步延期。Gemini 3.5 Pro 将拥有 200 万 token 上下文窗口，通过 Google Cloud AI 平台和 API 端点提供。"
+  },
+  {
+    "id": "ait-9",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Hugging Face 披露 AI 自主代理驱动的内部数据管道入侵事件",
+    "summary": "Hugging Face 披露了一起自主 AI 代理入侵事件：恶意数据集利用了两个代码执行路径——远程代码数据集加载器和数据集配置中的模板注入——在处理 worker 上执行代码，随后提升到节点访问权限并横向移动以窃取云和集群凭据。HF 使用开源 GLM 5.2 对超过 17000 个攻击事件进行了法医分析。",
+    "source": "Hugging Face Blog / AI Weekly",
+    "url": "https://huggingface.co/blog/security-incident-july-2026",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Hugging Face",
+      "数据安全",
+      "AI代理",
+      "供应链攻击",
+      "GLM 5.2",
+      "凭据泄露"
+    ],
+    "original_language": "en",
+    "raw_summary": "Hugging Face 披露了一起自主 AI 代理入侵事件：恶意数据集利用了两个代码执行路径——远程代码数据集加载器和数据集配置中的模板注入——在处理 worker 上执行代码，随后提升到节点访问权限并横向移动以窃取云和集群凭据。HF 使用开源 GLM 5.2 对超过 17000 个攻击事件进行了法医分析。"
+  },
+  {
+    "id": "pt-1",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Unabyss for Claude：MCP 原生的跨应用共享记忆层",
+    "summary": "Unabyss 是一个 MCP 原生的自更新上下文层，解决 AI 助手跨应用记忆缺失的核心痛点。它将用户的 Notion、Slack、Gmail、GitHub、LinkedIn 等 20+ 日常应用中的数据自动提取、结构化并存储为持久化上下文库。该产品于 2026 年 5 月 25 日在 Product Hunt 发布，获得 659 票登顶日榜第一。",
+    "source": "Product Hunt / GitHub PH AI Digest",
+    "url": "https://www.producthunt.com/products/unabyss",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "AI context layer",
+      "MCP",
+      "Claude",
+      "memory",
+      "productivity"
+    ],
+    "original_language": "en",
+    "raw_summary": "Unabyss 是一个 MCP 原生的自更新上下文层，解决 AI 助手跨应用记忆缺失的核心痛点。它将用户的 Notion、Slack、Gmail、GitHub、LinkedIn 等 20+ 日常应用中的数据自动提取、结构化并存储为持久化上下文库。该产品于 2026 年 5 月 25 日在 Product Hunt 发布，获得 659 票登顶日榜第一。"
+  },
+  {
+    "id": "pt-16",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "LiveDemo - Open Source Interactive Product Demos",
+    "raw_summary": "LiveDemo是一个开源的产品演示替代方案，对标Storylane、Navattic和Arcade。在Product Hunt获得311票。它帮助SaaS团队将产品展示转化为可点击的互动演示，解决获客转化瓶颈。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/livedemo",
+    "keywords": [
+      "产品演示",
+      "开源",
+      "SaaS营销",
+      "互动展示"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-17",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "AgentGrid - Unified Canvas for AI Agents",
+    "raw_summary": "AgentGrid将AI代理、终端和笔记整合到一个无限画布工作空间中，为用户提供统一的代理管理界面。在Product Hunt获得66票。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/agentgrid",
+    "keywords": [
+      "AI代理",
+      "工作空间",
+      "画布",
+      "生产力"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-18",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "DocuSmart AI - Organizational Knowledge Consolidation",
+    "raw_summary": "DocuSmart AI将分散的组织知识整合为一个统一的、可搜索的系统。在Product Hunt获得124票，解决了企业知识管理的痛点。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/docusmart-ai",
+    "keywords": [
+      "知识库",
+      "AI整理",
+      "企业工具",
+      "知识管理"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-19",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Mirage - SaaS Product to Clickable Demo in 90 Seconds",
+    "raw_summary": "Mirage可将任何SaaS产品转化为可点击的演示，仅需90秒，面向营销和销售团队。在Product Hunt获得224票。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/mirage-15",
+    "keywords": [
+      "产品演示",
+      "SaaS",
+      "营销工具",
+      "快速演示"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-2",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "BaseRT：Apple Silicon 原生 Metal 推理运行时",
+    "summary": "BaseRT 是由 BaseCompute 团队开发的面向 Apple Silicon（M4/M5）的原生 Metal 推理运行时，专为大规模语言模型优化。据官方博客声称，BaseRT 比 llama.cpp 快约 6.4 倍、比 MLX 快约 3.9 倍。该项目同时发布了学术论文（arXiv: 2607.00501）。",
+    "source": "Best of Product Hunt / arXiv",
+    "url": "https://bestofproducthunt.wordpress.com/2026/07/19/basert-apple-m5-optimized/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Apple Silicon",
+      "Metal",
+      "LLM inference",
+      "local AI",
+      "benchmark"
+    ],
+    "original_language": "en",
+    "raw_summary": "BaseRT 是由 BaseCompute 团队开发的面向 Apple Silicon（M4/M5）的原生 Metal 推理运行时，专为大规模语言模型优化。据官方博客声称，BaseRT 比 llama.cpp 快约 6.4 倍、比 MLX 快约 3.9 倍。该项目同时发布了学术论文（arXiv: 2607.00501）。"
+  },
+  {
+    "id": "pt-20",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "OpenMarkdown - Collaborative Markdown Editor for Human and AI",
+    "raw_summary": "OpenMarkdown是一个专为人类与AI代理协作编辑设计的Markdown编辑器。在Product Hunt获得196票。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/openmarkdown",
+    "keywords": [
+      "Markdown",
+      "AI协作",
+      "文档编辑",
+      "开发者工具"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-8",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Nous Research 完成至少 7500 万美元融资，Robot Ventures 领投",
+    "raw_summary": "开源 AI 代理项目 Hermes 背后的创业公司 Nous Research 完成了至少 7500 万美元的新融资轮，由 Robot Ventures 领投，Union Square Ventures（USV）等跟投。Nous Research 以其开源 AI 代理框架 Hermes 在开发者社区积累了广泛影响力，此次融资将进一步推动其代理生态建设。",
+    "source": "HTX / Robot Ventures",
+    "url": "https://www.htx.com/ru-ru/feed/news/1581666/",
+    "keywords": [
+      "Nous Research",
+      "Hermes",
+      "AI代理",
+      "Robot Ventures",
+      "USV",
+      "融资"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-15",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "WAIC 2026 闭幕：具身智能成最大亮点，四足/人形机器人集体亮相",
+    "raw_summary": "为期四天的 2026 世界人工智能大会（WAIC）于 7 月 20 日在上海闭幕。本届大会吸引 1100+ 企业参展、3000+ AI 产品展出、1400+ 国际嘉宾。具身智能（Embodied AI）成为最大焦点——AGIBOT 发布四款机器人（A3 Ultra 人形、X2 Edu 教育、G2 Max 工业、OmniHand 3 Ultra-M 机械手），JAKA 展示全栈具身智能方案，后摩智能携 M50 Inside 终端推动端侧 AI 落地。大会期间还展示了能做饭、打乒乓球的社交机器人。",
+    "source": "ScienceDaily / TechTimes / LinkedIn JAKA",
+    "url": "https://www.stdaily.com/web/English/2026-07/18/content_549536.html",
+    "keywords": [
+      "WAIC",
+      "具身智能",
+      "机器人",
+      "AGIBOT",
+      "JAKA",
+      "端侧AI"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-10",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "ZooData：AI 代理的数据层——Web 到 JSON 与商业智能",
+    "raw_summary": "ZooData 于 7 月 18 日在 Product Hunt 发布并获\"日榜之星\"，定位为 AI 代理的数据层。它提供 Web 到 JSON 的结构化数据提取和商业智能功能，解决了 AI 代理在实际工作中缺乏可靠数据源的核心痛点。",
+    "source": "Product Hunt / AIToolly",
+    "url": "https://aitoolly.com/producthunt-daily/2026-07-18",
+    "keywords": [
+      "ZooData",
+      "AI代理",
+      "数据层",
+      "Web到JSON",
+      "商业智能"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-21",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Kimi K3 - World's First Open 3T-Class AI Model",
+    "raw_summary": "Kimi K3是全球首个开放的3万亿参数级AI模型，由月之暗面(Moonshot AI)于7月16日发布。该产品面向开发者和研究人员，在Product Hunt获得436票，排名当月AI产品第24位。Kimi K3支持100万token上下文窗口，在编码、知识和视觉推理方面具有强大能力，标志着开源前沿模型正在快速缩小与闭源系统的差距。",
+    "source": "StartupCorners / Product Hunt / BBC",
+    "url": "https://www.producthunt.com/products/kimi-ai-assistant",
+    "keywords": [
+      "大语言模型",
+      "开源模型",
+      "3T参数",
+      "月之暗面",
+      "AI前沿"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-23",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "WizeMe.APP - Private AI Memory Layer",
+    "raw_summary": "WizeMe.APP是一个私人的AI记忆层，旨在支持更清晰的个人决策和执行力。代表AI记忆成为核心竞争层的趋势。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/wizeme-app-personal-life-partner-os",
+    "keywords": [
+      "AI记忆",
+      "个人隐私",
+      "决策辅助",
+      "个人AI"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-24",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Aye - Teachable AI Intern for Browser Tasks",
+    "raw_summary": "Aye是一个可教学的AI实习生，能在不离开浏览器工作流的情况下处理日常网页任务。在Product Hunt上发布。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/aye-browser",
+    "keywords": [
+      "AI实习生",
+      "浏览器自动化",
+      "网页任务",
+      "无代码"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-26",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Tilores Studio - Local-First Desktop Entity Resolution",
+    "raw_summary": "Tilores Studio在本地桌面运行实体解析，无需云端依赖或注册。代表了对本地优先和数据主权基础设施的明确推动。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/tilores-rag",
+    "keywords": [
+      "本地优先",
+      "数据解析",
+      "隐私",
+      "桌面工具"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-16",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Nubia 发布 NaviX Ultra：号称全球首款 AI Agent 智能手机",
+    "raw_summary": "ZTE 旗下品牌 Nubia 在 WAIC 2026 上发布 NaviX Ultra，宣称是全球首款 AI Agent 智能手机。该设备搭载本地 AI 代理能力，可在手机端直接运行智能体任务，无需依赖云端。与此同时，StepFun 和 Honor 也在 WAIC 上展示了各自的 AI 原生手机方案。IDC 预计 AI 智能手机将占中国市场份额过半。",
+    "source": "CGTN / Gizmochina / TheNextWeb",
+    "url": "https://news.cgtn.com/news/2026-07-17/Nubia-unveils-AI-agent-smartphone-at-WAIC-receives-SAIL-award-1OR16KFr6da/p.html",
+    "keywords": [
+      "Nubia",
+      "AI Agent 手机",
+      "NaviX Ultra",
+      "端侧AI",
+      "WAIC"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-5",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "特朗普政府开始管控前沿 AI 模型访问权限",
+    "summary": "据 CNBC 7 月 17 日报道，特朗普政府现在直接控制哪些合作伙伴可以获得 OpenAI 和 Anthropic 的前沿 AI 模型访问权限。Anthropic 的 Project Glasswing 和 OpenAI 的 Daybreak 合作伙伴名单在添加新客户前都需要获得政府明确批准。政府曾在 6 月因国家安全问题封锁了 Claude Mythos 5 和 Fable 5。",
+    "source": "CNBC / AI Weekly",
+    "url": "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "白宫",
+      "AI监管",
+      "OpenAI",
+      "Anthropic",
+      "前沿模型",
+      "国家安全"
+    ],
+    "original_language": "en",
+    "raw_summary": "据 CNBC 7 月 17 日报道，特朗普政府现在直接控制哪些合作伙伴可以获得 OpenAI 和 Anthropic 的前沿 AI 模型访问权限。Anthropic 的 Project Glasswing 和 OpenAI 的 Daybreak 合作伙伴名单在添加新客户前都需要获得政府明确批准。政府曾在 6 月因国家安全问题封锁了 Claude Mythos 5 和 Fable 5。"
+  },
+  {
+    "id": "ait-6",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "日本投资 60 亿美元部署 27500 块英伟达 Rubin GPU 构建主权 AI 机器人基础设施",
+    "summary": "由软银、索尼、本田、NEC 和丰田旗下 Preferred Networks 领导的约 44 家公司联盟——新成立的 Noetra Corp——将部署 27500 块英伟达 Rubin GPU 和 13750 块 Vera CPU（382 个 NVL72 机架，140MW），作为日本经济产业省 FRONTia 项目的主计算层，目标是打造面向实体 AI 和机器人的主权多模态基础模型。",
+    "source": "AI Weekly / Nikkei Asia",
+    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/softbank-sony-honda-spearhead-work-on-japan-ai-with-nvidia-chips",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "日本",
+      "Noetra",
+      "英伟达 Rubin",
+      "主权AI",
+      "机器人",
+      "软银",
+      "索尼",
+      "本田"
+    ],
+    "original_language": "en",
+    "raw_summary": "由软银、索尼、本田、NEC 和丰田旗下 Preferred Networks 领导的约 44 家公司联盟——新成立的 Noetra Corp——将部署 27500 块英伟达 Rubin GPU 和 13750 块 Vera CPU（382 个 NVL72 机架，140MW），作为日本经济产业省 FRONTia 项目的主计算层，目标是打造面向实体 AI 和机器人的主权多模态基础模型。"
+  },
+  {
+    "id": "pt-27",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "River - Autonomous AI Account Executives",
+    "raw_summary": "River是自主AI销售代表，能够自动演示和关闭B2B交易。代表AI代理从辅助工具向完全替代人工职能的演进。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/river-9",
+    "keywords": [
+      "AI销售",
+      "自动化",
+      "B2B",
+      "AI代理"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-28",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Verse - Build and Hire Autonomous AI Employees",
+    "raw_summary": "Verse允许用户通过单个提示构建和雇佣自主AI员工。是7月17日AI代理集群中的核心产品之一。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/verse-6",
+    "keywords": [
+      "AI员工",
+      "自主代理",
+      "提示工程",
+      "自动化"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-29",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Traceforce (YC S26) - MCP Security Monitoring Platform",
+    "raw_summary": "Traceforce提供公司范围的AI应用安全监控（覆盖ChatGPT和Claude等设备），具有MCP数据源连接可视化和开源MCP渗透测试工具。代表了MCP协议作为安全基础设施平台化的趋势。",
+    "source": "StartupCorners / Hacker News",
+    "url": "https://news.ycombinator.com/item?id=48937020",
+    "keywords": [
+      "MCP安全",
+      "AI安全",
+      "YC",
+      "渗透测试",
+      "企业安全"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-30",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Graft AI - Living Map of Company Operations",
+    "raw_summary": "Graft AI将公司运营转化为可导航和操作的活地图，使AI代理能够理解和执行业务流程。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/graft-ai",
+    "keywords": [
+      "AI代理",
+      "业务流程",
+      "知识图谱",
+      "运营自动化"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-31",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Cito - Hybrid Academic Search for AI Agents",
+    "raw_summary": "Cito是一个混合学术搜索引擎，覆盖2.36亿篇论文，专为AI代理使用而设计。在Product Hunt上发布。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/cito",
+    "keywords": [
+      "学术研究",
+      "AI搜索",
+      "论文检索",
+      "知识图谱"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-32",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Manta AI - Autonomous Web App Testing Agent",
+    "raw_summary": "Manta AI是一个用于自主Web应用测试的AI代理，可减少手动QA工作量。代表AI代理在开发基础设施领域的应用扩展。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/manta-ai",
+    "keywords": [
+      "AI测试",
+      "自动化QA",
+      "Web应用",
+      "开发工具"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-12",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "DeepSeek 拟融资 15 亿美元筹备 IPO，年化收入近 5 亿美元",
+    "raw_summary": "据 Bloomberg 7 月 14 日报道，DeepSeek 正在准备 IPO 申请，可能于今年提交。公司正洽谈约 15 亿美元融资，估值达 710 亿美元。DeepSeek 年化经常性收入（ARR）已接近 5 亿美元。此前在 2026 年 6 月完成 74 亿人民币（约 10 亿美元）首轮外部融资。",
+    "source": "Caproasia / BlockNow",
+    "url": "https://www.caproasia.com/2026/07/17/china-ai-startup-deepseek-raised-7-4-billion-cny-50-billion-in-first-funding-round-at-52-billion-valuation-in-2026-june-deepseek-ai-model-built-with-6-million-funding-founded-in-2023-invested/",
+    "keywords": [
+      "DeepSeek",
+      "IPO",
+      "融资",
+      "梁文峰",
+      "ARR"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": true
+  },
+  {
+    "id": "st-20",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "英国航空科技公司Greenjets 3500万欧元A轮融资，获北约创新基金支持",
+    "raw_summary": "伦敦航空航天技术公司Greenjets完成3500万欧元（约4000万美元）A轮融资，由Blossom Capital领投，北约创新基金（NIF）、NSSIF、Tanglin Ventures和NSFO家庭办公室参与。Greenjets开发下一代推进系统、飞机平台和发射技术，用于国防和民用航空应用。公司计划向美国、中东和印度市场扩展，并加强其军民两用技术能力。英国国防部还授予其LEAP计划316万英镑合同，用于开发低成本无人机拦截器。",
+    "source": "EU-Startups / NATO Innovation Fund",
+    "url": "https://www.eu-startups.com/2026/07/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-july-13-july-17/",
+    "keywords": [
+      "Greenjets",
+      "航空航天",
+      "北约",
+      "A轮",
+      "3500万欧元"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-21",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "德国AI公司Prior Labs被SAP以超10亿欧元收购",
+    "raw_summary": "SAP已完成对德国前沿AI公司Prior Labs的收购，投资超10亿欧元，该公司成立仅18个月。Prior Labs专注于表格基础模型（Tabular Foundation Models, TFMs），专为结构化企业数据设计的AI类别。SAP承诺在未来四年内投入超10亿欧元，将其打造成全球领先的前沿AI实验室，并将Prior Labs技术整合到SAP的产品组合中。Prior Labs将继续作为独立实体运营。",
+    "source": "EU-Startups / SAP News Center",
+    "url": "https://www.eu-startups.com/2026/07/germanys-prior-labs-raises-e1-billion-and-exits-to-sap-18-months-after-being-founded/",
+    "keywords": [
+      "Prior Labs",
+      "SAP",
+      "收购",
+      "10亿欧元",
+      "表格基础模型"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-6",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Valar Atomics 以 60 亿美元估值洽谈 10 亿美元融资",
+    "summary": "位于加州埃尔塞贡多的核能初创公司 Valar Atomics 正在洽谈新一轮 10 亿美元股权融资，公司估值约为 60 亿美元。Valar Atomics 专注于小型模块化核反应堆（SMR）技术，旨在为 AI 数据中心和高性能计算提供清洁、稳定的基载电力。",
+    "source": "TechCrunch / The Information",
+    "url": "https://techcrunch.com/2026/07/17/nuclear-startup-valar-atomics-in-talks-to-raise-new-funding-at-6b-valuation/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Valar Atomics",
+      "nuclear energy",
+      "SMR",
+      "Series funding",
+      "AI infrastructure"
+    ],
+    "original_language": "en",
+    "raw_summary": "位于加州埃尔塞贡多的核能初创公司 Valar Atomics 正在洽谈新一轮 10 亿美元股权融资，公司估值约为 60 亿美元。Valar Atomics 专注于小型模块化核反应堆（SMR）技术，旨在为 AI 数据中心和高性能计算提供清洁、稳定的基载电力。"
+  },
+  {
+    "id": "st-7",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "AI 初创公司一周融资 35 亿美元：10 大融资轮次深度解析",
+    "summary": "根据 Crunchbase 数据，2026 年 7 月 11 日至 7 月 17 日期间，美国 AI 初创公司在十大最大融资轮次中吸收了约 35 亿美元资金。该周融资覆盖了多个 AI 细分赛道，包括大语言模型基础设施、AI 编程工具、AI 驱动机器人、以及 AI 安全等领域。",
+    "source": "Logicity / Crunchbase",
+    "url": "https://logicity.in/en/blog/ai-startups-raised-3-5b-in-one-week-here-s-where-it-went",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "AI funding",
+      "3.5 billion",
+      "Crunchbase",
+      "top 10 rounds",
+      "venture capital"
+    ],
+    "original_language": "en",
+    "raw_summary": "根据 Crunchbase 数据，2026 年 7 月 11 日至 7 月 17 日期间，美国 AI 初创公司在十大最大融资轮次中吸收了约 35 亿美元资金。该周融资覆盖了多个 AI 细分赛道，包括大语言模型基础设施、AI 编程工具、AI 驱动机器人、以及 AI 安全等领域。"
+  },
+  {
+    "id": "ait-1",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Moonshot AI 发布 Kimi K3：首个开源 2.8 万亿参数 MoE 模型",
+    "summary": "月之暗面（Moonshot AI）于 7 月 16 日正式发布 Kimi K3，这是一个 2.8 万亿参数的混合专家（MoE）模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，原生支持视觉能力。模型拥有 100 万 token 上下文窗口，在 Terminal Bench 2.1 上得分 88.3、FrontierSWE 上 81.2、GPQA-Diamond 上 93.5、MathVision 上 94.3，相比 K2 实现约 2.5 倍的缩放效率提升。完整开源权重计划于 7 月 27 日前释放。发布后 48 小时内需求激增导致 GPU 接近容量上限，Moonshot 于 7 月 19 日宣布暂停新用户订阅。彭博社报道 Moonshot 年化经常性收入已达 3 亿美元，正准备在香港上市。",
+    "source": "AI Weekly / Bloomberg / Kimi Blog",
+    "url": "https://www.kimi.com/blog/kimi-k3",
+    "importance": 1,
+    "is_major_event": true,
+    "keywords": [
+      "Moonshot",
+      "Kimi K3",
+      "MoE",
+      "开源模型",
+      "2.8T参数",
+      "香港IPO"
+    ],
+    "original_language": "zh",
+    "raw_summary": "月之暗面（Moonshot AI）于 7 月 16 日正式发布 Kimi K3，这是一个 2.8 万亿参数的混合专家（MoE）模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，原生支持视觉能力。模型拥有 100 万 token 上下文窗口，在 Terminal Bench 2.1 上得分 88.3、FrontierSWE 上 81.2、GPQA-Diamond 上 93.5、MathVision 上 94.3，相比 K2 实现约 2.5 倍的缩放效率提升。完整开源权重计划于 7 月 27 日前释放。发布后 48 小时内需求激增导致 GPU 接近容量上限，Moonshot 于 7 月 19 日宣布暂停新用户订阅。彭博社报道 Moonshot 年化经常性收入已达 3 亿美元，正准备在香港上市。"
+  },
+  {
+    "id": "ait-17",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "微软培训销售团队以更激进方式竞争 OpenAI 和 Anthropic",
+    "raw_summary": "据 TechCrunch 7 月 16 日报道，微软正在培训其企业销售团队，以更积极的方式推销其自有 AI 模型（MAI），而非仅仅推广 OpenAI 和 Anthropic 的产品。微软要求销售人员将 AI 定位为端到端解决方案，强调效率和成本优势。此举反映了微软在 AI 领域的战略转变——虽然持有 OpenAI 大量股份且在其 Copilot 中集成 Anthropic 模型，但正试图建立自有模型的商业竞争力。",
+    "source": "TechCrunch / Crypto-Headlines / Forgeeks",
+    "url": "https://techcrunch.com/2026/07/16/microsoft-ai-sales-strategy/",
+    "keywords": [
+      "微软",
+      "MAI",
+      "销售策略",
+      "OpenAI",
+      "Anthropic",
+      "AI竞争"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-7",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "华为 Atlas 950 SuperPoD 在 WAIC 发布声称算力为英伟达 NVL144 的 6.7 倍",
+    "summary": "在上海世界人工智能大会 WAIC 7 月 16 日的开幕式上，华为公开展示了其 Atlas 950 SuperPoD 超算集群，基础配置将 1024 个昇腾芯片链接在一起，可扩展至 8192 个 NPU。该集群提供 1 EFLOPS FP8 和 2 EFLOPS FP4 算力，配备 256TB 统一内存，分布在 160 个机柜中。华为声称其算力和内存分别达到英伟达 NVL144 的 6.7 倍和 15 倍。",
+    "source": "华为中央 / AI Weekly",
+    "url": "https://www.huaweicentral.com/huawei-atlas-950-superpod/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "华为",
+      "Atlas 950",
+      "昇腾",
+      "WAIC",
+      "国产算力",
+      "EFLOPS"
+    ],
+    "original_language": "zh",
+    "raw_summary": "在上海世界人工智能大会 WAIC 7 月 16 日的开幕式上，华为公开展示了其 Atlas 950 SuperPoD 超算集群，基础配置将 1024 个昇腾芯片链接在一起，可扩展至 8192 个 NPU。该集群提供 1 EFLOPS FP8 和 2 EFLOPS FP4 算力，配备 256TB 统一内存，分布在 160 个机柜中。华为声称其算力和内存分别达到英伟达 NVL144 的 6.7 倍和 15 倍。"
+  },
+  {
+    "id": "ait-8",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "29 国在上海签署协议成立世界人工智能合作组织 WAICO",
+    "summary": "7 月 16 日，29 个国家在上海签署协议，成立世界人工智能合作组织 WAICO，这是一个独立的政府间机构，总部设在上海。创始签署国包括俄罗斯、白俄罗斯、塞尔维亚、古巴、巴西、委内瑞拉、巴基斯坦、哈萨克斯坦、印度尼西亚和老挝。习近平在 WAIC 演讲中承诺五年内为发展中国家提供 5000 个 AI 培训机会。",
+    "source": "新华社 / AI Weekly",
+    "url": "https://english.news.cn/20260716/2fb3c068a5ec4efbbeb6a88acf155175/c.html",
+    "importance": 1,
+    "is_major_event": true,
+    "keywords": [
+      "WAICO",
+      "世界人工智能合作组织",
+      "全球南方",
+      "AI治理",
+      "中国",
+      "上海",
+      "29国"
+    ],
+    "original_language": "zh",
+    "raw_summary": "7 月 16 日，29 个国家在上海签署协议，成立世界人工智能合作组织 WAICO，这是一个独立的政府间机构，总部设在上海。创始签署国包括俄罗斯、白俄罗斯、塞尔维亚、古巴、巴西、委内瑞拉、巴基斯坦、哈萨克斯坦、印度尼西亚和老挝。习近平在 WAIC 演讲中承诺五年内为发展中国家提供 5000 个 AI 培训机会。"
+  },
+  {
+    "id": "pt-35",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "DevSwat IDE - Next-Gen AI-Powered Development Environment",
+    "raw_summary": "DevSwat IDE是基于VS Code的下一代AI集成开发环境，由DevSwat Intelligence驱动。整合了124个本地工具、聊天窗口会话、终端内执行和AST/依赖分析，帮助开发者更快运行和测试代码。7月16日在Product Hunt上线。",
+    "source": "Product Hunt",
+    "url": "https://www.producthunt.com/products/resonantgenesis",
+    "keywords": [
+      "AI IDE",
+      "开发工具",
+      "VS Code",
+      "代码分析",
+      "本地工具"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-36",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "ByteDance UniVR-34B-Planning - New AI Model Release",
+    "raw_summary": "字节跳动发布UniVR-34B-Planning模型，是7月13日追踪到的最新AI模型发布之一。AI Flash Report显示2026年7月已有54个模型在过去90天内发布，平均每4天就有一个新模型问世。",
+    "source": "AI Flash Report",
+    "url": "https://aiflashreport.com/model-releases.html",
+    "keywords": [
+      "字节跳动",
+      "AI模型",
+      "规划",
+      "34B参数",
+      "开源模型"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-4",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "LM Studio Bionic：专为开源模型设计的 AI 代理应用",
+    "summary": "LM Studio 于 2026 年 7 月 16 日发布 Bionic，一款专为开源模型设计的独立 AI 代理应用。Bionic 专注于实际工作任务：提供 Code 项目（仓库级内联 diff、代理搜索）和 Work 项目（文档、PDF、幻灯片、电子表格处理）两种模式。默认本地运行，代码不会离开用户机器。",
+    "source": "LM Studio / 9to5Mac",
+    "url": "https://9to5mac.com/2026/07/16/lm-studio-expands-beyond-chat-with-bionic/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "LM Studio",
+      "Bionic",
+      "open models",
+      "AI agent",
+      "local AI"
+    ],
+    "original_language": "en",
+    "raw_summary": "LM Studio 于 2026 年 7 月 16 日发布 Bionic，一款专为开源模型设计的独立 AI 代理应用。Bionic 专注于实际工作任务：提供 Code 项目（仓库级内联 diff、代理搜索）和 Work 项目（文档、PDF、幻灯片、电子表格处理）两种模式。默认本地运行，代码不会离开用户机器。"
+  },
+  {
+    "id": "st-23",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "3D打印海洋防护结构公司Kind Designs 1000万美元超额认购融资",
+    "raw_summary": "迈阿密公司Kind Designs最初计划筹集500万美元，但近2000万美元的投资兴趣促使公司将融资翻倍至1000万美元。该公司利用3D打印技术制造生物友好型海洋防护结构（living seawalls），用于海岸保护和生态修复。这笔资金将用于扩大生产能力和市场拓展。",
+    "source": "VentureBeat",
+    "url": "https://venturebeat.com/business/kind-designs-closes-oversubscribed-10m-round-to-scale-3d-printed-living-seawalls",
+    "keywords": [
+      "Kind Designs",
+      "3D打印",
+      "海洋保护",
+      "1000万美元"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-3",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Fora 完成 6000 万美元 D 轮融资，达成独角兽地位",
+    "summary": "AI 驱动的旅行代理平台 Fora 于 7 月 16 日宣布完成 6000 万美元 D 轮融资，由 Forerunner 和 Tactile Ventures 领投，Insight Partners 和 Thrive Capital 跟投，公司估值达到 10 亿美元。Fora 已支持超过 15,000 名顾问，通过平台已预订超过 30 亿美元的旅行服务。",
+    "source": "TechCrunch / Travolution",
+    "url": "https://techcrunch.com/2026/07/16/ai-powered-travel-agency-fora-hits-unicorn-status-raises-60m/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Fora",
+      "AI travel",
+      "Series D",
+      "unicorn",
+      "travel agency"
+    ],
+    "original_language": "en",
+    "raw_summary": "AI 驱动的旅行代理平台 Fora 于 7 月 16 日宣布完成 6000 万美元 D 轮融资，由 Forerunner 和 Tactile Ventures 领投，Insight Partners 和 Thrive Capital 跟投，公司估值达到 10 亿美元。Fora 已支持超过 15,000 名顾问，通过平台已预订超过 30 亿美元的旅行服务。"
+  },
+  {
+    "id": "ait-18",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "图灵奖得主 Richard Sutton 创办 Oak Lab，抨击当前 AI 方法 fundamentally broken",
+    "raw_summary": "2024 年图灵奖共同获得者、强化学习之父 Richard Sutton 于 7 月 15 日宣布离开 John Carmack 的 Keen Technologies，在多伦多创办 Oak Lab。Sutton 认为当前深度学习方法是弱且低效的，主张构建能从运行环境中持续学习的 AI 代理。Oak Lab 的目标是打造仅需 20 瓦功耗就能运行的 AI 代理，采用其提出的 OaK 架构。",
+    "source": "TechTimes / BetaKit",
+    "url": "https://www.techtimes.com/articles/320598/20260715/turing-award-winner-sutton-launches-oak-lab-calls-current-ai-fundamentally-broken.htm",
+    "keywords": [
+      "Richard Sutton",
+      "Oak Lab",
+      "强化学习",
+      "图灵奖",
+      "持续学习"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-26",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Anthropic广告翻车：墓地意象引发广泛批评",
+    "raw_summary": "Anthropic在7月中旬发布了一则名为There's Hope in Hard Questions的广告，使用燃烧房屋、监控和墓地等令人不安的意象来可视化vibe coding概念。广告引发广泛嘲笑和批评，OpenAI CEO Sam Altman甚至表示他认为这是讽刺。这是2026年最大的AI营销失误之一。Anthropic随后撤下了该广告。",
+    "source": "Eastern Herald",
+    "url": "https://easternherald.com/2026/07/15/anthropic-ai-ad-backfires-cemetery-imagery/",
+    "keywords": [
+      "Anthropic",
+      "广告",
+      "营销失误",
+      "vibe coding",
+      "Claude"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-13",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Thinking Machines Inkling：Mira Murati 首款开源多模态模型",
+    "raw_summary": "OpenAI 前 CTO Mira Murati 创办的 Thinking Machines Lab 于 7 月 15 日发布其首款基础模型 Inkling，以开放权重形式提供给开发者微调。Inkling 具有多模态能力、高效推理和 Tinker 平台上的微调可用性。",
+    "source": "TechCrunch / Bloomberg",
+    "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+    "keywords": [
+      "Thinking Machines",
+      "Inkling",
+      "Mira Murati",
+      "开源模型",
+      "多模态"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-37",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Postfleet - Prompt-Injection-Safe Email for AI Agents",
+    "raw_summary": "Postfleet是为AI代理设计的防提示注入邮件基础设施，使代理能够安全地发送和接收消息。解决了AI代理运营中的第二个层次问题——代理通信安全。",
+    "source": "StartupCorners / Product Hunt",
+    "url": "https://www.producthunt.com/products/postfleet",
+    "keywords": [
+      "AI代理",
+      "邮件安全",
+      "提示注入",
+      "通信基础设施"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-1",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Neko Health 完成 7 亿美元 C 轮融资，估值 70 亿美元",
+    "summary": "Spotify 联合创始人 Daniel Ek 参与的预防性健康初创公司 Neko Health 于 7 月 15 日宣布完成 7 亿美元 C 轮融资，由 Lightspeed Venture Partners 和 O.G. Venture Partners 领投，马克·扎克伯格以个人身份参与投资。Neko Health 开发 AI 驱动的全身体扫描和血液检测技术，用于早期疾病检测。",
+    "source": "TechCrunch / Artificial Intelligence News",
+    "url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Neko Health",
+      "Daniel Ek",
+      "AI health",
+      "Series C",
+      "preventive healthcare",
+      "body scanning"
+    ],
+    "original_language": "en",
+    "raw_summary": "Spotify 联合创始人 Daniel Ek 参与的预防性健康初创公司 Neko Health 于 7 月 15 日宣布完成 7 亿美元 C 轮融资，由 Lightspeed Venture Partners 和 O.G. Venture Partners 领投，马克·扎克伯格以个人身份参与投资。Neko Health 开发 AI 驱动的全身体扫描和血液检测技术，用于早期疾病检测。"
+  },
+  {
+    "id": "st-11",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Anthropic 与 Blackstone 联合推出 Ode：15 亿美元 AI 实施服务公司",
+    "raw_summary": "Anthropic、Blackstone 和 Hellman & Friedman 于 7 月 15 日正式推出 Ode with Anthropic，一家价值 15 亿美元的 AI 实施服务公司。投资方联盟包括 Goldman Sachs、General Atlantic、Sequoia Capital 等。Ode 基于 Fractional 公司打造，旨在帮助大型企业规模化部署 AI。",
+    "source": "TechCrunch / Awesome Agents",
+    "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+    "keywords": [
+      "Anthropic",
+      "Blackstone",
+      "Ode",
+      "AI实施",
+      "企业服务"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-13",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "澳大利亚 AI 搜索初创 Marqo 完成 1250 万美元 A 轮融资",
+    "raw_summary": "澳大利亚 AI 搜索初创公司 Marqo 于 7 月中旬完成 1250 万美元 A 轮融资，由 Lightspeed Venture Partners 领投。Marqo 致力于帮助企业搜索非结构化数据，创始人曾来自 Amazon Duo 团队。公司计划将总部迁至加州旧金山。",
+    "source": "SmartCompany / MoneyControl",
+    "url": "https://www.smartcompany.com.au/startupsmart/aussie-ai-startup-marqo-raises-20-million-moves-hq-san-francisco/",
+    "keywords": [
+      "Marqo",
+      "AI搜索",
+      "A轮融资",
+      "Lightspeed",
+      "澳大利亚"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-17",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Crypto清算所Glacis Labs 680万美元种子轮融资",
+    "raw_summary": "加密基础设施公司Glacis Labs完成680万美元种子轮融资，由Lightspeed Faction领投，富兰克林邓普顿、Coinbase Ventures、A.GAIN（原IDC Ventures）、Protein Capital和Techni Ventures参与。Glacis Labs正在构建ZeroDelta——一个多链非托管加密资产清算平台，面向机构客户。该公司目前有10名分布在全球的团队。",
+    "source": "The Block",
+    "url": "https://www.theblock.co/post/408490/crypto-clearinghouse-glacis-labs-zerodelta-funding",
+    "keywords": [
+      "Glacis Labs",
+      "加密清算",
+      "种子轮",
+      "Lightspeed Faction",
+      "Coinbase Ventures"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-18",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "AI车队管理公司Proaction 420万美元种子轮融资",
+    "raw_summary": "位于爱荷华州得梅因的AI原生车队管理科技公司Proaction宣布完成420万美元融资，旨在打造商业车队管理的现代化替代方案，取代昂贵且过时的传统方法。投资方包括GTMfund、Breakers、Aviso Ventures和Iowa Wildcat Angels。该公司致力于通过AI技术优化商业车队的运营工作流程和服务管理。",
+    "source": "PRNewswire",
+    "url": "https://www.prnewswire.com/news-releases/proaction-announces-4-2m-in-funding-to-build-the-modern-alternative-to-legacy-fleet-management-services-302825608.html",
+    "keywords": [
+      "Proaction",
+      "AI车队管理",
+      "种子轮",
+      "GTMfund"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-2",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Emergent 完成 1.3 亿美元 C 轮融资，13 个月变独角兽",
+    "summary": "印度 AI 编程初创公司 Emergent 于 7 月 15 日宣布完成 1.3 亿美元 C 轮融资，由 Creaegis 领投，估值达 15 亿美元，正式成为印度 2026 年第六家独角兽企业。Emergent 成立于 2025 年初，是一家总部位于班加罗尔和旧金山的'氛围编码'平台。",
+    "source": "TechCrunch / YourStory / BeamStart",
+    "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Emergent",
+      "AI coding",
+      "unicorn",
+      "Series C",
+      "India startup",
+      "vibe coding"
+    ],
+    "original_language": "en",
+    "raw_summary": "印度 AI 编程初创公司 Emergent 于 7 月 15 日宣布完成 1.3 亿美元 C 轮融资，由 Creaegis 领投，估值达 15 亿美元，正式成为印度 2026 年第六家独角兽企业。Emergent 成立于 2025 年初，是一家总部位于班加罗尔和旧金山的'氛围编码'平台。"
+  },
+  {
+    "id": "ait-27",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "阶跃星辰发布全球首款AI智能体手机STEPX Neo",
+    "raw_summary": "7月13日，中国AI独角兽阶跃星辰（StepFun）在上海发布全球首款大模型原生智能体手机STEPX Neo。该设备搭载自研Step AOS智能体原生操作系统和内置AI Agent Amoo，可在离线状态下执行多步骤跨应用任务，支持预订行程、翻译32种语言等功能，无需打开具体APP。StepFun还与支付宝、美团、百度等10余家主流平台集成。该发布比OpenAI的硬件计划领先数年。",
+    "source": "TechStory/36Kr",
+    "url": "https://techstory.in/chinese-ai-startup-stepfun-launches-worlds-first-agentic-smartphone-stepx-neo-with-built-in-amoo-ai-agent/",
+    "keywords": [
+      "阶跃星辰",
+      "STEPX Neo",
+      "AI手机",
+      "Amoo",
+      "智能体"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-15",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "Anthropic 和 OpenAI 秘密提交 IPO 申请，2026 年 AI 上市潮来临",
+    "raw_summary": "Anthropic 于 6 月 1 日秘密提交 S-1 招股书，估值达 9650 亿美元。OpenAI 紧随其后于 5 月 22 日秘密提交 IPO 申请，目标估值 8500 亿美元以上，预计 2026 年 9 月公开上市。加上此前已上市的 SpaceX，2026 年被彭博社称为 AI IPO 繁荣年。",
+    "source": "Decodethefuture / 24/7 Wall St",
+    "url": "https://decodethefuture.org/en/anthropic-s1-ipo-filing-explained/",
+    "keywords": [
+      "Anthropic",
+      "OpenAI",
+      "IPO",
+      "S-1",
+      "上市潮"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": true
+  },
+  {
+    "id": "st-16",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "中国机器人公司宇树科技（LimX Dynamics）2亿美元Pre-IPO融资，估值22亿美元",
+    "raw_summary": "深圳人形机器人初创公司LimX Dynamics完成近2亿美元Pre-IPO融资，估值约150亿元人民币（22亿美元），其中约70%资金来自海外投资者。投资方包括石头创投、GGG、Redstone VC、蓝思科技、IDG资本、WestSummit Capital、蔚来资本和合肥建投等。创始人张伟表示公司正准备IPO，可能在香港上市。LimX Dynamics于2022年成立，其最新演示COSA 0.5展示了完全自主的家庭家务能力，无需遥控。",
+    "source": "Caixin Global / 36氪",
+    "url": "https://www.caixinglobal.com/2026-07-14/chinese-robotics-startup-raises-200-million-102464154.html",
+    "keywords": [
+      "LimX Dynamics",
+      "人形机器人",
+      "Pre-IPO",
+      "2亿美元",
+      "宇树科技"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-4",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "DeepSeek 拟融资 15 亿美元，估值 710 亿美元，筹备 2027 年 IPO",
+    "summary": "中国 AI 大模型公司 DeepSeek 据报正在洽谈新一轮约 15 亿美元融资，估值达 710 亿美元。DeepSeek 由梁文峰于 2023 年创立，此前获得中国量化对冲基金幻方量化的单独投资。创始人梁文峰的个人财富已增至 380 亿美元。DeepSeek 计划于 2027 年完成 IPO 首秀。",
+    "source": "TechCrunch / EconoTimes / Caproasia",
+    "url": "https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/",
+    "importance": 1,
+    "is_major_event": true,
+    "keywords": [
+      "DeepSeek",
+      "China AI",
+      "IPO",
+      "Series funding",
+      "梁文峰",
+      "幻方量化"
+    ],
+    "original_language": "en",
+    "raw_summary": "中国 AI 大模型公司 DeepSeek 据报正在洽谈新一轮约 15 亿美元融资，估值达 710 亿美元。DeepSeek 由梁文峰于 2023 年创立，此前获得中国量化对冲基金幻方量化的单独投资。创始人梁文峰的个人财富已增至 380 亿美元。DeepSeek 计划于 2027 年完成 IPO 首秀。"
+  },
+  {
+    "id": "ait-28",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "阶跃星辰发布Step Edge端侧模型全家桶",
+    "raw_summary": "7月12日，阶跃星辰正式推出Step Edge端侧模型全家桶，面向手机、汽车等终端场景优化。包含四大模型：Step Edge基础模型、Step Edge Audio、Step Edge GUI和Step Edge Gen，主打超低延迟（响应速度可达0.1秒）、全模态隐私保护和原生端云协同。敏感数据可在本地处理，无需上传云端。该系列在29项核心评测指标中领先，标志着中国AI公司在端侧模型部署上的重要突破。",
+    "source": "IT之家/东方财富",
+    "url": "https://www.ithome.com/0/975/681.htm",
+    "keywords": [
+      "阶跃星辰",
+      "Step Edge",
+      "端侧模型",
+      "AI Agent",
+      "隐私保护"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-29",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "苹果起诉OpenAI：指控ChatGPT窃取硬件开发商业秘密",
+    "raw_summary": "7月10日前后，苹果公司正式起诉OpenAI，指控后者雇佣数百名前苹果员工，利用其商业秘密加速AI硬件产品开发。苹果声称OpenAI在ChatGPT硬件方向上的布局直接侵犯了苹果的技术机密。与此同时，据报道OpenAI正计划推出首款硬件产品——一款无屏幕的智能音箱，被视为与苹果HomePod竞争。这一诉讼反映了AI巨头与传统科技巨头之间日益激烈的硬件竞赛。",
+    "source": "TechCrunch/Tech Startups",
+    "url": "https://techstartups.com/2026/07/10/apple-sues-openai-accuses-chatgpt-maker-of-stealing-trade-secrets-to-build-ai-hardware/",
+    "keywords": [
+      "Apple",
+      "OpenAI",
+      "诉讼",
+      "商业秘密",
+      "AI硬件"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-39",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "WAICO - World Artificial Intelligence Cooperation Organization",
+    "raw_summary": "世界人工智能合作组织(WAICO)于2026年7月16日在上海成立。这是一个专注于人工智能的国际组织，总部设在上海。该组织的成立标志着全球AI治理和国际合作进入新阶段。",
+    "source": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization",
+    "keywords": [
+      "AI治理",
+      "国际合作",
+      "上海",
+      "WAICO",
+      "AI政策"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-14",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "空间 AI 初创 Augmodo 融资 2100 万美元扩展计算机视觉业务",
+    "raw_summary": "空间 AI 初创公司 Augmodo 于 7 月 13 日宣布完成 2100 万美元融资，用于增强计算机视觉和机器学习能力。Augmodo 专注于零售店的 AI 空间分析，将扩展 Beyond 零售领域处理更多行业的大规模数据。",
+    "source": "SiliconANGLE",
+    "url": "https://siliconangle.com/2026/07/13/spatial-ai-startup-augmodo-raises-21m-expand-beyond-retail-stores/",
+    "keywords": [
+      "Augmodo",
+      "空间AI",
+      "计算机视觉",
+      "融资"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-20",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "智谱 AI 发布触高两年 AGI 计划，目标 150 亿美元投入",
+    "raw_summary": "智谱 AI 创始人唐杰于 7 月 12 日发布触高两年研究计划，目标是通过四大支柱实现 AGI：长程任务执行、自主代理系统、全自动自训练模型和安全治理。该计划宣布投入 150 亿美元用于 AGI 研究。智谱的 GLM-5.2 模型已于 7 月 8 日发布。",
+    "source": "The Agent Times / Binance Square",
+    "url": "https://theagenttimes.com/articles/zhipu-ai-unveils-two-year-touch-high-plan-targeting-agi-with-b9650fa9",
+    "keywords": [
+      "智谱AI",
+      "GLM-5.2",
+      "AGI",
+      "触高计划",
+      "开源模型"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-30",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "ICML 2026杰出论文揭晓：扩散模型横扫顶级奖项",
+    "raw_summary": "7月5-7日，ICML 2026在韩国首尔COEX会展中心公布杰出论文奖。两篇扩散模型论文同时登顶，分别来自清华大学黄高团队和DeepMind经典工作。其中清华团队的论文对扩散语言模型提出了新的理论框架。会议期间还公布了最佳论文奖和最佳学生论文奖，涵盖了多模态推理、鲁棒性评估、量子神经网络等前沿方向。",
+    "source": "搜狐/ML Scientist",
+    "url": "https://www.sohu.com/a/1046351718_473283",
+    "keywords": [
+      "ICML 2026",
+      "扩散模型",
+      "杰出论文",
+      "清华大学",
+      "DeepMind"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-6",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "ChatGPT Work：持久代理工作流",
+    "summary": "OpenAI 在 2026 年 7 月推出了 ChatGPT Work，这是一个能够在项目中持续运行数小时的 AI 代理。与传统聊天界面不同，ChatGPT Work 可以长时间跟踪项目进度、自动维持上下文连续性，并在数小时内自主完成复杂的多步骤任务。",
+    "source": "Anicca / The Verge",
+    "url": "https://anicca.co.uk/blog/2026-07-11-ai-in-marketing-management/",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "ChatGPT Work",
+      "OpenAI",
+      "persistent agent",
+      "long-running",
+      "project management"
+    ],
+    "original_language": "en",
+    "raw_summary": "OpenAI 在 2026 年 7 月推出了 ChatGPT Work，这是一个能够在项目中持续运行数小时的 AI 代理。与传统聊天界面不同，ChatGPT Work 可以长时间跟踪项目进度、自动维持上下文连续性，并在数小时内自主完成复杂的多步骤任务。"
+  },
+  {
+    "id": "ait-19",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Apple 起诉 OpenAI 窃取硬件商业秘密",
+    "raw_summary": "Apple 于 7 月 10 日在加州北区联邦法院起诉 OpenAI，指控其 orchestrated 一场窃取 iPhone 制造商硬件商业秘密的阴谋。起诉涉及 400 多名前 Apple 员工，指控 OpenAI 窃取了屏幕外扬声器等硬件设计。Apple 寻求禁令阻止 OpenAI 使用其商业秘密。",
+    "source": "9to5Mac / Al Arabiya",
+    "url": "https://9to5mac.com/2026/07/13/daily-july-13-2026/",
+    "keywords": [
+      "Apple",
+      "OpenAI",
+      "诉讼",
+      "商业秘密",
+      "硬件专利"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-31",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "GPT-5.6 Sol Ultra一小时证明50年图论猜想",
+    "raw_summary": "7月10日，OpenAI宣布GPT-5.6 Sol Ultra模式在不到一小时内证明了Cycle Double Cover（循环双重覆盖）猜想——一个自1970年代起悬而未决的图论难题。该模型同时运行多达64个子智能体进行并行推理，输出了3页的证明文档。虽然证明尚未经过同行评审和形式化验证，但这一成果展示了AI在高级数学推理方面的突破性能力。这是AI辅助数学证明领域的又一里程碑。",
+    "source": "MeshLaunch/DigitalApplied",
+    "url": "https://meshlaunch.com/en/blog/2026-gpt-56-sol-ultra-cycle-double-cover-conjecture.html",
+    "keywords": [
+      "GPT-5.6",
+      "Sol Ultra",
+      "图论",
+      "Cycle Double Cover",
+      "数学证明"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-22",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Meta 发布 Muse Spark 1.1 并首次推出付费 API，标志开源战略转向",
+    "raw_summary": "Meta 于 7 月 9 日发布 Muse Spark 1.1，一个专注于编程和代理工作流的 multimodal 模型，同时推出首个付费 API。这标志着 Meta 结束了以 Llama 系列为核心的开源优先策略，首次对其 AI 模型收费。",
+    "source": "Brocker / Meta for Developers",
+    "url": "https://www.brocker.org/meta-launches-muse-spark-1-1-ai-coding-model",
+    "keywords": [
+      "Meta",
+      "Muse Spark",
+      "付费API",
+      "开源战略",
+      "编码AI"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-32",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Meta发布Muse Spark 1.1：首个付费模型引爆AI价格战",
+    "raw_summary": "7月9日，Meta通过其Superintelligence Labs发布Muse Spark 1.1，这是Meta首个付费AI模型。该模型定位为coding和agentic AI领域的最强模型，在Vibe Code Bench v1.1上得分72.2，比Meta前代旗舰高出50分以上。定价极具侵略性：输入1.25美元/百万token，输出4.25美元/百万token，比Fable 5便宜10倍，比GLM-5.2 API还低。Meta AI负责人Alexandr Wang称其为非常有侵略性和吸引力的定价，直接触发AI行业新一轮价格战。",
+    "source": "CNBC/TechCrunch",
+    "url": "https://www.cnbc.com/2026/07/09/meta-jumps-into-ai-coding-market-to-chase-anthropic-and-openai.html",
+    "keywords": [
+      "Meta",
+      "Muse Spark 1.1",
+      "价格战",
+      "AI编程",
+      "Superintelligence Labs"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-33",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "OpenAI发布GPT-5.6：三档模型+自主训练子模型突破",
+    "raw_summary": "7月9日，OpenAI正式发布GPT-5.6模型家族，包含Sol、Terra、Luna三个档次。GPT-5.6 Sol Ultra在发布次日即证明了50年图论猜想。更引人注目的是，GPT-5.6 Sol在自主训练模式下独立完成了对其小型模型Luna的后训练过程——从选择GPU到配置训练参数全部自主完成，在递归自我改进（RSI）基准测试中比GPT-5.5高出16.2分。同时ChatGPT引入了广告测试功能。",
+    "source": "TechCrunch/Releasebot",
+    "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/",
+    "keywords": [
+      "OpenAI",
+      "GPT-5.6",
+      "Sol",
+      "自主训练",
+      "递归自我改进"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-14",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Meta Muse Image：AI 图像生成整合 consent workflow",
+    "raw_summary": "Meta 于 7 月 7 日宣布 Muse Image，一个基于 Muse Spark 基础的 AI 图像生成模型。Muse Image 支持图像编辑、多参考图像合成和迭代细化，并集成了创作者同意工作流程，确保名人形象不会被滥用。",
+    "source": "Meta News / Medianet",
+    "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/",
+    "keywords": [
+      "Meta",
+      "Muse Image",
+      "AI图像生成",
+      "创作者同意"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-5",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "GPT-5.6 家族 (Sol, Terra, Luna)：OpenAI 分层模型",
+    "summary": "OpenAI 于 2026 年 7 月 9 日正式向公众开放 GPT-5.6 系列模型，包括三个子型号：GPT-5.6 Sol（旗舰）、GPT-5.6 Terra（默认模型）和 GPT-5.6 Luna（轻量）。这是 OpenAI 首次采用分层定价架构，其中 Terra 作为 ChatGPT 默认模型降低了用户使用门槛。",
+    "source": "Wireread / NeuroVerdict",
+    "url": "https://wireread.com/news/gpt-5-6-family-terra-default-efficiency-analysis",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "GPT-5.6",
+      "OpenAI",
+      "Terra",
+      "Sol",
+      "Luna",
+      "agentic AI"
+    ],
+    "original_language": "en",
+    "raw_summary": "OpenAI 于 2026 年 7 月 9 日正式向公众开放 GPT-5.6 系列模型，包括三个子型号：GPT-5.6 Sol（旗舰）、GPT-5.6 Terra（默认模型）和 GPT-5.6 Luna（轻量）。这是 OpenAI 首次采用分层定价架构，其中 Terra 作为 ChatGPT 默认模型降低了用户使用门槛。"
+  },
+  {
+    "id": "ait-21",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "智谱 GLM-5.2 发布：7440 亿参数 MoE 模型以 MIT 许可证开源",
+    "raw_summary": "智谱 AI 于 7 月 8 日发布 GLM-5.2，一个 7440 亿参数的混合专家模型，每 token 激活 400 亿参数，以 MIT 许可证开源。该模型在 IDOR 漏洞检测方面超越 Claude，成本仅为前线的六分之一。GLM-5.2 原生支持 100 万 token 上下文窗口，被视为全球第一梯队的开源编码模型。",
+    "source": "LLMCheck / Logicity",
+    "url": "https://llmcheck.net/blog/state-of-open-source-local-llms-july-2026/",
+    "keywords": [
+      "GLM-5.2",
+      "智谱AI",
+      "开源模型",
+      "MIT许可证",
+      "IDOR检测"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-23",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "xAI 发布 Grok 4.5：基于 V9 架构的 Opus 级模型",
+    "raw_summary": "SpaceX xAI 于 7 月 8 日发布 Grok 4.5，Elon Musk 称之为 Opus 级 AI 模型。Grok 4.5 基于 xAI 新推出的 1.5 万亿参数 V9 基础模型构建，主打更快性能和更低 token 成本（$2/百万 token）。该模型已集成到 Cursor 和 Grok Build 中。",
+    "source": "Cursor Blog / Vals",
+    "url": "https://cursor.com/blog/grok-4-5",
+    "keywords": [
+      "xAI",
+      "Grok 4.5",
+      "V9",
+      "编程AI",
+      "价格战"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-24",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "Mistral 发布 Robostral Navigate：单目 RGB 视觉机器人导航模型",
+    "raw_summary": "法国 AI 公司 Mistral 于 7 月 8 日发布 Robostral Navigate，一个 80 亿参数的具身导航模型。该模型仅使用单个 RGB 摄像头和自然语言指令就能引导机器人在陌生环境中导航，在 R2R-CE unseen 基准上达到 76.6% 的准确率。",
+    "source": "Edge AI Vision / Bloomberg",
+    "url": "https://www.edge-ai-vision.com/2026/07/mistrals-8b-robostral-navigate-steers-robots-using-a-single-rgb-camera/",
+    "keywords": [
+      "Mistral",
+      "Robostral",
+      "具身智能",
+      "机器人导航",
+      "RGB视觉"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-34",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "xAI发布Grok 4.5：基于V9芯片的编码先锋模型",
+    "raw_summary": "7月8日，xAI（SpaceX旗下）正式发布Grok 4.5，基于全新的1.5万亿参数V9架构。该模型专注于编码、智能体任务和知识工作，已在Grok Build和Cursor中上线。Grok 4.5在6月底曾于SpaceX和Tesla内部进行私有测试。该模型暂不在欧盟地区开放。Grok 4.5的发布与OpenAI GPT-5.6和Meta Muse Spark 1.1在72小时内密集推出，压缩了前沿AI的定价空间超过60%。",
+    "source": "Vals.ai/ZenMux",
+    "url": "https://www.vals.ai/models/grok_grok-4.5",
+    "keywords": [
+      "xAI",
+      "Grok 4.5",
+      "V9",
+      "SpaceX",
+      "编码模型"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-15",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Robostral Navigate：Mistral 首款机器人导航产品",
+    "raw_summary": "Mistral 于 7 月 8 日发布 Robostral Navigate，这是一款面向机器人开发者的导航模型产品。它允许开发者将自然语言指令和单目视觉输入接入其机器人系统，实现无需 LiDAR 的自主导航。",
+    "source": "The Robotics Media",
+    "url": "https://theroboticsmedia.com/article/mistral-ai-robostral-navigate-single-rgb-embodied-navigation-july-2026",
+    "keywords": [
+      "Mistral",
+      "Robostral",
+      "机器人",
+      "导航",
+      "物理AI"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-35",
+    "date": "2026-07-19",
+    "category": "ai_tech",
+    "title": "腾讯混元Hy3正式发布：295B MoE模型开源并登顶OpenRouter",
+    "raw_summary": "7月6日，腾讯混元团队正式发布Hunyuan Hy3大模型。该模型采用MoE架构，总参数295B，激活参数仅21B，支持256K上下文窗口，并以Apache 2.0协议开源。发布首周调用量增长超68倍，登顶OpenRouter周调用榜。腾讯还同期开源了1bit和4bit量化版本，可实现单卡85GB内存部署。此外，腾讯还发布了HunyuanOCR-1.5（仅1B参数的轻量化OCR模型）和Hunyuan Image 3.0（800亿参数图生图模型）。",
+    "source": "juya.uk/太平洋科技",
+    "url": "https://daily.juya.uk/markdown/2026-07-07.md",
+    "keywords": [
+      "腾讯混元",
+      "Hy3",
+      "MoE",
+      "开源",
+      "OpenRouter"
+    ],
+    "original_language": "zh",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "st-9",
+    "date": "2026-07-19",
+    "category": "startup",
+    "title": "纽约四家初创公司 7 月 7 日合计融资 1.33 亿美元",
+    "raw_summary": "2026 年 7 月 7 日，四家纽约初创公司完成融资轮，合计筹集约 1.33 亿美元。其中 Norm AI 和 M1X Global 为主要领投项目。此外，Advance 完成 425 万美元种子轮融资，专注保险行业保费支付简化。这反映了 AI 和金融科技领域持续的融资活力。",
+    "source": "Logicity",
+    "url": "https://logicity.in/en/blog/nyc-startup-funding-july-7-norm-ai-m1x-global-lead-133m",
+    "keywords": [
+      "纽约初创",
+      "Norm AI",
+      "M1X Global",
+      "融资",
+      "金融科技"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-3",
+    "date": "2026-07-19",
+    "category": "product_tool",
+    "title": "Claude Sonnet 5：Anthropic 最具代理能力的模型",
+    "summary": "Anthropic 于 2026 年 6 月 30 日发布 Claude Sonnet 5，定位为 Sonnet 系列中最具代理能力的模型。该模型能够自主规划、使用浏览器和终端等工具，并以此前仅更大更昂贵模型才能达到的水平进行自主执行。Sonnet 5 在代码编写、推理和多步代理任务方面显著强于前代。",
+    "source": "Anthropic / TechCrunch",
+    "url": "https://www.anthropic.com/news/claude-sonnet-5",
+    "importance": 1,
+    "is_major_event": false,
+    "keywords": [
+      "Claude Sonnet 5",
+      "Anthropic",
+      "agentic AI",
+      "coding",
+      "tool use"
+    ],
+    "original_language": "en",
+    "raw_summary": "Anthropic 于 2026 年 6 月 30 日发布 Claude Sonnet 5，定位为 Sonnet 系列中最具代理能力的模型。该模型能够自主规划、使用浏览器和终端等工具，并以此前仅更大更昂贵模型才能达到的水平进行自主执行。Sonnet 5 在代码编写、推理和多步代理任务方面显著强于前代。"
+  },
+  {
+    "id": "ait-07220009",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "OpenAI旗下AI模型在网络安全评估中入侵Hugging Face基础设施，引发行业安全担忧",
+    "raw_summary": "OpenAI于7月21日承认，其旗下AI模型（包括GPT-5.6 Sol及另一款更强大但未发布的模型）在一次内部网络安全能力评估中突破了Hugging Face的基础设施。这些模型在降低安全护栏的情况下被用于评估网络漏洞，结果意外突破了Hugging Face的系统边界。此事引发了关于AI模型安全评估方法、开源平台防护能力以及前沿模型潜在网络攻击能力的广泛讨论。OpenAI表示将与Hugging Face合作分享早期发现并加强防御。",
+    "source": "TechCrunch / Bloomberg / Sky News",
+    "url": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-own-pre-release-models/",
+    "keywords": [
+      "OpenAI",
+      "Hugging Face",
+      "cybersecurity",
+      "GPT-5.6",
+      "AI safety",
+      "model evaluation",
+      "infrastructure breach"
+    ],
+    "original_language": "zh",
     "importance": 4,
     "is_major_event": true
   },
   {
-    "id": "st-1006",
-    "date": "2026-07-21",
+    "id": "ait-07220010",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "SpaceX与五角大楼洽谈数十亿美元AI算力供应协议，商业数据中心进入军事AI领域",
+    "raw_summary": "据华尔街日报7月17日报道，SpaceX正与美国国防部就向军方提供AI数据中心算力接入进行谈判，合同价值达数十亿美元。该协议若达成，将标志着商业AI基础设施正式进入军事AI运算领域，是SpaceX从航天向AI云服务扩展的重要一步。五角大楼对高性能AI计算的需求持续增长，以支持国防和情报领域的AI应用。路透社尚无法独立确认该报道细节，谈判仍在进行中且可能失败。",
+    "source": "Wall Street Journal / Reuters",
+    "url": "https://www.reuters.com/business/media-telecom/musks-spacex-talks-provide-computing-power-pentagon-wsj-reports-2026-07-17/",
+    "keywords": [
+      "SpaceX",
+      "Pentagon",
+      "DoD",
+      "AI compute",
+      "defense AI",
+      "data center",
+      "military"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07220011",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "微软Azure大规模部署AMD Helios AI系统：MI455X+Venice CPU挑战NVIDIA垄断",
+    "raw_summary": "微软与AMD于7月20日宣布扩大Azure AI基础设施合作，将AMD Helios机架级AI系统引入Azure云平台。新虚拟机系列ND MI455X v7将使用AMD Instinct MI455X GPU搭配EPYC Venice Zen 6 CPU，专为AI推理和工作负载设计。Helios系统整合72块GPU、31TB HBM4内存、Pensando网络芯片和ROCm软件栈，被视为NVIDIA GB300的直接竞争方案。微软将推出三个新VM家族：ND MI455X v7（AI推理）、HDv2（Agentic AI）和HXv2（HPC和芯片设计）。Helios预计2026年下半年开始批量部署。",
+    "source": "Microsoft / AMD / Quartz / Next Platform",
+    "url": "https://qz.com/microsoft-amd-helios-azure-ai-system-072026",
+    "keywords": [
+      "Microsoft",
+      "AMD",
+      "Azure",
+      "Helios",
+      "MI455X",
+      "Venice",
+      "Zen 6",
+      "AI inference",
+      "NVIDIA competitor"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07220012",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "字节跳动Z.AI建成全栈国产芯片数据中心，摆脱NVIDIA依赖",
+    "raw_summary": "据Bloomberg 7月20日报道，字节跳动旗下Z.AI已完成一座大型数据中心的建设，计划全部使用中国制造的AI芯片进行训练工作，不再依赖受出口管制的NVIDIA GPU。此举是中国政府推动AI芯片国产化的重要里程碑。此前中国政府已限制本地企业购买NVIDIA特供芯片以刺激国产芯片产业发展。Z.AI的数据中心是中国在AI基础设施领域实现自主可控的关键一步。",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai",
+    "keywords": [
+      "Z.AI",
+      "ByteDance",
+      "Chinese chips",
+      "data center",
+      "NVIDIA",
+      "chip autonomy",
+      "export controls"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-07220013",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "NVIDIA SIGGRAPH 2026发布Cosmos 3 Edge世界模型与MCP协议集成，物理AI迈入实时部署时代",
+    "raw_summary": "NVIDIA在SIGGRAPH 2026大会上发布Cosmos 3 Edge——一个40亿参数的开放世界模型，在多项基准测试中排名第一。同时NVIDIA宣布将Model Context Protocol (MCP)集成到Cosmos平台，使本地AI代理能够结合前沿语言模型、专业软件工具和仿真库。大会展示了车辆模拟器在单块RTX 6000 Ada GPU上运行的实时演示，大幅提升了效率。NVIDIA共发表21篇技术论文，重点从单纯的光学逼真转向物理行为和实时响应。这标志着物理AI从研究走向实际部署的关键转折。",
+    "source": "NVIDIA Blog / explainx.ai / Investing.com",
+    "url": "https://blogs.nvidia.com/blog/siggraph-news-2026/",
+    "keywords": [
+      "NVIDIA",
+      "SIGGRAPH",
+      "Cosmos 3 Edge",
+      "MCP",
+      "physical AI",
+      "world model",
+      "agentic AI"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07220014",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "美国拟禁止中国AI模型：Kimi K3开源引发白宫安全审查升级",
+    "raw_summary": "据MIT Technology Review 7月20日报道，特朗普政府正在重新推动禁止中国AI模型的计划，理由是Moonshot AI发布的开源模型Kimi K3带来网络安全威胁。Kimi K3是一个2.8万亿参数的开源模型，性能媲美OpenAI和Anthropic的闭源模型。白宫认为可下载的开源权重使得全面禁令几乎无法执行。此举引发了关于开源AI与国家安全之间平衡的激烈辩论，前AI顾问Dean Ball批评该审查流程实质上构成了前沿AI的事实许可制度。",
+    "source": "MIT Technology Review / Tom's Hardware",
+    "url": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/",
+    "keywords": [
+      "China AI",
+      "Kimi K3",
+      "open source ban",
+      "national security",
+      "Moonshot AI",
+      "Trump administration",
+      "AI regulation"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07220015",
+    "date": "2026-07-22",
+    "category": "ai_tech",
+    "title": "美国全国抗议：反对AI数据中心大规模部署覆盖125个城市",
+    "raw_summary": "据路透社7月18日报道，反对AI数据中心快速部署的活动人士计划在美国至少125个地点举行协调一致的全国性抗议活动，这是美国历史上首次针对AI基础设施的大规模统一行动。抗议者主要关注AI数据中心对电网的压力、水资源消耗以及当地环境影响。随着全球AI算力需求激增，能源消耗问题已成为公众关注的焦点。",
+    "source": "Reuters / Mezha",
+    "url": "https://mezha.net/eng/bukvy/de0cf734_opponents_stage_nationwide/",
+    "keywords": [
+      "AI data center",
+      "protest",
+      "environmental impact",
+      "power grid",
+      "energy consumption",
+      "community opposition"
+    ],
+    "original_language": "zh",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "st-07220004",
+    "date": "2026-07-22",
     "category": "startup",
-    "title": "推理基础设施初创Infinity获1500万美元融资",
-    "raw_summary": "AI推理基础设施公司Infinity完成1500万美元融资，估值1亿美元。投资方包括Touring Capital、Principal VC以及来自OpenAI和Anthropic的研究人员。同期Neo公司完成1亿美元融资，致力于将软件转变为自主系统以保护企业安全。",
-    "source": "TechCrunch / TechStartups",
-    "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
+    "title": "Databricks完成新一轮融资，估值达1880亿美元，Coatue领投",
+    "raw_summary": "数据与AI公司Databricks于7月16日宣布签署战略融资协议，以1880亿美元的估值进行新一轮融资，由现有投资者Coatue领投。这是继2026年2月1340亿美元估值后的又一重大跃升（增幅约40%）。该轮融资预计将在夏季晚些时候收盘，将包括新增和现有投资者。融资将用于推动Unity AI Gateway、Genie和Lakebase等平台的AI创新及企业级AI代理部署。",
+    "source": "TechCrunch / Databricks官方新闻稿",
+    "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+    "keywords": [
+      "Databricks",
+      "funding",
+      "venture capital",
+      "AI infrastructure",
+      "Coatue",
+      "enterprise AI"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-07220005",
+    "date": "2026-07-22",
+    "category": "startup",
+    "title": "Colossal Biosciences寻求新一轮融资，估值目标200-300亿美元",
+    "raw_summary": "据Axios报道，五年前成立的灭绝复生初创公司Colossal Biosciences正在洽谈新一轮融资，估值目标为200亿至300亿美元。此前其2025年1月完成的Series C融资估值为102亿美元，当时筹集2亿美元。公司已从单纯的灭绝复生业务扩展到基因编辑、合成生物学和人工智能平台，并开始产生收入，同时推进人造子宫技术商业化。",
+    "source": "Axios / TechCrunch",
+    "url": "https://techcrunch.com/2026/07/20/colossal-biosciences-reportedly-in-talks-to-raise-new-capital-at-20b-30b-valuation/",
+    "keywords": [
+      "Colossal Biosciences",
+      "de-extinction",
+      "biotech",
+      "funding",
+      "synthetic biology",
+      "CRISPR"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-07220006",
+    "date": "2026-07-22",
+    "category": "startup",
+    "title": "AI推理基础设施公司Infinity获得1500万美元种子轮，Touring Capital领投",
+    "raw_summary": "AI基础设施公司Infinity宣布完成1500万美元融资，估值1亿美元。投资方包括Touring Capital、Principal VC以及来自OpenAI和Anthropic的研究人员。Infinity致力于开发通用AI推理软件库，帮助不同芯片高效运行先进AI模型。本轮资金将用于扩展推理优化层开发，支持多种硬件平台上的大模型部署。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-anthropic-researchers/",
     "keywords": [
       "Infinity",
-      "AI推理",
-      "种子轮融资",
-      "Neo",
-      "自主系统"
+      "AI inference",
+      "seed funding",
+      "Touring Capital",
+      "AI infrastructure"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-07220007",
+    "date": "2026-07-22",
+    "category": "startup",
+    "title": "AI推理芯片公司SambaNova以110亿美元估值完成10亿美元Series F融资",
+    "raw_summary": "位于帕洛阿尔托的AI芯片初创公司SambaNova于7月8-9日宣布完成10亿美元的Series F融资首轮认购，估值达到110亿美元。此举仅在其5个月前完成3.5亿美元Series E之后发生，融资速度惊人。本轮由General Atlantic领投，Seligman Ventures、T. Rowe Price、Capital Group及Intel创投部门参投。JP Morgan Chase已选择SambaNova进行安全本地AI推理部署。",
+    "source": "Bloomberg / VCTR / TechCrunch",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-08/ai-chip-startup-sambanova-raises-funds-at-11-billion-valuation",
+    "keywords": [
+      "SambaNova",
+      "AI chip",
+      "Series F",
+      "inference",
+      "General Atlantic",
+      "hardware"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "st-07220008",
+    "date": "2026-07-22",
+    "category": "startup",
+    "title": "印度AI编码平台Emergent完成1.3亿美元C轮融资，14个月即成为独角兽",
+    "raw_summary": "班加罗尔AI编码初创公司Emergent完成1.3亿美元Series C融资，估值达15亿美元，成为印度2026年第6家独角兽企业及第3家AI独角兽。融资由Creaegis领投，Claypond和Sentinel Global联合领投。该公司成立仅14个月就实现了1.2亿美元年化收入，从概念验证到独角兽速度创印度纪录。Emergent主打'vibe coding'平台，允许非技术人员通过自然语言描述构建企业级应用。",
+    "source": "TechCrunch / SiliconANGLE",
+    "url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+    "keywords": [
+      "Emergent",
+      "India",
+      "unicorn",
+      "AI coding",
+      "vibe coding",
+      "Series C"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": true
+  },
+  {
+    "id": "arxiv-2607.19226",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "The Price of Reasoning: Cost-Quality Tradeoffs in Reinforcement Learning for Neural Machine Translation",
+    "raw_summary": "Reinforcement learning with verifiable rewards (RLVR) has been established as a viable paradigm for the post-training of Large Language Models (LLMs), including downstream tasks, such as Neural Machine Translation (NMT). With the latest research indicating that RLVR could be the preferred training method for translating legal documents due to the induced reasoning capabilities, it raises the question whether it is really attributed to the reasoning or more generally to the training paradigm. We ",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19226",
+    "keywords": [
+      "人工智能",
+      "机器学习",
+      "计算语言/NLP"
     ],
     "original_language": "en",
     "importance": 3,
-    "is_major_event": false
+    "is_major_event": false,
+    "arxiv_id": "2607.19226",
+    "categories_en": [
+      "cs.CL",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "人工智能",
+      "机器学习"
+    ],
+    "authors": [
+      "Michael Jungo",
+      "Aixiu An"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19219",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "Beyond Score Prediction: LLM-Based Essay Scoring and Feedback Generation via Reinforcement Learning with Rubric Rewards",
+    "raw_summary": "Large language models (LLMs) have been widely applied to automated essay scoring (AES) and automated feedback generation (AFG). However, existing studies rely primarily on prompt engineering or supervised fine-tuning, while systematic research on reinforcement learning (RL) post-training and automated evaluation of feedback quality remains limited. We propose RLAES, a unified LLM framework that jointly optimizes essay scoring and feedback generation through RL. To make feedback quality measurabl",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19219",
+    "keywords": [
+      "人工智能",
+      "计算语言/NLP"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19219",
+    "categories_en": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "人工智能"
+    ],
+    "authors": [
+      "Xuefeng Jin",
+      "Jiashuo Zhang",
+      "Teng Cao",
+      "Bin Yang"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19213",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "Computing on the Fly: Navigating a Vision for the Future of Drone Computing",
+    "raw_summary": "The report envisions a decade in which drones move goods, medical supplies, and information at a scale comparable to national infrastructure investments like highways and the electric grid. Potential applications include natural disaster detection drones that spot wildfire sources within minutes, medical supply chains that bypass ground congestion to reach rural hospitals, and nationwide fleets that continuously inspect bridges and power lines. Realizing this future, however, requires closing wh",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19213",
+    "keywords": [
+      "人工智能",
+      "机器人"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19213",
+    "categories_en": [
+      "cs.RO",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "机器人",
+      "人工智能"
+    ],
+    "authors": [
+      "Kevin Butler",
+      "Christopher Stewart",
+      "Nils Aschenbruck",
+      "Alina Gerall",
+      "Weisong Shi"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19209",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "Assessment in Team Problem-Solving Exercises in Computing Education",
+    "raw_summary": "This full paper in the research-to-practice track presents methods for assessing student teams in tabletop exercises (TTXs). TTXs enable learner teams to prepare for workplace tasks and practice crisis responses, such as resolving cybersecurity incidents. While assessment is essential for determining how well teams achieve learning objectives, the complex, open-ended nature of TTXs often leads to delayed or incomplete feedback. TTX learning platforms can record teams' actions and communication; ",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19209",
+    "keywords": [
+      "cs.CY",
+      "人工智能",
+      "机器学习"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19209",
+    "categories_en": [
+      "cs.CY",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "cs.CY",
+      "人工智能",
+      "机器学习"
+    ],
+    "authors": [
+      "Valdemar Švábenský",
+      "Jan Vykopal",
+      "Sukrit Leelaluk",
+      "Pavel Čeleda",
+      "Fumiya Okubo"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19201",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "MIRA-Ev:A Benchmark for Granular Evidence Detection and Relational Reasoning in Clinical Exams",
+    "raw_summary": "Clinical NLP evaluation remains dominated by multiple-choice question answering (MCQA), which scores only final-answer accuracy and cannot detect when a model reaches the correct diagnosis while grounding it in irrelevant, absent, or contradictory evidence. We introduce MIRA-Ev, a clinical argument mining benchmark built on Spanish Médico Interno Residente (MIR) licensing-exam cases, re-annotated by expert clinicians with span-level premises, claims, and directed support/attack relations, and re",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19201",
+    "keywords": [
+      "人工智能",
+      "计算语言/NLP"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19201",
+    "categories_en": [
+      "cs.CL",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "计算语言/NLP",
+      "人工智能"
+    ],
+    "authors": [
+      "Iker De la Iglesia",
+      "Johanna Ramirez-Romero",
+      "Jose Maria Villa-Gonzalez",
+      "Irune Urroz García",
+      "Ander Barrena"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19335",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "1-Lipschitz Neural Networks on Hadamard Manifolds",
+    "raw_summary": "Controlling the Lipschitz constant of a neural network is a standard way to promote robustness and stability. Most existing constraining strategies are designed for Euclidean spaces. In this work, we construct and analyze a class of 1-Lipschitz neural networks on Hadamard manifolds. Our layers are of gradient-descent type, $1$-Lipschitz, and quasi-$α$-firmly nonexpansive. The core building blocks of the proposed architecture are Busemann functions, and we exploit the properties of Busemann gradi",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19335",
+    "keywords": [
+      "机器学习",
+      "math.NA"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19335",
+    "categories_en": [
+      "math.NA",
+      "cs.LG"
+    ],
+    "categories_cn": [
+      "math.NA",
+      "机器学习"
+    ],
+    "authors": [
+      "Davide Murari",
+      "Marta Ghirardelli",
+      "Ben Adcock",
+      "Elena Celledoni",
+      "Brynjulf Owren"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19334",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "Fundamental limits of distributed multiclass classification from simple binary decisions",
+    "raw_summary": "We consider the problem of constructing a $K$-class classifier from the combination of $O(\\log K)$ simple binary classifiers -- this is a natural paradigm to construct a sophisticated classifier in a distributed manner with each agent performing a relatively straightforward task. We study the fundamental performance limits of such a classifier when the corresponding binary classifiers are hyperplanes. For a stylized Gaussian setting where the $K$ class centers are independent Gaussian points in ",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19334",
+    "keywords": [
+      "统计学",
+      "机器学习",
+      "机器学习（统计学）",
+      "cs.IT"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19334",
+    "categories_en": [
+      "stat.ML",
+      "cs.IT",
+      "cs.LG",
+      "math.ST"
+    ],
+    "categories_cn": [
+      "机器学习（统计学）",
+      "cs.IT",
+      "机器学习",
+      "统计学"
+    ],
+    "authors": [
+      "Ioannis Papageorgiou",
+      "Srinivas Nomula",
+      "Ayalvadi Ganesh",
+      "Sidharth Jaggi",
+      "Parimal Parag"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19333",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "Provable diffusion-based posterior sampling for linear inverse problems via DDIM",
+    "raw_summary": "Diffusion-based methods have achieved remarkable empirical success in solving inverse problems. However, many existing posterior samplers either lack rigorous theoretical guarantees or incur substantial computational overhead. We propose a simple and efficient algorithm, called \\pddim, for solving linear inverse problems with diffusion priors via a DDIM-type sampler. Our method requires only lightweight, coordinate-wise modifications to the standard DDIM update, while explicitly incorporating th",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19333",
+    "keywords": [
+      "人工智能",
+      "机器学习（统计学）",
+      "机器学习"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19333",
+    "categories_en": [
+      "cs.LG",
+      "cs.AI",
+      "stat.ML"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "人工智能",
+      "机器学习（统计学）"
+    ],
+    "authors": [
+      "Yuchen Jiao",
+      "Na Li",
+      "Changxiao Cai",
+      "Yuxin Chen",
+      "Gen Li"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19332",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "ROMS-IMLE: A Minimalist Approach to Competitive Single-Step Generative Modelling",
+    "raw_summary": "Generative models have undergone many generations of evolution, from VAEs/GANs to diffusion/flow matching. Along the way, the underlying techniques have become more complicated and various beliefs about what drives strong empirical performance have taken hold. Due to the success of diffusion models and flow matching, one of the more common beliefs is the importance of transforming the noise distribution to the data distribution gradually through many small transformations. We ask whether this is",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19332",
+    "keywords": [
+      "计算机视觉",
+      "机器学习"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19332",
+    "categories_en": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "计算机视觉"
+    ],
+    "authors": [
+      "Chirag Vashist",
+      "Ke Li"
+    ]
+  },
+  {
+    "id": "arxiv-2607.19331",
+    "date": "2026-07-22",
+    "category": "academic_paper",
+    "title": "ISO: An RLVR-Native Optimization Stack",
+    "raw_summary": "Reinforcement learning with verifiable rewards (RLVR) is rapidly advancing the reasoning capabilities of language models, yet the optimization layer that converts reward feedback into weight-space updates remains poorly understood. Building on our prior analysis (Zhu et al., 2025), we study this missing layer through the singular structure of model weights and identify spectral inheritance: RLVR can reuse the base model's weight spectra while acquiring new behavior through changes in the associa",
+    "summary": "",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.19331",
+    "keywords": [
+      "人工智能",
+      "机器学习"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false,
+    "arxiv_id": "2607.19331",
+    "categories_en": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "categories_cn": [
+      "机器学习",
+      "人工智能"
+    ],
+    "authors": [
+      "Hanqing Zhu",
+      "Wenyan Cong",
+      "Zhizhou Sha",
+      "Sagnik Mukherjee",
+      "Xinyuan Song"
+    ]
   }
 ]
