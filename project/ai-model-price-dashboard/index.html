@@ -374,7 +374,7 @@
       <div class="row g-3">
         <div class="col-md-3">
           <label class="form-label">任务类型</label>
-          <select class="form-select" id="taskType" onchange="updateRecommendation()">
+          <select class="form-select" id="taskType">
             <option value="">请选择...</option>
             <option value="coding">💻 编码</option>
             <option value="reasoning">🧠 推理</option>
@@ -383,13 +383,13 @@
         </div>
         <div class="col-md-3">
           <label class="form-label">厂商</label>
-          <select class="form-select" id="vendorFilter" onchange="renderTable(); refreshRecommendation();">
+          <select class="form-select" id="vendorFilter">
             <option value="all">全部厂商</option>
           </select>
         </div>
         <div class="col-md-2">
           <label class="form-label">Tier</label>
-          <select class="form-select" id="tierFilter" onchange="renderTable(); refreshRecommendation();">
+          <select class="form-select" id="tierFilter">
             <option value="all">全部</option>
             <option value="free">免费</option>
             <option value="budget">经济</option>
@@ -399,7 +399,7 @@
         </div>
         <div class="col-md-2">
           <label class="form-label">搜索</label>
-          <input type="text" class="form-control" id="searchBox" placeholder="模型名称..." oninput="renderTable(); refreshRecommendation();">
+          <input type="text" class="form-control" id="searchBox" placeholder="模型名称...">
         </div>
         <div class="col-md-2">
           <label class="form-label">&nbsp;</label>
@@ -521,6 +521,7 @@
       cacheDom();
       await loadModels();
       populateVendorFilter();
+      refreshFilterCache(); // sync _filterCache with actual DOM values after populateVendorFilter
       renderTable();
     });
 
@@ -559,6 +560,17 @@
     $el.vendorFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
     $el.tierFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
     $el.searchBox?.addEventListener('input', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+    $el.taskType?.addEventListener('change', handleTaskTypeChange);
+    
+    function handleTaskTypeChange() {
+      const card = $el.recommendationCard;
+      if ($el.taskType.value) {
+        updateRecommendation();
+        card.classList.add('show');
+      } else {
+        card.classList.remove('show');
+      }
+    }
     
     // Re-render recommendation when filters change
     function refreshRecommendation() {
