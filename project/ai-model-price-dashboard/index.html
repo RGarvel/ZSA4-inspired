@@ -614,7 +614,7 @@
         parts.push('<td>$', fmtPrice(m.output_price_per_1m), '</td>');
         parts.push('<td>', fmtImgPrice(m.image_generation_price), '</td>');
         parts.push('<td><span class="quality-score ', qc, '">', q, '</span></td>');
-        parts.push('<td>', m.categories.slice(0, 3).map(c => '<span class="keyword-badge" style="font-size:0.65rem">', c, '</span>').join(''), '</td>');
+        parts.push('<td>', m.categories.slice(0, 3).map(cat => '<span class="keyword-badge" style="font-size:0.65rem">' + cat + '</span>').join(''), '</td>');
         parts.push('<td><button class="btn btn-sm compare-btn ', ic ? 'compare-selected' : 'btn-outline-secondary', '" onclick="toggleCompare(\'', m.model_id, '\')">');
         parts.push(ic ? '<i class="bi bi-check"></i>' : '+');
         parts.push('</button></td></tr>');
