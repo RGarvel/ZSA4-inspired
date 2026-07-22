@@ -648,26 +648,11 @@
         </span>
       </div>
       
-      <!-- Inspiration filter -->
-      <div class="d-flex align-items-center gap-2 mt-2">
-        <span style="font-size: 0.85rem; color: var(--text-secondary);">筛选：</span>
-        <button class="btn btn-sm insp-toggle-btn" id="inspToggleBtn" onclick="toggleInspFilter()">
-          <i class="bi bi-lightbulb-fill"></i> 每日灵感
-        </button>
-      </div>
     </div>
 
     <!-- Articles -->
     <div id="articlesContainer">
       <!-- Dynamically populated -->
-    </div>
-
-    <!-- Today's Inspiration -->
-    <div id="inspirationSection" class="mt-5" style="display: none;">
-      <h4 class="mb-3"><i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i> 今日灵感</h4>
-      <div id="inspirationContainer">
-        <!-- Dynamically populated -->
-      </div>
     </div>
 
     <!-- Empty State -->
@@ -935,16 +920,8 @@
           domCache.articles.innerHTML = tip.join('\n');
         }
       }
-      
-      // Render inspiration section if data exists
-      if (inspirationData && inspirationData.insights?.length) {
-        renderInspiration();
-        if (!showInspirationOnly) {
-          domCache.inspSection.style.display = 'block';
-        }
-      } else {
-        domCache.inspSection.style.display = 'none';
-      }
+
+
       
       // Clear section card cache after render
       for (const k in sectionCards) delete sectionCards[k];
@@ -1051,7 +1028,6 @@
       currentDate = e.target.value;
       currentCategory = 'all';
       showMajorEventsOnly = false;
-      showInspirationOnly = false;
       // Clear section card cache on date change
       for (const k in sectionCards) delete sectionCards[k];
       render();
