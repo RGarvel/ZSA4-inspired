@@ -912,7 +912,9 @@
       // Render inspiration section if data exists
       if (inspirationData && inspirationData.insights?.length) {
         renderInspiration();
-        domCache.inspSection.style.display = 'block';
+        if (!showInspirationOnly) {
+          domCache.inspSection.style.display = 'block';
+        }
       } else {
         domCache.inspSection.style.display = 'none';
       }
