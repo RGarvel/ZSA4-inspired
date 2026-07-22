@@ -110,10 +110,71 @@
       color: var(--accent-blue) !important;
     }
     
-    .back-link:hover i {
+.back-link:hover i {
       transform: translateX(-2px);
     }
+
     
+    /* Light mode: stronger contrast for navbar text/icons */
+    body.light-mode .navbar .navbar-brand span,
+    body.light-mode .navbar .back-link,
+    body.light-mode .navbar .back-link span {
+      color: #1f2328 !important;
+    }
+    body.light-mode .navbar .back-link:hover {
+      color: #0969da !important;
+    }
+    body.light-mode .navbar .theme-toggle-btn {
+      color: #1f2328 !important;
+    }
+    body.light-mode .navbar .theme-toggle-btn:hover {
+      color: #0969da !important;
+    }
+    body.light-mode .navbar-brand i.bi-bar-chart-line-fill {
+      color: #0969da !important;
+    }
+    body.light-mode .tier-badge.premium {
+      background-color: rgba(9, 105, 218, 0.2);
+      color: #0969da;
+    }
+    body.light-mode .tier-badge.standard {
+      background-color: rgba(9, 105, 218, 0.15);
+      color: #075aa0;
+    }
+    body.light-mode .tier-badge.budget {
+      background-color: rgba(154, 103, 0, 0.2);
+      color: #9a6700;
+    }
+    body.light-mode .tier-badge.free {
+      background-color: rgba(26, 127, 55, 0.2);
+      color: #1a7f37;
+    }
+    body.light-mode .keyword-badge {
+      background-color: rgba(9, 105, 218, 0.15);
+      color: #0969da;
+    }
+    body.light-mode .recommendation-card {
+      background: linear-gradient(135deg, rgba(26, 127, 55, 0.1), rgba(9, 105, 218, 0.08));
+      border-color: #1a7f37;
+    }
+    body.light-mode .control-bar {
+      background-color: #ffffff;
+      border-color: #d0d7de;
+    }
+    body.light-mode .chart-container {
+      background-color: #ffffff;
+      border-color: #d0d7de;
+    }
+    body.light-mode .data-table {
+      border-color: #d0d7de;
+    }
+    body.light-mode .data-table th {
+      background-color: #f6f8fa !important;
+    }
+    body.light-mode .comparison-panel {
+      background-color: #ffffff;
+      border-color: #d0d7de;
+    }
     .control-bar {
       background-color: var(--bg-secondary);
       border: 1px solid var(--border-color);
@@ -343,13 +404,13 @@
         <i class="bi bi-bar-chart-line-fill"></i>
         <span>AI 模型价格对比仪表盘</span>
       </a>
-      <a class="back-link ms-auto" href="/ZSA4-inspired/">
-        <i class="bi bi-house-door"></i> 返回首页
+      <a class="back-link ms-auto" href="/ZSA4-inspired/playground/">
+        <i class="bi bi-house-door"></i> 返回Playground
       </a>
+      <small class="text-muted ms-2" id="lastUpdated">数据更新于: 加载中...</small>
       <button class="theme-toggle-btn ms-2" onclick="toggleTheme()" title="切换亮暗模式">
         <i class="bi bi-moon-fill" id="themeIcon"></i>
       </button>
-      <small class="text-muted ms-2" id="lastUpdated">数据更新于: 加载中...</small>
     </div>
   </nav>
 
@@ -395,6 +456,14 @@
             <option value="budget">经济</option>
             <option value="standard">标准</option>
             <option value="premium">高端</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label class="form-label">开源</label>
+          <select class="form-select" id="sourceFilter">
+            <option value="all">全部</option>
+            <option value="true">开源</option>
+            <option value="false">闭源</option>
           </select>
         </div>
         <div class="col-md-2">
@@ -523,6 +592,7 @@
       $el.tierFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); updateChart(); refreshRecommendation(); });
       $el.searchBox?.addEventListener('input', () => { refreshFilterCache(); renderTable(); updateChart(); refreshRecommendation(); });
       $el.taskType?.addEventListener('change', handleTaskTypeChange);
+      $el.sourceFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); updateChart(); refreshRecommendation(); });
     }
 
     document.addEventListener('DOMContentLoaded', async () => {
@@ -558,11 +628,12 @@
     }
 
     // ── Filter state cached ────────────────────────────────
-    let _filterCache = { vendor: 'all', tier: 'all', search: '' };
+    let _filterCache = { vendor: 'all', tier: 'all', source: 'all', search: '' };
     
     function refreshFilterCache() {
       _filterCache.vendor = $el.vendorFilter.value;
       _filterCache.tier = $el.tierFilter.value;
+      _filterCache.source = $el.sourceFilter.value;
       _filterCache.search = $el.searchBox.value.toLowerCase();
     }
     
@@ -585,11 +656,12 @@
     }
 
     function getFilteredModels() {
-      const { vendor, tier, search } = _filterCache;
+      const { vendor, tier, source, search } = _filterCache;
       const out = [];
       for (const m of allModels) {
         if (vendor !== 'all' && m.vendor !== vendor) continue;
         if (tier !== 'all' && m.tier !== tier) continue;
+        if (source !== 'all' && String(m.open_source) !== source) continue;
         if (search && !m.name.toLowerCase().includes(search) && !m.model_id.toLowerCase().includes(search)) continue;
         out.push(m);
       }
@@ -913,6 +985,7 @@
     function resetFilters() {
       $el.vendorFilter.value = 'all';
       $el.tierFilter.value = 'all';
+      $el.sourceFilter.value = 'all';
       $el.searchBox.value = '';
       $el.taskType.value = '';
       compareList = [];
