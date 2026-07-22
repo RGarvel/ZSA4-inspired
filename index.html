@@ -647,6 +647,14 @@
           <i class="bi bi-journal-text"></i> 学术论文 (<span class="cat-count">0</span>)
         </span>
       </div>
+      
+      <!-- Inspiration filter -->
+      <div class="d-flex align-items-center gap-2 mt-2">
+        <span style="font-size: 0.85rem; color: var(--text-secondary);">筛选：</span>
+        <button class="btn btn-sm insp-toggle-btn" id="inspToggleBtn" onclick="toggleInspFilter()">
+          <i class="bi bi-lightbulb-fill"></i> 每日灵感
+        </button>
+      </div>
     </div>
 
     <!-- Articles -->
@@ -683,6 +691,7 @@
     let currentDate = '';
     let currentCategory = 'all';
     let showMajorEventsOnly = false;
+    let showInspirationOnly = false;
     let availableDates = [];
     
     // ── Cached DOM refs ────────────────────────────────────
@@ -810,6 +819,20 @@
       domCache.total.textContent = totalCount;
       domCache.major.textContent = majorCount;
       domCache.avg.textContent = avgImp;
+
+      // Inspiration-only mode: hide articles, just show inspiration cards
+      if (showInspirationOnly) {
+        domCache.articles.style.display = 'none';
+        domCache.empty.style.display = 'none';
+      } else {
+        domCache.articles.style.display = '';
+        if (totalCount === 0) {
+          domCache.articles.innerHTML = '';
+          domCache.empty.style.display = 'block';
+          return;
+        }
+        domCache.empty.style.display = 'none';
+      }
       
       // Category tabs — update counts + active state
       domCache.tabs.forEach(tab => {
@@ -819,17 +842,9 @@
         tab.classList.toggle('active', cat === currentCategory);
       });
       
-      // Empty state
-      if (totalCount === 0) {
-        domCache.articles.innerHTML = '';
-        domCache.empty.style.display = 'block';
-        return;
-      }
-      domCache.empty.style.display = 'none';
-      
       // Build HTML using array join (faster than +=)
       const parts = [];
-      const MAX_SHOW = 5;
+      const MAX_SHOW = 3;
       
       const iconMap = { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' };
       const labelMap = { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' };
@@ -893,6 +908,16 @@
       }
       
       domCache.articles.innerHTML = parts.join('');
+      
+      // Always render inspiration section if data exists
+      if (inspirationData && inspirationData.insights?.length) {
+        renderInspiration();
+        if (!showInspirationOnly) {
+          domCache.inspSection.style.display = 'block';
+        }
+      } else {
+        domCache.inspSection.style.display = 'none';
+      }
       
       // Clear section card cache after render — DOM nodes replaced, old NodeList becomes stale
       for (const k in sectionCards) delete sectionCards[k];
@@ -1002,6 +1027,16 @@
       render();
     }
     
+    function toggleInspFilter() {
+      showInspirationOnly = !showInspirationOnly;
+      const btn = $('inspFilterBtn');
+      if (btn) {
+        btn.textContent = showInspirationOnly ? '已开启' : '已关闭';
+        btn.className = showInspirationOnly ? 'btn btn-sm insp-btn-active' : 'btn btn-sm insp-btn-inactive';
+      }
+      render();
+    }
+
     function filterByCategory(cat) {
       currentCategory = cat;
       render();
@@ -1015,6 +1050,7 @@
       currentDate = e.target.value;
       currentCategory = 'all';
       showMajorEventsOnly = false;
+      showInspirationOnly = false;
       // Clear section card cache on date change
       for (const k in sectionCards) delete sectionCards[k];
       render();
@@ -1025,7 +1061,11 @@
         if (availableDates.length > 0) {
           currentDate = availableDates[0];
           $('dateSelector').value = currentDate;
-          render();
+          // First load inspiration data, then render everything
+          loadInspiration(currentDate).finally(() => {
+            // Small delay to ensure DOM is ready
+            setTimeout(render, 50);
+          });
         }
       });
     });

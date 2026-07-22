@@ -115,6 +115,49 @@
     }
 
     
+    /* Dashboard brand hover: switch to 灵感日报 on hover */
+    #brandLink {
+      transition: color 0.3s;
+    }
+    #brandIcon {
+      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s;
+    }
+    #brandText {
+      transition: opacity 0.2s, color 0.3s;
+    }
+    #brandLink:hover #brandText {
+      opacity: 0;
+      width: 0;
+      overflow: hidden;
+      display: inline-block;
+    }
+    #brandLink:hover #brandIcon {
+      transform: scale(1.2) rotate(-10deg);
+      color: var(--accent-orange) !important;
+    }
+    #brandLink::before {
+      content: ' AI 模型';
+      position: absolute;
+      left: auto;
+      right: 0;
+      background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 0.9rem;
+      opacity: 0;
+      transition: font-size 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.25s;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    #brandLink:hover::before {
+      font-size: 1rem;
+      opacity: 1;
+    }
+    #brandLink {
+      position: relative;
+    }
+    
     /* Light mode: stronger contrast for navbar text/icons */
     body.light-mode .navbar .navbar-brand span,
     body.light-mode .navbar .back-link,
@@ -349,11 +392,25 @@
     /* Keyword badges for categories */
     .keyword-badge {
       font-size: 0.7rem;
-      padding: 0.15rem 0.4rem;
-      border-radius: 3px;
-      background-color: rgba(88, 166, 255, 0.15);
-      color: var(--accent-blue);
-      font-weight: 500;
+    }
+    
+    .inspiration-filter-label {
+      color: var(--text-secondary);
+    }
+    .insp-filter-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .insp-btn-active {
+      background-color: rgba(188, 140, 255, 0.15) !important;
+      border-color: var(--accent-purple) !important;
+      color: var(--accent-purple) !important;
+    }
+    .insp-btn-inactive {
+      background-color: var(--bg-card) !important;
+      border-color: var(--border-color) !important;
+      color: var(--text-secondary);
     }
     
     /* Bootstrap table theme overrides — single consolidated rule set */
@@ -400,9 +457,11 @@
 <body>
   <nav class="navbar" id="mainNavbar">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="/ZSA4-inspired/">
-        <i class="bi bi-bar-chart-line-fill"></i>
-        <span>AI 模型价格对比仪表盘</span>
+      <a class="navbar-brand d-flex align-items-center gap-2 brand-switcher" href="/ZSA4-inspired/index.html" id="brandLink">
+        <i class="bi bi-bar-chart-line-fill brand-icon-default" id="brandIcon"></i>
+        <i class="bi bi-lightbulb-fill brand-icon-hover" id="brandIconHover"></i>
+        <span class="brand-text-default" id="brandText">AI 模型价格对比仪表盘</span>
+        <span class="brand-text-hover" id="brandTextHover">灵感日报</span>
       </a>
       <div class="d-flex align-items-center ms-auto gap-3">
         <small class="text-muted" id="lastUpdated">数据更新于: 加载中...</small>
@@ -597,6 +656,8 @@
       $el.sourceFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); updateChart(); refreshRecommendation(); });
     }
 
+    // Brand hover handled entirely by CSS transitions (no JS needed)
+    
     document.addEventListener('DOMContentLoaded', async () => {
       applyTheme();
       cacheDom();
