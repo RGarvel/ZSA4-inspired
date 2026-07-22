@@ -755,15 +755,10 @@
       // Unified scoring: weight quality vs price based on task type
       const weights = { coding: [0.4, 0.6], reasoning: [0.6, 0.4], image: [0.5, 0.5] };
       const [wQ, wP] = weights[taskType] || [0.5, 0.5];
-      const priceFn = {
-        coding: m => (m.input_price_per_1m + m.output_price_per_1m) / 2,
-        reasoning: m => m.output_price_per_1m / 2,
-        image: m => m.image_generation_price || 0
-      }[taskType] ?? (() => 0);
       
       candidates = candidates.map(m => ({
         ...m,
-        score: Math.round(m.quality_score * wQ + (100 - Math.min(100, priceFn(m))) * wP)
+        score: calcTaskScore(m, taskType)
       }));
       
       candidates.sort((a, b) => b.score - a.score);
@@ -789,17 +784,34 @@
     }
 
     // ── Chart — single-pass data aggregation ─────────────────
+    function calcTaskScore(model, taskType) {
+      const wQ = { coding: 0.4, reasoning: 0.6, image: 0.5 }[taskType] || 0.5;
+      const wP = 1 - wQ;
+      const ip = Number(model.input_price_per_1m ?? 0) || 0;
+      const op = Number(model.output_price_per_1m ?? 0) || 0;
+      const pg = model.image_generation_price;
+      let priceVal = 0;
+      if (taskType === 'coding') { priceVal = (ip + op) / 2; }
+      else if (taskType === 'reasoning') { priceVal = op / 2; }
+      else if (taskType === 'image') { priceVal = (pg != null && pg !== '/') ? (Number(pg)||0) / 2 : 0; }
+      return Math.round((model.quality_score || 0) * wQ + (100 - Math.min(100, priceVal)) * wP);
+    }
+
     function updateChart() {
       if (priceChart) { priceChart.destroy(); }
       
-      // Select models: compare > sorted > filtered
+      const taskType = $el.taskType?.value || '';
+      const hasTaskFilter = !!taskType;
+      
+      // Select models: compare > task-sorted > filtered
       let models = compareList.length > 0
         ? (buildModelMap(), compareList.map(id => _modelByIdMap.get(id)).filter(Boolean))
-        : (_sortedModels && _sortedModels.length) ? _sortedModels.slice(0, 10) : getFilteredModels().slice(0, 10);
+        : (hasTaskFilter
+          ? getFilteredModels().filter(m => m.categories.includes(taskType)).map(m => ({ ...m, taskScore: calcTaskScore(m, taskType) })).sort((a,b) => b.taskScore - a.taskScore).slice(0, 10)
+          : (_sortedModels && _sortedModels.length) ? _sortedModels.slice(0, 10) : getFilteredModels().slice(0, 10));
       
       if (!models.length) return;
       
-      const taskType = $el.taskType?.value || 'coding';
       const perfLabel = { coding: '编码性能', reasoning: '推理性能', image: '图像性能' }[taskType] || '质量评分';
       
       // Single pass: collect all chart data + compute bounds
@@ -808,13 +820,14 @@
       
       for (let i = 0; i < models.length; i++) {
         const m = models[i];
-        const ip = m.input_price_per_1m, op = m.output_price_per_1m, qs = m.quality_score;
+        const ip = Number(m.input_price_per_1m ?? 0) || 0, op = Number(m.output_price_per_1m ?? 0) || 0, qs = m.quality_score || 0;
         inputPrices.push(ip);
         outputPrices.push(op);
-        scores.push(qs);
+        scores.push(hasTaskFilter ? (m.taskScore != null ? m.taskScore : qs) : qs);
         if (op > maxPrice) maxPrice = op;
-        if (qs > maxScore) maxScore = qs;
-        if (qs < minScore) minScore = qs;
+        const sv = hasTaskFilter ? (m.taskScore != null ? m.taskScore : qs) : qs;
+        if (sv > maxScore) maxScore = sv;
+        if (sv < minScore) minScore = sv;
       }
       
       const scoreRange = maxScore - minScore;
@@ -864,7 +877,7 @@
             },
             title: {
               display: true,
-              text: compareList.length > 0 ? '选中模型对比' : '输入/输出价格对比 (前10个模型)',
+              text: compareList.length > 0 ? '选中模型对比' : hasTaskFilter ? `性价比排序 (前10) — ${perfLabel}` : '输入/输出价格对比 (前10个模型)',
               color: txt,
               font: { size: 16 }
             }
