@@ -1,0 +1,147 @@
+{
+  "scenarios": [
+    {
+      "id": "chatbot_eu",
+      "name": "AI聊天机器人/客服",
+      "icon": "💬",
+      "jurisdiction": "欧盟AI法案",
+      "regulation_id": "eu_ai_act",
+      "risk_level": "高风险",
+      "description": "面向消费者的AI对话系统，包括客服机器人、虚拟助手等",
+      "checks": [
+        {"id": "chatbot-1", "category": "透明度", "requirement": "必须明确告知用户正在与AI交互", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "chatbot-2", "category": "透明度", "requirement": "提供清晰的AI系统使用说明", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "chatbot-3", "category": "数据安全", "requirement": "用户对话数据需符合GDPR要求", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "chatbot-4", "category": "内容安全", "requirement": "防止生成有害/违法内容", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "chatbot-5", "category": "人工监督", "requirement": "高风险场景需有人工介入机制", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "chatbot-6", "category": "可解释性", "requirement": "用户有权要求AI决策的解释", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "chatbot-7", "category": "偏见检测", "requirement": "定期进行公平性测试，避免歧视性输出", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "chatbot-8", "category": "日志记录", "requirement": "保留对话日志至少6个月用于审计", "baseline_passed": false, "notes": "", "severity": "low"}
+      ],
+      "recommendations": ["部署内容过滤中间件拦截敏感话题", "建立用户反馈机制收集AI错误案例", "定期更新训练数据避免知识过时", "设置明确的服务边界声明"]
+    },
+    {
+      "id": "recruitment_cn",
+      "name": "AI招聘筛选工具",
+      "icon": "👔",
+      "jurisdiction": "中国算法推荐管理规定",
+      "regulation_id": "cn_algo_reg",
+      "risk_level": "高风险",
+      "description": "利用AI进行简历筛选、面试评估、候选人推荐的人力资源工具",
+      "checks": [
+        {"id": "recruit-1", "category": "公平性", "requirement": "确保算法不因性别、年龄、地域等产生歧视", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "recruit-2", "category": "公平性", "requirement": "定期进行偏见审计并提供申诉渠道", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "recruit-3", "category": "透明度", "requirement": "告知求职者筛选过程使用了AI", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "recruit-4", "category": "数据安全", "requirement": "保护候选人隐私信息，最小化数据采集", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "recruit-5", "category": "可解释性", "requirement": "无法被录用时需能解释主要原因", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "recruit-6", "category": "人工监督", "requirement": "关键决定（如淘汰）需有人工复核", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "recruit-7", "category": "数据质量", "requirement": "训练数据涵盖多元群体避免代表性偏差", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "recruit-8", "category": "合规备案", "requirement": "按规完成算法安全评估和备案", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "recruit-9", "category": "员工知情权", "requirement": "向HR团队提供算法使用培训", "baseline_passed": false, "notes": "", "severity": "low"}
+      ],
+      "recommendations": ["引入第三方公平性审计机构", "建立候选人申诉处理流程", "维护多样化的训练数据集", "设置算法决策的人工否决权"]
+    },
+    {
+      "id": "recommender_eu",
+      "name": "AI推荐系统",
+      "icon": "🎯",
+      "jurisdiction": "欧盟AI法案 + 中国算法推荐管理规定",
+      "regulation_id": "eu_ai_act",
+      "risk_level": "中风险",
+      "description": "个性化内容/商品推荐引擎，应用于电商、资讯、视频等平台",
+      "checks": [
+        {"id": "recsys-1", "category": "透明度", "requirement": "告知用户内容为何被推荐", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "recsys-2", "category": "用户控制权", "requirement": "提供关闭或调整推荐偏好的选项", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "recsys-3", "category": "公平性", "requirement": "避免对不同群体给用户差异化低质推荐", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "recsys-4", "category": "数据安全", "requirement": "用户行为数据的采集和处理需获明示同意", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "recsys-5", "category": "内容多样性", "requirement": "防止信息茧房效应，提供多样化内容推荐", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "recsys-6", "category": "数据安全", "requirement": "不得利用脆弱用户特征（如财务困境）进行操纵性推荐", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "recsys-7", "category": "标注管理", "requirement": "对合成内容/标注数据进行有效管理", "baseline_passed": false, "notes": "", "severity": "medium"}
+      ],
+      "recommendations": ["实现推荐原因解释功能", "加入多样性指数监控", "建立用户偏好控制面板", "定期进行推荐效果审计"]
+    },
+    {
+      "id": "content_gen_us",
+      "name": "AI内容生成",
+      "icon": "✍️",
+      "jurisdiction": "美国AI行政令",
+      "regulation_id": "us_ai_exo",
+      "risk_level": "中风险",
+      "description": "使用AI生成文案、设计、音乐、视频等创意内容的工具",
+      "checks": [
+        {"id": "gen-1", "category": "版权合规", "requirement": "生成内容不侵犯既有版权作品的权利", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "gen-2", "category": "透明度", "requirement": "为生成内容添加AI标识水印", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "gen-3", "category": "内容安全", "requirement": "防止生成虚假/误导性信息", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "gen-4", "category": "训练数据", "requirement": "训练数据来源合法并获得授权", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "gen-5", "category": "深度伪造防护", "requirement": "防止生成深度伪造的音视频", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "gen-6", "category": "水印技术", "requirement": "实施C2PA标准的内容来源追踪", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "gen-7", "category": "用户提示", "requirement": "提供清晰的合规使用指南", "baseline_passed": false, "notes": "", "severity": "low"},
+        {"id": "gen-8", "category": "申诉机制", "requirement": "建立版权投诉的快速响应流程", "baseline_passed": false, "notes": "", "severity": "medium"}
+      ],
+      "recommendations": ["集成C2PA水印标准", "建立版权内容比对数据库", "实施用户分级审核机制", "开发违规内容自动检测模块"]
+    },
+    {
+      "id": "medical_ai",
+      "name": "AI医疗诊断辅助",
+      "icon": "🏥",
+      "jurisdiction": "中国医疗器械监管条例 + FDA",
+      "regulation_id": "cn_med_device",
+      "risk_level": "极高风险",
+      "description": "利用AI进行医学影像分析、辅助诊断、治疗方案推荐的医疗工具",
+      "checks": [
+        {"id": "med-1", "category": "审批认证", "requirement": "获取医疗器械注册证（NMPA/FDA）", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "med-2", "category": "临床验证", "requirement": "完成临床试验证明安全性和有效性", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "med-3", "category": "数据安全", "requirement": "患者数据脱敏处理并符合HIPAA/GDPR", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "med-4", "category": "人工监督", "requirement": "AI输出仅作为参考，最终决定须由医生作出", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "med-5", "category": "可解释性", "requirement": "诊断建议需提供置信度和推理依据", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "med-6", "category": "数据安全", "requirement": "存储加密且访问权限严格控制", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "med-7", "category": "错误报告", "requirement": "建立误诊事件的报告和改进机制", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "med-8", "category": "数据多样性", "requirement": "训练数据覆盖不同人群特征避免偏差", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "med-9", "category": "持续监测", "requirement": "上线后持续监控模型性能和安全性", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "med-10", "category": "应急响应", "requirement": "制定模型失效时的应急预案", "baseline_passed": false, "notes": "", "severity": "medium"}
+      ],
+      "recommendations": ["组建多学科伦理审查委员会", "建立患者知情同意流程", "实施模型漂移监测系统", "制定医疗事故责任界定标准"]
+    },
+    {
+      "id": "legal_review_cn",
+      "name": "AI法律文件审查",
+      "icon": "⚖️",
+      "jurisdiction": "中国律师法 + 算法推荐管理规定",
+      "regulation_id": "cn_algo_reg",
+      "risk_level": "中风险",
+      "description": "利用AI进行合同审查、法律研究、案件预测的法律科技工具",
+      "checks": [
+        {"id": "legal-1", "category": "可解释性", "requirement": "法律建议需提供法律依据和推理链", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "legal-2", "category": "数据安全", "requirement": "客户保密信息严格加密处理", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "legal-3", "category": "准确性", "requirement": "对判例引用和法律条文进行严格核验", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "legal-4", "category": "人工监督", "requirement": "关键法律意见需经执业律师审核签字", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "legal-5", "category": "透明度", "requirement": "明确告知AI建议的局限性和不适用场景", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "legal-6", "category": "偏见检测", "requirement": "定期检查法律预测中的系统性偏差", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "legal-7", "category": "合规备案", "requirement": "遵守律师事务所信息化管理规定", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "legal-8", "category": "数据隔离", "requirement": "不同客户的法律数据严格物理隔离", "baseline_passed": false, "notes": "", "severity": "high"}
+      ],
+      "recommendations": ["实施法律专业术语知识库", "建立判决书交叉验证机制", "设置法律时效性检查功能", "开发合同条款智能比对工具"]
+    },
+    {
+      "id": "education_ai",
+      "name": "AI教育辅导工具",
+      "icon": "📚",
+      "jurisdiction": "中国未成年人保护法 + GDPR-K",
+      "regulation_id": "eu_ai_act",
+      "risk_level": "高风险",
+      "description": "面向学生的AI学习助手、个性化教学规划、作业批改系统",
+      "checks": [
+        {"id": "edu-1", "category": "数据安全", "requirement": "未成年人数据需获得监护人明确同意", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "edu-2", "category": "内容安全", "requirement": "过滤不适合未成年人的内容", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "edu-3", "category": "数据安全", "requirement": "学习行为数据保护，不得商业化利用", "baseline_passed": false, "notes": "", "severity": "critical"},
+        {"id": "edu-4", "category": "透明度", "requirement": "告知学生和家长AI系统的功能和局限", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "edu-5", "category": "人工监督", "requirement": "教师拥有对AI教学计划的干预权", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "edu-6", "category": "偏见检测", "requirement": "评估AI建议是否对不同群体产生不公平影响", "baseline_passed": false, "notes": "", "severity": "high"},
+        {"id": "edu-7", "category": "数字福祉", "requirement": "设置使用时限防止过度依赖", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "edu-8", "category": "可解释性", "requirement": "学习建议需提供可理解的理由说明", "baseline_passed": false, "notes": "", "severity": "medium"},
+        {"id": "edu-9", "category": "教育伦理", "requirement": "尊重教育规律，不替代师生互动核心", "baseline_passed": false, "notes": "", "severity": "medium"}
+      ],
+      "recommendations": ["实施家长控制面板", "设置使用时长提醒功能", "建立教育效果跟踪系统", "开发离线模式保障隐私"]
+    }
+  ]
+}
