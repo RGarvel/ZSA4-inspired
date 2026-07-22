@@ -631,8 +631,8 @@
     <!-- Category Tabs -->
     <div class="mb-4">
       <div class="d-flex flex-wrap gap-2" id="categoryTabs">
-        <span class="category-tab active" data-category="all" onclick="filterByCategory('all')">
-          <i class="bi bi-grid"></i> 全部
+        <span class="category-tab active" data-category="ai_tech" onclick="filterByCategory('ai_tech')" id="defaultTab">
+          <i class="bi bi-cpu"></i> AI 技术 (<span class="cat-count">0</span>)
         </span>
         <span class="category-tab" data-category="ai_tech" onclick="filterByCategory('ai_tech')">
           <i class="bi bi-cpu"></i> AI 技术 (<span class="cat-count">0</span>)
@@ -677,7 +677,7 @@
     // ── State ──────────────────────────────────────────────
     let allData = [];
     let currentDate = '';
-    let currentCategory = 'all';
+    let currentCategory = 'ai_tech';
     let showMajorEventsOnly = false;
     // Inspiration is now a parallel filter tab, not a separate toggle
     let availableDates = [];
@@ -763,7 +763,7 @@
         // Count ALL categories regardless of active filter (so tabs always show real counts)
         if (cats.hasOwnProperty(item.category)) cats[item.category]++;
         
-        if (currentCategory !== 'all' && item.category !== currentCategory) continue;
+        if (item.category !== currentCategory) continue;
         if (showMajorEventsOnly && !item.is_major_event) continue;
         
         totalCount++;
@@ -899,8 +899,10 @@
       if (hasInspirationData()) {
         const insights = inspirationData.insights;
         const filteredInsights = currentCategory === 'inspiration' ? insights : insights;
+        const filteredInsights = currentCategory === 'inspiration' ? insights : insights;
         
-        if (currentCategory === 'all') {
+        // Show insights at bottom when viewing standard categories
+        if (true) {
           const sepParts = [];
           sepParts.push('<div class="inspiration-divider mt-5 mb-3 d-flex align-items-center gap-2">');
           sepParts.push('<i class="bi bi-lightbulb-fill" style="color: var(--accent-orange); font-size: 1.3rem;"></i>');
