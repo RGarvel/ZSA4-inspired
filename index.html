@@ -917,17 +917,7 @@
         domCache.inspSection.style.display = 'none';
       }
       
-      // Always render inspiration section if data exists
-      if (inspirationData && inspirationData.insights?.length) {
-        renderInspiration();
-        if (!showInspirationOnly) {
-          domCache.inspSection.style.display = 'block';
-        }
-      } else {
-        domCache.inspSection.style.display = 'none';
-      }
-      
-      // Clear section card cache after render — DOM nodes replaced, old NodeList becomes stale
+      // Clear section card cache after render
       for (const k in sectionCards) delete sectionCards[k];
     }
     
@@ -1072,8 +1062,6 @@
           loadInspiration(currentDate).finally(() => {
             setTimeout(render, 50);
           });
-        }
-      });
         }
       });
     });
