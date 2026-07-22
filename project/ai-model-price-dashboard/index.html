@@ -500,6 +500,9 @@
     // ── Cached DOM refs ─────────────────────────────────────
     let $el = {}; // Initialized after DOM ready
     
+    // Shortcut
+    function $(id) { return document.getElementById(id); }
+
     function cacheDom() {
       if ($el._c) return;
       $el = {
@@ -512,13 +515,19 @@
       $el.chartCtx = $('priceChart').getContext('2d');
       $el._c = true;
     }
-    
-    // Shortcut
-    function $(id) { return document.getElementById(id); }
-    
+
+    // Register filter listeners AFTER cacheDom populates $el
+    function registerFilterListeners() {
+      $el.vendorFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+      $el.tierFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+      $el.searchBox?.addEventListener('input', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
+      $el.taskType?.addEventListener('change', handleTaskTypeChange);
+    }
+
     document.addEventListener('DOMContentLoaded', async () => {
       applyTheme();
       cacheDom();
+      registerFilterListeners();
       await loadModels();
       populateVendorFilter();
       refreshFilterCache(); // sync _filterCache with actual DOM values after populateVendorFilter
@@ -555,12 +564,6 @@
       _filterCache.tier = $el.tierFilter.value;
       _filterCache.search = $el.searchBox.value.toLowerCase();
     }
-    
-    // Pre-registered callbacks
-    $el.vendorFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
-    $el.tierFilter?.addEventListener('change', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
-    $el.searchBox?.addEventListener('input', () => { refreshFilterCache(); renderTable(); refreshRecommendation(); });
-    $el.taskType?.addEventListener('change', handleTaskTypeChange);
     
     function handleTaskTypeChange() {
       const card = $el.recommendationCard;
