@@ -165,29 +165,6 @@
       "quality_score": 83
     },
     {
-      "model_id": "o4-mini",
-      "name": "O4 Mini",
-      "vendor": "OpenAI",
-      "open_source": false,
-      "tier": "standard",
-      "categories": [
-        "text",
-        "reasoning",
-        "coding"
-      ],
-      "context_window": 200000,
-      "input_price_per_1m": 1.1,
-      "output_price_per_1m": 4.4,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "text": 82,
-        "reasoning": 82,
-        "coding": 82
-      },
-      "quality_score": 82
-    },
-    {
       "model_id": "gemini-3.5-flash",
       "name": "Gemini 3.5 Flash",
       "vendor": "Google",
