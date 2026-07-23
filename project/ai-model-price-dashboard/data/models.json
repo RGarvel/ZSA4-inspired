@@ -8,91 +8,98 @@
       "name": "GPT-5.6 Sol",
       "vendor": "OpenAI",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 5.00,
-      "output_price_per_1m": 30.00,
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 30.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 98,
-      "tier": "premium"
+      "tier": "premium",
+      "open_source": false
     },
     {
       "model_id": "claude-fable-5",
       "name": "Claude Fable 5",
       "vendor": "Anthropic",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 10.00,
-      "output_price_per_1m": 50.00,
+      "input_price_per_1m": 10.0,
+      "output_price_per_1m": 50.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 97,
-      "tier": "premium"
+      "tier": "premium",
+      "open_source": false
     },
     {
       "model_id": "claude-opus-4.8",
       "name": "Claude Opus 4.8",
       "vendor": "Anthropic",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 5.00,
-      "output_price_per_1m": 25.00,
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 25.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 96,
-      "tier": "premium"
+      "tier": "premium",
+      "open_source": false
     },
     {
       "model_id": "o3",
       "name": "o3",
       "vendor": "OpenAI",
       "categories": ["reasoning", "coding"],
-      "input_price_per_1m": 2.00,
-      "output_price_per_1m": 8.00,
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 8.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 95,
-      "tier": "premium"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "gpt-5.6-terra",
       "name": "GPT-5.6 Terra",
       "vendor": "OpenAI",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 2.50,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 2.5,
+      "output_price_per_1m": 15.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 94,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "claude-sonnet-5",
       "name": "Claude Sonnet 5",
       "vendor": "Anthropic",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 3.00,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 93,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "gemini-3.1-pro",
       "name": "Gemini 3.1 Pro",
       "vendor": "Google",
       "categories": ["chat", "coding", "reasoning", "image"],
-      "input_price_per_1m": 2.00,
-      "output_price_per_1m": 12.00,
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 12.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 93,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "llama-4-maverick",
@@ -100,64 +107,69 @@
       "vendor": "Meta",
       "categories": ["chat", "coding", "reasoning"],
       "input_price_per_1m": 0.15,
-      "output_price_per_1m": 0.60,
+      "output_price_per_1m": 0.6,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 92,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": true
     },
     {
       "model_id": "kimi-k3",
       "name": "Kimi K3",
       "vendor": "Moonshot",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 3.00,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 91,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": true
     },
     {
       "model_id": "gpt-5.6-luna",
       "name": "GPT-5.6 Luna",
       "vendor": "OpenAI",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 1.00,
-      "output_price_per_1m": 6.00,
+      "input_price_per_1m": 1.0,
+      "output_price_per_1m": 6.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 90,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "glm-5.2",
       "name": "GLM-5.2",
       "vendor": "Zhipu AI (智谱)",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 1.40,
-      "output_price_per_1m": 4.40,
+      "input_price_per_1m": 1.4,
+      "output_price_per_1m": 4.4,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 89,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": true
     },
     {
       "model_id": "grok-4.5",
       "name": "Grok 4.5",
       "vendor": "xAI",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 2.00,
-      "output_price_per_1m": 6.00,
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 6.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 500000,
       "quality_score": 88,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "llama-4-scout",
@@ -165,12 +177,13 @@
       "vendor": "Meta",
       "categories": ["chat", "coding", "reasoning"],
       "input_price_per_1m": 0.08,
-      "output_price_per_1m": 0.30,
+      "output_price_per_1m": 0.3,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 10000000,
       "quality_score": 87,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": true
     },
     {
       "model_id": "qwen-max",
@@ -183,20 +196,22 @@
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 86,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "qwen3.7-max",
       "name": "Qwen3.7 Max",
       "vendor": "阿里通义",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 1.25,
-      "output_price_per_1m": 3.75,
+      "input_price_per_1m": 2.5,
+      "output_price_per_1m": 7.5,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 85,
-      "tier": "budget"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "deepseek-v4-flash",
@@ -209,33 +224,36 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 85,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": true
     },
     {
       "model_id": "mistral-large-3",
       "name": "Mistral Large 3 (2512)",
       "vendor": "Mistral",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 0.50,
-      "output_price_per_1m": 1.50,
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 6.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 84,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "dall-e-3",
       "name": "DALL-E 3",
       "vendor": "OpenAI",
       "categories": ["image"],
-      "input_price_per_1m": 0.00,
-      "output_price_per_1m": 0.00,
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
       "image_generation_price": 0.08,
       "image_edit_price": 0.08,
       "context_window": 0,
       "quality_score": 83,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "deepseek-v4-pro",
@@ -248,111 +266,120 @@
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 83,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": true
     },
     {
       "model_id": "step-edge",
       "name": "Step Edge",
       "vendor": "阶跃星辰",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 0.30,
-      "output_price_per_1m": 1.20,
+      "input_price_per_1m": 0.3,
+      "output_price_per_1m": 1.2,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 82,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": true
     },
     {
       "model_id": "imagen-4-ultra",
       "name": "Imagen 4 Ultra",
       "vendor": "Google",
       "categories": ["image"],
-      "input_price_per_1m": 0.00,
-      "output_price_per_1m": 120.00,
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
       "image_generation_price": 0.06,
       "image_edit_price": "/",
       "context_window": 0,
       "quality_score": 81,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "claude-haiku-4.5",
       "name": "Claude Haiku 4.5",
       "vendor": "Anthropic",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 1.00,
-      "output_price_per_1m": 5.00,
+      "input_price_per_1m": 1.0,
+      "output_price_per_1m": 5.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 80,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "gemini-3.5-flash",
       "name": "Gemini 3.5 Flash",
       "vendor": "Google",
       "categories": ["chat", "coding", "reasoning", "image"],
-      "input_price_per_1m": 0.75,
-      "output_price_per_1m": 4.50,
+      "input_price_per_1m": 1.5,
+      "output_price_per_1m": 9.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 80,
-      "tier": "budget"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "gemini-3.6-flash",
       "name": "Gemini 3.6 Flash",
       "vendor": "Google",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 1.50,
-      "output_price_per_1m": 7.50,
+      "input_price_per_1m": 1.5,
+      "output_price_per_1m": 7.5,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1048576,
       "quality_score": 79,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "gemini-3-flash",
       "name": "Gemini 3 Flash",
       "vendor": "Google",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 0.15,
-      "output_price_per_1m": 0.60,
+      "input_price_per_1m": 0.5,
+      "output_price_per_1m": 3.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
       "quality_score": 78,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "cohere-command-r-plus",
       "name": "Cohere Command R+",
       "vendor": "Cohere",
       "categories": ["chat", "coding", "reasoning"],
-      "input_price_per_1m": 2.50,
-      "output_price_per_1m": 10.00,
+      "input_price_per_1m": 2.5,
+      "output_price_per_1m": 10.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 78,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "o4-mini",
       "name": "o4-mini",
       "vendor": "OpenAI",
       "categories": ["reasoning", "coding"],
-      "input_price_per_1m": 1.10,
-      "output_price_per_1m": 4.40,
+      "input_price_per_1m": 1.1,
+      "output_price_per_1m": 4.4,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 200000,
       "quality_score": 77,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "kimi-k2.6",
@@ -365,7 +392,8 @@
       "image_edit_price": "/",
       "context_window": 262144,
       "quality_score": 77,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": true
     },
     {
       "model_id": "gpt-4o-mini",
@@ -373,12 +401,13 @@
       "vendor": "OpenAI",
       "categories": ["chat", "coding"],
       "input_price_per_1m": 0.15,
-      "output_price_per_1m": 0.60,
+      "output_price_per_1m": 0.6,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 76,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "gpt-5.4-mini",
@@ -386,25 +415,27 @@
       "vendor": "OpenAI",
       "categories": ["chat", "coding", "reasoning"],
       "input_price_per_1m": 0.75,
-      "output_price_per_1m": 4.50,
+      "output_price_per_1m": 4.5,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 400000,
       "quality_score": 75,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "gpt-image-1.5",
       "name": "GPT Image 1.5",
       "vendor": "OpenAI",
       "categories": ["image"],
-      "input_price_per_1m": 0.00,
-      "output_price_per_1m": 32.00,
-      "image_generation_price": 0.04,
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.034,
       "image_edit_price": "/",
       "context_window": 0,
       "quality_score": 74,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "yi-lightning",
@@ -417,7 +448,8 @@
       "image_edit_price": "/",
       "context_window": 40000,
       "quality_score": 72,
-      "tier": "budget"
+      "tier": "free",
+      "open_source": true
     },
     {
       "model_id": "doubao-seed-2.1-pro",
@@ -430,59 +462,64 @@
       "image_edit_price": "/",
       "context_window": 256000,
       "quality_score": 70,
-      "tier": "budget"
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "flux-2-pro",
       "name": "FLUX 2 Pro",
       "vendor": "Black Forest Labs",
       "categories": ["image"],
-      "input_price_per_1m": 0.00,
-      "output_price_per_1m": 0.00,
-      "image_generation_price": 0.055,
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.03,
       "image_edit_price": "/",
-      "context_window": 0,
+      "context_window": 46864,
       "quality_score": 69,
-      "tier": "standard"
+      "tier": "standard",
+      "open_source": false
     },
     {
       "model_id": "mistral-small-3",
       "name": "Mistral Small 3",
       "vendor": "Mistral",
       "categories": ["chat", "coding"],
-      "input_price_per_1m": 0.10,
-      "output_price_per_1m": 0.30,
+      "input_price_per_1m": 0.1,
+      "output_price_per_1m": 0.3,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 68,
-      "tier": "free"
+      "tier": "budget",
+      "open_source": false
     },
     {
-      "model_id": "gemini-2.0-flash-lite",
-      "name": "Gemini 2.0 Flash Lite",
+      "model_id": "gemini-2.5-flash-lite",
+      "name": "Gemini 2.5 Flash Lite",
       "vendor": "Google",
       "categories": ["chat", "coding"],
-      "input_price_per_1m": 0.075,
-      "output_price_per_1m": 0.30,
+      "input_price_per_1m": 0.1,
+      "output_price_per_1m": 0.4,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
-      "quality_score": 68,
-      "tier": "free"
+      "quality_score": 67,
+      "tier": "budget",
+      "open_source": false
     },
     {
       "model_id": "amazon-nova-micro",
       "name": "Amazon Nova Micro",
       "vendor": "Amazon",
       "categories": ["chat", "coding"],
-      "input_price_per_1m": 0.035,
+      "input_price_per_1m": 0.04,
       "output_price_per_1m": 0.14,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
       "quality_score": 65,
-      "tier": "free"
+      "tier": "budget",
+      "open_source": false
     }
   ]
 }
