@@ -749,7 +749,7 @@
         allData = [];
       }
     }
-    
+
     // ── Single-pass filter + stats + group ─────────────────
     // Combines filtering, stats calculation, and grouping into ONE array pass
     function computeFiltered() {
@@ -1043,14 +1043,16 @@
         if (availableDates.length > 0) {
           currentDate = availableDates[0];
           $('dateSelector').value = currentDate;
-          loadInspiration(currentDate)
-            .then(() => render())
-            .catch(() => render());
+          // Load inspiration THEN render (strict sequence, no race)
+          return loadInspiration(currentDate).then(() => render());
         }
+        return Promise.resolve();
+      }).catch(err => {
+        console.error('Load cycle failed:', err);
+        render(); // Always render, even if inspiration fails
       });
-    });
-    
-    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Navbar scroll-to-top handler (independent)
       const navbar = document.querySelector('.navbar');
       if (navbar) {
         navbar.addEventListener('click', function(e) {
