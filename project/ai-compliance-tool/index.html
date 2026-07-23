@@ -157,13 +157,12 @@
       padding: 0 1.5rem;
     }
 
-    /* ═══════════ TOP FILTER BAR ═══════════ */
-    .top-filter-bar {
-      padding: 1rem 0;
+    /* Category chips - only used inside drawer now */
+    .category-chips-inline {
       display: flex;
-      align-items: center;
-      gap: 1rem;
+      gap: 0.35rem;
       flex-wrap: wrap;
+      margin-bottom: 1rem;
     }
     .filter-group-label {
       font-size: 0.72rem;
@@ -173,52 +172,8 @@
       letter-spacing: 0.5px;
       white-space: nowrap;
     }
-    .scenario-chips {
-      display: flex;
-      gap: 0.5rem;
-      overflow-x: auto;
-      flex: 1;
-      min-width: 0;
-      padding: 2px 0;
-    }
-    .scenario-chips::-webkit-scrollbar { height: 3px; }
-    .scenario-chips::-webkit-scrollbar-track { background: transparent; }
-    .scenario-chips::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 2px; }
-    .scenario-chip {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      border: 1px solid var(--border-color);
-      background: var(--bg-card);
-      color: var(--text-primary);
-      font-size: 0.82rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .scenario-chip:hover {
-      border-color: var(--accent-blue);
-      background: rgba(88, 166, 255, 0.08);
-    }
-    .scenario-chip.active {
-      background: linear-gradient(135deg, rgba(88,166,255,0.15), rgba(188,140,255,0.08));
-      border-color: var(--accent-blue);
-      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.15);
-    }
-    .scenario-chip .chip-icon { font-size: 1.1rem; }
-    
-    .category-chips {
-      display: flex;
-      gap: 0.35rem;
-      flex-wrap: wrap;
-      margin-top: 0.5rem;
-    }
     .category-chip {
-      padding: 0.2rem 0.6rem;
+      padding: 0.25rem 0.65rem;
       border-radius: 14px;
       font-size: 0.72rem;
       font-weight: 500;
@@ -499,10 +454,11 @@
       border: 1px solid var(--border-color); border-radius: 12px;
       padding: 0.75rem 1.1rem; margin-top: 0.5rem;
       box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-      animation: toastIn 0.3s ease; font-size: 0.83rem; font-weight: 500;
+      animation: toastIn 0.3s ease, toastOut 0.3s ease 2.2s forwards; font-size: 0.83rem; font-weight: 500;
       display: flex; align-items: center; gap: 0.5rem;
     }
     @keyframes toastIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes toastOut { from { transform: translateX(0); opacity: 1; } to { transform: translateX(100%); opacity: 0; } }
 
     /* ═══════════ RESPONSIVE ═══════════ */
     @media (max-width: 992px) {
@@ -510,26 +466,27 @@
     }
     @media (max-width: 768px) {
       .main-container { padding: 0 1rem; }
-      .scenario-chip { padding: 0.4rem 0.7rem; font-size: 0.78rem; }
       .detail-name { font-size: 1.2rem; }
       .check-item { padding: 0.7rem 0.85rem; }
       .check-text { font-size: 0.82rem; }
       .score-number { font-size: 1.6rem; }
       .drawer-scenario-card { min-width: 200px; }
+      .action-btn { font-size: 0.78rem; padding: 0.4rem 0.7rem; }
+      .category-chip { font-size: 0.68rem; padding: 0.2rem 0.55rem; }
     }
   </style>
 </head>
 <body>
   <nav class="navbar" id="mainNavbar">
     <div class="main-container d-flex align-items-center justify-content-between">
-      <a class="navbar-brand brand-switcher" href="/ZSA4-inspired/index.html" id="brandLink">
+      <a class="navbar-brand brand-switcher" href="../playground/index.html" id="brandLink">
         <i class="bi bi-shield-check brand-icon-default" id="brandIcon"></i>
         <i class="bi bi-lightbulb-fill brand-icon-hover" id="brandIconHover"></i>
         <span class="brand-text-default" id="brandText">AI合规检查清单</span>
         <span class="brand-text-hover" id="brandTextHover">灵感日报</span>
       </a>
       <div class="d-flex align-items-center gap-2">
-        <a class="back-link" href="/ZSA4-inspired/project/playground/">
+        <a class="back-link" href="../playground/index.html">
           <i class="bi bi-house-door"></i> 返回Playground
         </a>
         <button class="theme-toggle-btn" onclick="toggleTheme()" title="切换亮暗模式">
@@ -549,12 +506,6 @@
 
     <!-- Scenario Detail View -->
     <div id="scenarioDetail" style="display:none;">
-      
-      <!-- Top Filter Bar: scenario chips + category chips -->
-      <div class="top-filter-bar">
-        <div class="scenario-chips" id="topScenarioChips"></div>
-      </div>
-      <div class="category-chips" id="categoryChips"></div>
 
       <!-- Score Inline Panel -->
       <div class="score-inline" id="scorePanel" style="display:none;">
@@ -612,12 +563,21 @@
   <!-- Bottom Drawer -->
   <div class="bottom-drawer" id="bottomDrawer">
     <button class="bottom-drawer-toggle" onclick="toggleBottomDrawer()">
-      <span>选择其他场景</span>
+      <span>筛选与场景选择</span>
       <span class="drawer-arrow">▼</span>
     </button>
     <div class="bottom-drawer-body">
       <div class="drawer-inner">
-        <div class="drawer-scenario-row" id="drawerScenarioList"></div>
+        <!-- Category chips at top of drawer -->
+        <div style="margin-bottom:0.75rem;">
+          <div class="filter-group-label" style="margin-bottom:0.5rem;">分类筛选</div>
+          <div class="category-chips-inline" id="categoryChips"></div>
+        </div>
+        <!-- Scenario list below -->
+        <div style="border-top:1px solid var(--border-color);padding-top:1rem;">
+          <div class="filter-group-label" style="margin-bottom:0.75rem;">场景切换</div>
+          <div class="drawer-scenario-row" id="drawerScenarioList"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -656,7 +616,7 @@
         const last = localStorage.getItem('ct_last_scenario');
         currentScenarioId = (last && scenarios.find(s => s.id === last)) ? last : (scenarios[0]?.id || '');
         
-        renderTopFilters(); filterBar(); renderDrawer();
+        renderDrawer(); filterBar();
         if (currentScenarioId) showScenario(currentScenarioId);
       } catch (error) {
         console.error('Error loading data:', error);
@@ -664,19 +624,7 @@
       }
     }
 
-    // ── Top scenario chips ──
-    function renderTopFilters() {
-      const parts = scenarios.map(s => {
-        const isActive = s.id === currentScenarioId ? ' active' : '';
-        return `<button class="scenario-chip${isActive}" data-id="${s.id}" onclick="selectScenario('${s.id}')">
-          <span class="chip-icon">${s.icon}</span>
-          <span>${s.name}</span>
-        </button>`;
-      }).join('');
-      $('topScenarioChips').innerHTML = parts;
-    }
-
-    // ── Category chips ──
+    // ── Category chips (moved into drawer) ──
     function filterBar() {
       const cats = [...new Set(scenarios.flatMap(s => s.checks.map(c => c.category)))];
       const parts = [`<span class="category-chip ${activeCategoryFilter==='all'?'active':''}" onclick="setCatFilter('all')">全部</span>`];
@@ -730,7 +678,6 @@
     function selectScenario(id) {
       currentScenarioId = id;
       localStorage.setItem('ct_last_scenario', id);
-      renderTopFilters();
       renderDrawer();
       showScenario(id);
     }
@@ -924,7 +871,7 @@
       toast.className = 'custom-toast';
       toast.innerHTML = `<i class="bi bi-check-circle-fill" style="color:var(--accent-green)"></i>${msg}`;
       $('toastContainer').appendChild(toast);
-      setTimeout(() => toast.remove(), 2500);
+      setTimeout(() => toast.remove(), 2600);
     }
 
     $('mainNavbar')?.addEventListener('click', function(e) {
