@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-25",
   "currency": "USD",
   "unit": "per 1M tokens",
   "models": [
@@ -39,13 +39,13 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
-      "quality_score": 86,
+      "quality_score": 84,
       "tier": "premium",
       "open_source": false,
       "modality_scores": {
         "text": 84,
-        "reasoning": 86,
-        "coding": 87
+        "reasoning": 84,
+        "coding": 84
       }
     },
     {
@@ -68,7 +68,7 @@
       "modality_scores": {
         "text": 84,
         "reasoning": 84,
-        "coding": 85
+        "coding": 84
       }
     },
     {
@@ -90,54 +90,8 @@
       "open_source": false,
       "modality_scores": {
         "text": 84,
-        "reasoning": 83,
-        "coding": 84
-      }
-    },
-    {
-      "model_id": "gpt-5.6-sol",
-      "name": "GPT-5.6 Sol",
-      "vendor": "OpenAI",
-      "categories": [
-        "chat",
-        "coding",
-        "reasoning"
-      ],
-      "input_price_per_1m": 5.0,
-      "output_price_per_1m": 30.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "context_window": 1000000,
-      "quality_score": 84,
-      "tier": "premium",
-      "open_source": false,
-      "modality_scores": {
-        "text": 83,
-        "reasoning": 85,
-        "coding": 86
-      }
-    },
-    {
-      "model_id": "claude-opus-4.8",
-      "name": "Claude Opus 4.8",
-      "vendor": "Anthropic",
-      "categories": [
-        "chat",
-        "coding",
-        "reasoning"
-      ],
-      "input_price_per_1m": 5.0,
-      "output_price_per_1m": 25.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "context_window": 200000,
-      "quality_score": 84,
-      "tier": "premium",
-      "open_source": false,
-      "modality_scores": {
-        "text": 82,
         "reasoning": 84,
-        "coding": 85
+        "coding": 84
       }
     },
     {
@@ -161,8 +115,30 @@
       "modality_scores": {
         "text": 84,
         "reasoning": 84,
-        "coding": 83,
-        "image": 82
+        "coding": 84
+      }
+    },
+    {
+      "model_id": "gpt-5.6-sol",
+      "name": "GPT-5.6 Sol",
+      "vendor": "OpenAI",
+      "categories": [
+        "chat",
+        "coding",
+        "reasoning"
+      ],
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 30.0,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "context_window": 1000000,
+      "quality_score": 83,
+      "tier": "premium",
+      "open_source": false,
+      "modality_scores": {
+        "text": 83,
+        "reasoning": 83,
+        "coding": 83
       }
     },
     {
@@ -184,7 +160,7 @@
       "open_source": false,
       "modality_scores": {
         "text": 83,
-        "reasoning": 82,
+        "reasoning": 83,
         "coding": 83
       }
     },
@@ -202,12 +178,35 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 1000000,
-      "quality_score": 82,
+      "quality_score": 83,
       "tier": "standard",
       "open_source": false,
       "modality_scores": {
         "text": 83,
-        "reasoning": 81,
+        "reasoning": 83,
+        "coding": 83
+      }
+    },
+    {
+      "model_id": "claude-opus-4.8",
+      "name": "Claude Opus 4.8",
+      "vendor": "Anthropic",
+      "categories": [
+        "chat",
+        "coding",
+        "reasoning"
+      ],
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 25.0,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "context_window": 200000,
+      "quality_score": 82,
+      "tier": "premium",
+      "open_source": false,
+      "modality_scores": {
+        "text": 82,
+        "reasoning": 82,
         "coding": 82
       }
     },
@@ -230,7 +229,7 @@
       "open_source": false,
       "modality_scores": {
         "text": 82,
-        "reasoning": 81,
+        "reasoning": 82,
         "coding": 82
       }
     },
@@ -254,9 +253,8 @@
       "open_source": false,
       "modality_scores": {
         "text": 82,
-        "reasoning": 81,
-        "coding": 82,
-        "image": 80
+        "reasoning": 82,
+        "coding": 82
       }
     },
     {
@@ -273,13 +271,35 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 400000,
-      "quality_score": 81,
+      "quality_score": 82,
       "tier": "standard",
       "open_source": false,
       "modality_scores": {
         "text": 82,
-        "reasoning": 81,
-        "coding": 81
+        "reasoning": 82,
+        "coding": 82
+      }
+    },
+    {
+      "model_id": "o4-mini",
+      "name": "o4-mini",
+      "vendor": "OpenAI",
+      "categories": [
+        "reasoning",
+        "coding"
+      ],
+      "input_price_per_1m": 1.1,
+      "output_price_per_1m": 4.4,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "context_window": 200000,
+      "quality_score": 82,
+      "tier": "standard",
+      "open_source": false,
+      "modality_scores": {
+        "text": 82,
+        "reasoning": 82,
+        "coding": 82
       }
     },
     {
@@ -301,7 +321,7 @@
       "open_source": false,
       "modality_scores": {
         "text": 81,
-        "reasoning": 80,
+        "reasoning": 81,
         "coding": 81
       }
     },
@@ -324,30 +344,8 @@
       "open_source": true,
       "modality_scores": {
         "text": 74,
-        "reasoning": 72,
+        "reasoning": 74,
         "coding": 95
-      }
-    },
-    {
-      "model_id": "o4-mini",
-      "name": "o4-mini",
-      "vendor": "OpenAI",
-      "categories": [
-        "reasoning",
-        "coding"
-      ],
-      "input_price_per_1m": 1.1,
-      "output_price_per_1m": 4.4,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "context_window": 200000,
-      "quality_score": 80,
-      "tier": "standard",
-      "open_source": false,
-      "modality_scores": {
-        "text": 75,
-        "reasoning": 85,
-        "coding": 80
       }
     },
     {
@@ -369,8 +367,8 @@
       "open_source": true,
       "modality_scores": {
         "text": 72,
-        "reasoning": 70,
-        "coding": 74
+        "reasoning": 72,
+        "coding": 72
       }
     },
     {
@@ -392,31 +390,8 @@
       "open_source": true,
       "modality_scores": {
         "text": 72,
-        "reasoning": 70,
-        "coding": 74
-      }
-    },
-    {
-      "model_id": "glm-5.2",
-      "name": "GLM-5.2",
-      "vendor": "Zhipu AI (智谱)",
-      "categories": [
-        "chat",
-        "coding",
-        "reasoning"
-      ],
-      "input_price_per_1m": 1.4,
-      "output_price_per_1m": 4.4,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "context_window": 1000000,
-      "quality_score": 70,
-      "tier": "standard",
-      "open_source": true,
-      "modality_scores": {
-        "text": 70,
-        "reasoning": 69,
-        "coding": 70
+        "reasoning": 72,
+        "coding": 72
       }
     },
     {
@@ -438,8 +413,8 @@
       "open_source": true,
       "modality_scores": {
         "text": 70,
-        "reasoning": 68,
-        "coding": 71
+        "reasoning": 71,
+        "coding": 70
       }
     },
     {
@@ -461,8 +436,8 @@
       "open_source": false,
       "modality_scores": {
         "text": 69,
-        "reasoning": 68,
-        "coding": 70
+        "reasoning": 69,
+        "coding": 69
       }
     },
     {
@@ -484,8 +459,31 @@
       "open_source": false,
       "modality_scores": {
         "text": 69,
-        "reasoning": 68,
-        "coding": 70
+        "reasoning": 69,
+        "coding": 69
+      }
+    },
+    {
+      "model_id": "glm-5.2",
+      "name": "GLM-5.2",
+      "vendor": "Zhipu AI (智谱)",
+      "categories": [
+        "chat",
+        "coding",
+        "reasoning"
+      ],
+      "input_price_per_1m": 1.4,
+      "output_price_per_1m": 4.4,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "context_window": 1000000,
+      "quality_score": 69,
+      "tier": "standard",
+      "open_source": true,
+      "modality_scores": {
+        "text": 69,
+        "reasoning": 69,
+        "coding": 69
       }
     },
     {
@@ -501,13 +499,13 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
-      "quality_score": 68,
+      "quality_score": 69,
       "tier": "budget",
       "open_source": false,
       "modality_scores": {
         "text": 69,
-        "reasoning": 66,
-        "coding": 68
+        "reasoning": 69,
+        "coding": 69
       }
     },
     {
@@ -529,8 +527,8 @@
       "open_source": true,
       "modality_scores": {
         "text": 68,
-        "reasoning": 66,
-        "coding": 70
+        "reasoning": 68,
+        "coding": 68
       }
     },
     {
@@ -552,8 +550,8 @@
       "open_source": false,
       "modality_scores": {
         "text": 68,
-        "reasoning": 67,
-        "coding": 69
+        "reasoning": 68,
+        "coding": 68
       }
     },
     {
@@ -575,8 +573,8 @@
       "open_source": true,
       "modality_scores": {
         "text": 68,
-        "reasoning": 66,
-        "coding": 69
+        "reasoning": 68,
+        "coding": 68
       }
     },
     {
@@ -593,13 +591,13 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 200000,
-      "quality_score": 63,
+      "quality_score": 64,
       "tier": "budget",
       "open_source": false,
       "modality_scores": {
         "text": 64,
-        "reasoning": 62,
-        "coding": 63
+        "reasoning": 64,
+        "coding": 64
       }
     },
     {
@@ -616,13 +614,13 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 40000,
-      "quality_score": 62,
+      "quality_score": 63,
       "tier": "free",
       "open_source": true,
       "modality_scores": {
         "text": 63,
-        "reasoning": 61,
-        "coding": 62
+        "reasoning": 63,
+        "coding": 63
       }
     },
     {
@@ -643,8 +641,8 @@
       "tier": "budget",
       "open_source": false,
       "modality_scores": {
-        "text": 63,
-        "reasoning": 61,
+        "text": 62,
+        "reasoning": 62,
         "coding": 62
       }
     },
@@ -681,13 +679,13 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
-      "quality_score": 58,
+      "quality_score": 59,
       "tier": "standard",
       "open_source": false,
       "modality_scores": {
         "text": 59,
-        "reasoning": 57,
-        "coding": 58
+        "reasoning": 59,
+        "coding": 59
       }
     },
     {
@@ -722,13 +720,13 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
-      "quality_score": 55,
+      "quality_score": 56,
       "tier": "budget",
       "open_source": false,
       "modality_scores": {
         "text": 56,
-        "reasoning": 54,
-        "coding": 55
+        "reasoning": 56,
+        "coding": 56
       }
     },
     {
@@ -767,8 +765,8 @@
       "tier": "budget",
       "open_source": false,
       "modality_scores": {
-        "text": 54,
-        "reasoning": 52,
+        "text": 53,
+        "reasoning": 53,
         "coding": 53
       }
     },
@@ -785,13 +783,13 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "context_window": 128000,
-      "quality_score": 50,
+      "quality_score": 51,
       "tier": "budget",
       "open_source": false,
       "modality_scores": {
         "text": 51,
-        "reasoning": 49,
-        "coding": 50
+        "reasoning": 51,
+        "coding": 51
       }
     },
     {
