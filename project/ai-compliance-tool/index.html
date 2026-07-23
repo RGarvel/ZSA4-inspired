@@ -145,12 +145,21 @@
       transform: translateX(-2px);
     }
     .theme-toggle-btn {
-      background: rgba(88,166,255,0.1); border: 1px solid var(--border-color);
-      color: var(--text-primary); border-radius: 10px;
-      padding: 0.35rem 0.55rem; cursor: pointer; font-size: 1.15rem;
-      transition: all 0.25s ease; display: flex; align-items: center; justify-content: center;
+      background: none;
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      border-radius: 8px;
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.1rem;
     }
-    .theme-toggle-btn:hover { background: rgba(88,166,255,0.2); border-color: var(--accent-blue); transform: rotate(15deg); }
+    
+    .theme-toggle-btn:hover {
+      border-color: var(--accent-blue);
+      background-color: rgba(88, 166, 255, 0.1);
+      transform: rotate(15deg);
+    }
 
     /* ═══════════ MAIN CONTENT WRAPPER ═══════════ */
     .main-container {
@@ -368,6 +377,7 @@
       font-size: 1rem;
     }
     .bottom-drawer.open .drawer-arrow { transform: rotate(180deg); }
+    .bottom-drawer-toggle .drawer-arrow { transform: rotate(180deg); }
     .bottom-drawer-body {
       background: var(--bg-secondary);
       border-top: 1px solid var(--border-color);
@@ -472,14 +482,14 @@
 </head>
 <body>
   <nav class="navbar" id="mainNavbar">
-    <div class="main-container d-flex align-items-center justify-content-between">
+    <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-2 brand-switcher" href="https://rgarvel.github.io/ZSA4-inspired/project/playground/index.html" id="brandLink">
         <i class="bi bi-shield-check brand-icon-default" id="brandIcon"></i>
         <i class="bi bi-lightbulb-fill brand-icon-hover" id="brandIconHover"></i>
         <span class="brand-text-default" id="brandText">AI合规检查清单</span>
         <span class="brand-text-hover" id="brandTextHover">灵感日报</span>
       </a>
-      <div class="d-flex align-items-center gap-2">
+      <div class="d-flex align-items-center gap-2 ms-auto">
         <a class="back-link" href="https://rgarvel.github.io/ZSA4-inspired/project/playground/index.html">
           <i class="bi bi-house-door"></i> 返回Playground
         </a>
@@ -558,7 +568,7 @@
   <div class="bottom-drawer" id="bottomDrawer">
     <button class="bottom-drawer-toggle" onclick="toggleBottomDrawer()">
       <span>筛选与场景选择</span>
-      <span class="drawer-arrow">▼</span>
+      <span class="drawer-arrow">▲</span>
     </button>
     <div class="bottom-drawer-body">
       <div class="drawer-inner">
