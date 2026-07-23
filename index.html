@@ -634,9 +634,6 @@
         <span class="category-tab active" data-category="ai_tech" onclick="filterByCategory('ai_tech')" id="defaultTab">
           <i class="bi bi-cpu"></i> AI 技术 (<span class="cat-count">0</span>)
         </span>
-        <span class="category-tab" data-category="ai_tech" onclick="filterByCategory('ai_tech')">
-          <i class="bi bi-cpu"></i> AI 技术 (<span class="cat-count">0</span>)
-        </span>
         <span class="category-tab" data-category="startup" onclick="filterByCategory('startup')">
           <i class="bi bi-rocket-takeoff"></i> 创业动态 (<span class="cat-count">0</span>)
         </span>
@@ -907,10 +904,9 @@
       if (hasInspirationData()) {
         const insights = inspirationData.insights;
         const filteredInsights = currentCategory === 'inspiration' ? insights : insights;
-        const filteredInsights = currentCategory === 'inspiration' ? insights : insights;
         
-        // Show insights at bottom when viewing standard categories
-        if (true) {
+        // Always show insights at bottom when viewing standard categories
+        if (currentCategory !== 'inspiration') {
           const sepParts = [];
           sepParts.push('<div class="inspiration-divider mt-5 mb-3 d-flex align-items-center gap-2">');
           sepParts.push('<i class="bi bi-lightbulb-fill" style="color: var(--accent-orange); font-size: 1.3rem;"></i>');
@@ -923,7 +919,8 @@
             sepParts.push(cardHtml);
           }
           domCache.articles.innerHTML += sepParts.join('\n');
-        } else if (currentCategory === 'inspiration') {
+        } else {
+          // Inspiration-only tab: only show insight cards
           const tip = [];
           tip.push(`<h4 class="mb-3"><i class="bi bi-lightbulb-fill" style="color: var(--accent-orange);"></i> 今日灵感 <small style="color: var(--text-secondary); font-weight: normal;">(${insights.length} 条)</small></h4>`);
           for (const insight of filteredInsights) {
@@ -957,7 +954,7 @@
     
     async function loadInspiration(date) {
       try {
-        const resp = await fetch(`./data/inspiration_${date}.json`);
+        const resp = await fetch(`/ZSA4-inspired/data/inspiration_${date}.json`);
         if (!resp.ok) {
           inspirationData = null;
           return;
@@ -1039,7 +1036,7 @@
         return;
       }
       currentDate = e.target.value;
-      currentCategory = 'all';
+      currentCategory = 'ai_tech';
       showMajorEventsOnly = false;
       // Clear section card cache on date change
       for (const k in sectionCards) delete sectionCards[k];
