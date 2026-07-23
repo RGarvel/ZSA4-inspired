@@ -866,6 +866,17 @@
       for (const m of models) parts.push('<th>', String(m.name || ''), '</th>');
       parts.push('</tr></thead><tbody>');
       
+      // Render modality scores first if available
+      for (const [label, key] of [['文本', 'text'], ['推理', 'reasoning'], ['编码', 'coding'], ['图像', 'image']]) {
+        parts.push('<tr><td><strong>', label, '</strong></td>');
+        for (const m of models) {
+          const ms = m.modality_scores;
+          v = (ms && ms[key] != null) ? ms[key] : '-';
+          parts.push('<td>', v, '</td>');
+        }
+        parts.push('</tr>');
+      }
+      
       for (const [label, key] of rows) {
         parts.push('<tr><td><strong>', label, '</strong></td>');
         for (const m of models) {
@@ -951,6 +962,9 @@
     function calcTaskScore(model, taskType) {
       const wQ = { coding: 0.4, reasoning: 0.6, image: 0.5 }[taskType] || 0.5;
       const wP = 1 - wQ;
+      // Use modality-specific score, fall back to composite quality_score
+      let qScore = (model.modality_scores && model.modality_scores[taskType]) || model.quality_score;
+      
       const ip = Number(model.input_price_per_1m ?? 0) || 0;
       const op = Number(model.output_price_per_1m ?? 0) || 0;
       const pg = model.image_generation_price;
@@ -958,7 +972,7 @@
       if (taskType === 'coding') { priceVal = (ip + op) / 2; }
       else if (taskType === 'reasoning') { priceVal = op / 2; }
       else if (taskType === 'image') { priceVal = (pg != null && pg !== '/') ? (Number(pg)||0) / 2 : 0; }
-      return Math.round((model.quality_score || 0) * wQ + (100 - Math.min(100, priceVal)) * wP);
+      return Math.round((qScore || 0) * wQ + (100 - Math.min(100, priceVal)) * wP);
     }
 
     function updateChart() {
