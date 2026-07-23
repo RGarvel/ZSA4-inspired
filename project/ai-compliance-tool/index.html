@@ -511,18 +511,6 @@
     <!-- Scenario Detail View -->
     <div id="scenarioDetail" style="display:none;">
 
-      <!-- Score Inline Panel -->
-      <div class="score-inline" id="scorePanel" style="display:none;">
-        <div class="score-number" id="scoreValue">--</div>
-        <div class="score-meta">
-          <div id="riskBadge"></div>
-        </div>
-        <div class="score-actions">
-          <button class="action-btn-sm" onclick="exportReport()"><i class="bi bi-filetype-md"></i> 导出</button>
-          <button class="action-btn-sm" onclick="resetAll()"><i class="bi bi-arrow-counterclockwise"></i> 重置</button>
-        </div>
-      </div>
-
       <!-- Header -->
       <div class="detail-header">
         <div class="d-flex align-items-center gap-3 flex-wrap">
@@ -559,6 +547,18 @@
         <div class="chart-card">
           <div class="chart-title"><i class="bi bi-clock-history" style="color:var(--accent-green);"></i> 法规关键节点</div>
           <canvas id="timelineChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Score Inline Panel (moved to bottom) -->
+      <div class="score-inline" id="scorePanel" style="display:none;">
+        <div class="score-number" id="scoreValue">--</div>
+        <div class="score-meta">
+          <div id="riskBadge"></div>
+        </div>
+        <div class="score-actions">
+          <button class="action-btn-sm" onclick="exportReport()"><i class="bi bi-filetype-md"></i> 导出</button>
+          <button class="action-btn-sm" onclick="resetAll()"><i class="bi bi-arrow-counterclockwise"></i> 重置</button>
         </div>
       </div>
     </div>
