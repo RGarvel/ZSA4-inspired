@@ -20,7 +20,6 @@
       --accent-orange: #d29922;
       --accent-red: #ff5252;
       --border-color: #30363d;
-      --sidebar-width: 320px;
     }
     body.light-mode {
       --bg-primary: #f0f2f5;
@@ -40,6 +39,7 @@
       color: var(--text-primary);
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       transition: all 0.3s ease;
+      padding-bottom: 2rem;
     }
 
     /* ═══════════ NAVBAR ═══════════ */
@@ -150,65 +150,136 @@
     }
     .theme-toggle-btn:hover { background: rgba(88,166,255,0.2); border-color: var(--accent-blue); transform: rotate(15deg); }
 
-    /* ═══════════ LAYOUT ═══════════ */
-    .app-container {
-      display: flex; min-height: calc(100vh - 58px);
-    }
-    .sidebar {
-      width: var(--sidebar-width); background: var(--bg-secondary);
-      border-right: 1px solid var(--border-color); overflow-y: auto;
-      padding: 1.5rem 0; flex-shrink: 0;
-      position: sticky; top: 58px; height: calc(100vh - 58px);
-    }
-    .main-content {
-      flex: 1; padding: 2rem 3rem; max-width: 1200px; overflow-x: hidden; margin: 0 auto;
+    /* ═══════════ MAIN CONTENT WRAPPER ═══════════ */
+    .main-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
 
-    /* ═══════════ SCENARIOS ═══════════ */
-    .section-title {
-      padding: 0 1.2rem; margin-bottom: 0.75rem;
-      color: var(--text-secondary); font-size: 0.75rem; font-weight: 600;
-      text-transform: uppercase; letter-spacing: 1px;
+    /* ═══════════ TOP FILTER BAR ═══════════ */
+    .top-filter-bar {
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
-    .scenario-item {
-      padding: 0.9rem 1.2rem; margin: 0.35rem 0.8rem;
-      border-radius: 10px; cursor: pointer;
-      border: 1px solid transparent;
+    .filter-group-label {
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+    }
+    .scenario-chips {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      flex: 1;
+      min-width: 0;
+      padding: 2px 0;
+    }
+    .scenario-chips::-webkit-scrollbar { height: 3px; }
+    .scenario-chips::-webkit-scrollbar-track { background: transparent; }
+    .scenario-chips::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 2px; }
+    .scenario-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-primary);
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
       transition: all 0.2s ease;
-      background: transparent;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .scenario-item:hover { background: rgba(88,166,255,0.06); }
-    .scenario-item.active {
-      background: linear-gradient(135deg, rgba(88,166,255,0.12), rgba(188,140,255,0.06));
-      border-color: var(--accent-blue); box-shadow: 0 2px 8px rgba(88,166,255,0.1);
+    .scenario-chip:hover {
+      border-color: var(--accent-blue);
+      background: rgba(88, 166, 255, 0.08);
     }
-    .scenario-item .icon { font-size: 1.2rem; flex-shrink: 0; }
-    .scenario-item .name { font-weight: 600; font-size: 0.88rem; line-height: 1.3; }
-    .scenario-item .desc { font-size: 0.72rem; color: var(--text-secondary); margin-top: 3px; line-height: 1.3;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .scenario-chip.active {
+      background: linear-gradient(135deg, rgba(88,166,255,0.15), rgba(188,140,255,0.08));
+      border-color: var(--accent-blue);
+      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.15);
+    }
+    .scenario-chip .chip-icon { font-size: 1.1rem; }
+    
+    .category-chips {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+    .category-chip {
+      padding: 0.2rem 0.6rem;
+      border-radius: 14px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      transition: all 0.2s;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+    .category-chip:hover, .category-chip.active {
+      border-color: var(--accent-blue);
+      background: rgba(88, 166, 255, 0.12);
+      color: var(--accent-blue);
+    }
 
-    /* ═══════════ SCORE PANEL ═══════════ */
-    .score-panel { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color); }
-    .score-display {
-      text-align: center; padding: 1.2rem;
+    /* ═══════════ SCORE INLINE PANEL ═══════════ */
+    .score-inline {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      margin: 0 0 1.5rem;
       background: linear-gradient(135deg, var(--bg-card), var(--bg-secondary));
-      border-radius: 14px; border: 1px solid var(--border-color);
-      margin: 0 0.8rem;
+      border-radius: 14px;
+      border: 1px solid var(--border-color);
     }
     .score-number {
-      font-size: 2.8rem; font-weight: 800; line-height: 1;
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1;
       background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      min-width: 60px;
+      text-align: center;
     }
-    .score-label { font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.4rem; font-weight: 500; }
-    .risk-badge {
-      display: inline-block; padding: 0.2rem 0.7rem; border-radius: 16px;
-      font-size: 0.78rem; font-weight: 600; margin-top: 0.5rem;
+    .score-meta {
+      flex: 1;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
     }
-    .risk-low { background: rgba(63,185,80,0.18); color: var(--accent-green); }
-    .risk-medium { background: rgba(210,153,34,0.18); color: var(--accent-orange); }
-    .risk-high { background: rgba(255,82,82,0.18); color: var(--accent-red); }
-    .panel-actions { padding: 0 0.8rem; margin-top: 0.75rem; }
+    .score-actions {
+      display: flex;
+      gap: 0.4rem;
+    }
+    .score-actions .action-btn-sm {
+      padding: 0.35rem 0.7rem;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .score-actions .action-btn-sm:hover {
+      border-color: var(--accent-blue);
+      background: rgba(88, 166, 255, 0.08);
+    }
 
     /* ═══════════ DETAIL HEADER ═══════════ */
     .detail-header { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); }
@@ -244,6 +315,9 @@
       padding: 0.85rem 1rem; margin: 0.35rem 0;
       background: var(--bg-card); border-radius: 10px;
       border: 1px solid var(--border-color); transition: all 0.25s ease;
+      /* Prevent text truncation */
+      word-break: break-word;
+      overflow-wrap: break-word;
     }
     .check-item:hover { border-color: rgba(88,166,255,0.4); box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .check-item.checked {
@@ -255,8 +329,8 @@
     }
     .check-item .check-body { flex: 1; min-width: 0; }
     .check-item .check-top { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.35rem; }
-    .check-text { flex: 1; font-size: 0.85rem; line-height: 1.5; }
-    .check-severity { font-size: 0.62rem; padding: 0.12rem 0.35rem; border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .check-text { flex: 1; font-size: 0.85rem; line-height: 1.6; min-width: 0; }
+    .check-severity { font-size: 0.62rem; padding: 0.12rem 0.35rem; border-radius: 4px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; }
     .severity-critical { background: rgba(255,82,82,0.15); color: var(--accent-red); }
     .severity-high { background: rgba(210,153,34,0.15); color: var(--accent-orange); }
     .severity-medium { background: rgba(188,140,255,0.15); color: var(--accent-purple); }
@@ -279,6 +353,7 @@
       background: var(--bg-secondary); border-radius: 10px;
       border: 1px solid var(--border-color); border-left: 3px solid var(--accent-purple);
       font-size: 0.85rem; line-height: 1.5; transition: all 0.2s;
+      word-break: break-word;
     }
     .rec-list li:hover { border-color: var(--accent-purple); transform: translateX(3px); }
 
@@ -294,22 +369,125 @@
     .chart-title { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem; }
     canvas { max-height: 280px; }
 
-    /* ═══════════ FILTER CHIPS ═══════════ */
-    .filter-bar { padding: 0 0.8rem; margin: 0 0 1rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
-    .filter-chip {
-      padding: 0.25rem 0.6rem; border-radius: 16px; font-size: 0.72rem; font-weight: 500;
-      background: var(--bg-card); border: 1px solid var(--border-color);
-      cursor: pointer; transition: all 0.2s; color: var(--text-secondary);
-      white-space: nowrap;
+    /* ═══════════ WELCOME ═══════════ */
+    .welcome-msg {
+      text-align: center; padding: 5rem 2rem; max-width: 520px; margin: 2rem auto;
     }
-    .filter-chip:hover, .filter-chip.active {
-      border-color: var(--accent-blue); background: rgba(88,166,255,0.12); color: var(--accent-blue);
+    .welcome-icon { font-size: 4.5rem; margin-bottom: 1.5rem; }
+    .welcome-msg h2 { font-weight: 800; font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
+    .welcome-msg p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; }
+
+    /* ═══════════ BOTTOM DRAWER ═══════════ */
+    .bottom-drawer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1050;
+      transition: transform 0.3s ease;
+    }
+    .bottom-drawer-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-bottom: none;
+      border-radius: 12px 12px 0 0;
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      width: 100%;
+      margin: 0 auto;
+      transition: all 0.2s;
+    }
+    .bottom-drawer-toggle:hover { color: var(--text-primary); background: var(--bg-card); }
+    .bottom-drawer-toggle .drawer-arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      font-size: 1rem;
+    }
+    .bottom-drawer.open .drawer-arrow { transform: rotate(180deg); }
+    .bottom-drawer-body {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .bottom-drawer.open .bottom-drawer-body {
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+    .drawer-inner {
+      padding: 1.25rem 0 1.5rem;
+    }
+    .drawer-scenario-row {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding-bottom: 0.75rem;
+      scroll-snap-type: x mandatory;
+    }
+    .drawer-scenario-row::-webkit-scrollbar { height: 4px; }
+    .drawer-scenario-row::-webkit-scrollbar-track { background: transparent; }
+    .drawer-scenario-row::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 2px; }
+    .drawer-scenario-card {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.85rem 1.1rem;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+      cursor: pointer;
+      transition: all 0.2s;
+      flex-shrink: 0;
+      min-width: 220px;
+      scroll-snap-align: start;
+    }
+    .drawer-scenario-card:hover {
+      border-color: var(--accent-blue);
+      background: rgba(88, 166, 255, 0.06);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .drawer-scenario-card.active {
+      background: linear-gradient(135deg, rgba(88,166,255,0.12), rgba(188,140,255,0.06));
+      border-color: var(--accent-blue);
+      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.1);
+    }
+    .drawer-scenario-card .ds-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .drawer-scenario-card .ds-info { flex: 1; min-width: 0; }
+    .drawer-scenario-card .ds-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      line-height: 1.3;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .drawer-scenario-card .ds-desc {
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+      line-height: 1.4;
+      /* Allow multi-line wrapping up to 2 lines */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-word;
+      white-space: normal;
     }
 
     /* ═══════════ SCROLLBARS ═══════════ */
-    .sidebar::-webkit-scrollbar { width: 5px; }
-    .sidebar::-webkit-scrollbar-track { background: transparent; }
-    .sidebar::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
     .main-content::-webkit-scrollbar { width: 6px; }
     .main-content::-webkit-scrollbar-track { background: transparent; }
     .main-content::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 3px; }
@@ -326,62 +504,31 @@
     }
     @keyframes toastIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 
-    /* ═══════════ WELCOME ═══════════ */
-    .welcome-msg {
-      text-align: center; padding: 5rem 2rem; max-width: 520px; margin: 0 auto;
-    }
-    .welcome-icon { font-size: 4.5rem; margin-bottom: 1.5rem; }
-    .welcome-msg h2 { font-weight: 800; font-size: 1.6rem; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
-    .welcome-msg p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.7; }
-
-    /* ═══════════ MOBILE SIDEBAR TOGGLE ═══════════ */
-    .mobile-nav-toggle {
-      display: none; position: fixed; bottom: 1.5rem; left: 1.5rem; z-index: 1001;
-      width: 48px; height: 48px; border-radius: 14px;
-      background: var(--accent-blue); color: #fff; border: none;
-      font-size: 1.4rem; cursor: pointer;
-      box-shadow: 0 4px 16px rgba(88,166,255,0.35);
-      transition: all 0.25s ease; display: flex; align-items: center; justify-content: center;
-    }
-    .mobile-nav-toggle:active { transform: scale(0.92); }
-    .sidebar-overlay {
-      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);
-      z-index: 998; opacity: 0; transition: opacity 0.3s;
-    }
-    .sidebar-overlay.show { opacity: 1; }
-
     /* ═══════════ RESPONSIVE ═══════════ */
     @media (max-width: 992px) {
       .charts-grid { grid-template-columns: 1fr; }
-      .main-content { padding: 1.25rem 1.5rem; }
     }
     @media (max-width: 768px) {
-      .sidebar {
-        position: fixed; left: -340px; top: 0; bottom: 0; z-index: 999;
-        width: 300px; transition: left 0.3s ease;
-        box-shadow: 4px 0 24px rgba(0,0,0,0.3);
-      }
-      .sidebar.open { left: 0; }
-      .mobile-nav-toggle { display: flex; }
-      .sidebar-overlay.show { display: block; }
-      .main-content { padding: 1rem; }
+      .main-container { padding: 0 1rem; }
+      .scenario-chip { padding: 0.4rem 0.7rem; font-size: 0.78rem; }
       .detail-name { font-size: 1.2rem; }
       .check-item { padding: 0.7rem 0.85rem; }
       .check-text { font-size: 0.82rem; }
-      .score-number { font-size: 2.4rem; }
+      .score-number { font-size: 1.6rem; }
+      .drawer-scenario-card { min-width: 200px; }
     }
   </style>
 </head>
 <body>
   <nav class="navbar" id="mainNavbar">
-    <div class="container mt-4">
+    <div class="main-container d-flex align-items-center justify-content-between">
       <a class="navbar-brand brand-switcher" href="/ZSA4-inspired/index.html" id="brandLink">
         <i class="bi bi-shield-check brand-icon-default" id="brandIcon"></i>
         <i class="bi bi-lightbulb-fill brand-icon-hover" id="brandIconHover"></i>
         <span class="brand-text-default" id="brandText">AI合规检查清单</span>
         <span class="brand-text-hover" id="brandTextHover">灵感日报</span>
       </a>
-      <div class="d-flex align-items-center gap-2 ms-auto">
+      <div class="d-flex align-items-center gap-2">
         <a class="back-link" href="/ZSA4-inspired/project/playground/">
           <i class="bi bi-house-door"></i> 返回Playground
         </a>
@@ -392,77 +539,87 @@
     </div>
   </nav>
 
-  <!-- Mobile nav toggle -->
-  <button class="mobile-nav-toggle" id="mobileNavBtn" onclick="toggleSidebar()">
-    <i class="bi bi-list"></i>
-  </button>
-  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+  <div class="main-container main-content" id="mainContent" style="padding-top:1.5rem; padding-bottom:4rem;">
+    <!-- Welcome Message -->
+    <div class="welcome-msg" id="welcomeMessage">
+      <div class="welcome-icon">🛡️</div>
+      <h2>AI合规检查清单工具</h2>
+      <p>选择顶部场景开始评估，或从底部抽屉浏览更多选项。所有检查项均可自定义，数据保存在浏览器本地。</p>
+    </div>
 
-  <div class="app-container">
-    <!-- Sidebar -->
-    <aside class="sidebar" id="appSidebar">
-      <h6 class="section-title">场景选择</h6>
-      <div class="filter-bar" id="filterBar"></div>
-      <div id="scenarioList"></div>
+    <!-- Scenario Detail View -->
+    <div id="scenarioDetail" style="display:none;">
       
-      <div class="score-panel" id="scorePanel" style="display:none;">
-        <div class="score-display" id="scoreDisplay">
-          <div class="score-number" id="scoreValue">--</div>
-          <div class="score-label">综合合规评分</div>
+      <!-- Top Filter Bar: scenario chips + category chips -->
+      <div class="top-filter-bar">
+        <div class="scenario-chips" id="topScenarioChips"></div>
+      </div>
+      <div class="category-chips" id="categoryChips"></div>
+
+      <!-- Score Inline Panel -->
+      <div class="score-inline" id="scorePanel" style="display:none;">
+        <div class="score-number" id="scoreValue">--</div>
+        <div class="score-meta">
           <div id="riskBadge"></div>
         </div>
-        <div class="panel-actions">
-          <div class="d-flex gap-2">
-            <button class="action-btn flex-fill" onclick="exportReport()"><i class="bi bi-filetype-md"></i> 导出</button>
-            <button class="action-btn flex-fill" onclick="resetAll()"><i class="bi bi-arrow-counterclockwise"></i> 重置</button>
-          </div>
+        <div class="score-actions">
+          <button class="action-btn-sm" onclick="exportReport()"><i class="bi bi-filetype-md"></i> 导出</button>
+          <button class="action-btn-sm" onclick="resetAll()"><i class="bi bi-arrow-counterclockwise"></i> 重置</button>
         </div>
       </div>
-    </aside>
 
-    <!-- Main Content -->
-    <main class="main-content" id="mainContent">
-      <div class="welcome-msg" id="welcomeMessage">
-        <div class="welcome-icon">🛡️</div>
-        <h2>AI合规检查清单工具</h2>
-        <p>从左侧选择一个AI应用场景，开始您的合规性评估。所有检查项均可自定义，数据保存在浏览器本地。</p>
+      <!-- Header -->
+      <div class="detail-header">
+        <div class="d-flex align-items-center gap-3 flex-wrap">
+          <h3 id="detailName" class="detail-name"></h3>
+          <span id="detailRisk" class="risk-badge"></span>
+        </div>
+        <p id="detailDesc" class="detail-desc"></p>
+        <p><small style="color:var(--text-secondary);">法规：<strong id="detailRegulation" style="color:var(--text-primary);"></strong></small></p>
       </div>
-      <div id="scenarioDetail" style="display:none;">
-        <div class="detail-header">
-          <div class="d-flex align-items-center gap-3 flex-wrap">
-            <h3 id="detailName" class="detail-name"></h3>
-            <span id="detailRisk" class="risk-badge"></span>
-          </div>
-          <p id="detailDesc" class="detail-desc"></p>
-          <p><small style="color:var(--text-secondary);">法规：<strong id="detailRegulation" style="color:var(--text-primary);"></strong></small></p>
+      
+      <!-- Action Bar -->
+      <div class="action-bar">
+        <button class="action-btn" onclick="checkAll(true)"><i class="bi bi-check-all"></i> 全部通过</button>
+        <button class="action-btn" onclick="checkAll(false)"><i class="bi bi-x-circle"></i> 全部不通过</button>
+        <button class="action-btn" onclick="expandAllCats()"><i class="bi bi-arrows-expand"></i> 展开</button>
+        <button class="action-btn" onclick="collapseAllCats()"><i class="bi bi-arrows-collapse"></i> 折叠</button>
+      </div>
+      
+      <!-- Checklist Area -->
+      <div id="checklistArea"></div>
+      
+      <!-- Recommendations -->
+      <div class="recommendations-section" id="recommendationsSection">
+        <div class="section-heading"><i class="bi bi-lightbulb" style="color:var(--accent-purple);"></i> 合规建议</div>
+        <ul class="rec-list" id="recommendationList"></ul>
+      </div>
+      
+      <!-- Charts -->
+      <div class="charts-grid">
+        <div class="chart-card">
+          <div class="chart-title"><i class="bi bi-pie-chart" style="color:var(--accent-blue);"></i> 风险等级分布</div>
+          <canvas id="pieChart"></canvas>
         </div>
-        
-        <div class="action-bar">
-          <button class="action-btn" onclick="checkAll(true)"><i class="bi bi-check-all"></i> 全部通过</button>
-          <button class="action-btn" onclick="checkAll(false)"><i class="bi bi-x-circle"></i> 全部不通过</button>
-          <button class="action-btn" onclick="expandAllCats()"><i class="bi bi-arrows-expand"></i> 展开</button>
-          <button class="action-btn" onclick="collapseAllCats()"><i class="bi bi-arrows-collapse"></i> 折叠</button>
-        </div>
-        
-        <div id="checklistArea"></div>
-        
-        <div class="recommendations-section" id="recommendationsSection">
-          <div class="section-heading"><i class="bi bi-lightbulb" style="color:var(--accent-purple);"></i> 合规建议</div>
-          <ul class="rec-list" id="recommendationList"></ul>
-        </div>
-        
-        <div class="charts-grid">
-          <div class="chart-card">
-            <div class="chart-title"><i class="bi bi-pie-chart" style="color:var(--accent-blue);"></i> 风险等级分布</div>
-            <canvas id="pieChart"></canvas>
-          </div>
-          <div class="chart-card">
-            <div class="chart-title"><i class="bi bi-clock-history" style="color:var(--accent-green);"></i> 法规关键节点</div>
-            <canvas id="timelineChart"></canvas>
-          </div>
+        <div class="chart-card">
+          <div class="chart-title"><i class="bi bi-clock-history" style="color:var(--accent-green);"></i> 法规关键节点</div>
+          <canvas id="timelineChart"></canvas>
         </div>
       </div>
-    </main>
+    </div>
+  </div>
+
+  <!-- Bottom Drawer -->
+  <div class="bottom-drawer" id="bottomDrawer">
+    <button class="bottom-drawer-toggle" onclick="toggleBottomDrawer()">
+      <span>选择其他场景</span>
+      <span class="drawer-arrow">▼</span>
+    </button>
+    <div class="bottom-drawer-body">
+      <div class="drawer-inner">
+        <div class="drawer-scenario-row" id="drawerScenarioList"></div>
+      </div>
+    </div>
   </div>
 
   <div class="toast-container" id="toastContainer"></div>
@@ -499,7 +656,7 @@
         const last = localStorage.getItem('ct_last_scenario');
         currentScenarioId = (last && scenarios.find(s => s.id === last)) ? last : (scenarios[0]?.id || '');
         
-        renderSidebar(); filterBar();
+        renderTopFilters(); filterBar(); renderDrawer();
         if (currentScenarioId) showScenario(currentScenarioId);
       } catch (error) {
         console.error('Error loading data:', error);
@@ -507,25 +664,26 @@
       }
     }
 
-    function renderSidebar() {
+    // ── Top scenario chips ──
+    function renderTopFilters() {
       const parts = scenarios.map(s => {
         const isActive = s.id === currentScenarioId ? ' active' : '';
-        return `<div class="scenario-item${isActive}" data-id="${s.id}" onclick="selectScenario('${s.id}')">
-          <div class="d-flex align-items-center gap-2">
-            <span class="icon">${s.icon}</span>
-            <div class="flex-grow-1"><div class="name">${s.name}</div><div class="desc">${s.description}</div></div>
-          </div></div>`;
+        return `<button class="scenario-chip${isActive}" data-id="${s.id}" onclick="selectScenario('${s.id}')">
+          <span class="chip-icon">${s.icon}</span>
+          <span>${s.name}</span>
+        </button>`;
       }).join('');
-      $('scenarioList').innerHTML = parts;
+      $('topScenarioChips').innerHTML = parts;
     }
 
+    // ── Category chips ──
     function filterBar() {
       const cats = [...new Set(scenarios.flatMap(s => s.checks.map(c => c.category)))];
-      const parts = [`<span class="filter-chip ${activeCategoryFilter==='all'?'active':''}" onclick="setCatFilter('all')">全部</span>`];
+      const parts = [`<span class="category-chip ${activeCategoryFilter==='all'?'active':''}" onclick="setCatFilter('all')">全部</span>`];
       cats.forEach(cat => {
-        parts.push(`<span class="filter-chip ${activeCategoryFilter===cat?'active':''}" onclick="setCatFilter('${cat}')">${cat}</span>`);
+        parts.push(`<span class="category-chip ${activeCategoryFilter===cat?'active':''}" onclick="setCatFilter('${cat}')">${cat}</span>`);
       });
-      $('filterBar').innerHTML = parts.join('');
+      $('categoryChips').innerHTML = parts.join('');
     }
 
     function setCatFilter(cat) {
@@ -535,6 +693,26 @@
 
     function getFilteredChecks(scenario) {
       return scenario.checks.filter(c => activeCategoryFilter === 'all' || c.category === activeCategoryFilter);
+    }
+
+    // ── Bottom drawer scenario cards ──
+    function renderDrawer() {
+      const parts = scenarios.map(s => {
+        const isActive = s.id === currentScenarioId ? ' active' : '';
+        return `<div class="drawer-scenario-card${isActive}" data-id="${s.id}" onclick="selectScenario('${s.id}')" style="cursor:pointer;">
+          <span class="ds-icon">${s.icon}</span>
+          <div class="ds-info">
+            <div class="ds-name">${s.name}</div>
+            <div class="ds-desc">${s.description}</div>
+          </div>
+        </div>`;
+      }).join('');
+      $('drawerScenarioList').innerHTML = parts;
+    }
+
+    // ── Bottom drawer toggle ──
+    function toggleBottomDrawer() {
+      $('bottomDrawer').classList.toggle('open');
     }
 
     function calculateScore(checks) {
@@ -552,7 +730,9 @@
     function selectScenario(id) {
       currentScenarioId = id;
       localStorage.setItem('ct_last_scenario', id);
-      renderSidebar(); closeSidebar(); showScenario(id);
+      renderTopFilters();
+      renderDrawer();
+      showScenario(id);
     }
 
     function showScenario(id) {
@@ -560,7 +740,7 @@
       if (!s) return;
       $('welcomeMessage').style.display = 'none';
       $('scenarioDetail').style.display = 'block';
-      $('scorePanel').style.display = 'block';
+      $('scorePanel').style.display = 'flex';
       $('detailName').textContent = s.name;
       $('detailDesc').textContent = s.description;
       $('detailRegulation').textContent = s.jurisdiction;
@@ -737,21 +917,6 @@
         data: { labels: tlLabels, datasets: [{ label: '距今（天）', data: tlData.length?tlData:[0], backgroundColor: tlData.map(v=>v<365?'rgba(63,185,80,0.6)':'rgba(88,166,255,0.6)'), borderColor: tlData.map(v=>v<365?'#3fb950':'#58a6ff'), borderWidth: 1 }] },
         options: { responsive: true, plugins: { legend: { display: true, labels: { color: getComputedStyle(document.body).getPropertyValue('--text-primary').trim(), font:{size:11} } }, tooltip: { callbacks: { afterLabel: ctx => ctx.dataIndex < tlEvents.length ? `📌 ${tlEvents[ctx.dataIndex]}` : '' } } }, scales: { y: { beginAtZero:true, ticks:{color:'#9da5b1',font:{size:10}}, grid:{color:'rgba(48,54,61,0.3)'} }, x: { ticks:{color:'#9da5b1',font:{size:9},maxRotation:45}, grid:{color:'rgba(48,54,61,0.3)'} } } }
       });
-    }
-
-    // ── Mobile sidebar toggle ──
-    function toggleSidebar() {
-      const sb = $('appSidebar');
-      const ov = $('sidebarOverlay');
-      sb.classList.toggle('open');
-      ov.classList.toggle('show');
-      const btn = $('mobileNavBtn');
-      btn.innerHTML = sb.classList.contains('open') ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
-    }
-    function closeSidebar() {
-      $('appSidebar').classList.remove('open');
-      $('sidebarOverlay').classList.remove('show');
-      $('mobileNavBtn').innerHTML = '<i class="bi bi-list"></i>';
     }
 
     function showToast(msg) {
