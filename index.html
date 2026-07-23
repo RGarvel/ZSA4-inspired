@@ -1045,7 +1045,7 @@
       showMajorEventsOnly = false;
       // Clear section card cache on date change
       for (const k in sectionCards) delete sectionCards[k];
-      render();
+      loadInspiration(currentDate).then(() => render());
     });
     
     document.addEventListener('DOMContentLoaded', () => {
