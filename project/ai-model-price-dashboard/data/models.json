@@ -4,6 +4,28 @@
   "unit": "per 1M tokens",
   "models": [
     {
+      "model_id": "o3",
+      "name": "o3",
+      "vendor": "OpenAI",
+      "categories": [
+        "reasoning",
+        "coding"
+      ],
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 8.0,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "context_window": 200000,
+      "quality_score": 94,
+      "tier": "standard",
+      "open_source": false,
+      "modality_scores": {
+        "text": 90,
+        "reasoning": 98,
+        "coding": 95
+      }
+    },
+    {
       "model_id": "claude-fable-5",
       "name": "Claude Fable 5",
       "vendor": "Anthropic",
@@ -304,6 +326,28 @@
         "text": 74,
         "reasoning": 72,
         "coding": 95
+      }
+    },
+    {
+      "model_id": "o4-mini",
+      "name": "o4-mini",
+      "vendor": "OpenAI",
+      "categories": [
+        "reasoning",
+        "coding"
+      ],
+      "input_price_per_1m": 1.1,
+      "output_price_per_1m": 4.4,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "context_window": 200000,
+      "quality_score": 80,
+      "tier": "standard",
+      "open_source": false,
+      "modality_scores": {
+        "text": 75,
+        "reasoning": 85,
+        "coding": 80
       }
     },
     {
@@ -791,42 +835,6 @@
         "reasoning": 14,
         "coding": 20
       }
-    },
-    {
-      "model_id": "o4-mini",
-      "name": "o4-mini",
-      "vendor": "OpenAI",
-      "categories": [
-        "reasoning",
-        "coding"
-      ],
-      "input_price_per_1m": 1.1,
-      "output_price_per_1m": 4.4,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "context_window": 200000,
-      "quality_score": 0,
-      "tier": "standard",
-      "open_source": false,
-      "modality_scores": {}
-    },
-    {
-      "model_id": "o3",
-      "name": "o3",
-      "vendor": "OpenAI",
-      "categories": [
-        "reasoning",
-        "coding"
-      ],
-      "input_price_per_1m": 2.0,
-      "output_price_per_1m": 8.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "context_window": 200000,
-      "quality_score": 0,
-      "tier": "standard",
-      "open_source": false,
-      "modality_scores": {}
     }
   ]
 }
