@@ -239,24 +239,6 @@
       "open_source": false
     },
     {
-      "model_id": "llama-4-maverick",
-      "name": "Llama 4 Maverick",
-      "vendor": "Meta",
-      "categories": [
-        "chat",
-        "coding",
-        "reasoning"
-      ],
-      "input_price_per_1m": 0.15,
-      "output_price_per_1m": 0.6,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "context_window": 1000000,
-      "quality_score": 76,
-      "tier": "budget",
-      "open_source": true
-    },
-    {
       "model_id": "kimi-k3",
       "name": "Kimi K3",
       "vendor": "Moonshot",
@@ -508,6 +490,22 @@
       "open_source": false
     },
     {
+      "model_id": "imagen-4-ultra",
+      "name": "Imagen 4 Ultra",
+      "vendor": "Google",
+      "categories": [
+        "image"
+      ],
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.06,
+      "image_edit_price": "/",
+      "context_window": 0,
+      "quality_score": 60,
+      "tier": "standard",
+      "open_source": false
+    },
+    {
       "model_id": "cohere-command-r-plus",
       "name": "Cohere Command R+",
       "vendor": "Cohere",
@@ -526,6 +524,22 @@
       "open_source": false
     },
     {
+      "model_id": "flux-2-pro",
+      "name": "FLUX 2 Pro",
+      "vendor": "Black Forest Labs",
+      "categories": [
+        "image"
+      ],
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.03,
+      "image_edit_price": "/",
+      "context_window": 46864,
+      "quality_score": 58,
+      "tier": "standard",
+      "open_source": false
+    },
+    {
       "model_id": "mistral-small-3",
       "name": "Mistral Small 3",
       "vendor": "Mistral",
@@ -540,6 +554,22 @@
       "context_window": 128000,
       "quality_score": 56,
       "tier": "budget",
+      "open_source": false
+    },
+    {
+      "model_id": "gpt-image-1.5",
+      "name": "GPT Image 1.5",
+      "vendor": "OpenAI",
+      "categories": [
+        "image"
+      ],
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.034,
+      "image_edit_price": "/",
+      "context_window": 0,
+      "quality_score": 55,
+      "tier": "standard",
       "open_source": false
     },
     {
@@ -605,57 +635,27 @@
       "image_generation_price": 0.08,
       "image_edit_price": 0.08,
       "context_window": 0,
-      "quality_score": 50,
+      "quality_score": 45,
       "tier": "standard",
       "open_source": false
     },
     {
-      "model_id": "imagen-4-ultra",
-      "name": "Imagen 4 Ultra",
-      "vendor": "Google",
+      "model_id": "llama-4-maverick",
+      "name": "Llama 4 Maverick",
+      "vendor": "Meta",
       "categories": [
-        "image"
+        "chat",
+        "coding",
+        "reasoning"
       ],
-      "input_price_per_1m": 0.0,
-      "output_price_per_1m": 0.0,
-      "image_generation_price": 0.06,
+      "input_price_per_1m": 0.15,
+      "output_price_per_1m": 0.6,
+      "image_generation_price": "/",
       "image_edit_price": "/",
-      "context_window": 0,
-      "quality_score": 50,
-      "tier": "standard",
-      "open_source": false
-    },
-    {
-      "model_id": "gpt-image-1.5",
-      "name": "GPT Image 1.5",
-      "vendor": "OpenAI",
-      "categories": [
-        "image"
-      ],
-      "input_price_per_1m": 0.0,
-      "output_price_per_1m": 0.0,
-      "image_generation_price": 0.034,
-      "image_edit_price": "/",
-      "context_window": 0,
-      "quality_score": 50,
-      "tier": "standard",
-      "open_source": false
-    },
-    {
-      "model_id": "flux-2-pro",
-      "name": "FLUX 2 Pro",
-      "vendor": "Black Forest Labs",
-      "categories": [
-        "image"
-      ],
-      "input_price_per_1m": 0.0,
-      "output_price_per_1m": 0.0,
-      "image_generation_price": 0.03,
-      "image_edit_price": "/",
-      "context_window": 46864,
-      "quality_score": 50,
-      "tier": "standard",
-      "open_source": false
+      "context_window": 1000000,
+      "quality_score": 14,
+      "tier": "budget",
+      "open_source": true
     }
   ]
 }
