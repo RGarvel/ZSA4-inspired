@@ -377,7 +377,7 @@
       font-size: 1rem;
     }
     .bottom-drawer.open .drawer-arrow { transform: rotate(180deg); }
-    .bottom-drawer-toggle .drawer-arrow { transform: rotate(180deg); }
+    .bottom-drawer-toggle .drawer-arrow { transform: rotate(0deg); }
     .bottom-drawer-body {
       background: var(--bg-secondary);
       border-top: 1px solid var(--border-color);
@@ -565,7 +565,7 @@
   </div>
 
   <!-- Bottom Drawer -->
-  <div class="bottom-drawer" id="bottomDrawer">
+  <div class="bottom-drawer open" id="bottomDrawer">
     <button class="bottom-drawer-toggle" onclick="toggleBottomDrawer()">
       <span>筛选与场景选择</span>
       <span class="drawer-arrow">▲</span>
