@@ -172,13 +172,7 @@
     }
     .main-content { padding-top: 1.75rem; padding-bottom: 4rem; }
 
-    /* ═══════════ CATEGORY CHIPS - DRAWER ONLY ═══════════ */
-    .category-chips-inline {
-      display: flex;
-      gap: 0.35rem;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
+    /* Category chips and filter labels - only used inside drawer */
     .filter-group-label {
       font-size: 0.72rem;
       color: var(--text-secondary);
@@ -186,23 +180,6 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
       white-space: nowrap;
-    }
-    .category-chip {
-      padding: 0.25rem 0.65rem;
-      border-radius: 14px;
-      font-size: 0.72rem;
-      font-weight: 500;
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      cursor: pointer;
-      transition: all 0.2s;
-      color: var(--text-secondary);
-      white-space: nowrap;
-    }
-    .category-chip:hover, .category-chip.active {
-      border-color: var(--accent-blue);
-      background: rgba(88, 166, 255, 0.12);
-      color: var(--accent-blue);
     }
 
     /* ═══════════ SCORE INLINE PANEL ═══════════ */
@@ -516,7 +493,6 @@
       .score-number { font-size: 1.7rem; }
       .drawer-scenario-card { min-width: 200px; }
       .action-btn { font-size: 0.8rem; padding: 0.45rem 0.8rem; }
-      .category-chip { font-size: 0.68rem; padding: 0.2rem 0.55rem; }
     }
   </style>
 </head>
@@ -563,10 +539,7 @@
       
       <!-- Action Bar -->
       <div class="action-bar">
-        <button class="action-btn" onclick="checkAll(true)"><i class="bi bi-check-all"></i> 全部通过</button>
-        <button class="action-btn" onclick="checkAll(false)"><i class="bi bi-x-circle"></i> 全部不通过</button>
-        <button class="action-btn" onclick="expandAllCats()"><i class="bi bi-arrows-expand"></i> 展开</button>
-        <button class="action-btn" onclick="collapseAllCats()"><i class="bi bi-arrows-collapse"></i> 折叠</button>
+        <button class="action-btn" onclick="resetAll()"><i class="bi bi-arrow-counterclockwise"></i> 重置所有状态</button>
       </div>
       
       <!-- Checklist Area -->
@@ -612,12 +585,7 @@
     </button>
     <div class="bottom-drawer-body">
       <div class="drawer-inner">
-        <!-- Category chips at top of drawer -->
-        <div style="margin-bottom:0.75rem;">
-          <div class="filter-group-label" style="margin-bottom:0.5rem;">分类筛选</div>
-          <div class="category-chips-inline" id="categoryChips"></div>
-        </div>
-        <!-- Scenario list below -->
+        <!-- Scenario list -->
         <div style="border-top:1px solid var(--border-color);padding-top:1rem;">
           <div class="filter-group-label" style="margin-bottom:0.75rem;">场景切换</div>
           <div class="drawer-scenario-row" id="drawerScenarioList"></div>
@@ -634,7 +602,6 @@
     let scenarios = [], regulations = [];
     let currentScenarioId = '', userState = {};
     let pieChart = null, timelineChart = null;
-    let activeCategoryFilter = 'all';
     let collapsedCategories = new Set();
 
     function applyTheme() {
@@ -660,31 +627,12 @@
         const last = localStorage.getItem('ct_last_scenario');
         currentScenarioId = (last && scenarios.find(s => s.id === last)) ? last : (scenarios[0]?.id || '');
         
-        renderDrawer(); filterBar();
+        renderDrawer();
         if (currentScenarioId) showScenario(currentScenarioId);
       } catch (error) {
         console.error('Error loading data:', error);
         showToast('加载数据失败，请刷新重试');
       }
-    }
-
-    // ── Category chips (moved into drawer) ──
-    function filterBar() {
-      const cats = [...new Set(scenarios.flatMap(s => s.checks.map(c => c.category)))];
-      const parts = [`<span class="category-chip ${activeCategoryFilter==='all'?'active':''}" onclick="setCatFilter('all')">全部</span>`];
-      cats.forEach(cat => {
-        parts.push(`<span class="category-chip ${activeCategoryFilter===cat?'active':''}" onclick="setCatFilter('${cat}')">${cat}</span>`);
-      });
-      $('categoryChips').innerHTML = parts.join('');
-    }
-
-    function setCatFilter(cat) {
-      activeCategoryFilter = cat; filterBar();
-      if (currentScenarioId) renderChecklist(currentScenarioId);
-    }
-
-    function getFilteredChecks(scenario) {
-      return scenario.checks.filter(c => activeCategoryFilter === 'all' || c.category === activeCategoryFilter);
     }
 
     // ── Bottom drawer scenario cards ──
@@ -741,9 +689,9 @@
     function renderChecklist(sid) {
       const scenario = scenarios.find(s => s.id === sid);
       if (!scenario) return;
-      const filtered = getFilteredChecks(scenario);
+      const checks = scenario.checks;
       const grouped = {};
-      filtered.forEach(c => { if (!grouped[c.category]) grouped[c.category] = []; grouped[c.category].push(c); });
+      checks.forEach(c => { if (!grouped[c.category]) grouped[c.category] = []; grouped[c.category].push(c); });
       
       const parts = [];
       for (const cat in grouped) {
@@ -791,10 +739,16 @@
       userState[id].notes = value; saveUserState();
     }
 
+    function toggleCategory(cat, sid) {
+      const key = `${sid}-${cat}`;
+      collapsedCategories.has(key) ? collapsedCategories.delete(key) : collapsedCategories.add(key);
+      renderChecklist(sid);
+    }
+
     function updateScore() {
       const scenario = scenarios.find(s => s.id === currentScenarioId);
       if (!scenario) return;
-      const r = calculateScore(getFilteredChecks(scenario));
+      const r = calculateScore(scenario.checks);
       const sv = $('scoreValue');
       sv.textContent = r.score + '%';
       sv.style.background = r.score >= 70 ? 'linear-gradient(135deg, var(--accent-green), #34d399)' :
@@ -804,28 +758,6 @@
       sv.style.webkitTextFillColor = 'transparent';
       $('riskBadge').className = `risk-badge ${r.cls}`;
       $('riskBadge').textContent = `${r.label} (${r.passedCount}/${r.totalCount})`;
-    }
-
-    function toggleCategory(cat, sid) {
-      const key = `${sid}-${cat}`;
-      collapsedCategories.has(key) ? collapsedCategories.delete(key) : collapsedCategories.add(key);
-      renderChecklist(sid);
-    }
-
-    function expandAllCats() { collapsedCategories.clear(); renderChecklist(currentScenarioId); showToast('已展开全部'); }
-    function collapseAllCats() {
-      const scenario = scenarios.find(s => s.id === currentScenarioId);
-      if (!scenario) return;
-      [...new Set(scenario.checks.map(c => c.category))].forEach(cat => collapsedCategories.add(`${currentScenarioId}-${cat}`));
-      renderChecklist(currentScenarioId); showToast('已折叠全部');
-    }
-
-    function checkAll(passed) {
-      const scenario = scenarios.find(s => s.id === currentScenarioId);
-      if (!scenario) return;
-      scenario.checks.forEach(c => { if (!userState[c.id]) userState[c.id] = {}; userState[c.id].passed = passed; });
-      saveUserState(); renderChecklist(currentScenarioId);
-      showToast(passed ? '✅ 已通过全部检查项' : '❌ 已取消全部检查项');
     }
 
     function resetAll() {
@@ -839,7 +771,7 @@
     function exportReport() {
       const scenario = scenarios.find(s => s.id === currentScenarioId);
       if (!scenario) return;
-      const checks = getFilteredChecks(scenario);
+      const checks = scenario.checks;
       const r = calculateScore(checks);
       const md = [
         `# AI合规检查清单报告`, '',
