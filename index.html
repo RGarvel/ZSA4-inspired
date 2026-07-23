@@ -674,7 +674,7 @@
     // ── State ──────────────────────────────────────────────
     let allData = [];
     let currentDate = '';
-    let currentCategory = 'ai_tech';
+    let currentCategory = 'all'; // Default: show all categories
     let showMajorEventsOnly = false;
     // Inspiration is now a parallel filter tab, not a separate toggle
     let availableDates = [];
@@ -768,7 +768,7 @@
         // Count ALL categories regardless of active filter (so tabs always show real counts)
         if (cats.hasOwnProperty(item.category)) cats[item.category]++;
         
-        if (item.category !== currentCategory) continue;
+        if (currentCategory !== 'all' && item.category !== currentCategory) continue;
         if (showMajorEventsOnly && !item.is_major_event) continue;
         
         totalCount++;
@@ -1026,7 +1026,12 @@
 
 
     function filterByCategory(cat) {
-      currentCategory = cat;
+      // If clicking the same category again, toggle back to show all
+      if (currentCategory === cat) {
+        currentCategory = 'all';
+      } else {
+        currentCategory = cat;
+      }
       render();
     }
     
