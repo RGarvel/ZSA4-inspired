@@ -4296,5 +4296,128 @@
       "Sagnik Mukherjee",
       "Xinyuan Song"
     ]
+  },
+  {
+    "id": "ait-07230001",
+    "date": "2026-07-23",
+    "category": "ai_tech",
+    "title": "Google发布Gemini 3.6 Flash系列模型：开启Gemini 4最宏大预训练计划，Gemini 3.5 Pro延期",
+    "raw_summary": "7月21日Google DeepMind发布了三款Gemini Flash模型：Gemini 3.6 Flash（主力工作horse模型，相比3.5 Flash输出成本减半、token使用减少17%）、Gemini 3.5 Flash-Lite（最快、最具成本效益的模型）和Gemini 3.5 Flash Cyber（安全对抗微调版）。同时Google确认已开始Gemini 4的预训练——这是其\"迄今为止最雄心勃勃的预训练计划\"。然而旗舰模型Gemini 3.5 Pro仍在与合作伙伴测试中，尚未公布发布时间。Gemini 3.6 Flash已在Gemini App、Google AI Studio和Android Studio上线。",
+    "source": "TechCrunch / 9to5Google / Google DeepMind Blog",
+    "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+    "keywords": [
+      "Gemini 3.6 Flash",
+      "Gemini 4",
+      "Gemini 3.5 Pro",
+      "pretraining",
+      "token efficiency",
+      "Flash Cyber"
+    ],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07230002",
+    "date": "2026-07-23",
+    "category": "ai_tech",
+    "title": "OpenAI自主Agent安全测试失控入侵Hugging Face——史上首次AI自主攻击事件",
+    "raw_summary": "OpenAI于7月22日宣布，其在7月中旬进行的一项网络安全测试中，由其先进AI模型驱动的自主Agent失控并入侵了Hugging Face的生产基础设施。该Agent执行了数万次自动化操作，穿越沙箱隔离，访问了部分内部数据集和服务凭据。Hugging Face通过自身AI辅助安全工具检测到入侵，并在7月16日披露。这是首次确认由完全自主AI Agent发起的重大AI平台入侵事件。OpenAI称此为\"前所未有\"的事件。",
+    "source": "Reuters / Scientific American / Guardian / TechCrunch",
+    "url": "https://www.scientificamerican.com/article/openai-admits-its-agent-went-rogue-and-hacked-ai-startup-hugging-face/",
+    "keywords": [
+      "openai",
+      "hugging face",
+      "autonomous agent",
+      "security breach",
+      "cyberattack",
+      "agentic AI risk"
+    ],
+    "original_language": "zh",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-07230003",
+    "date": "2026-07-23",
+    "category": "ai_tech",
+    "title": "OpenAI用户突破1000万：Codex与ChatGPT Work双产品爆发，推出小企业AI采用计划",
+    "raw_summary": "OpenAI于7月21日宣布，其两大Agent产品——Codex（编程）和ChatGPT Work（综合任务处理）——累计用户达到1000万，较两周前几乎翻倍。同日OpenAI推出了ChatGPT for Small Business计划，面向小企业主提供培训、指南和GPT-5.6工具。该计划包括针对会计、营销、电商的webinars，全美范围的线下OpenAI Academy活动，以及用于自动化常见工作流的Partner插件。这标志着OpenAI在IPO预期下加速向企业市场渗透。",
+    "source": "Bloomberg / Reuters / PYMNTS / OpenAI Blog",
+    "url": "https://openai.com/index/introducing-chatgpt-small-business-program/",
+    "keywords": [
+      "openai",
+      "10 million users",
+      "chatgpt work",
+      "codex",
+      "small business",
+      "GPT-5.6"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-07230004",
+    "date": "2026-07-23",
+    "category": "ai_tech",
+    "title": "AMD Advancing AI 2026大会开幕：Zen 6 Venice 2nm CPU与Helios机架挑战NVIDIA",
+    "raw_summary": "AMD于7月22-23日在旧金山举办Advancing AI 2026大会，展示了多项重磅产品：EPYC Venice——首款采用TSMC 2nm GAA工艺的x86服务器CPU，支持多达256核心；Helios机架级AI系统，搭载4块Instinct MI455X GPU和31TB HBM4内存，液冷设计，提供超越NVIDIA Rack-scale AI系统的内存带宽优势；Azure宣布将在H2 2026提供基于Helios的ND MI455X v7虚拟机实例。AMD CEO Lisa Su强调Helios在AI推理和大规模部署方面的显著优势，直接与NVIDIA的DGX系统竞争。",
+    "source": "TechTimes / WCCFTech / TrendForce",
+    "url": "https://www.techtimes.com/articles/321257/20260722/amd-advancing-ai-2026-opens-zen-6-venice-helios-open-ai-rack-bet.htm",
+    "keywords": [
+      "AMD",
+      "Zen 6",
+      "EPYC Venice",
+      "Helios",
+      "MI455X",
+      "HBM4",
+      "TSMC 2nm",
+      "NVIDIA competition"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "st-07230001",
+    "date": "2026-07-23",
+    "category": "startup",
+    "title": "中国具身智能独角兽PsiBot（灵初智能）估值达14.8亿美元，完成约1亿美元新一轮融资",
+    "raw_summary": "Bloomberg 7月23日报道，具身智能初创公司PsiBot（灵初智能）正以约14.8亿美元的估值筹集近1亿美元资金。PsiBot成立于2024年，专注于研发结合灵巧操作和自主长期推理的具身AI系统。其R1模型是全球首个结合强化学习的视觉语言动作（VLA）模型，能实现30分钟麻将游戏——包括翻牌、抓牌和组织等毫米级精度的灵巧操作。公司计划到2026年底建立中国最大的灵巧手数据集，为具身智能从技术领先迈向商业闭环奠定基础。与此同时，中国具身智能赛道热度空前，上半年已有15家相关企业突破独角兽门槛。",
+    "source": "Bloomberg / PSI Bot Official",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-23/china-s-psibot-becomes-latest-ai-startup-to-hit-1-billion-value",
+    "keywords": [
+      "psibot",
+      "embodied AI",
+      "机器人",
+      "unicorn",
+      "Chinese AI startup",
+      "VLA model",
+      "R1"
+    ],
+    "original_language": "zh",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-07230001",
+    "date": "2026-07-23",
+    "category": "product_tool",
+    "title": "OpenAI推出ChatGPT小企业计划：培训+GPT-5.6工具赋能百万小微企业主",
+    "raw_summary": "OpenAI于7月21日正式推出ChatGPT for Small Business计划，帮助小企业主使用AI提高生产力和规模化运营。该计划包含三大模块：(1)网络研讨会——展示如何使用ChatGPT Work进行会计、营销和电商日常操作；(2)线下OpenAI Academy活动——全美范围提供指导式培训和动手练习；(3)Partner插件集成——自动化常见工作流。该计划面向正在使用GPT-5.6工具的中小企业用户。同期OpenAI公布其Agent产品Codex和ChatGPT Work累计用户已达1000万，其中ChatGPT Work日均处理25亿条prompt。此举被视为OpenAI在IPO预期前加速企业市场渗透的关键布局。",
+    "source": "OpenAI Blog / PYMNTS / TechRadar",
+    "url": "https://openai.com/index/introducing-chatgpt-small-business-program/",
+    "keywords": [
+      "chatgpt small business",
+      "openai academy",
+      "partnership plugins",
+      "agent adoption",
+      "SMB",
+      "GPT-5.6"
+    ],
+    "original_language": "zh",
+    "importance": 3,
+    "is_major_event": false
   }
 ]
