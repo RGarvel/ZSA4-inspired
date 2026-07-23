@@ -45,25 +45,103 @@
     /* ═══════════ NAVBAR ═══════════ */
     .navbar {
       position: sticky; top: 0; z-index: 1000;
-      background: linear-gradient(135deg, rgba(22,27,34,0.95), rgba(28,35,51,0.95)) !important;
-      backdrop-filter: blur(12px);
+      background-color: var(--bg-secondary) !important;
       border-bottom: 1px solid var(--border-color);
       padding: 0.6rem 0;
-    }
-    body.light-mode .navbar {
-      background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(240,242,245,0.95)) !important;
     }
     .navbar-brand {
       font-weight: 700; font-size: 1.05rem; letter-spacing: -0.3px;
     }
-    .back-link {
-      color: var(--text-secondary); text-decoration: none;
-      padding: 0.4rem 0.9rem; border-radius: 20px;
-      font-size: 0.82rem; font-weight: 500;
-      display: inline-flex; align-items: center; gap: 0.35rem;
-      border: 1px solid transparent; transition: all 0.25s ease;
+    
+    /* Brand hover: smooth transition to 灵感日报 via JS */
+    .brand-switcher {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
     }
-    .back-link:hover { color: var(--accent-blue); border-color: var(--border-color); }
+    .brand-icon-default, .brand-icon-hover {
+      transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      font-size: 1.1rem;
+    }
+    .brand-icon-default {
+      color: var(--accent-green) !important;
+    }
+    .brand-icon-hover {
+      position: absolute;
+      left: 0;
+      color: var(--accent-orange);
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    .brand-text-default, .brand-text-hover {
+      font-size: 1rem;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: opacity 0.25s ease;
+    }
+    .brand-text-default {
+      color: var(--text-primary);
+    }
+    .brand-text-hover {
+      position: absolute;
+      left: 2rem;
+      background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+    }
+    .brand-switcher:hover .brand-icon-default {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    .brand-switcher:hover .brand-icon-hover {
+      opacity: 1;
+      transform: scale(1.15) rotate(-8deg);
+    }
+    .brand-switcher:hover .brand-text-default {
+      opacity: 0;
+    }
+    .brand-switcher:hover .brand-text-hover {
+      opacity: 1;
+    }
+    body.light-mode .brand-icon-hover {
+      color: #f59e0b;
+    }
+    body.light-mode .brand-text-default {
+      color: var(--text-primary);
+    }
+    .back-link {
+      color: var(--text-primary);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(188, 140, 255, 0.05));
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+    
+    .back-link:hover {
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+      background: linear-gradient(135deg, rgba(88, 166, 255, 0.2), rgba(188, 140, 255, 0.1));
+      transform: translateX(-3px);
+      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.2);
+    }
+    
+    .back-link i {
+      transition: transform 0.3s ease;
+    }
+    .back-link:hover i {
+      transform: translateX(-2px);
+    }
     .theme-toggle-btn {
       background: rgba(88,166,255,0.1); border: 1px solid var(--border-color);
       color: var(--text-primary); border-radius: 10px;
@@ -83,7 +161,7 @@
       position: sticky; top: 58px; height: calc(100vh - 58px);
     }
     .main-content {
-      flex: 1; padding: 2rem 3rem; max-width: 100%; overflow-x: hidden;
+      flex: 1; padding: 2rem 3rem; max-width: 1200px; overflow-x: hidden; margin: 0 auto;
     }
 
     /* ═══════════ SCENARIOS ═══════════ */
@@ -297,16 +375,15 @@
 <body>
   <nav class="navbar" id="mainNavbar">
     <div class="container-fluid px-3 px-lg-4">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="/ZSA4-inspired/index.html">
-        <i class="bi bi-shield-check" style="color:var(--accent-green);font-size:1.25rem;"></i>
-        <span style="color:var(--text-primary);">AI合规检查清单</span>
+      <a class="navbar-brand brand-switcher" href="/ZSA4-inspired/index.html" id="brandLink">
+        <i class="bi bi-shield-check brand-icon-default" id="brandIcon"></i>
+        <i class="bi bi-lightbulb-fill brand-icon-hover" id="brandIconHover"></i>
+        <span class="brand-text-default" id="brandText">AI合规检查清单</span>
+        <span class="brand-text-hover" id="brandTextHover">灵感日报</span>
       </a>
       <div class="d-flex align-items-center gap-2 ms-auto">
         <a class="back-link" href="/ZSA4-inspired/project/playground/">
-          <i class="bi bi-arrow-left"></i> Playground
-        </a>
-        <a class="back-link d-none d-sm-inline-flex" href="/ZSA4-inspired/project/playground/">
-          <i class="bi bi-arrow-left"></i> Playground
+          <i class="bi bi-house-door"></i> 返回Playground
         </a>
         <button class="theme-toggle-btn" onclick="toggleTheme()" title="切换亮暗模式">
           <i class="bi bi-moon-fill" id="themeIcon"></i>
