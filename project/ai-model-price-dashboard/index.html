@@ -517,12 +517,13 @@
     <div class="control-bar">
       <div class="row g-3">
         <div class="col-md-3">
-          <label class="form-label">任务类型</label>
+          <label class="form-label">🎯 任务类型</label>
           <select class="form-select" id="taskType">
-            <option value="">请选择...</option>
+            <option value="">全部任务</option>
+            <option value="text">📝 文本对话</option>
+            <option value="reasoning">🧠 逻辑推理</option>
             <option value="coding">💻 编码</option>
-            <option value="reasoning">🧠 推理</option>
-            <option value="image">🎨 图像</option>
+            <option value="image">🎨 图像生成</option>
           </select>
         </div>
         <div class="col-md-3">
@@ -572,16 +573,17 @@
         <thead>
           <tr>
             <th style="width: 5%;">#</th>
-            <th style="width: 15%;" onclick="sortBy('name')">模型 <i class="bi bi-arrow-down-up"></i></th>
-            <th style="width: 10%;">厂商</th>
-            <th style="width: 8%;" onclick="sortBy('tier')">等级 <i class="bi bi-arrow-down-up"></i></th>
+            <th style="width: 12%;" onclick="sortBy('name')">模型 <i class="bi bi-arrow-down-up"></i></th>
+            <th style="width: 8%;">厂商</th>
+            <th style="width: 7%;" onclick="sortBy('tier')">等级 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 10%;" onclick="sortBy('input_price_per_1m')">输入价 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 10%;" onclick="sortBy('output_price_per_1m')">输出价 <i class="bi bi-arrow-down-up"></i></th>
-            <th style="width: 10%;">图像</th>
-            <th style="width: 8%;">开源</th>
+            <th style="width: 8%;">图像</th>
+            <th style="width: 6%;">开源</th>
             <th style="width: 8%;" onclick="sortBy('quality_score')">质量 <i class="bi bi-arrow-down-up"></i></th>
-            <th style="width: 10%;">用途</th>
-            <th style="width: 9%;">对比</th>
+            <th style="width: 10%;" onclick="sortBy('value_score')">💰 性价比 <i class="bi bi-arrow-down-up"></i></th>
+            <th style="width: 8%;">用途</th>
+            <th style="width: 7%;">对比</th>
           </tr>
         </thead>
         <tbody id="tableBody"></tbody>
@@ -602,7 +604,7 @@
     let allModels = [];
     let priceChart = null;
     let compareList = [];
-    let sortField = 'quality_score';
+    let sortField = 'value_score';
     let sortDirection = 'desc';
     let _sortedModels = [];
     
@@ -742,12 +744,15 @@
 
     function getFilteredModels() {
       const { vendor, tier, source, search } = _filterCache;
+      const taskType = $el.taskType?.value || '';
       const out = [];
       for (const m of allModels) {
         if (vendor !== 'all' && m.vendor !== vendor) continue;
         if (tier !== 'all' && m.tier !== tier) continue;
         if (source !== 'all' && String(m.open_source) !== source) continue;
         if (search && !m.name.toLowerCase().includes(search) && !m.model_id.toLowerCase().includes(search)) continue;
+        // If a task type is selected, filter models that support it
+        if (taskType && taskType !== '' && m.categories && !m.categories.includes(taskType)) continue;
         out.push(m);
       }
       return out;
@@ -760,9 +765,16 @@
     function renderTable() {
       const models = getFilteredModels();
       
+      // Compute value_score for each model based on active task type
+      const activeTask = $el.taskType?.value || '';
+      for (const m of models) {
+        m.value_score = calcValueScore(m, activeTask);
+      }
+      
       models.sort((a, b) => {
         let va = a[sortField], vb = b[sortField];
         if (sortField === 'name') { va = String(va || '').toLowerCase(); vb = String(vb || '').toLowerCase(); }
+        else if (sortField === 'value_score') { va = Number(a.value_score) || 0; vb = Number(b.value_score) || 0; }
         else { va = Number(va) || 0; vb = Number(vb) || 0; }
         if (va < vb) return sortDirection === 'asc' ? -1 : 1;
         if (va > vb) return sortDirection === 'asc' ? 1 : -1;
@@ -791,6 +803,10 @@
         parts.push('<td>', fmtImgPrice(m.image_generation_price), '</td>');
         parts.push('<td style="text-align:center;">' + (m.open_source ? '<span class="badge bg-success">开源</span>' : '<span class="badge bg-secondary">闭源</span>') + '</td>');
         parts.push('<td><span class="quality-score ', qc, '">', q, '</span></td>');
+        // Value-for-money score (color-coded)
+        const vs = m.value_score != null ? Number(m.value_score) : 0;
+        const vc = vs >= 70 ? 'high' : vs >= 50 ? 'medium' : 'low';
+        parts.push('<td><span class="quality-score ', vc, '" title="性价比评分">💰', vs, '</span></td>');
         parts.push('<td>', m.categories.slice(0, 3).map(cat => '<span class="keyword-badge" style="font-size:0.65rem">' + cat + '</span>').join(''), '</td>');
         parts.push('<td><button class="btn btn-sm compare-btn ', ic ? 'compare-selected' : 'btn-outline-secondary', '" onclick="toggleCompare(\'', m.model_id, '\')">');
         parts.push(ic ? '<i class="bi bi-check"></i>' : '+');
@@ -858,7 +874,8 @@
       const rows = [
         ['厂商', 'vendor'], ['输入价', 'input_price_per_1m'], ['输出价', 'output_price_per_1m'],
         ['图像生成', 'image_generation_price'], ['图像编辑', 'image_edit_price'],
-        ['上下文窗口', 'context_window'], ['质量评分', 'quality_score'], ['开源/闭源', 'open_source'], ['等级', 'tier']
+        ['上下文窗口', 'context_window'], ['质量评分', 'quality_score'], ['性价比评分', 'value_score'],
+        ['开源/闭源', 'open_source'], ['等级', 'tier']
       ];
       
       const parts = [];
@@ -927,13 +944,10 @@
       let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
       if (!candidates.length) { card.classList.remove('show'); return; }
       
-      // Unified scoring: weight quality vs price based on task type
-      const weights = { coding: [0.4, 0.6], reasoning: [0.6, 0.4], image: [0.5, 0.5] };
-      const [wQ, wP] = weights[taskType] || [0.5, 0.5];
-      
+      // Unified scoring: value-for-money based on task type
       candidates = candidates.map(m => ({
         ...m,
-        score: calcTaskScore(m, taskType)
+        score: calcValueScore(m, taskType)
       }));
       
       candidates.sort((a, b) => b.score - a.score);
@@ -956,6 +970,45 @@
           </div>
         </div>
       `;
+    }
+
+    // ── Value-for-money scoring ──────────────────────────────
+    function calcValueScore(model, taskType) {
+      const modalityScores = model.modality_scores || {};
+      const ip = Number(model.input_price_per_1m ?? 0) || 0;
+      const op = Number(model.output_price_per_1m ?? 0) || 0;
+      const pg = model.image_generation_price;
+      
+      let score = 0;
+      let priceDenom = 0;
+      
+      if (taskType === 'text' || taskType === 'reasoning') {
+        const q = modalityScores[taskType] || modalityScores['text'] || model.quality_score || 50;
+        // For text/reasoning: use output price (most expensive part)
+        priceDenom = op > 0 ? op : (ip > 0 ? ip : 1);
+        score = Math.round((q / priceDenom) * 15); // Scale to ~0-100 range
+      } else if (taskType === 'coding') {
+        const q = modalityScores['coding'] || modalityScores['text'] || model.quality_score || 50;
+        const avgPrice = (ip + op) / 2;
+        priceDenom = avgPrice > 0 ? avgPrice : 1;
+        score = Math.round((q / priceDenom) * 15);
+      } else if (taskType === 'image') {
+        const q = modalityScores['image'] || 50;
+        if (pg != null && pg !== '/' && Number(pg) > 0) {
+          priceDenom = Number(pg);
+          score = Math.round((q / priceDenom) * 3);
+        } else {
+          return 0;
+        }
+      } else {
+        // No task filter: use weighted composite based on quality vs average output price
+        const q = model.quality_score || 50;
+        priceDenom = op > 0 ? op : (ip > 0 ? ip : 1);
+        score = Math.round((q / priceDenom) * 15);
+      }
+      
+      // Clamp to 0-100
+      return Math.min(100, Math.max(0, score));
     }
 
     // ── Chart — single-pass data aggregation ─────────────────
@@ -985,12 +1038,12 @@
       let models = compareList.length > 0
         ? (buildModelMap(), compareList.map(id => _modelByIdMap.get(id)).filter(Boolean))
         : (hasTaskFilter
-          ? getFilteredModels().filter(m => m.categories.includes(taskType)).map(m => ({ ...m, taskScore: calcTaskScore(m, taskType) })).sort((a,b) => b.taskScore - a.taskScore).slice(0, 10)
-          : getFilteredModels().map(m => ({ ...m, taskScore: null })).sort((a,b) => (b.quality_score||0) - (a.quality_score||0)).slice(0, 10));
+          ? getFilteredModels().filter(m => m.categories.includes(taskType)).map(m => ({ ...m, score: calcValueScore(m, taskType) })).sort((a,b) => b.score - a.score).slice(0, 10)
+          : getFilteredModels().map(m => ({ ...m, score: calcValueScore(m, '') })).sort((a,b) => (b.value_score||0) - (a.value_score||0)).slice(0, 10));
       
       if (!models.length) return;
       
-      const perfLabel = { coding: '编码性价比', reasoning: '推理性价比', image: '图像性价比' }[taskType] || '质量评分';
+      const perfLabel = { coding: '编码性价比', reasoning: '推理性价比', text: '文本性价比', image: '图像性价比' }[taskType] || '性价比评分';
       
       // Single pass: collect all chart data + compute bounds
       const inputPrices = [], outputPrices = [], scores = [];
@@ -1055,7 +1108,7 @@
             },
             title: {
               display: true,
-              text: compareList.length > 0 ? '选中模型对比' : hasTaskFilter ? `性价比排序 (前10) — ${perfLabel}` : '质量评分排序 (前10个模型)',
+              text: compareList.length > 0 ? '选中模型对比' : hasTaskFilter ? `性价比排序 (前10) — ${perfLabel}` : '性价比排序 (前10个模型)',
               color: txt,
               font: { size: 16 }
             }
