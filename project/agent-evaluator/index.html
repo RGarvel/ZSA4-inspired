@@ -196,7 +196,14 @@
       <h5><i class="bi bi-play-btn me-2"></i>运行评测</h5>
       <div class="row g-3 align-items-center">
         <div class="col-auto"><label class="form-label">Agent 名称</label><input type="text" class="form-control form-control-sm" id="agentName" placeholder="我的 Assistant Agent v1.0" value="My-Agent-v1"></div>
-        <div class="col-auto"><label class="form-label">Agent 输入方式</label><select class="form-select form-select-sm" id="agentInputType"><option value="mock" selected>模拟响应（演示模式）</option><option value="llm">通过 LLM API 调用</option></select></div>
+        <div class="col-auto"><label class="form-label">Agent 输入方式</label><select class="form-select form-select-sm" id="agentInputType"><option value="mock" selected>模拟响应（演示模式）</option><option value="dify">Dify API（真实 Agent）</option></select></div>
+      </div>
+      <!-- Dify config fields (hidden by default) -->
+      <div class="row g-3 mt-2" id="difyConfigRow" style="display:none;">
+        <div class="col-md-5"><label class="form-label">Dify Base URL</label><input type="text" class="form-control form-control-sm" id="difyBaseUrl" placeholder="http://192.168.80.34/v1" value="http://192.168.80.34/v1"></div>
+        <div class="col-md-4"><label class="form-label">API Key</label><input type="password" class="form-control form-control-sm" id="difyApiKey" placeholder="app-xxxxx"></div>
+        <div class="col-md-3"><label class="form-label">App / Workflow ID</label><input type="text" class="form-control form-control-sm" id="difyAppId" placeholder="app-xxxxx"></div>
+      </div>
       </div>
       <div class="mt-3">
         <button class="btn btn-eval-primary btn-lg px-4" id="runBtn" onclick="runEvaluation()"><i class="bi bi-lightning-charge-fill me-2"></i>开始评测</button>
@@ -250,6 +257,12 @@ function toggleTheme() { isDarkMode = !isDarkMode; applyTheme(); rebuildCharts()
 
 // Steps
 document.querySelectorAll('.step-tab').forEach(tab => tab.addEventListener('click', () => goToStep(parseInt(tab.dataset.step))));
+
+// Dify config toggle
+$('agentInputType').addEventListener('change', function() {
+  $('difyConfigRow').style.display = this.value === 'dify' ? '' : 'none';
+});
+
 function goToStep(step) {
   document.querySelectorAll('.step-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
@@ -352,6 +365,35 @@ function genMockResponse(prompt) {
   return r[Math.floor(Math.random()*r.length)];
 }
 
+// ── Dify API Caller ────────────────────────────────────
+async function callDifyApi(baseUrl, apiKey, appId, userQuery) {
+  const url = baseUrl.replace(/\/+$/,'') + '/chat-messages';
+  const body = {
+    inputs: {},
+    query: userQuery,
+    response_mode: 'blocking',
+    conversation_id: '',
+    user: 'evalx-session'
+  };
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + apiKey
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const errText = await res.text().catch(() => '');
+    throw new Error(`Dify API 错误 ${res.status}: ${errText.slice(0,200)}`);
+  }
+  const data = await res.json();
+  // Extract text from Dify response
+  if (data.answer) return data.answer;
+  if (data.message && data.message.answer) return data.message.answer;
+  return JSON.stringify(data);
+}
+
 // Heuristic scoring
 function heuristicScore(prompt,response,tc) {
   const scores={}, r=response.toLowerCase(), p=prompt.toLowerCase(), len=response.length;
@@ -389,12 +431,38 @@ async function runEvaluation() {
   const agentName=$('agentName').value||'Unknown-Agent';
   const weights={}; let wTotal=0;
   DIMENSIONS.forEach(d=>{const w=evalConfig[d.key+'_weight']||d.weight;weights[d.key]=w;wTotal+=w;});
+  
+  // Check if using Dify API
+  const inputType = $('agentInputType').value;
+  let difyReady = false;
+  if(inputType === 'dify') {
+    const baseUrl = $('difyBaseUrl').value.trim();
+    const apiKey = $('difyApiKey').value.trim();
+    if(!baseUrl || !apiKey) { alert('使用 Dify API 必须填写 Base URL 和 API Key'); $('runBtn').disabled=false; return; }
+    if(baseUrl.startsWith('http://192.168.')) log.textContent += '⚠️ 内网地址，请确保运行此页面的浏览器可访问该地址\n';
+    else log.textContent += '🌐 将调用: '+baseUrl+'/chat-messages\n';
+    difyReady = true;
+  }
+  
   let results=[];
   for(let i=0;i<testCases.length;i++){
     const tc=testCases[i];
     log.textContent+='\n['+(i+1)+'/'+testCases.length+'] 测试: '+tc.name+'\n';
-    const response=genMockResponse(tc.prompt);
-    log.textContent+='  使用模拟响应\n';
+    let response;
+    try {
+      if(difyReady) {
+        const baseUrl = $('difyBaseUrl').value.trim();
+        const apiKey = $('difyApiKey').value.trim();
+        response = await callDifyApi(baseUrl, apiKey, $('difyAppId').value.trim(), tc.prompt);
+        log.textContent+='  ✅ Dify API 返回响应 ('+response.length+'字)\n';
+      } else {
+        response = genMockResponse(tc.prompt);
+        log.textContent+='  🔧 使用模拟响应\n';
+      }
+    } catch(e) {
+      response = '❌ 获取响应失败: ' + e.message;
+      log.textContent+='  ❌ 错误: '+e.message+'\n';
+    }
     const hs=heuristicScore(tc.prompt,response,tc);
     // Normalize weighted scores
     const scaled={};
@@ -440,7 +508,7 @@ function renderReport(){
   DIMENSIONS.forEach(d=>{const s=testDS[d.key]||0;if(s<th*0.5)ss.push('⚠️ **'+d.label+'**严重不足('+s+'/100)：建议重新设计 Agent 的 prompt 模板，增加约束条件和示例。');else if(s<th)ss.push('🔧 **'+d.label+'**有待提升('+s+'/100)：可考虑引入 Few-shot 示例或后处理验证步骤。');});
   if(ss.length===0)ss.push('🎉 所有维度评分均达标！继续保持当前配置。');
   ss.push('📊 累计测试了 **'+TR.length+'** 个用例，建议增加到 10+ 以获得更准确的评估。');
-  ss.push('💡 考虑接入真实 LLM API 进行更精确的评分（当前使用启发式引擎）。');
+  ss.push('💡 当前使用启发式引擎，建议接入 Dify API 获取更精准的真实 Agent 响应。');
   $('suggestionsArea').innerHTML=ss.map(s=>'<div class="suggestion-item">'+s.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>')+'</div>').join('');
   renderRadarChart(testDS);
   document.querySelector('.step-tab[data-step="4"]').classList.add('done');
