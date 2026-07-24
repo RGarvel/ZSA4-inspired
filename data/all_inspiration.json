@@ -1,6 +1,6 @@
 [
   {
-    "id": "ait-0026",
+    "id": "ait-0027",
     "date": "2026-07-24",
     "category": "ai_tech",
     "title": "OpenAI 发布 Presence：企业级 AI Agent 平台，支持语音和聊天客服自动部署",
@@ -20,7 +20,7 @@
     "is_major_event": true
   },
   {
-    "id": "ait-0026",
+    "id": "ait-0028",
     "date": "2026-07-24",
     "category": "ai_tech",
     "title": "DeepSeek V4 今日正式发布：legacy 模型 deepseek-chat/reasoner 将于 7 月 24 日 15:59 UTC 退役",
@@ -40,7 +40,7 @@
     "is_major_event": true
   },
   {
-    "id": "ait-0026",
+    "id": "ait-0029",
     "date": "2026-07-24",
     "category": "ai_tech",
     "title": "Anthropic Claude Fable 5 和 Mythos 5 出口管制全面解除，全球用户恢复可用",
@@ -60,7 +60,7 @@
     "is_major_event": true
   },
   {
-    "id": "ait-0026",
+    "id": "ait-0030",
     "date": "2026-07-24",
     "category": "ai_tech",
     "title": "DeepMind CEO Demis Hassabis 呼吁建立美国主导的全球 AI 监管机构",
@@ -80,7 +80,7 @@
     "is_major_event": false
   },
   {
-    "id": "ait-0026",
+    "id": "ait-0031",
     "date": "2026-07-24",
     "category": "ai_tech",
     "title": "OpenAI AI Agent 失控事件：自主代理自行入侵初创公司",
@@ -99,7 +99,7 @@
     "is_major_event": false
   },
   {
-    "id": "ait-0026",
+    "id": "ait-0032",
     "date": "2026-07-24",
     "category": "ai_tech",
     "title": "Anthropic 年收入超越 OpenAI，加速追赶中",
@@ -118,7 +118,7 @@
     "is_major_event": false
   },
   {
-    "id": "st-0011",
+    "id": "st-0012",
     "date": "2026-07-24",
     "category": "startup",
     "title": "Together AI 完成 8 亿美元 C 轮融资，估值飙升至 83 亿美元",
@@ -138,7 +138,7 @@
     "is_major_event": true
   },
   {
-    "id": "st-0011",
+    "id": "st-0013",
     "date": "2026-07-24",
     "category": "startup",
     "title": "Helsing 完成 18 亿美元 E 轮，创欧洲防务科技最大融资纪录",
@@ -157,7 +157,7 @@
     "is_major_event": true
   },
   {
-    "id": "st-0011",
+    "id": "st-0014",
     "date": "2026-07-24",
     "category": "startup",
     "title": "推理 startup Infinity 融资 1500 万美元",
@@ -175,7 +175,7 @@
     "is_major_event": false
   },
   {
-    "id": "st-0011",
+    "id": "st-0015",
     "date": "2026-07-24",
     "category": "startup",
     "title": "Photon Queue 融资 400 万美元开发室温量子内存硬件",
@@ -193,7 +193,7 @@
     "is_major_event": false
   },
   {
-    "id": "st-0011",
+    "id": "st-0016",
     "date": "2026-07-24",
     "category": "startup",
     "title": "Valarian 完成 5000 万美元 A 轮，NEA 首投欧洲防务 AI",
@@ -212,7 +212,7 @@
     "is_major_event": false
   },
   {
-    "id": "st-0011",
+    "id": "st-0017",
     "date": "2026-07-24",
     "category": "startup",
     "title": "2026 H1 北美风投创历史纪录：AI 行业独占 2110 亿美元",
@@ -231,7 +231,7 @@
     "is_major_event": false
   },
   {
-    "id": "pt-0013",
+    "id": "pt-0014",
     "date": "2026-07-24",
     "category": "product_tool",
     "title": "ZML 发布 ZML/LLMD：让 AI 推理在多芯片上高效运行的免费工具",
@@ -250,7 +250,7 @@
     "is_major_event": false
   },
   {
-    "id": "pt-0013",
+    "id": "pt-0015",
     "date": "2026-07-24",
     "category": "product_tool",
     "title": "Upstart AI 推出无代码网站和应用构建平台",
@@ -268,7 +268,7 @@
     "is_major_event": false
   },
   {
-    "id": "pt-0013",
+    "id": "pt-0016",
     "date": "2026-07-24",
     "category": "product_tool",
     "title": "Manus 浏览器操作员功能扩展：覆盖 Web Research、邮件和 Slack",
@@ -287,7 +287,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0022",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.AI] Autonomous Code Generation with LLM Agents",
@@ -305,7 +305,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0023",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.LG] Efficient Fine-Tuning of Large Language Models via Adaptive Layer Selection",
@@ -323,7 +323,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0024",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.AI] Multi-Agent RL for Real-World Robotics Control",
@@ -341,7 +341,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0025",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.LG] Scaling Laws for Reasoning Models: When More Tokens Don't Help",
@@ -359,7 +359,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0026",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.CL] GraphRAG: Unified Graph-Based Retrieval for Enterprise Knowledge",
@@ -377,7 +377,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0027",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.AI] Vlm-Efficiency: Compressing Vision-Language Models Without Quality Loss",
@@ -395,7 +395,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0028",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.LG] Self-Correction in LLMs: Mechanisms and Benchmarks Revisited",
@@ -413,7 +413,7 @@
     "is_major_event": false
   },
   {
-    "id": "ap-0021",
+    "id": "ap-0029",
     "date": "2026-07-24",
     "category": "academic_paper",
     "title": "[cs.AI] Speculative Decoding for Mixture-of-Experts: Speeding Up MoE Inference",
