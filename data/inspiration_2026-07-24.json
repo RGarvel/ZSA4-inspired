@@ -22,14 +22,14 @@
     },
     {
       "type": "industry_insight",
-      "title": "Gemini 3.6 Flash更新暗含信号：编码能力成为前沿模型核心KPI",
+      "title": "编码能力成前沿模型核心KPI：Gemini 3.6 Flash升级信号强烈",
       "summary": "Google DeepMind发布Gemini 3.6 Flash时特别强调编码性能提升和computer use能力从78.4%跳到83%，同时Gemini 3.5 Pro因编码基准未达标而推迟——这清晰传递一个信号：在2026年中期，编码能力已成为衡量前沿模型成熟度的第一指标。这一趋势与GPT-5.6全面接入Microsoft 365 Copilot（覆盖所有应用）、Anthropic Claude Sonnet 5定位为agentic coding模型形成共振。市场对AI编程模型的需求已从\"能否写代码\"演进为\"能否自主完成端到端工程任务\"，而编码能力的差距直接决定模型能否进入企业生产环境。",
       "tags": ["code-generation", "Gemini", "model-evaluation", "enterprise-AI", "coding-benchmarks"]
     },
     {
       "type": "startup_advice",
-      "title": "开源AI跑马圈地：Ollama月活翻倍验证本地AI拐点，MIT开源模型成主流选择",
-      "summary": "Ollama月活开发者从450万飙升至890万（半年翻倍），85% Fortune 500通过Ollama部署本地AI，加上智谱GLM-5.2以MIT许可证开源——这些信号表明本地/开源AI已从开发者偏好变为企业刚需。驱动因素包括：(1)数据隐私合规要求上升，(2)API成本压力（Meta Muse Spark 1.1等付费API推动企业寻找替代方案），(3)边缘AI设备普及（ASUS Zenni Claw将agentic AI带入消费PC）。创业者应关注：为本地AI部署提供监控/优化工具、构建针对隐私敏感场景的fine-tuned开源模型服务、开发NPU/端侧AI的运行时框架。",
+      "title": "开源AI跑马圈地：Ollama月活翻倍验证本地AI拐点",
+      "summary": "Ollama月活开发者从450万飙升至890万（半年翻倍），85% Fortune 500通过Ollama部署本地AI，加上智谱GLM-5.2以MIT许可证开源——这些信号表明本地/开源AI已从开发者偏好变为企业刚需。驱动因素包括：(1)数据隐私合规要求上升，(2)API成本压力推动企业寻找替代方案，(3)边缘AI设备普及（ASUS Zenni Claw将agentic AI带入消费PC）。创业者应关注：为本地AI部署提供监控/优化工具、构建针对隐私敏感场景的fine-tuned开源模型服务、开发NPU/端侧AI的运行时框架。",
       "tags": ["open-source-AI", "local-AI", "Ollama", "privacy", "edge-computing", "enterprise-adoption"]
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "type": "industry_insight",
-      "title": "中国AI软实力全球扩张：Moonshot AI开源策略+低成本模型输出改变规则",
+      "title": "中国AI软实力全球扩张：Moonshot AI开源策略改变规则",
       "summary": "纽约时报深度报道了中国AI软实力的崛起——Moonshot AI开源Kimi K3（2.8T参数MoE）、MiniMax等公司以低成本开源模型在全球扩张影响力。与此同时BBC报道Trump科技顾问指控Moonshot窃用Anthropic技术，侧面反映中国AI的影响力已大到引发地缘政治警觉。这种模式类比微软当年通过Windows+Office低成本输出统治桌面计算——今天中国AI公司试图用开源+低价+大参数规模复制同样的路径。对于全球AI行业而言，这意味着前沿模型的定价权正在被分散，开源模型的竞争力曲线正在逼近商业闭源模型。",
       "tags": ["China-AI", "open-source", "geopolitics", "Moonshot", "model-pricing", "soft-power"]
     }
