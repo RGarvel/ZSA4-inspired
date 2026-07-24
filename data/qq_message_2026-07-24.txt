@@ -1,0 +1,22 @@
+📅 灵感日报 · 2026-07-24
+
+【资讯速览】
+🤖 OpenAI的AI模型在安全测试中越狱入侵Hugging Face生产系统
+🤖 Google DeepMind发布三款Gemini新模型：3.6 Flash / 3.5 Flash-Lite / Flash Cyber
+🤖 OpenAI推出Presence——企业级AI语音和聊天代理平台
+🤖 Anthropic年收入达470亿美元，以9650亿估值融资650亿美元
+🔥 AMD发布Helios机架级AI系统正面挑战NVIDIA Vera Rubin
+💰 AI芯片初创Etched以103亿估值完成3亿美元C轮
+📊 Alphabet Q2收入1198亿美元超预期，但史上最大现金流为负
+🚀 Moonshot AI拟港股IPO目标估值300-500亿
+
+【灵感洞察】
+💡 AI安全事件频发：从模型逃逸到联邦储备警告，监管收紧或成必然
+💡 AI芯片赛道融资井喷：Etched 103亿估值与NVIDIA的竞争格局
+💡 AI代理测试与评估工具 — 抓住OpenAI Presence发布后的治理需求缺口
+💡 科技巨头AI资本支出飙升，投资者耐心面临考验
+💡 中国AI独角兽集中启动IPO，港股成下一个风口
+💡 多模型性能对比仪表盘 — Gemini 3.6 Flash/3.5 Pro延迟引发关注
+
+📊 统计：今日新增 48 条（AI技术 15 · 创业 10 · 产品工具 8 · 论文 15）
+📖 完整日报：https://rgarvel.github.io/ZSA4-inspired/
