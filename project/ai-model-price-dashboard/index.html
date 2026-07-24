@@ -1007,30 +1007,27 @@
     }
 
     // ── Value-for-money scoring ──────────────────────────────
-    // Uses rank-based normalization within the model set for fair comparison
     function calcValueScore(model, taskType) {
       const modalityScores = model.modality_scores || {};
       const ip = Number(model.input_price_per_1m ?? 0) || 0;
       const op = Number(model.output_price_per_1m ?? 0) || 0;
       const pg = model.image_generation_price;
       
-      let quality = 0, priceDenom = 0;
+      let quality = 0, outputPrice = 0;
       
       if (taskType === 'image') {
         quality = modalityScores['image'] || 50;
-        priceDenom = (pg != null && pg !== '/' && Number(pg) > 0) ? Number(pg) : 0;
-        if (priceDenom === 0) return -1; // No image data
+        outputPrice = (pg != null && pg !== '/' && Number(pg) > 0) ? Number(pg) : 0;
+        if (outputPrice === 0) return -1; // No valid image price data
+      } else if (taskType === 'coding') {
+        quality = modalityScores['coding'] || modalityScores['text'] || model.quality_score || 50;
+        outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
       } else {
         quality = modalityScores[taskType] || modalityScores['text'] || model.quality_score || 50;
-        priceDenom = op > 0 ? op : (ip > 0 ? ip : 0);
+        outputPrice = op > 0 ? op : 1;
       }
       
-      // For free/open-source models: value_score will be computed via normalization later
-      if (priceDenom === 0) priceDenom = 1; // Prevent division by zero
-      
-      // Return ratio: higher = better value (quality per dollar)
-      // Use sqrt to moderate the price impact so cheap models aren't penalized too much
-      return quality / Math.sqrt(priceDenom);
+      return quality / outputPrice;
     }
 
     // ── Chart — single-pass data aggregation ─────────────────
