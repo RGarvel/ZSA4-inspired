@@ -978,13 +978,8 @@
       let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
       if (!candidates.length) { card.classList.remove('show'); return; }
       
-      // Unified scoring: value-for-money based on task type
-      candidates = candidates.map(m => ({
-        ...m,
-        score: calcValueScore(m, taskType)
-      }));
-      
-      candidates.sort((a, b) => b.score - a.score);
+      // Recommend the model with the highest quality score for this task type
+      candidates.sort((a, b) => (b.quality_score || 0) - (a.quality_score || 0));
       const best = candidates[0];
       
       card.classList.add('show');
