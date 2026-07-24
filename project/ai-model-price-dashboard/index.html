@@ -537,7 +537,7 @@
             <th style="width: 10%;" onclick="sortBy('output_price_per_1m')">输出价 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 8%;">图像</th>
             <th style="width: 6%;">开源</th>
-            <th style="width: 8%;" onclick="sortBy('quality_score')">质量 <i class="bi bi-arrow-down-up"></i></th>
+            <th style="width: 8%;" onclick="sortBy('composite_score')">质量 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 10%;" onclick="sortBy('value_score')">💰 性价比 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 8%;">用途</th>
             <th style="width: 7%;">对比</th>
@@ -561,7 +561,7 @@
     let allModels = [];
     let priceChart = null;
     let compareList = [];
-    let sortField = 'quality_score';
+    let sortField = 'composite_score';
     let sortDirection = 'desc';
     let _sortedModels = [];
     
@@ -777,7 +777,7 @@
       
       for (let i = 0; i < models.length; i++) {
         const m = models[i];
-        const q = m.quality_score;
+        const q = m.composite_score;
         const qc = q >= 90 ? 'high' : q >= 75 ? 'medium' : 'low';
         const ic = cs.has(m.model_id);
         
@@ -861,7 +861,7 @@
       const rows = [
         ['厂商', 'vendor'], ['输入价', 'input_price_per_1m'], ['输出价', 'output_price_per_1m'],
         ['图像生成', 'image_generation_price'], ['图像编辑', 'image_edit_price'],
-        ['上下文窗口', 'context_window'], ['质量评分', 'quality_score'], ['性价比评分', 'value_score'],
+        ['上下文窗口', 'context_window'], ['综合评分', 'composite_score'], ['性价比评分', 'value_score'],
         ['开源/闭源', 'open_source'], ['等级', 'tier']
       ];
       
@@ -871,11 +871,11 @@
       parts.push('</tr></thead><tbody>');
       
       // Render modality scores first if available
-      for (const [label, key] of [['文本', 'text'], ['推理', 'reasoning'], ['编码', 'coding'], ['图像', 'image']]) {
+      for (const [label, key] of [['文本', 'chat'], ['推理', 'reasoning'], ['编码', 'coding'], ['图像', 'image']]) {
         parts.push('<tr><td><strong>', label, '</strong></td>');
         for (const m of models) {
-          const ms = m.modality_scores;
-          v = (ms && ms[key] != null) ? ms[key] : '-';
+          const scoreKey = key === 'chat' ? 'score_chat' : key === 'reasoning' ? 'score_reasoning' : key === 'coding' ? 'score_coding' : 'score_image';
+          v = (m[scoreKey] != null && m[scoreKey] > 0) ? m[scoreKey] : (m.composite_score || '-');
           parts.push('<td>', v, '</td>');
         }
         parts.push('</tr>');
@@ -891,7 +891,7 @@
             v = (v && v > 0) ? Number(v).toLocaleString() + ' tokens' : '-';
           } else if (key === 'tier') {
             v = '<span class="tier-badge ' + String(v || '') + '">' + String(v || '') + '</span>';
-          } else if (key === 'quality_score') {
+          } else if (key === 'composite_score') {
             v = '<span class="quality-score ' + (v >= 90 ? 'high' : v >= 75 ? 'medium' : 'low') + '">' + String(v || '-') + '</span>';
           } else if (key === 'value_score') {
             const vs = v != null ? Number(v) : 0;
@@ -936,7 +936,7 @@
       if (!candidates.length) { card.classList.remove('show'); return; }
       
       // Step 1: sort by quality, take top 10
-      candidates.sort((a, b) => (b.quality_score || 0) - (a.quality_score || 0));
+      candidates.sort((a, b) => (b.composite_score || 0) - (a.composite_score || 0));
       const top10 = candidates.slice(0, 10);
       
       // Step 2: from top 10, pick the one with highest value score
@@ -952,7 +952,7 @@
           <div class="col-md-6">
             <h4 class="mb-2">${best.name}</h4>
             <p class="mb-1"><strong>厂商:</strong> ${best.vendor}</p>
-            <p class="mb-1"><strong>质量评分:</strong> <span class="quality-score ${best.quality_score >= 90 ? 'high' : best.quality_score >= 75 ? 'medium' : 'low'}">${best.quality_score}</span></p>
+            <p class="mb-1"><strong>综合评分:</strong> <span class="quality-score ${best.composite_score >= 90 ? 'high' : best.composite_score >= 75 ? 'medium' : 'low'}">${best.composite_score}</span></p>
             <p class="mb-1"><strong>性价比评分:</strong> <span style="color: var(--accent-green); font-weight: 600;">${best.score}/100</span></p>
           </div>
           <div class="col-md-6">
@@ -968,7 +968,6 @@
     // ── Value-for-money scoring ──────────────────────────────
     // Quality-adjusted value: (quality_above_threshold) / price
     function calcValueScore(model, taskType) {
-      const modalityScores = model.modality_scores || {};
       const ip = Number(model.input_price_per_1m ?? 0) || 0;
       const op = Number(model.output_price_per_1m ?? 0) || 0;
       const pg = model.image_generation_price;
@@ -976,14 +975,17 @@
       let quality = 0, outputPrice = 0;
       
       if (taskType === 'image') {
-        quality = modalityScores['image'] || 0;
+        quality = model.score_image || 0;
         outputPrice = (pg != null && pg !== '/' && Number(pg) > 0) ? Number(pg) : 0;
         if (outputPrice === 0) return -1;
       } else if (taskType === 'coding') {
-        quality = modalityScores['coding'] || modalityScores['chat'] || model.quality_score || 0;
+        quality = model.score_coding || model.score_chat || model.composite_score || 0;
+        outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
+      } else if (taskType === 'reasoning') {
+        quality = model.score_reasoning || model.composite_score || 0;
         outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
       } else {
-        quality = modalityScores[taskType] || modalityScores['chat'] || model.quality_score || 0;
+        quality = model.score_chat || model.composite_score || 0;
         outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
       }
       
@@ -1002,8 +1004,12 @@
     function calcTaskScore(model, taskType) {
       const wQ = { coding: 0.4, reasoning: 0.6, image: 0.5 }[taskType] || 0.5;
       const wP = 1 - wQ;
-      // Use modality-specific score, fall back to composite quality_score
-      let qScore = (model.modality_scores && model.modality_scores[taskType]) || model.quality_score;
+      let qScore;
+      if (taskType === 'coding') qScore = model.score_coding;
+      else if (taskType === 'reasoning') qScore = model.score_reasoning;
+      else if (taskType === 'image') qScore = model.score_image;
+      else qScore = model.score_chat;
+      qScore = qScore || model.composite_score || 0;
       
       const ip = Number(model.input_price_per_1m ?? 0) || 0;
       const op = Number(model.output_price_per_1m ?? 0) || 0;
@@ -1028,7 +1034,7 @@
       } else {
         // Fallback: re-compute if sortedModels is empty (shouldn't happen)
         models = getFilteredModels().map(m => ({ ...m, score: calcValueScore(m, '') }));
-        models.sort((a, b) => (b.quality_score || 0) - (a.quality_score || 0));
+        models.sort((a, b) => (b.composite_score || 0) - (a.composite_score || 0));
       }
       // Limit to top 10 for chart
       models = models.slice(0, 10);
@@ -1043,7 +1049,7 @@
         yAxisLabel = '性价比评分';
       } else if (hasTaskFilter) {
         const pt = { coding: '编码', reasoning: '推理', chat: '文本', image: '图像' }[taskType] || '';
-        lineData = models.map(m => m.score != null ? m.score : m.quality_score || 0);
+        lineData = models.map(m => m.score != null ? m.score : m.composite_score || 0);
         lineLabel = pt + '得分';
         yAxisLabel = pt;
       } else if (sortField === 'output_price_per_1m' || sortField === 'input_price_per_1m') {
@@ -1052,7 +1058,7 @@
         yAxisLabel = '输出价格 ($/M)';
       } else {
         // Default: quality score
-        lineData = models.map(m => m.quality_score || 0);
+        lineData = models.map(m => m.composite_score || 0);
         lineLabel = '质量评分';
         yAxisLabel = '质量评分';
       }
