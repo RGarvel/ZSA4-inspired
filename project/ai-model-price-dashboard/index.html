@@ -916,6 +916,10 @@
             v = '<span class="tier-badge ' + String(v || '') + '">' + String(v || '') + '</span>';
           } else if (key === 'quality_score') {
             v = '<span class="quality-score ' + (v >= 90 ? 'high' : v >= 75 ? 'medium' : 'low') + '">' + String(v || '-') + '</span>';
+          } else if (key === 'value_score') {
+            const vs = v != null ? Number(v) : 0;
+            const vc = vs >= 70 ? 'high' : vs >= 50 ? 'medium' : 'low';
+            v = '<span class="quality-score ' + vc + '">💰' + vs + '</span>';
           } else if (key === 'open_source') {
             v = '<span class="' + (v ? 'badge bg-success' : 'badge bg-secondary') + '">' + (v ? '开源' : '闭源') + '</span>';
           } else {
@@ -1041,17 +1045,40 @@
       
       const taskType = $el.taskType?.value || '';
       const hasTaskFilter = !!taskType;
+      const isValueSorted = sortField === 'value_score';
       
-      // Select models: compare > task-sorted / quality-sorted > filtered
+      // Select models: compare > task-sorted / sorted by current field > filtered
       let models = compareList.length > 0
         ? (buildModelMap(), compareList.map(id => _modelByIdMap.get(id)).filter(Boolean))
         : (hasTaskFilter
           ? getFilteredModels().filter(m => m.categories.includes(taskType)).map(m => ({ ...m, score: calcValueScore(m, taskType) })).sort((a,b) => b.score - a.score).slice(0, 10)
-          : getFilteredModels().map(m => ({ ...m, score: calcValueScore(m, '') })).sort((a,b) => (b.value_score||0) - (a.value_score||0)).slice(0, 10));
+          : getFilteredModels().map(m => ({ ...m, score: calcValueScore(m, '') })).sort((a,b) => {
+              // Sort based on current sortField
+              if (sortField === 'value_score') return (b.value_score || 0) - (a.value_score || 0);
+              if (sortField === 'quality_score') return (b.quality_score || 0) - (a.quality_score || 0);
+              if (sortField === 'output_price_per_1m') return (a.output_price_per_1m || 0) - (b.output_price_per_1m || 0);
+              if (sortField === 'input_price_per_1m') return (a.input_price_per_1m || 0) - (b.input_price_per_1m || 0);
+              return (b.quality_score || 0) - (a.quality_score || 0);
+            }).slice(0, 10));
       
       if (!models.length) return;
       
-      const perfLabel = { coding: '编码性价比', reasoning: '推理性价比', text: '文本性价比', image: '图像性价比' }[taskType] || '性价比评分';
+      // Determine what to show on line chart based on current sort or filter context
+      let lineData, lineLabel, yAxisLabel;
+      if (isValueSorted) {
+        lineData = models.map(m => m.value_score || 0);
+        lineLabel = '性价比评分';
+        yAxisLabel = '性价比评分';
+      } else if (hasTaskFilter) {
+        const pt = { coding: '编码', reasoning: '推理', text: '文本', image: '图像' }[taskType] || '';
+        lineData = models.map(m => m.score != null ? m.score : m.quality_score || 0);
+        lineLabel = pt + '得分';
+        yAxisLabel = pt;
+      } else {
+        lineData = models.map(m => m.quality_score || 0);
+        lineLabel = '质量评分';
+        yAxisLabel = '质量评分';
+      }
       
       // Single pass: collect all chart data + compute bounds
       const inputPrices = [], outputPrices = [], scores = [];
@@ -1059,14 +1086,13 @@
       
       for (let i = 0; i < models.length; i++) {
         const m = models[i];
-        const ip = Number(m.input_price_per_1m ?? 0) || 0, op = Number(m.output_price_per_1m ?? 0) || 0, qs = m.quality_score || 0;
+        const ip = Number(m.input_price_per_1m ?? 0) || 0, op = Number(m.output_price_per_1m ?? 0) || 0;
         inputPrices.push(ip);
         outputPrices.push(op);
-        const sv = hasTaskFilter ? (m.taskScore != null ? m.taskScore : qs) : qs;
-        scores.push(sv);
+        scores.push(lineData[i]);
         if (op > maxPrice) maxPrice = op;
-        if (sv > maxScore) maxScore = sv;
-        if (sv < minScore) minScore = sv;
+        if (lineData[i] > maxScore) maxScore = lineData[i];
+        if (lineData[i] < minScore) minScore = lineData[i];
       }
       
       const scoreRange = maxScore - minScore;
@@ -1076,7 +1102,7 @@
       const datasets = [
         { label: '输入价格 ($/M)', data: inputPrices, backgroundColor: 'rgba(88,166,255,0.6)', borderColor: 'rgba(88,166,255,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
         { label: '输出价格 ($/M)', data: outputPrices, backgroundColor: 'rgba(210,153,34,0.6)', borderColor: 'rgba(210,153,34,1)', borderWidth: 1, type: 'bar', yAxisID: 'y', order: 2 },
-        { label: perfLabel, data: scores, borderColor: 'rgba(63,185,80,1)', backgroundColor: 'rgba(63,185,80,0.1)', borderWidth: 3, type: 'line', pointBackgroundColor: 'rgba(63,185,80,1)', pointBorderColor: '#fff', pointBorderWidth: 2, pointRadius: 5, pointHoverRadius: 8, tension: 0.3, fill: false, yAxisID: 'y1', order: 1 }
+        { label: lineLabel, data: scores, borderColor: 'rgba(63,185,80,1)', backgroundColor: 'rgba(63,185,80,0.1)', borderWidth: 3, type: 'line', pointBackgroundColor: 'rgba(63,185,80,1)', pointBorderColor: '#fff', pointBorderWidth: 2, pointRadius: 5, pointHoverRadius: 8, tension: 0.3, fill: false, yAxisID: 'y1', order: 1 }
       ];
       
       const yMax = Math.ceil((maxPrice + pricePad) / 5) * 5;
@@ -1114,17 +1140,12 @@
             tooltip: {
               callbacks: { labelColor: ctx => ({ borderColor: ctx.dataset.borderColor, backgroundColor: ctx.dataset.backgroundColor }) }
             },
-            title: {
-              display: true,
-              text: compareList.length > 0 ? '选中模型对比' : hasTaskFilter ? `性价比排序 (前10) — ${perfLabel}` : '性价比排序 (前10个模型)',
-              color: txt,
-              font: { size: 16 }
-            }
+            title: { display: false },
           },
           scales: {
             x: { ticks: { color: muted, maxRotation: 45 }, grid: { color: grid } },
             y: { type: 'linear', display: true, position: 'left', min: 0, max: yMax, title: { display: true, text: '价格 ($/M)', color: txt }, ticks: { color: muted, callback: v => '$' + v }, grid: { color: grid } },
-            y1: { type: 'linear', display: true, position: 'right', min: scoreMin, max: scoreMax, title: { display: true, text: perfLabel, color: txt }, ticks: { color: muted }, grid: { drawOnChartArea: false } }
+            y1: { type: 'linear', display: true, position: 'right', min: scoreMin, max: scoreMax, title: { display: true, text: yAxisLabel, color: txt }, ticks: { color: muted }, grid: { drawOnChartArea: false } }
           },
           onHover: function(event, elements) {
             if (this.canvas) this.canvas.style.cursor = elements.length > 0 ? 'pointer' : 'default';
