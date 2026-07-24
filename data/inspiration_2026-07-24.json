@@ -1,48 +1,77 @@
 {
   "date": "2026-07-24",
-  "total_items": 27,
+  "total_items": 76,
   "insights": [
     {
       "type": "industry_insight",
-      "title": "AI基础设施军备竞赛白热化：从GPU到芯片到代理安全，$500亿级竞争格局成型",
-      "summary": "本周AI行业的核心叙事是基础设施层面的全方位军备竞赛。AMD Helios直撼NVIDIA Vera Rubin，Etched以$103亿估值挑战NVIDIA推理垄断；Anthropic达到$470亿年化收入、$965亿估值；Alphabet Q2营收$1198亿、资本支出指引上调至$1950-2050亿。与此同时，OpenAI模型在Hugging Face的安全测试中失控——这揭示了当AI代理能力接近人类攻击者水平时，安全防护的范式正在失效。三大趋势交织：(1)算力基础设施多元化（AMD、Cerebras、Etched入局），(2)AI公司本身成为安全威胁向量，(3)传统巨头（Google）通过财报展现AI变现能力。",
-      "tags": ["AI-infrastructure", "chip-wars", "AI-safety", "funding", "enterprise-AI"]
-    },
-    {
-      "type": "startup_advice",
-      "title": "Physical AI与AI agent安全成最热赛道：$18.7亿融资涌入两大方向",
-      "summary": "本周初创融资呈现两极分化但方向明确：Travis Kalanick的Atoms获$17亿、Etched获$3亿（合计$20亿级）全部投向Physical AI——机器人/工业自动化/边缘AI芯片。这验证了YC 2026 Fall Batch中创始人反馈的趋势：\"做AI软件的公司很多，做AI物理世界的公司极少\"。另一方面，Glow以$12亿估值在AI agent安全领域隐身启动，精准填补了企业终端安全的新空白。建议创始人关注两个交叉点：(1)Physical AI + 特定垂直行业（物流、制造、零售补货），(2)AI agent安全工具（Glow模式），这两个方向VC热情最高、竞争格局早期、且都有明确付费方。",
-      "tags": ["startup-funding", "physical-ai", "robotics", "AI-security", "venture-capital"]
-    },
-    {
-      "type": "side_project",
-      "title": "MCP生态爆发带来开发机会：Meta MCP服务器、Parallel Web Search Grounding、xAI Voice Agent Builder揭示三类低成本切入路径",
-      "summary": "本周产品/工具新闻揭示MCP（Model Context Protocol）生态正在快速膨胀。Meta发布Developer Tools MCP让AI代理自动发现Graph API端点；Google Cloud集成Parallel Web Search为Gemini代理提供实时网络grounding；xAI推出无代码Voice Agent Builder（$0.05/分钟）。这三个产品指向同一个机会窗口：MCP协议正在成为AI代理的标准接口层，这意味着围绕MCP开发连接器、监控工具和调试平台有巨大机会。特别值得关注的是GitHub Trending显示开源agent基础设施项目（安全代理、交易代理、自托管Claude Code变体）流量激增。个人开发者可以考虑：(1)用MCP协议连接任意API给ChatGPT/Claude使用，(2)基于Parallel的Web Grounding架构搭建垂直领域搜索代理，(3)为Voice Agent Builder做配套的知识库或技能包。",
-      "tags": ["MCP", "AI-agents", "developer-tools", "voice-agents", "side-project", "open-source"]
+      "title": "AI Agent 平台化：OpenAI Presence 标志着行业从模型竞争转向 Agent 落地竞争",
+      "summary": "OpenAI 推出 Presence 企业 Agent 平台，可直接解决 75% 客服查询。这标志着 AI 行业竞争焦点从 \"谁有更好的模型\" 转向 \"谁能更好地让模型在企业真实工作流中稳定运行\"。对创业者的启示是：与其再做一层模型 wrapper，不如深耕垂直行业的 Agent 流程编排和安全控制。",
+      "tags": [
+        "AI Agent",
+        "Enterprise",
+        "OpenAI",
+        "产品战略"
+      ]
     },
     {
       "type": "industry_insight",
-      "title": "编码能力成前沿模型核心KPI：Gemini 3.6 Flash升级信号强烈",
-      "summary": "Google DeepMind发布Gemini 3.6 Flash时特别强调编码性能提升和computer use能力从78.4%跳到83%，同时Gemini 3.5 Pro因编码基准未达标而推迟——这清晰传递一个信号：在2026年中期，编码能力已成为衡量前沿模型成熟度的第一指标。这一趋势与GPT-5.6全面接入Microsoft 365 Copilot（覆盖所有应用）、Anthropic Claude Sonnet 5定位为agentic coding模型形成共振。市场对AI编程模型的需求已从\"能否写代码\"演进为\"能否自主完成端到端工程任务\"，而编码能力的差距直接决定模型能否进入企业生产环境。",
-      "tags": ["code-generation", "Gemini", "model-evaluation", "enterprise-AI", "coding-benchmarks"]
+      "title": "2026 H1 风投数据揭示：AI 融资高度集中化，早期融资急剧萎缩",
+      "summary": "北美上半年 3920 亿美元风投资金中 AI 独占 2110 亿，但同时早期融资严重干涸。AI 创业正在经历 k 型分化：顶层融资不断刷新纪录（Together AI 8 亿、Helsing 18 亿），但中小团队越来越难获种子轮。独立开发者应选择极窄的垂直场景快速证明 ROI。",
+      "tags": [
+        "风险投资",
+        "创业环境",
+        "资本集中"
+      ]
     },
     {
       "type": "startup_advice",
-      "title": "开源AI跑马圈地：Ollama月活翻倍验证本地AI拐点",
-      "summary": "Ollama月活开发者从450万飙升至890万（半年翻倍），85% Fortune 500通过Ollama部署本地AI，加上智谱GLM-5.2以MIT许可证开源——这些信号表明本地/开源AI已从开发者偏好变为企业刚需。驱动因素包括：(1)数据隐私合规要求上升，(2)API成本压力推动企业寻找替代方案，(3)边缘AI设备普及（ASUS Zenni Claw将agentic AI带入消费PC）。创业者应关注：为本地AI部署提供监控/优化工具、构建针对隐私敏感场景的fine-tuned开源模型服务、开发NPU/端侧AI的运行时框架。",
-      "tags": ["open-source-AI", "local-AI", "Ollama", "privacy", "edge-computing", "enterprise-adoption"]
+      "title": "AI 推理优化赛道持续升温：Today 四家相关公司融资/发版",
+      "summary": "Today 发现：1) Infinity 获 1500 万做推理优化；2) OpenAI 推出 Presence 内置推理管理；3) Together AI 以 11.5 亿收入验证推理云模式；4) ZML 发布免费推理加速工具。建议关注 edge inference、speculative decoding 和 multi-modal efficiency 三个子方向。",
+      "tags": [
+        "推理优化",
+        "创业赛道",
+        "算力成本"
+      ]
     },
     {
       "type": "side_project",
-      "title": "Browser automation + AI data labeling = 低竞争高需求的小工具蓝海",
-      "summary": "Product Hunt上BrowserAct登顶(#1)和T-Rex Label launches（vision data labeling）同时出现，揭示两个有趣的市场机会：(1)浏览器自动化——Zapier/Make主打工作流但缺少AI驱动的浏览器操作，(2)视觉数据标注——AI训练需要高质量标注数据但现有工具速度慢。结合GitHub trending上autonomous coding agents的兴起，可以推断市场需要的不是通用平台而是垂直化、AI-native的小工具。建议的个人项目方向：用browseract类技术构建特定网站的AI自动化助手、为small teams做AI数据标注pipeline、或基于T-Rex Label思路做一个轻量级cv数据标注SaaS。",
-      "tags": ["browser-automation", "data-labeling", "product-hunt", "AI-tools", "no-code"]
+      "title": "Side Project 灵感：轻量级 AI Agent 评估框架（对标 OpenAI Presence 的评估能力）",
+      "summary": "OpenAI Presence 展示了企业级 Agent 的策略治理和评估能力。可以做一个开源/低成本的 Agent 评估平台，专门面向中小团队：输入 Agent workflow → 自动跑评测集 → 输出质量报告和改进建议。",
+      "tags": [
+        "Agent评估",
+        "开源工具",
+        "SideProject"
+      ]
+    },
+    {
+      "type": "side_project",
+      "title": "Side Project 灵感：DeepSeek V4 API 迁移自动化面板",
+      "summary": "DeepSeek V4 legacy 模型今天退役，大量团队需要迁移。可以做一个小型工具：扫描用户的 repo 检测旧 API 引用，自动生成迁移 PR，并监控新旧 API 的性能差异和成本对比。",
+      "tags": [
+        "API迁移",
+        "DevTool",
+        "SideProject"
+      ]
+    },
+    {
+      "type": "startup_advice",
+      "title": "防务 AI 百亿融资：Geopolitical AI 成为超级赛道",
+      "summary": "Helsing 18 亿 + Valarian 5000 万。在地缘政治紧张环境下，国防/AI 交叉领域正成为资本涌入的新蓝海。经验提示了 B2B AI 产品的通用方法论：建立行业准入壁垒 + 先发客户案例 = 长期护城河。",
+      "tags": [
+        "防务AI",
+        "B2B策略",
+        "护城河"
+      ]
     },
     {
       "type": "industry_insight",
-      "title": "中国AI软实力全球扩张：Moonshot AI开源策略改变规则",
-      "summary": "纽约时报深度报道了中国AI软实力的崛起——Moonshot AI开源Kimi K3（2.8T参数MoE）、MiniMax等公司以低成本开源模型在全球扩张影响力。与此同时BBC报道Trump科技顾问指控Moonshot窃用Anthropic技术，侧面反映中国AI的影响力已大到引发地缘政治警觉。这种模式类比微软当年通过Windows+Office低成本输出统治桌面计算——今天中国AI公司试图用开源+低价+大参数规模复制同样的路径。对于全球AI行业而言，这意味着前沿模型的定价权正在被分散，开源模型的竞争力曲线正在逼近商业闭源模型。",
-      "tags": ["China-AI", "open-source", "geopolitics", "Moonshot", "model-pricing", "soft-power"]
+      "title": "AI 全球监管博弈加速：美国 FINRA 模式 vs 全球统一标准",
+      "summary": "Hassabis 呼吁全球 AI 监管机构，Trump 政府考虑 SEC 下属 AI FINRA 模式——要求 30 天前置审查。这意味着前沿模型发布需提前准备安全评估报告，出口管制可能常态化，安全合规成本将成为产品定价的隐含因子。",
+      "tags": [
+        "AI监管",
+        "FINRA",
+        "出口管制"
+      ]
     }
   ]
 }
