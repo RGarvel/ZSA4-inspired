@@ -1024,8 +1024,11 @@
         outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
       } else {
         quality = modalityScores[taskType] || modalityScores['text'] || model.quality_score || 50;
-        outputPrice = op > 0 ? op : 1;
+        outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
       }
+      
+      // Free models: value_score will be set to 0 in renderTable normalization
+      if (outputPrice <= 0 || outputPrice === 1) return -1;
       
       return quality / outputPrice;
     }
