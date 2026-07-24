@@ -52,71 +52,12 @@
       padding: 0.7rem 0;
       transition: background-color 0.3s, border-color 0.3s;
     }
-    /* Brand hover: smooth transition to 灵感日报 via JS */
-    .brand-switcher {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      cursor: pointer;
-    }
-    .brand-icon-default, .brand-icon-hover {
-      transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-      font-size: 1.1rem;
-    }
-    .brand-icon-default {
-      color: var(--accent-green) !important;
-    }
-    .brand-icon-hover {
-      position: absolute;
-      left: 0;
-      color: var(--accent-orange);
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    .brand-text-default, .brand-text-hover {
-      font-size: 1rem;
-      font-weight: 700;
-      white-space: nowrap;
-      transition: opacity 0.25s ease;
-    }
-    .brand-text-default {
-      color: var(--text-primary);
-    }
-    .brand-text-hover {
-      position: absolute;
-      left: 2rem;
+    .navbar-brand span.brand-text-gradient {
       background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      opacity: 0;
-    }
-    .brand-switcher:hover .brand-icon-default {
-      opacity: 0;
-      transform: scale(0.8);
-    }
-    .brand-switcher:hover .brand-icon-hover {
-      opacity: 1;
-      transform: scale(1.15) rotate(-8deg);
-    }
-    .brand-switcher:hover .brand-text-default {
-      opacity: 0;
-    }
-    .brand-switcher:hover .brand-text-hover {
-      opacity: 1;
-    }
-    body.light-mode .brand-icon-hover {
-      color: #f59e0b;
-    }
-    body.light-mode .brand-text-default {
-      color: var(--text-primary);
-    }
-    body.light-mode .brand-text-hover {
-      background: linear-gradient(135deg, #d29922, #8250df);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-weight: 700;
     }
     .back-link {
       color: var(--text-primary);
@@ -499,11 +440,9 @@
 <body>
   <nav class="navbar" id="mainNavbar">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2 brand-switcher" href="https://rgarvel.github.io/ZSA4-inspired/project/playground/index.html" id="brandLink">
-        <i class="bi bi-shield-check brand-icon-default" id="brandIcon"></i>
-        <i class="bi bi-lightbulb-fill brand-icon-hover" id="brandIconHover"></i>
-        <span class="brand-text-default" id="brandText">AI合规检查清单</span>
-        <span class="brand-text-hover" id="brandTextHover">灵感日报</span>
+      <a class="navbar-brand d-flex align-items-center gap-2" href="../playground/index.html">
+        <i class="bi bi-lightbulb-fill brand-icon-default"></i>
+        <span class="brand-text-gradient">灵感日报</span>
       </a>
       <div class="d-flex align-items-center gap-2 ms-auto">
         <a class="back-link" href="https://rgarvel.github.io/ZSA4-inspired/project/playground/index.html">
