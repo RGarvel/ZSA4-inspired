@@ -520,7 +520,7 @@
           <label class="form-label">🎯 任务类型</label>
           <select class="form-select" id="taskType">
             <option value="">全部任务</option>
-            <option value="text">📝 文本对话</option>
+            <option value="chat">📝 文本对话</option>
             <option value="reasoning">🧠 逻辑推理</option>
             <option value="coding">💻 编码</option>
             <option value="image">🎨 图像生成</option>
@@ -978,9 +978,16 @@
       let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
       if (!candidates.length) { card.classList.remove('show'); return; }
       
-      // Recommend the model with the highest quality score for this task type
+      // Step 1: sort by quality, take top 10
       candidates.sort((a, b) => (b.quality_score || 0) - (a.quality_score || 0));
-      const best = candidates[0];
+      const top10 = candidates.slice(0, 10);
+      
+      // Step 2: from top 10, pick the one with highest value score
+      for (const m of top10) {
+        m.score = calcValueScore(m, taskType);
+      }
+      top10.sort((a, b) => b.score - a.score);
+      const best = top10[0];
       
       card.classList.add('show');
       content.innerHTML = `
@@ -1016,10 +1023,10 @@
         outputPrice = (pg != null && pg !== '/' && Number(pg) > 0) ? Number(pg) : 0;
         if (outputPrice === 0) return -1;
       } else if (taskType === 'coding') {
-        quality = modalityScores['coding'] || modalityScores['text'] || model.quality_score || 0;
+        quality = modalityScores['coding'] || modalityScores['chat'] || model.quality_score || 0;
         outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
       } else {
-        quality = modalityScores[taskType] || modalityScores['text'] || model.quality_score || 0;
+        quality = modalityScores[taskType] || modalityScores['chat'] || model.quality_score || 0;
         outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
       }
       
@@ -1078,7 +1085,7 @@
         lineLabel = '性价比评分';
         yAxisLabel = '性价比评分';
       } else if (hasTaskFilter) {
-        const pt = { coding: '编码', reasoning: '推理', text: '文本', image: '图像' }[taskType] || '';
+        const pt = { coding: '编码', reasoning: '推理', chat: '文本', image: '图像' }[taskType] || '';
         lineData = models.map(m => m.score != null ? m.score : m.quality_score || 0);
         lineLabel = pt + '得分';
         yAxisLabel = pt;
