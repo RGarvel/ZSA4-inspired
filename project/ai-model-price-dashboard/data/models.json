@@ -348,27 +348,6 @@
       "quality_score": 61
     },
     {
-      "model_id": "gpt-5.6-luna",
-      "name": "GPT-5.6 Luna",
-      "vendor": "OpenAI",
-      "open_source": false,
-      "tier": "budget",
-      "categories": [
-        "coding"
-      ],
-      "context_window": 200000,
-      "input_price_per_1m": 0.6,
-      "output_price_per_1m": 2.4,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "chat": 50.0,
-        "reasoning": 50.0,
-        "coding": 84
-      },
-      "quality_score": 60
-    },
-    {
       "model_id": "mistral-large-3",
       "name": "Mistral Large 3",
       "vendor": "Mistral AI",
@@ -771,6 +750,27 @@
         "image": 12.8
       },
       "quality_score": 29
+    },
+    {
+      "model_id": "gpt-5.6-luna",
+      "name": "GPT-5.6 Luna",
+      "vendor": "OpenAI",
+      "open_source": false,
+      "tier": "budget",
+      "categories": [
+        "coding"
+      ],
+      "context_window": 200000,
+      "input_price_per_1m": 0.6,
+      "output_price_per_1m": 2.4,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "modality_scores": {
+        "chat": 0.0,
+        "reasoning": 0.0,
+        "coding": 84
+      },
+      "quality_score": 25
     }
   ]
 }
