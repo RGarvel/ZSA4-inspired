@@ -159,7 +159,7 @@ def load_models():
         return json.load(f)
 
 
-def compute_modality(model_id, categories, elo_text, elo_code, elo_vision, aa, image_elo):
+def compute_modality(model_id, categories, elo_text, elo_code, elo_vision, image_elo):
     is_image_only = categories == ['image'] or (len(categories) == 1 and 'image' in categories)
     
     if is_image_only:
@@ -171,46 +171,26 @@ def compute_modality(model_id, categories, elo_text, elo_code, elo_vision, aa, i
         qs = round(img_score, 1)
         return modality, qs
     
-    # Compute individual modality scores using the formula:
-    # final = 0.6 * score_elo + 0.4 * score_aa
+    # ── 仅使用 ELO 评分，不使用 AA Index ──
     
-    # Text (mapped to "chat" category): use Text Arena Elo + AA Index
+    # Text (mapped to "chat" category): use Text Arena Elo only
     s_elo_text = compute_elo_score(elo_text)
-    s_aa = min(100, aa) if aa else None
-    
-    if s_elo_text is not None and s_aa is not None:
-        chat_s = round(0.6 * s_elo_text + 0.4 * s_aa, 1)
-    elif s_elo_text is not None:
-        chat_s = s_elo_text
-    elif s_aa is not None:
-        chat_s = s_aa
-    else:
-        chat_s = 0.0
+    chat_s = s_elo_text if s_elo_text is not None else 0.0
     
     # Reasoning: same base as text (no separate GPQA/AIME data collected for all models)
     reason_s = chat_s
     
-    # Coding: use Code Arena Elo + AA Index
+    # Coding: use Code Arena Elo only
     s_elo_code = compute_elo_score(elo_code)
-    
-    if s_elo_code is not None and s_aa is not None:
-        coding_s = round(0.6 * s_elo_code + 0.4 * s_aa, 1)
-    elif s_elo_code is not None:
-        coding_s = min(84, s_elo_code)  # cap elo-only at 84
-    elif s_aa is not None:
-        coding_s = s_aa
-    else:
-        coding_s = 0.0
+    coding_s = s_elo_code if s_elo_code is not None else 0.0
     
     # Image/Vision (mapped to "image" modality score for multimodal models): 
-    # use Vision Arena Elo + AA Index
+    # use Vision Arena Elo only
     s_elo_vis = compute_elo_score(elo_vision)
     
     image_modality = None
-    if s_elo_vis is not None and s_aa is not None:
-        image_modality = round(0.6 * s_elo_vis + 0.4 * s_aa, 1)
-    elif s_elo_vis is not None:
-        image_modality = min(84, s_elo_vis)
+    if s_elo_vis is not None:
+        image_modality = s_elo_vis
     
     # Quality score = 0.4*text + 0.3*reasoning + 0.3*coding + 0.1*image(modality)
     if image_modality is not None:
@@ -237,10 +217,9 @@ def main():
         elo_text = EL_O_TEXT.get(model_id)
         elo_code = EL_O_CODE.get(model_id)
         elo_vision = EL_O_VISION.get(model_id)
-        aa = AA_INDEX.get(model_id)
         image_elo = IMAGE_ARELO.get(model_id)
         
-        modality, qs = compute_modality(model_id, categories, elo_text, elo_code, elo_vision, aa, image_elo)
+        modality, qs = compute_modality(model_id, categories, elo_text, elo_code, elo_vision, image_elo)
         
         # Rebuild categories using valid enum values
         new_cats = []
