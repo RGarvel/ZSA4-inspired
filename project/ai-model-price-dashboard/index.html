@@ -765,10 +765,20 @@
     function renderTable() {
       const models = getFilteredModels();
       
-      // Compute value_score for each model based on active task type
+      // Compute raw value scores for each model based on active task type
       const activeTask = $el.taskType?.value || '';
       for (const m of models) {
-        m.value_score = calcValueScore(m, activeTask);
+        m.value_raw = calcValueScore(m, activeTask);
+      }
+      
+      // Normalize raw values to 0-100 percentile ranking within the current filter set
+      const rawValues = models.map(m => m.value_raw).sort((a, b) => b - a);
+      const maxRaw = rawValues[0] || 1;
+      const minRaw = rawValues[rawValues.length - 1] || 0;
+      const range = maxRaw - minRaw || 1;
+      
+      for (const m of models) {
+        m.value_score = Math.round(50 + (m.value_raw - minRaw) / range * 50); // Spread from 50-100
       }
       
       models.sort((a, b) => {
@@ -973,42 +983,40 @@
     }
 
     // ── Value-for-money scoring ──────────────────────────────
+    // Uses percentile ranking for fair comparison across price tiers
     function calcValueScore(model, taskType) {
       const modalityScores = model.modality_scores || {};
       const ip = Number(model.input_price_per_1m ?? 0) || 0;
       const op = Number(model.output_price_per_1m ?? 0) || 0;
       const pg = model.image_generation_price;
       
-      let score = 0;
-      let priceDenom = 0;
+      let quality = 0, price = 0;
       
       if (taskType === 'text' || taskType === 'reasoning') {
-        const q = modalityScores[taskType] || modalityScores['text'] || model.quality_score || 50;
-        // For text/reasoning: use output price (most expensive part)
-        priceDenom = op > 0 ? op : (ip > 0 ? ip : 1);
-        score = Math.round((q / priceDenom) * 15); // Scale to ~0-100 range
+        quality = modalityScores[taskType] || modalityScores['text'] || model.quality_score || 50;
+        price = op > 0 ? op : (ip > 0 ? ip : 0);
       } else if (taskType === 'coding') {
-        const q = modalityScores['coding'] || modalityScores['text'] || model.quality_score || 50;
-        const avgPrice = (ip + op) / 2;
-        priceDenom = avgPrice > 0 ? avgPrice : 1;
-        score = Math.round((q / priceDenom) * 15);
+        quality = modalityScores['coding'] || modalityScores['text'] || model.quality_score || 50;
+        price = (ip + op) / 2;
       } else if (taskType === 'image') {
-        const q = modalityScores['image'] || 50;
-        if (pg != null && pg !== '/' && Number(pg) > 0) {
-          priceDenom = Number(pg);
-          score = Math.round((q / priceDenom) * 3);
-        } else {
-          return 0;
-        }
+        quality = modalityScores['image'] || 50;
+        price = (pg != null && pg !== '/' && Number(pg) > 0) ? Number(pg) : 0;
+        if (price === 0) return 0;
       } else {
-        // No task filter: use weighted composite based on quality vs average output price
-        const q = model.quality_score || 50;
-        priceDenom = op > 0 ? op : (ip > 0 ? ip : 1);
-        score = Math.round((q / priceDenom) * 15);
+        quality = model.quality_score || 50;
+        price = op > 0 ? op : (ip > 0 ? ip : 0);
       }
       
-      // Clamp to 0-100
-      return Math.min(100, Math.max(0, score));
+      // If no price data or price is 0 (free/open source), return quality as value score
+      if (price === 0) return quality;
+      
+      // Raw value ratio: higher quality + lower price = better value
+      // Normalize using log scale to handle wide price ranges
+      const rawValue = quality / Math.log1p(price);
+      
+      // We'll compute a 0-100 score by comparing against the median of all models
+      // This will be refined in renderTable() using relative ranking
+      return rawValue;
     }
 
     // ── Chart — single-pass data aggregation ─────────────────
