@@ -34,10 +34,9 @@ BENCHMARK_MAP = {
     "cursor-agent-2":         {"swe_verified": 70.0},
     "code-anything-n1-preview": {"swe_verified": 65.0},
     # Additional models filled from BenchLM / official releases
-    "glm-5.2":                {"swe_verified": 62.1},   # GLM-5.2: SWE-bench Pro 62.1, SWE-bench Verified ~77.8%
+    "glm-5.2":                {"swe_verified": 62.1},   # GLM-5.2: SWE-bench Pro 62.1, FrontierSWE 74.4 — top open-weight coder
     "qwen-max":               {"swe_verified": 76.0},   # Qwen3.6/Max tier: competitive with Gemini 3.1 Pro range
     "step-edge":              {"swe_verified": 74.4},   # Step 3.5 Flash: SWE-bench Verified 74.4%
-    "llama-4-maverick":       {"swe_verified": 74.2},   # Llama 4 Maverick: SWE-bench 74.2%
     "doubao-seed-2.1-pro":    {"swe_verified": 76.5},   # Doubao Seed 2.0 Pro: SWE-bench Verified 76.5%
     "kimi-k2.6":              {"swe_verified": 76.8},   # Kimi K2.5/2.6 tier from open-source rankings
     "gpt-5.6-terra":          {"swe_verified": 79.0},   # GPT-5.6 Terra tier (mid-range GPT-5.6)
@@ -55,6 +54,7 @@ BENCHMARK_MAP = {
     "gemini-3-flash":         {"swe_verified": 60.0},   # Gemini budget flash
     "gemini-2.5-flash-lite":  {"swe_verified": 45.0},   # Lite variant
     "amazon-nova-micro":      {"swe_verified": 40.0},   # Amazon free tier
+    # NOTE: llama-4-maverick NOT given synthetic SWE score — BenchLM provisional = #119/124, too weak for reliable proxy
 }
 
 # Reasoning: FrontierCode / Cognition Diamond (proxy for reasoning+agentic coding)
@@ -74,7 +74,7 @@ REASONING_MAP = {
     "glm-5.2":            86.0,   # GLM-5.2: GPQA Diamond 91.2%, strong reasoning tier
     "qwen-max":           82.0,   # Qwen3.x reasoning competitive with Gemini range
     "step-edge":          84.0,   # Step 3.5 Flash: frontier-level agentic reasoning
-    "llama-4-maverick":   80.0,   # Llama 4 Maverick ~80 tier
+    "llama-4-maverick":   60.0,   # BenchLM #119/124 — lightweight MoE, solid general text but weak on hard benchmarks
     "doubao-seed-2.1-pro": 85.0,  # Seed 2.0 Pro: AIME 2025 98.3, GPQA 88.9 → high reasoning
     "kimi-k2.6":          78.0,   # Kimi K2.5/2.6 mid-tier reasoning
     "gpt-5.6-terra":      83.0,   # GPT-5.6 Terra mid-range
@@ -106,7 +106,7 @@ KNOWLEDGE_MAP = {
     "glm-5.2":            88.0,   # GLM-5.2 MMLU-Pro proxy ~88 tier
     "qwen-max":           89.6,   # Qwen3.7 Max: MMLU-Pro 89.6% (current #1)
     "step-edge":          84.0,   # Step 3.5 Flash mid-high knowledge
-    "llama-4-maverick":   86.0,   # Llama 4 Maverick ~86 knowledge proxy
+    "llama-4-maverick":   65.0,   # BenchLM knowledge rank #99/124 with avg 18.4 — low absolute benchmark coverage
     "doubao-seed-2.1-pro": 87.7,  # Seed 2.0 Pro: MMLU-Pro 87.7 (Lite slightly higher)
     "kimi-k2.6":          82.0,   # Kimi K2.5/2.6 mid-tier
     "gpt-5.6-terra":      88.0,   # GPT-5.6 Terra mid-range
@@ -142,7 +142,7 @@ CHAT_MAP = {
     "glm-5.2":            84.0,   # GLM-5.2 strong general chat
     "qwen-max":           84.0,   # Qwen3.6/Max chat competitive
     "step-edge":          82.0,   # Step 3.5 Flash capable chat
-    "llama-4-maverick":   80.0,   # Llama 4 Maverick mid-high
+    "llama-4-maverick":   65.0,   # BenchLM overall ~19/100, weak on hard benchmarks despite marketing claims
     "doubao-seed-2.1-pro": 86.0,  # Doubao app: strong consumer chat
     "kimi-k2.6":          78.0,   # Kimi mid-tier
     "gpt-5.6-terra":      86.0,   # GPT-5.6 Terra good general chat
