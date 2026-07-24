@@ -935,16 +935,16 @@
       let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
       if (!candidates.length) { card.classList.remove('show'); return; }
       
-      // Step 1: sort by quality, take top 10
+      // Step 1: sort by quality, take top 5
       candidates.sort((a, b) => (b.composite_score || 0) - (a.composite_score || 0));
-      const top10 = candidates.slice(0, 10);
+      const top5 = candidates.slice(0, 5);
       
-      // Step 2: from top 10, pick the one with highest value score
-      for (const m of top10) {
+      // Step 2: from top 5, pick the one with highest value score
+      for (const m of top5) {
         m.score = calcValueScore(m, taskType);
       }
-      top10.sort((a, b) => b.score - a.score);
-      const best = top10[0];
+      top5.sort((a, b) => b.score - a.score);
+      const best = top5[0];
       
       card.classList.add('show');
       content.innerHTML = `
