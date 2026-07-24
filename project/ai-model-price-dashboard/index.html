@@ -604,7 +604,7 @@
     let allModels = [];
     let priceChart = null;
     let compareList = [];
-    let sortField = 'value_score';
+    let sortField = 'quality_score';
     let sortDirection = 'desc';
     let _sortedModels = [];
     
@@ -1045,27 +1045,24 @@
       
       const taskType = $el.taskType?.value || '';
       const hasTaskFilter = !!taskType;
-      const isValueSorted = sortField === 'value_score';
       
-      // Select models: compare > task-sorted / sorted by current field > filtered
-      let models = compareList.length > 0
-        ? (buildModelMap(), compareList.map(id => _modelByIdMap.get(id)).filter(Boolean))
-        : (hasTaskFilter
-          ? getFilteredModels().filter(m => m.categories.includes(taskType)).map(m => ({ ...m, score: calcValueScore(m, taskType) })).sort((a,b) => b.score - a.score).slice(0, 10)
-          : getFilteredModels().map(m => ({ ...m, score: calcValueScore(m, '') })).sort((a,b) => {
-              // Sort based on current sortField
-              if (sortField === 'value_score') return (b.value_score || 0) - (a.value_score || 0);
-              if (sortField === 'quality_score') return (b.quality_score || 0) - (a.quality_score || 0);
-              if (sortField === 'output_price_per_1m') return (a.output_price_per_1m || 0) - (b.output_price_per_1m || 0);
-              if (sortField === 'input_price_per_1m') return (a.input_price_per_1m || 0) - (b.input_price_per_1m || 0);
-              return (b.quality_score || 0) - (a.quality_score || 0);
-            }).slice(0, 10));
+      // Always use _sortedModels from renderTable() to keep table and chart in sync
+      let models;
+      if (_sortedModels && _sortedModels.length > 0) {
+        models = _sortedModels.map(m => ({ ...m }));
+      } else {
+        // Fallback: re-compute if sortedModels is empty (shouldn't happen)
+        models = getFilteredModels().map(m => ({ ...m, score: calcValueScore(m, '') }));
+        models.sort((a, b) => (b.quality_score || 0) - (a.quality_score || 0));
+      }
+      // Limit to top 10 for chart
+      models = models.slice(0, 10);
       
       if (!models.length) return;
       
-      // Determine what to show on line chart based on current sort or filter context
+      // Determine what to show on line chart based on current sort field or task filter
       let lineData, lineLabel, yAxisLabel;
-      if (isValueSorted) {
+      if (sortField === 'value_score') {
         lineData = models.map(m => m.value_score || 0);
         lineLabel = '性价比评分';
         yAxisLabel = '性价比评分';
@@ -1074,7 +1071,12 @@
         lineData = models.map(m => m.score != null ? m.score : m.quality_score || 0);
         lineLabel = pt + '得分';
         yAxisLabel = pt;
+      } else if (sortField === 'output_price_per_1m' || sortField === 'input_price_per_1m') {
+        lineData = models.map(m => Number(m.output_price_per_1m ?? 0) || 0);
+        lineLabel = '输出价格';
+        yAxisLabel = '输出价格 ($/M)';
       } else {
+        // Default: quality score
         lineData = models.map(m => m.quality_score || 0);
         lineLabel = '质量评分';
         yAxisLabel = '质量评分';
