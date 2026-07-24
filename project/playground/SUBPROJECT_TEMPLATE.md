@@ -166,9 +166,7 @@ body.light-mode .navbar-brand span { color: var(--text-primary) !important; }
 </nav>
 ```
 
-> **关键约束：**
-> - 外层 `<div>` 只用 `class="container"`，**不要用** `justify-content-between`
-> - 右侧区域用 `ms-auto` 靠右，间距 `gap-2`（不是 gap-3）
+| 右侧区域用 `ms-auto` 靠右，间距 `gap-2`。**Logo 跳转使用 `../index.html` 回到灵感日报首页，back-link 使用 `<PlaygroundURL>` 回 playground。**
 
 ### 3.2 主题管理（标准代码块）
 
