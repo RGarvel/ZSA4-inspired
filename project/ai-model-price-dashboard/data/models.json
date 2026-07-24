@@ -1,8 +1,33 @@
 {
-  "updated_at": "2026-07-24",
+  "updated_at": "2026-07-25",
   "currency": "USD",
   "unit": "per 1M tokens",
   "models": [
+    {
+      "model_id": "claude-opus-4.8",
+      "name": "Claude Opus 4.8",
+      "vendor": "Anthropic",
+      "open_source": false,
+      "tier": "premium",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding",
+        "image"
+      ],
+      "context_window": 200000,
+      "input_price_per_1m": 15.0,
+      "output_price_per_1m": 75.0,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "modality_scores": {
+        "text": 83.1,
+        "reasoning": 93.6,
+        "coding": 100,
+        "image": 24.0
+      },
+      "quality_score": 94
+    },
     {
       "model_id": "claude-fable-5",
       "name": "Claude Fable 5",
@@ -21,12 +46,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 88.6,
-        "reasoning": 88.6,
+        "text": 81.4,
+        "reasoning": 92.6,
         "coding": 100,
-        "image": 65.9
+        "image": 23.2
       },
-      "quality_score": 99
+      "quality_score": 93
     },
     {
       "model_id": "gpt-5.6-sol",
@@ -46,12 +71,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 86.5,
-        "reasoning": 86.5,
+        "text": 80.2,
+        "reasoning": 93.0,
         "coding": 100,
-        "image": 60.0
+        "image": 22.8
       },
-      "quality_score": 96
+      "quality_score": 92
     },
     {
       "model_id": "kimi-k3",
@@ -71,62 +96,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 85.8,
-        "reasoning": 85.8,
+        "text": 76.8,
+        "reasoning": 88.0,
         "coding": 100,
-        "image": 48.8
+        "image": 21.0
       },
-      "quality_score": 95
-    },
-    {
-      "model_id": "claude-opus-4.8",
-      "name": "Claude Opus 4.8",
-      "vendor": "Anthropic",
-      "open_source": false,
-      "tier": "premium",
-      "categories": [
-        "chat",
-        "reasoning",
-        "coding",
-        "image"
-      ],
-      "context_window": 200000,
-      "input_price_per_1m": 15.0,
-      "output_price_per_1m": 75.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "chat": 84.4,
-        "reasoning": 84.4,
-        "coding": 95.0,
-        "image": 55.0
-      },
-      "quality_score": 93
-    },
-    {
-      "model_id": "claude-sonnet-5",
-      "name": "Claude Sonnet 5",
-      "vendor": "Anthropic",
-      "open_source": false,
-      "tier": "standard",
-      "categories": [
-        "chat",
-        "reasoning",
-        "coding",
-        "image"
-      ],
-      "context_window": 200000,
-      "input_price_per_1m": 3.0,
-      "output_price_per_1m": 15.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "chat": 81.9,
-        "reasoning": 81.9,
-        "coding": 97.5,
-        "image": 52.5
-      },
-      "quality_score": 92
+      "quality_score": 89
     },
     {
       "model_id": "gemini-3.1-pro",
@@ -146,17 +121,17 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 83.1,
-        "reasoning": 83.1,
-        "coding": 86.2,
-        "image": 57.5
+        "text": 73.2,
+        "reasoning": 94.3,
+        "coding": 88.8,
+        "image": 20.5
       },
-      "quality_score": 90
+      "quality_score": 86
     },
     {
-      "model_id": "grok-4.5",
-      "name": "Grok 4.5",
-      "vendor": "xAI",
+      "model_id": "claude-sonnet-5",
+      "name": "Claude Sonnet 5",
+      "vendor": "Anthropic",
       "open_source": false,
       "tier": "standard",
       "categories": [
@@ -165,18 +140,18 @@
         "coding",
         "image"
       ],
-      "context_window": 131072,
-      "input_price_per_1m": 5.0,
-      "output_price_per_1m": 25.0,
+      "context_window": 200000,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 80.6,
-        "reasoning": 80.6,
-        "coding": 88.8,
-        "image": 50.0
+        "text": 75.5,
+        "reasoning": 52.0,
+        "coding": 95.0,
+        "image": 21.5
       },
-      "quality_score": 88
+      "quality_score": 76
     },
     {
       "model_id": "gpt-5.6-terra",
@@ -196,12 +171,37 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 78.8,
-        "reasoning": 78.8,
+        "text": 70.2,
+        "reasoning": 47.0,
         "coding": 90.0,
-        "image": 46.2
+        "image": 19.2
       },
-      "quality_score": 87
+      "quality_score": 71
+    },
+    {
+      "model_id": "grok-4.5",
+      "name": "Grok 4.5",
+      "vendor": "xAI",
+      "open_source": false,
+      "tier": "standard",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding",
+        "image"
+      ],
+      "context_window": 131072,
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 25.0,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "modality_scores": {
+        "text": 71.0,
+        "reasoning": 48.0,
+        "coding": 88.8,
+        "image": 19.5
+      },
+      "quality_score": 71
     },
     {
       "model_id": "kimi-k2.6",
@@ -221,12 +221,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 75.0,
-        "reasoning": 75.0,
-        "coding": 83.8,
-        "image": 43.8
+        "text": 66.0,
+        "reasoning": 44.0,
+        "coding": 85.0,
+        "image": 29.7
       },
-      "quality_score": 82
+      "quality_score": 68
     },
     {
       "model_id": "step-edge",
@@ -246,37 +246,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 71.2,
-        "reasoning": 71.2,
-        "coding": 77.5,
-        "image": 40.0
+        "text": 63.7,
+        "reasoning": 42.0,
+        "coding": 80.0,
+        "image": 28.3
       },
-      "quality_score": 77
-    },
-    {
-      "model_id": "qwen-max",
-      "name": "Qwen Max",
-      "vendor": "Alibaba",
-      "open_source": false,
-      "tier": "standard",
-      "categories": [
-        "chat",
-        "reasoning",
-        "coding",
-        "image"
-      ],
-      "context_window": 131072,
-      "input_price_per_1m": 0.8,
-      "output_price_per_1m": 2.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "chat": 67.5,
-        "reasoning": 67.5,
-        "coding": 73.8,
-        "image": 37.5
-      },
-      "quality_score": 73
+      "quality_score": 65
     },
     {
       "model_id": "glm-5.2",
@@ -296,12 +271,80 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 65.0,
-        "reasoning": 65.0,
+        "text": 62.0,
+        "reasoning": 51.0,
         "coding": 72.5,
-        "image": 35.0
+        "image": 23.7
       },
-      "quality_score": 71
+      "quality_score": 64
+    },
+    {
+      "model_id": "qwen-max",
+      "name": "Qwen Max",
+      "vendor": "Alibaba",
+      "open_source": false,
+      "tier": "standard",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding",
+        "image"
+      ],
+      "context_window": 131072,
+      "input_price_per_1m": 0.8,
+      "output_price_per_1m": 2.0,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "modality_scores": {
+        "text": 59.1,
+        "reasoning": 38.0,
+        "coding": 75.0,
+        "image": 25.7
+      },
+      "quality_score": 60
+    },
+    {
+      "model_id": "flux-2-pro",
+      "name": "FLUX 2 Pro",
+      "vendor": "Black Forest Labs",
+      "open_source": false,
+      "tier": "standard",
+      "categories": [
+        "image"
+      ],
+      "context_window": 0,
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.08,
+      "image_edit_price": 0.04,
+      "modality_scores": {
+        "text": 50.0,
+        "reasoning": 50.0,
+        "coding": 50.0,
+        "image": 54.0
+      },
+      "quality_score": 54
+    },
+    {
+      "model_id": "gpt-5.6-luna",
+      "name": "GPT-5.6 Luna",
+      "vendor": "OpenAI",
+      "open_source": false,
+      "tier": "budget",
+      "categories": [
+        "coding"
+      ],
+      "context_window": 200000,
+      "input_price_per_1m": 0.6,
+      "output_price_per_1m": 2.4,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "modality_scores": {
+        "text": 39.2,
+        "reasoning": 40.0,
+        "coding": 87.5
+      },
+      "quality_score": 54
     },
     {
       "model_id": "cohere-command-r-plus",
@@ -321,12 +364,34 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 61.2,
-        "reasoning": 61.2,
-        "coding": 68.8,
-        "image": 31.2
+        "text": 51.5,
+        "reasoning": 35.0,
+        "coding": 65.0,
+        "image": 20.0
       },
-      "quality_score": 67
+      "quality_score": 53
+    },
+    {
+      "model_id": "imagen-4-ultra",
+      "name": "Imagen 4 Ultra",
+      "vendor": "Google",
+      "open_source": false,
+      "tier": "premium",
+      "categories": [
+        "image"
+      ],
+      "context_window": 0,
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.0,
+      "image_edit_price": 0.0,
+      "modality_scores": {
+        "text": 50.0,
+        "reasoning": 50.0,
+        "coding": 50.0,
+        "image": 52.0
+      },
+      "quality_score": 52
     },
     {
       "model_id": "mistral-large-3",
@@ -346,12 +411,34 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 60.0,
-        "reasoning": 60.0,
-        "coding": 66.2,
-        "image": 30.0
+        "text": 49.6,
+        "reasoning": 33.0,
+        "coding": 62.5,
+        "image": 19.0
       },
-      "quality_score": 65
+      "quality_score": 50
+    },
+    {
+      "model_id": "qwen3.7-max",
+      "name": "Qwen 3.7 Max",
+      "vendor": "Alibaba",
+      "open_source": false,
+      "tier": "standard",
+      "categories": [
+        "reasoning",
+        "coding"
+      ],
+      "context_window": 131072,
+      "input_price_per_1m": 1.2,
+      "output_price_per_1m": 3.6,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "modality_scores": {
+        "text": 50.0,
+        "reasoning": 50.0,
+        "coding": 50.0
+      },
+      "quality_score": 50
     },
     {
       "model_id": "deepseek-v4-pro",
@@ -371,12 +458,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 58.8,
-        "reasoning": 58.8,
-        "coding": 63.8,
-        "image": 27.5
+        "text": 46.9,
+        "reasoning": 30.0,
+        "coding": 60.0,
+        "image": 17.7
       },
-      "quality_score": 63
+      "quality_score": 48
     },
     {
       "model_id": "doubao-seed-2.1-pro",
@@ -396,61 +483,17 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 57.5,
-        "reasoning": 57.5,
-        "coding": 62.5,
-        "image": 26.2
+        "text": 45.3,
+        "reasoning": 28.0,
+        "coding": 58.1,
+        "image": 17.0
       },
-      "quality_score": 62
+      "quality_score": 46
     },
     {
-      "model_id": "imagen-4-ultra",
-      "name": "Imagen 4 Ultra",
-      "vendor": "Google",
-      "open_source": false,
-      "tier": "premium",
-      "categories": [
-        "image"
-      ],
-      "context_window": 0,
-      "input_price_per_1m": 0.0,
-      "output_price_per_1m": 0.0,
-      "image_generation_price": 0.0,
-      "image_edit_price": 0.0,
-      "modality_scores": {
-        "image": 62.5
-      },
-      "quality_score": 62
-    },
-    {
-      "model_id": "yi-lightning",
-      "name": "Yi Lightning",
-      "vendor": "01.AI",
-      "open_source": false,
-      "tier": "budget",
-      "categories": [
-        "chat",
-        "reasoning",
-        "coding",
-        "image"
-      ],
-      "context_window": 4096,
-      "input_price_per_1m": 0.1,
-      "output_price_per_1m": 0.3,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "chat": 55.0,
-        "reasoning": 55.0,
-        "coding": 57.5,
-        "image": 23.8
-      },
-      "quality_score": 58
-    },
-    {
-      "model_id": "flux-2-pro",
-      "name": "FLUX 2 Pro",
-      "vendor": "Black Forest Labs",
+      "model_id": "gpt-image-1.5",
+      "name": "GPT Image 1.5",
+      "vendor": "OpenAI",
       "open_source": false,
       "tier": "standard",
       "categories": [
@@ -462,9 +505,12 @@
       "image_generation_price": 0.08,
       "image_edit_price": 0.04,
       "modality_scores": {
-        "image": 56.2
+        "text": 50.0,
+        "reasoning": 50.0,
+        "coding": 50.0,
+        "image": 42.0
       },
-      "quality_score": 56
+      "quality_score": 42
     },
     {
       "model_id": "gemini-3.5-flash",
@@ -484,12 +530,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 53.8,
-        "reasoning": 53.8,
-        "coding": 55.0,
-        "image": 22.5
+        "text": 38.9,
+        "reasoning": 25.0,
+        "coding": 50.0,
+        "image": 19.2
       },
-      "quality_score": 56
+      "quality_score": 40
     },
     {
       "model_id": "gemini-3.6-flash",
@@ -509,12 +555,37 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 53.8,
-        "reasoning": 53.8,
-        "coding": 55.0,
-        "image": 22.5
+        "text": 38.9,
+        "reasoning": 25.0,
+        "coding": 50.0,
+        "image": 19.2
       },
-      "quality_score": 56
+      "quality_score": 40
+    },
+    {
+      "model_id": "yi-lightning",
+      "name": "Yi Lightning",
+      "vendor": "01.AI",
+      "open_source": false,
+      "tier": "budget",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding",
+        "image"
+      ],
+      "context_window": 4096,
+      "input_price_per_1m": 0.1,
+      "output_price_per_1m": 0.3,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "modality_scores": {
+        "text": 38.8,
+        "reasoning": 22.0,
+        "coding": 50.0,
+        "image": 20.0
+      },
+      "quality_score": 39
     },
     {
       "model_id": "deepseek-v4-flash",
@@ -534,31 +605,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 50.0,
-        "reasoning": 50.0,
-        "coding": 50.0,
-        "image": 18.8
+        "text": 34.6,
+        "reasoning": 20.0,
+        "coding": 47.5,
+        "image": 17.8
       },
-      "quality_score": 52
-    },
-    {
-      "model_id": "gpt-image-1.5",
-      "name": "GPT Image 1.5",
-      "vendor": "OpenAI",
-      "open_source": false,
-      "tier": "standard",
-      "categories": [
-        "image"
-      ],
-      "context_window": 0,
-      "input_price_per_1m": 0.0,
-      "output_price_per_1m": 0.0,
-      "image_generation_price": 0.08,
-      "image_edit_price": 0.04,
-      "modality_scores": {
-        "image": 50.0
-      },
-      "quality_score": 50
+      "quality_score": 36
     },
     {
       "model_id": "llama-4-maverick",
@@ -578,12 +630,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 47.5,
-        "reasoning": 47.5,
-        "coding": 47.5,
+        "text": 31.6,
+        "reasoning": 18.0,
+        "coding": 43.8,
         "image": 16.2
       },
-      "quality_score": 49
+      "quality_score": 33
     },
     {
       "model_id": "gpt-5.4-mini",
@@ -603,12 +655,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 43.8,
-        "reasoning": 43.8,
-        "coding": 43.8,
-        "image": 12.5
+        "text": 28.9,
+        "reasoning": 15.0,
+        "coding": 40.0,
+        "image": 15.2
       },
-      "quality_score": 45
+      "quality_score": 30
     },
     {
       "model_id": "llama-4-scout",
@@ -628,12 +680,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 41.2,
-        "reasoning": 41.2,
-        "coding": 40.0,
-        "image": 10.0
+        "text": 27.0,
+        "reasoning": 14.0,
+        "coding": 37.5,
+        "image": 14.2
       },
-      "quality_score": 42
+      "quality_score": 28
     },
     {
       "model_id": "dall-e-3",
@@ -650,9 +702,12 @@
       "image_generation_price": 0.04,
       "image_edit_price": 0.02,
       "modality_scores": {
-        "image": 37.5
+        "text": 50.0,
+        "reasoning": 50.0,
+        "coding": 50.0,
+        "image": 25.0
       },
-      "quality_score": 38
+      "quality_score": 25
     },
     {
       "model_id": "gemini-3-flash",
@@ -672,12 +727,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 37.5,
-        "reasoning": 37.5,
-        "coding": 37.5,
-        "image": 8.8
+        "text": 23.9,
+        "reasoning": 12.0,
+        "coding": 31.9,
+        "image": 12.8
       },
-      "quality_score": 38
+      "quality_score": 24
     },
     {
       "model_id": "gemini-2.5-flash-lite",
@@ -697,33 +752,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 31.2,
-        "reasoning": 31.2,
-        "coding": 30.0,
-        "image": 5.0
+        "text": 18.6,
+        "reasoning": 8.0,
+        "coding": 25.6,
+        "image": 10.2
       },
-      "quality_score": 31
-    },
-    {
-      "model_id": "gpt-5.6-luna",
-      "name": "GPT-5.6 Luna",
-      "vendor": "OpenAI",
-      "open_source": false,
-      "tier": "budget",
-      "categories": [
-        "coding"
-      ],
-      "context_window": 200000,
-      "input_price_per_1m": 0.6,
-      "output_price_per_1m": 2.4,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "chat": 0.0,
-        "reasoning": 0.0,
-        "coding": 85.0
-      },
-      "quality_score": 26
+      "quality_score": 19
     },
     {
       "model_id": "amazon-nova-micro",
@@ -743,34 +777,12 @@
       "image_generation_price": "/",
       "image_edit_price": "/",
       "modality_scores": {
-        "chat": 25.0,
-        "reasoning": 25.0,
-        "coding": 22.5,
-        "image": 0
+        "text": 9.5,
+        "reasoning": 5.0,
+        "coding": 12.5,
+        "image": 5
       },
-      "quality_score": 24
-    },
-    {
-      "model_id": "qwen3.7-max",
-      "name": "Qwen 3.7 Max",
-      "vendor": "Alibaba",
-      "open_source": false,
-      "tier": "standard",
-      "categories": [
-        "reasoning",
-        "coding"
-      ],
-      "context_window": 131072,
-      "input_price_per_1m": 1.2,
-      "output_price_per_1m": 3.6,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "modality_scores": {
-        "chat": 0.0,
-        "reasoning": 0.0,
-        "coding": 0.0
-      },
-      "quality_score": 0
+      "quality_score": 10
     }
   ]
 }
