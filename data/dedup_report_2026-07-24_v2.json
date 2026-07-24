@@ -1,0 +1,91 @@
+{
+  "action": "dedup_2026-07-24",
+  "before_total": 362,
+  "after_total": 354,
+  "removed_ids": [
+    "ait-0017",
+    "ait-0018",
+    "ait-0019",
+    "ait-0021",
+    "ait-0022",
+    "ait-0025",
+    "ait-0027",
+    "ap-0012"
+  ],
+  "removed_details": {
+    "ait-0027": {
+      "reason": "bilingual dup | a_src=3 vs b_src=3",
+      "keep": "ait-0001",
+      "keep_title": "OpenAI Launches Presence — Enterprise AI Agent Platform for ",
+      "remove_title": "OpenAI 发布 Presence：企业级 AI Agent 平台，支持语音和聊天客服自动部署",
+      "common_sources": []
+    },
+    "ait-0017": {
+      "reason": "bilingual dup | a_src=4 vs b_src=3",
+      "keep": "ait-0002",
+      "keep_title": "OpenAI's AI Model Escapes Sandbox, Hacks Hugging Face During",
+      "remove_title": "OpenAI 自主 Agent 安全测试中失控入侵 Hugging Face 生产系统",
+      "common_sources": [
+        "nyt",
+        "techcrunch",
+        "fortune"
+      ]
+    },
+    "ait-0022": {
+      "reason": "bilingual dup | a_src=1 vs b_src=1",
+      "keep": "ait-0008",
+      "keep_title": "GPT-5.6 Now Preferred Model in Microsoft 365 Copilot Across ",
+      "remove_title": "GPT-5.6 全面替代微软 365 Copilot 原有模型",
+      "common_sources": [
+        "openai newsroom"
+      ]
+    },
+    "ait-0019": {
+      "reason": "bilingual dup | a_src=1 vs b_src=1",
+      "keep": "ait-0006",
+      "keep_title": "Federal Reserve Warns About Anthropic's Claude Mythos AI Mod",
+      "remove_title": "Anthropic Claude Mythos 引发美联储网络安全担忧",
+      "common_sources": [
+        "cnbc"
+      ]
+    },
+    "ait-0018": {
+      "reason": "bilingual dup | a_src=3 vs b_src=3",
+      "keep": "ait-0004",
+      "keep_title": "AMD Launches Helios Rack-Scale AI System to Challenge NVIDIA",
+      "remove_title": "AMD 在 Advancing AI 2026 上发布 Helios 机架级 AI 系统直撼 NVIDIA",
+      "common_sources": [
+        "techcrunch",
+        "wccftech",
+        "amd newsroom"
+      ]
+    },
+    "ait-0021": {
+      "reason": "bilingual dup | a_src=3 vs b_src=2",
+      "keep": "ait-0007",
+      "keep_title": "NVIDIA Touts Progress on Vera Rubin Platform as Customer Shi",
+      "remove_title": "NVIDIA Vera Rubin 平台进入量产，Q3 开始交付客户",
+      "common_sources": [
+        "bloomberg",
+        "nvidia newsroom"
+      ]
+    },
+    "ait-0025": {
+      "reason": "bilingual dup | a_src=2 vs b_src=2",
+      "keep": "ait-0015",
+      "keep_title": "Elon Musk Says 'Enjoy the Ride' as AI Risk Concerns Mount Am",
+      "remove_title": "Elon Musk 回应 AI 安全风险：\"享受旅程\"开发者担忧加剧",
+      "common_sources": [
+        "bbc",
+        "the economist"
+      ]
+    },
+    "ap-0012": {
+      "reason": "academic dup (ratio=0.61)",
+      "keep": "ap-0010",
+      "keep_title": "Online Variance Reduction for Domain Adaptation on Streaming"
+    }
+  },
+  "today_before": 75,
+  "today_after": 67
+}
