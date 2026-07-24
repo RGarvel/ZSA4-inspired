@@ -99,37 +99,61 @@ for m in data['models']:
     m.pop('quality_score', None)
     m.pop('modality_scores', None)
     
-    # Compute composite scores from benchmarks
-    # Weighted average across available benchmarks
-    benchmarks = []
-    weights = []
+    # ── Task-specific scores using tailored benchmark weights ──
+    # Each task gets a weighted blend of the 4 benchmarks. Missing benchmarks fallback to composite_score.
     
-    if m.get('benchmark_swe_verified'):
-        benchmarks.append(m['benchmark_swe_verified'])
-        weights.append(35)  # Coding is important for AI agents
-    if m.get('benchmark_reasoning'):
-        benchmarks.append(m['benchmark_reasoning'])
-        weights.append(30)  # Reasoning quality
-    if m.get('benchmark_knowledge'):
-        benchmarks.append(m['benchmark_knowledge'])
-        weights.append(20)  # Knowledge breadth
-    if m.get('benchmark_chat'):
-        benchmarks.append(m['benchmark_chat'])
-        weights.append(15)  # General chat ability
-    
-    total_w = sum(weights)
-    m['composite_score'] = round(sum(b*w for b,w in zip(benchmarks, weights)) / total_w) if total_w > 0 else 0
-    
-    # Task-specific scores from most relevant benchmark
-    m['score_coding'] = m['benchmark_swe_verified'] or m['composite_score']
-    m['score_reasoning'] = m['benchmark_reasoning'] or m['composite_score']
-    m['score_image'] = (m['benchmark_knowledge'] or m['composite_score']) * 0.6
-    # Chat uses combined (chat + knowledge weighted)
-    if m.get('benchmark_chat') and m.get('benchmark_knowledge'):
-        m['score_chat'] = round(m['benchmark_chat'] * 0.6 + m['benchmark_knowledge'] * 0.4)
-    else:
-        m['score_chat'] = m['benchmark_chat'] or m['benchmark_knowledge'] or m['composite_score']
+    def blend(task_weights, available):
+        """Blend benchmarks by task-specific weights. Fallback to composite if all missing."""
+        total_w = 0; total = 0
+        for bk, w in task_weights:
+            v = available.get(bk)
+            if v is not None:
+                total += v * w
+                total_w += w
+        if total_w == 0:
+            return m['composite_score']
+        blended = round(total / total_w)
+        # Clamp between composite and max(benchmark) — never below overall ability
+        return max(blended, m['composite_score'])
 
+    # 编码：SWE-bench(55%) + FrontierCode(30%) + Knowledge(15%)
+    m['score_coding'] = blend(
+        [('benchmark_swe_verified', 55), ('benchmark_reasoning', 30), ('benchmark_knowledge', 15)],
+        {
+            'benchmark_swe_verified': m['benchmark_swe_verified'],
+            'benchmark_reasoning': m['benchmark_reasoning'],
+            'benchmark_knowledge': m['benchmark_knowledge'],
+        }
+    )
+
+    # 推理：FrontierCode(50%) + SWE-bench(25%) + Chat(25%)
+    m['score_reasoning'] = blend(
+        [('benchmark_reasoning', 50), ('benchmark_swe_verified', 25), ('benchmark_chat', 25)],
+        {
+            'benchmark_reasoning': m['benchmark_reasoning'],
+            'benchmark_swe_verified': m['benchmark_swe_verified'],
+            'benchmark_chat': m['benchmark_chat'],
+        }
+    )
+
+    # 文本生成：Chat(45%) + MMLU/Knowledge(35%) + Reasoning(20%)
+    m['score_chat'] = blend(
+        [('benchmark_chat', 45), ('benchmark_knowledge', 35), ('benchmark_reasoning', 20)],
+        {
+            'benchmark_chat': m['benchmark_chat'],
+            'benchmark_knowledge': m['benchmark_knowledge'],
+            'benchmark_reasoning': m['benchmark_reasoning'],
+        }
+    )
+
+    # 图像生成：目前无直接benchmark，用Knowledge(60%) + Chat(40%)作为代理
+    m['score_image'] = blend(
+        [('benchmark_knowledge', 60), ('benchmark_chat', 40)],
+        {
+            'benchmark_knowledge': m['benchmark_knowledge'],
+            'benchmark_chat': m['benchmark_chat'],
+        }
+    )
 # Print summary
 print("Updated models with 4-benchmark scores:")
 for m in data['models']:

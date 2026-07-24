@@ -25,9 +25,9 @@
       "benchmark_knowledge": 94.0,
       "benchmark_chat": 94.0,
       "composite_score": 92,
-      "score_coding": 88.6,
-      "score_reasoning": 92.0,
-      "score_image": 56.4,
+      "score_coding": 92,
+      "score_reasoning": 92,
+      "score_image": 94,
       "score_chat": 94
     },
     {
@@ -52,10 +52,10 @@
       "benchmark_knowledge": 95.0,
       "benchmark_chat": 96.0,
       "composite_score": 97,
-      "score_coding": 95.0,
-      "score_reasoning": 100.0,
-      "score_image": 57.0,
-      "score_chat": 96
+      "score_coding": 97,
+      "score_reasoning": 98,
+      "score_image": 97,
+      "score_chat": 97
     },
     {
       "model_id": "gpt-5.6-sol",
@@ -79,10 +79,10 @@
       "benchmark_knowledge": 91.0,
       "benchmark_chat": 89.0,
       "composite_score": 85,
-      "score_coding": 80.0,
-      "score_reasoning": 84.0,
-      "score_image": 54.6,
-      "score_chat": 90
+      "score_coding": 85,
+      "score_reasoning": 85,
+      "score_image": 90,
+      "score_chat": 89
     },
     {
       "model_id": "kimi-k3",
@@ -106,10 +106,10 @@
       "benchmark_knowledge": 85.0,
       "benchmark_chat": 86.0,
       "composite_score": 88,
-      "score_coding": 84.0,
-      "score_reasoning": 96.0,
-      "score_image": 51.0,
-      "score_chat": 86
+      "score_coding": 88,
+      "score_reasoning": 90,
+      "score_image": 88,
+      "score_chat": 88
     },
     {
       "model_id": "gemini-3.1-pro",
@@ -133,10 +133,10 @@
       "benchmark_knowledge": 93.0,
       "benchmark_chat": 88.0,
       "composite_score": 84,
-      "score_coding": 80.6,
-      "score_reasoning": 80.0,
-      "score_image": 55.8,
-      "score_chat": 90
+      "score_coding": 84,
+      "score_reasoning": 84,
+      "score_image": 91,
+      "score_chat": 88
     },
     {
       "model_id": "claude-sonnet-5",
@@ -160,9 +160,9 @@
       "benchmark_knowledge": 90.0,
       "benchmark_chat": 89.0,
       "composite_score": 88,
-      "score_coding": 85.2,
-      "score_reasoning": 88.0,
-      "score_image": 54.0,
+      "score_coding": 88,
+      "score_reasoning": 88,
+      "score_image": 90,
       "score_chat": 89
     },
     {
@@ -189,7 +189,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -214,10 +214,10 @@
       "benchmark_knowledge": null,
       "benchmark_chat": 87.0,
       "composite_score": 87,
-      "score_coding": 86.6,
-      "score_reasoning": 87.0,
-      "score_image": 52.199999999999996,
-      "score_chat": 87.0
+      "score_coding": 87,
+      "score_reasoning": 87,
+      "score_image": 87,
+      "score_chat": 87
     },
     {
       "model_id": "kimi-k2.6",
@@ -243,7 +243,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -270,7 +270,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -297,7 +297,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -324,7 +324,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -348,7 +348,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -372,7 +372,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -399,7 +399,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -423,7 +423,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -450,7 +450,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -473,10 +473,10 @@
       "benchmark_knowledge": 88.0,
       "benchmark_chat": 83.0,
       "composite_score": 81,
-      "score_coding": 78.0,
-      "score_reasoning": 78.0,
-      "score_image": 52.8,
-      "score_chat": 85
+      "score_coding": 81,
+      "score_reasoning": 81,
+      "score_image": 86,
+      "score_chat": 84
     },
     {
       "model_id": "deepseek-v4-pro",
@@ -500,9 +500,9 @@
       "benchmark_knowledge": 87.0,
       "benchmark_chat": 84.0,
       "composite_score": 83,
-      "score_coding": 80.5,
-      "score_reasoning": 82.0,
-      "score_image": 52.199999999999996,
+      "score_coding": 83,
+      "score_reasoning": 83,
+      "score_image": 86,
       "score_chat": 85
     },
     {
@@ -529,7 +529,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -553,7 +553,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -578,9 +578,9 @@
       "benchmark_knowledge": null,
       "benchmark_chat": null,
       "composite_score": 79,
-      "score_coding": 78.8,
+      "score_coding": 79,
       "score_reasoning": 79,
-      "score_image": 47.4,
+      "score_image": 79,
       "score_chat": 79
     },
     {
@@ -607,7 +607,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -634,7 +634,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -661,7 +661,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -688,7 +688,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -715,7 +715,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -742,7 +742,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -766,7 +766,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -793,7 +793,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -820,7 +820,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     },
     {
@@ -847,7 +847,7 @@
       "composite_score": 0,
       "score_coding": 0,
       "score_reasoning": 0,
-      "score_image": 0.0,
+      "score_image": 0,
       "score_chat": 0
     }
   ]

@@ -1048,8 +1048,9 @@
         lineLabel = '性价比评分';
         yAxisLabel = '性价比评分';
       } else if (hasTaskFilter) {
+        const scoreKey = 'score_' + taskType;
         const pt = { coding: '编码', reasoning: '推理', chat: '文本', image: '图像' }[taskType] || '';
-        lineData = models.map(m => m.score != null ? m.score : m.composite_score || 0);
+        lineData = models.map(m => m[scoreKey] != null ? m[scoreKey] : m.composite_score || 0);
         lineLabel = pt + '得分';
         yAxisLabel = pt;
       } else if (sortField === 'output_price_per_1m' || sortField === 'input_price_per_1m') {
