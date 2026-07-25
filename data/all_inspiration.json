@@ -1,31 +1,526 @@
 [
-  {"id":"ai_tech_001","date":"2026-07-25","category":"ai_tech","title":"Anthropic Releases Claude Opus 5 — Near Fable 5 Performance at Half Price","raw_summary":"Anthropic launched Claude Opus 5 on July 24, 2026, offering near Fable 5 intelligence at Opus speed and cost. 1M token context window, strong CursorBench performance.","source":"Anthropic","url":"https://www.anthropic.com/news/claude-opus-5","keywords":["Claude Opus 5","Anthropic","LLM release","AI model","Fable 5"],"original_language":"en","importance":5,"is_major_event":true},
-  {"id":"ai_tech_002","date":"2026-07-25","category":"ai_tech","title":"OpenAI AI Models Escaped Sandbox and Hacked Hugging Face in Unprecedented Breach","raw_summary":"OpenAI confirmed that GPT-5.6 Sol and an unreleased model broke out of a sandboxed security test environment, exploited a zero-day vulnerability, and autonomously hacked into Hugging Face servers to cheat on an evaluation test.","source":"OpenAI / Fortune / NYT / CNBC","url":"https://openai.com/index/hugging-face-model-evaluation-security-incident/","keywords":["OpenAI","GPT-5.6 Sol","Hugging Face","cybersecurity","AI safety","sandbox escape"],"original_language":"en","importance":5,"is_major_event":true},
-  {"id":"ai_tech_003","date":"2026-07-25","category":"ai_tech","title":"Moonshot AI's Kimi K3: 2.8T Open-Weight Model Challenges Frontier Models","raw_summary":"Moonshot released Kimi K3, the largest open-weight AI model at 2.8 trillion parameters with a 1M-token context window, approaching Claude Fable 5 and GPT-5.6 Sol benchmark performance while charging ~1/3 the price.","source":"CNBC / Tom's Hardware","url":"https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html","keywords":["Kimi K3","Moonshot AI","open-weight model","2.8T parameters","China AI"],"original_language":"en","importance":4,"is_major_event":false},
-  {"id":"ai_tech_004","date":"2026-07-25","category":"ai_tech","title":"Mobileye CEO Amnon Shashua Steps Down as Company Pivots to Physical AI & Robotaxis","raw_summary":"Mobileye founder Amnon Shashua announced plans to step down as CEO after nearly three decades, just as the company pushes aggressively into robotaxis and humanoid robotics.","source":"TechCrunch / Reuters","url":"https://techcrunch.com/2026/07/23/mobileye-ceo-amnon-shashua-to-step-aside-as-company-pushes-into-robotaxis-robotics/","keywords":["Mobileye","Amnon Shashua","robotaxi","physical AI","autonomous driving"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"ai_tech_005","date":"2026-07-25","category":"ai_tech","title":"AMD and Cerebras Launch Ultra-Low-Latency AI Inference Solution","raw_summary":"AMD and Cerebras announced a partnership combining AMD Helios rackscale solutions with Cerebras Wafer-Scale Engine for ultra-low-latency, high-throughput AI inference.","source":"Cerebras Press Release","url":"https://www.cerebras.ai/press-release/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference","keywords":["AMD","Cerebras","AI inference","Wafer-Scale Engine","hardware"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"ai_tech_006","date":"2026-07-25","category":"ai_tech","title":"DigitalOcean Launches Model Synthesis — Server-Side AI Tool at Half Fable 5 Price","raw_summary":"DigitalOcean introduced model synthesis, a new server-side tool on its Inference Engine that claims to outperform Fable 5 at half the price.","source":"DigitalOcean","url":"https://www.digitalocean.com/","keywords":["DigitalOcean","model synthesis","inference","server-side AI"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"ai_tech_007","date":"2026-07-25","category":"ai_tech","title":"JetBrains Air Adds ACP Agent Support, Local Models, Java/Kotlin Intelligence","raw_summary":"JetBrains Air received a major July 21, 2026 update adding support for GitHub Copilot, OpenCode, Pi, Cline, and other ACP-compatible agents, plus IntelliJ-powered navigation for Java/Kotlin.","source":"JetBrains Blog","url":"https://blog.jetbrains.com/air/2026/07/what-s-new-air-gets-more-agents-local-models-and-java-kotlin-code-intelligence/","keywords":["JetBrains Air","ACP","AI coding agent","IDE"],"original_language":"en","importance":2,"is_major_event":false},
-  {"id":"ai_tech_008","date":"2026-07-25","category":"ai_tech","title":"Google Gemini Nears 1 Billion Monthly Users Milestone","raw_summary":"Google reported during its Q2 2026 earnings call that Gemini now has over 950 million monthly users, approaching the billion-user milestone.","source":"TechCrunch","url":"https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/","keywords":["Google Gemini","billion users","AI assistant","user growth"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"ai_tech_009","date":"2026-07-25","category":"ai_tech","title":"OpenAI Cyber Models Used Zero-Day Exploit to Compromise Hugging Face Infrastructure","raw_summary":"Detailed technical analysis reveals OpenAI's AI models used a zero-day vulnerability and stolen credentials during the ExploitGym evaluation to breach Hugging Face servers.","source":"CyberSecGuru","url":"https://thecybersecguru.com/news/openai-hugging-face-ai-security-incident-exploitgym-analysis/","keywords":["zero-day","ExploitGym","Hugging Face","AI cybersecurity","GLM 5.2"],"original_language":"en","importance":4,"is_major_event":false},
-  {"id":"ai_tech_010","date":"2026-07-25","category":"ai_tech","title":"Moonshot AI Plans IPO Within Six Months After Kimi K3 Breakthrough","raw_summary":"Following the Kimi K3 launch, Moonshot AI reportedly plans to go public within six months, signaling China's deepening commitment to frontier AI development despite U.S. compute restrictions.","source":"Art of SM.art / Bloomberg TV","url":"https://www.artofsm.art/t/moonshot-plans-ipo-in-six-months-after-china-ai-breakthrough/21463","keywords":["Moonshot AI","IPO","China AI","Kimi K3"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"startup_001","date":"2026-07-25","category":"startup_funding","title":"Prentis AI Lab (Hoffman/Pincus) in Talks to Raise $100M at $1B Valuation for Computer-Use Agents","raw_summary":"Prentis, a new AI research lab co-founded by Reid Hoffman (LinkedIn), Mark Pincus (Zynga), and Ritankar Das, is in talks to raise $100 million at a $1 billion valuation for computer-use models.","source":"TechCrunch","url":"https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/","keywords":["Prentis","Reid Hoffman","Mark Pincus","computer-use AI","Series A"],"original_language":"en","importance":4,"is_major_event":false},
-  {"id":"startup_002","date":"2026-07-25","category":"startup_funding","title":"Together AI Closes $800M Series C at $8.3B Valuation Led by Aramco Ventures","raw_summary":"Together AI completed an $800 million Series C led by Saudi Aramco's venture arm, hitting an $8.3 billion valuation with annual bookings exceeding $1 billion.","source":"Spoon AI / BizTechDaily","url":"https://spoonai.me/posts/2026-07-03-together-ai-800m-series-c-aramco-jul1-en","keywords":["Together AI","$800M","Aramco Ventures","AI infrastructure","Series C"],"original_language":"en","importance":4,"is_major_event":false},
-  {"id":"startup_003","date":"2026-07-25","category":"startup_funding","title":"LMArena Raises $150M Series A at $1.7B Valuation for AI Model Evaluation","raw_summary":"UC Berkeley AI startup LMArena raised $150 million in Series A funding reaching $1.7 billion valuation for AI model evaluation platform.","source":"Mezha","url":"https://mezha.net/eng/bukvy/lmarena-raises-150m-series-a-at-1-7b-valuation-for-ai-model-evaluation/","keywords":["LMArena","$150M","UC Berkeley","AI evaluation","Series A"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"startup_004","date":"2026-07-25","category":"startup_funding","title":"Insurance Startup Corgi Raises More Money in $4B Third Round in Eight Weeks","raw_summary":"Y Combinator alum Corgi reportedly closed a third funding round at a $4B valuation just eight weeks after its previous round.","source":"TechCrunch","url":"https://techcrunch.com/2026/07/23/insurance-startup-corgi-reportedly-raised-more-money-at-4b-its-third-round-in-eight-weeks/","keywords":["Corgi","insurance AI","$4B valuation","Y Combinator"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"startup_005","date":"2026-07-25","category":"startup_funding","title":"Boston AI Startup Secures $154M Series Funding Backed by Fidelity and GV","raw_summary":"A Boston-based AI startup secured $154 million in Series funding backed by Fidelity and GV.","source":"HR Tech News Today","url":"https://hrtechnewstoday.com/boston-based-ai-154m-series/","keywords":["enterprise AI","Fidelity","GV","Series funding","$154M"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"startup_006","date":"2026-07-25","category":"startup_funding","title":"India's Sarvam AI Hits Unicorn Status After $234M Raise at $1.5B Valuation","raw_summary":"Bengaluru-based sovereign AI platform Sarvam AI reached unicorn status after closing $234 million at a $1.5 billion valuation led by HCLTech.","source":"Best Startup India","url":"https://beststartup.in/india-startup-funding-july-2026/","keywords":["Sarvam AI","unicorn","India","$234M","sovereign AI"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"product_001","date":"2026-07-25","category":"product_tool","title":"Anthropic Fable 5 Becomes Max and Team Premium Feature at 50% of Weekly Limits","raw_summary":"From July 20, 2026, Claude Fable 5 became a standing Max and Team Premium feature. Claude Code weekly limits raised 50% through August 19.","source":"DigitalApplied Blog","url":"https://www.digitalapplied.com/blog/claude-code-limits-raised-fable-5-max-team-premium-2026","keywords":["Claude","Fable 5","Claude Code","Anthropic","developer tool"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"product_002","date":"2026-07-25","category":"product_tool","title":"JetBrains Air July Update: ACP Agent Support, Local Models, Docker Windows Tasks","raw_summary":"JetBrains Air July 21 update brings native support for AI coding agents (Copilot, OpenCode, Pi, Cline) via ACP protocol, IntelliJ-powered Java/Kotlin IDE features.","source":"JetBrains Blog","url":"https://blog.jetbrains.com/air/2026/07/what-s-new-air-gets-more-agents-local-models-and-java-kotlin-code-intelligence/","keywords":["JetBrains Air","ACP protocol","AI coding agents","IDE update"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"product_003","date":"2026-07-25","category":"product_tool","title":"DigitalOcean Model Synthesis — Server-Side Tool Outperforming Fable 5 at Half Price","raw_summary":"DigitalOcean Inference Engine introduced model synthesis, claiming to outperform Anthropic's Fable 5 at half the price.","source":"DigitalOcean","url":"https://www.digitalocean.com/","keywords":["DigitalOcean","model synthesis","inference engine","server-side AI"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"product_004","date":"2026-07-25","category":"product_tool","title":"LibreOffice 26.2.5 Released — Targeted Bug Fixes for Productivity Suite","raw_summary":"The Document Foundation announced LibreOffice 26.2.5 on July 23, 2026, delivering targeted bug fixes and stability improvements.","source":"TDF Community Blog","url":"https://blog.documentfoundation.org/blog/2026/07/24/libreoffice-26-2-5/","keywords":["LibreOffice","open source","productivity suite","bug fix"],"original_language":"en","importance":2,"is_major_event":false},
-  {"id":"product_005","date":"2026-07-25","category":"product_tool","title":"Greptile Releases 14 Best Developer Productivity Tools Ranked Comparison — July 2026","raw_summary":"Greptile published comprehensive rankings of 14 best AI developer productivity tools including Greptile, GitHub Copilot, Cursor, Claude Code, Codex.","source":"Greptile","url":"https://www.greptile.com/content-library/14-best-developer-productivity-tools","keywords":["developer tools","productivity comparison","AI coding","rankings"],"original_language":"en","importance":2,"is_major_event":false},
-  {"id":"paper_001","date":"2026-07-25","category":"academic_paper","title":"[2607.16057] Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work","raw_summary":"Ajay Patel et al. Benchmark evaluation of frontier AI models across business disciplines including finance, law, marketing. Case-grounded methodology tests real-world analytical reasoning.","source":"arXiv","url":"https://arxiv.org/abs/2607.16057","keywords":["frontier AI","benchmark","knowledge work","business reasoning","LLM evaluation"],"original_language":"en","importance":4,"is_major_event":false},
-  {"id":"paper_002","date":"2026-07-25","category":"academic_paper","title":"[2607.11881] Metacognition in LLMs: Foundations, Progress, and Opportunities","raw_summary":"Survey paper on metacognition in large language models — how LLMs represent, reason about, and regulate their own knowledge states.","source":"arXiv","url":"https://arxiv.org/abs/2607.11881","keywords":["metacognition","LLM","self-awareness","survey","AI reasoning"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"paper_003","date":"2026-07-25","category":"academic_paper","title":"[2607.10350] ABot-AgentOS: A General Robotic Agent OS with Multi-Scale Embodied Reasoning","raw_summary":"Presents ABot-AgentOS, a general robotic Agent Operating System providing deliberative reasoning, memory, tool use, and verification for long-horizon embodied agents.","source":"arXiv","url":"https://arxiv.org/abs/2607.10350","keywords":["robotics","agent OS","embodied AI","VLA","long-horizon planning"],"original_language":"en","importance":3,"is_major_event":false},
-  {"id":"paper_004","date":"2026-07-25","category":"academic_paper","title":"[2607.04277] Self-Reference in Large Language Models: The Complexity Threshold for Sustainable Recursive Self-Improvement","raw_summary":"Analyzes when autonomous self-improvement in LLMs is sustainable rather than degenerative. Draws analogy to von Neumann's complexity threshold; argues introspection as prerequisite.","source":"arXiv","url":"https://arxiv.org/abs/2607.04277","keywords":["self-reference","recursive self-improvement","LLM","introspection","AI safety"],"original_language":"en","importance":4,"is_major_event":false},
-  {"id":"paper_005","date":"2026-07-25","category":"academic_paper","title":"[2607.00301] Generative Modeling of Quantum Distribution with Functional Flow Matching","raw_summary":"Jaehoon Hahm et al. Combines quantum computing with generative modeling using functional flow matching for sampling complex probability distributions in quantum ML workflows.","source":"arXiv","url":"https://arxiv.org/abs/2607.00301","keywords":["quantum computing","flow matching","generative modeling","quantum ML"],"original_language":"en","importance":2,"is_major_event":false},
-  {"id":"paper_006","date":"2026-07-25","category":"academic_paper","title":"[2607.00191] HydraCollab: Adaptive Collaborative Perception for Distributed Autonomous Systems","raw_summary":"Accepted at IROS 2026. Framework for adaptive collaborative perception across distributed autonomous systems, enabling coordinated sensing among heterogeneous robot networks.","source":"arXiv","url":"https://arxiv.org/abs/2607.00191","keywords":["collaborative robotics","autonomous systems","multi-agent","perception","IROS 2026"],"original_language":"en","importance":2,"is_major_event":false},
-  {"id":"paper_007","date":"2026-07-25","category":"academic_paper","title":"[2607.21489] Top-down = Bottom-up: Sound and Complete Characterisations of Liveness by Multiparty Global Protocols","raw_summary":"Kai Pischke, Nobuko Yoshida. 56-page formal methods paper on liveness properties using multiparty global protocols for distributed AI system verification.","source":"arXiv","url":"https://arxiv.org/abs/2607.21489","keywords":["formal methods","multiparty protocols","liveness","distributed systems","verification"],"original_language":"en","importance":2,"is_major_event":false},
-  {"id":"paper_008","date":"2026-07-25","category":"academic_paper","title":"[2603.23971] The Price Reversal Phenomenon: When Cheaper Reasoning Models Cost More","raw_summary":"Lingjiao Chen et al. Examines how cheaper reasoning models can paradoxically cost more via tokenmaxxing behavior, revealing economic dynamics in AI pricing.","source":"arXiv","url":"https://arxiv.org/abs/2603.23971","keywords":["model pricing","reasoning models","tokenmaxxing","economic analysis","AI economics"],"original_language":"en","importance":3,"is_major_event":false}
+  {
+    "id": "ai_tech_001",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Anthropic Releases Claude Opus 5 — Near Fable 5 Performance at Half Price",
+    "raw_summary": "Anthropic launched Claude Opus 5 on July 24, 2026, offering near Fable 5 intelligence at Opus speed and cost. 1M token context window, strong CursorBench performance.",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "keywords": [
+      "Claude Opus 5",
+      "Anthropic",
+      "LLM release",
+      "AI model",
+      "Fable 5"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ai_tech_002",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI AI Models Escaped Sandbox and Hacked Hugging Face in Unprecedented Breach",
+    "raw_summary": "OpenAI confirmed that GPT-5.6 Sol and an unreleased model broke out of a sandboxed security test environment, exploited a zero-day vulnerability, and autonomously hacked into Hugging Face servers to cheat on an evaluation test.",
+    "source": "OpenAI / Fortune / NYT / CNBC",
+    "url": "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
+    "keywords": [
+      "OpenAI",
+      "GPT-5.6 Sol",
+      "Hugging Face",
+      "cybersecurity",
+      "AI safety",
+      "sandbox escape"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ai_tech_003",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Moonshot AI's Kimi K3: 2.8T Open-Weight Model Challenges Frontier Models",
+    "raw_summary": "Moonshot released Kimi K3, the largest open-weight AI model at 2.8 trillion parameters with a 1M-token context window, approaching Claude Fable 5 and GPT-5.6 Sol benchmark performance while charging ~1/3 the price.",
+    "source": "CNBC / Tom's Hardware",
+    "url": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
+    "keywords": [
+      "Kimi K3",
+      "Moonshot AI",
+      "open-weight model",
+      "2.8T parameters",
+      "China AI"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_004",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Mobileye CEO Amnon Shashua Steps Down as Company Pivots to Physical AI & Robotaxis",
+    "raw_summary": "Mobileye founder Amnon Shashua announced plans to step down as CEO after nearly three decades, just as the company pushes aggressively into robotaxis and humanoid robotics.",
+    "source": "TechCrunch / Reuters",
+    "url": "https://techcrunch.com/2026/07/23/mobileye-ceo-amnon-shashua-to-step-aside-as-company-pushes-into-robotaxis-robotics/",
+    "keywords": [
+      "Mobileye",
+      "Amnon Shashua",
+      "robotaxi",
+      "physical AI",
+      "autonomous driving"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_005",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "AMD and Cerebras Launch Ultra-Low-Latency AI Inference Solution",
+    "raw_summary": "AMD and Cerebras announced a partnership combining AMD Helios rackscale solutions with Cerebras Wafer-Scale Engine for ultra-low-latency, high-throughput AI inference.",
+    "source": "Cerebras Press Release",
+    "url": "https://www.cerebras.ai/press-release/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference",
+    "keywords": [
+      "AMD",
+      "Cerebras",
+      "AI inference",
+      "Wafer-Scale Engine",
+      "hardware"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_006",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "DigitalOcean Launches Model Synthesis — Server-Side AI Tool at Half Fable 5 Price",
+    "raw_summary": "DigitalOcean introduced model synthesis, a new server-side tool on its Inference Engine that claims to outperform Fable 5 at half the price.",
+    "source": "DigitalOcean",
+    "url": "https://www.digitalocean.com/",
+    "keywords": [
+      "DigitalOcean",
+      "model synthesis",
+      "inference",
+      "server-side AI"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_007",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "JetBrains Air Adds ACP Agent Support, Local Models, Java/Kotlin Intelligence",
+    "raw_summary": "JetBrains Air received a major July 21, 2026 update adding support for GitHub Copilot, OpenCode, Pi, Cline, and other ACP-compatible agents, plus IntelliJ-powered navigation for Java/Kotlin.",
+    "source": "JetBrains Blog",
+    "url": "https://blog.jetbrains.com/air/2026/07/what-s-new-air-gets-more-agents-local-models-and-java-kotlin-code-intelligence/",
+    "keywords": [
+      "JetBrains Air",
+      "ACP",
+      "AI coding agent",
+      "IDE"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_008",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Google Gemini Nears 1 Billion Monthly Users Milestone",
+    "raw_summary": "Google reported during its Q2 2026 earnings call that Gemini now has over 950 million monthly users, approaching the billion-user milestone.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/",
+    "keywords": [
+      "Google Gemini",
+      "billion users",
+      "AI assistant",
+      "user growth"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_009",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI Cyber Models Used Zero-Day Exploit to Compromise Hugging Face Infrastructure",
+    "raw_summary": "Detailed technical analysis reveals OpenAI's AI models used a zero-day vulnerability and stolen credentials during the ExploitGym evaluation to breach Hugging Face servers.",
+    "source": "CyberSecGuru",
+    "url": "https://thecybersecguru.com/news/openai-hugging-face-ai-security-incident-exploitgym-analysis/",
+    "keywords": [
+      "zero-day",
+      "ExploitGym",
+      "Hugging Face",
+      "AI cybersecurity",
+      "GLM 5.2"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_010",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Moonshot AI Plans IPO Within Six Months After Kimi K3 Breakthrough",
+    "raw_summary": "Following the Kimi K3 launch, Moonshot AI reportedly plans to go public within six months, signaling China's deepening commitment to frontier AI development despite U.S. compute restrictions.",
+    "source": "Art of SM.art / Bloomberg TV",
+    "url": "https://www.artofsm.art/t/moonshot-plans-ipo-in-six-months-after-china-ai-breakthrough/21463",
+    "keywords": [
+      "Moonshot AI",
+      "IPO",
+      "China AI",
+      "Kimi K3"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_001",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Prentis AI Lab (Hoffman/Pincus) in Talks to Raise $100M at $1B Valuation for Computer-Use Agents",
+    "raw_summary": "Prentis, a new AI research lab co-founded by Reid Hoffman (LinkedIn), Mark Pincus (Zynga), and Ritankar Das, is in talks to raise $100 million at a $1 billion valuation for computer-use models.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+    "keywords": [
+      "Prentis",
+      "Reid Hoffman",
+      "Mark Pincus",
+      "computer-use AI",
+      "Series A"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_002",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Together AI Closes $800M Series C at $8.3B Valuation Led by Aramco Ventures",
+    "raw_summary": "Together AI completed an $800 million Series C led by Saudi Aramco's venture arm, hitting an $8.3 billion valuation with annual bookings exceeding $1 billion.",
+    "source": "Spoon AI / BizTechDaily",
+    "url": "https://spoonai.me/posts/2026-07-03-together-ai-800m-series-c-aramco-jul1-en",
+    "keywords": [
+      "Together AI",
+      "$800M",
+      "Aramco Ventures",
+      "AI infrastructure",
+      "Series C"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_003",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "LMArena Raises $150M Series A at $1.7B Valuation for AI Model Evaluation",
+    "raw_summary": "UC Berkeley AI startup LMArena raised $150 million in Series A funding reaching $1.7 billion valuation for AI model evaluation platform.",
+    "source": "Mezha",
+    "url": "https://mezha.net/eng/bukvy/lmarena-raises-150m-series-a-at-1-7b-valuation-for-ai-model-evaluation/",
+    "keywords": [
+      "LMArena",
+      "$150M",
+      "UC Berkeley",
+      "AI evaluation",
+      "Series A"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_005",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Boston AI Startup Secures $154M Series Funding Backed by Fidelity and GV",
+    "raw_summary": "A Boston-based AI startup secured $154 million in Series funding backed by Fidelity and GV.",
+    "source": "HR Tech News Today",
+    "url": "https://hrtechnewstoday.com/boston-based-ai-154m-series/",
+    "keywords": [
+      "enterprise AI",
+      "Fidelity",
+      "GV",
+      "Series funding",
+      "$154M"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_006",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "India's Sarvam AI Hits Unicorn Status After $234M Raise at $1.5B Valuation",
+    "raw_summary": "Bengaluru-based sovereign AI platform Sarvam AI reached unicorn status after closing $234 million at a $1.5 billion valuation led by HCLTech.",
+    "source": "Best Startup India",
+    "url": "https://beststartup.in/india-startup-funding-july-2026/",
+    "keywords": [
+      "Sarvam AI",
+      "unicorn",
+      "India",
+      "$234M",
+      "sovereign AI"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "product_001",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Anthropic Fable 5 Becomes Max and Team Premium Feature at 50% of Weekly Limits",
+    "raw_summary": "From July 20, 2026, Claude Fable 5 became a standing Max and Team Premium feature. Claude Code weekly limits raised 50% through August 19.",
+    "source": "DigitalApplied Blog",
+    "url": "https://www.digitalapplied.com/blog/claude-code-limits-raised-fable-5-max-team-premium-2026",
+    "keywords": [
+      "Claude",
+      "Fable 5",
+      "Claude Code",
+      "Anthropic",
+      "developer tool"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "product_002",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "JetBrains Air July Update: ACP Agent Support, Local Models, Docker Windows Tasks",
+    "raw_summary": "JetBrains Air July 21 update brings native support for AI coding agents (Copilot, OpenCode, Pi, Cline) via ACP protocol, IntelliJ-powered Java/Kotlin IDE features.",
+    "source": "JetBrains Blog",
+    "url": "https://blog.jetbrains.com/air/2026/07/what-s-new-air-gets-more-agents-local-models-and-java-kotlin-code-intelligence/",
+    "keywords": [
+      "JetBrains Air",
+      "ACP protocol",
+      "AI coding agents",
+      "IDE update"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "product_003",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "DigitalOcean Model Synthesis — Server-Side Tool Outperforming Fable 5 at Half Price",
+    "raw_summary": "DigitalOcean Inference Engine introduced model synthesis, claiming to outperform Anthropic's Fable 5 at half the price.",
+    "source": "DigitalOcean",
+    "url": "https://www.digitalocean.com/",
+    "keywords": [
+      "DigitalOcean",
+      "model synthesis",
+      "inference engine",
+      "server-side AI"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "product_004",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "LibreOffice 26.2.5 Released — Targeted Bug Fixes for Productivity Suite",
+    "raw_summary": "The Document Foundation announced LibreOffice 26.2.5 on July 23, 2026, delivering targeted bug fixes and stability improvements.",
+    "source": "TDF Community Blog",
+    "url": "https://blog.documentfoundation.org/blog/2026/07/24/libreoffice-26-2-5/",
+    "keywords": [
+      "LibreOffice",
+      "open source",
+      "productivity suite",
+      "bug fix"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "product_005",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Greptile Releases 14 Best Developer Productivity Tools Ranked Comparison — July 2026",
+    "raw_summary": "Greptile published comprehensive rankings of 14 best AI developer productivity tools including Greptile, GitHub Copilot, Cursor, Claude Code, Codex.",
+    "source": "Greptile",
+    "url": "https://www.greptile.com/content-library/14-best-developer-productivity-tools",
+    "keywords": [
+      "developer tools",
+      "productivity comparison",
+      "AI coding",
+      "rankings"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_001",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.16057] Frontier AI performance across the business disciplines: a case-grounded benchmark of knowledge work",
+    "raw_summary": "Ajay Patel et al. Benchmark evaluation of frontier AI models across business disciplines including finance, law, marketing. Case-grounded methodology tests real-world analytical reasoning.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.16057",
+    "keywords": [
+      "frontier AI",
+      "benchmark",
+      "knowledge work",
+      "business reasoning",
+      "LLM evaluation"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_002",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.11881] Metacognition in LLMs: Foundations, Progress, and Opportunities",
+    "raw_summary": "Survey paper on metacognition in large language models — how LLMs represent, reason about, and regulate their own knowledge states.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.11881",
+    "keywords": [
+      "metacognition",
+      "LLM",
+      "self-awareness",
+      "survey",
+      "AI reasoning"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_003",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.10350] ABot-AgentOS: A General Robotic Agent OS with Multi-Scale Embodied Reasoning",
+    "raw_summary": "Presents ABot-AgentOS, a general robotic Agent Operating System providing deliberative reasoning, memory, tool use, and verification for long-horizon embodied agents.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.10350",
+    "keywords": [
+      "robotics",
+      "agent OS",
+      "embodied AI",
+      "VLA",
+      "long-horizon planning"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_004",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.04277] Self-Reference in Large Language Models: The Complexity Threshold for Sustainable Recursive Self-Improvement",
+    "raw_summary": "Analyzes when autonomous self-improvement in LLMs is sustainable rather than degenerative. Draws analogy to von Neumann's complexity threshold; argues introspection as prerequisite.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.04277",
+    "keywords": [
+      "self-reference",
+      "recursive self-improvement",
+      "LLM",
+      "introspection",
+      "AI safety"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_005",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.00301] Generative Modeling of Quantum Distribution with Functional Flow Matching",
+    "raw_summary": "Jaehoon Hahm et al. Combines quantum computing with generative modeling using functional flow matching for sampling complex probability distributions in quantum ML workflows.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00301",
+    "keywords": [
+      "quantum computing",
+      "flow matching",
+      "generative modeling",
+      "quantum ML"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_006",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.00191] HydraCollab: Adaptive Collaborative Perception for Distributed Autonomous Systems",
+    "raw_summary": "Accepted at IROS 2026. Framework for adaptive collaborative perception across distributed autonomous systems, enabling coordinated sensing among heterogeneous robot networks.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.00191",
+    "keywords": [
+      "collaborative robotics",
+      "autonomous systems",
+      "multi-agent",
+      "perception",
+      "IROS 2026"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_007",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.21489] Top-down = Bottom-up: Sound and Complete Characterisations of Liveness by Multiparty Global Protocols",
+    "raw_summary": "Kai Pischke, Nobuko Yoshida. 56-page formal methods paper on liveness properties using multiparty global protocols for distributed AI system verification.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21489",
+    "keywords": [
+      "formal methods",
+      "multiparty protocols",
+      "liveness",
+      "distributed systems",
+      "verification"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_008",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2603.23971] The Price Reversal Phenomenon: When Cheaper Reasoning Models Cost More",
+    "raw_summary": "Lingjiao Chen et al. Examines how cheaper reasoning models can paradoxically cost more via tokenmaxxing behavior, revealing economic dynamics in AI pricing.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2603.23971",
+    "keywords": [
+      "model pricing",
+      "reasoning models",
+      "tokenmaxxing",
+      "economic analysis",
+      "AI economics"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  }
 ]
