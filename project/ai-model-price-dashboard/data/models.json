@@ -4,33 +4,6 @@
   "unit": "per 1M tokens",
   "models": [
     {
-      "model_id": "claude-opus-4.8",
-      "name": "Claude Opus 4.8",
-      "vendor": "Anthropic",
-      "open_source": false,
-      "tier": "premium",
-      "categories": [
-        "chat",
-        "reasoning",
-        "coding",
-        "image"
-      ],
-      "context_window": 200000,
-      "input_price_per_1m": 15.0,
-      "output_price_per_1m": 75.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "benchmark_swe_verified": 88.6,
-      "benchmark_reasoning": 92.0,
-      "benchmark_knowledge": 94.0,
-      "benchmark_chat": 94.0,
-      "composite_score": 91,
-      "score_coding": 91,
-      "score_reasoning": 92,
-      "score_image": 94,
-      "score_chat": 94
-    },
-    {
       "model_id": "claude-fable-5",
       "name": "Claude Fable 5",
       "vendor": "Anthropic",
@@ -70,7 +43,7 @@
         "image"
       ],
       "context_window": 200000,
-      "input_price_per_1m": 7.5,
+      "input_price_per_1m": 5.0,
       "output_price_per_1m": 30.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
@@ -97,8 +70,8 @@
         "image"
       ],
       "context_window": 1000000,
-      "input_price_per_1m": 0.5,
-      "output_price_per_1m": 2.0,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 84.0,
@@ -178,7 +151,7 @@
         "image"
       ],
       "context_window": 200000,
-      "input_price_per_1m": 3.0,
+      "input_price_per_1m": 2.5,
       "output_price_per_1m": 15.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
@@ -205,8 +178,8 @@
         "image"
       ],
       "context_window": 131072,
-      "input_price_per_1m": 5.0,
-      "output_price_per_1m": 25.0,
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 6.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 86.6,
@@ -245,33 +218,6 @@
       "score_reasoning": 78,
       "score_image": 80,
       "score_chat": 79
-    },
-    {
-      "model_id": "step-edge",
-      "name": "Step Edge",
-      "vendor": "StepFun",
-      "open_source": false,
-      "tier": "standard",
-      "categories": [
-        "chat",
-        "reasoning",
-        "coding",
-        "image"
-      ],
-      "context_window": 128000,
-      "input_price_per_1m": 0.5,
-      "output_price_per_1m": 2.0,
-      "image_generation_price": "/",
-      "image_edit_price": "/",
-      "benchmark_swe_verified": 74.4,
-      "benchmark_reasoning": 84.0,
-      "benchmark_knowledge": 84.0,
-      "benchmark_chat": 82.0,
-      "composite_score": 80,
-      "score_coding": 80,
-      "score_reasoning": 81,
-      "score_image": 83,
-      "score_chat": 83
     },
     {
       "model_id": "glm-5.2",
@@ -361,8 +307,8 @@
         "coding"
       ],
       "context_window": 200000,
-      "input_price_per_1m": 0.6,
-      "output_price_per_1m": 2.4,
+      "input_price_per_1m": 1.0,
+      "output_price_per_1m": 6.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 72.0,
@@ -569,8 +515,8 @@
         "image"
       ],
       "context_window": 1048576,
-      "input_price_per_1m": 0.15,
-      "output_price_per_1m": 0.6,
+      "input_price_per_1m": 1.5,
+      "output_price_per_1m": 9.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 78.8,
@@ -746,30 +692,6 @@
       "score_chat": 58
     },
     {
-      "model_id": "dall-e-3",
-      "name": "DALL-E 3",
-      "vendor": "OpenAI",
-      "open_source": false,
-      "tier": "budget",
-      "categories": [
-        "image"
-      ],
-      "context_window": 0,
-      "input_price_per_1m": 0.0,
-      "output_price_per_1m": 0.0,
-      "image_generation_price": 0.04,
-      "image_edit_price": 0.02,
-      "benchmark_swe_verified": null,
-      "benchmark_reasoning": null,
-      "benchmark_knowledge": null,
-      "benchmark_chat": null,
-      "composite_score": 0,
-      "score_coding": 0,
-      "score_reasoning": 0,
-      "score_image": 0,
-      "score_chat": 0
-    },
-    {
       "model_id": "gemini-3-flash",
       "name": "Gemini 3 Flash",
       "vendor": "Google",
@@ -849,6 +771,110 @@
       "score_reasoning": 41,
       "score_image": 44,
       "score_chat": 43
+    },
+    {
+      "model_id": "step-3.5-flash",
+      "name": "Step 3.5 Flash",
+      "vendor": "StepFun",
+      "open_source": false,
+      "tier": "standard",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding",
+        "image"
+      ],
+      "context_window": 262144,
+      "input_price_per_1m": 0.1,
+      "output_price_per_1m": 0.3,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "benchmark_swe_verified": null,
+      "benchmark_reasoning": null,
+      "benchmark_knowledge": null,
+      "benchmark_chat": null,
+      "composite_score": 0,
+      "score_coding": 0,
+      "score_reasoning": 0,
+      "score_image": 0,
+      "score_chat": 0
+    },
+    {
+      "model_id": "claude-opus-5",
+      "name": "Claude Opus 5",
+      "vendor": "Anthropic",
+      "open_source": false,
+      "tier": "premium",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding",
+        "image"
+      ],
+      "context_window": 1000000,
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 25.0,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "benchmark_swe_verified": null,
+      "benchmark_reasoning": null,
+      "benchmark_knowledge": null,
+      "benchmark_chat": null,
+      "composite_score": 0,
+      "score_coding": 0,
+      "score_reasoning": 0,
+      "score_image": 0,
+      "score_chat": 0
+    },
+    {
+      "model_id": "dall-e-3",
+      "name": "DALL-E 3",
+      "vendor": "OpenAI",
+      "open_source": false,
+      "tier": "budget",
+      "categories": [
+        "image"
+      ],
+      "context_window": 0,
+      "input_price_per_1m": 0.0,
+      "output_price_per_1m": 0.0,
+      "image_generation_price": 0.04,
+      "image_edit_price": 0.02,
+      "benchmark_swe_verified": null,
+      "benchmark_reasoning": null,
+      "benchmark_knowledge": null,
+      "benchmark_chat": null,
+      "composite_score": 0,
+      "score_coding": 0,
+      "score_reasoning": 0,
+      "score_image": 0,
+      "score_chat": 0
+    },
+    {
+      "model_id": "grok-4.3",
+      "name": "Grok 4.3",
+      "vendor": "xAI",
+      "open_source": false,
+      "tier": "budget",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding"
+      ],
+      "context_window": 131072,
+      "input_price_per_1m": 1.25,
+      "output_price_per_1m": 2.5,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "benchmark_swe_verified": null,
+      "benchmark_reasoning": null,
+      "benchmark_knowledge": null,
+      "benchmark_chat": null,
+      "composite_score": 0,
+      "score_coding": 0,
+      "score_reasoning": 0,
+      "score_image": 0,
+      "score_chat": 0
     }
   ]
 }
