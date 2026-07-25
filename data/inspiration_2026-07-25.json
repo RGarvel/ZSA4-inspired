@@ -1,0 +1,78 @@
+[
+  {
+    "id": "insight_2026-07-25_01",
+    "date": "2026-07-25",
+    "type": "industry_insight",
+    "title": "AI芯片军备竞赛：Anthropic-三星合作标志大模型公司自研芯片新阶段",
+    "content": "继OpenAI推出Jalapeño芯片后，Anthropic也转向三星定制AI芯片。头部大模型公司年化收入已接近300亿美元（Claude），使得定制芯片投资变得经济可行。AI算力正从购买英伟达GPU转向为自己设计加速器，将重塑半导体产业链格局。",
+    "related_ids": [
+      "ait-0034",
+      "st-0017"
+    ]
+  },
+  {
+    "id": "insight_2026-07-25_02",
+    "date": "2026-07-25",
+    "type": "industry_insight",
+    "title": "2026年7月=AI模型发布史上最卷一月：四强同台差距缩小",
+    "content": "GPT-5.6、Claude Sonnet 5、Grok 4.5、Kimi K3在两周内密集发布，全球AI格局加速多极化。SWE-bench 76%的得分意味着AI编程助手已开始替代初级工程师。竞争焦点正从模型质量转向推理成本+生态壁垒。",
+    "related_ids": [
+      "ait-0035",
+      "ait-0032"
+    ]
+  },
+  {
+    "id": "insight_2026-07-25_03",
+    "date": "2026-07-25",
+    "type": "startup_advice",
+    "title": "Midjourney收购Co-Star：AI工具公司并购互补App作为平台扩张策略",
+    "content": "Midjourney通过收购Co-Star迈出独立应用第一步。当核心工具触达天花板时，横向收购消费类App可快速获得用户基座和独立分发渠道。重点关注AI+娱乐、AI+生活方式的交叉收购机会。",
+    "related_ids": [
+      "ait-0031",
+      "st-0015"
+    ]
+  },
+  {
+    "id": "insight_2026-07-25_04",
+    "date": "2026-07-25",
+    "type": "side_project",
+    "title": "灵感：做一个AI驱动的Kimi K3幻觉率实时监控面板",
+    "content": "Kimi K3开放权重时独立测试显示51%幻觉率。构建一个侧项目——实时benchmark各种开源前沿模型的幻觉率，比较GPT-5.6/Claude Sonnet 5/Grok 4.5/Kimi K3在不同场景下的可靠性。目标用户是企业开发者做模型选型时的决策参考。",
+    "related_ids": [
+      "ait-0032",
+      "ait-0035"
+    ]
+  },
+  {
+    "id": "insight_2026-07-25_05",
+    "date": "2026-07-25",
+    "type": "side_project",
+    "title": "灵感：Agentic Product Management Agent基于Akeneo Ziggy思路",
+    "content": "Akeneo发布Agentic Ziggy证明agentic AI正在从聊天/编程扩展到传统B2B软件领域。可以构建MVP：为电商卖家做智能产品上架Agent——自动从图片提取属性、生成多语言描述、检测数据不一致。用免费/低价API实现。",
+    "related_ids": [
+      "pt-0010"
+    ]
+  },
+  {
+    "id": "insight_2026-07-25_06",
+    "date": "2026-07-25",
+    "type": "tech_trend",
+    "title": "ROMS-IMLE：单步图像生成进入实战时代",
+    "content": "ROMS-IMLE论文展示极简单步扩散建模方法，推理速度提升100倍。AI图像生成从等待几分钟渲染迈向实时预览编辑阶段。结合Midjourney也在做独立App，预计2026年底将出现支持实时迭代的首款消费级AI图像应用。",
+    "related_ids": [
+      "ap-0012",
+      "ait-0031"
+    ]
+  },
+  {
+    "id": "insight_2026-07-25_07",
+    "date": "2026-07-25",
+    "type": "startup_advice",
+    "title": "VC资金高度集中：超级基金拿走70%募资——中小创业融资路径分析",
+    "content": "华尔街日报报告显示2026上半年VC募资724亿但16个超级基金拿走70%。创业者策略：(1)瞄准被覆盖的赛道但找更灵活的早期基金；(2)关注传统金融机构入场的垂直机会如花旗2500万投入AI+住房科技；(3)自举路线可能比硬冲VC更务实。",
+    "related_ids": [
+      "st-0018",
+      "st-0019"
+    ]
+  }
+]
