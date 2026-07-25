@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-19",
+  "total_items": 91,
+  "insights": [
+    {
+      "type": "industry_insight",
+      "title": "AI 技术重大事件",
+      "summary": "今日 2 条重大事件：Moonshot AI 发布 Kimi K3：首个开源 2.8 万亿参数 MoE 模型...",
+      "tags": [
+        "重大事件",
+        "AI技术"
+      ]
+    },
+    {
+      "type": "startup_advice",
+      "title": "创业动态与融资",
+      "summary": "今日 22 条创业新闻，关注 IPO、融资、行业趋势。",
+      "tags": [
+        "创业",
+        "融资",
+        "IPO"
+      ]
+    },
+    {
+      "type": "side_project",
+      "title": "arXiv 论文追踪器",
+      "summary": "利用每日 arXiv 数据构建个性化研究追踪系统，按兴趣标签过滤论文，自动生成中文摘要。",
+      "tags": [
+        "arXiv",
+        "学术研究",
+        "NLP"
+      ]
+    },
+    {
+      "type": "side_project",
+      "title": "Product Hunt 新品监控平台",
+      "summary": "聚合 PH 每日新品数据，按分类统计热度趋势，结合用户兴趣推荐相关产品。",
+      "tags": [
+        "Product Hunt",
+        "推荐系统",
+        "SaaS"
+      ]
+    }
+  ]
+}
