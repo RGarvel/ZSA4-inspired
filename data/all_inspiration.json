@@ -808,5 +808,341 @@
     "original_language": "en",
     "importance": 3,
     "is_major_event": false
+  },
+  {
+    "id": "ai_tech_013",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI Confirms ChatGPT Is Down Worldwide — July 25, 2026",
+    "raw_summary": "OpenAI confirmed on July 25, 2026 that ChatGPT is down worldwide. The outage affects global access to its flagship AI assistant platform. This incident disrupts millions of daily users and underscores continued reliance on OpenAI's infrastructure.",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
+    "keywords": [
+      "ChatGPT",
+      "OpenAI",
+      "outage",
+      "downtime"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_014",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Netflix Reports AI Tools Used in ~300 Shows and Movies in 2026",
+    "raw_summary": "Google News highlights that Netflix reported AI tools were used in around 300 of its shows and movies in 2026 so far, marking a massive adoption of AI content production tools by major studios.",
+    "source": "Yahoo Finance / Google News",
+    "url": "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB",
+    "keywords": [
+      "Netflix",
+      "AI production",
+      "content creation",
+      "Hollywood"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_015",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Researchers Explore Classroom Applications of AI New Learning Platforms",
+    "raw_summary": "July 25, 2026: Researchers published findings exploring how AI-powered learning platforms can be applied in classroom settings, assessing teacher practices and student reading achievement using PISA 2018 data alongside modern AI tools.",
+    "source": "Phys.org",
+    "url": "https://phys.org/news/2026-07-explore-classroom-applications-ai-platforms.html",
+    "keywords": [
+      "education",
+      "AI in classrooms",
+      "learning platforms",
+      "PISA"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_013",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Proaction Raises $4.2M for AI-Native Fleet Management Technology",
+    "raw_summary": "Proaction, an AI-native fleet management technology and services company based in Des Moines, IA, announced a $4.2 million funding round, marking continued investor confidence in AI-optimized logistics operations.",
+    "source": "VC News Daily",
+    "url": "https://vcnewsdaily.com/",
+    "keywords": [
+      "fleet management",
+      "AI logistics",
+      "Series seed",
+      "Des Moines"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_014",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Katalyze AI Raises $10.5M for AI Biomanufacturing",
+    "raw_summary": "Katalyze AI announced a $10.5 million funding round for AI-driven biomanufacturing in Mountain View, backed by Alumni Ventures, Bonfire Ventures, Farzad Soleimani, Inovia Capital and others.",
+    "source": "Scouts by Yutori",
+    "url": "https://scouts.yutori.com/68f22e10-d5fe-4e94-b1c8-9c6218cfdb2c",
+    "keywords": [
+      "biomanufacturing",
+      "AI biotech",
+      "Katalyze AI",
+      "Series seed"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_015",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Glacis Labs Closes $6.8M Seed for Crypto Infrastructure",
+    "raw_summary": "Glacis Labs, a crypto infrastructure company, announced the close of a $6.8 million seed funding round led by Lightspeed Faction, highlighting continued VC interest in blockchain and crypto infrastructure.",
+    "source": "VC News Daily",
+    "url": "https://vcnewsdaily.com/",
+    "keywords": [
+      "crypto infrastructure",
+      "seed funding",
+      "Lightspeed Faction",
+      "blockchain"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "product_009",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "ActiveCampaign Releases Google Ads Connector for Active Intelligence Platform",
+    "raw_summary": "On July 22, 2026, ActiveCampaign released a Google Ads connector for its Active Intelligence marketing automation platform. The tool uses ML to match customer data to Google Ads target profiles and generate campaign assets via automated prompts.",
+    "source": "MarTech",
+    "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
+    "keywords": [
+      "marketing automation",
+      "ActiveCampaign",
+      "Google Ads",
+      "ML matching"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "product_010",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "AllyHub Launches Ecommerce Browser Extension for AI Content Generation",
+    "raw_summary": "AllyHub launched an ecommerce browser extension that automates content production workflows, using AI to generate text and images directly inside the seller dashboard based on user specifications.",
+    "source": "MarTech",
+    "url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
+    "keywords": [
+      "ecommerce",
+      "content generation",
+      "browser extension",
+      "AllyHub"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_044",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+    "raw_summary": "Despite rapid progress, most existing vision-language models (VLMs) built from 2D visual inputs often struggle when handling various 3D tasks that require fine-grained spatial understanding and reasoning. To bridge this gap, we present VLM-IE3D, a unified framework that enhances the 3D spatial awareness of VLMs by equipping them with both implicit and explicit 3D geometries learned from RGB videos",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21595v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_045",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Expanding Flow Maps",
+    "raw_summary": "Flow-based generative models have enabled remarkable progress in fast and controllable generation across continuous and discrete state spaces, yet existing parameterizations are constrained to fixed dimensions or fixed sequence lengths. Here, we introduce Expanding Generative Flows (EFlows), which define flows between distributions of increasing dimensionality along an expanding interpolant that g",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21585v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_046",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "GraphVid: Interactive Graph-Controllable Video Generation",
+    "raw_summary": "Controllable video generation remains challenging due to the difficulty of specifying precise multi-object interactions using text prompts or motion-control inputs that primarily constrain pixel movement. In practice, trajectory-based control often requires users to draw accurate tracks for multiple objects, which scales poorly with scene complexity and becomes ambiguous under occlusion or overlap",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21580v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_047",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+    "raw_summary": "Barzilai--Borwein (BB) method has shown strong practical performance in continuous optimization, yet its convergence dynamics remains poorly understood. In particular, a central unresolved question is whether BB converges superlinearly for almost every strictly convex quadratic problem and initialization. We provide a negative answer to this question. Specifically, for every finite dimension $n\\ge",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21579v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_048",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Synthetic data generation framework for quality control automation in gravure printing",
+    "raw_summary": "Quality control in printing, particularly in rotogravure printing, still depends on slow, costly, and subjective manual inspection. Automated surface defect detection is critical for maintaining high-quality standards in rotogravure printing. Deep learning models give prospects for automation. However, training robust deep learning models, such as YOLO or Vision Transformers, is heavily hindered b",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21577v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_049",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Surprisal Theory is Tautological (without Rational Grounding)",
+    "raw_summary": "Surprisal theory holds that the human processing difficulty of a linguistic unit in context is an affine function of its surprisal under some language model. I argue this claim is a tautology without further constraint: for any non-negative difficulty measure over units in context, there exists a language model whose surprisal is an affine function of it under mild technical conditions. Therefore,",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21574v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_050",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+    "raw_summary": "Faithful explanations of time-series classifiers should identify subsequences that are not only sufficient to preserve a black-box model's prediction, but also necessary for maintaining it. However, existing sufficiency-oriented methods can assign high importance to spurious subsequences that support the prediction without being essential to the model's decision. We introduce \\textbf{TimePNS}, a n",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21573v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_051",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
+    "raw_summary": "Large Language Models (LLMs) show promise for medical education, but most existing systems focus on localized interactions such as question answering or single-turn feedback, rather than organizing an entire clinical case into a decision-centered learning trajectory. We introduce \\textit{MedGame}, a framework that transforms static clinical cases into structured, executable storytelling games. Med",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21570v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_052",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling",
+    "raw_summary": "Molecular property prediction from structure often uses a single representative conformation, even though many molecules exist as conformational ensembles in solution. We introduce EnsembleEGNN, a molecular ensemble foundation model that encodes an ensemble by first encoding each conformer with shared Equivariant Graph Neural Network (EGNN) layers, then pooling the resulting conformer representati",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21561v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_053",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Unsupervised Consensus-Based Anomaly Detection for Spatiotemporal Malaria Incidence in Ghana",
+    "raw_summary": "A consensus anomaly detection framework was applied to monthly malaria surveillance data from Ghana (2014-2023) to identify atypical transmission patterns. Anomalies were highly structured in space and time. Ashanti and Northern Regions accounted for most recurrent anomalies, with persistent hotspots at Tamale, Kumasi, and Accra. A key finding was the spatial distinction between anomaly burden (cu",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21559v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_054",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
+    "raw_summary": "Building socially calibrated large language models, which can learn from others without simply yielding to them, requires more than reducing sycophancy as a one-dimensional failure mode. Models must distinguish when to incorporate others' perspectives from when to maintain a well-grounded moral judgment. We study the broader resistance-compliance process governing this distinction. Across three st",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21558v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_055",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+    "raw_summary": "Modern AI agents rely on elaborate inference harnesses such as Claude Code, Codex, and OpenClaw to drive multi-turn reasoning, tool use, and access to external systems. While powerful, these complex harnesses also make agents hard to train end-to-end with open infrastructure, whose SFT/RL stacks cannot natively express stateful, multi-process harness inference. To address this, we present OpenForg",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21557v1",
+    "keywords": [
+      "AI",
+      "research"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   }
 ]

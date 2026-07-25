@@ -1,24 +1,89 @@
 {
   "date": "2026-07-25",
-  "total_items": 43,
-  "ai_tech": 12,
-  "startup": 10,
-  "product_tool": 7,
-  "academic_paper": 14,
-  "new_from_search": 0,
-  "freshness_filtered": 0,
-  "dedup_removed": 0,
-  "major_events_count": 2,
+  "total_items": 20,
   "insights": [
     {
       "type": "industry_insight",
-      "title": "AI Model Wars Intensify with Claude Opus 5, Gemini 3.6 Flash, and Kimi K3 Dominating July 2026",
-      "summary": "Three major frontier model releases in a single week signal the industry's pivot from parameter arms races to practical efficiency. Claude Opus 5 offers near Fable 5 at half price, Gemini 3.6 Flash cuts costs 17% while improving performance, and Moonshot's Kimi K3 at 2.8T parameters approaches frontier benchmarks at 1/3 the cost."
+      "title": "AI在影视制作领域的大规模落地：Netflix使用300部作品的启示",
+      "summary": "Netflix报告2026年已有约300部影视作品使用了AI工具，标志着AI从实验性技术转向主流生产力基础设施，预示内容行业对AI的采纳正在加速。",
+      "related_ids": [
+        "ai_tech_014"
+      ]
+    },
+    {
+      "type": "industry_insight",
+      "title": "OpenAI全球宕机暴露AI基础设施单点风险",
+      "summary": "ChatGPT在7月25日全球瘫痪，再次提醒市场对单一平台的过度依赖。企业级用户应推动多供应商策略和降级方案以降低停机风险。",
+      "related_ids": [
+        "ai_tech_013"
+      ]
+    },
+    {
+      "type": "industry_insight",
+      "title": "AI教育应用研究进入实证阶段：从概念验证到PISA数据分析",
+      "summary": "研究人员开始用PISA等大型数据集评估AI学习平台对课堂的实际效果，AI教育正从早期的概念演示进入严格的实证检验阶段。",
+      "related_ids": [
+        "ai_tech_015"
+      ]
+    },
+    {
+      "type": "startup_advice",
+      "title": "生物制造AI赛道持续升温：Katalyze AI融资1050万美元启示",
+      "summary": "AI+生物制造赛道获得Alumni Ventures、Inovia Capital等知名机构投资，说明投资人看好AI对制药流程的颠覆能力，适合考虑切入这个交叉领域的团队。",
+      "related_ids": [
+        "startup_014"
+      ]
+    },
+    {
+      "type": "startup_advice",
+      "title": "物流科技AI化：Proaction 420万融资验证细分场景机会",
+      "summary": "车队管理这种传统行业的AI改造仍在获得VC资金，证明垂直领域的AI工具化仍然有大量未饱和的市场空白，特别是运营复杂度高的场景。",
+      "related_ids": [
+        "startup_013"
+      ]
+    },
+    {
+      "type": "startup_advice",
+      "title": "加密基建仍是融资热点：Glacis Labs 680万种子轮",
+      "summary": "尽管加密市场波动，Crypto基础设施建设仍获Lightspeed Faction等机构支持，说明硬核底层技术融资窗口并未关闭。",
+      "related_ids": [
+        "startup_015"
+      ]
     },
     {
       "type": "side_project",
-      "title": "Computer-Use Agent Infrastructure Plays Emerge as Key Investment Theme",
-      "summary": "With Prentis ($100M round for computer-use models), JetBrains Air ACP support, and AMD's physical AI focus converging, there's an opportunity in building specialized agent tooling — either a vertical automation platform or infrastructure layer for multi-agent workflows."
+      "title": "电商卖家自动生成商品图文：AllyHub模式可复制为独立SaaS",
+      "summary": "AllyHub展示了用AI为电商卖家自动生成商品文案和图片的需求，开发者可针对Shopify/WooCommerce等平台构建类似的垂直工具作为独立项目。",
+      "related_ids": [
+        "product_010"
+      ]
+    },
+    {
+      "type": "side_project",
+      "title": "AI营销自动化工具：ActiveCampaign的Google Ads连接器思路",
+      "summary": "ML匹配客户数据到广告受众再自动生成素材的闭环，是一个小而精的独立产品方向，可以开发Chrome扩展或API服务服务中小营销团队。",
+      "related_ids": [
+        "product_009"
+      ]
+    },
+    {
+      "type": "side_project",
+      "title": "arXiv论文可视化阅读器 — 利用今天12篇最新CS论文",
+      "summary": "今天arXiv的cs.AI/cs.LG/cs.CL论文涵盖了3D视觉VLM、图视频生成、合成数据质量控制、时间序列解释、医疗LLM游戏化等多个方向，非常适合构建一个论文摘要聚合工具来服务中文开发者社区。",
+      "related_ids": [
+        "paper_015",
+        "paper_016",
+        "paper_017",
+        "paper_018",
+        "paper_019",
+        "paper_020",
+        "paper_021",
+        "paper_022",
+        "paper_023",
+        "paper_024",
+        "paper_025",
+        "paper_026"
+      ]
     }
   ]
 }
