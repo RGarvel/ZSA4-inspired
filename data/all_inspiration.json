@@ -1355,5 +1355,353 @@
     "original_language": "en",
     "importance": 3,
     "is_major_event": false
+  },
+  {
+    "date": "2026-07-25",
+    "total_items": 18,
+    "insights": [
+      {
+        "type": "industry_insight",
+        "title": "AI代理正式成为团队一员：Buzz平台将加密身份赋予AI",
+        "summary": "Block的Buzz平台让AI代理以自身加密身份加入团队频道，标志着AI从工具到团队成员的身份跃迁。配合Claude Opus 5和GPT-5.6的分层定价策略，自主代理的成本正在快速下降。",
+        "related_ids": [
+          "ai_tech_018",
+          "ai_tech_017",
+          "ai_tech_023"
+        ]
+      },
+      {
+        "type": "industry_insight",
+        "title": "Anthropic Claude Opus 5以一半价格逼近Fable 5，行业进入成本竞争时代",
+        "summary": "Opus 5在编码和知识工作上超越Fable 5且定价仅为其一半，加上推理token用量减少85%，标志着大模型竞争从单纯追求性能转向性价比综合比拼，可能加速中小企业采用AI。",
+        "related_ids": [
+          "ai_tech_017"
+        ]
+      },
+      {
+        "type": "risk_alert",
+        "title": "ChatGPT全球宕机再度敲响AI基础设施依赖警钟",
+        "summary": "2026年7月25日ChatGPT再次全球瘫痪，叠加三星AI芯片需求的极度集中，反映出整个AI产业在基础设施层面的脆弱性——无论是软件服务还是硬件供应链。",
+        "related_ids": [
+          "ai_tech_016",
+          "ai_tech_023"
+        ]
+      },
+      {
+        "type": "startup_advice",
+        "title": "物理AI赛道爆发：Atoms获17亿美元印证工业AI新纪元",
+        "summary": "Uber创始人Kalanick的物理AI公司Atomics获a16z 17亿融资，叠加三星HBM利润暴增18倍，说明AI正从纯软件向物理世界扩展。采矿、运输、制造等实体行业的自动化机会巨大。",
+        "related_ids": [
+          "startup_016",
+          "ai_tech_023"
+        ]
+      },
+      {
+        "type": "product_opportunity",
+        "title": "AI让软件变便宜后的第二波机会：产品决策工具需求涌现",
+        "summary": "Votito聚焦AI降低编程成本后新出现的瓶颈——产品方向判断。这揭示了AI生态中一个被忽视的薄弱环节：不是不会写代码，而是不知道写什么。面向中小团队的AI辅助产品决策工具是一个值得探索的方向。",
+        "related_ids": [
+          "startup_017"
+        ]
+      },
+      {
+        "type": "security_insight",
+        "title": "五国联合指南 + 行动安全性研究揭示Agentic AI安全隐忧",
+        "summary": "美英加澳新发布Agentic AI安全指南与学术研究'言行不一'现象互相呼应——AI在文字层面表现合规但行动上可能存在风险。随着Agent被部署到更多关键场景，这个漏洞需要优先解决。",
+        "related_ids": [
+          "paper_030",
+          "paper_029"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "id": "ai_tech_016",
+        "title": "OpenAI ChatGPT全球宕机：数百万用户中断服务",
+        "description": "2026年7月25日，ChatGPT和Codex同时遭遇全球性宕机，影响网页和移动端。这是2026年7月的又一次重大宕机事件，凸显市场对单一AI平台的过度依赖风险。",
+        "category": "ai_tech",
+        "type": "outage",
+        "importance": 9,
+        "source_url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-confirms-chatgpt-is-down-worldwide/",
+        "source_title": "BleepingComputer - OpenAI confirms ChatGPT is down worldwide",
+        "tags": [
+          "chatgpt",
+          "outage",
+          "reliability",
+          "infrastructure"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "ai_tech_017",
+        "title": "Anthropic发布Claude Opus 5：成本减半性能逼近Fable 5",
+        "description": "2026年7月24日Anthropic发布Claude Opus 5，定价$5/$25每百万token，仅为Fable 5的一半成本。在Frontier-Bench和GDPval-AA等评测中创下新SOTA，编码和知识工作超越Fable 5，推理token用量减少85%。",
+        "category": "ai_tech",
+        "type": "model_release",
+        "importance": 10,
+        "source_url": "https://www.anthropic.com/news/claude-opus-5",
+        "source_title": "Anthropic - Introducing Claude Opus 5",
+        "tags": [
+          "anthropic",
+          "claude",
+          "opus-5",
+          "pricing"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "ai_tech_018",
+        "title": "Block Jack Dorsey推出Buzz：基于Nostr的去中心化AI协作平台",
+        "description": "2026年7月21日Block发布Buzz，构建在去中心化Nostr协议上的开源协作平台。AI代理以加密身份加入频道线程与人类平等协作，支持Claude Code、Codex等多模型，功能涵盖群聊、代码仓库和自动化工作流。",
+        "category": "ai_tech",
+        "type": "product_launch",
+        "importance": 8,
+        "source_url": "https://decrypt.co/374026/jack-dorseys-block-launches-buzz-a-nostr-based-slack-and-github-rival-for-ai-agents",
+        "source_title": "Decrypt - Jack Dorsey Block Launches Buzz on Nostr",
+        "tags": [
+          "decentralized",
+          "nostr",
+          "collaboration",
+          "agents"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "ai_tech_019",
+        "title": "Meta Muse Spark 1.1：低价API驱动自主代理开发",
+        "description": "2026年7月9日Meta发布Muse Spark 1.1，首个付费开发者API模型，专为自主任务设计。支持多代理编排、100万token上下文压缩、计算机控制和工具使用。",
+        "category": "ai_tech",
+        "type": "model_release",
+        "importance": 7,
+        "source_url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+        "source_title": "TechCrunch - Meta Muse Spark 1.1",
+        "tags": [
+          "meta",
+          "muse-spark",
+          "agentic"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "ai_tech_020",
+        "title": "Qwen Image 3.0发布：复杂视觉内容生成新标杆",
+        "description": "2026年7月21日阿里通义发布Qwen Image 3.0，支持长结构提示词、可读小文本、多语言图形和复杂布局的AI图像生成与编辑。",
+        "category": "ai_tech",
+        "type": "model_release",
+        "importance": 6,
+        "source_url": "https://qwen.ai/home",
+        "source_title": "Qwen - Qwen Image 3.0 Release",
+        "tags": [
+          "qwen",
+          "image-generation",
+          "open-source"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "ai_tech_021",
+        "title": "GPT-5.6全线上架：Sol/Terra/Luna三分架构",
+        "description": "2026年7月9日GPT-5.6正式版发布，首次采用命名体系分为三档：Sol旗舰、Terra付费默认、Luna 150万token深度代理。覆盖ChatGPT、Codex和API。",
+        "category": "ai_tech",
+        "type": "model_release",
+        "importance": 7,
+        "source_url": "https://wireread.com/news/gpt-5-6-family-terra-default-efficiency-analysis",
+        "source_title": "WireRead - GPT-5.6 Three Tiers",
+        "tags": [
+          "openai",
+          "gpt-5.6",
+          "tiering"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "ai_tech_022",
+        "title": "Claude Sonnet 5发布：近Opus级性能加出口管制解除",
+        "description": "2026年7月1日Anthropic发布Claude Sonnet 5，具备接近Opus 4.8的性能和强大自主代理能力。同日美国解除Fable 5和Mythos 5出口管制。",
+        "category": "ai_tech",
+        "type": "model_release",
+        "importance": 7,
+        "source_url": "https://www.anthropic.com/news/claude-sonnet-5",
+        "source_title": "Anthropic - Claude Sonnet 5",
+        "tags": [
+          "anthropic",
+          "claude",
+          "sonnet-5"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "startup_016",
+        "title": "Travis Kalanick Atoms获17亿美元物理AI融资",
+        "description": "Uber联合创始人Kalanick旗下Atomics公司获得a16z领投17亿美元，用于工业AI（采矿、运输、食品生产）的物理AI开发。",
+        "category": "startup",
+        "type": "funding_round",
+        "importance": 10,
+        "source_url": "https://finance.yahoo.com/technology/ai/articles/kalanick-atoms-raises-1-7b-212701007.html",
+        "source_title": "Yahoo Finance - Atoms raises $1.7B",
+        "tags": [
+          "physical-ai",
+          "robotics",
+          "industrial",
+          "funding"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "startup_017",
+        "title": "Votito发布：AI让写代码变廉价后的产品管理新范式",
+        "description": "2026年7月20日伦敦Votito发布，聚焦应该建造什么而非如何建造。AI大幅降低软件生产成本后，产品方向判断成为新瓶颈。",
+        "category": "startup",
+        "type": "product_launch",
+        "importance": 6,
+        "source_url": "https://www.globenewswire.com/news-release/2026/07/20/3330043/0/en/AI-Made-Building-Software-Cheap-Votito-Launches-to-Answer-the-Harder-Question-What-to-Build.html",
+        "source_title": "GlobeNewswire - Votito Launch",
+        "tags": [
+          "product-management",
+          "ai-paradox"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "startup_018",
+        "title": "美国VC上半年投资达4127亿：超81%流入大轮次",
+        "description": "PitchBook数据：2026年上半年美国风投融资创历史新高4127亿美元，但超81%集中在1亿美元以上轮次。早期融资空间被挤压。",
+        "category": "startup",
+        "type": "market_analysis",
+        "importance": 6,
+        "source_url": "https://techstartups.com/2026/07/23/venture-capital-startup-funding-roundup-july-23-2026/",
+        "source_title": "Tech Startups - VC Roundup",
+        "tags": [
+          "vc",
+          "funding-market"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "product_011",
+        "title": "Buzz协作平台上线：AI代理获加密身份参与团队工作",
+        "description": "Block推出的Buzz允许AI代理以自身加密身份加入频道，支持多模型集成，是AI代理作为正式成员理念的首个落地实践。",
+        "category": "product",
+        "type": "product_launch",
+        "importance": 7,
+        "source_url": "https://daily.dev/posts/jack-dorsey-launches-buzz-an-open-source-workspace-that-gives-ai-agents-their-own-cryptographic-ide-hgwavymmw",
+        "source_title": "daily.dev - Buzz launch",
+        "tags": [
+          "collaboration",
+          "nostr",
+          "agents"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "product_012",
+        "title": "Oracle AI Agent Studio新能力：原生开发融合应用",
+        "description": "2026年7月14日Oracle宣布为Fusion Applications推出AI原生构建体验，让开发者和编码代理直接创建Agentic Applications。",
+        "category": "product",
+        "type": "product_update",
+        "importance": 5,
+        "source_url": "https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/",
+        "source_title": "Oracle News - AI Builder Experience",
+        "tags": [
+          "oracle",
+          "agent-studio",
+          "enterprise"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "product_013",
+        "title": "Sim开源AI代理构建工作空间获595票推荐",
+        "description": "Sim是开源AI代理和工作流构建工作空间，支持可视化/对话式/编码方式，1000+集成和主流LLM支持，PH获595票。",
+        "category": "product",
+        "type": "product_launch",
+        "importance": 5,
+        "source_url": "https://startupcorners.com/digest/product-digest-2026-07-11",
+        "source_title": "Startup Corners - Product Digest",
+        "tags": [
+          "sim",
+          "open-source",
+          "agent-workspace"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "paper_027",
+        "title": "LLM-INSTRUCT：UN决议段落级论点挖掘冠军方案",
+        "description": "arXiv:2607.20430v1提出LLM-INSTRUCT，在ArgMining 2026共享任务中获得冠军，专注段落级别论点挖掘。",
+        "category": "academic",
+        "type": "paper",
+        "importance": 3,
+        "source_url": "https://llm-stats.com/ai-news",
+        "source_title": "LLM Stats - arXiv:2607.20430",
+        "tags": [
+          "argument-mining",
+          "llm"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "paper_028",
+        "title": "超双曲Busemann神经网络：层次化数据的自然几何表示",
+        "description": "利用超双曲空间的指数体积增长特性来表示层次化和树状数据，在图网络和层级推理场景下有重要应用。",
+        "category": "academic",
+        "type": "paper",
+        "importance": 3,
+        "source_url": "https://opensource.fiai.online/news/hyperbolic-busemann-neural-networks/",
+        "source_title": "AI News Hub - Hyperbolic Busemann NN",
+        "tags": [
+          "hyperbolic-geometry",
+          "neural-networks"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "paper_029",
+        "title": "Safe but Dangerous：LLM行动安全性探针研究",
+        "description": "LLM文字层面安全但在行动上可能造成物理伤害，研究者构建了避免明显有害词汇的危险行动基准测试来探测此漏洞。",
+        "category": "academic",
+        "type": "paper",
+        "importance": 4,
+        "source_url": "https://hevolve.ai/research/when-words-are-safe-but-actions-kill",
+        "source_title": "Hevolve Research - Safe But Actions Kill",
+        "tags": [
+          "safety",
+          "alignment"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "paper_030",
+        "title": "五国联合指南：Agentic AI在关键基础设施中的安全风险",
+        "description": "美英加澳新五国发布Careful Adoption of Agentic AI Services联合指南，针对AI智能体在关键基础设施中的安全风险提供官方指导。",
+        "category": "academic",
+        "type": "policy",
+        "importance": 6,
+        "source_url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+        "source_title": "Crescendo - Agentic AI Guidance",
+        "tags": [
+          "policy",
+          "regulation",
+          "national-security"
+        ],
+        "date": "2026-07-25"
+      },
+      {
+        "id": "ai_tech_023",
+        "title": "三星Q2利润飙升18倍：AI内存芯片需求爆发",
+        "description": "三星预计2026年Q2营业利润达58.56万亿韩元（同比增1811%），主要由HBM等AI内存芯片需求推动，Memory部门销售额季度环比增长86%。",
+        "category": "ai_tech",
+        "type": "industry",
+        "importance": 7,
+        "source_url": "https://digg.com/tech/bl1l7z6j",
+        "source_title": "Digg - Samsung profit surge",
+        "tags": [
+          "samsung",
+          "hbm",
+          "memory-chips"
+        ],
+        "date": "2026-07-25"
+      }
+    ]
   }
 ]
