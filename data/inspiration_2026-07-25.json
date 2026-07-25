@@ -6,19 +6,19 @@
   "product_tool": 7,
   "academic_paper": 14,
   "new_from_search": 0,
-  "freshness_filtered": 2,
-  "dedup_removed": 1,
+  "freshness_filtered": 0,
+  "dedup_removed": 0,
   "major_events_count": 2,
   "insights": [
     {
       "type": "industry_insight",
-      "title": "AI Market Shifts Toward Cost-Efficiency and Agent Automation",
-      "summary": "With 5 items in our data covering cost-optimized models and agent platforms, the AI industry is decisively shifting from pure performance arms races toward practical efficiency and automation. Key movers: Anthropic Releases Claude Opus 5 — Near Fable 5 Performance , DigitalOcean Launches Model Synthesis — Server-Side AI Tool , DigitalOcean Model Synthesis — Server-Side Tool Outperformin."
+      "title": "AI Model Wars Intensify with Claude Opus 5, Gemini 3.6 Flash, and Kimi K3 Dominating July 2026",
+      "summary": "Three major frontier model releases in a single week signal the industry's pivot from parameter arms races to practical efficiency. Claude Opus 5 offers near Fable 5 at half price, Gemini 3.6 Flash cuts costs 17% while improving performance, and Moonshot's Kimi K3 at 2.8T parameters approaches frontier benchmarks at 1/3 the cost."
     },
     {
       "type": "side_project",
-      "title": "AI Automation Tooling Vertical Opportunity",
-      "summary": "With 5 agents/workflow-related items in this round, building a specialized vertical automation platform for industries like insurance, banking, or legal document processing could capture value from the converging trends of computer-use models, agent protocols (ACP), and enterprise AI adoption."
+      "title": "Computer-Use Agent Infrastructure Plays Emerge as Key Investment Theme",
+      "summary": "With Prentis ($100M round for computer-use models), JetBrains Air ACP support, and AMD's physical AI focus converging, there's an opportunity in building specialized agent tooling — either a vertical automation platform or infrastructure layer for multi-agent workflows."
     }
   ]
 }
