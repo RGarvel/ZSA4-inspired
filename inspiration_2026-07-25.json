@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-25",
+  "total_new": 38,
+  "categories": {
+    "startup": 9,
+    "academic_paper": 9,
+    "ai_tech": 14,
+    "product_tool": 6
+  },
+  "major_events": 9,
+  "insights": [
+    {
+      "type": "industry_insight",
+      "title": "AI推理架构正在分裂：专用硬件分工取代单芯片通吃",
+      "summary": "AMD+Cerebras拆分prompt处理与token解码、Together AI 8亿美元押注开源推理、Prime Intellect让企业自建agent——三条独立信号指向同一趋势：大模型推理不再是单一GPU方案能解决的，专用化、分布式、开源化的推理基础设施正在成为AI行业的'操作系统层'竞争。",
+      "related_ids": [
+        "2026-07-25_ai_002",
+        "2026-07-25_startup_002",
+        "2026-07-25_startup_004"
+      ],
+      "reasoning": "过去一年AI硬件叙事是NVIDIA GPU的绝对垄断。但AMD-Cerebras联合方案直接将推理拆成两个物理任务，各自分配给最优硬件。Together AI获得阿拉伯主权基金8亿注资说明开源推理已不是学术玩具而是有真实商业价值的生产级平台。这标志着AI算力格局从'算力军备竞赛'转向'推理效率竞赛'。"
+    },
+    {
+      "type": "industry_insight",
+      "title": "2.8T开源模型 vs $800M融资：开源AI正以机构资金对抗闭源生态",
+      "summary": "Moonshot以Kimi K3(2.8T MoE)挑战Anthropic Fable 5，Together AI以主权基金8亿美元构建开源推理集群——全球AI资本正在形成两条并行路线：一条是闭源实验室(OpenAI/Anthropic/Google)的垂直整合，另一条是开源+主权资本的分布式联盟。中美AI权力博弈已从技术竞赛升级为资本-数据-算力的全方位体系对抗。",
+      "related_ids": [
+        "2026-07-25_ai_003",
+        "2026-07-25_startup_002",
+        "2026-07-25_ai_010"
+      ],
+      "reasoning": "Kratsios对Moonshot的蒸馏指控和Bessent威胁制裁，本质上是美国对'开源模式可能绕开闭源护城河'的焦虑。沙特主权基金通过Aramco Ventures投资Together AI，说明中东资本正在用真金白银押注开源AI基础设施。这条路线的核心逻辑是：开源权重降低了进入门槛，主权资金解决了规模化训练的资本需求，分布式推理网络降低了地缘风险。"
+    },
+    {
+      "type": "startup_advice",
+      "title": "Physical AI赛道爆发：Robotics独角兽井喷期来临",
+      "summary": "Atoms融资17亿美元(kalanick)、Rhoda AI融资4.5亿美元(video-to-robot)、Sunday Robotics和Mind Robotics同日登上独角兽榜单——Physical AI正经历2021年SaaS的融资狂潮时刻。建议：(1)关注机器人数据飞轮环节(Mecka模式)，(2)利用FutureVision类视频预测控制框架降低机器人训练成本，(3)工业机器人细分领域仍有大量未覆盖场景。",
+      "related_ids": [
+        "2026-07-25_startup_001",
+        "2026-07-25_startup_003"
+      ],
+      "reasoning": "Figure AI以6.75亿美元创纪录后，17亿美元的Atoms说明Physical AI估值在快速上移。值得注意的新趋势是Mecka AI不造机器人而是收集人类日常动作数据——这证明了'机器人数据层'本身就是一个高价值赛道。对于创业者而言，与其直接竞争整机(资本密集)，不如深耕数据、训练框架或垂直场景集成。"
+    },
+    {
+      "type": "startup_advice",
+      "title": "AI Agent治理+安全是下一个$10B机会",
+      "summary": "Glow以AI端点安全获1.8亿A轮($12亿估值)、Prime Intellect提出企业自建agent需要治理工具——随着AI agent从coding扩展到所有操作场景，'如何控制、审计和保障agent行为'将成为企业部署AI的最大阻力点。创业机会在于：agent governance平台、AI安全扫描工具、多agent协作协议栈。",
+      "related_ids": [
+        "2026-07-25_startup_005",
+        "2026-07-25_startup_004",
+        "2026-07-25_academic_008"
+      ],
+      "reasoning": "每个企业都在问'我的agent会不会擅自修改production数据库？'Prime Intellect的论调(企业需要train自己的agent而非API调用)实际上意味着他们同时也需要train自己的agent治理系统。arXiv论文Beyond Sycophancy表明当前LLM在道德推理上的社会校准能力仍不足——这正是enterprise-grade agent治理系统的核心技术缺口。"
+    },
+    {
+      "type": "side_project",
+      "title": "AI model distillation detector：检测模型蒸馏痕迹的工具",
+      "summary": "White House指控Moonshot蒸馏Fable 5后，distillation检测成了一个新需求。可以做一个开源工具：输入两段模型输出日志/behaviour trace，分析是否显示出被蒸馏的特征（例如过度拟合某个目标模型的response分布）。参考J-lens等可解释性技术思路。",
+      "related_ids": [
+        "2026-07-25_ai_003",
+        "2026-07-25_ai_005"
+      ],
+      "reasoning": "这个方向的商业价值：合规审查服务、AI实验室的安全工具、监管机构的取证工具。技术上可以利用注意力模式分析、token distribution divergence、response entropy等指标。Moonshot争议刚刚引爆，这个工具的搜索量和关注度会在接下来几周飙升。"
+    },
+    {
+      "type": "side_project",
+      "title": "Kimi K3本地化部署助手：7月27日权重发布前的预热项目",
+      "summary": "Kimi K3权重7月27日发布，可以在发布前做：(1)一个对比评测网站自动抓取Fable 5/K3/GPT-5.6在各benchmark的表现，(2)推理资源估算器(根据用户GPU配置计算能否run 2.8T模型及quantization策略)，(3)蒸馏教学课程演示如何用较小的模型复现K3的部分能力。",
+      "related_ids": [
+        "2026-07-25_ai_003",
+        "2026-07-25_ai_010",
+        "2026-07-25_ai_004"
+      ],
+      "reasoning": "2.8T MoE模型即使quantized也需要巨大的显存。可以做一个智能量化选择器+部署指南的社区项目。考虑到K3是MIT license开源，开发者社区会有强烈的self-hosting需求。这类内容型side project可以快速积累target audience并在模型权重开放时获得巨大流量。"
+    },
+    {
+      "type": "tech_trend",
+      "title": "Gemini 3.6 Flash + GitHub Copilot集成：AI coding的'中间件战争'",
+      "summary": "Google将Gemini 3.6 Flash直接注入GitHub Copilot、JetBrains Air支持多agent并发运行——IDE正在从编辑工具进化为multi-agent orchestration平台。未来的竞争不是'哪个IDE最好用'，而是'哪个IDE能最好地协调你的agent stack'。",
+      "related_ids": [
+        "2026-07-25_product_002",
+        "2026-07-25_product_003",
+        "2026-07-25_ai_004"
+      ],
+      "reasoning": "VS Code已经是Claude Code+Codex+Copilot的多agent舞台，JetBrains Air正在追赶，Cursor也在加多人协作功能。谁能把IDE变成真正的agent orchestrator，谁就掌握了下一个开发范式入口。"
+    }
+  ]
+}

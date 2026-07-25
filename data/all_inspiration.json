@@ -7707,5 +7707,584 @@
     ],
     "original_language": "zh",
     "raw_summary": "月之暗面（Moonshot AI）于 7 月 16 日正式发布 Kimi K3，这是一个 2.8 万亿参数的混合专家（MoE）模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，原生支持视觉能力。模型拥有 100 万 token 上下文窗口，在 Terminal Bench 2.1 上得分 88.3、FrontierSWE 上 81.2、GPQA-Diamond 上 93.5、MathVision 上 94.3，相比 K2 实现约 2.5 倍的缩放效率提升。完整开源权重计划于 7 月 27 日前释放。发布后 48 小时内需求激增导致 GPU 接近容量上限，Moonshot 于 7 月 19 日宣布暂停新用户订阅。彭博社报道 Moonshot 年化经常性收入已达 3 亿美元，正准备在香港上市。"
+  },
+  {
+    "id": "2026-07-25_ai_001",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Anthropic发布Claude Opus 5：接近Fable 5智能水平，价格减半",
+    "raw_summary": "Anthropic于7月24日发布Claude Opus 5，定位为日常使用模型。它在Frontier-Bench和GDPval-AA上达到新SOTA，接近Claude Fable 5的智能水平但价格减半。定价不变：$5/百万输入token，$25/百万输出token。上下文窗口1M token。默认成为Claude Max的新模型，Pro用户也能体验最强能力。",
+    "source": "Anthropic/TechCrunch",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "keywords": [
+      "Anthropic",
+      "Claude Opus 5",
+      "日常AI",
+      "价格竞争",
+      "Frontier-Bench"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "2026-07-25_ai_002",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "AMD与Cerebras合作推出拆分式AI推理方案，挑战NVIDIA",
+    "raw_summary": "7月23日AMD Advancing AI 2026大会上，AMD与Cerebras宣布技术合作：将AMD Helios机架级解决方案与Cerebras晶圆级引擎(WSE)整合。系统分工处理——AMD负责prompt处理和长上下文，Cerebras WSE负责低延迟解码和token生成。号称实现超高吞吐和超低延迟推理。Lisa Su在主题演讲中展示了这一架构。",
+    "source": "AMD/Cerebras/MarketWatch",
+    "url": "https://www.cerebras.ai/press-release/amd-and-cerebras-announce-industry-leading-ultra-low-latency-and-high-throughput-ai-inference",
+    "keywords": [
+      "AMD",
+      "Cerebras",
+      "推理优化",
+      "Helios",
+      "WSE",
+      "NVIDIA竞争"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "2026-07-25_ai_003",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Moonshot Kimi K3权重即将7月27日发布，White House指控蒸馏Anthropic",
+    "raw_summary": "Moonshot AI于7月16日发布Kimi K3——2.8万亿参数MoE、1M上下文窗口的开放模型。权重将于7月27日发布。7月22日White House科技政策总监Kratsios指控Moonshot通过蒸馏Anthropic Fable 5构建K3，并使用经由泰国转运的禁令Nvidia芯片。财长Bessent警告可能制裁。Moonshot否认，指出Fable仅7月1日才开源、15天训练窗口太短。",
+    "source": "Business Insider/TechCrunch/Bloomberg",
+    "url": "https://www.businessinsider.com/white-house-kimi-k3-moonshot-ai-distillation-2026-7",
+    "keywords": [
+      "Moonshot",
+      "Kimi K3",
+      "蒸馏争议",
+      "出口管制",
+      "中美AI竞争"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "2026-07-25_ai_004",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Google发布Gemini 3.6 Flash及Flash-Lite，GitHub Copilot集成",
+    "raw_summary": "7月21日Google发布三款Gemini模型：Gemini 3.6 Flash（编码/知识工作/多模态改进，更便宜更节省token）、Gemini 3.5 Flash-Lite（加入Google Search）、Gemini 3.5 Flash Cyber（网络安全专用）。同日Gemini 3.6 Flash进入GitHub Copilot，面向Web/应用开发和long-horizon agentic任务。3.6 Flash默认成为GCP的AI工作horse。",
+    "source": "Google DeepMind/9to5Google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+    "keywords": [
+      "Google",
+      "Gemini 3.6",
+      "Flash",
+      "GitHub Copilot",
+      "多模态"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_ai_005",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Anthropic发现Claude内部'全局工作空间'J-space机制",
+    "rawsummary": "Anthropic通过Jacobian-based可解释性技术(J-lens)发现Claude内部约25个活跃概念的微小子空间(不到10%激活方差)，其行为类似于意识神经科学中的全局工作空间理论。移除该内部结构会破坏多步推理但保留流畅性，为团队理解大语言模型复杂推理提供了新视角。",
+    "source": "Anthropic Research/ThursdAI/AIApps",
+    "url": "https://thursdai.news/releases/2026-07",
+    "keywords": [
+      "Anthropic",
+      "可解释性",
+      "全局工作空间",
+      "J-lens",
+      "意识研究"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_ai_006",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI在纽约时报诉讼中被指隐瞒证据",
+    "raw_summary": "《纽约时报》及其他媒体组织起诉OpenAI，指控其隐瞒诉讼证据。这是OpenAI面临的法律挑战之一，涉及AI生成内容版权和数据使用权争议。随着AI与新闻行业的冲突加剧，此类诉讼可能重塑行业格局。",
+    "source": "New York Times",
+    "url": "https://www.nytimes.com/spotlight/artificial-intelligence",
+    "keywords": [
+      "OpenAI",
+      "诉讼",
+      "版权",
+      "纽约时报"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_ai_007",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Netflix报告2026年已用AI工具制作约300部影视节目",
+    "raw_summary": "Google News报道Netflix在2026年至今已将AI工具用于约300部节目和电影的制作，涵盖从后期剪辑到视觉特效等多个环节。这显示流媒体行业对AI工具的规模化采用正在加速。",
+    "source": "Yahoo Finance via Google News",
+    "url": "https://news.google.com/topics/CAAaJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtVnVHZ0pWVXlnQVAB",
+    "keywords": [
+      "Netflix",
+      "AI制作",
+      "影视工业",
+      "规模应用"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_ai_008",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Apple App Store AI应用数量激增，受AI生态驱动增长",
+    "raw_summary": "《纽约时报》报道人工��智能正在推动Apple App Store可用应用数量的激增。AI功能正成为移动应用开发者和企业的重要差异化因素，开发者生态对AI能力的采用速度远超预期。",
+    "source": "New York Times",
+    "url": "https://www.nytimes.com/spotlight/artificial-intelligence",
+    "keywords": [
+      "Apple",
+      "App Store",
+      "AI应用",
+      "移动生态"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_ai_009",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Sam Altman呼吁建立AI新全球秩序，OpenAI在竞争中逐渐落后",
+    "raw_summary": "Fortune报道Sam Altman呼吁建立一个国际论坛来讨论全球AI治理。与此同时，Anthropic在收入方面已经超越OpenAI，并在用户数上缓慢追赶。OpenAI最近披露其年化收入目标为250-330亿美元，但竞争格局正在向Anthropic和Google倾斜。",
+    "source": "Fortune",
+    "url": "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/",
+    "keywords": [
+      "Sam Altman",
+      "OpenAI",
+      "Anthropic",
+      "竞争格局",
+      "AI治理"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_ai_010",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "DeepSeek V4 Pro 80.6% SWE-bench Verified逼近头部闭源编程模型",
+    "raw_summary": "DeepSeek V4 Pro达��80.6%的SWE-bench Verified评分，距离顶级闭源编程模型仅差零点几个百分点。V4 Flash拥有284B参数(13B active)。两者均支持1M token上下文窗口。公开launch预计7月中旬。以MIT许可证发布。",
+    "source": "Shakudo Blog/Augusto Digital",
+    "url": "https://www.shakudo.io/blog/top-9-large-language-models",
+    "keywords": [
+      "DeepSeek",
+      "V4 Pro",
+      "SWE-bench",
+      "编程模型",
+      "MIT许可证"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_startup_001",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Travis Kalanick机器人公司Atoms融资17亿美元创行业纪录",
+    "raw_summary": "Uber联合创始人Travis Kalanick的工业机器人公司Atoms于7月22日宣布融资17亿美元，由a16z领投，Bain Capital、Fifth Wall等参与，Ben Horowitz加入董事会。Uber也参与投资。覆盖自动驾驶采矿、物流和食品机器人，遍及110+城市。此轮是硬件领域最大早期投资之一，超越Figure AI的6.75亿美元。",
+    "source": "TechCrunch/PYMTS",
+    "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
+    "keywords": [
+      "Atoms",
+      "Travis Kalanick",
+      "a16z",
+      "工业机器人",
+      "Physical AI",
+      "17亿美元"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "2026-07-25_startup_002",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Together AI完成8亿美元C轮融资，估值83亿美元",
+    "raw_summary": "7月1日Together AI完成8亿美元C轮融资，由沙特阿美Aramco Ventures领投，General Catalyst、Emergence、Nvidia、Salesforce Ventures参与，估值从33亿飙升至83亿。年收入预订量超11.5亿美元，承诺500MW算力容量。标志开源AI推理从实验性替代方案成为生产级基础设施。",
+    "source": "TechTimes/Corewire/Quartz",
+    "url": "https://www.techtimes.com/articles/319657/20260703/together-ai-raises-800m-open-source-inference-breaks-1b-closed-models-stall.htm",
+    "keywords": [
+      "Together AI",
+      "Aramco Ventures",
+      "开源推理",
+      "800万美元",
+      "AI基础设施"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "2026-07-25_startup_003",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Rhoda AI结束隐身期，4.5亿美元A轮融资发布FutureVision机器人平台",
+    "raw_summary": "经过18个月隐身期后，Rhoda AI于7月初宣布4.5亿美元A轮融资、17亿美元估值。发布FutureVision——基于视频预测控制的机器人智能系统，目标从实验室演示走向真实世界工业环境。Mecka AI同步展示无机器人数据收集方案，预计年收入达1亿美元。",
+    "source": "Robotics Business News/IndexBox",
+    "url": "https://roboticsbusinessnews.com/news/64/2584/rhoda-ai-launches-from-stealth-with-futurevision-robotic-intelligence-platform-and-450m-series-a.html",
+    "keywords": [
+      "Rhoda AI",
+      "FutureVision",
+      "机器人智能",
+      "视频预测控制",
+      "4.5亿美元"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "2026-07-25_startup_004",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Prime Intellect融资1.3亿美元，ARR超1亿美元成独角兽",
+    "raw_summary": "Prime Intellect于7月8日完成1.3亿美元A轮融资、10亿美元估值，Radical Ventures领投，NVIDIA Ventures和Intel Capital参与。公司成立仅两年即成独角兽，ARR已超1亿美元。核心论点：企业AI不是仅靠API调用大模型，而是训练自己的agent。提供计算资源和工具让企业自建和管理AI agent。",
+    "source": "SpooNai/FeatureDDaily",
+    "url": "https://spoonai.me/posts/2026-07-10-prime-intellect-130m-series-a-1b-valuation-jul8-2026-en",
+    "keywords": [
+      "Prime Intellect",
+      "企业AI",
+      "训练自己的模型",
+      "ARR",
+      "Agent基础设施"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_startup_005",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Glow以12亿美元估值隐身 emergence，完成1.8亿美元A轮网络安全融资",
+    "raw_summary": "Glow于7月22日以12亿美元估值从隐身状态亮相，完成1.8亿美元全股权A轮融资。Sequoia Capital、Cyberstarts、Greenoaks、Redpoint Ventures等参与。专注AI时代的endpoint安全，同时在Palo Alto设立总部扩展美国招聘和AI研究。",
+    "source": "BizJournal/SF BizTimes",
+    "url": "https://www.bizjournals.com/sanfrancisco/news/2026/07/22/glow-cybersecurity-palo-alto-funding.html",
+    "keywords": [
+      "Glow",
+      "网络安全",
+      "Endpoint Security",
+      "AI安全",
+      "1.8亿美元",
+      "Sequoia"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_startup_006",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "2026上半年全球风险投资创纪录：5100亿美元AI推动投融资狂潮",
+    "raw_summary": "Crunchbase数据显示2026上半年全球风投创纪录5100亿美元，超过2025全年4400亿。Q1约3000亿美元，AI相关交易主导。Exit市场恢复，IPO+M&A活跃度上升。技术IPO管道达2.1万亿美元。资金集中于AI+物理世界交叉领域和高阶运营决策场景。",
+    "source": "Crunchbase/Forge",
+    "url": "https://news.crunchbase.com/venture/global-startup-exits-ipo-ma-soar-ai-q2-h1-2026/",
+    "keywords": [
+      "风险投资",
+      "H1 2026",
+      "5100亿",
+      "AI融资",
+      "IPO管道"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_startup_007",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "印度即时商务Plazza获1500万美元A轮加速药品配送网络",
+    "raw_summary": "印度quick-commerce创业Plazza获得Accel、Elevation Capital和Nexus Venture Partners领投的1500万美元A轮融资，用于扩展药房网络和即时药品配送运营。展示AI+物流的资本下沉趋势。",
+    "source": "TechStartups",
+    "url": "https://techstartups.com/2026/07/20/venture-capital-startup-funding-roundup-july-20-2026/",
+    "keywords": [
+      "Plazza",
+      "印度",
+      "quick-commerce",
+      "药品配送",
+      "Accel"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_product_001",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Roblox推出AI Build工具：手机文本提示即可生成游戏",
+    "raw_summary": "7月16日Roblox宣布Build功能——手机端用户通过文本提示即可创建可玩游戏，无需编程经验。利用开源和自研AI模型生成玩法机制、环境、角色等。7月28日NZ alpha测试开始，面向9岁以上用户，全球上线规划中。同时宣布Studio端系列AI工具更新。",
+    "source": "Roblox IR/Insider Gaming",
+    "url": "https://ir.roblox.com/news/news-details/2026/Roblox-Introduces-Build-A-New-Way-to-Create-on-the-Platform/default.aspx",
+    "keywords": [
+      "Roblox",
+      "AI Build",
+      "Text-to-Game",
+      "移动端创作",
+      "无代码"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_product_002",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "JetBrains Air 7月更新：支持多AI Agent和本地模型",
+    "raw_summary": "7月21日JetBrains Air新版本发布，支持GitHub Copilot、OpenCode、Pi、Cline等ACP兼容agent并发运行。新增IntelliJ驱动的Java/Kotlin导航和诊断、Docker容器Windows任务执行。AI IDE市场竞争升温。",
+    "source": "JetBrains Blog",
+    "url": "https://blog.jetbrains.com/air/2026/07/what-s-new-air-gets-more-agents-local-models-and-java-kotlin-code-intelligence/",
+    "keywords": [
+      "JetBrains",
+      "Air",
+      "多Agent IDE",
+      "本地模型",
+      "ACP"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_product_003",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Visual Studio 2026正式版发布：内置AI技能与Agentic开发",
+    "raw_summary": "7月14日VS 2026正式发布，包含.NET和Azure团队专家创建的内置AI skills，定制化agentic workflow。MSVC Build Tools Preview 7月持续更新。AI驱动的开发工作流已成为主流工具标配。",
+    "source": "Microsoft Learn/DevBlogs",
+    "url": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes",
+    "keywords": [
+      "Visual Studio 2026",
+      "AI skills",
+      "Agentic开发",
+      ".NET",
+      "Azure"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_product_004",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "WordPress Studio 1.11新增Studio Code agentic开发工具",
+    "raw_summary": "WordPress Studio 1.11版本部署Linux支持，1.11.0版本加入Studio Code——WordPress官方的agentic开发工具桌面应用。结合AI辅助开发WordPress站点，降低创作者门槛。",
+    "source": "WordPress Developer News",
+    "url": "https://developer.wordpress.org/news/2026/07/whats-new-for-developers-july-2026/",
+    "keywords": [
+      "WordPress",
+      "Studio Code",
+      "Agentic开发",
+      "低代码"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_product_005",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Windows 11七月更新：全系统撤销按钮+蓝牙修复+无障碍改进",
+    "raw_summary": "Windows 11 2026年7月更新发布，包含全系统undo按钮、蓝牙修复、恢复改进、更新暂停管理等功能。聚焦实用性改进而非视觉变化。PCWorld推荐五大不可错过的新功能。",
+    "source": "PCWorld/微软",
+    "url": "https://www.pcworld.com/article/3193889/5-windows-11-features-from-july-update-you-shouldnt-overlook.html",
+    "keywords": [
+      "Windows 11",
+      "系统更新",
+      "撤销按钮",
+      "蓝牙修复"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_product_006",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Google Play服务七月更新：Wear OS工作资料+Android开发工具扩展",
+    "raw_summary": "7月更新提升Google One购买体验，新增Wear OS工作资料支持，扩展Android开发者工具。Google系统更新持续增强可穿戴设备和开发者的生产力。",
+    "source": "TechRepublic",
+    "url": "https://www.techrepublic.com/article/news-google-play-services-july-update-wear-os-work-profiles/",
+    "keywords": [
+      "Google Play",
+      "Wear OS",
+      "开发者工具",
+      "Android"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_001",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "VLM-IE3D: 统一框架增强视觉语言模型的3D空间感知",
+    "raw_summary": "提出VLM-IE3D框架，通过隐式和显式几何增���强化2D视觉语言模型的3D空间理解能力。现有VLM在处理需要细粒度空间理解和推理的3D任务时存在明显不足，该研究尝试桥接2D视觉输入与3D空间感知之间的gap。arXiv:2607.21595",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21595v1",
+    "keywords": [
+      "VLM",
+      "3D空间",
+      "隐式几何",
+      "显式几何",
+      "视觉语言"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_002",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "GraphVid: 交互式图可控视频生成",
+    "raw_summary": "提出GraphVid，一种通过交互式图结构精确控制视频生成的方法。传统text prompt或motion control主要约束像素移动，难以指定精确的多对象交互。GraphVid通过轨迹级控制让用户绘制多个对象的准确轨迹来实现精准的多对象交互控制。arXiv:2607.21580",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21580v1",
+    "keywords": [
+      "视频生成",
+      "图控制",
+      "多对象交互",
+      "可控生成"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_003",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "EFlows: 可扩展生成流打破固定维度限制",
+    "raw_summary": "提出Expanding Generative Flows(EFlows)，突破现有flow-based生成模型在固定维度或序列长度上的限制。允许在连续和离散状态空间中灵活扩展生成维度，适用于变长多模态序列生成任务。arXiv:2607.21585",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21585v1",
+    "keywords": [
+      "生成流",
+      "可扩展",
+      "flow-based",
+      "变长序列"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_004",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "MedGame: LLM赋能的医学教育故事化游戏化系统",
+    "raw_summary": "提出MedGame，利用LLM将临床病例组织成以决策为中心的学习轨迹，而非简单的问答反馈。系统通过故事叙述和游戏化机制提升医学生的临床推理能力。arXiv:2607.21570",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21570v1",
+    "keywords": [
+      "医学教育",
+      "LLM",
+      "游戏化",
+      "临床推理"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_005",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Beyond Sufficiency: 时间序列解释的counterfactual必要性框架",
+    "raw_summary": "提出时间序列分类器解释的新范式——不仅识别充分保留黑盒模型预测的子序列，还要识别必要的子序列。现有充分性导向方法会给支持错误预测的虚假子序列分配高重要性。arXiv:2607.21573",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21573v1",
+    "keywords": [
+      "时间序列",
+      "可解释性",
+      "反事实",
+      "必要性"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_006",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "OpenForgeRL: 训练环境原生的AI Agent",
+    "raw摘要": "提出OpenForgeRL框架，使AI agent可以在任何环境中使用开放基础设施进行端到端SFT/RL训练。解决Claude Code、Codex等复杂推理harness难以训练的问题。arXiv:2607.21557",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21557v1",
+    "keywords": [
+      "Agent训练",
+      "RL",
+      "SFT",
+      "开放基础设施"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_007",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "MIRROR: 从'另一面'学习多模态推理",
+    "raw_summary": "研究表明VLM在视觉推理上落后于LLM，即使是几何问题也如此。不同视图(纯文本、图表、图文组合)会激发不同的模型行为。MIRROR框架利用这些视图差异提升多模态推理能力。arXiv:2607.21552",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21552v1",
+    "keywords": [
+      "多模态推理",
+      "VLM",
+      "对比学习",
+      "几何推理"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "2026-07-25_academic_008",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Beyond Sycophancy: LLM道德推理中的结构化抵抗与顺从",
+    "raw_summary": "提出LLM需要区分何时采纳他人观点和何时保持独立道德判断。社交校准型大模型不能简单减少迎合(sycophancy)作为一维失败模式，而要训练结构化抵抗能力。arXiv:2607.21558",
+    "source": "arXiv",
+    "url": "http://arxiv.org/abs/2607.21558v1",
+    "keywords": [
+      "社会校准",
+      "道德推理",
+      "sycophancy",
+      "对齐"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
   }
 ]
