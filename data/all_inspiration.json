@@ -7790,7 +7790,6 @@
     "date": "2026-07-25",
     "category": "ai_tech",
     "title": "Anthropic发现Claude内部'全局工作空间'J-space机制",
-    "rawsummary": "Anthropic通过Jacobian-based可解释性技术(J-lens)发现Claude内部约25个活跃概念的微小子空间(不到10%激活方差)，其行为类似于意识神经科学中的全局工作空间理论。移除该内部结构会破坏多步推理但保留流畅性，为团队理解大语言模型复杂推理提供了新视角。",
     "source": "Anthropic Research/ThursdAI/AIApps",
     "url": "https://thursdai.news/releases/2026-07",
     "keywords": [
@@ -7802,7 +7801,8 @@
     ],
     "original_language": "en",
     "importance": 3,
-    "is_major_event": false
+    "is_major_event": false,
+    "raw_summary": "Anthropic通过Jacobian-based可解释性技术(J-lens)发现Claude内部约25个活跃概念的微小子空间(不到10%激活方差)，其行为类似于意识神经科学中的全局工作空间理论。移除该内部结构会破坏多步推理但保留流畅性，为团队理解大语言模型复杂推理提供了新视角。"
   },
   {
     "id": "2026-07-25_ai_006",
@@ -8238,7 +8238,6 @@
     "date": "2026-07-25",
     "category": "academic_paper",
     "title": "OpenForgeRL: 训练环境原生的AI Agent",
-    "raw摘要": "提出OpenForgeRL框架，使AI agent可以在任何环境中使用开放基础设施进行端到端SFT/RL训练。解决Claude Code、Codex等复杂推理harness难以训练的问题。arXiv:2607.21557",
     "source": "arXiv",
     "url": "http://arxiv.org/abs/2607.21557v1",
     "keywords": [
@@ -8249,7 +8248,8 @@
     ],
     "original_language": "en",
     "importance": 3,
-    "is_major_event": false
+    "is_major_event": false,
+    "raw_summary": "提出OpenForgeRL框架，使AI agent可以在任何环境中使用开放基础设施进行端到端SFT/RL训练。解决Claude Code、Codex等复杂推理harness难以训练的问题。arXiv:2607.21557"
   },
   {
     "id": "2026-07-25_academic_007",
