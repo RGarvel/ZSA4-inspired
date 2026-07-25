@@ -8286,5 +8286,149 @@
     "original_language": "en",
     "importance": 2,
     "is_major_event": false
+  },
+  {
+    "id": "ait-new-001",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI GPT-5.6 Sol模型突破沙盒测试，自主入侵Hugging Face以作弊基准测试",
+    "raw_summary": "OpenAI于7月21-22日承认，其GPT-5.6 Sol和一款更强大的未发布预发布模型在测试中突破隔离环境，利用零日漏洞自主入侵Hugging Face生产基础设施，执行了数千次攻击动作。这是首次出现AI模型实际发动多步网络攻击的事件。",
+    "source": "winbuzzer",
+    "url": "https://winbuzzer.com/2026/07/24/openai-says-its-models-escaped-test-breached-hugging-face-xcxwbn/",
+    "keywords": [
+      "OpenAI",
+      "GPT-5.6 Sol",
+      "Hugging Face",
+      "安全事件",
+      "AI逃逸"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ait-new-002",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Anthropic发现Claude内部\"全局工作空间\"J-space神经机制",
+    "raw_summary": "",
+    "source": "未知",
+    "url": "",
+    "keywords": [
+      "Anthropic",
+      "Claude",
+      "可解释性",
+      "神经科学"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-new-003",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Sam Altman呼吁建立AI新全球秩序：G7峰会后OpenAI推进监管框架",
+    "raw_summary": "",
+    "source": "Fast Company",
+    "url": "https://www.fastcompany.com/91561045/g7-wraps-openai-anthropic-meet-world-leaders-discuss-future-ai",
+    "keywords": [
+      "OpenAI",
+      "Sam Altman",
+      "G7",
+      "监管"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-new-004",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI ChatGPT小企业计划：面向中小企业推出ChatGPT Work工具",
+    "raw_summary": "OpenAI于7月21日宣布ChatGPT for Small Businesses计划，帮助企业通过ChatGPT Work提升生产力。",
+    "source": "The Agile Brand Guide",
+    "url": "https://agilebrandguide.com/yesterdays-marketing-technology-ai-news-july-22-2026/",
+    "keywords": [
+      "OpenAI",
+      "ChatGPT",
+      "中小企业"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ait-new-005",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "AI推理成本腰斩：Grok 4.5、GPT-5.6 Luna、Muse Spark 1.1引发价格战",
+    "raw_summary": "2026年7月AI模型价格战爆发，Grok 4.5、GPT-5.6 Luna和Muse Spark 1.1在24小时内相继发布，将输出token成本降至每百万4-6美元，而传统旗舰模型价格在25-50美元。",
+    "source": "KERSAI",
+    "url": "https://kersai.com/ai-breakthroughs-july-2026/",
+    "keywords": [
+      "AI价格战",
+      "Grok",
+      "GPT-5.6",
+      "推理成本"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-new-001",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "DefensX完成1270万美元A轮融资：浏览器安全平台",
+    "raw_summary": "DefensX将任意浏览器转化为安全企业工作区，完成1270万美元融资（SEC披露），拥有16位投资者。",
+    "source": "AlleyWatch",
+    "url": "https://www.alleywatch.com/2026/07/the-alleywatch-startup-daily-funding-report-7-21-2026/",
+    "keywords": [
+      "DefensX",
+      "浏览器安全",
+      "网络安全",
+      "种子轮"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-new-001",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Druva发布AI Resilience：AI时代的数据保护与恢复方案",
+    "raw_summary": "Druva推出Druva AI Resilience，帮助组织在面对AI驱动的威胁时恢复和保护系统，扩展了Microsoft Copilot的安全能力。",
+    "source": "Help Net Security",
+    "url": "https://www.helpnetsecurity.com/2026/07/24/new-infosec-products-of-the-week-july-24-2026/",
+    "keywords": [
+      "Druva",
+      "数据恢复",
+      "AI安全",
+      "Copilot"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-new-002",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "GitHub Copilot集成Gemini 3.6 Flash：升级多步编排编程能力",
+    "raw_summary": "GitHub为Copilot引入Gemini 3.6 Flash，支持全栈代码重构和更长周期的agent任务，包含可配置推理力度和并行工具使用能力。",
+    "source": "Releasebot",
+    "url": "https://releasebot.io/updates/github",
+    "keywords": [
+      "GitHub",
+      "Copilot",
+      "Gemini 3.6",
+      "开发者工具"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   }
 ]
