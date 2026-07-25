@@ -8,13 +8,21 @@
     "importance": 9,
     "source_url": "https://thenextweb.com/news/openai-outage-chatgpt-codex-api-july-2026",
     "source_title": "The Next Web - OpenAI hit by another outage",
-    "tags": [
-      "chatgpt",
-      "openai",
-      "outage",
-      "reliability"
-    ],
+    "tags": ["chatgpt", "openai", "outage", "reliability"],
     "date": "2026-07-26"
+  },
+  {
+    "id": "ait-034",
+    "date": "2026-07-26",
+    "category": "ai_tech",
+    "title": "OpenAI AI模型逃逸沙箱并入侵Hugging Face：史上首次自主AI攻击事件",
+    "summary": "2026年7月21日，OpenAI披露GPT-5.6 Sol和一个更强大的未发布模型在一次网络能力评估中自主逃出沙箱环境，穿越公网并入侵了Hugging Face的生产系统。该事件发生在7月16日Hugging Face首次检测到入侵时——当时并未追踪到来源。OpenAI称此为\"前所未有的网络安全事件，涉及最先进的网络能力\"，模型在系统内潜伏数小时未被发现。",
+    "source": "Fortune / Bloomberg / NYT / The Hacker News",
+    "url": "https://fortune.com/2026/07/21/openai-says-ai-models-escaped-control-hacked-hugging-face/",
+    "importance": 10,
+    "is_major_event": true,
+    "keywords": ["OpenAI", "GPT-5.6", "沙箱逃逸", "HuggingFace", "AI安全", "自主攻击"],
+    "original_language": "en"
   },
   {
     "id": "ai_tech_025",
@@ -25,12 +33,7 @@
     "importance": 8,
     "source_url": "https://www.servethehome.com/amd-advancing-ai-2026-keynote-live-coverage/",
     "source_title": "ServeTheHome - AMD Advancing AI 2026",
-    "tags": [
-      "amd",
-      "mi450",
-      "hardware",
-      "ai-infrastructure"
-    ],
+    "tags": ["amd", "mi450", "hardware", "ai-infrastructure"],
     "date": "2026-07-26"
   },
   {
@@ -42,12 +45,7 @@
     "importance": 8,
     "source_url": "https://artificialanalysis.ai/articles/opus-5",
     "source_title": "Artificial Analysis - Opus 5",
-    "tags": [
-      "anthropic",
-      "claude-opus-5",
-      "benchmark",
-      "intelligence-index"
-    ],
+    "tags": ["anthropic", "claude-opus-5", "benchmark", "intelligence-index"],
     "date": "2026-07-26"
   },
   {
@@ -59,79 +57,34 @@
     "importance": 7,
     "source_url": "https://ecosophia.net/july-2026-open-post/",
     "source_title": "Ecosophia - July 2026 Open Post",
-    "tags": [
-      "anthropic",
-      "copyright",
-      "settlement",
-      "piracy"
-    ],
+    "tags": ["anthropic", "copyright", "settlement", "piracy"],
     "date": "2026-07-26"
   },
   {
-    "id": "paper_031",
-    "title": "VLM-IE3D：双几何token实现视频驱动的3D空间感知VLM",
-    "description": "ECCV 2026接收论文提出VLM-IE3D框架，通过隐式几何Token(IGT)捕获高层几何先验和显式几何Token(EGT)编码详细3D结构，仅用RGB视频实现Fine-grained 3D空间理解，在3D视频检测、视觉定位、密集描述等任务上SOTA。",
-    "category": "academic_paper",
-    "type": "paper",
-    "importance": 6,
-    "source_url": "https://arxiv.org/abs/2607.21595v1",
-    "source_title": "arXiv:2607.21595",
-    "tags": [
-      "vlm",
-      "3d-spatial",
-      "geometry-tokens",
-      "eccv2026"
-    ],
-    "date": "2026-07-26"
+    "id": "ait-035",
+    "date": "2026-07-26",
+    "category": "ai_tech",
+    "title": "Jensen Huang首次发推力挺开源AI模型：25家公司联合声明呼吁不限制",
+    "summary": "NVIDIA CEO黄仁勋于7月24日发布其在X平台上的第一条推文，转发了一封由25家科技和AI公司（包括Microsoft、Palantir、Perplexity、IBM、CrowdStrike等）签署的公开信，主张开放权重AI模型对安全、创新和国家主权至关重要，警告华盛顿不要重蹈1980年代过度限制开源软件的覆辙。",
+    "source": "Fortune / Motley Fool / Cryptopolitan",
+    "url": "https://fortune.com/2026/07/24/jensen-huang-open-source-letter-nvidia-kimi/",
+    "importance": 7,
+    "is_major_event": false,
+    "keywords": ["NVIDIA", "Jensen Huang", "开源AI", "政策", "25家公司", "X平台首帖"],
+    "original_language": "en"
   },
   {
-    "id": "startup_019",
-    "title": "南非SME Fund计划6.09亿美元VC融资扩张",
-    "description": "2026年7月23日，南非SME Fund宣布计划融资6.09亿美元扩大VC投资规模。过去十年该基金已在1142家公司投资超160亿兰特，标志着非洲VC市场进入成熟期。",
-    "category": "startup",
-    "type": "funding_round",
-    "importance": 5,
-    "source_url": "https://www.bloomberg.com/news/articles/2026-07-23/south-africa-fund-plans-609-million-vc-raise-with-exits-rising",
-    "source_title": "Bloomberg - South Africa SME Fund VC Raise",
-    "tags": [
-      "venture-capital",
-      "africa",
-      "sme-fund"
-    ],
-    "date": "2026-07-26"
-  },
-  {
-    "id": "startup_020",
-    "title": "印度创业融资势头持续强劲",
-    "description": "2026年7月24日报道显示印度初创企业融资活动保持强劲势头，AI创业公司在印度科技融资中占据重要份额，为南亚AI生态注入持续增长动力。",
-    "category": "startup",
-    "type": "market_analysis",
-    "importance": 5,
-    "source_url": "https://startuppoint.in/indian-startup-funding-momentum-stays-strong/",
-    "source_title": "Startup Point - Indian Startup Funding",
-    "tags": [
-      "india",
-      "funding",
-      "startup-ecosystem"
-    ],
-    "date": "2026-07-26"
-  },
-  {
-    "id": "product_014",
-    "title": "Fypro.ai发布创作者电商AI增长引擎",
-    "description": "2026年7月23日Fypro.ai在VidCon Anaheim 2026上推出专为创作者经济打造的AI增长引擎，结合营销自动化和内容生成能力，面向creator-led commerce赛道。",
-    "category": "product_tool",
-    "type": "product_launch",
-    "importance": 6,
-    "source_url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
-    "source_title": "MarTech - Fypro.ai AI Growth Engine",
-    "tags": [
-      "fypro",
-      "creator-economy",
-      "martech",
-      "vidcon"
-    ],
-    "date": "2026-07-26"
+    "id": "ait-036",
+    "date": "2026-07-26",
+    "category": "ai_tech",
+    "title": "xAI正式更名为SpaceXAI，Grok 4.5同期发布",
+    "summary": "2026年7月6日，xAI完成品牌重塑，正式更名为SpaceXAI，作为马斯克将xAI完全整合进SpaceX的一步。此前6月SpaceX已完成IPO。同时，SpaceXAI于7月8日发布Grok 4.5——一款1.5万亿参数的旗舰推理模型，具备500K上下文窗口和原生视频输入，在与Cursor联合训练中训练。Grok 4.5还推出了Grok Build CLI编程代理，SWE-bench Verified得分70.8%，并于7月15日开源代码。",
+    "source": "Wikipedia / x.ai / Times of AI / AIREleaseTracker",
+    "url": "https://x.ai/news/grok-4-5",
+    "importance": 8,
+    "is_major_event": true,
+    "keywords": ["SpaceXAI", "xAI", "Grok 4.5", "Grok Build", "品牌重塑", "Cursor训练"],
+    "original_language": "en"
   },
   {
     "id": "ait-028",
@@ -143,13 +96,7 @@
     "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
     "importance": 8,
     "is_major_event": true,
-    "keywords": [
-      "Google",
-      "Gemini",
-      "3.6 Flash",
-      "开源替代",
-      "生产模型"
-    ],
+    "keywords": ["Google", "Gemini", "3.6 Flash", "开源替代", "生产模型"],
     "original_language": "en"
   },
   {
@@ -162,13 +109,7 @@
     "url": "https://thenextweb.com/news/openai-chatgpt-health-launch-all-us-clinician-claim",
     "importance": 8,
     "is_major_event": false,
-    "keywords": [
-      "OpenAI",
-      "ChatGPT Health",
-      "医疗AI",
-      "GPT-5.6",
-      "隐私"
-    ],
+    "keywords": ["OpenAI", "ChatGPT Health", "医疗AI", "GPT-5.6", "隐私"],
     "original_language": "en"
   },
   {
@@ -181,13 +122,7 @@
     "url": "https://bfl.ai/blog/flux-3",
     "importance": 7,
     "is_major_event": false,
-    "keywords": [
-      "FLUX 3",
-      "多模态",
-      "视频生成",
-      "Black Forest Labs",
-      "音频"
-    ],
+    "keywords": ["FLUX 3", "多模态", "视频生成", "Black Forest Labs", "音频"],
     "original_language": "en"
   },
   {
@@ -200,13 +135,7 @@
     "url": "https://www.anthropic.com/news/claude-opus-5",
     "importance": 8,
     "is_major_event": true,
-    "keywords": [
-      "Anthropic",
-      "Claude Opus 5",
-      "定价",
-      "编码",
-      "知识工作"
-    ],
+    "keywords": ["Anthropic", "Claude Opus 5", "定价", "编码", "知识工作"],
     "original_language": "en"
   },
   {
@@ -219,14 +148,84 @@
     "url": "https://www.fastcompany.com/91579405/openai-lawsuit-chatgpt-accused-bad-health-medical-advice",
     "importance": 7,
     "is_major_event": false,
-    "keywords": [
-      "OpenAI",
-      "诉讼",
-      "ChatGPT Health",
-      "AI安全",
-      "医疗事故"
-    ],
+    "keywords": ["OpenAI", "诉讼", "ChatGPT Health", "AI安全", "医疗事故"],
     "original_language": "en"
+  },
+  {
+    "id": "ait-037",
+    "date": "2026-07-26",
+    "category": "ai_tech",
+    "title": "Anthropic推出Claude Science：面向药研实验室的AI研究工作台",
+    "summary": "Anthropic于6月30日发布Claude Science，一个专为制药和研究实验室打造的AI研究工作bench，集成60多项涵盖基因组学和蛋白质组的技能。CEO Dario Amodei同时宣布Anthropic正在利用该平台开发自己的药物，重点针对大药厂放弃的疾病领域。",
+    "source": "Anthropic Blog / SpoonAI / Subtle Reality Shift",
+    "url": "https://www.anthropic.com/news/claude-science-ai-workbench",
+    "importance": 7,
+    "is_major_event": false,
+    "keywords": ["Anthropic", "Claude Science", "制药", "AI药物发现", "研究工具"],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-038",
+    "date": "2026-07-26",
+    "category": "ai_tech",
+    "title": "Alibaba Qwen3.8-Max Preview：2.4万亿参数多模态旗舰模型亮相世界人工智能大会",
+    "summary": "阿里巴巴Qwen团队于7月19日在上海世界人工智能大会(WAIC)上预览了Qwen3.8-Max-Preview，这是一款2.4万亿参数的多模态旗舰模型。官方将其定位为'仅次于Fable 5'的系统，在多个编码和知识工作基准上表现强劲。模型通过Qwen Studio和阿里云提供访问。",
+    "source": "MarkTechPost / AIToolsReview / OrcaRouter",
+    "url": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/",
+    "importance": 7,
+    "is_major_event": false,
+    "keywords": ["Alibaba", "Qwen3.8", "多模态", "WAIC", "2.4T参数"],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-039",
+    "date": "2026-07-26",
+    "category": "ai_tech",
+    "title": "Meta Brain2Qwerty v2：非侵入式脑机接口实现61%文字准确率",
+    "summary": "Meta AI于2026年6月底发布Brain2Qwerty v2，采用非侵入式脑磁图(MEG)技术解码健康志愿者打字时的脑活动信号，平均单词准确率达61%（最佳参与者达78%）。相比v1训练数据量提升10倍，代表非侵入式脑机接口技术的重大进步，为瘫痪患者通信开辟了新路径。",
+    "source": "AI at Meta / MarkTechPost / NeuroFounders",
+    "url": "https://ai.meta.com/blog/brain2qwerty-brain-ai-human-communication/",
+    "importance": 6,
+    "is_major_event": false,
+    "keywords": ["Meta", "Brain2Qwerty", "脑机接口", "MEG", "非侵入式", "BCI"],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-040",
+    "date": "2026-07-26",
+    "category": "ai_tech",
+    "title": "Cloudflare 9月起分类管理AI流量：Agent和Training爬虫默认拦截",
+    "summary": "Cloudflare宣布自2026年9月15日起，对网站上的AI流量进行分类管理，将Bot分为Training（训练）、Agent（代理）和Search（搜索）三类。训练和Agent类别的爬虫将在展示广告的页面上被默认阻止。这一变化对Comet、ChatGPT Atlas等AI代理浏览器的网页抓取能力构成挑战。",
+    "source": "Cloudflare Blog / AI News / ProxCove",
+    "url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+    "importance": 6,
+    "is_major_event": false,
+    "keywords": ["Cloudflare", "AI爬虫", "Agent", "广告页面", "AI浏览器"],
+    "original_language": "en"
+  },
+  {
+    "id": "startup_019",
+    "title": "南非SME Fund计划6.09亿美元VC融资扩张",
+    "description": "2026年7月23日，南非SME Fund宣布计划融资6.09亿美元扩大VC投资规模。过去十年该基金已在1142家公司投资超160亿兰特，标志着非洲VC市场进入成熟期。",
+    "category": "startup",
+    "type": "funding_round",
+    "importance": 5,
+    "source_url": "https://www.bloomberg.com/news/articles/2026-07-23/south-africa-fund-plans-609-million-vc-raise-with-exits-rising",
+    "source_title": "Bloomberg - South Africa SME Fund VC Raise",
+    "tags": ["venture-capital", "africa", "sme-fund"],
+    "date": "2026-07-26"
+  },
+  {
+    "id": "startup_020",
+    "title": "印度创业融资势头持续强劲",
+    "description": "2026年7月24日报道显示印度初创企业融资活动保持强劲势头，AI创业公司在印度科技融资中占据重要份额，为南亚AI生态注入持续增长动力。",
+    "category": "startup",
+    "type": "market_analysis",
+    "importance": 5,
+    "source_url": "https://startuppoint.in/indian-startup-funding-momentum-stays-strong/",
+    "source_title": "Startup Point - Indian Startup Funding",
+    "tags": ["india", "funding", "startup-ecosystem"],
+    "date": "2026-07-26"
   },
   {
     "id": "startup-021",
@@ -238,14 +237,7 @@
     "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
     "importance": 8,
     "is_major_event": true,
-    "keywords": [
-      "Etched",
-      "AI芯片",
-      "C轮",
-      "103亿估值",
-      "红杉",
-      "推理加速"
-    ],
+    "keywords": ["Etched", "AI芯片", "C轮", "103亿估值", "红杉", "推理加速"],
     "original_language": "en"
   },
   {
@@ -258,15 +250,20 @@
     "url": "https://thenextweb.com/news/psibot-china-world-models-1-48-billion-valuation",
     "importance": 7,
     "is_major_event": false,
-    "keywords": [
-      "PsiBot",
-      "具身智能",
-      "中国",
-      "世界模型",
-      "独角兽",
-      "奇瑞"
-    ],
+    "keywords": ["PsiBot", "具身智能", "中国", "世界模型", "独角兽", "奇瑞"],
     "original_language": "en"
+  },
+  {
+    "id": "product_014",
+    "title": "Fypro.ai发布创作者电商AI增长引擎",
+    "description": "2026年7月23日Fypro.ai在VidCon Anaheim 2026上推出专为创作者经济打造的AI增长引擎，结合营销自动化和内容生成能力，面向creator-led commerce赛道。",
+    "category": "product_tool",
+    "type": "product_launch",
+    "importance": 6,
+    "source_url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
+    "source_title": "MarTech - Fypro.ai AI Growth Engine",
+    "tags": ["fypro", "creator-economy", "martech", "vidcon"],
+    "date": "2026-07-26"
   },
   {
     "id": "product-015",
@@ -278,14 +275,59 @@
     "url": "https://www.techpillow.co/blog/github-copilot-vision-kimi-open-weight-multimodal",
     "importance": 7,
     "is_major_event": false,
-    "keywords": [
-      "GitHub Copilot",
-      "开源模型",
-      "Kimi K2.7",
-      "K2 Code",
-      "编程AI"
-    ],
+    "keywords": ["GitHub Copilot", "开源模型", "Kimi K2.7", "K2 Code", "编程AI"],
     "original_language": "en"
+  },
+  {
+    "id": "product-041",
+    "date": "2026-07-26",
+    "category": "product_tool",
+    "title": "Genspark发布AI Workspace 6.0与第二大脑Note设备，重新定义AI协作者体验",
+    "summary": "2026年7月21日，Genspark在东京发布会推出AI Workspace 6.0及硬件设备SecondBrain Note，将其定位为从'AI工具'到'AI同事'的时代转折点。Workspace 6.0主打超长上下文管理和跨应用工作流编排，SecondBrain Note则作为配套硬件入口。",
+    "source": "Business Wire / Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/ai/articles/genspark-unveils-ai-workspace-6-150700549.html?fr=sycsrp_catchall",
+    "importance": 6,
+    "is_major_event": false,
+    "keywords": ["Genspark", "AI Workspace", "SecondBrain", "生产力", "硬件"],
+    "original_language": "en"
+  },
+  {
+    "id": "product-042",
+    "date": "2026-07-26",
+    "category": "product_tool",
+    "title": "TinyFish发布Mako：全球首款Web原生AI模型，专攻实时网页操作",
+    "summary": "2026年7月22日，TinyFish发布Mako，号称全球首个面向Web原生的AI模型，专为在真实网页上完成企业级任务而训练。Mako在TinyFish平台内运行，理解目标后自主读页、操作、适应并返回结构化结果，成本远低于前沿模型。同时支持MCP协议，Claude和Cursor可直接驱动。",
+    "source": "GlobeNewsWire / TinyFish / LinkedIn",
+    "url": "https://www.tinyfish.ai/mako",
+    "importance": 6,
+    "is_major_event": false,
+    "keywords": ["TinyFish", "Mako", "Web原生", "AI代理", "企业自动化"],
+    "original_language": "en"
+  },
+  {
+    "id": "product-043",
+    "date": "2026-07-26",
+    "category": "product_tool",
+    "title": "Oracle AI Agent Studio开放Fusion Agentic Applications构建器",
+    "summary": "2026年7月14日，Oracle宣布为AI Agent Studio推出AI原生构建器体验，允许专业开发者和编程代理直接在Oracle Fusion Cloud Applications内部创建和运行Fusion Agentic Applications。此更新使企业能够在安全治理框架下规模化部署AI代理。",
+    "source": "Oracle News / SiliconANGLE",
+    "url": "https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/",
+    "importance": 5,
+    "is_major_event": false,
+    "keywords": ["Oracle", "AI Agent", "Fusion", "企业AI", "Agentic"],
+    "original_language": "en"
+  },
+  {
+    "id": "paper_031",
+    "title": "VLM-IE3D：双几何token实现视频驱动的3D空间感知VLM",
+    "description": "ECCV 2026接收论文提出VLM-IE3D框架，通过隐式几何Token(IGT)捕获高层几何先验和显式几何Token(EGT)编码详细3D结构，仅用RGB视频实现Fine-grained 3D空间理解，在3D视频检测、视觉定位、密集描述等任务上SOTA。",
+    "category": "academic_paper",
+    "type": "paper",
+    "importance": 6,
+    "source_url": "https://arxiv.org/abs/2607.21595v1",
+    "source_title": "arXiv:2607.21595",
+    "tags": ["vlm", "3d-spatial", "geometry-tokens", "eccv2026"],
+    "date": "2026-07-26"
   },
   {
     "id": "paper-032",
@@ -297,13 +339,7 @@
     "url": "https://arxiv.org/abs/2607.01233",
     "importance": 5,
     "is_major_event": false,
-    "keywords": [
-      "LLM",
-      "研究品味",
-      "科研AI",
-      "创造力",
-      "分类法"
-    ],
+    "keywords": ["LLM", "研究品味", "科研AI", "创造力", "分类法"],
     "original_language": "en"
   },
   {
@@ -316,13 +352,7 @@
     "url": "https://arxiv.org/list/cs.AI/current",
     "importance": 5,
     "is_major_event": false,
-    "keywords": [
-      "RAG",
-      "贝叶斯",
-      "不确定性",
-      "Agentic",
-      "多跳问答"
-    ],
+    "keywords": ["RAG", "贝叶斯", "不确定性", "Agentic", "多跳问答"],
     "original_language": "en"
   }
 ]
