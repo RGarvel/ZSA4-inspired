@@ -522,5 +522,349 @@
     "original_language": "en",
     "importance": 3,
     "is_major_event": false
+  },
+  {
+    "id": "ai_tech_011",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Google Shipped Gemini 3.6 Flash, 3.5 Flash-Lite, and Flash Cyber — Token-Efficiency Focus",
+    "raw_summary": "Google DeepMind released three new Gemini models on July 21: Gemini 3.6 Flash (workhorse model with better coding, knowledge work, and multimodal performance at lower cost), Gemini 3.5 Flash-Lite (edge optimization), and Gemini 3.5 Flash Cyber (security/code specialist). 3.6 Flash is 17% cheaper than 3.5 with a 12-point performance gain.",
+    "source": "Google DeepMind",
+    "url": "https://deepmind.google/models/model-cards/gemini-3-6-flash/",
+    "keywords": [
+      "Gemini 3.6 Flash",
+      "Google",
+      "model release",
+      "token efficiency",
+      "Flash Cyber"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_012",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "AMD Launches Helios Rack-Scale AI System at Advancing AI 2026 Conference",
+    "raw_summary": "AMD announced its Helios rack-scale AI system at the Advancing AI 2026 conference in San Francisco, delivering 31 TB of HBM4 memory. The platform targets OpenAI, Meta, and Anthropic deployments spanning several gigawatts. Also unveiled: MI400 GPU family, EPYC Venice 2nm CPU, and ROCm 7 software stack.",
+    "source": "AMD / ServeTheHome / TechTimes",
+    "url": "https://www.servethehome.com/amd-advancing-ai-2026-keynote-live-coverage/",
+    "keywords": [
+      "AMD",
+      "Helios",
+      "MI400",
+      "EPYC Venice",
+      "HBM4",
+      "AI hardware"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ai_tech_013",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "AI Regulation Update: EU August 2 Deadline Approaching, US Federal Preemption Debate Heats Up",
+    "raw_summary": "Global AI regulation landscape as of July 2026: EU AI Act enforcement deadline August 2 is 32 days away affecting 28 member states; US federal preemption fight intensifies; China rolling companion AI enforcement; UK AI Bill progressing; India DIA framework expanding.",
+    "source": "Regulatory Watch",
+    "url": "https://cubbbix.com/blog/ai-regulation-july-2026-global-update/",
+    "keywords": [
+      "AI regulation",
+      "EU AI Act",
+      "US policy",
+      "compliance",
+      "China AI law"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_007",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Prentis AI Lab (Hoffman/Pincus) in Talks to Raise $100M at $1B Valuation for Computer-Use Agents",
+    "raw_summary": "Prentis, a new AI research lab co-founded by Reid Hoffman (LinkedIn), Mark Pincus (Zynga), and Ritankar Das, is in talks to raise $100 million at a $1 billion valuation. The lab focuses on computer-use models that automate routine office workflows — insurance claims processing, refund management — betting that non-coding automation will surpass coding as AI's largest market.",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
+    "keywords": [
+      "Prentis",
+      "Reid Hoffman",
+      "Mark Pincus",
+      "computer-use AI",
+      "Series A",
+      "$100M"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_008",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Indian AI Banking Software Startup BusinessNext Raises $40M from ServiceNow Ventures at $700M Valuation",
+    "raw_summary": "BusinessNext, an India-based autonomous operating platform for banking and financial services, raised $40 million Series C led by ServiceNow Ventures at a $700 million valuation. The funding will drive autonomous operations and private AI solutions in finance.",
+    "source": "Fortune India / Economic Times",
+    "url": "https://www.fortuneindia.com/startups-news/businessnext-raises-40-million-from-servicenow-ventures-at-700-million-valuation/149709",
+    "keywords": [
+      "BusinessNext",
+      "ServiceNow Ventures",
+      "India fintech",
+      "banking AI",
+      "Series C"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_009",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "DefensX & Uniti AI Close Combined $24.7M NYC Startup Funding Rounds",
+    "raw_summary": "Two NYC startups closed combined $24.7M in funding: DefensX secured its round alongside Uniti AI which raised $12M Series A led by Pathlight Ventures for real estate automation, with participation from MetaProp, Prudence, Flex Capital, and Alate Partners.",
+    "source": "Logicity",
+    "url": "https://logicity.in/en/blog/defensx-uniti-ai-raise-24-7m-in-nyc-startup-funding",
+    "keywords": [
+      "DefensX",
+      "Uniti AI",
+      "real estate automation",
+      "NYC startup",
+      "Pathlight Ventures"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_010",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Ant International Leads Week 30 Asia Funding — $1.34B Across Fintech, AI, Aerospace",
+    "raw_summary": "Asia startup funding remained strong in Week 30 (July 20-24), with Ant International leading deals totaling $1.34 billion across fintech, AI, wealthtech, aerospace, biotechnology, logistics, and climate technology sectors.",
+    "source": "Techloy",
+    "url": "https://www.techloy.com/week-30-asia-startup-funding-ant-international/",
+    "keywords": [
+      "Ant International",
+      "Asia funding",
+      "$1.34B",
+      "fintech",
+      "AI investment"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_011",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Traveltech 30 Sundays Raises Rs 61 Crore for AI-Powered Holiday Planning Platform",
+    "raw_summary": "Traveltech startup 30 Sundays raised Rs 61 crore (~$7.3M) in a funding round to expand its AI-powered holiday planning platform, supporting product innovation and technology development for personalized travel experiences.",
+    "source": "Local Samsa",
+    "url": "https://www.localsamosa.com/news/startup-roundup-fourth-week-of-july-2026-12193074",
+    "keywords": [
+      "30 Sundays",
+      "traveltech",
+      "AI travel",
+      "India startup",
+      "Rs 61 crore"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "startup_012",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "Sightera Biosciences Raises €3M for Patient-Derived AI Drug Discovery Platform",
+    "raw_summary": "Belgium-based Sightera Biosciences (Antwerp) raised €3 million to scale its patient-derived AI drug discovery platform, leveraging real-world clinical data to accelerate drug candidate identification.",
+    "source": "EU-Startups",
+    "url": "https://www.eu-startups.com/2026/07/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-july-20-july-24/",
+    "keywords": [
+      "Sightera",
+      "AI drug discovery",
+      "biotech",
+      "Europe startup",
+      "patient-derived"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "product_006",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Google Releases Gemini 3.6 Flash, 3.5 Flash-Lite and Flash Cyber Developer Toolkit — July 2026",
+    "raw_summary": "Google DeepMind shipped three new Gemini models: Gemini 3.6 Flash (workhorse model with 17% cost reduction and 12-point performance gain over 3.5), Gemini 3.5 Flash-Lite (edge-optimized variant rolling out in Google Search), and Gemini 3.5 Flash Cyber (security/code specialist). All available via API and Gemini app.",
+    "source": "Google DeepMind / The Keyword",
+    "url": "https://deepmind.google/models/model-cards/gemini-3-6-flash/",
+    "keywords": [
+      "Gemini 3.6 Flash",
+      "Google AI",
+      "developer tool",
+      "model release",
+      "API"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "product_007",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "AMD Launches ROCm 7 Software Stack + Open Robotics Partner Network at Advancing AI 2026",
+    "raw_summary": "At its Advancing AI 2026 conference, AMD launched ROCm 7 software stack alongside an expanded open robotics partner network for physical AI development. The ecosystem includes software developers, AI model providers, robotics tech companies, and hardware partners to accelerate production deployment of AMD platform-powered robots.",
+    "source": "AMD Newsroom",
+    "url": "https://newsroom.amd.com/",
+    "keywords": [
+      "ROCm 7",
+      "AMD",
+      "open robotics",
+      "physical AI",
+      "developer tools"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "product_008",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Gyeonggi Province Launches Multilingual AI Portal with Integrated Machine Translation",
+    "raw_summary": "South Korea's Gyeonggi Province launched a multilingual AI portal integrating machine translation services for foreign residents. NagaTranslate also added new domain support with TTS and speech recognition capabilities.",
+    "source": "Machine Translate",
+    "url": "https://machinetranslate.org/july-2026",
+    "keywords": [
+      "multilingual AI",
+      "machine translation",
+      "Korea",
+      "public service",
+      "NagaTranslate"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_009",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.21595] VLM-IE3D: 3D-Aware Vision-Language Models with Implicit and Explicit Geometries",
+    "raw_summary": "Wenhao Li et al. (ECCV 2026). Introduces VLM-IE3D, a unified framework enhancing 3D spatial awareness of vision-language models via implicit geometry tokens (from RGB videos) and explicit geometry tokens (from reconstructed 3D attributes). Achieves superior performance on 3D video detection, visual grounding, dense captioning, and spatial reasoning without requiring any 3D input.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21595v1",
+    "keywords": [
+      "VLM",
+      "3D vision",
+      "geometry tokens",
+      "spatial understanding",
+      "ECCV 2026"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_010",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.21585] Expanding Flow Maps: Generative Flows with Variable Output Dimensions",
+    "raw_summary": "Sophia Tang and Pranam Chatterjee propose EFlows and EFMs — a new class of flow maps that define flows between distributions of increasing dimensionality. Enables variable-size graph generation and variable-length sequence generation across continuous and discrete modalities.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21585v1",
+    "keywords": [
+      "flow matching",
+      "generative models",
+      "variable dimensions",
+      "sequence generation",
+      "discrete generative models"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_011",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.21594] WorldWeaver: Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers",
+    "raw_summary": "Sicheng Mo, Bolei Zhou et al. Presents WorldWeaver (W²), a streaming multi-agent video diffusion model augmented with cross-agent world state registers — learnable tokens storing shared world information. Grounded with supervision for agent status and bird's-eye views. Uses Mixture-of-Transformers design for logical consistency in two-agent Minecraft video generation.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21594v1",
+    "keywords": [
+      "multi-agent",
+      "video diffusion",
+      "world models",
+      "streaming generation",
+      "Minecraft"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_012",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.21592] UniD: Unified Video Dense Prediction from Disjoint Data",
+    "raw_summary": "Yihong Sun et al. (ECCV 2026). UniD jointly predicts eight dense scene properties (depth, normals, segmentation, boundaries, human parts, albedo, shading, materials) learned entirely from disjoint datasets. A pretrained diffusion model bridges domain gaps without pseudo-labeling or annotation overlap. Strong OOD generalization and temporal consistency.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21592v1",
+    "keywords": [
+      "video understanding",
+      "dense prediction",
+      "disjoint data",
+      "distillation",
+      "ECCV 2026"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_013",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.21591] Inference-Time Scaling of Diffusion Models via Progressive Seed Pruning",
+    "raw_summary": "Rogerio Gimaraes and Pietro Perona propose Progressive Seed Pruning (PSP) — an inference-time scaling method for diffusion/flow-matching models. Front-loads exploration by scoring intermediate denoised estimates and pruning aggressively, achieving higher GenEval scores than best-of-N at matched compute.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21591v1",
+    "keywords": [
+      "diffusion models",
+      "inference-time compute",
+      "seed search",
+      "reward-guided selection",
+      "GenEval"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "paper_014",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "[2607.21580] GraphVid: Interactive Graph-Controllable Video Generation",
+    "raw_summary": "Vedant Shah et al. Introduce GraphVid, a graph-conditioned image-to-video generation model enabling interactive control through structured interaction graphs. Creates GraphVid-Bench dataset. Reduces FID by 39.9% and FVD by 37.6% vs Motion-I2V despite using less training data and fewer parameters.",
+    "source": "arXiv",
+    "url": "https://arxiv.org/abs/2607.21580v1",
+    "keywords": [
+      "video generation",
+      "controllable AI",
+      "graph conditioning",
+      "interaction control",
+      "I2V"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
   }
 ]
