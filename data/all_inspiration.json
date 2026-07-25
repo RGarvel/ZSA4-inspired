@@ -9508,5 +9508,344 @@
     "original_language": "en",
     "importance": 2,
     "is_major_event": false
+  },
+  {
+    "id": "ai-0028",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Anthropic 发布 Claude Opus 5：近 Fable 5 智能，价格减半",
+    "raw_summary": "Anthropic 于 7 月 24 日发布 Claude Opus 5，号称智能接近 Claude Fable 5 但价格仅为其一半。定价 $5/百万输入 token、$25/百万输出 token，与 Opus 4.8 持平。在 Frontier-Bench 上达 SOTA 43.3%，ARC-AGI-3 达 30.2%。自动回退机制支持多模型路由。",
+    "source": "Anthropic Newsroom / Fortune / Bloomberg",
+    "url": "https://www.anthropic.com/news/claude-opus-5",
+    "keywords": [
+      "Claude",
+      "Opus 5",
+      "Anthropic",
+      "推理成本",
+      "SOTA"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ai-0029",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "xAAI Musk 确认 Grok 4.6 训练完成：2万亿参数对标 Kimi K3",
+    "raw_summary": "Elon Musk 7 月 18 日确认 xAI 的下一代模型 Grok 4.6 初始训练即将完成。该模型拥有 2 万亿参数（Grok 4.5 为 1.5T），Musk 称其可能超越 Kimi K3，更快更便宜。同时 Grok 4.5 已于 7 月 8 日发布，集成 Cursor 训练数据，定价 $2/$6/M tokens。",
+    "source": "xAI / Digg / SpoonAI",
+    "url": "https://spoonai.me/posts/2026-07-22-xai-grok-4-6-2t-training-start-jul2026-en",
+    "keywords": [
+      "Grok",
+      "xAI",
+      "Musk",
+      "2万亿参数",
+      "AI军备竞赛"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ai-0030",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI GPT-5.6 Sol + ChatGPT Work 双发布：750 tokens/sec on Cerebras",
+    "raw_summary": "OpenAI 7 月 9 日发布 GPT-5.6 家族（Sol/Terra/Luna）及 ChatGPT Work 代理模式。Sol 在 Cerebras WSE-3 硬件上达 750 tokens/sec（GPU 集群约 40-120）。ChatGPT Work 可跨网页/移动/桌面执行多步骤办公任务，交付完整文档/表格/PPT。OpenAI 内部近 100% 团队已使用。",
+    "source": "OpenAI / TechCrunch / MacRumors",
+    "url": "https://openai.com/index/gpt-5-6/",
+    "keywords": [
+      "GPT-5.6",
+      "ChatGPT Work",
+      "Cerebras",
+      "AI代理",
+      "办公自动化"
+    ],
+    "original_language": "en",
+    "importance": 5,
+    "is_major_event": true
+  },
+  {
+    "id": "ai-0031",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Moonshot AI Kimi K3：全球最大开源模型，2.8T 参数即将开放权重",
+    "raw_summary": "中国 Moonshot AI 7 月 16 日发布 Kimi K3——2.8 万亿参数的 MoE 模型，支持 100 万 token 上下文窗口，基于 Kimi Delta Attention 框架。7 月 27 日将发布完整开源权重（Modified MIT 许可）。评测显示 hallucination 率高达 51% 未被披露。",
+    "source": "VentureBeat / BBC / SCMP",
+    "url": "https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems",
+    "keywords": [
+      "Kimi K3",
+      "Moonshot AI",
+      "开源模型",
+      "2.8万亿",
+      "中国AI"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": true
+  },
+  {
+    "id": "ai-0032",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Google 发布 Gemini 3.6 Flash + 3.5 Flash-Lite/Cyber：更便宜更高效",
+    "raw_summary": "Google DeepMind 7 月 21 日发布三模型套件：Gemini 3.6 Flash（主力型号）、3.5 Flash-Lite 和 3.5 Flash Cyber。3.6 Flash 输出定价从 $9 降至 $7.50/M token，输出 token 减少约 17%。专为代理时代设计，代码生成和空间推理能力增强。",
+    "source": "Google DeepMind / NYT / AI Google Dev",
+    "url": "https://deepmind.google/models/gemini/flash/",
+    "keywords": [
+      "Gemini",
+      "Flash",
+      "Google",
+      "多模态",
+      "推理成本"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "ai-0033",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "AMD & Cerebras 发布联合推理方案： disaggregated AI inference",
+    "raw_summary": "7 月 23 日 AMD 与 Cerebras 宣布技术合作，推出 disaggregated AI 推理方案：AMD Helios 机架处理 prompt 和大上下文窗口，Cerebras WSE 负责 token 生成。声称可达 5x tokens/sec/watt，解决高延迟推理瓶颈。",
+    "source": "AMD Newsroom / Cerebras Press Release",
+    "url": "https://newsroom.amd.com/news/aai-2026-cerebras-inference/",
+    "keywords": [
+      "AMD",
+      "Cerebras",
+      "推理加速",
+      "Wafer-Scale",
+      "基础设施"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ai-0034",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Anthropic Fable 禁令解除：出口管制撤销，重新面向全球用户",
+    "raw_summary": "特朗普政府撤销对 Anthropic Fable 5 和 Mythos 5 的出口管制后，Anthropic 恢复 Fable 5 服务。7 月 20 日起仅限 Max 和 Team Premium 订阅者可用（50% 限额）。此前 6 月因国家安全考虑被禁，导致行业争议。",
+    "source": "Axios / The Verge / Anthropic",
+    "url": "https://www.axios.com/2026/07/01/anthropic-fable-5-back-online-trump-export-controls-lifted",
+    "keywords": [
+      "Fable 5",
+      "出口管制",
+      "国安",
+      "Anthropic",
+      "地缘政治"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ai-0035",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "Roblox 推出 AI Build 工具：文本提示生成游戏，7月28日开始测试",
+    "raw_summary": "Roblox 正在构建一套 AI 工具，其中「Build」功能允许创作者通过文本提示直接生成基础游戏。新增 Studio AI 工具将于 7 月 28 日开始测试。该工具面向所有级别创作者，移动端优先设计。",
+    "source": "Insider Gaming",
+    "url": "https://insider-gaming.com/robloxs-new-ai-tool-builds-games-from-text-prompts/",
+    "keywords": [
+      "Roblox",
+      "AI游戏",
+      "生成式",
+      "UGC",
+      "低代码"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "ai-0036",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "JetBrains Air 更新：接入 GitHub Copilot / OpenCode / ACP 代理及 Java/Kotlin 支持",
+    "raw_summary": "7 月 21 日 JetBrains Air 发布新更新，支持 GitHub Copilot、OpenCode、Pi、Cline 等 ACP 兼容代理，新增 IntelliJ 驱动的 Java/Kotlin 导航和诊断，以及 Docker 容器内 Windows 任务执行能力。",
+    "source": "JetBrains Blog",
+    "url": "https://blog.jetbrains.com/air/2026/07/what-s-new-air-gets-more-agents-local-models-and-java-kotlin-code-intelligence/",
+    "keywords": [
+      "JetBrains",
+      "Air",
+      "ACP",
+      "编程代理",
+      "IDE"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "ai-0037",
+    "date": "2026-07-25",
+    "category": "ai_tech",
+    "title": "OpenAI & Anthropic 限制最新 ChatGPT 产品按特朗普政府要求",
+    "raw_summary": "OpenAI 应特朗普政府请求，限制其新 AI 模型的发布对象；Anthropic 随后宣布其最强网络安全模型获有限发布批准。这是美国政府首次对 AI 产品进行前所未有的安全审查，针对网络攻击风险进行管控。",
+    "source": "AP News",
+    "url": "https://apnews.com/article/trump-ai-openai-gpt56-sol-cybersecurity-mythos-065d5398baac7f16c8265c2cb8ba2baa",
+    "keywords": [
+      "网络安全",
+      "政府审查",
+      "出口管制",
+      "OpenAI",
+      "政策"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "st-0025",
+    "date": "2026-07-25",
+    "category": "startup",
+    "title": "South Africa VC 行业计划 6.09 亿美元募资：进入成熟期",
+    "raw_summary": "南非风险投资行业进入新成熟阶段，当前计划融资 6.09 亿美元。行业预计未来三到五年内规模再翻一番。退出活动增加推动信心回升。",
+    "source": "Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-23/south-africa-fund-plans-609-million-vc-raise-with-exits-rising",
+    "keywords": [
+      "南非",
+      "VC",
+      "新兴市场",
+      "6亿美元"
+    ],
+    "original_language": "en",
+    "importance": 1,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-0019",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Starbucks 自建 AI 软件取代 Microsoft/IBM：年省 4 亿美元",
+    "raw_summary": "星巴克正在开发内部 AI 辅助工具，替换现有 Microsoft 库存管理系统和 IBM 维护平台，目标每年削减 4 亿美元软件支出、3000 万美元技术预算。计划 2027 年底前完成替代。这是大型企业首次大规模用自建 AI 替代 SaaS 供应商。",
+    "source": "Bloomberg / LA Times / Forbes",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-09/starbucks-taps-ai-to-reduce-reliance-on-microsoft-ibm-software",
+    "keywords": [
+      "Starbucks",
+      "SaaS替代",
+      "AI自建",
+      "企业软件",
+      "成本削减"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-0020",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Alteryx Agent Studio + MCP Server：分析师自主构建 AI 代理",
+    "raw_summary": "Alteryx 在 Inspire 2026 大会上发布 Agent Studio 和 MCP Server，使业务分析师可以将现有数据工作流和业务逻辑直接转换为自主 AI 代理，无需依赖集中 IT 团队。这是 Low-Code/No-Code 数据领域的重要里程碑。",
+    "source": "Crescendo AI News",
+    "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+    "keywords": [
+      "Alteryx",
+      "Agent",
+      "MCP",
+      "数据分析",
+      "Low-Code"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-0021",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Cursor 接入 Grok 4.5：加倍使用额度+完整模型池",
+    "raw_summary": "Cursor 在 7 月推出更新，全面支持 Grok 4.5（通过 xAI API），个人和企业计划均包含大量免费使用额度，首周使用量翻倍。Grok 4.5 集成到 Cursor 第一方模型池中，覆盖桌面、Web、iOS、CLI 和 SDK。",
+    "source": "Cursor Blog",
+    "url": "https://cursor.com/blog/grok-4-5",
+    "keywords": [
+      "Cursor",
+      "Grok 4.5",
+      "编程助手",
+      "IDE",
+      "多模型"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-0022",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "Google I/O 2026：DevTools MCP Server + CLI 赋能 AI 代理",
+    "raw_summary": "Google I/O 2026 宣布 DevTools MCP Server 和 CLI 更新，使 AI 代理能够检查网站、交互表单、模拟设备功能并运行 Lighthouse 审计。这标志着 Web 生态正式为代理时代做好准备——浏览器从人类使用转向机器可用。",
+    "source": "Chrome Developer Blog",
+    "url": "https://io.google/2026/explore/technical-session-2",
+    "keywords": [
+      "Chrome",
+      "MCP",
+      "DevTools",
+      "AI代理",
+      "Web"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "pt-0023",
+    "date": "2026-07-25",
+    "category": "product_tool",
+    "title": "SDKScore：AI 编码代理如何过时 SDK？基准测试揭示差距",
+    "raw_summary": "SDKScore 项目揭示 AI 编码代理面临的核心痛点：模型只能学到训练截止时的 SDK 版本。重命名、移除方法和重构的选项对象在截止后更新对模型完全不可见。这是一个尚未解决但日益重要的工程问题。",
+    "source": "SDKScore.dev",
+    "url": "https://sdkscore.dev/",
+    "keywords": [
+      "SDK",
+      "编码代理",
+      "基准测试",
+      "API过时",
+      "工程"
+    ],
+    "original_language": "en",
+    "importance": 2,
+    "is_major_event": false
+  },
+  {
+    "id": "ap-0020",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Self Gradient Forcing: Native Long Video Extrapolation",
+    "raw_summary": "提出 Self Gradient Forcing 技术，使视频生成模型能够原生外推生成长视频而不损失一致性。解决了当前扩散模型在长视频生成中画面不一致和时间漂移的关键难题。",
+    "source": "arXiv cs.CV",
+    "url": "https://arxiv.org/abs/2607.20368",
+    "keywords": [
+      "Long Video",
+      "Diffusion",
+      "Extrapolation",
+      "视频生成"
+    ],
+    "original_language": "en",
+    "importance": 3,
+    "is_major_event": false
+  },
+  {
+    "id": "ap-0021",
+    "date": "2026-07-25",
+    "category": "academic_paper",
+    "title": "Do Coding Agents Need Executable World Models to Solve ARC-AGI-3?",
+    "raw_summary": "探讨编码代理是否需要可执行的世界模型来解决抽象推理问题 ARC-AGI-3。研究比较了简化、验证和执行三种路径的效果，为通用 AI 推理代理的设计提供实证基础。",
+    "source": "arXiv cs.AI",
+    "url": "https://arxiv.org/abs/2607.15439",
+    "keywords": [
+      "ARC-AGI-3",
+      "World Model",
+      "Coding Agent",
+      "抽象推理"
+    ],
+    "original_language": "en",
+    "importance": 4,
+    "is_major_event": false
   }
 ]
