@@ -282,25 +282,6 @@
     "is_major_event": false
   },
   {
-    "id": "product_001",
-    "date": "2026-07-25",
-    "category": "product_tool",
-    "title": "Anthropic Fable 5 Becomes Max and Team Premium Feature at 50% of Weekly Limits",
-    "raw_summary": "From July 20, 2026, Claude Fable 5 became a standing Max and Team Premium feature. Claude Code weekly limits raised 50% through August 19.",
-    "source": "DigitalApplied Blog",
-    "url": "https://www.digitalapplied.com/blog/claude-code-limits-raised-fable-5-max-team-premium-2026",
-    "keywords": [
-      "Claude",
-      "Fable 5",
-      "Claude Code",
-      "Anthropic",
-      "developer tool"
-    ],
-    "original_language": "en",
-    "importance": 3,
-    "is_major_event": false
-  },
-  {
     "id": "product_002",
     "date": "2026-07-25",
     "category": "product_tool",
@@ -557,45 +538,6 @@
       "EPYC Venice",
       "HBM4",
       "AI hardware"
-    ],
-    "original_language": "en",
-    "importance": 4,
-    "is_major_event": false
-  },
-  {
-    "id": "ai_tech_013",
-    "date": "2026-07-25",
-    "category": "ai_tech",
-    "title": "AI Regulation Update: EU August 2 Deadline Approaching, US Federal Preemption Debate Heats Up",
-    "raw_summary": "Global AI regulation landscape as of July 2026: EU AI Act enforcement deadline August 2 is 32 days away affecting 28 member states; US federal preemption fight intensifies; China rolling companion AI enforcement; UK AI Bill progressing; India DIA framework expanding.",
-    "source": "Regulatory Watch",
-    "url": "https://cubbbix.com/blog/ai-regulation-july-2026-global-update/",
-    "keywords": [
-      "AI regulation",
-      "EU AI Act",
-      "US policy",
-      "compliance",
-      "China AI law"
-    ],
-    "original_language": "en",
-    "importance": 2,
-    "is_major_event": false
-  },
-  {
-    "id": "startup_007",
-    "date": "2026-07-25",
-    "category": "startup",
-    "title": "Prentis AI Lab (Hoffman/Pincus) in Talks to Raise $100M at $1B Valuation for Computer-Use Agents",
-    "raw_summary": "Prentis, a new AI research lab co-founded by Reid Hoffman (LinkedIn), Mark Pincus (Zynga), and Ritankar Das, is in talks to raise $100 million at a $1 billion valuation. The lab focuses on computer-use models that automate routine office workflows — insurance claims processing, refund management — betting that non-coding automation will surpass coding as AI's largest market.",
-    "source": "TechCrunch",
-    "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
-    "keywords": [
-      "Prentis",
-      "Reid Hoffman",
-      "Mark Pincus",
-      "computer-use AI",
-      "Series A",
-      "$100M"
     ],
     "original_language": "en",
     "importance": 4,

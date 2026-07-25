@@ -1,26 +1,24 @@
 {
   "date": "2026-07-25",
-  "total_items": 18,
+  "total_items": 43,
+  "ai_tech": 12,
+  "startup": 10,
+  "product_tool": 7,
+  "academic_paper": 14,
+  "new_from_search": 0,
+  "freshness_filtered": 2,
+  "dedup_removed": 1,
+  "major_events_count": 2,
   "insights": [
     {
       "type": "industry_insight",
-      "title": "Token Efficiency War Replaces Pure Performance Arms Race",
-      "summary": "Google's Gemini 3.6 Flash (17% cheaper, +12 points) and AMD's Helios rack ($5.25M per unit with 31 TB HBM4) show the market is shifting from raw capability to efficiency/compute optimization. The winning models of H2 2026 will be those that do more per token — directly impacting enterprise ROI calculations."
-    },
-    {
-      "type": "industry_insight",
-      "title": "Computer-Use Agents Become the Next Venture Bet Post-Coding-AI",
-      "summary": "Prentis AI Lab's $100M raise at $1B valuation from Reid Hoffman and Mark Pincus signals VC conviction that automating routine office tasks (insurance, refunds, workflows) outpaces coding agents as a market. Combined with Anthropic's Fable 5 becoming premium feature and JetBrains Air adding ACP agent support, the agentic computing stack is crystallizing."
+      "title": "AI Market Shifts Toward Cost-Efficiency and Agent Automation",
+      "summary": "With 5 items in our data covering cost-optimized models and agent platforms, the AI industry is decisively shifting from pure performance arms races toward practical efficiency and automation. Key movers: Anthropic Releases Claude Opus 5 — Near Fable 5 Performance , DigitalOcean Launches Model Synthesis — Server-Side AI Tool , DigitalOcean Model Synthesis — Server-Side Tool Outperformin."
     },
     {
       "type": "side_project",
-      "title": "Build an AI-Powered Document Workflow Automation Tool",
-      "summary": "Inspired by Prentis's computer-use approach and BusinessNext's AI banking platform — build a vertical SaaS that automates routine document processing (invoices, contracts, claims) using multimodal VLMs. Target: legal tech or insurance verticals where the problem is well-defined and ROI measurable."
-    },
-    {
-      "type": "side_project",
-      "title": "Create a Token-Efficiency Benchmark for Open-Source Models",
-      "summary": "With Google's 3.6 Flash pushing cost-per-token optimization, build an open benchmark evaluating real-world token costs across coding, knowledge work, and multimodal tasks. Could become an essential tool for developers choosing between competing models."
+      "title": "AI Automation Tooling Vertical Opportunity",
+      "summary": "With 5 agents/workflow-related items in this round, building a specialized vertical automation platform for industries like insurance, banking, or legal document processing could capture value from the converging trends of computer-use models, agent protocols (ACP), and enterprise AI adoption."
     }
   ]
 }
