@@ -7705,7 +7705,8 @@
       "outage",
       "reliability"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "2026年7月25日，ChatGPT、Codex及API同时遭遇全球性宕机，这是OpenAI四天内的第四次服务中断。DownDetector显示美东时间上午4:47起大量用户报告登录和聊天问题，凸显AI平台基础设施脆弱性。"
   },
   {
     "id": "ai_tech_025",
@@ -7722,7 +7723,8 @@
       "hardware",
       "ai-infrastructure"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "2026年7月22-23日AMD在旧金山举办Advancing AI大会，CEO Lisa Su发布Instinct MI450加速器家族及最新AI基础设施架构，强调与OpenAI等客户的战略合作从路线图走向技术落地。"
   },
   {
     "id": "ai_tech_026",
@@ -7739,7 +7741,8 @@
       "benchmark",
       "intelligence-index"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "2026年7月25日数据显示Claude Opus 5以60.7%的得分登顶Artificial Analysis Intelligence Index，超过Fable 5的59.9%。Opus 5以更低Cost per Task提供与Fable 5可比智能水平，定价仍维持Opus 4.8水平。"
   },
   {
     "id": "ai_tech_027",
@@ -7756,7 +7759,8 @@
       "settlement",
       "piracy"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "法官批准Anthropic因使用盗版来源（含LibGen约500万本书）训练Claude模型而达成的15亿美元和解协议。这标志着AI行业知识产权合规进入实质性惩罚阶段。"
   },
   {
     "id": "paper_031",
@@ -7773,7 +7777,8 @@
       "geometry-tokens",
       "eccv2026"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "ECCV 2026接收论文提出VLM-IE3D框架，通过隐式几何Token(IGT)捕获高层几何先验和显式几何Token(EGT)编码详细3D结构，仅用RGB视频实现Fine-grained 3D空间理解，在3D视频检测、视觉定位、密集描述等任务上SOTA。"
   },
   {
     "id": "product_014",
@@ -7790,7 +7795,8 @@
       "martech",
       "vidcon"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "2026年7月23日Fypro.ai在VidCon Anaheim 2026上推出专为创作者经济打造的AI增长引擎，结合营销自动化和内容生成能力，面向creator-led commerce赛道。"
   },
   {
     "id": "startup_019",
@@ -7806,7 +7812,8 @@
       "africa",
       "sme-fund"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "2026年7月23日，南非SME Fund宣布计划融资6.09亿美元扩大VC投资规模。过去十年该基金已在1142家公司投资超160亿兰特，标志着非洲VC市场进入成熟期。"
   },
   {
     "id": "startup_020",
@@ -7822,7 +7829,8 @@
       "funding",
       "startup-ecosystem"
     ],
-    "date": "2026-07-26"
+    "date": "2026-07-26",
+    "summary": "2026年7月24日报道显示印度初创企业融资活动保持强劲势头，AI创业公司在印度科技融资中占据重要份额，为南亚AI生态注入持续增长动力。"
   },
   {
     "id": "ait-028",
