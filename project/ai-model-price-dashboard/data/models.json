@@ -232,8 +232,8 @@
         "image"
       ],
       "context_window": 128000,
-      "input_price_per_1m": 0.4,
-      "output_price_per_1m": 0.8,
+      "input_price_per_1m": 1.4,
+      "output_price_per_1m": 4.4,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 62.1,
@@ -259,8 +259,8 @@
         "image"
       ],
       "context_window": 131072,
-      "input_price_per_1m": 0.8,
-      "output_price_per_1m": 2.0,
+      "input_price_per_1m": 1.66,
+      "output_price_per_1m": 4.97,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 76.0,
@@ -385,8 +385,8 @@
         "image"
       ],
       "context_window": 128000,
-      "input_price_per_1m": 2.0,
-      "output_price_per_1m": 6.0,
+      "input_price_per_1m": 0.5,
+      "output_price_per_1m": 1.5,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 45.0,
@@ -875,6 +875,32 @@
       "score_reasoning": 0,
       "score_image": 0,
       "score_chat": 0
-    }
-  ]
-}
+    },
+    {
+      "model_id": "gpt-5.4-nano",
+      "name": "GPT-5.4 Nano",
+      "vendor": "OpenAI",
+      "open_source": false,
+      "tier": "budget",
+      "categories": [
+        "chat",
+        "reasoning",
+        "coding"
+      ],
+      "context_window": 400000,
+      "input_price_per_1m": 0.05,
+      "output_price_per_1m": 0.4,
+      "image_generation_price": "/",
+      "image_edit_price": "/",
+      "benchmark_swe_verified": null,
+            "benchmark_reasoning": 65.0,
+            "benchmark_knowledge": 72.0,
+            "benchmark_chat": 65.0,
+            "composite_score": 67,
+            "score_coding": 67,
+            "score_reasoning": 65,
+            "score_image": 70,
+            "score_chat": 65
+          }
+        ]
+      }
