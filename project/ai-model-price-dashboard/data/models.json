@@ -4,111 +4,122 @@
       "id": "gpt-5.6-sol",
       "name": "GPT-5.6 Sol",
       "provider": "OpenAI",
-      "input_price_per_1m": 5.00,
-      "output_price_per_1m": 30.00,
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 30.0,
       "context_window": 200000,
       "pricing_note": "旗舰模型，7月9日GA发布。长上下文（>272K）输入2x、输出1.5x",
-      "url": "https://openai.com/api/pricing/"
+      "url": "https://openai.com/api/pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "gpt-5.6-terra",
       "name": "GPT-5.6 Terra",
       "provider": "OpenAI",
-      "input_price_per_1m": 2.50,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 2.5,
+      "output_price_per_1m": 15.0,
       "context_window": 200000,
       "pricing_note": "平衡档位，定价为Sol的一半",
-      "url": "https://openai.com/api/pricing/"
+      "url": "https://openai.com/api/pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "gpt-5.6-luna",
       "name": "GPT-5.6 Luna",
       "provider": "OpenAI",
-      "input_price_per_1m": 1.00,
-      "output_price_per_1m": 6.00,
+      "input_price_per_1m": 1.0,
+      "output_price_per_1m": 6.0,
       "context_window": 200000,
       "pricing_note": "最快最便宜的GPT-5.6档位",
-      "url": "https://openai.com/api/pricing/"
+      "url": "https://openai.com/api/pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "o4-mini",
       "name": "o4-mini",
       "provider": "OpenAI",
-      "input_price_per_1m": 1.10,
-      "output_price_per_1m": 4.40,
+      "input_price_per_1m": 1.1,
+      "output_price_per_1m": 4.4,
       "context_window": 200000,
       "pricing_note": "推理优化型模型，性价比高",
-      "url": "https://openai.com/api/pricing/"
+      "url": "https://openai.com/api/pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "claude-opus-4.8",
       "name": "Claude Opus 4.8",
       "provider": "Anthropic",
-      "input_price_per_1m": 15.00,
-      "output_price_per_1m": 75.00,
+      "input_price_per_1m": 15.0,
+      "output_price_per_1m": 75.0,
       "context_window": 200000,
       "pricing_note": "最强推理能力，Fast模式降低价格。Opus 5在研中",
-      "url": "https://benchlm.ai/anthropic/api-pricing"
+      "url": "https://benchlm.ai/anthropic/api-pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "claude-sonnet-5",
       "name": "Claude Sonnet 5",
       "provider": "Anthropic",
-      "input_price_per_1m": 3.00,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "context_window": 200000,
       "pricing_note": "AWS Bedrock促销价$2/$10至2026年8月31日",
-      "url": "https://benchlm.ai/anthropic/api-pricing"
+      "url": "https://benchlm.ai/anthropic/api-pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "claude-haiku-4.5",
       "name": "Claude Haiku 4.5",
       "provider": "Anthropic",
-      "input_price_per_1m": 0.80,
-      "output_price_per_1m": 4.00,
+      "input_price_per_1m": 0.8,
+      "output_price_per_1m": 4.0,
       "context_window": 200000,
       "pricing_note": "快速低成本选择",
-      "url": "https://benchlm.ai/anthropic/api-pricing"
+      "url": "https://benchlm.ai/anthropic/api-pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "claude-fable-5",
       "name": "Claude Fable 5",
       "provider": "Anthropic",
-      "input_price_per_1m": 10.00,
-      "output_price_per_1m": 50.00,
+      "input_price_per_1m": 10.0,
+      "output_price_per_1m": 50.0,
       "context_window": 200000,
       "pricing_note": "介于Sonnet和Opus之间的新档位",
-      "url": "https://www.aipricing.guru/anthropic-pricing/"
+      "url": "https://www.aipricing.guru/anthropic-pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "gemini-3.5-flash",
       "name": "Gemini 3.5 Flash",
       "provider": "Google",
-      "input_price_per_1m": 1.50,
-      "output_price_per_1m": 7.50,
+      "input_price_per_1m": 1.5,
+      "output_price_per_1m": 7.5,
       "context_window": 1000000,
       "pricing_note": "7月21日发布，输出价较前代降17%",
-      "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
+      "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "gemini-3.1-pro",
       "name": "Gemini 3.1 Pro",
       "provider": "Google",
-      "input_price_per_1m": 3.50,
-      "output_price_per_1m": 17.50,
+      "input_price_per_1m": 3.5,
+      "output_price_per_1m": 17.5,
       "context_window": 1000000,
       "pricing_note": "Pro级旗舰，百万token上下文",
-      "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing"
+      "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "gemini-2.5-flash-lite",
       "name": "Gemini 2.5 Flash-Lite",
       "provider": "Google",
-      "input_price_per_1m": 0.10,
-      "output_price_per_1m": 0.40,
+      "input_price_per_1m": 0.1,
+      "output_price_per_1m": 0.4,
       "context_window": 1000000,
       "pricing_note": "最便宜的Gemini档位，适合分类和路由",
-      "url": "https://costgoat.com/pricing/gemini-api"
+      "url": "https://costgoat.com/pricing/gemini-api",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "deepseek-v4-flash",
@@ -118,7 +129,8 @@
       "output_price_per_1m": 0.28,
       "context_window": 128000,
       "pricing_note": "极致性价比，比GPT-5.6便宜99%。区分cache-hit/cache-miss定价",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "deepseek-v4-pro",
@@ -128,7 +140,8 @@
       "output_price_per_1m": 1.09,
       "context_window": 128000,
       "pricing_note": "旗舰推理级，保留V4的性价比优势",
-      "url": "https://api-docs.deepseek.com/quick_start/pricing/"
+      "url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "qwen3.7-max",
@@ -138,97 +151,107 @@
       "output_price_per_1m": 3.75,
       "context_window": 131072,
       "pricing_note": "通义千问旗舰，当前$1.25/$3.75",
-      "url": "https://docs.qwencloud.com/developer-guides/getting-started/pricing"
+      "url": "https://docs.qwencloud.com/developer-guides/getting-started/pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "qwen-plus",
       "name": "Qwen Plus",
       "provider": "Alibaba",
-      "input_price_per_1m": 0.40,
-      "output_price_per_1m": 1.20,
+      "input_price_per_1m": 0.4,
+      "output_price_per_1m": 1.2,
       "context_window": 131072,
       "pricing_note": "均衡档位",
-      "url": "https://docs.qwencloud.com/developer-guides/getting-started/pricing"
+      "url": "https://docs.qwencloud.com/developer-guides/getting-started/pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "qwen-turbo",
       "name": "Qwen Turbo",
       "provider": "Alibaba",
       "input_price_per_1m": 0.05,
-      "output_price_per_1m": 0.20,
+      "output_price_per_1m": 0.2,
       "context_window": 131072,
       "pricing_note": "最低$0.05/MTok入门，性价比极高",
-      "url": "https://docs.qwencloud.com/developer-guides/getting-started/pricing"
+      "url": "https://docs.qwencloud.com/developer-guides/getting-started/pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "mistral-large",
       "name": "Mistral Large",
       "provider": "Mistral",
-      "input_price_per_1m": 2.00,
-      "output_price_per_1m": 6.00,
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 6.0,
       "context_window": 131072,
       "pricing_note": "平衡档，API三档：Small/Medium/Large",
-      "url": "https://mistral.ai/pricing/api/"
+      "url": "https://mistral.ai/pricing/api/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "mistral-medium",
       "name": "Mistral Medium 3.5",
       "provider": "Mistral",
-      "input_price_per_1m": 0.50,
-      "output_price_per_1m": 1.50,
+      "input_price_per_1m": 0.5,
+      "output_price_per_1m": 1.5,
       "context_window": 131072,
       "pricing_note": "企业简化部署优选",
-      "url": "https://mistral.ai/pricing/api/"
+      "url": "https://mistral.ai/pricing/api/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "mistral-small",
       "name": "Mistral Small",
       "provider": "Mistral",
-      "input_price_per_1m": 0.10,
-      "output_price_per_1m": 0.30,
+      "input_price_per_1m": 0.1,
+      "output_price_per_1m": 0.3,
       "context_window": 131072,
       "pricing_note": "轻量推理首选",
-      "url": "https://mistral.ai/pricing/api/"
+      "url": "https://mistral.ai/pricing/api/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "grok-4.5",
       "name": "Grok 4.5",
       "provider": "xAI",
-      "input_price_per_1m": 2.00,
-      "output_price_per_1m": 6.00,
+      "input_price_per_1m": 2.0,
+      "output_price_per_1m": 6.0,
       "context_window": 500000,
       "pricing_note": "比Opus 4.8/GPT-5.5低60%+，>200K上下文双倍计费",
-      "url": "https://openrouter.ai/x-ai/grok-4.5"
+      "url": "https://openrouter.ai/x-ai/grok-4.5",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "grok-4",
       "name": "Grok 4",
       "provider": "xAI",
-      "input_price_per_1m": 3.00,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "context_window": 131072,
       "pricing_note": "xAI旗舰基础档",
-      "url": "https://www.aipricing.guru/xai-pricing/"
+      "url": "https://www.aipricing.guru/xai-pricing/",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "glm-5.2",
       "name": "GLM-5.2",
       "provider": "Zhipu AI",
-      "input_price_per_1m": 0.50,
-      "output_price_per_1m": 1.50,
+      "input_price_per_1m": 0.5,
+      "output_price_per_1m": 1.5,
       "context_window": 200000,
       "pricing_note": "745B参数旗舰，推理能力对标Claude Opus 4.6",
-      "url": "https://unorouter.com/en/models/zhipu/glm-5.2"
+      "url": "https://unorouter.com/en/models/zhipu/glm-5.2",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "kimi-k3",
       "name": "Kimi K3",
       "provider": "Moonshot AI",
-      "input_price_per_1m": 3.00,
-      "output_price_per_1m": 15.00,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "context_window": 1000000,
       "pricing_note": "7月16日发布，2.8T参数，百万token上下文，长期代理任务优化",
-      "url": "https://benchlm.ai/moonshot/api-pricing"
+      "url": "https://benchlm.ai/moonshot/api-pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "llama-3.3-70b-groq",
@@ -238,7 +261,8 @@
       "output_price_per_1m": 0.79,
       "context_window": 128000,
       "pricing_note": "Groq Lightning极快推理，~280-394 tok/s吞吐",
-      "url": "https://groq.com/pricing"
+      "url": "https://groq.com/pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "llama-3.1-8b-groq",
@@ -248,17 +272,19 @@
       "output_price_per_1m": 0.08,
       "context_window": 128000,
       "pricing_note": "最便宜的Llama档位，750 TPS吞吐量，实时对话首选",
-      "url": "https://groq.com/pricing"
+      "url": "https://groq.com/pricing",
+      "updated_at": "2026-07-26"
     },
     {
       "id": "minimax-m2.7",
       "name": "MiniMax M2.7",
       "provider": "MiniMax",
-      "input_price_per_1m": 0.30,
-      "output_price_per_1m": 0.80,
+      "input_price_per_1m": 0.3,
+      "output_price_per_1m": 0.8,
       "context_window": 131072,
       "pricing_note": "7月22日VL端点价格从$0.06降至$0.01/次",
-      "url": "https://minimax-ai.chat/pricing/"
+      "url": "https://minimax-ai.chat/pricing/",
+      "updated_at": "2026-07-26"
     }
   ],
   "last_updated": "2026-07-26",
@@ -277,5 +303,6 @@
       "Claude Sonnet 5 Bedrock促销: 至Aug 31日 $2/$10",
       "MiniMax VL降价: Jul 22起 API-VLM从$0.06降至$0.01/次"
     ]
-  }
+  },
+  "updated_at": "2026-07-26"
 }
