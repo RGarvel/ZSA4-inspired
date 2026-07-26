@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-26",
+  "updated_at": "2026-07-27",
   "currency": "USD",
   "unit": "per 1M tokens",
   "models": [
@@ -16,8 +16,8 @@
         "image"
       ],
       "context_window": 200000,
-      "input_price_per_1m": 15.0,
-      "output_price_per_1m": 75.0,
+      "input_price_per_1m": 5.0,
+      "output_price_per_1m": 25.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 88.6,
@@ -29,7 +29,7 @@
       "score_reasoning": 92.0,
       "score_image": 56.4,
       "score_chat": 94,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "claude-fable-5",
@@ -57,7 +57,7 @@
       "score_reasoning": 100.0,
       "score_image": 57.0,
       "score_chat": 96,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gpt-5.6-sol",
@@ -72,7 +72,7 @@
         "image"
       ],
       "context_window": 200000,
-      "input_price_per_1m": 7.5,
+      "input_price_per_1m": 5.0,
       "output_price_per_1m": 30.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
@@ -85,7 +85,7 @@
       "score_reasoning": 84.0,
       "score_image": 54.6,
       "score_chat": 90,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "kimi-k3",
@@ -100,8 +100,8 @@
         "image"
       ],
       "context_window": 1000000,
-      "input_price_per_1m": 0.5,
-      "output_price_per_1m": 2.0,
+      "input_price_per_1m": 3.0,
+      "output_price_per_1m": 15.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 84.0,
@@ -113,7 +113,7 @@
       "score_reasoning": 96.0,
       "score_image": 51.0,
       "score_chat": 86,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gemini-3.1-pro",
@@ -141,7 +141,7 @@
       "score_reasoning": 80.0,
       "score_image": 55.8,
       "score_chat": 90,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "claude-sonnet-5",
@@ -169,7 +169,7 @@
       "score_reasoning": 88.0,
       "score_image": 54.0,
       "score_chat": 89,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gpt-5.6-terra",
@@ -197,7 +197,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "grok-4.5",
@@ -225,7 +225,7 @@
       "score_reasoning": 87.0,
       "score_image": 52.199999999999996,
       "score_chat": 87.0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "kimi-k2.6",
@@ -253,7 +253,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "step-edge",
@@ -281,7 +281,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "glm-5.2",
@@ -309,7 +309,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "qwen-max",
@@ -337,7 +337,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "flux-2-pro",
@@ -362,7 +362,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gpt-5.6-luna",
@@ -387,7 +387,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "cohere-command-r-plus",
@@ -415,7 +415,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "imagen-4-ultra",
@@ -440,7 +440,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "mistral-large-3",
@@ -468,7 +468,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "qwen3.7-max",
@@ -494,7 +494,7 @@
       "score_reasoning": 78.0,
       "score_image": 52.8,
       "score_chat": 85,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "deepseek-v4-pro",
@@ -522,7 +522,7 @@
       "score_reasoning": 82.0,
       "score_image": 52.199999999999996,
       "score_chat": 85,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "doubao-seed-2.1-pro",
@@ -550,7 +550,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gpt-image-1.5",
@@ -575,7 +575,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gemini-3.5-flash",
@@ -603,7 +603,7 @@
       "score_reasoning": 79,
       "score_image": 47.4,
       "score_chat": 79,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gemini-3.6-flash",
@@ -631,7 +631,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "yi-lightning",
@@ -659,7 +659,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "deepseek-v4-flash",
@@ -687,7 +687,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "llama-4-maverick",
@@ -715,7 +715,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gpt-5.4-mini",
@@ -743,7 +743,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "llama-4-scout",
@@ -771,7 +771,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "dall-e-3",
@@ -796,7 +796,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gemini-3-flash",
@@ -824,7 +824,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "gemini-2.5-flash-lite",
@@ -852,7 +852,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     },
     {
       "model_id": "amazon-nova-micro",
@@ -880,7 +880,7 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-26"
+      "updated_at": "2026-07-27"
     }
   ]
 }
