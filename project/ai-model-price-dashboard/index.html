@@ -935,43 +935,14 @@
       let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
       if (!candidates.length) { card.classList.remove('show'); return; }
       
-      // Step 1: sort by quality, take top 5
-      candidates.sort((a, b) => (b.composite_score || 0) - (a.composite_score || 0));
-      const top5 = candidates.slice(0, 5);
-      
-      // Step 2: compute value score for each (same percentile-based score as in renderTable)
-      let validRawValues = [];
-      for (const m of top5) {
-        m.value_raw = calcValueScore(m, taskType);
-        if (m.value_raw >= 0) validRawValues.push(m.value_raw);
-      }
-      
-      // Build raw->percentile map and assign value_score (0-100)
-      const allRawValues = validRawValues.sort((a, b) => a - b);
-      const minRaw = allRawValues[0] || 1;
-      const maxRaw = allRawValues[allRawValues.length - 1] || 1;
-      const range = maxRaw - minRaw || 1;
-      
-      // Create raw-to-percentile mapping
-      const rawToPercentile = new Map();
-      for (let i = 0; i < allRawValues.length; i++) {
-        rawToPercentile.set(allRawValues[i], i / (allRawValues.length - 1));
-      }
-      
-      for (const m of top5) {
-        if (m.value_raw < 0) {
-          m.value_score = 0;
-        } else {
-          let percentile = 0;
-          for (const [rv, pct] of rawToPercentile) {
-            if (Math.abs(rv - m.value_raw) < 0.0001) { percentile = pct; break; }
-          }
-          m.value_score = Math.round(percentile * 100);
+      // Find the model with highest value_score directly from current table models
+      // No recalculation needed - just use the already-computed value_score
+      let best = candidates[0];
+      for (const m of candidates) {
+        if ((m.value_score || 0) > (best.value_score || 0)) {
+          best = m;
         }
       }
-      
-      top5.sort((a, b) => (b.value_score || 0) - (a.value_score || 0));
-      const best = top5[0];
       
       card.classList.add('show');
       content.innerHTML = `
@@ -980,7 +951,7 @@
             <h4 class="mb-2">${best.name}</h4>
             <p class="mb-1"><strong>厂商:</strong> ${best.vendor}</p>
             <p class="mb-1"><strong>综合评分:</strong> <span class="quality-score ${best.composite_score >= 90 ? 'high' : best.composite_score >= 75 ? 'medium' : 'low'}">${best.composite_score}</span></p>
-            <p class="mb-1"><strong>性价比评分:</strong> <span style="color: var(--accent-green); font-weight: 600;">${best.value_score}</span></p>
+            <p class="mb-1"><strong>性价比评分:</strong> <span style="color: var(--accent-green); font-weight: 600;">${best.value_score !== null && best.value_score != undefined ? best.value_score : 0}</span></p>
           </div>
           <div class="col-md-6">
             <p class="mb-1"><strong>输入价格:</strong> $${fmtPrice(best.input_price_per_1m)}/M tokens</p>
