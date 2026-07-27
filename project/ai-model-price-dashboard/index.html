@@ -935,10 +935,12 @@
       let candidates = getFilteredModels().filter(m => m.categories.includes(taskType));
       if (!candidates.length) { card.classList.remove('show'); return; }
       
-      // Find the model with highest value_score directly from current table models
-      // No recalculation needed - just use the already-computed value_score
-      let best = candidates[0];
-      for (const m of candidates) {
+      // Step 1: sort by quality (composite_score), take top 5
+      const top5 = [...candidates].sort((a, b) => (b.composite_score || 0) - (a.composite_score || 0)).slice(0, 5);
+      
+      // Step 2: from top 5, pick the one with highest value_score (directly from table)
+      let best = top5[0];
+      for (const m of top5) {
         if ((m.value_score || 0) > (best.value_score || 0)) {
           best = m;
         }
