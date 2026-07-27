@@ -939,17 +939,17 @@
       candidates.sort((a, b) => (b.composite_score || 0) - (a.composite_score || 0));
       const top5 = candidates.slice(0, 5);
       
-      // Step 2: from top 5, pick the one with highest value score
-      let maxScore = 0;
+      // Step 2: compute value score for each (same as in renderTable)
       for (const m of top5) {
-        m.score = calcValueScore(m, taskType);
-        if (m.score > maxScore) maxScore = m.score;
+        m.value_score = calcValueScore(m, taskType);
       }
-      top5.sort((a, b) => b.score - a.score);
       
-      // Normalize best.score to 0-100 scale
+      // Find the one with highest value score
+      top5.sort((a, b) => (b.value_score || 0) - (a.value_score || 0));
       const best = top5[0];
-      const bestScoreNormalized = (best.score / maxScore) * 100;
+      
+      // Use the same value_score that will be shown in the table
+      const bestVs = best.value_score != null ? Number(best.value_score) : 0;
       
       card.classList.add('show');
       content.innerHTML = `
@@ -958,7 +958,7 @@
             <h4 class="mb-2">${best.name}</h4>
             <p class="mb-1"><strong>厂商:</strong> ${best.vendor}</p>
             <p class="mb-1"><strong>综合评分:</strong> <span class="quality-score ${best.composite_score >= 90 ? 'high' : best.composite_score >= 75 ? 'medium' : 'low'}">${best.composite_score}</span></p>
-            <p class="mb-1"><strong>性价比评分:</strong> <span style="color: var(--accent-green); font-weight: 600;">${Math.round(bestScoreNormalized)}/100</span></p>
+            <p class="mb-1"><strong>性价比评分:</strong> <span style="color: var(--accent-green); font-weight: 600;">${bestVs.toFixed(2)}</span></p>
           </div>
           <div class="col-md-6">
             <p class="mb-1"><strong>输入价格:</strong> $${fmtPrice(best.input_price_per_1m)}/M tokens</p>
