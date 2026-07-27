@@ -8224,5 +8224,104 @@
       "Agentic"
     ],
     "original_language": "en"
+  },
+  {
+    "id": "ai_tech_028",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "Kimi K3 2.8T MoE 开源权重今日发布，创历史最大开源模型纪录",
+    "summary": "Moonshot AI 于 7 月 27 日发布 Kimi K3 全量 2.8 万亿参数 MoE 模型权重至 Hugging Face，采用 MXFP4 量化，支持 100 万 token 上下文和视觉能力，终结 API 数据出境风险。",
+    "url": "https://www.techi.com/kimi-k3-open-weights-inference-economics/",
+    "is_major_event": true,
+    "importance": 5,
+    "source": "web_search"
+  },
+  {
+    "id": "ai_tech_029",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "DeepSeek V4 正式 GA 发布，结束预览版时期",
+    "summary": "经过三个月预览期后，DeepSeek V4 系列（含 Pro 与 Flash）于 7 月 24 日正式 GA 上线，终结 preview-build churn，为生产部署扫清最后一道障碍。旧别名 deepseek-chat 同步标记废弃。",
+    "url": "https://spoonai.me/posts/2026-07-24-deepseek-v4-stable-release-jul2026-en",
+    "is_major_event": true,
+    "importance": 4,
+    "source": "web_search"
+  },
+  {
+    "id": "ai_tech_030",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "EU 下裁定 Google 须对 Android 开放 AI 竞争",
+    "summary": "欧盟委员会 7 月 16 日依据《数字市场法案》作出两项具有约束力的决定，要求 Google 向 AI 竞争对手开放 Android 系统级优势，Gemini 获得系统性集成特权被终结。",
+    "url": "https://www.techgines.com/post/eu-google-android-ai-ruling-dma",
+    "is_major_event": false,
+    "importance": 3,
+    "source": "web_search"
+  },
+  {
+    "id": "ai_tech_031",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "Gartner 预测 2026 AI 平台市场规模增长 63% 至 640 亿美元",
+    "summary": "Gartner 报告全球 AI 模型和平台终端用户支出将在 2026 年达到 640 亿美元，较 2025 年增长 63.4%；其中 GenAI 模型支出预计增长 117%。RAG 已成为主流架构，63% 的企业部署依赖它。",
+    "url": "https://www.linkedin.com/pulse/gartner-forecasts-worldwide-ai-platforms-models-market-2j1rf",
+    "is_major_event": false,
+    "importance": 3,
+    "source": "web_search"
+  },
+  {
+    "id": "ai_tech_032",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "Claude Fable 5 与 Mythos 5：Anthropic 发布最强通用模型",
+    "summary": "Claude Fable 5 是 Anthropic 首个公开发布的 Mythos 级模型，在前沿物理研究测试中表现优异——仅用 GPT-5.5 三分之一的推理 token 就追平其四天的进展。SWE-bench Pro 达 80.3%。",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "is_major_event": false,
+    "importance": 3,
+    "source": "web_search"
+  },
+  {
+    "id": "startup_021",
+    "date": "2026-07-27",
+    "category": "startup",
+    "title": "Travis Kalanick Atoms 融资 17 亿美元，a16z 领投物理 AI 赛道",
+    "summary": "前 Uber CEO Travis Kalanick 的物理 AI 公司 Atoms 完成 17 亿美元 Series A，由 Andreessen Horowitz 领投，Ben Horowitz 加入董事会，Uber 作为投资方回归。Atoms 覆盖采矿、物流、机器人等多个工业领域。",
+    "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
+    "is_major_event": true,
+    "importance": 4,
+    "source": "web_search"
+  },
+  {
+    "id": "startup_022",
+    "date": "2026-07-27",
+    "category": "startup",
+    "title": "Wonder 食品配送机器人获 6.5 亿美元 D 轮，估值 90 亿",
+    "summary": "Food Robotics 公司 Wonder 于 7 月 16 日宣布 6.5 亿美元 D 轮融资，ARK Invest 和 AllianceBernstein 参投，估值达 90 亿美元。CEO Marc Lore 称公司将于 2027 年初上市。",
+    "url": "https://spoonai.me/posts/2026-07-20-wonder-650m-series-d-ai-food-robotics-jul2026-en",
+    "is_major_event": true,
+    "importance": 4,
+    "source": "web_search"
+  },
+  {
+    "id": "product_015",
+    "date": "2026-07-27",
+    "category": "product_tool",
+    "title": "AMD Advancing AI 2026 大会发布下一代 EPYC 与 Instinct 加速卡",
+    "summary": "AMD 在 7 月 22-23 日的 Advancing AI 大会公布下一代 EPYC 处理器、Instinct AI 加速器产品线更新，强化 CPU+GPU 协同的端侧 AI 基础设施布局。",
+    "url": "https://www.servethehome.com/amd-advancing-ai-2026-keynote-live-coverage/",
+    "is_major_event": false,
+    "importance": 3,
+    "source": "web_search"
+  },
+  {
+    "id": "product_016",
+    "date": "2026-07-27",
+    "category": "product_tool",
+    "title": "Oracle 裁员 3 万人转向 500 亿美元 AI 基础设施投资",
+    "summary": "Oracle 在 2026 年 3 月裁员 2 万至 3 万人以资助 Stargate AI 数据中心扩张项目。银行随后撤回融资，公司背负 580 亿美元债务继续推进 AI 基础设施战略。",
+    "url": "https://cybersecuritynews.com/oracle-lays-off-30000-employees/",
+    "is_major_event": false,
+    "importance": 3,
+    "source": "web_search"
   }
 ]
