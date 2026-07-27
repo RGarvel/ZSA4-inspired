@@ -655,6 +655,21 @@
         if (!response.ok) throw new Error('Failed to load data');
         const data = await response.json();
         allModels = data.models;
+        
+        // Set task-type specific value_score from pre-computed JSON values
+        const activeTask = $el.taskType?.value || 'chat';
+        const scoreField = 'value_score_' + activeTask;
+        for (const m of allModels) {
+          // If value_score exists for this task type, use it
+          if (scoreField in m) {
+            m.value_score = m[scoreField];
+          } else if ('value_score' in m) {
+            m.value_score = m.value_score;
+          } else {
+            m.value_score = null;
+          }
+        }
+        
         if ($el.lastUpdated) $el.lastUpdated.textContent = `数据更新于: ${data.updated_at}`;
       } catch (error) {
         console.error('Error loading data:', error);
@@ -722,39 +737,18 @@
     function renderTable() {
       const models = getFilteredModels();
       
-      // Compute raw value scores for each model based on active task type
-      const activeTask = $el.taskType?.value || '';
-      let validRawValues = [];
+      // Ensure each model has value_score from pre-computed JSON
+      // (loadModels already set m.value_score from JSON)
       for (const m of models) {
-        m.value_raw = calcValueScore(m, activeTask);
-        // Only include positive values (valid data) in normalization
-        if (m.value_raw >= 0) validRawValues.push(m.value_raw);
-      }
-      
-      // Normalize raw ratios to 0-100 using min-max scaling across ALL filtered models
-      // Use global median-based normalization so scores are comparable regardless of filter state
-      const allRawValues = validRawValues.sort((a, b) => a - b);
-      const minRaw = allRawValues[0] || 1;
-      const maxRaw = allRawValues[allRawValues.length - 1] || 1;
-      const range = maxRaw - minRaw || 1;
-      
-      // Use percentile mapping: score = percentile rank * quality factor
-      // Build a map from raw value → percentile rank
-      const rawToPercentile = new Map();
-      for (let i = 0; i < allRawValues.length; i++) {
-        rawToPercentile.set(allRawValues[i], i / (allRawValues.length - 1));
-      }
-      
-      for (const m of models) {
-        if (m.value_raw < 0) {
-          m.value_score = 0; // No valid price data (image-only but no image price)
-        } else {
-          // Percentile rank mapped to 0-100
-          let percentile = 0;
-          for (const [rv, pct] of rawToPercentile) {
-            if (Math.abs(rv - m.value_raw) < 0.0001) { percentile = pct; break; }
+        if (m.value_score == null) {
+          // Fallback: compute if not present (e.g., old data)
+          const activeTask = $el.taskType?.value || 'chat';
+          const raw = calcValueScore(m, activeTask);
+          if (raw >= 0) {
+            m.value_score = Math.round((raw / 5) * 100); // Simplified fallback
+          } else {
+            m.value_score = 0;
           }
-          m.value_score = Math.round(percentile * 100);
         }
       }
       
