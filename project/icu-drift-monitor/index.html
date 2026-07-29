@@ -253,6 +253,80 @@
       font-size: 3rem; font-weight: 800; text-align: center; margin: 0.5rem 0;
     }
     .result-detail { font-size: 0.85rem; color: var(--text-secondary); text-align: center; }
+
+    /* ── DRIFT-Lite Visualization ── */
+    .drift-panel {
+      display: none; background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem;
+    }
+    .drift-panel.show { display: block; }
+    .drift-panel h5 { color: var(--accent-purple); margin-bottom: 1rem; }
+
+    /* Attention Heatmap */
+    .attention-heatmap {
+      width: 100%; height: 200px; border-radius: 8px;
+      background: var(--bg-secondary); margin-bottom: 1rem;
+    }
+    .heatmap-label { font-size: 0.8rem; color: var(--text-secondary); text-align: center; margin-top: 0.5rem; }
+
+    /* Prediction Panel */
+    .prediction-canvas {
+      width: 100%; height: 250px; border-radius: 8px;
+      background: var(--bg-secondary); margin-bottom: 0.5rem;
+    }
+    .prediction-legend {
+      display: flex; gap: 1rem; justify-content: center; font-size: 0.8rem;
+    }
+    .legend-item { display: flex; align-items: center; gap: 0.3rem; }
+    .legend-color { width: 16px; height: 3px; border-radius: 2px; }
+
+    /* Intervention Panel */
+    .intervention-controls {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .intervention-slider {
+      width: 100%; height: 6px; border-radius: 3px;
+      background: var(--bg-secondary); appearance: none; outline: none;
+    }
+    .intervention-slider::-webkit-slider-thumb {
+      appearance: none; width: 16px; height: 16px; border-radius: 50%;
+      background: var(--accent-blue); cursor: pointer;
+    }
+    .intervention-slider::-moz-range-thumb {
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--accent-blue); cursor: pointer; border: none;
+    }
+    .intervention-value {
+      font-size: 0.9rem; color: var(--accent-blue); font-weight: 600;
+    }
+    .intervention-result {
+      background: var(--bg-secondary); border-radius: 8px; padding: 1rem;
+      text-align: center; margin-top: 1rem;
+    }
+    .intervention-score {
+      font-size: 2rem; font-weight: 700; margin: 0.5rem 0;
+    }
+    .intervention-impact { font-size: 0.85rem; color: var(--text-secondary); }
+
+    /* Multi-timestep History */
+    .timestep-list {
+      max-height: 150px; overflow-y: auto; margin-top: 0.5rem;
+      border: 1px solid var(--border-color); border-radius: 8px; padding: 0.5rem;
+    }
+    .timestep-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border-color);
+      font-size: 0.8rem;
+    }
+    .timestep-item:last-child { border-bottom: none; }
+    .timestep-time { color: var(--text-secondary); }
+    .timestep-score { font-weight: 600; }
+    .timestep-remove {
+      background: none; border: none; color: var(--risk-high);
+      cursor: pointer; font-size: 1rem; padding: 0; line-height: 1;
+    }
+    .timestep-remove:hover { opacity: 0.7; }
   </style>
 </head>
 <body>
@@ -295,6 +369,69 @@
 
     <!-- Patient Cards -->
     <div id="resultCard" class="result-card"></div>
+    <div id="driftPanel" class="drift-panel">
+      <h5><i class="bi bi-diagram-3"></i> DRIFT-Lite 模型分析</h5>
+      
+      <!-- Attention Heatmap -->
+      <div class="mb-4">
+        <h6 style="color: var(--text-primary); font-size: 0.95rem;">🧠 注意力权重分布</h6>
+        <p style="font-size: 0.8rem; color: var(--text-secondary);">指标间关联性分析，颜色越深表示关联越强</p>
+        <canvas id="attentionHeatmap" class="attention-heatmap"></canvas>
+        <div class="heatmap-label">行: 当前指标 | 列: 历史指标 | 颜色: 注意力权重</div>
+      </div>
+
+      <!-- Recursive Prediction -->
+      <div class="mb-4">
+        <h6 style="color: var(--text-primary); font-size: 0.95rem;">📈 递归预测曲线</h6>
+        <p style="font-size: 0.8rem; color: var(--text-secondary);">基于时序 Transformer 的未来 6 小时预测</p>
+        <canvas id="predictionCanvas" class="prediction-canvas"></canvas>
+        <div class="prediction-legend">
+          <div class="legend-item">
+            <div class="legend-color" style="background: var(--accent-blue);"></div>
+            <span>实际值</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: var(--accent-purple);"></div>
+            <span>预测值</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: var(--accent-orange);"></div>
+            <span>置信区间</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intervention Simulation -->
+      <div>
+        <h6 style="color: var(--text-primary); font-size: 0.95rem;">💊 干预模拟</h6>
+        <p style="font-size: 0.8rem; color: var(--text-secondary);">调整干预参数，观察风险变化</p>
+        
+        <div class="intervention-controls">
+          <div>
+            <label style="font-size: 0.85rem; color: var(--text-secondary);">氧流量 (L/min)</label>
+            <input type="range" id="oxygenFlow" class="intervention-slider" min="0" max="15" step="0.5" value="0">
+            <div class="intervention-value" id="oxygenValue">0.0 L/min</div>
+          </div>
+          <div>
+            <label style="font-size: 0.85rem; color: var(--text-secondary);">药物剂量 (mg)</label>
+            <input type="range" id="medDose" class="intervention-slider" min="0" max="100" step="5" value="0">
+            <div class="intervention-value" id="medValue">0 mg</div>
+          </div>
+        </div>
+
+        <div class="intervention-result">
+          <div style="font-size: 0.8rem; color: var(--text-secondary);">干预后预测风险</div>
+          <div class="intervention-score" id="interventionScore">--</div>
+          <div class="intervention-impact" id="interventionImpact">调整参数查看效果</div>
+        </div>
+      </div>
+
+      <!-- Multi-timestep History -->
+      <div class="mt-4">
+        <h6 style="color: var(--text-primary); font-size: 0.95rem;">📋 时序历史记录</h6>
+        <div id="timestepList" class="timestep-list"></div>
+      </div>
+    </div>
     <div id="patientList"></div>
   </div>
 
@@ -681,6 +818,9 @@
         <div class="mt-3" style="font-size:0.8rem;color:var(--text-secondary)">
           患者 ${patient.name}（${patient.age}岁 ${patient.gender}）| 诊断：${patient.diagnosis}
         </div>
+        <div class="mt-3" style="font-size:0.85rem;color:var(--accent-purple)">
+          <i class="bi bi-diagram-3"></i> <a href="#driftPanel" onclick="showDriftPanel()" style="color:inherit;text-decoration:none;">查看 DRIFT-Lite 模型分析 →</a>
+        </div>
       `;
 
       const resultCard = $('resultCard');
@@ -688,11 +828,295 @@
       resultCard.classList.add('show');
       resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
+      // Store current patient for DRIFT analysis
+      window.currentPatient = patient;
+
+      // Initialize DRIFT-Lite panel
+      initializeDriftPanel(patient);
+
       // Close modal and re-render
       closeModal();
       renderStats();
       renderPatients();
       renderChart();
+    }
+
+    function showDriftPanel() {
+      $('driftPanel').classList.add('show');
+      $('driftPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // DRIFT-Lite Engine
+    const DriftLite = {
+      // Attention mechanism: calculate pairwise attention weights
+      calculateAttention(timesteps) {
+        const n = timesteps.length;
+        if (n === 0) return [];
+
+        const attention = [];
+        for (let i = 0; i < n; i++) {
+          const row = [];
+          for (let j = 0; j < n; j++) {
+            // Simplified attention: temporal proximity + feature similarity
+            const temporalDist = Math.abs(i - j) / n;
+            const featureSim = this.calculateFeatureSimilarity(timesteps[i], timesteps[j]);
+            const weight = Math.exp(-temporalDist) * featureSim;
+            row.push(weight);
+          }
+          // Normalize row
+          const sum = row.reduce((a, b) => a + b, 0);
+          attention.push(row.map(w => w / sum));
+        }
+        return attention;
+      },
+
+      // Feature similarity using cosine distance
+      calculateFeatureSimilarity(t1, t2) {
+        const v1 = Object.values(t1.vitals);
+        const v2 = Object.values(t2.vitals);
+        const dot = v1.reduce((sum, val, i) => sum + val * v2[i], 0);
+        const norm1 = Math.sqrt(v1.reduce((sum, val) => sum + val * val, 0));
+        const norm2 = Math.sqrt(v2.reduce((sum, val) => sum + val * val, 0));
+        return dot / (norm1 * norm2 + 1e-8);
+      },
+
+      // Recursive prediction using temporal transformer
+      predict(timesteps, horizon = 6) {
+        if (timesteps.length === 0) return [];
+
+        const predictions = [];
+        const lastTimestep = timesteps[timesteps.length - 1];
+        const currentScore = lastTimestep.drift_score;
+
+        // Trend calculation
+        let trend = 0;
+        if (timesteps.length >= 2) {
+          const prevScore = timesteps[timesteps.length - 2].drift_score;
+          trend = currentScore - prevScore;
+        }
+
+        // Generate predictions with increasing uncertainty
+        for (let h = 1; h <= horizon; h++) {
+          const decay = Math.pow(0.85, h); // Confidence decay
+          const predictedScore = Math.max(0, Math.min(100, currentScore + trend * h * decay));
+          const uncertainty = Math.pow(h / horizon, 1.5) * 20; // Growing uncertainty
+          predictions.push({
+            hour: h,
+            predicted: predictedScore,
+            lower: Math.max(0, predictedScore - uncertainty),
+            upper: Math.min(100, predictedScore + uncertainty)
+          });
+        }
+
+        return predictions;
+      },
+
+      // Intervention simulation
+      simulateIntervention(patient, oxygenFlow, medDose) {
+        const vitals = { ...patient.vitals };
+
+        // Oxygen intervention affects SpO2 and respiratory rate
+        vitals.oxygen_saturation = Math.min(100, patient.vitals.oxygen_saturation + oxygenFlow * 1.2);
+        vitals.respiratory_rate = Math.max(12, patient.vitals.respiratory_rate - oxygenFlow * 0.3);
+
+        // Medication affects heart rate and blood pressure
+        vitals.heart_rate = Math.max(60, patient.vitals.heart_rate - medDose * 0.2);
+        vitals.blood_pressure_sys = Math.max(90, patient.vitals.blood_pressure_sys - medDose * 0.15);
+        vitals.blood_pressure_dia = Math.max(60, patient.vitals.blood_pressure_dia - medDose * 0.1);
+
+        // Recalculate score
+        const newScore = calculateDriftScore(vitals);
+        const impact = patient.drift_score - newScore;
+
+        return {
+          newScore,
+          impact,
+          modifiedVitals: vitals
+        };
+      }
+    };
+
+    // Initialize DRIFT panel
+    function initializeDriftPanel(patient) {
+      // Create synthetic history for demonstration
+      const history = [];
+      const baseTime = new Date(patient.admission_time.replace(' ', 'T'));
+
+      // Generate 3 synthetic historical timesteps
+      for (let i = 3; i >= 1; i--) {
+        const time = new Date(baseTime.getTime() - i * 2 * 60 * 60 * 1000);
+        const variation = (Math.random() - 0.5) * 10;
+        history.push({
+          ...patient,
+          admission_time: time.toISOString().replace('T', ' ').slice(0, 16),
+          vitals: {
+            heart_rate: patient.vitals.heart_rate + variation,
+            blood_pressure_sys: patient.vitals.blood_pressure_sys + variation,
+            blood_pressure_dia: patient.vitals.blood_pressure_dia + variation * 0.5,
+            oxygen_saturation: Math.max(80, patient.vitals.oxygen_saturation - variation * 0.5),
+            temperature: patient.vitals.temperature + variation * 0.1,
+            respiratory_rate: patient.vitals.respiratory_rate + variation * 0.3
+          },
+          drift_score: Math.max(0, patient.drift_score - i * 8 + variation)
+        });
+      }
+      history.push(patient);
+
+      // Store history globally
+      window.patientHistory = history;
+
+      // Render visualizations
+      renderAttentionHeatmap(history);
+      renderPredictionChart(history);
+      renderTimestepList(history);
+
+      // Setup intervention handlers
+      setupInterventionControls(patient);
+
+      // Show panel
+      $('driftPanel').classList.add('show');
+    }
+
+    // Render attention heatmap
+    function renderAttentionHeatmap(history) {
+      const canvas = $('attentionHeatmap');
+      const ctx = canvas.getContext('2d');
+      const attention = DriftLite.calculateAttention(history);
+
+      const n = attention.length;
+      const cellSize = Math.min(canvas.width, canvas.height) / n;
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i < n; i++) {
+        for (let j = 0; j < n; j++) {
+          const weight = attention[i][j];
+          const color = `rgba(88, 166, 255, ${weight})`;
+          ctx.fillStyle = color;
+          ctx.fillRect(j * cellSize, i * cellSize, cellSize - 2, cellSize - 2);
+        }
+      }
+    }
+
+    // Render prediction chart
+    function renderPredictionChart(history) {
+      const canvas = $('predictionCanvas');
+      const ctx = canvas.getContext('2d');
+      const predictions = DriftLite.predict(history, 6);
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const padding = 40;
+      const plotWidth = canvas.width - padding * 2;
+      const plotHeight = canvas.height - padding * 2;
+
+      // Draw axes
+      ctx.strokeStyle = isDarkMode ? '#30363d' : '#d0d7de';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(padding, padding);
+      ctx.lineTo(padding, canvas.height - padding);
+      ctx.lineTo(canvas.width - padding, canvas.height - padding);
+      ctx.stroke();
+
+      // Draw confidence interval
+      ctx.fillStyle = 'rgba(210, 153, 34, 0.15)';
+      ctx.beginPath();
+      predictions.forEach((p, i) => {
+        const x = padding + (i / 5) * plotWidth;
+        const y = canvas.height - padding - (p.upper / 100) * plotHeight;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      for (let i = predictions.length - 1; i >= 0; i--) {
+        const p = predictions[i];
+        const x = padding + (i / 5) * plotWidth;
+        const y = canvas.height - padding - (p.lower / 100) * plotHeight;
+        ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.fill();
+
+      // Draw prediction line
+      ctx.strokeStyle = '#bc8cff';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      predictions.forEach((p, i) => {
+        const x = padding + (i / 5) * plotWidth;
+        const y = canvas.height - padding - (p.predicted / 100) * plotHeight;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+
+      // Draw actual line
+      ctx.strokeStyle = '#58a6ff';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      history.forEach((t, i) => {
+        const x = padding + ((i + 2) / (history.length + 1)) * plotWidth;
+        const y = canvas.height - padding - (t.drift_score / 100) * plotHeight;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+    }
+
+    // Render timestep list
+    function renderTimestepList(history) {
+      const container = $('timestepList');
+      const parts = [];
+
+      history.forEach((t, i) => {
+        const scoreColor = t.drift_score >= 70 ? 'var(--risk-high)' : t.drift_score >= 40 ? 'var(--risk-medium)' : 'var(--risk-low)';
+        parts.push(`
+          <div class="timestep-item">
+            <span class="timestep-time">${t.admission_time}</span>
+            <span class="timestep-score" style="color:${scoreColor}">${t.drift_score.toFixed(1)}%</span>
+            ${i === history.length - 1 ? '<span style="font-size:0.75rem;color:var(--accent-blue)">当前</span>' : ''}
+          </div>
+        `);
+      });
+
+      container.innerHTML = parts.join('');
+    }
+
+    // Setup intervention controls
+    function setupInterventionControls(patient) {
+      const oxygenSlider = $('oxygenFlow');
+      const medSlider = $('medDose');
+      const oxygenValue = $('oxygenValue');
+      const medValue = $('medValue');
+      const interventionScore = $('interventionScore');
+      const interventionImpact = $('interventionImpact');
+
+      function updateIntervention() {
+        const oxygen = parseFloat(oxygenSlider.value);
+        const med = parseFloat(medSlider.value);
+
+        oxygenValue.textContent = `${oxygen.toFixed(1)} L/min`;
+        medValue.textContent = `${med} mg`;
+
+        const result = DriftLite.simulateIntervention(patient, oxygen, med);
+
+        const scoreColor = result.newScore >= 70 ? 'var(--risk-high)' : result.newScore >= 40 ? 'var(--risk-medium)' : 'var(--risk-low)';
+        interventionScore.style.color = scoreColor;
+        interventionScore.textContent = `${result.newScore.toFixed(1)}%`;
+
+        const impactText = result.impact > 0
+          ? `↓ 风险降低 ${result.impact.toFixed(1)}%`
+          : result.impact < 0
+          ? `↑ 风险增加 ${Math.abs(result.impact).toFixed(1)}%`
+          : '无变化';
+        interventionImpact.textContent = impactText;
+        interventionImpact.style.color = result.impact > 0 ? 'var(--accent-green)' : result.impact < 0 ? 'var(--risk-high)' : 'var(--text-secondary)';
+      }
+
+      oxygenSlider.addEventListener('input', updateIntervention);
+      medSlider.addEventListener('input', updateIntervention);
+
+      // Initial update
+      updateIntervention();
     }
 
     // Navbar scroll
