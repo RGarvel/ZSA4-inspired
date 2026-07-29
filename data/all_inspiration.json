@@ -1,5 +1,26 @@
 [
   {
+    "title": "MENA Startup Funding Down 22% in H1 2026 Amid Regional Conflict",
+    "summary": "Dubai venture data platform reports H1 2026 MENA funding fell 22%; full effect of tighter cross-border capital flows may show in Q3.",
+    "category": "startup",
+    "importance": 6,
+    "source": "arabnews.com",
+    "date": "2026-07-13",
+    "importance_mapped": 4,
+    "is_major_event": false
+  },
+  {
+    "title": "India startup funding: $346M week, capital concentrates on traction",
+    "summary": "Week ending July 17 shows measurable traction and efficient execution favored over pure AI hype",
+    "url": "https://quasa.io/media/what-india-s-346m-startup-funding-week-means-for-new-founders",
+    "source": "Quasa",
+    "published": "2026-07-17",
+    "importance": 3,
+    "category": "startup",
+    "is_major_event": false,
+    "date": "2026-07-17"
+  },
+  {
     "id": "ait-1",
     "date": "2026-07-19",
     "category": "ai_tech",
@@ -1845,6 +1866,17 @@
     "original_language": "en",
     "importance": 1,
     "is_major_event": false
+  },
+  {
+    "title": "Google launches three new Gemini AI models",
+    "summary": "New Gemini models focus on cybersecurity capabilities to compete with Anthropic and OpenAI",
+    "url": "https://www.nytimes.com/2026/07/21/technology/google-ai-cybersecurity-gemini.html",
+    "source": "New York Times",
+    "published": "2026-07-21",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-21"
   },
   {
     "id": "ait-39",
@@ -6310,6 +6342,38 @@
     "is_major_event": false
   },
   {
+    "title": "Inference Startup Infinity Raises $15M from Touring Capital",
+    "summary": "Inference-focused startup Infinity closes $15M round backed by Touring Capital with OpenAI and Anthropic research talent.",
+    "category": "startup",
+    "importance": 7,
+    "source": "techcrunch.com",
+    "date": "2026-07-24",
+    "importance_mapped": 4,
+    "is_major_event": false
+  },
+  {
+    "title": "Anthropic releases Claude Opus 5",
+    "summary": "Latest frontier model from Anthropic launched July 24, 2026, as company overtakes OpenAI in revenue",
+    "url": "https://aireleasetracker.com/latest",
+    "source": "AI Release Tracker",
+    "published": "2026-07-24",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-24"
+  },
+  {
+    "title": "Anthropic secures $5B AMD partnership",
+    "summary": "Major chip partnership as Anthropic continues aggressive expansion ahead of IPO",
+    "url": "https://updatedbulletins.com/ai-news-july-2026-openai-google-anthropic-updates/",
+    "source": "Updated Bulletins",
+    "published": "2026-07-24",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-24"
+  },
+  {
     "id": "ait-0001",
     "date": "2026-07-24",
     "category": "ai_tech",
@@ -7404,6 +7468,38 @@
     "is_major_event": true
   },
   {
+    "title": "India Startup Funding Shifts: Manufacturing & DeepTech Overtake AI in Q3 2026",
+    "summary": "Indian startups raised $209M week ending July 25; manufacturing, aerospace, enterprise software and healthtech replaced AI as top investment themes.",
+    "category": "startup",
+    "importance": 8,
+    "source": "tice.news",
+    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "date": "2026-07-25",
+    "importance_mapped": 4,
+    "is_major_event": true
+  },
+  {
+    "title": "Grok 4.5 Drops July 25 — 56 on Intelligence Index, Just Behind GPT-5.5",
+    "summary": "xAI releases Grok 4.5 scoring 56 on intelligence index, trailing OpenAI GPT-5.5 by narrow margin.",
+    "category": "ai_tech",
+    "importance": 8,
+    "source": "hermes",
+    "date": "2026-07-25",
+    "importance_mapped": 4,
+    "is_major_event": true
+  },
+  {
+    "title": "India startups raise $209M: Manufacturing and DeepTech overtake AI",
+    "summary": "Week ending July 25 shows shift in venture capital toward manufacturing, aerospace, enterprise software",
+    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "source": "TICE News",
+    "published": "2026-07-25",
+    "importance": 3,
+    "category": "startup",
+    "is_major_event": false,
+    "date": "2026-07-25"
+  },
+  {
     "id": "ai_tech_016",
     "title": "OpenAI ChatGPT全球宕机：数百万用户中断服务",
     "description": "2026年7月25日，ChatGPT和Codex同时遭遇全球性宕机，影响网页和移动端。这是2026年7月的又一次重大宕机事件，凸显市场对单一AI平台的过度依赖风险。",
@@ -7695,6 +7791,27 @@
     "date": "2026-07-25"
   },
   {
+    "title": "H1 2026 VC Review: Structural Rotation to Defence, Space, Fusion",
+    "summary": "Six of eight largest DACH rounds in H1 2026 went to defence, space, fusion, quantum, robotics or energy infrastructure; software-only rounds absent from top tier.",
+    "category": "startup",
+    "importance": 8,
+    "source": "youtube.com",
+    "url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
+    "date": "2026-07-26",
+    "importance_mapped": 4,
+    "is_major_event": true
+  },
+  {
+    "title": "Africa Startup Funding: Tanzania, Morocco, Cote d Ivoire Rising in H1 2026",
+    "summary": "Emerging African markets grow VC share; suggests innovation economy no longer defined by traditional leaders alone.",
+    "category": "startup",
+    "importance": 6,
+    "source": "businessday.ng",
+    "date": "2026-07-26",
+    "importance_mapped": 4,
+    "is_major_event": false
+  },
+  {
     "id": "ai_tech_024",
     "title": "ChatGPT全球宕机：OpenAI服务连续第四天事故",
     "description": "2026年7月25日，ChatGPT、Codex及API同时遭遇全球性宕机，这是OpenAI四天内的第四次服务中断。DownDetector显示美东时间上午4:47起大量用户报告登录和聊天问题，凸显AI平台基础设施脆弱性。",
@@ -7768,76 +7885,6 @@
     ],
     "date": "2026-07-26",
     "summary": "法官批准Anthropic因使用盗版来源（含LibGen约500万本书）训练Claude模型而达成的15亿美元和解协议。这标志着AI行业知识产权合规进入实质性惩罚阶段。"
-  },
-  {
-    "id": "paper_031",
-    "title": "VLM-IE3D：双几何token实现视频驱动的3D空间感知VLM",
-    "description": "ECCV 2026接收论文提出VLM-IE3D框架，通过隐式几何Token(IGT)捕获高层几何先验和显式几何Token(EGT)编码详细3D结构，仅用RGB视频实现Fine-grained 3D空间理解，在3D视频检测、视觉定位、密集描述等任务上SOTA。",
-    "category": "academic_paper",
-    "type": "paper",
-    "importance": 3,
-    "source_url": "https://arxiv.org/abs/2607.21595v1",
-    "source_title": "arXiv:2607.21595",
-    "tags": [
-      "vlm",
-      "3d-spatial",
-      "geometry-tokens",
-      "eccv2026"
-    ],
-    "date": "2026-07-26",
-    "summary": "ECCV 2026接收论文提出VLM-IE3D框架，通过隐式几何Token(IGT)捕获高层几何先验和显式几何Token(EGT)编码详细3D结构，仅用RGB视频实现Fine-grained 3D空间理解，在3D视频检测、视觉定位、密集描述等任务上SOTA。"
-  },
-  {
-    "id": "product_014",
-    "title": "Fypro.ai发布创作者电商AI增长引擎",
-    "description": "2026年7月23日Fypro.ai在VidCon Anaheim 2026上推出专为创作者经济打造的AI增长引擎，结合营销自动化和内容生成能力，面向creator-led commerce赛道。",
-    "category": "product_tool",
-    "type": "product_launch",
-    "importance": 3,
-    "source_url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
-    "source_title": "MarTech - Fypro.ai AI Growth Engine",
-    "tags": [
-      "fypro",
-      "creator-economy",
-      "martech",
-      "vidcon"
-    ],
-    "date": "2026-07-26",
-    "summary": "2026年7月23日Fypro.ai在VidCon Anaheim 2026上推出专为创作者经济打造的AI增长引擎，结合营销自动化和内容生成能力，面向creator-led commerce赛道。"
-  },
-  {
-    "id": "startup_019",
-    "title": "南非SME Fund计划6.09亿美元VC融资扩张",
-    "description": "2026年7月23日，南非SME Fund宣布计划融资6.09亿美元扩大VC投资规模。过去十年该基金已在1142家公司投资超160亿兰特，标志着非洲VC市场进入成熟期。",
-    "category": "startup",
-    "type": "funding_round",
-    "importance": 5,
-    "source_url": "https://www.bloomberg.com/news/articles/2026-07-23/south-africa-fund-plans-609-million-vc-raise-with-exits-rising",
-    "source_title": "Bloomberg - South Africa SME Fund VC Raise",
-    "tags": [
-      "venture-capital",
-      "africa",
-      "sme-fund"
-    ],
-    "date": "2026-07-26",
-    "summary": "2026年7月23日，南非SME Fund宣布计划融资6.09亿美元扩大VC投资规模。过去十年该基金已在1142家公司投资超160亿兰特，标志着非洲VC市场进入成熟期。"
-  },
-  {
-    "id": "startup_020",
-    "title": "印度创业融资势头持续强劲",
-    "description": "2026年7月24日报道显示印度初创企业融资活动保持强劲势头，AI创业公司在印度科技融资中占据重要份额，为南亚AI生态注入持续增长动力。",
-    "category": "startup",
-    "type": "market_analysis",
-    "importance": 5,
-    "source_url": "https://startuppoint.in/indian-startup-funding-momentum-stays-strong/",
-    "source_title": "Startup Point - Indian Startup Funding",
-    "tags": [
-      "india",
-      "funding",
-      "startup-ecosystem"
-    ],
-    "date": "2026-07-26",
-    "summary": "2026年7月24日报道显示印度初创企业融资活动保持强劲势头，AI创业公司在印度科技融资中占据重要份额，为南亚AI生态注入持续增长动力。"
   },
   {
     "id": "ait-028",
@@ -7931,103 +7978,6 @@
       "ChatGPT Health",
       "AI安全",
       "医疗事故"
-    ],
-    "original_language": "en"
-  },
-  {
-    "id": "startup-021",
-    "date": "2026-07-26",
-    "category": "startup",
-    "title": "Etched AI芯片融资3亿美元，估值翻倍至103亿美元",
-    "summary": "由三位哈佛辍学生创办的AI芯片公司Etched于7月23日宣布完成3亿美元C轮融资，估值达103亿美元。红杉资本领投，公司表示已签署10亿美元的推理芯片订单，以超越市场预期。Etched专注于为AI推理优化的高速AI专用芯片。",
-    "source": "TechCrunch / Reuters",
-    "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
-    "importance": 4,
-    "is_major_event": true,
-    "keywords": [
-      "Etched",
-      "AI芯片",
-      "C轮",
-      "103亿估值",
-      "红杉",
-      "推理加速"
-    ],
-    "original_language": "en"
-  },
-  {
-    "id": "startup-022",
-    "date": "2026-07-26",
-    "category": "startup",
-    "title": "中国具身智能独角兽PsiBot获奇瑞领投1亿美元，估值14.8亿",
-    "summary": "北京机器人公司PsiBot（聆初智能）正以14.8亿美元估值融资近1亿美元，奇瑞汽车领投，苹果/特斯拉供应商蓝思科技跟投。PsiBot专注于VLA（视觉-语言-动作）平台和世界模型技术，成为2026年至少第22家跨越独角兽门槛的中国具身AI公司。",
-    "source": "Bloomberg / The Next Web",
-    "url": "https://thenextweb.com/news/psibot-china-world-models-1-48-billion-valuation",
-    "importance": 4,
-    "is_major_event": false,
-    "keywords": [
-      "PsiBot",
-      "具身智能",
-      "中国",
-      "世界模型",
-      "独角兽",
-      "奇瑞"
-    ],
-    "original_language": "en"
-  },
-  {
-    "id": "product-015",
-    "date": "2026-07-26",
-    "category": "product_tool",
-    "title": "GitHub Copilot上线首个开源权重模型Kimi K2.7 Code",
-    "summary": "GitHub于7月1日宣布Copilot正式接入Moonshot AI的Kimi K2.7 Code模型，作为Copilot模型选择器中的首个开源权重选项，覆盖所有计划层级。同一天Copilot Vision也实现GA。这标志着全球最大代码助手平台首次在闭源模型之外纳入开源选项，且中国模型首次进入主流开发工具。",
-    "source": "GitHub Blog / TechPillow",
-    "url": "https://www.techpillow.co/blog/github-copilot-vision-kimi-open-weight-multimodal",
-    "importance": 4,
-    "is_major_event": false,
-    "keywords": [
-      "GitHub Copilot",
-      "开源模型",
-      "Kimi K2.7",
-      "K2 Code",
-      "编程AI"
-    ],
-    "original_language": "en"
-  },
-  {
-    "id": "paper-032",
-    "date": "2026-07-26",
-    "category": "academic_paper",
-    "title": "LLM与人类研究品味差距度量：两轴研究品味分类法",
-    "summary": "arXiv论文(2607.01233)提出两轴研究品味分类法来量化LLM与人类研究人员在创意产生上的差异。通过将论文标题和摘要输入LLM生成新创意，再用该分类法从机会模式和研究范式两个维度分析分歧。结果揭示了当前AI辅助科研的边界和潜力方向。",
-    "source": "arXiv:2607.01233",
-    "url": "https://arxiv.org/abs/2607.01233",
-    "importance": 5,
-    "is_major_event": false,
-    "keywords": [
-      "LLM",
-      "研究品味",
-      "科研AI",
-      "创造力",
-      "分类法"
-    ],
-    "original_language": "en"
-  },
-  {
-    "id": "paper-033",
-    "date": "2026-07-26",
-    "category": "academic_paper",
-    "title": "Bayesian Uncertainty Propagation for Agentic RAG Pipelines",
-    "summary": "一篇提交给ICMIAM 2026的论文提出贝叶斯不确定性传播方法，用于多跳问答场景中的代理式RAG管道。通过量化每个推理步骤的不确定性，系统可以更好地追踪和报告多步RAG过程中的置信度变化，提升可信赖性。",
-    "source": "arXiv / ICMIAM 2026",
-    "url": "https://arxiv.org/list/cs.AI/current",
-    "importance": 5,
-    "is_major_event": false,
-    "keywords": [
-      "RAG",
-      "贝叶斯",
-      "不确定性",
-      "Agentic",
-      "多跳问答"
     ],
     "original_language": "en"
   },
@@ -8169,6 +8119,81 @@
     "original_language": "en"
   },
   {
+    "id": "paper-032",
+    "date": "2026-07-26",
+    "category": "academic_paper",
+    "title": "LLM与人类研究品味差距度量：两轴研究品味分类法",
+    "summary": "arXiv论文(2607.01233)提出两轴研究品味分类法来量化LLM与人类研究人员在创意产生上的差异。通过将论文标题和摘要输入LLM生成新创意，再用该分类法从机会模式和研究范式两个维度分析分歧。结果揭示了当前AI辅助科研的边界和潜力方向。",
+    "source": "arXiv:2607.01233",
+    "url": "https://arxiv.org/abs/2607.01233",
+    "importance": 5,
+    "is_major_event": false,
+    "keywords": [
+      "LLM",
+      "研究品味",
+      "科研AI",
+      "创造力",
+      "分类法"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "paper-033",
+    "date": "2026-07-26",
+    "category": "academic_paper",
+    "title": "Bayesian Uncertainty Propagation for Agentic RAG Pipelines",
+    "summary": "一篇提交给ICMIAM 2026的论文提出贝叶斯不确定性传播方法，用于多跳问答场景中的代理式RAG管道。通过量化每个推理步骤的不确定性，系统可以更好地追踪和报告多步RAG过程中的置信度变化，提升可信赖性。",
+    "source": "arXiv / ICMIAM 2026",
+    "url": "https://arxiv.org/list/cs.AI/current",
+    "importance": 5,
+    "is_major_event": false,
+    "keywords": [
+      "RAG",
+      "贝叶斯",
+      "不确定性",
+      "Agentic",
+      "多跳问答"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "paper_031",
+    "title": "VLM-IE3D：双几何token实现视频驱动的3D空间感知VLM",
+    "description": "ECCV 2026接收论文提出VLM-IE3D框架，通过隐式几何Token(IGT)捕获高层几何先验和显式几何Token(EGT)编码详细3D结构，仅用RGB视频实现Fine-grained 3D空间理解，在3D视频检测、视觉定位、密集描述等任务上SOTA。",
+    "category": "academic_paper",
+    "type": "paper",
+    "importance": 3,
+    "source_url": "https://arxiv.org/abs/2607.21595v1",
+    "source_title": "arXiv:2607.21595",
+    "tags": [
+      "vlm",
+      "3d-spatial",
+      "geometry-tokens",
+      "eccv2026"
+    ],
+    "date": "2026-07-26",
+    "summary": "ECCV 2026接收论文提出VLM-IE3D框架，通过隐式几何Token(IGT)捕获高层几何先验和显式几何Token(EGT)编码详细3D结构，仅用RGB视频实现Fine-grained 3D空间理解，在3D视频检测、视觉定位、密集描述等任务上SOTA。"
+  },
+  {
+    "id": "product-015",
+    "date": "2026-07-26",
+    "category": "product_tool",
+    "title": "GitHub Copilot上线首个开源权重模型Kimi K2.7 Code",
+    "summary": "GitHub于7月1日宣布Copilot正式接入Moonshot AI的Kimi K2.7 Code模型，作为Copilot模型选择器中的首个开源权重选项，覆盖所有计划层级。同一天Copilot Vision也实现GA。这标志着全球最大代码助手平台首次在闭源模型之外纳入开源选项，且中国模型首次进入主流开发工具。",
+    "source": "GitHub Blog / TechPillow",
+    "url": "https://www.techpillow.co/blog/github-copilot-vision-kimi-open-weight-multimodal",
+    "importance": 4,
+    "is_major_event": false,
+    "keywords": [
+      "GitHub Copilot",
+      "开源模型",
+      "Kimi K2.7",
+      "K2 Code",
+      "编程AI"
+    ],
+    "original_language": "en"
+  },
+  {
     "id": "product-041",
     "date": "2026-07-26",
     "category": "product_tool",
@@ -8226,6 +8251,312 @@
     "original_language": "en"
   },
   {
+    "id": "product_014",
+    "title": "Fypro.ai发布创作者电商AI增长引擎",
+    "description": "2026年7月23日Fypro.ai在VidCon Anaheim 2026上推出专为创作者经济打造的AI增长引擎，结合营销自动化和内容生成能力，面向creator-led commerce赛道。",
+    "category": "product_tool",
+    "type": "product_launch",
+    "importance": 3,
+    "source_url": "https://martech.org/the-latest-ai-powered-martech-news-and-releases/",
+    "source_title": "MarTech - Fypro.ai AI Growth Engine",
+    "tags": [
+      "fypro",
+      "creator-economy",
+      "martech",
+      "vidcon"
+    ],
+    "date": "2026-07-26",
+    "summary": "2026年7月23日Fypro.ai在VidCon Anaheim 2026上推出专为创作者经济打造的AI增长引擎，结合营销自动化和内容生成能力，面向creator-led commerce赛道。"
+  },
+  {
+    "id": "startup-021",
+    "date": "2026-07-26",
+    "category": "startup",
+    "title": "Etched AI芯片融资3亿美元，估值翻倍至103亿美元",
+    "summary": "由三位哈佛辍学生创办的AI芯片公司Etched于7月23日宣布完成3亿美元C轮融资，估值达103亿美元。红杉资本领投，公司表示已签署10亿美元的推理芯片订单，以超越市场预期。Etched专注于为AI推理优化的高速AI专用芯片。",
+    "source": "TechCrunch / Reuters",
+    "url": "https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "Etched",
+      "AI芯片",
+      "C轮",
+      "103亿估值",
+      "红杉",
+      "推理加速"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "startup-022",
+    "date": "2026-07-26",
+    "category": "startup",
+    "title": "中国具身智能独角兽PsiBot获奇瑞领投1亿美元，估值14.8亿",
+    "summary": "北京机器人公司PsiBot（聆初智能）正以14.8亿美元估值融资近1亿美元，奇瑞汽车领投，苹果/特斯拉供应商蓝思科技跟投。PsiBot专注于VLA（视觉-语言-动作）平台和世界模型技术，成为2026年至少第22家跨越独角兽门槛的中国具身AI公司。",
+    "source": "Bloomberg / The Next Web",
+    "url": "https://thenextweb.com/news/psibot-china-world-models-1-48-billion-valuation",
+    "importance": 4,
+    "is_major_event": false,
+    "keywords": [
+      "PsiBot",
+      "具身智能",
+      "中国",
+      "世界模型",
+      "独角兽",
+      "奇瑞"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "startup_019",
+    "title": "南非SME Fund计划6.09亿美元VC融资扩张",
+    "description": "2026年7月23日，南非SME Fund宣布计划融资6.09亿美元扩大VC投资规模。过去十年该基金已在1142家公司投资超160亿兰特，标志着非洲VC市场进入成熟期。",
+    "category": "startup",
+    "type": "funding_round",
+    "importance": 5,
+    "source_url": "https://www.bloomberg.com/news/articles/2026-07-23/south-africa-fund-plans-609-million-vc-raise-with-exits-rising",
+    "source_title": "Bloomberg - South Africa SME Fund VC Raise",
+    "tags": [
+      "venture-capital",
+      "africa",
+      "sme-fund"
+    ],
+    "date": "2026-07-26",
+    "summary": "2026年7月23日，南非SME Fund宣布计划融资6.09亿美元扩大VC投资规模。过去十年该基金已在1142家公司投资超160亿兰特，标志着非洲VC市场进入成熟期。"
+  },
+  {
+    "id": "startup_020",
+    "title": "印度创业融资势头持续强劲",
+    "description": "2026年7月24日报道显示印度初创企业融资活动保持强劲势头，AI创业公司在印度科技融资中占据重要份额，为南亚AI生态注入持续增长动力。",
+    "category": "startup",
+    "type": "market_analysis",
+    "importance": 5,
+    "source_url": "https://startuppoint.in/indian-startup-funding-momentum-stays-strong/",
+    "source_title": "Startup Point - Indian Startup Funding",
+    "tags": [
+      "india",
+      "funding",
+      "startup-ecosystem"
+    ],
+    "date": "2026-07-26",
+    "summary": "2026年7月24日报道显示印度初创企业融资活动保持强劲势头，AI创业公司在印度科技融资中占据重要份额，为南亚AI生态注入持续增长动力。"
+  },
+  {
+    "title": "Sam Altman declares AI has entered 'singularity'",
+    "summary": "OpenAI CEO states AI has reached singularity phase, argues advances won't permanently displace workers",
+    "url": "https://www.aljazeera.com/news/2026/7/27/sam-altman-says-ai-has-entered-singularity-should-we-be-worried",
+    "source": "Al Jazeera",
+    "published": "2026-07-27",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-27"
+  },
+  {
+    "title": "Corgi AI Insurance hits $4B valuation in Series B extension",
+    "summary": "AI-native insurance startup rebuilds legacy industry, aggressive investor interest",
+    "url": "https://aibuzzwire.news/en/article/corgi-ai-insurance-startup-4-billion-valuation-third-round-eight-weeks",
+    "source": "AI Buzz Wire",
+    "published": "2026-07-27",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-27"
+  },
+  {
+    "id": "2026-07-27-ai_-3f556891b0",
+    "title": "EU Orders Google to Share Search Data and Open Android to Rival AI Assistants by July 2027",
+    "summary": "The EU Commission ordered Google under DMA Articles 6(7) and 6(11) to share search data from January 2027 and open Android to rival AI assistants like ChatGPT and Claude.",
+    "url": "https://aiweekly.co/",
+    "category": "ai_tech",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-ai_-462d314d84",
+    "title": "SK Group Unveils $500 Billion-Plus AI Data Center Initiative with Nvidia",
+    "summary": "SK Telecom and Nvidia announced a comprehensive MOU to build gigawatt-class AI data centers using Nvidia's Vera Rubin chips and SK Hynix's HBM4 memory, first facility due online in 2027.",
+    "url": "https://www.usnews.com/news/top-news/articles/2026-07-24/nvidia-sk-group-unveil-500-billion-plus-ai-data-centers-initiative-memory-partnership",
+    "category": "ai_tech",
+    "importance": 5,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-ai_-48e9c75e50",
+    "title": "AI Executives Bolster Personal Security as Digital Threats Grew 7x",
+    "summary": "Liferaft reports digital threats against AI executives and data centers grew 7x from late Feb to May 2026, including a Molotov attack on Altman's SF home and 127 local data-center bans.",
+    "url": "https://aiweekly.co/",
+    "category": "ai_tech",
+    "importance": 3,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-ai_-68b046ebc2",
+    "title": "Samsung, SK, Hyundai Expand AI Partnerships to $950 Billion",
+    "summary": "SK Telecom signed an MOU with Anthropic for gigawatt-scale AI data centers in Korea, expanding ties with AWS, as part of a broader $950 billion AI infrastructure push.",
+    "url": "https://www.koreatimes.co.kr/amp/business/companies/20260726/samsung-sk-hyundai-expand-ai-partnerships-with-big-tech-firms-to-950-bil",
+    "category": "ai_tech",
+    "importance": 5,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-ai_-6d8b94090f",
+    "title": "Nvidia, Samsung and SK Hynix Set for Mega-Orders as South Korea Finalizes $950B AI Partnership",
+    "summary": "South Korea finalized a $950 billion AI partnership involving Nvidia, Samsung, SK Hynix, Naver, and Hyundai, with Korean AI supply chain stocks surging on the news.",
+    "url": "https://www.tradingkey.com/analysis/stocks/more/262054880-south-korea-finalizes-950-billion-ai-pact-nvidia-samsung-sk-hynix-tradingkey",
+    "category": "ai_tech",
+    "importance": 5,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-ai_-7f7f2e9628",
+    "title": "Kimi K3 Agents Find 19 Redis Zero-Days in 90 Minutes",
+    "summary": "Moonshot AI's Kimi K3 agents discovered 19 Redis zero-day vulnerabilities in 90 minutes and built a working 8.8.0 RCE exploit autonomously.",
+    "url": "https://aiweekly.co/",
+    "category": "ai_tech",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-pro-03903e9b40",
+    "title": "Five Frontier AI Models Launched in 9 Days in July 2026",
+    "summary": "Grok 4.5 (July 8), GPT-5.6 and Muse Spark 1.1 (July 9), Inkling (July 15), and Kimi K3 (July 16) — the densest month in AI model launch history, with price spread over 12x for similar capability.",
+    "url": "https://www.buildfastwithai.com/blogs/new-ai-models-july-2026",
+    "category": "product_tool",
+    "importance": 5,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-pro-16f2646e9d",
+    "title": "OpenAI Temporarily Relaxes GPT-5.6 Sol Usage Limits",
+    "summary": "OpenAI relaxed GPT-5.6 Sol usage limits for Plus/Pro/Business tiers on July 12, resetting usage caps in response to the pricing war triggered by competitors.",
+    "url": "https://andrew.ooo/answers/ai-price-war-july-2026-who-is-winning-model-pricing/",
+    "category": "product_tool",
+    "importance": 3,
+    "is_major_event": false,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-pro-270ff4cb1d",
+    "title": "Claude Fable 5 Returns as Coding King at 80.3% SWE-bench Pro",
+    "summary": "Anthropic's Claude Fable 5 returned on July 1 and retakes the coding crown at 80.3% SWE-bench Pro, leading the best AI tools ranking for July 2026.",
+    "url": "https://aitoolsrecap.com/Blog/best-ai-tools-july-2026-updated-rankings",
+    "category": "product_tool",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-pro-2b042cfabf",
+    "title": "Grok 4.5 Drops on July 25 — Scores 56 on Intelligence Index, Just Behind GPT-5.5",
+    "summary": "Elon Musk's xAI released Grok 4.5 on July 25, ranking 4th on the Artificial Analysis Intelligence Index with score 56, just one point behind GPT-5.5.",
+    "url": "https://www.youtube.com/watch?v=zDD_DxI3tfg",
+    "category": "product_tool",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-pro-8f167cb7a7",
+    "title": "APEC Digital and AI Ministerial Meeting Endorses Open-Source AI",
+    "summary": "All 21 APEC member economies endorsed trusted open-source approaches for AI models with strong security assurance, a major policy shift toward open-source AI at the ministerial level.",
+    "url": "https://aiweekly.co/ai-news-today",
+    "category": "product_tool",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-pro-d16db6186a",
+    "title": "Meta Launches Muse Spark 1.1 with Cheapest Frontier Paid API",
+    "summary": "Meta opened Muse Spark 1.1 paid API at $1.25/$4.25 — the first Meta paid model and cheapest paid frontier ever — integrated into WhatsApp and Messenger.",
+    "url": "https://thefrontier.fm/article/2026/07/15/grok-muse-spark-break-frontier-ai",
+    "category": "product_tool",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-sta-40b2d81c3b",
+    "title": "India Startup Funding: Manufacturing, DeepTech Overtake AI in Q3 2026",
+    "summary": "Indian startups raised $209 million in the week ending July 25, 2026, with manufacturing, aerospace, enterprise software, and healthtech replacing AI as top investment themes.",
+    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "category": "startup",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-sta-7b6d22628f",
+    "title": "Startup Market Trends July 2026: Distribution is the Differentiator",
+    "summary": "EarlyFinder data shows capital is selective in July 2026 — investors are paying up for companies that demonstrate credible path from attention to retained usage to repeatable sales motion.",
+    "url": "https://earlyfinder.co/blog/startup-market-trends-july-2026-signals-before-funding-1784181773521",
+    "category": "startup",
+    "importance": 3,
+    "is_major_event": false,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-sta-852ea73663",
+    "title": "Forbes 2026 Midas List: Top Venture Capital Investors Ranked",
+    "summary": "Forbes published its 2026 Midas List tracking the top tech investors in venture capital, highlighting which investors took the top spots and their signature deals.",
+    "url": "https://www.forbes.com/lists/midas/",
+    "category": "startup",
+    "importance": 4,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
+    "id": "2026-07-27-sta-c3315cf20c",
+    "title": "Two-Thirds of All Venture Capital Now Flows to AI Startups",
+    "summary": "OpenAI and Anthropic dominate the record funding concentrated at frontier companies, while two-thirds of all VC capital now flows into AI startups in 2026.",
+    "url": "https://aibuzzwire.news/en/article/two-thirds-venture-capital-flows-ai-startups-openai-anthropic-dominate-funding",
+    "category": "startup",
+    "importance": 5,
+    "is_major_event": true,
+    "date": "2026-07-27",
+    "created_at": 1785124878,
+    "source": "web_search"
+  },
+  {
     "id": "ai_tech_028",
     "date": "2026-07-27",
     "category": "ai_tech",
@@ -8276,50 +8607,6 @@
     "title": "Claude Fable 5 与 Mythos 5：Anthropic 发布最强通用模型",
     "summary": "Claude Fable 5 是 Anthropic 首个公开发布的 Mythos 级模型，在前沿物理研究测试中表现优异——仅用 GPT-5.5 三分之一的推理 token 就追平其四天的进展。SWE-bench Pro 达 80.3%。",
     "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-    "is_major_event": false,
-    "importance": 3,
-    "source": "web_search"
-  },
-  {
-    "id": "startup_021",
-    "date": "2026-07-27",
-    "category": "startup",
-    "title": "Travis Kalanick Atoms 融资 17 亿美元，a16z 领投物理 AI 赛道",
-    "summary": "前 Uber CEO Travis Kalanick 的物理 AI 公司 Atoms 完成 17 亿美元 Series A，由 Andreessen Horowitz 领投，Ben Horowitz 加入董事会，Uber 作为投资方回归。Atoms 覆盖采矿、物流、机器人等多个工业领域。",
-    "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
-    "is_major_event": true,
-    "importance": 4,
-    "source": "web_search"
-  },
-  {
-    "id": "startup_022",
-    "date": "2026-07-27",
-    "category": "startup",
-    "title": "Wonder 食品配送机器人获 6.5 亿美元 D 轮，估值 90 亿",
-    "summary": "Food Robotics 公司 Wonder 于 7 月 16 日宣布 6.5 亿美元 D 轮融资，ARK Invest 和 AllianceBernstein 参投，估值达 90 亿美元。CEO Marc Lore 称公司将于 2027 年初上市。",
-    "url": "https://spoonai.me/posts/2026-07-20-wonder-650m-series-d-ai-food-robotics-jul2026-en",
-    "is_major_event": true,
-    "importance": 4,
-    "source": "web_search"
-  },
-  {
-    "id": "product_015",
-    "date": "2026-07-27",
-    "category": "product_tool",
-    "title": "AMD Advancing AI 2026 大会发布下一代 EPYC 与 Instinct 加速卡",
-    "summary": "AMD 在 7 月 22-23 日的 Advancing AI 大会公布下一代 EPYC 处理器、Instinct AI 加速器产品线更新，强化 CPU+GPU 协同的端侧 AI 基础设施布局。",
-    "url": "https://www.servethehome.com/amd-advancing-ai-2026-keynote-live-coverage/",
-    "is_major_event": false,
-    "importance": 3,
-    "source": "web_search"
-  },
-  {
-    "id": "product_016",
-    "date": "2026-07-27",
-    "category": "product_tool",
-    "title": "Oracle 裁员 3 万人转向 500 亿美元 AI 基础设施投资",
-    "summary": "Oracle 在 2026 年 3 月裁员 2 万至 3 万人以资助 Stargate AI 数据中心扩张项目。银行随后撤回融资，公司背负 580 亿美元债务继续推进 AI 基础设施战略。",
-    "url": "https://cybersecuritynews.com/oracle-lays-off-30000-employees/",
     "is_major_event": false,
     "importance": 3,
     "source": "web_search"
@@ -8436,6 +8723,63 @@
     "original_language": "en"
   },
   {
+    "id": "paper-034",
+    "date": "2026-07-27",
+    "category": "academic_paper",
+    "title": "Asymptotically Optimal Regret for RL without Horizon Dependence",
+    "summary": "arXiv:2607.19854 提出强化学习中不依赖 horizon 的渐近最优 regret bound，解决了 RL 理论中长期存在的 horizon 依赖性难题。作者来自 MIT、Stanford 等机构。",
+    "source": "arXiv:2607.19854",
+    "url": "https://arxiv.org/abs/2607.19854",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "强化学习",
+      "regret bound",
+      "theoretical ML"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "product-016",
+    "date": "2026-07-27",
+    "category": "product_tool",
+    "title": "Genspark 发布 AI Workspace 6.0 和第二大脑硬件",
+    "summary": "Genspark 在东京发布 AI Workspace 6.0 及 SecondBrain Note 硬件，定位为从 AI 工具到 AI 同事的转折点，主打超长上下文管理和跨应用工作流编排。",
+    "source": "Business Wire",
+    "url": "https://finance.yahoo.com/technology/ai/articles/genspark-unveils-ai-workspace-6-150700549.html",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "Genspark",
+      "AI Workspace",
+      "SecondBrain",
+      "生产力"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "product_015",
+    "date": "2026-07-27",
+    "category": "product_tool",
+    "title": "AMD Advancing AI 2026 大会发布下一代 EPYC 与 Instinct 加速卡",
+    "summary": "AMD 在 7 月 22-23 日的 Advancing AI 大会公布下一代 EPYC 处理器、Instinct AI 加速器产品线更新，强化 CPU+GPU 协同的端侧 AI 基础设施布局。",
+    "url": "https://www.servethehome.com/amd-advancing-ai-2026-keynote-live-coverage/",
+    "is_major_event": false,
+    "importance": 3,
+    "source": "web_search"
+  },
+  {
+    "id": "product_016",
+    "date": "2026-07-27",
+    "category": "product_tool",
+    "title": "Oracle 裁员 3 万人转向 500 亿美元 AI 基础设施投资",
+    "summary": "Oracle 在 2026 年 3 月裁员 2 万至 3 万人以资助 Stargate AI 数据中心扩张项目。银行随后撤回融资，公司背负 580 亿美元债务继续推进 AI 基础设施战略。",
+    "url": "https://cybersecuritynews.com/oracle-lays-off-30000-employees/",
+    "is_major_event": false,
+    "importance": 3,
+    "source": "web_search"
+  },
+  {
     "id": "startup-023",
     "date": "2026-07-27",
     "category": "startup",
@@ -8472,500 +8816,218 @@
     "original_language": "en"
   },
   {
-    "id": "product-016",
+    "id": "startup_021",
     "date": "2026-07-27",
-    "category": "product_tool",
-    "title": "Genspark 发布 AI Workspace 6.0 和第二大脑硬件",
-    "summary": "Genspark 在东京发布 AI Workspace 6.0 及 SecondBrain Note 硬件，定位为从 AI 工具到 AI 同事的转折点，主打超长上下文管理和跨应用工作流编排。",
-    "source": "Business Wire",
-    "url": "https://finance.yahoo.com/technology/ai/articles/genspark-unveils-ai-workspace-6-150700549.html",
-    "importance": 3,
-    "is_major_event": false,
-    "keywords": [
-      "Genspark",
-      "AI Workspace",
-      "SecondBrain",
-      "生产力"
-    ],
-    "original_language": "en"
-  },
-  {
-    "id": "paper-034",
-    "date": "2026-07-27",
-    "category": "academic_paper",
-    "title": "Asymptotically Optimal Regret for RL without Horizon Dependence",
-    "summary": "arXiv:2607.19854 提出强化学习中不依赖 horizon 的渐近最优 regret bound，解决了 RL 理论中长期存在的 horizon 依赖性难题。作者来自 MIT、Stanford 等机构。",
-    "source": "arXiv:2607.19854",
-    "url": "https://arxiv.org/abs/2607.19854",
-    "importance": 3,
-    "is_major_event": false,
-    "keywords": [
-      "强化学习",
-      "regret bound",
-      "theoretical ML"
-    ],
-    "original_language": "en"
-  },
-  {
-    "id": "2026-07-27-ai_-6d8b94090f",
-    "title": "Nvidia, Samsung and SK Hynix Set for Mega-Orders as South Korea Finalizes $950B AI Partnership",
-    "summary": "South Korea finalized a $950 billion AI partnership involving Nvidia, Samsung, SK Hynix, Naver, and Hyundai, with Korean AI supply chain stocks surging on the news.",
-    "url": "https://www.tradingkey.com/analysis/stocks/more/262054880-south-korea-finalizes-950-billion-ai-pact-nvidia-samsung-sk-hynix-tradingkey",
-    "category": "ai_tech",
-    "importance": 5,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-ai_-462d314d84",
-    "title": "SK Group Unveils $500 Billion-Plus AI Data Center Initiative with Nvidia",
-    "summary": "SK Telecom and Nvidia announced a comprehensive MOU to build gigawatt-class AI data centers using Nvidia's Vera Rubin chips and SK Hynix's HBM4 memory, first facility due online in 2027.",
-    "url": "https://www.usnews.com/news/top-news/articles/2026-07-24/nvidia-sk-group-unveil-500-billion-plus-ai-data-centers-initiative-memory-partnership",
-    "category": "ai_tech",
-    "importance": 5,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-ai_-68b046ebc2",
-    "title": "Samsung, SK, Hyundai Expand AI Partnerships to $950 Billion",
-    "summary": "SK Telecom signed an MOU with Anthropic for gigawatt-scale AI data centers in Korea, expanding ties with AWS, as part of a broader $950 billion AI infrastructure push.",
-    "url": "https://www.koreatimes.co.kr/amp/business/companies/20260726/samsung-sk-hyundai-expand-ai-partnerships-with-big-tech-firms-to-950-bil",
-    "category": "ai_tech",
-    "importance": 5,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-ai_-3f556891b0",
-    "title": "EU Orders Google to Share Search Data and Open Android to Rival AI Assistants by July 2027",
-    "summary": "The EU Commission ordered Google under DMA Articles 6(7) and 6(11) to share search data from January 2027 and open Android to rival AI assistants like ChatGPT and Claude.",
-    "url": "https://aiweekly.co/",
-    "category": "ai_tech",
-    "importance": 4,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-ai_-48e9c75e50",
-    "title": "AI Executives Bolster Personal Security as Digital Threats Grew 7x",
-    "summary": "Liferaft reports digital threats against AI executives and data centers grew 7x from late Feb to May 2026, including a Molotov attack on Altman's SF home and 127 local data-center bans.",
-    "url": "https://aiweekly.co/",
-    "category": "ai_tech",
-    "importance": 3,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-ai_-7f7f2e9628",
-    "title": "Kimi K3 Agents Find 19 Redis Zero-Days in 90 Minutes",
-    "summary": "Moonshot AI's Kimi K3 agents discovered 19 Redis zero-day vulnerabilities in 90 minutes and built a working 8.8.0 RCE exploit autonomously.",
-    "url": "https://aiweekly.co/",
-    "category": "ai_tech",
-    "importance": 4,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-sta-40b2d81c3b",
-    "title": "India Startup Funding: Manufacturing, DeepTech Overtake AI in Q3 2026",
-    "summary": "Indian startups raised $209 million in the week ending July 25, 2026, with manufacturing, aerospace, enterprise software, and healthtech replacing AI as top investment themes.",
-    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
     "category": "startup",
-    "importance": 4,
+    "title": "Travis Kalanick Atoms 融资 17 亿美元，a16z 领投物理 AI 赛道",
+    "summary": "前 Uber CEO Travis Kalanick 的物理 AI 公司 Atoms 完成 17 亿美元 Series A，由 Andreessen Horowitz 领投，Ben Horowitz 加入董事会，Uber 作为投资方回归。Atoms 覆盖采矿、物流、机器人等多个工业领域。",
+    "url": "https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/",
     "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
+    "importance": 4,
     "source": "web_search"
   },
   {
-    "id": "2026-07-27-sta-c3315cf20c",
-    "title": "Two-Thirds of All Venture Capital Now Flows to AI Startups",
-    "summary": "OpenAI and Anthropic dominate the record funding concentrated at frontier companies, while two-thirds of all VC capital now flows into AI startups in 2026.",
-    "url": "https://aibuzzwire.news/en/article/two-thirds-venture-capital-flows-ai-startups-openai-anthropic-dominate-funding",
+    "id": "startup_022",
+    "date": "2026-07-27",
     "category": "startup",
-    "importance": 5,
+    "title": "Wonder 食品配送机器人获 6.5 亿美元 D 轮，估值 90 亿",
+    "summary": "Food Robotics 公司 Wonder 于 7 月 16 日宣布 6.5 亿美元 D 轮融资，ARK Invest 和 AllianceBernstein 参投，估值达 90 亿美元。CEO Marc Lore 称公司将于 2027 年初上市。",
+    "url": "https://spoonai.me/posts/2026-07-20-wonder-650m-series-d-ai-food-robotics-jul2026-en",
     "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-sta-852ea73663",
-    "title": "Forbes 2026 Midas List: Top Venture Capital Investors Ranked",
-    "summary": "Forbes published its 2026 Midas List tracking the top tech investors in venture capital, highlighting which investors took the top spots and their signature deals.",
-    "url": "https://www.forbes.com/lists/midas/",
-    "category": "startup",
     "importance": 4,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
     "source": "web_search"
   },
   {
-    "id": "2026-07-27-sta-7b6d22628f",
-    "title": "Startup Market Trends July 2026: Distribution is the Differentiator",
-    "summary": "EarlyFinder data shows capital is selective in July 2026 — investors are paying up for companies that demonstrate credible path from attention to retained usage to repeatable sales motion.",
-    "url": "https://earlyfinder.co/blog/startup-market-trends-july-2026-signals-before-funding-1784181773521",
-    "category": "startup",
-    "importance": 3,
-    "is_major_event": false,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-pro-270ff4cb1d",
-    "title": "Claude Fable 5 Returns as Coding King at 80.3% SWE-bench Pro",
-    "summary": "Anthropic's Claude Fable 5 returned on July 1 and retakes the coding crown at 80.3% SWE-bench Pro, leading the best AI tools ranking for July 2026.",
-    "url": "https://aitoolsrecap.com/Blog/best-ai-tools-july-2026-updated-rankings",
-    "category": "product_tool",
-    "importance": 4,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-pro-2b042cfabf",
-    "title": "Grok 4.5 Drops on July 25 — Scores 56 on Intelligence Index, Just Behind GPT-5.5",
-    "summary": "Elon Musk's xAI released Grok 4.5 on July 25, ranking 4th on the Artificial Analysis Intelligence Index with score 56, just one point behind GPT-5.5.",
-    "url": "https://www.youtube.com/watch?v=zDD_DxI3tfg",
-    "category": "product_tool",
-    "importance": 4,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-pro-03903e9b40",
-    "title": "Five Frontier AI Models Launched in 9 Days in July 2026",
-    "summary": "Grok 4.5 (July 8), GPT-5.6 and Muse Spark 1.1 (July 9), Inkling (July 15), and Kimi K3 (July 16) — the densest month in AI model launch history, with price spread over 12x for similar capability.",
-    "url": "https://www.buildfastwithai.com/blogs/new-ai-models-july-2026",
-    "category": "product_tool",
-    "importance": 5,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-pro-d16db6186a",
-    "title": "Meta Launches Muse Spark 1.1 with Cheapest Frontier Paid API",
-    "summary": "Meta opened Muse Spark 1.1 paid API at $1.25/$4.25 — the first Meta paid model and cheapest paid frontier ever — integrated into WhatsApp and Messenger.",
-    "url": "https://thefrontier.fm/article/2026/07/15/grok-muse-spark-break-frontier-ai",
-    "category": "product_tool",
-    "importance": 4,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-pro-16f2646e9d",
-    "title": "OpenAI Temporarily Relaxes GPT-5.6 Sol Usage Limits",
-    "summary": "OpenAI relaxed GPT-5.6 Sol usage limits for Plus/Pro/Business tiers on July 12, resetting usage caps in response to the pricing war triggered by competitors.",
-    "url": "https://andrew.ooo/answers/ai-price-war-july-2026-who-is-winning-model-pricing/",
-    "category": "product_tool",
-    "importance": 3,
-    "is_major_event": false,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "id": "2026-07-27-pro-8f167cb7a7",
-    "title": "APEC Digital and AI Ministerial Meeting Endorses Open-Source AI",
-    "summary": "All 21 APEC member economies endorsed trusted open-source approaches for AI models with strong security assurance, a major policy shift toward open-source AI at the ministerial level.",
-    "url": "https://aiweekly.co/ai-news-today",
-    "category": "product_tool",
-    "importance": 4,
-    "is_major_event": true,
-    "date": "2026-07-27",
-    "created_at": 1785124878,
-    "source": "web_search"
-  },
-  {
-    "title": "India Startup Funding Shifts: Manufacturing & DeepTech Overtake AI in Q3 2026",
-    "summary": "Indian startups raised $209M week ending July 25; manufacturing, aerospace, enterprise software and healthtech replaced AI as top investment themes.",
-    "category": "startup",
-    "importance": 8,
-    "source": "tice.news",
-    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
-    "date": "2026-07-25",
-    "importance_mapped": 4,
-    "is_major_event": true
-  },
-  {
-    "title": "H1 2026 VC Review: Structural Rotation to Defence, Space, Fusion",
-    "summary": "Six of eight largest DACH rounds in H1 2026 went to defence, space, fusion, quantum, robotics or energy infrastructure; software-only rounds absent from top tier.",
-    "category": "startup",
-    "importance": 8,
-    "source": "youtube.com",
-    "url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
-    "date": "2026-07-26",
-    "importance_mapped": 4,
-    "is_major_event": true
-  },
-  {
-    "title": "Grok 4.5 Drops July 25 — 56 on Intelligence Index, Just Behind GPT-5.5",
-    "summary": "xAI releases Grok 4.5 scoring 56 on intelligence index, trailing OpenAI GPT-5.5 by narrow margin.",
-    "category": "ai_tech",
-    "importance": 8,
-    "source": "hermes",
-    "date": "2026-07-25",
-    "importance_mapped": 4,
-    "is_major_event": true
-  },
-  {
-    "title": "APEC Digital and AI Ministerial Endorses Open-Source AI",
-    "summary": "APEC ministers formally endorse open-source AI development, signalling multilateral policy support.",
-    "category": "ai_tech",
-    "importance": 7,
-    "source": "hermes",
+    "id": "ait-050",
     "date": "2026-07-29",
-    "importance_mapped": 4,
-    "is_major_event": false
-  },
-  {
-    "title": "Inference Startup Infinity Raises $15M from Touring Capital",
-    "summary": "Inference-focused startup Infinity closes $15M round backed by Touring Capital with OpenAI and Anthropic research talent.",
-    "category": "startup",
-    "importance": 7,
-    "source": "techcrunch.com",
-    "date": "2026-07-24",
-    "importance_mapped": 4,
-    "is_major_event": false
-  },
-  {
-    "title": "Africa Startup Funding: Tanzania, Morocco, Cote d Ivoire Rising in H1 2026",
-    "summary": "Emerging African markets grow VC share; suggests innovation economy no longer defined by traditional leaders alone.",
-    "category": "startup",
-    "importance": 6,
-    "source": "businessday.ng",
-    "date": "2026-07-26",
-    "importance_mapped": 4,
-    "is_major_event": false
-  },
-  {
-    "title": "MENA Startup Funding Down 22% in H1 2026 Amid Regional Conflict",
-    "summary": "Dubai venture data platform reports H1 2026 MENA funding fell 22%; full effect of tighter cross-border capital flows may show in Q3.",
-    "category": "startup",
-    "importance": 6,
-    "source": "arabnews.com",
-    "date": "2026-07-13",
-    "importance_mapped": 4,
-    "is_major_event": false
-  },
-  {
-    "title": "Aurora Innovation Q2 2026 财报发布：自动驾驶商业化进展",
-    "summary": "Aurora Innovation发布2026年Q2财报，披露自动驾驶卡车商业化运营最新进展及营收增长情况。",
-    "source_url": "https://finance.yahoo.com/technology/articles/aurora-host-second-quarter-2026-130000568.html",
     "category": "ai_tech",
+    "title": "APEC 数字与 AI 部长会议正式支持开源 AI 发展",
+    "summary": "APEC 部长级会议正式背书开源 AI 发展，标志着多边政策层面对开源 AI 的明确支持信号。",
+    "source": "APEC",
+    "url": "https://www.apec.org/Press/News-Release/2026/07/29/Digital-and-AI-Ministerial-Endorses-Open-Source-AI",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "APEC",
+      "开源AI",
+      "多边政策",
+      "部长会议"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-051",
+    "date": "2026-07-29",
+    "category": "ai_tech",
+    "title": "Aurora Innovation Q2 2026 财报发布：自动驾驶卡车商业化进展",
+    "summary": "Aurora Innovation 发布 2026 年 Q2 财报，披露自动驾驶卡车商业化运营最新进展及营收增长情况。",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/articles/aurora-host-second-quarter-2026-130000568.html",
     "importance": 3,
-    "date_added": "2026-07-29",
     "is_major_event": false,
-    "id": "aa92048024c8",
-    "date": "2026-07-29"
+    "keywords": [
+      "Aurora",
+      "自动驾驶",
+      "商业化",
+      "Q2财报"
+    ],
+    "original_language": "zh"
   },
   {
-    "title": "印度初创企业一周融资2.09亿美元：制造与深科技超越AI成投资热点",
-    "summary": "截至7月25日当周，印度初创企业融资2.09亿美元，制造业、航空航天、企业软件和医疗科技取代AI成为最大投资主题。",
-    "source_url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
-    "category": "startup",
-    "importance": 4,
-    "date_added": "2026-07-29",
-    "is_major_event": true,
-    "id": "664eeeb18084",
-    "date": "2026-07-29"
-  },
-  {
-    "title": "2026年全球VC三分之二资金流向AI初创企业",
-    "summary": "2026年风投数据显示创纪录的资金集中度，三分之二的VC资金流向AI初创企业，OpenAI和Anthropic主导融资。",
-    "source_url": "https://aibuzzwire.news/en/article/two-thirds-venture-capital-flows-ai-startups-openai-anthropic-dominate-funding",
-    "category": "startup",
-    "importance": 5,
-    "date_added": "2026-07-29",
-    "is_major_event": true,
-    "id": "a7688db32f42",
-    "date": "2026-07-29"
-  },
-  {
-    "title": "DACH地区H1 2026融资结构转型：国防、太空、聚变、量子占据主导",
-    "summary": "德国、奥地利、瑞士H1 2026八大融资轮中六家流向国防、太空、聚变、量子、机器人和能源基础设施，纯软件融资退出顶层。",
-    "source_url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
-    "category": "startup",
-    "importance": 4,
-    "date_added": "2026-07-29",
-    "is_major_event": true,
-    "id": "e213c8172d8c",
-    "date": "2026-07-29"
-  },
-  {
-    "title": "中东地区冲突拖累MENA初创融资下降22%",
-    "summary": "迪拜风投数据平台报告H1 2026 MENA初创融资下降22%，区域冲突和跨境资本收紧效应或在Q3全面显现。",
-    "source_url": "https://www.arabnews.com/node/2650728/business-economy",
-    "category": "startup",
-    "importance": 3,
-    "date_added": "2026-07-29",
-    "is_major_event": false,
-    "id": "bc1b9bb75ef3",
-    "date": "2026-07-29"
-  },
-  {
-    "title": "OmniQEC: AI科学家发现实用量子纠错码",
-    "summary": "AI科学家系统OmniQEC通过自动化探索发现实用量子纠错码，加速量子计算可靠性研究。",
-    "source_url": "https://arxiv.org/search/?query=OmniQEC",
+    "id": "paper-040",
+    "date": "2026-07-29",
     "category": "academic_paper",
+    "title": "OmniQEC: AI 科学家发现实用量子纠错码",
+    "summary": "AI 科学家系统 OmniQEC 通过自动化探索发现实用量子纠错码，加速量子计算可靠性研究。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=OmniQEC",
     "importance": 4,
-    "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "1adf1a335b90",
-    "date": "2026-07-29"
+    "keywords": [
+      "OmniQEC",
+      "量子纠错",
+      "AI科学发现"
+    ],
+    "original_language": "zh"
   },
   {
-    "title": "DRIFT: 基于直接递归干预的ICU生理状态预测",
-    "summary": "DRIFT模型结合干预条件化预测ICU患者生理状态变化，为临床决策提供实时支持。",
-    "source_url": "https://arxiv.org/search/?query=DRIFT+ICU",
+    "id": "paper-041",
+    "date": "2026-07-29",
     "category": "academic_paper",
+    "title": "DRIFT: 基于直接递归干预的 ICU 生理状态预测",
+    "summary": "DRIFT 模型结合干预条件化预测 ICU 患者生理状态变化，为临床决策提供实时支持。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=DRIFT+ICU",
     "importance": 4,
-    "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "47a596926cbd",
-    "date": "2026-07-29"
+    "keywords": [
+      "DRIFT",
+      "ICU",
+      "临床预测"
+    ],
+    "original_language": "zh"
   },
   {
-    "title": "HiSkill: 层次化技能图赋能LLM Agent",
-    "summary": "HiSkill提出层次化技能图架构，使LLM Agent能够组织、复用和组合复杂技能完成多步骤任务。",
-    "source_url": "https://arxiv.org/search/?query=HiSkill+LLM",
+    "id": "paper-042",
+    "date": "2026-07-29",
     "category": "academic_paper",
+    "title": "HiSkill: 层次化技能图赋能 LLM Agent",
+    "summary": "HiSkill 提出层次化技能图架构，使 LLM Agent 能够组织、复用和组合复杂技能完成多步骤任务。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=HiSkill+LLM",
     "importance": 4,
-    "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "9dd97bd277a5",
-    "date": "2026-07-29"
+    "keywords": [
+      "HiSkill",
+      "LLM Agent",
+      "技能图"
+    ],
+    "original_language": "zh"
   },
   {
+    "id": "paper-043",
+    "date": "2026-07-29",
+    "category": "academic_paper",
     "title": "分布式约束优化：在线学习与迭代定价方法",
     "summary": "提出基于在线学习和迭代定价的分布式约束优化算法，适用于多智能体资源分配场景。",
-    "source_url": "https://arxiv.org/search/?query=Distributed+Constraint+Optimization",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=Distributed+Constraint+Optimization",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "分布式优化",
+      "在线学习",
+      "资源分配"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "paper-044",
+    "date": "2026-07-29",
     "category": "academic_paper",
-    "importance": 3,
-    "date_added": "2026-07-29",
-    "is_major_event": false,
-    "id": "f9fa716139d2",
-    "date": "2026-07-29"
-  },
-  {
-    "title": "降低中性原子量子计算实现门槛：Agent辅助方法",
-    "summary": "利用AI Agent辅助降低中性原子量子计算的实验配置和实现门槛，推动量子计算民主化。",
-    "source_url": "https://arxiv.org/search/?query=neutral-atom+quantum+agent",
-    "category": "academic_paper",
+    "title": "降低中性原子量子计算实现门槛：Agent 辅助方法",
+    "summary": "利用 AI Agent 辅助降低中性原子量子计算的实验配置和实现门槛，推动量子计算民主化。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=neutral-atom+quantum+agent",
     "importance": 4,
-    "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "53f7f10f1409",
-    "date": "2026-07-29"
+    "keywords": [
+      "中性原子",
+      "量子计算",
+      "Agent辅助"
+    ],
+    "original_language": "zh"
   },
   {
-    "title": "Sam Altman declares AI has entered 'singularity'",
-    "summary": "OpenAI CEO states AI has reached singularity phase, argues advances won't permanently displace workers",
-    "url": "https://www.aljazeera.com/news/2026/7/27/sam-altman-says-ai-has-entered-singularity-should-we-be-worried",
-    "source": "Al Jazeera",
-    "published": "2026-07-27",
-    "importance": 5,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-27"
-  },
-  {
-    "title": "Anthropic releases Claude Opus 5",
-    "summary": "Latest frontier model from Anthropic launched July 24, 2026, as company overtakes OpenAI in revenue",
-    "url": "https://aireleasetracker.com/latest",
-    "source": "AI Release Tracker",
-    "published": "2026-07-24",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-24"
-  },
-  {
-    "title": "Google launches three new Gemini AI models",
-    "summary": "New Gemini models focus on cybersecurity capabilities to compete with Anthropic and OpenAI",
-    "url": "https://www.nytimes.com/2026/07/21/technology/google-ai-cybersecurity-gemini.html",
-    "source": "New York Times",
-    "published": "2026-07-21",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-21"
-  },
-  {
-    "title": "Anthropic secures $5B AMD partnership",
-    "summary": "Major chip partnership as Anthropic continues aggressive expansion ahead of IPO",
-    "url": "https://updatedbulletins.com/ai-news-july-2026-openai-google-anthropic-updates/",
-    "source": "Updated Bulletins",
-    "published": "2026-07-24",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-24"
-  },
-  {
-    "title": "AI startup Datapile raises $55M for health risk assessment",
-    "summary": "India-based AI startup focuses on heart health risk assessment technology",
-    "url": "https://datapile.co/funding-news/ai-startup-5826",
-    "source": "Datapile",
-    "published": "2026-07-28",
-    "importance": 3,
+    "id": "startup-030",
+    "date": "2026-07-29",
     "category": "startup",
-    "is_major_event": false,
-    "date": "2026-07-28"
-  },
-  {
-    "title": "Corgi AI Insurance hits $4B valuation in Series B extension",
-    "summary": "AI-native insurance startup rebuilds legacy industry, aggressive investor interest",
-    "url": "https://aibuzzwire.news/en/article/corgi-ai-insurance-startup-4-billion-valuation-third-round-eight-weeks",
-    "source": "AI Buzz Wire",
-    "published": "2026-07-27",
-    "importance": 4,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-27"
-  },
-  {
-    "title": "India startup funding: $346M week, capital concentrates on traction",
-    "summary": "Week ending July 17 shows measurable traction and efficient execution favored over pure AI hype",
-    "url": "https://quasa.io/media/what-india-s-346m-startup-funding-week-means-for-new-founders",
-    "source": "Quasa",
-    "published": "2026-07-17",
-    "importance": 3,
-    "category": "startup",
-    "is_major_event": false,
-    "date": "2026-07-17"
-  },
-  {
-    "title": "India startups raise $209M: Manufacturing and DeepTech overtake AI",
-    "summary": "Week ending July 25 shows shift in venture capital toward manufacturing, aerospace, enterprise software",
-    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "title": "印度初创企业一周融资 2.09 亿美元：制造与深科技超越 AI 成投资热点",
+    "summary": "截至 7 月 25 日当周，印度初创企业融资 2.09 亿美元，制造业、航空航天、企业软件和医疗科技取代 AI 成为最大投资主题。",
     "source": "TICE News",
-    "published": "2026-07-25",
-    "importance": 3,
+    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "印度",
+      "融资",
+      "制造业",
+      "深科技"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "startup-031",
+    "date": "2026-07-29",
     "category": "startup",
+    "title": "2026 年全球 VC 三分之二资金流向 AI 初创企业",
+    "summary": "2026 年风投数据显示创纪录的资金集中度，三分之二的 VC 资金流向 AI 初创企业，OpenAI 和 Anthropic 主导融资。",
+    "source": "AI Buzz Wire",
+    "url": "https://aibuzzwire.news/en/article/two-thirds-venture-capital-flows-ai-startups-openai-anthropic-dominate-funding",
+    "importance": 5,
+    "is_major_event": true,
+    "keywords": [
+      "VC",
+      "AI融资",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "startup-032",
+    "date": "2026-07-29",
+    "category": "startup",
+    "title": "DACH 地区 H1 2026 融资结构转型：国防、太空、聚变、量子占据主导",
+    "summary": "德国、奥地利、瑞士 H1 2026 八大融资轮中六家流向国防、太空、聚变、量子、机器人和能源基础设施，纯软件融资退出顶层。",
+    "source": "YouTube",
+    "url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "DACH",
+      "国防",
+      "太空",
+      "聚变",
+      "量子"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "startup-033",
+    "date": "2026-07-29",
+    "category": "startup",
+    "title": "中东地区冲突拖累 MENA 初创融资下降 22%",
+    "summary": "迪拜风投数据平台报告 H1 2026 MENA 初创融资下降 22%，区域冲突和跨境资本收紧效应或在 Q3 全面显现。",
+    "source": "Arab News",
+    "url": "https://www.arabnews.com/node/2650728/business-economy",
+    "importance": 3,
     "is_major_event": false,
-    "date": "2026-07-25"
+    "keywords": [
+      "MENA",
+      "融资下降",
+      "地缘冲突"
+    ],
+    "original_language": "zh"
   }
 ]

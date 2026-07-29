@@ -1,0 +1,191 @@
+{
+  "records": [
+    {
+      "id": "ait-050",
+      "date": "2026-07-29",
+      "category": "ai_tech",
+      "title": "APEC 数字与 AI 部长会议正式支持开源 AI 发展",
+      "summary": "APEC 部长级会议正式背书开源 AI 发展，标志着多边政策层面对开源 AI 的明确支持信号。",
+      "source": "APEC",
+      "url": "https://www.apec.org/Press/News-Release/2026/07/29/Digital-and-AI-Ministerial-Endorses-Open-Source-AI",
+      "importance": 4,
+      "is_major_event": true,
+      "keywords": ["APEC", "开源AI", "多边政策", "部长会议"],
+      "original_language": "en"
+    },
+    {
+      "id": "ait-051",
+      "date": "2026-07-29",
+      "category": "ai_tech",
+      "title": "Aurora Innovation Q2 2026 财报发布：自动驾驶卡车商业化进展",
+      "summary": "Aurora Innovation 发布 2026 年 Q2 财报，披露自动驾驶卡车商业化运营最新进展及营收增长情况。",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/articles/aurora-host-second-quarter-2026-130000568.html",
+      "importance": 3,
+      "is_major_event": false,
+      "keywords": ["Aurora", "自动驾驶", "商业化", "Q2财报"],
+      "original_language": "zh"
+    },
+    {
+      "id": "startup-030",
+      "date": "2026-07-29",
+      "category": "startup",
+      "title": "印度初创企业一周融资 2.09 亿美元：制造与深科技超越 AI 成投资热点",
+      "summary": "截至 7 月 25 日当周，印度初创企业融资 2.09 亿美元，制造业、航空航天、企业软件和医疗科技取代 AI 成为最大投资主题。",
+      "source": "TICE News",
+      "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+      "importance": 4,
+      "is_major_event": true,
+      "keywords": ["印度", "融资", "制造业", "深科技"],
+      "original_language": "zh"
+    },
+    {
+      "id": "startup-031",
+      "date": "2026-07-29",
+      "category": "startup",
+      "title": "2026 年全球 VC 三分之二资金流向 AI 初创企业",
+      "summary": "2026 年风投数据显示创纪录的资金集中度，三分之二的 VC 资金流向 AI 初创企业，OpenAI 和 Anthropic 主导融资。",
+      "source": "AI Buzz Wire",
+      "url": "https://aibuzzwire.news/en/article/two-thirds-venture-capital-flows-ai-startups-openai-anthropic-dominate-funding",
+      "importance": 5,
+      "is_major_event": true,
+      "keywords": ["VC", "AI融资", "OpenAI", "Anthropic"],
+      "original_language": "zh"
+    },
+    {
+      "id": "startup-032",
+      "date": "2026-07-29",
+      "category": "startup",
+      "title": "DACH 地区 H1 2026 融资结构转型：国防、太空、聚变、量子占据主导",
+      "summary": "德国、奥地利、瑞士 H1 2026 八大融资轮中六家流向国防、太空、聚变、量子、机器人和能源基础设施，纯软件融资退出顶层。",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
+      "importance": 4,
+      "is_major_event": true,
+      "keywords": ["DACH", "国防", "太空", "聚变", "量子"],
+      "original_language": "zh"
+    },
+    {
+      "id": "startup-033",
+      "date": "2026-07-29",
+      "category": "startup",
+      "title": "中东地区冲突拖累 MENA 初创融资下降 22%",
+      "summary": "迪拜风投数据平台报告 H1 2026 MENA 初创融资下降 22%，区域冲突和跨境资本收紧效应或在 Q3 全面显现。",
+      "source": "Arab News",
+      "url": "https://www.arabnews.com/node/2650728/business-economy",
+      "importance": 3,
+      "is_major_event": false,
+      "keywords": ["MENA", "融资下降", "地缘冲突"],
+      "original_language": "zh"
+    },
+    {
+      "id": "paper-040",
+      "date": "2026-07-29",
+      "category": "academic_paper",
+      "title": "OmniQEC: AI 科学家发现实用量子纠错码",
+      "summary": "AI 科学家系统 OmniQEC 通过自动化探索发现实用量子纠错码，加速量子计算可靠性研究。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/search/?query=OmniQEC",
+      "importance": 4,
+      "is_major_event": true,
+      "keywords": ["OmniQEC", "量子纠错", "AI科学发现"],
+      "original_language": "zh"
+    },
+    {
+      "id": "paper-041",
+      "date": "2026-07-29",
+      "category": "academic_paper",
+      "title": "DRIFT: 基于直接递归干预的 ICU 生理状态预测",
+      "summary": "DRIFT 模型结合干预条件化预测 ICU 患者生理状态变化，为临床决策提供实时支持。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/search/?query=DRIFT+ICU",
+      "importance": 4,
+      "is_major_event": true,
+      "keywords": ["DRIFT", "ICU", "临床预测"],
+      "original_language": "zh"
+    },
+    {
+      "id": "paper-042",
+      "date": "2026-07-29",
+      "category": "academic_paper",
+      "title": "HiSkill: 层次化技能图赋能 LLM Agent",
+      "summary": "HiSkill 提出层次化技能图架构，使 LLM Agent 能够组织、复用和组合复杂技能完成多步骤任务。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/search/?query=HiSkill+LLM",
+      "importance": 4,
+      "is_major_event": true,
+      "keywords": ["HiSkill", "LLM Agent", "技能图"],
+      "original_language": "zh"
+    },
+    {
+      "id": "paper-043",
+      "date": "2026-07-29",
+      "category": "academic_paper",
+      "title": "分布式约束优化：在线学习与迭代定价方法",
+      "summary": "提出基于在线学习和迭代定价的分布式约束优化算法，适用于多智能体资源分配场景。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/search/?query=Distributed+Constraint+Optimization",
+      "importance": 3,
+      "is_major_event": false,
+      "keywords": ["分布式优化", "在线学习", "资源分配"],
+      "original_language": "zh"
+    },
+    {
+      "id": "paper-044",
+      "date": "2026-07-29",
+      "category": "academic_paper",
+      "title": "降低中性原子量子计算实现门槛：Agent 辅助方法",
+      "summary": "利用 AI Agent 辅助降低中性原子量子计算的实验配置和实现门槛，推动量子计算民主化。",
+      "source": "arXiv",
+      "url": "https://arxiv.org/search/?query=neutral-atom+quantum+agent",
+      "importance": 4,
+      "is_major_event": true,
+      "keywords": ["中性原子", "量子计算", "Agent辅助"],
+      "original_language": "zh"
+    }
+  ],
+  "insights": [
+    {
+      "type": "industry_insight",
+      "title": "AI 融资集中度达历史极值：全球 VC 三分之二资金涌入 AI 赛道",
+      "body": "2026 年风投数据显示三分之二的 VC 资金流向 AI 初创企业，OpenAI 和 Anthropic 主导融资。这一前所未有的资金集中度意味着 AI 赛道正经历泡沫化风险，同时也表明传统行业（制造、深科技）在非 AI 领域正获得资本回流。",
+      "importance": 5,
+      "score": 85,
+      "summary": "AI 融资集中度达历史极值：全球 VC 三分之二资金涌入 AI 赛道"
+    },
+    {
+      "type": "industry_insight",
+      "title": "DACH 地区融资结构转型：硬科技取代纯软件成投资主流",
+      "body": "德国、奥地利、瑞士 H1 2026 八大融资轮中六家流向国防、太空、聚变、量子等硬科技领域，纯软件融资退出顶层。这反映了欧洲资本正从 SaaS/互联网模式转向需要长期投入的深科技基础设施。",
+      "importance": 4,
+      "score": 75,
+      "summary": "DACH 地区融资结构转型：硬科技取代纯软件成投资主流"
+    },
+    {
+      "type": "startup_advice",
+      "title": "AI+量子计算交叉赛道获资本关注：OmniQEC 与 Agent 辅助量子计算两篇论文释放信号",
+      "body": "本日 arXiv 两篇论文分别展示 AI 发现量子纠错码和 Agent 辅助降低量子计算门槛。结合 DACH 融资中量子领域占比提升，表明 AI+量子计算交叉赛道正从理论走向工程化，早期创业者可关注量子-经典混合计算工具链。",
+      "importance": 3,
+      "score": 65,
+      "summary": "AI+量子计算交叉赛道获资本关注：OmniQEC 与 Agent 辅助量子计算两篇论文释放信号"
+    },
+    {
+      "type": "side_project",
+      "title": "ICU 生理状态预测 SaaS：基于 DRIFT 模型构建临床决策支持系统",
+      "body": "DRIFT 模型展示了结合干预条件化预测 ICU 患者生理状态变化的能力。独立开发者可构建面向中小型医院的 ICU 预警 SaaS，将 DRIFT 类模型产品化，降低重症监护的误判率，市场刚需且监管壁垒相对可控。",
+      "importance": 3,
+      "score": 60,
+      "summary": "ICU 生理状态预测 SaaS：基于 DRIFT 模型构建临床决策支持系统"
+    },
+    {
+      "type": "industry_insight",
+      "title": "APEC 多边政策背书开源 AI：开源模型发展获官方认可",
+      "body": "APEC 部长级会议正式支持开源 AI 发展，标志着多边政策层面对开源 AI 的明确支持。这将降低各国企业对闭源模型的依赖风险，为开源模型厂商（如 Moonshot AI、Meta）进入亚太市场提供政策保障。",
+      "importance": 4,
+      "score": 70,
+      "summary": "APEC 多边政策背书开源 AI：开源模型发展获官方认可"
+    }
+  ],
+  "generated_at": "2026-07-29T10:30:00.000000",
+  "total_new": 11
+}
