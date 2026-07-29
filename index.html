@@ -987,7 +987,7 @@
       }
       html += '</div>';
       html += `<h6 class="mb-2" style="color:var(--text-primary);font-weight:600">${insight.title}</h6>`;
-      html += `<p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6">${insight.summary}</p>`;
+      html += `<p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6">${insight.body}</p>`;
       if (insight[cfg.extraKey]?.length) {
         html += `<div class="mt-2"><strong style="font-size:0.8rem;color:${cfg.accent || 'var(--text-secondary)'}">${cfg.extraLabel}：</strong>`;
         html += `<ul class="mb-0" style="font-size:0.85rem;color:var(--text-secondary)">`;
