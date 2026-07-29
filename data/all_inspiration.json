@@ -8769,5 +8769,105 @@
     "date": "2026-07-13",
     "importance_mapped": 4,
     "is_major_event": false
+  },
+  {
+    "title": "Aurora Innovation Q2 2026 财报发布：自动驾驶商业化进展",
+    "summary": "Aurora Innovation发布2026年Q2财报，披露自动驾驶卡车商业化运营最新进展及营收增长情况。",
+    "source_url": "https://finance.yahoo.com/technology/articles/aurora-host-second-quarter-2026-130000568.html",
+    "category": "ai_tech",
+    "importance": 3,
+    "date_added": "2026-07-29",
+    "is_major_event": false,
+    "id": "aa92048024c8"
+  },
+  {
+    "title": "印度初创企业一周融资2.09亿美元：制造与深科技超越AI成投资热点",
+    "summary": "截至7月25日当周，印度初创企业融资2.09亿美元，制造业、航空航天、企业软件和医疗科技取代AI成为最大投资主题。",
+    "source_url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "category": "startup",
+    "importance": 4,
+    "date_added": "2026-07-29",
+    "is_major_event": true,
+    "id": "664eeeb18084"
+  },
+  {
+    "title": "2026年全球VC三分之二资金流向AI初创企业",
+    "summary": "2026年风投数据显示创纪录的资金集中度，三分之二的VC资金流向AI初创企业，OpenAI和Anthropic主导融资。",
+    "source_url": "https://aibuzzwire.news/en/article/two-thirds-venture-capital-flows-ai-startups-openai-anthropic-dominate-funding",
+    "category": "startup",
+    "importance": 5,
+    "date_added": "2026-07-29",
+    "is_major_event": true,
+    "id": "a7688db32f42"
+  },
+  {
+    "title": "DACH地区H1 2026融资结构转型：国防、太空、聚变、量子占据主导",
+    "summary": "德国、奥地利、瑞士H1 2026八大融资轮中六家流向国防、太空、聚变、量子、机器人和能源基础设施，纯软件融资退出顶层。",
+    "source_url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
+    "category": "startup",
+    "importance": 4,
+    "date_added": "2026-07-29",
+    "is_major_event": true,
+    "id": "e213c8172d8c"
+  },
+  {
+    "title": "中东地区冲突拖累MENA初创融资下降22%",
+    "summary": "迪拜风投数据平台报告H1 2026 MENA初创融资下降22%，区域冲突和跨境资本收紧效应或在Q3全面显现。",
+    "source_url": "https://www.arabnews.com/node/2650728/business-economy",
+    "category": "startup",
+    "importance": 3,
+    "date_added": "2026-07-29",
+    "is_major_event": false,
+    "id": "bc1b9bb75ef3"
+  },
+  {
+    "title": "OmniQEC: AI科学家发现实用量子纠错码",
+    "summary": "AI科学家系统OmniQEC通过自动化探索发现实用量子纠错码，加速量子计算可靠性研究。",
+    "source_url": "https://arxiv.org/search/?query=OmniQEC",
+    "category": "academic_paper",
+    "importance": 4,
+    "date_added": "2026-07-29",
+    "is_major_event": true,
+    "id": "1adf1a335b90"
+  },
+  {
+    "title": "DRIFT: 基于直接递归干预的ICU生理状态预测",
+    "summary": "DRIFT模型结合干预条件化预测ICU患者生理状态变化，为临床决策提供实时支持。",
+    "source_url": "https://arxiv.org/search/?query=DRIFT+ICU",
+    "category": "academic_paper",
+    "importance": 4,
+    "date_added": "2026-07-29",
+    "is_major_event": true,
+    "id": "47a596926cbd"
+  },
+  {
+    "title": "HiSkill: 层次化技能图赋能LLM Agent",
+    "summary": "HiSkill提出层次化技能图架构，使LLM Agent能够组织、复用和组合复杂技能完成多步骤任务。",
+    "source_url": "https://arxiv.org/search/?query=HiSkill+LLM",
+    "category": "academic_paper",
+    "importance": 4,
+    "date_added": "2026-07-29",
+    "is_major_event": true,
+    "id": "9dd97bd277a5"
+  },
+  {
+    "title": "分布式约束优化：在线学习与迭代定价方法",
+    "summary": "提出基于在线学习和迭代定价的分布式约束优化算法，适用于多智能体资源分配场景。",
+    "source_url": "https://arxiv.org/search/?query=Distributed+Constraint+Optimization",
+    "category": "academic_paper",
+    "importance": 3,
+    "date_added": "2026-07-29",
+    "is_major_event": false,
+    "id": "f9fa716139d2"
+  },
+  {
+    "title": "降低中性原子量子计算实现门槛：Agent辅助方法",
+    "summary": "利用AI Agent辅助降低中性原子量子计算的实验配置和实现门槛，推动量子计算民主化。",
+    "source_url": "https://arxiv.org/search/?query=neutral-atom+quantum+agent",
+    "category": "academic_paper",
+    "importance": 4,
+    "date_added": "2026-07-29",
+    "is_major_event": true,
+    "id": "53f7f10f1409"
   }
 ]
