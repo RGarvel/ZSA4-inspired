@@ -8778,7 +8778,8 @@
     "importance": 3,
     "date_added": "2026-07-29",
     "is_major_event": false,
-    "id": "aa92048024c8"
+    "id": "aa92048024c8",
+    "date": "2026-07-29"
   },
   {
     "title": "印度初创企业一周融资2.09亿美元：制造与深科技超越AI成投资热点",
@@ -8788,7 +8789,8 @@
     "importance": 4,
     "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "664eeeb18084"
+    "id": "664eeeb18084",
+    "date": "2026-07-29"
   },
   {
     "title": "2026年全球VC三分之二资金流向AI初创企业",
@@ -8798,7 +8800,8 @@
     "importance": 5,
     "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "a7688db32f42"
+    "id": "a7688db32f42",
+    "date": "2026-07-29"
   },
   {
     "title": "DACH地区H1 2026融资结构转型：国防、太空、聚变、量子占据主导",
@@ -8808,7 +8811,8 @@
     "importance": 4,
     "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "e213c8172d8c"
+    "id": "e213c8172d8c",
+    "date": "2026-07-29"
   },
   {
     "title": "中东地区冲突拖累MENA初创融资下降22%",
@@ -8818,7 +8822,8 @@
     "importance": 3,
     "date_added": "2026-07-29",
     "is_major_event": false,
-    "id": "bc1b9bb75ef3"
+    "id": "bc1b9bb75ef3",
+    "date": "2026-07-29"
   },
   {
     "title": "OmniQEC: AI科学家发现实用量子纠错码",
@@ -8828,7 +8833,8 @@
     "importance": 4,
     "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "1adf1a335b90"
+    "id": "1adf1a335b90",
+    "date": "2026-07-29"
   },
   {
     "title": "DRIFT: 基于直接递归干预的ICU生理状态预测",
@@ -8838,7 +8844,8 @@
     "importance": 4,
     "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "47a596926cbd"
+    "id": "47a596926cbd",
+    "date": "2026-07-29"
   },
   {
     "title": "HiSkill: 层次化技能图赋能LLM Agent",
@@ -8848,7 +8855,8 @@
     "importance": 4,
     "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "9dd97bd277a5"
+    "id": "9dd97bd277a5",
+    "date": "2026-07-29"
   },
   {
     "title": "分布式约束优化：在线学习与迭代定价方法",
@@ -8858,7 +8866,8 @@
     "importance": 3,
     "date_added": "2026-07-29",
     "is_major_event": false,
-    "id": "f9fa716139d2"
+    "id": "f9fa716139d2",
+    "date": "2026-07-29"
   },
   {
     "title": "降低中性原子量子计算实现门槛：Agent辅助方法",
@@ -8868,7 +8877,8 @@
     "importance": 4,
     "date_added": "2026-07-29",
     "is_major_event": true,
-    "id": "53f7f10f1409"
+    "id": "53f7f10f1409",
+    "date": "2026-07-29"
   },
   {
     "title": "Sam Altman declares AI has entered 'singularity'",
@@ -8878,7 +8888,8 @@
     "published": "2026-07-27",
     "importance": 5,
     "category": "ai_tech",
-    "is_major_event": true
+    "is_major_event": true,
+    "date": "2026-07-27"
   },
   {
     "title": "Anthropic releases Claude Opus 5",
@@ -8888,7 +8899,8 @@
     "published": "2026-07-24",
     "importance": 4,
     "category": "ai_tech",
-    "is_major_event": true
+    "is_major_event": true,
+    "date": "2026-07-24"
   },
   {
     "title": "Google launches three new Gemini AI models",
@@ -8898,7 +8910,8 @@
     "published": "2026-07-21",
     "importance": 4,
     "category": "ai_tech",
-    "is_major_event": true
+    "is_major_event": true,
+    "date": "2026-07-21"
   },
   {
     "title": "Anthropic secures $5B AMD partnership",
@@ -8908,7 +8921,8 @@
     "published": "2026-07-24",
     "importance": 4,
     "category": "ai_tech",
-    "is_major_event": true
+    "is_major_event": true,
+    "date": "2026-07-24"
   },
   {
     "title": "AI startup Datapile raises $55M for health risk assessment",
@@ -8918,7 +8932,8 @@
     "published": "2026-07-28",
     "importance": 3,
     "category": "startup",
-    "is_major_event": false
+    "is_major_event": false,
+    "date": "2026-07-28"
   },
   {
     "title": "Corgi AI Insurance hits $4B valuation in Series B extension",
@@ -8928,7 +8943,8 @@
     "published": "2026-07-27",
     "importance": 4,
     "category": "startup",
-    "is_major_event": true
+    "is_major_event": true,
+    "date": "2026-07-27"
   },
   {
     "title": "India startup funding: $346M week, capital concentrates on traction",
@@ -8938,7 +8954,8 @@
     "published": "2026-07-17",
     "importance": 3,
     "category": "startup",
-    "is_major_event": false
+    "is_major_event": false,
+    "date": "2026-07-17"
   },
   {
     "title": "India startups raise $209M: Manufacturing and DeepTech overtake AI",
@@ -8948,6 +8965,7 @@
     "published": "2026-07-25",
     "importance": 3,
     "category": "startup",
-    "is_major_event": false
+    "is_major_event": false,
+    "date": "2026-07-25"
   }
 ]
