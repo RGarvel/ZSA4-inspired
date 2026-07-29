@@ -1,0 +1,307 @@
+[
+  {
+    "title": "RepoReasoner: Evaluating Repository-Level Code Reasoning Ability of Long-Context Language Models",
+    "summary": "Recent large language models (LLMs) have shown strong performance on software engineering tasks, yet most existing benchmarks evaluate…",
+    "url": "http://arxiv.org/abs/2607.25996v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.SE",
+      "cs.SE"
+    ]
+  },
+  {
+    "title": "Beyond Zooming: Learning Multi-Tool Visual Reasoning for Ultra-High-Resolution Remote Sensing",
+    "summary": "Ultra-high-resolution (UHR) remote-sensing (RS) imagery provides fine-grained Earth-observation evidence over city-scale scenes, but…",
+    "url": "http://arxiv.org/abs/2607.25993v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Knowledge-Guided Multimodal Reasoning over Interacting Streams for Video-Level Ambivalence and Hesitancy Recognition",
+    "summary": "Ambivalence and hesitancy (A/H) are conflicting affective states that precede the delay or abandonment of health behaviour change.…",
+    "url": "http://arxiv.org/abs/2607.25961v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "A Cost-Effective Multimodal LLM Reasoning Framework for Question Answering over Irregular Clinical Time Series",
+    "summary": "Question answering (QA) over irregular clinical time series (ICTS) plays a pivotal role in a wide range of healthcare applications.…",
+    "url": "http://arxiv.org/abs/2607.25947v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.AI",
+      "cs.CL",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Evaluating Multi-Turn Multimodal Diagnostic Reasoning on Challenging Real-World Clinical Cases",
+    "summary": "Clinical diagnostic evaluation should not only assess whether models can provide correct diagnoses, but also reflect the realities of…",
+    "url": "http://arxiv.org/abs/2607.25933v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CL",
+      "cs.AI",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "Runtime Uncertainty Monitoring for LLM-Based Multi-Agent Systems Using Bayesian Networks",
+    "summary": "This paper investigates how multi-agent systems (MAS)-based on large language models (LLMs) can support actuarial risk modelling, with a…",
+    "url": "http://arxiv.org/abs/2607.25877v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "S2A2: Audio-Visual Imitation Learning for Manipulation Tasks Using Acoustic Spatial Information",
+    "summary": "Acoustic information provides rich cues about object location, material properties, and changes caused by contact or motion. This paper…",
+    "url": "http://arxiv.org/abs/2607.26047v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.RO",
+      "cs.RO"
+    ]
+  },
+  {
+    "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+    "summary": "We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an…",
+    "url": "http://arxiv.org/abs/2607.26042v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CV",
+      "cs.LG",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer",
+    "summary": "Graph foundation models (GFMs) have emerged as a promising paradigm for transferring knowledge across graph domains and tasks.…",
+    "url": "http://arxiv.org/abs/2607.26023v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "LaP-Forensics: Latent-Pixel Consistency Guided Multimodal Reasoning for Deepfake Detection",
+    "summary": "Recent generative models can produce images with few obvious visual artifacts, weakening detectors and explanations that rely only on…",
+    "url": "http://arxiv.org/abs/2607.25962v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+    "summary": "Much like humans benefit from guidance while learning, reinforcement learning algorithms may benefit from additional supervision beyond…",
+    "url": "http://arxiv.org/abs/2607.26040v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.LG",
+      "stat.ML",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Reinforcement Learning for Code Optimization",
+    "summary": "RL for code correctness is now established: have the model generate a program, run it against hidden test cases, and reward solutions…",
+    "url": "http://arxiv.org/abs/2607.25970v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.LG",
+      "cs.AI",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "RecoReward: Recommender-Guided Multimodal Description Generation for Recommendation",
+    "summary": "Multimodal large language models (MLLMs) can convert multimodal item content into structured descriptions used as semantic features for…",
+    "url": "http://arxiv.org/abs/2607.25901v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.IR",
+      "cs.IR"
+    ]
+  },
+  {
+    "title": "WarmTuner: Program-Specific Warm Starts for Compiler Autotuning via Offline-to-Online Reinforcement Learning",
+    "summary": "Compilers are fundamental software tools that translate high-level programs into machine code. Modern compilers expose hundreds of…",
+    "url": "http://arxiv.org/abs/2607.25831v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.SE",
+      "cs.SE"
+    ]
+  },
+  {
+    "title": "System-Aware Adaptive CSI Feedback via RL-Guided Autoencoder Switching in Multi-User MIMO System",
+    "summary": "This paper proposes a system-aware adaptive channel state information (CSI) feedback framework for massive multiple-input…",
+    "url": "http://arxiv.org/abs/2607.25588v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.IT",
+      "eess.SY",
+      "cs.IT"
+    ]
+  },
+  {
+    "title": "A Control System, a Dataset, and a Recipe for Making Frozen LLM Agents Learn a Domain",
+    "summary": "Production LLM agents are increasingly assembled from a frozen model wrapped in a harness: a prompt template, a tool set, a…",
+    "url": "http://arxiv.org/abs/2607.25415v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Parallel Decoding Distillation for Fast Image and Video Generation",
+    "summary": "Generation in video diffusion or flow models is computationally expensive due to the slow and iterative sampling process. Current…",
+    "url": "http://arxiv.org/abs/2607.26004v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CV",
+      "cs.LG",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
+    "summary": "Any-to-any models predict any modality from any combination of others within a single network, a formulation used in multimodal vision…",
+    "url": "http://arxiv.org/abs/2607.25948v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Interacting hydrodynamic modes in spinless fermions with dephasing noise",
+    "summary": "We study the non-equilibrium dynamics of spinless fermions with dephasing noise in the framework of a many-particle Lindblad equation.…",
+    "url": "http://arxiv.org/abs/2607.25938v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cond-mat.stat-mech",
+      "quant-ph",
+      "cond-mat.stat-mech"
+    ]
+  },
+  {
+    "title": "Non-monotonic diffusion from nonequilibrium driving",
+    "summary": "The stochastic dynamics of interacting particles far from equilibrium remains a fundamental challenge in statistical physics. While…",
+    "url": "http://arxiv.org/abs/2607.25902v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cond-mat.stat-mech",
+      "cond-mat.stat-mech"
+    ]
+  },
+  {
+    "title": "TIGA: Trajectory-Injected Generative Attack against Black-box AIGC Detectors",
+    "summary": "Recent diffusion models have achieved remarkable realism in facial image synthesis, posing growing challenges to artificial…",
+    "url": "http://arxiv.org/abs/2607.25894v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-29",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  }
+]

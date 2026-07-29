@@ -537,8 +537,8 @@
             <th style="width: 10%;" onclick="sortBy('output_price_per_1m')">输出价 <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 8%;">图像</th>
             <th style="width: 6%;">开源</th>
-            <th style="width: 8%;" onclick="sortBy('composite_score')">质量 <i class="bi bi-arrow-down-up"></i></th>
-            <th style="width: 10%;" onclick="sortBy('value_score')">💰 性价比 <i class="bi bi-arrow-down-up"></i></th>
+            <th style="width: 8%;" onclick="sortBy('quality_display')">质量（<span id="qualityLabel">综合</span>） <i class="bi bi-arrow-down-up"></i></th>
+            <th style="width: 10%;" onclick="sortBy('value_display')">💰 性价比（<span id="valueLabel">综合</span>） <i class="bi bi-arrow-down-up"></i></th>
             <th style="width: 8%;">用途</th>
             <th style="width: 7%;">对比</th>
           </tr>
@@ -564,6 +564,7 @@
     let sortField = 'composite_score';
     let sortDirection = 'desc';
     let _sortedModels = [];
+    let currentTaskType = ''; // 当前任务类型
     
     // Cached DOM references
     let dom = {};
@@ -736,27 +737,52 @@
     
     function renderTable() {
       const models = getFilteredModels();
+      const activeTask = domCache.taskType?.value || 'chat';
+      
+      // 根据任务类型选择对应的质量和性价比字段
+      const taskNames = { chat: '文本', coding: '代码', reasoning: '推理', image: '图像' };
+      const qualityField = 'score_' + activeTask;
+      const valueField = 'value_score_' + activeTask;
+      
+      // 更新表头标签
+      const qualityLabel = taskNames[activeTask] || '综合';
+      const valueLabel = taskNames[activeTask] || '综合';
+      const qualityHeader = document.getElementById('qualityLabel');
+      const valueHeader = document.getElementById('valueLabel');
+      if (qualityHeader) qualityHeader.textContent = qualityLabel;
+      if (valueHeader) valueHeader.textContent = valueLabel;
       
       // Ensure each model has value_score from pre-computed JSON
       // (loadModels already set m.value_score from JSON)
       for (const m of models) {
-        if (m.value_score == null) {
-          // Fallback: compute if not present (e.g., old data)
-          const activeTask = $el.taskType?.value || 'chat';
+        // 根据任务类型获取对应的质量和性价比分数
+        m.quality_display = m[qualityField] || m.composite_score || 0;
+        m.value_display = m[valueField] || m.value_score || 0;
+        
+        // Fallback: compute if not present (e.g., old data)
+        if (m.value_display == null || m.value_display === 0) {
           const raw = calcValueScore(m, activeTask);
           if (raw >= 0) {
-            m.value_score = Math.round((raw / 5) * 100); // Simplified fallback
-          } else {
-            m.value_score = 0;
+            m.value_display = Math.round((raw / 5) * 100);
           }
         }
       }
       
       models.sort((a, b) => {
-        let va = a[sortField], vb = b[sortField];
-        if (sortField === 'name') { va = String(va || '').toLowerCase(); vb = String(vb || '').toLowerCase(); }
-        else if (sortField === 'value_score') { va = Number(a.value_score) || 0; vb = Number(b.value_score) || 0; }
-        else { va = Number(va) || 0; vb = Number(vb) || 0; }
+        let va, vb;
+        if (sortField === 'quality_display') {
+          va = Number(a.quality_display) || 0;
+          vb = Number(b.quality_display) || 0;
+        } else if (sortField === 'value_display') {
+          va = Number(a.value_display) || 0;
+          vb = Number(b.value_display) || 0;
+        } else if (sortField === 'name') {
+          va = String(a[sortField] || '').toLowerCase();
+          vb = String(b[sortField] || '').toLowerCase();
+        } else {
+          va = Number(a[sortField]) || 0;
+          vb = Number(b[sortField]) || 0;
+        }
         if (va < vb) return sortDirection === 'asc' ? -1 : 1;
         if (va > vb) return sortDirection === 'asc' ? 1 : -1;
         return 0;
@@ -771,7 +797,7 @@
       
       for (let i = 0; i < models.length; i++) {
         const m = models[i];
-        const q = m.composite_score;
+        const q = m.quality_display;
         const qc = q >= 90 ? 'high' : q >= 75 ? 'medium' : 'low';
         const ic = cs.has(m.model_id);
         
@@ -785,7 +811,7 @@
         parts.push('<td style="text-align:center;">' + (m.open_source ? '<span class="badge bg-success">开源</span>' : '<span class="badge bg-secondary">闭源</span>') + '</td>');
         parts.push('<td><span class="quality-score ', qc, '">', q, '</span></td>');
         // Value-for-money score (color-coded)
-        const vs = m.value_score != null ? Number(m.value_score) : 0;
+        const vs = m.value_display != null ? Number(m.value_display) : 0;
         const vc = vs >= 70 ? 'high' : vs >= 50 ? 'medium' : 'low';
         parts.push('<td><span class="quality-score ', vc, '" title="性价比评分">💰', vs, '</span></td>');
         parts.push('<td>', m.categories.slice(0, 3).map(cat => '<span class="keyword-badge" style="font-size:0.65rem">' + cat + '</span>').join(''), '</td>');
@@ -1020,6 +1046,7 @@
       
       const taskType = $el.taskType?.value || '';
       const hasTaskFilter = !!taskType;
+      const taskNames = { chat: '文本', coding: '代码', reasoning: '推理', image: '图像' };
       
       // Always use _sortedModels from renderTable() to keep table and chart in sync
       let models;
@@ -1037,16 +1064,19 @@
       
       // Determine what to show on line chart based on current sort field or task filter
       let lineData, lineLabel, yAxisLabel;
-      if (sortField === 'value_score') {
-        lineData = models.map(m => m.value_score || 0);
-        lineLabel = '性价比评分';
-        yAxisLabel = '性价比评分';
+      if (sortField === 'value_display') {
+        lineData = models.map(m => m.value_display || 0);
+        lineLabel = hasTaskFilter ? taskNames[taskType] + '性价比' : '性价比评分';
+        yAxisLabel = lineLabel;
+      } else if (sortField === 'quality_display' || sortField === 'composite_score') {
+        lineData = models.map(m => m.quality_display || m.composite_score || 0);
+        lineLabel = hasTaskFilter ? taskNames[taskType] + '质量' : '质量评分';
+        yAxisLabel = lineLabel;
       } else if (hasTaskFilter) {
         const scoreKey = 'score_' + taskType;
-        const pt = { coding: '编码', reasoning: '推理', chat: '文本', image: '图像' }[taskType] || '';
         lineData = models.map(m => m[scoreKey] != null ? m[scoreKey] : m.composite_score || 0);
-        lineLabel = pt + '得分';
-        yAxisLabel = pt;
+        lineLabel = taskNames[taskType] + '得分';
+        yAxisLabel = taskNames[taskType];
       } else if (sortField === 'output_price_per_1m' || sortField === 'input_price_per_1m') {
         lineData = models.map(m => Number(m.output_price_per_1m ?? 0) || 0);
         lineLabel = '输出价格';
