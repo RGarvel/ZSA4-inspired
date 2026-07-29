@@ -561,7 +561,7 @@
     let allModels = [];
     let priceChart = null;
     let compareList = [];
-    let sortField = 'composite_score';
+    let sortField = 'quality_display';
     let sortDirection = 'desc';
     let _sortedModels = [];
     let currentTaskType = ''; // 当前任务类型
@@ -736,38 +736,46 @@
     function rebuildCompareSet() { _compareSet = new Set(compareList); }
     
     function renderTable() {
-      const models = getFilteredModels();
-      const activeTask = $el.taskType?.value || 'chat';
-      
+      const activeTask = $el.taskType?.value || '';
+
       // 根据任务类型选择对应的质量和性价比字段
       const taskNames = { chat: '文本', coding: '代码', reasoning: '推理', image: '图像' };
-      const qualityField = 'score_' + activeTask;
-      const valueField = 'value_score_' + activeTask;
-      
+      let qualityField = 'composite_score';
+      let valueField = 'value_score';
+
+      if (activeTask) {
+        // 选中了具体任务类型
+        qualityField = 'score_' + activeTask;
+        valueField = 'value_score_' + activeTask;
+      }
+
       // 更新表头标签
-      const qualityLabel = taskNames[activeTask] || '综合';
-      const valueLabel = taskNames[activeTask] || '综合';
+      const qualityLabel = activeTask ? taskNames[activeTask] + '质量' : '综合质量';
+      const valueLabel = activeTask ? taskNames[activeTask] + '性价比' : '综合性价比';
       const qualityHeader = document.getElementById('qualityLabel');
       const valueHeader = document.getElementById('valueLabel');
       if (qualityHeader) qualityHeader.textContent = qualityLabel;
       if (valueHeader) valueHeader.textContent = valueLabel;
-      
-      // Ensure each model has value_score from pre-computed JSON
-      // (loadModels already set m.value_score from JSON)
+
+      const models = getFilteredModels();
+
+      // 为每个模型计算显示用的分数
       for (const m of models) {
-        // 根据任务类型获取对应的质量和性价比分数
-        m.quality_display = m[qualityField] || m.composite_score || 0;
-        m.value_display = m[valueField] || m.value_score || 0;
-        
-        // Fallback: compute if not present (e.g., old data)
-        if (m.value_display == null || m.value_display === 0) {
-          const raw = calcValueScore(m, activeTask);
-          if (raw >= 0) {
-            m.value_display = Math.round((raw / 5) * 100);
+        if (activeTask) {
+          m.quality_display = m[qualityField] || m.composite_score || 0;
+          m.value_display = m[valueField] || m.value_score || 0;
+          // Fallback: compute if not present
+          if (m.value_display == null || m.value_display === 0) {
+            const raw = calcValueScore(m, activeTask);
+            if (raw >= 0) m.value_display = Math.round((raw / 5) * 100);
           }
+        } else {
+          // 未选中任务类型：展示综合评分
+          m.quality_display = m.composite_score || 0;
+          m.value_display = m.value_score || 0;
         }
       }
-      
+
       models.sort((a, b) => {
         let va, vb;
         if (sortField === 'quality_display') {
@@ -787,7 +795,7 @@
         if (va > vb) return sortDirection === 'asc' ? 1 : -1;
         return 0;
       });
-      
+
       // Store sorted models for chart sync
       _sortedModels = models;
       
