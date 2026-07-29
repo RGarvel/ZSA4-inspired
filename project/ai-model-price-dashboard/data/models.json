@@ -29,11 +29,11 @@
       "score_reasoning": 92.0,
       "score_image": 56.4,
       "score_chat": 94,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 62.67,
-      "value_score_coding": 73.83,
-      "value_score_reasoning": 51.11,
-      "value_score_image": 61.33
+      "updated_at": "2026-07-29",
+      "value_score_chat": 13.2,
+      "value_score_coding": 27.89,
+      "value_score_reasoning": 37.86,
+      "value_score_image": 9.23
     },
     {
       "model_id": "claude-fable-5",
@@ -61,11 +61,11 @@
       "score_reasoning": 100.0,
       "score_image": 57.0,
       "score_chat": 96,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 32.0,
-      "value_score_coding": 39.58,
-      "value_score_reasoning": 27.78,
-      "value_score_image": 32.33
+      "updated_at": "2026-07-29",
+      "value_score_chat": 8.42,
+      "value_score_coding": 22.77,
+      "value_score_reasoning": 33.21,
+      "value_score_image": 5.67
     },
     {
       "model_id": "gpt-5.6-sol",
@@ -93,11 +93,11 @@
       "score_reasoning": 84.0,
       "score_image": 54.6,
       "score_chat": 90,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 51.43,
-      "value_score_coding": 57.14,
-      "value_score_reasoning": 40.0,
-      "value_score_image": 48.57
+      "updated_at": "2026-07-29",
+      "value_score_chat": 11.46,
+      "value_score_coding": 25.76,
+      "value_score_reasoning": 35.65,
+      "value_score_image": 7.96
     },
     {
       "model_id": "kimi-k3",
@@ -125,11 +125,11 @@
       "score_reasoning": 96.0,
       "score_image": 51.0,
       "score_chat": 86,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 95.56,
-      "value_score_coding": 100,
-      "value_score_reasoning": 88.89,
-      "value_score_image": 97.78
+      "updated_at": "2026-07-29",
+      "value_score_chat": 17.27,
+      "value_score_coding": 31.7,
+      "value_score_reasoning": 41.23,
+      "value_score_image": 12.48
     },
     {
       "model_id": "gemini-3.1-pro",
@@ -145,7 +145,7 @@
       ],
       "context_window": 2000000,
       "input_price_per_1m": 2.0,
-      "output_price_per_1m": 12.0,
+      "output_price_per_1m": 18.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 80.6,
@@ -157,11 +157,11 @@
       "score_reasoning": 80.0,
       "score_image": 55.8,
       "score_chat": 90,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 95.24,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 15.99,
+      "value_score_coding": 30.3,
+      "value_score_reasoning": 39.82,
+      "value_score_image": 11.48
     },
     {
       "model_id": "claude-sonnet-5",
@@ -189,11 +189,11 @@
       "score_reasoning": 88.0,
       "score_image": 54.0,
       "score_chat": 89,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 98.89,
-      "value_score_coding": 100,
-      "value_score_reasoning": 81.48,
-      "value_score_image": 97.78
+      "updated_at": "2026-07-29",
+      "value_score_chat": 17.27,
+      "value_score_coding": 31.7,
+      "value_score_reasoning": 41.23,
+      "value_score_image": 12.48
     },
     {
       "model_id": "gpt-5.6-terra",
@@ -221,11 +221,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 85.71,
-      "value_score_coding": 100,
-      "value_score_reasoning": 71.43,
-      "value_score_image": 85.71
+      "updated_at": "2026-07-29",
+      "value_score_chat": 16.33,
+      "value_score_coding": 30.18,
+      "value_score_reasoning": 39.39,
+      "value_score_image": 11.84
     },
     {
       "model_id": "grok-4.5",
@@ -253,11 +253,11 @@
       "score_reasoning": 87.0,
       "score_image": 52.199999999999996,
       "score_chat": 87.0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 58.0,
-      "value_score_coding": 72.17,
-      "value_score_reasoning": 48.33,
-      "value_score_image": 58.0
+      "updated_at": "2026-07-29",
+      "value_score_chat": 12.82,
+      "value_score_coding": 27.29,
+      "value_score_reasoning": 37.14,
+      "value_score_image": 8.98
     },
     {
       "model_id": "kimi-k2.6",
@@ -285,11 +285,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 37.62,
+      "value_score_coding": 48.78,
+      "value_score_reasoning": 56.27,
+      "value_score_image": 30.27
     },
     {
       "model_id": "step-edge",
@@ -317,11 +317,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "glm-5.2",
@@ -349,11 +349,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "qwen-max",
@@ -381,11 +381,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "flux-2-pro",
@@ -410,11 +410,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 100.0
     },
     {
       "model_id": "gpt-5.6-luna",
@@ -439,11 +439,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 23.78,
+      "value_score_coding": 36.39,
+      "value_score_reasoning": 44.65,
+      "value_score_image": 18.18
     },
     {
       "model_id": "cohere-command-r-plus",
@@ -471,11 +471,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 80.0,
-      "value_score_coding": 100.0,
-      "value_score_reasoning": 66.67,
-      "value_score_image": 80.0
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "imagen-4-ultra",
@@ -500,11 +500,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 100.0
     },
     {
       "model_id": "mistral-large-3",
@@ -532,11 +532,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "qwen3.7-max",
@@ -562,11 +562,11 @@
       "score_reasoning": 78.0,
       "score_image": 52.8,
       "score_chat": 85,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 29.35,
+      "value_score_coding": 42.08,
+      "value_score_reasoning": 50.44,
+      "value_score_image": 22.82
     },
     {
       "model_id": "deepseek-v4-pro",
@@ -594,11 +594,11 @@
       "score_reasoning": 82.0,
       "score_image": 52.199999999999996,
       "score_chat": 85,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 42.89,
+      "value_score_coding": 53.62,
+      "value_score_reasoning": 60.92,
+      "value_score_image": 34.94
     },
     {
       "model_id": "doubao-seed-2.1-pro",
@@ -626,11 +626,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "gpt-image-1.5",
@@ -655,11 +655,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 100.0
     },
     {
       "model_id": "gemini-3.5-flash",
@@ -674,8 +674,8 @@
         "image"
       ],
       "context_window": 1048576,
-      "input_price_per_1m": 0.15,
-      "output_price_per_1m": 0.6,
+      "input_price_per_1m": 1.5,
+      "output_price_per_1m": 9.0,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": 78.8,
@@ -687,11 +687,11 @@
       "score_reasoning": 79,
       "score_image": 47.4,
       "score_chat": 79,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 21.44,
+      "value_score_coding": 35.09,
+      "value_score_reasoning": 44.02,
+      "value_score_image": 16.01
     },
     {
       "model_id": "gemini-3.6-flash",
@@ -719,11 +719,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "yi-lightning",
@@ -751,11 +751,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "deepseek-v4-flash",
@@ -783,11 +783,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "llama-4-maverick",
@@ -815,11 +815,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 100.0
     },
     {
       "model_id": "gpt-5.4-mini",
@@ -847,11 +847,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "llama-4-scout",
@@ -879,11 +879,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 100.0
     },
     {
       "model_id": "dall-e-3",
@@ -908,11 +908,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 100.0
     },
     {
       "model_id": "gemini-3-flash",
@@ -940,11 +940,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "gemini-2.5-flash-lite",
@@ -959,8 +959,8 @@
         "image"
       ],
       "context_window": 1048576,
-      "input_price_per_1m": 0.075,
-      "output_price_per_1m": 0.3,
+      "input_price_per_1m": 0.1,
+      "output_price_per_1m": 0.4,
       "image_generation_price": "/",
       "image_edit_price": "/",
       "benchmark_swe_verified": null,
@@ -972,11 +972,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 0,
+      "value_score_coding": 0,
+      "value_score_reasoning": 0,
+      "value_score_image": 0
     },
     {
       "model_id": "amazon-nova-micro",
@@ -1004,11 +1004,11 @@
       "score_reasoning": 0,
       "score_image": 0.0,
       "score_chat": 0,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 100
+      "updated_at": "2026-07-29",
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 100.0
     },
     {
       "model_id": "claude-opus-5",
@@ -1026,11 +1026,11 @@
       "composite_score": 95,
       "benchmark_swe_verified": 80,
       "benchmark_reasoning": 92,
-      "updated_at": "2026-07-28",
-      "value_score_chat": 63.33,
-      "value_score_coding": 66.67,
-      "value_score_reasoning": 51.11,
-      "value_score_image": 63.33
+      "updated_at": "2026-07-29",
+      "value_score_chat": 13.41,
+      "value_score_coding": 28.24,
+      "value_score_reasoning": 38.27,
+      "value_score_image": 9.38
     }
   ]
 }
