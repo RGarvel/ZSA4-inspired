@@ -187,6 +187,72 @@
 
     /* ── Footer ── */
     .footer { text-align: center; padding: 2rem 0; color: var(--text-secondary); font-size: 0.8rem; }
+
+    /* ── Add Patient Button ── */
+    .add-patient-btn {
+      position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+      color: #fff; border: none; font-size: 1.5rem; cursor: pointer;
+      box-shadow: 0 4px 16px rgba(88,166,255,0.4);
+      transition: all 0.3s; display: flex; align-items: center; justify-content: center;
+    }
+    .add-patient-btn:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(88,166,255,0.6); }
+
+    /* ── Modal ── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0; z-index: 2000;
+      background: rgba(0,0,0,0.6); backdrop-filter: blur(4px);
+      align-items: center; justify-content: center; padding: 1rem;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal-box {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 16px; padding: 1.5rem; width: 100%; max-width: 600px;
+      max-height: 90vh; overflow-y: auto;
+    }
+    .modal-box h5 { margin-bottom: 1rem; }
+    .modal-box label { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.2rem; display: block; }
+    .modal-box input, .modal-box select {
+      width: 100%; padding: 0.5rem 0.75rem; border-radius: 8px;
+      border: 1px solid var(--border-color); background: var(--bg-secondary);
+      color: var(--text-primary); font-size: 0.9rem; margin-bottom: 0.75rem;
+      transition: border-color 0.2s;
+    }
+    .modal-box input:focus, .modal-box select:focus {
+      outline: none; border-color: var(--accent-blue);
+      box-shadow: 0 0 0 2px rgba(88,166,255,0.2);
+    }
+    .modal-box .form-section {
+      border-top: 1px solid var(--border-color); padding-top: 1rem; margin-top: 0.5rem;
+    }
+    .modal-box .form-section h6 { color: var(--accent-purple); margin-bottom: 0.75rem; font-size: 0.9rem; }
+    .modal-box .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+    .modal-actions { display: flex; gap: 0.75rem; margin-top: 1rem; justify-content: flex-end; }
+    .btn-cancel {
+      padding: 0.5rem 1.2rem; border-radius: 8px; border: 1px solid var(--border-color);
+      background: transparent; color: var(--text-primary); cursor: pointer; font-size: 0.9rem;
+    }
+    .btn-cancel:hover { border-color: var(--accent-blue); }
+    .btn-submit {
+      padding: 0.5rem 1.2rem; border-radius: 8px; border: none;
+      background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+      color: #fff; cursor: pointer; font-size: 0.9rem; font-weight: 600;
+    }
+    .btn-submit:hover { opacity: 0.9; }
+
+    /* ── Result Card ── */
+    .result-card {
+      display: none; background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem;
+      animation: slideDown 0.4s ease;
+    }
+    .result-card.show { display: block; }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    .result-score {
+      font-size: 3rem; font-weight: 800; text-align: center; margin: 0.5rem 0;
+    }
+    .result-detail { font-size: 0.85rem; color: var(--text-secondary); text-align: center; }
   </style>
 </head>
 <body>
@@ -228,7 +294,54 @@
     </div>
 
     <!-- Patient Cards -->
+    <div id="resultCard" class="result-card"></div>
     <div id="patientList"></div>
+  </div>
+
+  <!-- Add Patient Button -->
+  <button class="add-patient-btn" onclick="openModal()" title="录入新患者"><i class="bi bi-plus-lg"></i></button>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <h5><i class="bi bi-person-plus-fill"></i> 录入新患者</h5>
+      <form id="patientForm" onsubmit="handleSubmit(event)">
+        <div class="form-section">
+          <h6>基本信息</h6>
+          <div class="form-row">
+            <div><label>患者编号</label><input type="text" id="f_id" required placeholder="如 P006"></div>
+            <div><label>姓名</label><input type="text" id="f_name" required placeholder="如 患者 F"></div>
+          </div>
+          <div class="form-row">
+            <div><label>年龄</label><input type="number" id="f_age" required min="0" max="150" placeholder="岁"></div>
+            <div><label>性别</label><select id="f_gender" required><option value="">选择</option><option>男</option><option>女</option></select></div>
+          </div>
+          <div class="form-row">
+            <div><label>诊断</label><input type="text" id="f_diagnosis" required placeholder="如 急性呼吸窘迫综合征"></div>
+            <div><label>入院时间</label><input type="datetime-local" id="f_admission" required></div>
+          </div>
+        </div>
+        <div class="form-section">
+          <h6>生命体征</h6>
+          <div class="form-row">
+            <div><label>心率 (bpm)</label><input type="number" id="f_hr" required step="0.1" placeholder="60-100"></div>
+            <div><label>收缩压 (mmHg)</label><input type="number" id="f_bps" required step="0.1" placeholder="90-140"></div>
+          </div>
+          <div class="form-row">
+            <div><label>舒张压 (mmHg)</label><input type="number" id="f_bpd" required step="0.1" placeholder="60-90"></div>
+            <div><label>血氧饱和度 (%)</label><input type="number" id="f_spo2" required step="0.1" min="0" max="100" placeholder="95-100"></div>
+          </div>
+          <div class="form-row">
+            <div><label>体温 (°C)</label><input type="number" id="f_temp" required step="0.1" placeholder="36.0-37.5"></div>
+            <div><label>呼吸频率 (/min)</label><input type="number" id="f_rr" required step="0.1" placeholder="12-20"></div>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="closeModal()">取消</button>
+          <button type="submit" class="btn-submit"><i class="bi bi-cpu"></i> 计算 DRIFT 评分</button>
+        </div>
+      </form>
+    </div>
   </div>
 
   <div class="footer">
@@ -438,6 +551,149 @@
       currentFilter = tab.dataset.filter;
       renderPatients();
     });
+
+    // Modal handlers
+    function openModal() {
+      $('modal').classList.add('show');
+      // Set default admission time to now
+      const now = new Date();
+      const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+      $('f_admission').value = local.toISOString().slice(0, 16);
+    }
+    function closeModal() {
+      $('modal').classList.remove('show');
+      $('patientForm').reset();
+    }
+
+    // Calculate DRIFT score based on vital signs
+    function calculateDriftScore(vitals) {
+      let score = 0;
+      const {
+        heart_rate, blood_pressure_sys, blood_pressure_dia,
+        oxygen_saturation, temperature, respiratory_rate
+      } = vitals;
+
+      // Heart rate (0-100 bpm normal)
+      if (heart_rate > 100 || heart_rate < 60) score += 15;
+      else if (heart_rate > 90 || heart_rate < 65) score += 8;
+
+      // Blood pressure systolic (90-140 mmHg normal)
+      if (blood_pressure_sys > 140 || blood_pressure_sys < 90) score += 20;
+      else if (blood_pressure_sys > 130 || blood_pressure_sys < 100) score += 10;
+
+      // Blood pressure diastolic (60-90 mmHg normal)
+      if (blood_pressure_dia > 90 || blood_pressure_dia < 60) score += 15;
+      else if (blood_pressure_dia > 80 || blood_pressure_dia < 65) score += 8;
+
+      // Oxygen saturation (95-100% normal)
+      if (oxygen_saturation < 95) score += 25;
+      else if (oxygen_saturation < 97) score += 12;
+
+      // Temperature (36.0-37.5°C normal)
+      if (temperature > 38.0 || temperature < 35.5) score += 15;
+      else if (temperature > 37.5 || temperature < 36.0) score += 8;
+
+      // Respiratory rate (12-20 /min normal)
+      if (respiratory_rate > 20 || respiratory_rate < 12) score += 15;
+      else if (respiratory_rate > 18 || respiratory_rate < 13) score += 8;
+
+      return Math.min(100, score);
+    }
+
+    // Generate alerts based on vital signs
+    function generateAlerts(vitals) {
+      const alerts = [];
+      if (vitals.heart_rate > 100) alerts.push('心率过快');
+      if (vitals.heart_rate < 60) alerts.push('心率过缓');
+      if (vitals.blood_pressure_sys > 140) alerts.push('收缩压偏高');
+      if (vitals.blood_pressure_sys < 90) alerts.push('收缩压偏低');
+      if (vitals.blood_pressure_dia > 90) alerts.push('舒张压偏高');
+      if (vitals.blood_pressure_dia < 60) alerts.push('舒张压偏低');
+      if (vitals.oxygen_saturation < 95) alerts.push('血氧饱和度偏低');
+      if (vitals.temperature > 37.5) alerts.push('体温偏高');
+      if (vitals.temperature < 36.0) alerts.push('体温偏低');
+      if (vitals.respiratory_rate > 20) alerts.push('呼吸频率偏快');
+      if (vitals.respiratory_rate < 12) alerts.push('呼吸频率偏慢');
+      return alerts;
+    }
+
+    // Handle form submission
+    async function handleSubmit(e) {
+      e.preventDefault();
+
+      const patient = {
+        id: $('f_id').value,
+        name: $('f_name').value,
+        age: parseInt($('f_age').value),
+        gender: $('f_gender').value,
+        diagnosis: $('f_diagnosis').value,
+        admission_time: $('f_admission').value.replace('T', ' '),
+        vitals: {
+          heart_rate: parseFloat($('f_hr').value),
+          blood_pressure_sys: parseFloat($('f_bps').value),
+          blood_pressure_dia: parseFloat($('f_bpd').value),
+          oxygen_saturation: parseFloat($('f_spo2').value),
+          temperature: parseFloat($('f_temp').value),
+          respiratory_rate: parseFloat($('f_rr').value)
+        }
+      };
+
+      // Calculate DRIFT score
+      patient.drift_score = calculateDriftScore(patient.vitals);
+      patient.prediction = `24小时内恶化风险 ${patient.drift_score}%`;
+
+      // Determine risk level
+      if (patient.drift_score >= 70) {
+        patient.risk_level = 'high';
+        patient.current_status = '危重';
+      } else if (patient.drift_score >= 40) {
+        patient.risk_level = 'medium';
+        patient.current_status = '观察中';
+      } else {
+        patient.risk_level = 'low';
+        patient.current_status = '稳定';
+      }
+
+      // Generate alerts
+      patient.alerts = generateAlerts(patient.vitals);
+
+      // Add to list
+      allPatients.push(patient);
+
+      // Show result card
+      const barColor = patient.drift_score >= 70 ? 'var(--risk-high)' : patient.drift_score >= 40 ? 'var(--risk-medium)' : 'var(--risk-low)';
+      const riskLabel = patient.risk_level === 'high' ? '高风险' : patient.risk_level === 'medium' ? '中风险' : '低风险';
+      const riskClass = patient.risk_level;
+
+      const resultHtml = `
+        <h5><i class="bi bi-cpu"></i> DRIFT 评分结果</h5>
+        <div class="result-score" style="color:${barColor}">${patient.drift_score}%</div>
+        <div class="result-detail">${patient.prediction} | 风险等级：<span class="risk-badge ${riskClass}">${riskLabel}</span></div>
+        <div class="drift-bar-container mt-3"><div class="drift-bar" style="width:${patient.drift_score}%;background:${barColor}"></div></div>
+        ${patient.alerts.length > 0 ? `
+          <div class="mt-3">
+            <strong style="font-size:0.85rem">⚠️ 异常指标：</strong>
+            <div class="mt-2">
+              ${patient.alerts.map(a => `<span class="alert-tag">${a}</span>`).join('')}
+            </div>
+          </div>
+        ` : '<div class="mt-3 result-detail">✅ 所有指标正常</div>'}
+        <div class="mt-3" style="font-size:0.8rem;color:var(--text-secondary)">
+          患者 ${patient.name}（${patient.age}岁 ${patient.gender}）| 诊断：${patient.diagnosis}
+        </div>
+      `;
+
+      const resultCard = $('resultCard');
+      resultCard.innerHTML = resultHtml;
+      resultCard.classList.add('show');
+      resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      // Close modal and re-render
+      closeModal();
+      renderStats();
+      renderPatients();
+      renderChart();
+    }
 
     // Navbar scroll
     document.getElementById('mainNavbar')?.addEventListener('click', function(e) {
