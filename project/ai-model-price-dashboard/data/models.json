@@ -30,10 +30,10 @@
       "score_image": 56.4,
       "score_chat": 94,
       "updated_at": "2026-07-29",
-      "value_score_chat": 55.06,
-      "value_score_coding": 53.24,
-      "value_score_reasoning": 54.59,
-      "value_score_image": 0.0,
+      "value_score_chat": 39.4,
+      "value_score_coding": 41.6,
+      "value_score_reasoning": 41.6,
+      "value_score_image": 0,
       "value_score": 39.4
     },
     {
@@ -63,10 +63,10 @@
       "score_image": 57.0,
       "score_chat": 96,
       "updated_at": "2026-07-29",
-      "value_score_chat": 28.38,
-      "value_score_coding": 28.53,
-      "value_score_reasoning": 28.88,
-      "value_score_image": 0.0,
+      "value_score_chat": 36.7,
+      "value_score_coding": 40.6,
+      "value_score_reasoning": 41.0,
+      "value_score_image": 0,
       "value_score": 36.7
     },
     {
@@ -96,10 +96,10 @@
       "score_image": 54.6,
       "score_chat": 90,
       "updated_at": "2026-07-29",
-      "value_score_chat": 44.3,
-      "value_score_coding": 41.35,
-      "value_score_reasoning": 43.2,
-      "value_score_image": 0.0,
+      "value_score_chat": 36.9,
+      "value_score_coding": 37.4,
+      "value_score_reasoning": 37.5,
+      "value_score_image": 0,
       "value_score": 36.9
     },
     {
@@ -129,10 +129,10 @@
       "score_image": 51.0,
       "score_chat": 86,
       "updated_at": "2026-07-29",
-      "value_score_chat": 85.98,
-      "value_score_coding": 87.16,
-      "value_score_reasoning": 90.0,
-      "value_score_image": 0.0,
+      "value_score_chat": 39.1,
+      "value_score_coding": 42.7,
+      "value_score_reasoning": 47.1,
+      "value_score_image": 0,
       "value_score": 39.1
     },
     {
@@ -162,11 +162,11 @@
       "score_image": 55.8,
       "score_chat": 90,
       "updated_at": "2026-07-29",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 0.0,
-      "value_score": 39.7
+      "value_score_chat": 42.5,
+      "value_score_coding": 42.5,
+      "value_score_reasoning": 40.7,
+      "value_score_image": 0,
+      "value_score": 42.5
     },
     {
       "model_id": "claude-sonnet-5",
@@ -195,10 +195,10 @@
       "score_image": 54.0,
       "score_chat": 89,
       "updated_at": "2026-07-29",
-      "value_score_chat": 87.35,
-      "value_score_coding": 85.1,
-      "value_score_reasoning": 86.86,
-      "value_score_image": 0.0,
+      "value_score_chat": 40.4,
+      "value_score_coding": 43.2,
+      "value_score_reasoning": 43.0,
+      "value_score_image": 0,
       "value_score": 40.4
     },
     {
@@ -228,10 +228,10 @@
       "score_image": 0.0,
       "score_chat": 0,
       "updated_at": "2026-07-29",
-      "value_score_chat": 0.0,
-      "value_score_coding": 0.0,
-      "value_score_reasoning": 0.0,
-      "value_score_image": 0.0,
+      "value_score_chat": 34.6,
+      "value_score_coding": 38.7,
+      "value_score_reasoning": 37.3,
+      "value_score_image": 0,
       "value_score": 34.6
     },
     {
@@ -261,11 +261,11 @@
       "score_image": 52.199999999999996,
       "score_chat": 87.0,
       "updated_at": "2026-07-29",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 0.0,
-      "value_score": 36.7
+      "value_score_chat": 47.3,
+      "value_score_coding": 52.4,
+      "value_score_reasoning": 50.8,
+      "value_score_image": 0,
+      "value_score": 47.3
     },
     {
       "model_id": "kimi-k2.6",
@@ -294,11 +294,11 @@
       "score_image": 0.0,
       "score_chat": 0,
       "updated_at": "2026-07-29",
-      "value_score_chat": 0.0,
-      "value_score_coding": 0.0,
-      "value_score_reasoning": 0.0,
-      "value_score_image": 0.0,
-      "value_score": 59.9
+      "value_score_chat": 49.1,
+      "value_score_coding": 54.8,
+      "value_score_reasoning": 52.8,
+      "value_score_image": 0,
+      "value_score": 49.1
     },
     {
       "model_id": "step-edge",
@@ -453,10 +453,10 @@
       "score_image": 0.0,
       "score_chat": 0,
       "updated_at": "2026-07-29",
-      "value_score_chat": 0.0,
-      "value_score_coding": 0.0,
-      "value_score_reasoning": 0.0,
-      "value_score_image": 0.0,
+      "value_score_chat": 35.3,
+      "value_score_coding": 39.4,
+      "value_score_reasoning": 38.0,
+      "value_score_image": 0,
       "value_score": 35.3
     },
     {
@@ -580,10 +580,10 @@
       "score_image": 52.8,
       "score_chat": 85,
       "updated_at": "2026-07-29",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 0.0,
+      "value_score_chat": 52.5,
+      "value_score_coding": 52.7,
+      "value_score_reasoning": 50.8,
+      "value_score_image": 0,
       "value_score": 52.5
     },
     {
@@ -613,10 +613,10 @@
       "score_image": 52.199999999999996,
       "score_chat": 85,
       "updated_at": "2026-07-29",
-      "value_score_chat": 100,
-      "value_score_coding": 100,
-      "value_score_reasoning": 100,
-      "value_score_image": 0.0,
+      "value_score_chat": 100.0,
+      "value_score_coding": 100.0,
+      "value_score_reasoning": 100.0,
+      "value_score_image": 0,
       "value_score": 100.0
     },
     {
@@ -709,10 +709,10 @@
       "score_image": 47.4,
       "score_chat": 79,
       "updated_at": "2026-07-29",
-      "value_score_chat": 0.0,
-      "value_score_coding": 65.67,
-      "value_score_reasoning": 0.0,
-      "value_score_image": 0.0,
+      "value_score_chat": 39.2,
+      "value_score_coding": 43.7,
+      "value_score_reasoning": 42.2,
+      "value_score_image": 0,
       "value_score": 39.2
     },
     {
@@ -1059,10 +1059,10 @@
       "benchmark_swe_verified": 80,
       "benchmark_reasoning": 92,
       "updated_at": "2026-07-29",
-      "value_score_chat": 10.82,
-      "value_score_coding": 45.18,
-      "value_score_reasoning": 32.47,
-      "value_score_image": 0.0,
+      "value_score_chat": 39.8,
+      "value_score_coding": 44.4,
+      "value_score_reasoning": 42.9,
+      "value_score_image": 0,
       "value_score": 39.8
     }
   ]
