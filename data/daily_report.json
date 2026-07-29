@@ -1,0 +1,144 @@
+{
+  "date": "2026-07-29",
+  "total": 8,
+  "categories": {
+    "ai_tech": 4,
+    "startup": 4,
+    "product_tool": 0,
+    "academic_paper": 0
+  },
+  "major_events": [
+    {
+      "title": "Sam Altman declares AI has entered 'singularity'",
+      "summary": "OpenAI CEO states AI has reached singularity phase, argues advances won't permanently displace workers",
+      "url": "https://www.aljazeera.com/news/2026/7/27/sam-altman-says-ai-has-entered-singularity-should-we-be-worried",
+      "source": "Al Jazeera",
+      "published": "2026-07-27",
+      "importance": 5,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "Anthropic releases Claude Opus 5",
+      "summary": "Latest frontier model from Anthropic launched July 24, 2026, as company overtakes OpenAI in revenue",
+      "url": "https://aireleasetracker.com/latest",
+      "source": "AI Release Tracker",
+      "published": "2026-07-24",
+      "importance": 4,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "Google launches three new Gemini AI models",
+      "summary": "New Gemini models focus on cybersecurity capabilities to compete with Anthropic and OpenAI",
+      "url": "https://www.nytimes.com/2026/07/21/technology/google-ai-cybersecurity-gemini.html",
+      "source": "New York Times",
+      "published": "2026-07-21",
+      "importance": 4,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "Anthropic secures $5B AMD partnership",
+      "summary": "Major chip partnership as Anthropic continues aggressive expansion ahead of IPO",
+      "url": "https://updatedbulletins.com/ai-news-july-2026-openai-google-anthropic-updates/",
+      "source": "Updated Bulletins",
+      "published": "2026-07-24",
+      "importance": 4,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "Corgi AI Insurance hits $4B valuation in Series B extension",
+      "summary": "AI-native insurance startup rebuilds legacy industry, aggressive investor interest",
+      "url": "https://aibuzzwire.news/en/article/corgi-ai-insurance-startup-4-billion-valuation-third-round-eight-weeks",
+      "source": "AI Buzz Wire",
+      "published": "2026-07-27",
+      "importance": 4,
+      "category": "startup",
+      "is_major_event": true
+    }
+  ],
+  "all_items": [
+    {
+      "title": "Sam Altman declares AI has entered 'singularity'",
+      "summary": "OpenAI CEO states AI has reached singularity phase, argues advances won't permanently displace workers",
+      "url": "https://www.aljazeera.com/news/2026/7/27/sam-altman-says-ai-has-entered-singularity-should-we-be-worried",
+      "source": "Al Jazeera",
+      "published": "2026-07-27",
+      "importance": 5,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "Anthropic releases Claude Opus 5",
+      "summary": "Latest frontier model from Anthropic launched July 24, 2026, as company overtakes OpenAI in revenue",
+      "url": "https://aireleasetracker.com/latest",
+      "source": "AI Release Tracker",
+      "published": "2026-07-24",
+      "importance": 4,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "Google launches three new Gemini AI models",
+      "summary": "New Gemini models focus on cybersecurity capabilities to compete with Anthropic and OpenAI",
+      "url": "https://www.nytimes.com/2026/07/21/technology/google-ai-cybersecurity-gemini.html",
+      "source": "New York Times",
+      "published": "2026-07-21",
+      "importance": 4,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "Anthropic secures $5B AMD partnership",
+      "summary": "Major chip partnership as Anthropic continues aggressive expansion ahead of IPO",
+      "url": "https://updatedbulletins.com/ai-news-july-2026-openai-google-anthropic-updates/",
+      "source": "Updated Bulletins",
+      "published": "2026-07-24",
+      "importance": 4,
+      "category": "ai_tech",
+      "is_major_event": true
+    },
+    {
+      "title": "AI startup Datapile raises $55M for health risk assessment",
+      "summary": "India-based AI startup focuses on heart health risk assessment technology",
+      "url": "https://datapile.co/funding-news/ai-startup-5826",
+      "source": "Datapile",
+      "published": "2026-07-28",
+      "importance": 3,
+      "category": "startup",
+      "is_major_event": false
+    },
+    {
+      "title": "Corgi AI Insurance hits $4B valuation in Series B extension",
+      "summary": "AI-native insurance startup rebuilds legacy industry, aggressive investor interest",
+      "url": "https://aibuzzwire.news/en/article/corgi-ai-insurance-startup-4-billion-valuation-third-round-eight-weeks",
+      "source": "AI Buzz Wire",
+      "published": "2026-07-27",
+      "importance": 4,
+      "category": "startup",
+      "is_major_event": true
+    },
+    {
+      "title": "India startup funding: $346M week, capital concentrates on traction",
+      "summary": "Week ending July 17 shows measurable traction and efficient execution favored over pure AI hype",
+      "url": "https://quasa.io/media/what-india-s-346m-startup-funding-week-means-for-new-founders",
+      "source": "Quasa",
+      "published": "2026-07-17",
+      "importance": 3,
+      "category": "startup",
+      "is_major_event": false
+    },
+    {
+      "title": "India startups raise $209M: Manufacturing and DeepTech overtake AI",
+      "summary": "Week ending July 25 shows shift in venture capital toward manufacturing, aerospace, enterprise software",
+      "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+      "source": "TICE News",
+      "published": "2026-07-25",
+      "importance": 3,
+      "category": "startup",
+      "is_major_event": false
+    }
+  ]
+}
