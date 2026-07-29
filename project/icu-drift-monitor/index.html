@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICU DRIFT Monitor | 灵感日报</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-card: #1c2333;
+      --text-primary: #e6edf3;
+      --text-secondary: #8b949e;
+      --accent-blue: #58a6ff;
+      --accent-green: #3fb950;
+      --accent-purple: #bc8cff;
+      --accent-orange: #d29922;
+      --accent-red: #ff5252;
+      --accent-yellow: #e3b341;
+      --border-color: #30363d;
+      --risk-high: #ff5252;
+      --risk-medium: #d29922;
+      --risk-low: #3fb950;
+    }
+    body.light-mode {
+      --bg-primary: #f6f8fa;
+      --bg-secondary: #ffffff;
+      --bg-card: #ffffff;
+      --text-primary: #1f2328;
+      --text-secondary: #656d76;
+      --accent-blue: #0969da;
+      --accent-green: #1a7f37;
+      --accent-purple: #8250df;
+      --accent-orange: #9a6700;
+      --accent-red: #cf222e;
+      --accent-yellow: #9a6700;
+      --border-color: #d0d7de;
+      --risk-high: #cf222e;
+      --risk-medium: #9a6700;
+      --risk-low: #1a7f37;
+    }
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      padding-bottom: 2rem;
+    }
+    .navbar {
+      position: sticky; top: 0; z-index: 1000;
+      background-color: var(--bg-secondary) !important;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.7rem 0;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
+    .brand-switcher { position: relative; display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+    .brand-icon-default, .brand-icon-hover {
+      transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.34,1.56,0.64,1); font-size: 1.1rem;
+    }
+    .brand-icon-default { color: var(--accent-orange) !important; }
+    .brand-icon-hover { position: absolute; left: 0; color: var(--accent-orange); opacity: 0; transform: scale(0.8); }
+    .brand-text-default, .brand-text-hover {
+      font-size: 1rem; font-weight: 600; white-space: nowrap; transition: opacity 0.25s ease;
+    }
+    .brand-text-default { color: var(--text-primary); }
+    .brand-text-hover {
+      position: absolute; left: 2rem;
+      background: linear-gradient(135deg, var(--accent-orange), var(--accent-purple));
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; opacity: 0;
+    }
+    .brand-switcher:hover .brand-icon-default { opacity: 0; transform: scale(0.8); }
+    .brand-switcher:hover .brand-icon-hover { opacity: 1; transform: scale(1.15) rotate(-8deg); }
+    .brand-switcher:hover .brand-text-default { opacity: 0; }
+    .brand-switcher:hover .brand-text-hover { opacity: 1; }
+    body.light-mode .brand-icon-hover { color: #d29922 !important; }
+    .back-link {
+      color: var(--text-primary); text-decoration: none;
+      padding: 0.5rem 1rem; border-radius: 25px; font-size: 0.85rem; font-weight: 500;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: linear-gradient(135deg, rgba(88,166,255,0.1), rgba(188,140,255,0.05));
+      border: 1px solid var(--border-color); transition: all 0.3s ease;
+    }
+    .back-link:hover {
+      color: var(--accent-blue); border-color: var(--accent-blue);
+      background: linear-gradient(135deg, rgba(88,166,255,0.2), rgba(188,140,255,0.1));
+      transform: translateX(-3px); box-shadow: 0 2px 8px rgba(88,166,255,0.2);
+    }
+    .theme-toggle-btn {
+      background: none; border: 1px solid var(--border-color); color: var(--text-primary);
+      border-radius: 8px; padding: 0.4rem 0.6rem; cursor: pointer;
+      transition: all 0.2s; font-size: 1.1rem;
+    }
+    .theme-toggle-btn:hover {
+      border-color: var(--accent-blue); background-color: rgba(88,166,255,0.1);
+    }
+    .main-container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .main-content { padding-top: 1.75rem; padding-bottom: 4rem; }
+
+    /* ── Dashboard Cards ── */
+    .stat-card {
+      background-color: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 12px; padding: 1.25rem; transition: all 0.3s;
+    }
+    .stat-card:hover { border-color: var(--accent-blue); box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    .stat-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .stat-value { font-size: 2rem; font-weight: 700; }
+    .stat-label { color: var(--text-secondary); font-size: 0.85rem; }
+
+    /* ── Patient Cards ── */
+    .patient-card {
+      background-color: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem;
+      transition: all 0.3s; cursor: pointer;
+    }
+    .patient-card:hover { border-color: var(--accent-blue); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.2); }
+    .patient-card.risk-high { border-left: 4px solid var(--risk-high); }
+    .patient-card.risk-medium { border-left: 4px solid var(--risk-medium); }
+    .patient-card.risk-low { border-left: 4px solid var(--risk-low); }
+
+    .risk-badge {
+      display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px;
+      font-size: 0.75rem; font-weight: 600;
+    }
+    .risk-badge.high { background-color: rgba(255,82,82,0.15); color: var(--risk-high); }
+    .risk-badge.medium { background-color: rgba(210,153,34,0.15); color: var(--risk-medium); }
+    .risk-badge.low { background-color: rgba(63,185,80,0.15); color: var(--risk-low); }
+
+    .vitals-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 0.75rem; margin-top: 0.75rem;
+    }
+    .vital-item {
+      background-color: var(--bg-secondary); border-radius: 8px;
+      padding: 0.6rem 0.8rem; text-align: center;
+    }
+    .vital-value { font-size: 1.2rem; font-weight: 700; }
+    .vital-label { font-size: 0.7rem; color: var(--text-secondary); }
+    .vital-item.alert { background-color: rgba(255,82,82,0.1); }
+    .vital-item.alert .vital-value { color: var(--risk-high); }
+
+    .alert-tag {
+      display: inline-block; background-color: rgba(255,82,82,0.15);
+      color: var(--risk-high); padding: 0.15rem 0.5rem; border-radius: 4px;
+      font-size: 0.75rem; margin-right: 0.3rem; margin-bottom: 0.2rem;
+    }
+
+    /* ── Drift Score Bar ── */
+    .drift-bar-container {
+      width: 100%; height: 8px; background-color: var(--bg-secondary);
+      border-radius: 4px; overflow: hidden; margin: 0.5rem 0;
+    }
+    .drift-bar {
+      height: 100%; border-radius: 4px; transition: width 0.6s ease;
+    }
+
+    /* ── Filter Tabs ── */
+    .filter-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .filter-tab {
+      padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem;
+      border: 1px solid var(--border-color); background: var(--bg-card);
+      color: var(--text-primary); cursor: pointer; transition: all 0.2s;
+    }
+    .filter-tab:hover { border-color: var(--accent-blue); }
+    .filter-tab.active { background: var(--accent-blue); color: #fff; border-color: var(--accent-blue); }
+
+    /* ── Model Info Panel ── */
+    .model-info {
+      background-color: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 12px; padding: 1.25rem;
+    }
+    .model-info h6 { color: var(--accent-purple); }
+    .model-info .spec { display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid var(--border-color); }
+    .model-info .spec:last-child { border-bottom: none; }
+    .model-info .spec-label { color: var(--text-secondary); font-size: 0.85rem; }
+    .model-info .spec-value { font-weight: 600; font-size: 0.85rem; }
+
+    /* ── Chart container ── */
+    .chart-container {
+      background-color: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 12px; padding: 1.25rem; height: 300px;
+    }
+
+    /* ── Footer ── */
+    .footer { text-align: center; padding: 2rem 0; color: var(--text-secondary); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 brand-switcher" href="../playground/index.html" id="brandLink">
+        <i class="bi bi-heart-pulse-fill brand-icon-default" id="brandIcon"></i>
+        <i class="bi bi-lightbulb-fill brand-icon-hover" id="brandIconHover"></i>
+        <span class="brand-text-default" id="brandText">ICU DRIFT Monitor</span>
+        <span class="brand-text-hover" id="brandTextHover">灵感日报</span>
+      </a>
+      <div class="d-flex align-items-center gap-2 ms-auto">
+        <a class="back-link" href="../playground/index.html"><i class="bi bi-house-door"></i> 返回Playground</a>
+        <button class="theme-toggle-btn" onclick="toggleTheme()" title="切换亮暗模式"><i class="bi bi-moon-fill" id="themeIcon"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container main-content">
+    <!-- Stats Row -->
+    <div class="row g-3 mb-4" id="statsRow"></div>
+
+    <!-- Filter + Chart -->
+    <div class="row g-4 mb-4">
+      <div class="col-lg-7">
+        <div class="chart-container"><canvas id="riskChart"></canvas></div>
+      </div>
+      <div class="col-lg-5">
+        <div class="model-info" id="modelInfo"></div>
+      </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs" id="filterTabs">
+      <button class="filter-tab active" data-filter="all">全部患者</button>
+      <button class="filter-tab" data-filter="high">🔴 高风险</button>
+      <button class="filter-tab" data-filter="medium">🟡 中风险</button>
+      <button class="filter-tab" data-filter="low">🟢 低风险</button>
+    </div>
+
+    <!-- Patient Cards -->
+    <div id="patientList"></div>
+  </div>
+
+  <div class="footer">
+    <p>ICU DRIFT Monitor — 基于 DRIFT 模型的临床决策支持系统 | 灵感日报 Playground</p>
+    <p class="mb-0">数据来源: MIMIC-IV + eICU | 模型版本: DRIFT 2.1.0</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const $ = id => document.getElementById(id);
+    const DATA_URL = './data/patients.json';
+    let allPatients = [];
+    let modelInfo = null;
+    let riskChart = null;
+    let currentFilter = 'all';
+    let isDarkMode = localStorage.getItem('icu_theme') !== 'light';
+
+    function applyTheme() {
+      document.body.classList.toggle('light-mode', !isDarkMode);
+      const icon = $('themeIcon');
+      if (icon) icon.className = isDarkMode ? 'bi bi-moon-fill' : 'bi bi-sun-fill';
+      localStorage.setItem('icu_theme', isDarkMode ? 'dark' : 'light');
+    }
+    function toggleTheme() { isDarkMode = !isDarkMode; applyTheme(); renderChart(); }
+
+    async function loadData() {
+      try {
+        const resp = await fetch(DATA_URL);
+        if (!resp.ok) throw new Error('Failed to load data');
+        const json = await resp.json();
+        allPatients = json.patients || [];
+        modelInfo = json.model_info || null;
+      } catch (e) {
+        console.error('Error loading data:', e);
+        allPatients = [];
+      }
+    }
+
+    function renderStats() {
+      const total = allPatients.length;
+      const high = allPatients.filter(p => p.risk_level === 'high').length;
+      const medium = allPatients.filter(p => p.risk_level === 'medium').length;
+      const low = allPatients.filter(p => p.risk_level === 'low').length;
+      const avgDrift = total ? (allPatients.reduce((s, p) => s + p.drift_score, 0) / total).toFixed(0) : 0;
+
+      const cards = [
+        { icon: '🏥', label: '在院患者', value: total, color: 'var(--accent-blue)' },
+        { icon: '🔴', label: '高风险', value: high, color: 'var(--risk-high)' },
+        { icon: '🟡', label: '中风险', value: medium, color: 'var(--risk-medium)' },
+        { icon: '📊', label: '平均 DRIFT 分', value: avgDrift, color: 'var(--accent-purple)' },
+      ];
+
+      const parts = [];
+      cards.forEach(c => {
+        parts.push(
+          '<div class="col-6 col-md-3">',
+          '<div class="stat-card">',
+          '<div class="stat-icon">' + c.icon + '</div>',
+          '<div class="stat-value" style="color:' + c.color + '">' + c.value + '</div>',
+          '<div class="stat-label">' + c.label + '</div>',
+          '</div></div>'
+        );
+      });
+      $('statsRow').innerHTML = parts.join('');
+    }
+
+    function renderModelInfo() {
+      if (!modelInfo) { $('modelInfo').innerHTML = '<p>模型信息不可用</p>'; return; }
+      const specs = [
+        ['模型名称', modelInfo.name],
+        ['版本', modelInfo.version],
+        ['准确率', modelInfo.accuracy],
+        ['最后更新', modelInfo.last_updated],
+        ['训练数据', modelInfo.training_data],
+      ];
+      const parts = ['<h6><i class="bi bi-cpu"></i> DRIFT 模型信息</h6>', '<p style="font-size:0.85rem;color:var(--text-secondary)">' + modelInfo.description + '</p>'];
+      specs.forEach(([k, v]) => {
+        parts.push('<div class="spec"><span class="spec-label">' + k + '</span><span class="spec-value">' + v + '</span></div>');
+      });
+      $('modelInfo').innerHTML = parts.join('');
+    }
+
+    function getFiltered() {
+      if (currentFilter === 'all') return allPatients;
+      return allPatients.filter(p => p.risk_level === currentFilter);
+    }
+
+    function renderPatients() {
+      const filtered = getFiltered();
+      // Sort by drift_score desc
+      filtered.sort((a, b) => b.drift_score - a.drift_score);
+
+      const parts = [];
+      filtered.forEach(p => {
+        const barColor = p.drift_score >= 70 ? 'var(--risk-high)' : p.drift_score >= 40 ? 'var(--risk-medium)' : 'var(--risk-low)';
+        const vitals = p.vitals || {};
+        const alertKeys = {
+          'heart_rate': [100, 60], 'blood_pressure_sys': [140, 90],
+          'oxygen_saturation': [95, 100], 'temperature': [37.5, 100], 'respiratory_rate': [20, 100]
+        };
+        const vitalLabels = {
+          'heart_rate': '心率', 'blood_pressure_sys': '收缩压', 'blood_pressure_dia': '舒张压',
+          'oxygen_saturation': '血氧', 'temperature': '体温', 'respiratory_rate': '呼吸'
+        };
+        const vitalUnits = {
+          'heart_rate': 'bpm', 'blood_pressure_sys': 'mmHg', 'blood_pressure_dia': 'mmHg',
+          'oxygen_saturation': '%', 'temperature': '°C', 'respiratory_rate': '/min'
+        };
+
+        const vitalParts = [];
+        for (const [key, val] of Object.entries(vitals)) {
+          const thresholds = alertKeys[key];
+          const isAlert = thresholds && ((thresholds[1] === 100 && val < thresholds[0]) || (thresholds[0] !== 100 && (val > thresholds[0] || val < thresholds[1])));
+          // blood_pressure_sys: alert if > 140 or < 90
+          let alert = false;
+          if (key === 'heart_rate') alert = val > 100 || val < 60;
+          else if (key === 'blood_pressure_sys') alert = val > 140 || val < 90;
+          else if (key === 'oxygen_saturation') alert = val < 95;
+          else if (key === 'temperature') alert = val > 37.5;
+          else if (key === 'respiratory_rate') alert = val > 20;
+
+          vitalParts.push(
+            '<div class="vital-item' + (alert ? ' alert' : '') + '">',
+            '<div class="vital-value">' + val + '</div>',
+            '<div class="vital-label">' + (vitalLabels[key] || key) + ' (' + (vitalUnits[key] || '') + ')</div>',
+            '</div>'
+          );
+        }
+
+        parts.push(
+          '<div class="patient-card risk-' + p.risk_level + '">',
+          '<div class="d-flex justify-content-between align-items-start flex-wrap">',
+          '<div>',
+          '<h5 class="mb-1">' + p.name + ' <small style="color:var(--text-secondary);font-weight:400">' + p.diagnosis + '</small></h5>',
+          '<small style="color:var(--text-secondary)">入院: ' + p.admission_time + ' | ' + p.age + '岁 ' + p.gender + '</small>',
+          '</div>',
+          '<div class="text-end">',
+          '<span class="risk-badge ' + p.risk_level + '">' + (p.risk_level === 'high' ? '高风险' : p.risk_level === 'medium' ? '中风险' : '低风险') + '</span>',
+          '<div class="mt-1" style="font-size:0.8rem;color:var(--text-secondary)">' + p.prediction + '</div>',
+          '</div></div>',
+          '<div class="drift-bar-container"><div class="drift-bar" style="width:' + p.drift_score + '%;background:' + barColor + '"></div></div>',
+          '<div class="vitals-grid">' + vitalParts.join('') + '</div>'
+        );
+        if (p.alerts && p.alerts.length) {
+          parts.push('<div class="mt-2">');
+          p.alerts.forEach(a => { parts.push('<span class="alert-tag"><i class="bi bi-exclamation-triangle-fill"></i> ' + a + '</span>'); });
+          parts.push('</div>');
+        }
+        parts.push('</div>');
+      });
+
+      $('patientList').innerHTML = filtered.length ? parts.join('') : '<div class="text-center" style="padding:3rem;color:var(--text-secondary)">暂无匹配患者</div>';
+    }
+
+    function renderChart() {
+      if (riskChart) riskChart.destroy();
+      const ctx = $('riskChart').getContext('2d');
+      const labels = allPatients.map(p => p.name);
+      const scores = allPatients.map(p => p.drift_score);
+      const colors = allPatients.map(p =>
+        p.drift_score >= 70 ? 'rgba(255,82,82,0.7)' : p.drift_score >= 40 ? 'rgba(210,153,34,0.7)' : 'rgba(63,185,80,0.7)'
+      );
+
+      riskChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [{
+            label: 'DRIFT 风险评分',
+            data: scores,
+            backgroundColor: colors,
+            borderColor: colors.map(c => c.replace('0.7', '1')),
+            borderWidth: 1,
+            borderRadius: 6,
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                label: ctx => '风险评分: ' + ctx.parsed.y + '% — ' + allPatients[ctx.dataIndex].prediction
+              }
+            }
+          },
+          scales: {
+            x: { ticks: { color: isDarkMode ? '#8b949e' : '#656d76' }, grid: { color: isDarkMode ? 'rgba(48,54,61,0.5)' : 'rgba(208,215,222,0.5)' } },
+            y: {
+              min: 0, max: 100,
+              ticks: { color: isDarkMode ? '#8b949e' : '#656d76', callback: v => v + '%' },
+              grid: { color: isDarkMode ? 'rgba(48,54,61,0.5)' : 'rgba(208,215,222,0.5)' },
+              title: { display: true, text: '恶化风险 (%)', color: isDarkMode ? '#e6edf3' : '#1f2328' }
+            }
+          }
+        }
+      });
+    }
+
+    // Filter tab handlers
+    $('filterTabs').addEventListener('click', function(e) {
+      const tab = e.target.closest('.filter-tab');
+      if (!tab) return;
+      this.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentFilter = tab.dataset.filter;
+      renderPatients();
+    });
+
+    // Navbar scroll
+    document.getElementById('mainNavbar')?.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A' || e.target.closest('a') || e.target.tagName === 'BUTTON' || e.target.closest('button')) return;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.addEventListener('DOMContentLoaded', async function() {
+      applyTheme();
+      await loadData();
+      renderStats();
+      renderModelInfo();
+      renderPatients();
+      renderChart();
+    });
+  </script>
+</body>
+</html>

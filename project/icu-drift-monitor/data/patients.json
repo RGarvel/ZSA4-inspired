@@ -1,0 +1,117 @@
+{
+  "patients": [
+    {
+      "id": "P001",
+      "name": "患者 A",
+      "age": 65,
+      "gender": "男",
+      "diagnosis": "急性心肌梗死",
+      "admission_time": "2026-07-25 14:30",
+      "current_status": "危重",
+      "risk_level": "high",
+      "vitals": {
+        "heart_rate": 115,
+        "blood_pressure_sys": 90,
+        "blood_pressure_dia": 60,
+        "oxygen_saturation": 92,
+        "temperature": 37.8,
+        "respiratory_rate": 22
+      },
+      "drift_score": 78,
+      "prediction": "24小时内恶化风险 78%",
+      "alerts": ["心率异常升高", "血压下降趋势", "血氧饱和度临界"]
+    },
+    {
+      "id": "P002",
+      "name": "患者 B",
+      "age": 58,
+      "gender": "女",
+      "diagnosis": "重症肺炎",
+      "admission_time": "2026-07-26 09:15",
+      "current_status": "稳定",
+      "risk_level": "medium",
+      "vitals": {
+        "heart_rate": 88,
+        "blood_pressure_sys": 125,
+        "blood_pressure_dia": 78,
+        "oxygen_saturation": 96,
+        "temperature": 37.2,
+        "respiratory_rate": 18
+      },
+      "drift_score": 35,
+      "prediction": "24小时内恶化风险 35%",
+      "alerts": ["体温轻微升高"]
+    },
+    {
+      "id": "P003",
+      "name": "患者 C",
+      "age": 72,
+      "gender": "男",
+      "diagnosis": "脑出血术后",
+      "admission_time": "2026-07-27 22:40",
+      "current_status": "危重",
+      "risk_level": "high",
+      "vitals": {
+        "heart_rate": 102,
+        "blood_pressure_sys": 165,
+        "blood_pressure_dia": 95,
+        "oxygen_saturation": 94,
+        "temperature": 38.1,
+        "respiratory_rate": 20
+      },
+      "drift_score": 82,
+      "prediction": "24小时内恶化风险 82%",
+      "alerts": ["血压持续升高", "体温异常", "心率偏快"]
+    },
+    {
+      "id": "P004",
+      "name": "患者 D",
+      "age": 45,
+      "gender": "女",
+      "diagnosis": "急性胰腺炎",
+      "admission_time": "2026-07-28 16:20",
+      "current_status": "观察中",
+      "risk_level": "low",
+      "vitals": {
+        "heart_rate": 78,
+        "blood_pressure_sys": 118,
+        "blood_pressure_dia": 72,
+        "oxygen_saturation": 98,
+        "temperature": 36.9,
+        "respiratory_rate": 16
+      },
+      "drift_score": 18,
+      "prediction": "24小时内恶化风险 18%",
+      "alerts": []
+    },
+    {
+      "id": "P005",
+      "name": "患者 E",
+      "age": 80,
+      "gender": "男",
+      "diagnosis": "心力衰竭",
+      "admission_time": "2026-07-29 08:00",
+      "current_status": "危重",
+      "risk_level": "high",
+      "vitals": {
+        "heart_rate": 125,
+        "blood_pressure_sys": 85,
+        "blood_pressure_dia": 55,
+        "oxygen_saturation": 90,
+        "temperature": 36.5,
+        "respiratory_rate": 26
+      },
+      "drift_score": 91,
+      "prediction": "24小时内恶化风险 91%",
+      "alerts": ["心率严重异常", "低血压", "血氧不足", "呼吸急促"]
+    }
+  ],
+  "model_info": {
+    "name": "DRIFT",
+    "version": "2.1.0",
+    "description": "Direct Recursive Intervention Forecasting Transformer",
+    "accuracy": "94.2%",
+    "last_updated": "2026-07-29",
+    "training_data": "MIMIC-IV + eICU Collaborative Research Database"
+  }
+}
