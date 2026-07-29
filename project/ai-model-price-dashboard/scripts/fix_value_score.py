@@ -129,6 +129,8 @@ def update_models_json():
         model['value_score'] = model['value_score_chat']
     
     # 保存
+    from datetime import date
+    data['updated_at'] = str(date.today())
     with open(DATA_PATH, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     
