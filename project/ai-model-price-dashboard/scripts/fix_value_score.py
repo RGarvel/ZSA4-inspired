@@ -97,7 +97,18 @@ def update_models_json():
         task_max[task] = max(vals) if vals else 1
         print(f"  {task} 最大值: {task_max[task]:.1f}")
     
-    # Step 3: 归一化到0-100
+    # Step 3: Softmax压缩，减少差距
+    # 先收集所有正数原始分数
+    task_scores = {}
+    for task in ['chat', 'coding', 'reasoning', 'image']:
+        task_scores[task] = [(mid, raw_scores[mid][task]) for mid in raw_scores
+                             if raw_scores[mid][task] is not None and raw_scores[mid][task] > 0]
+    
+    # 对每个任务类型应用softmax压缩
+    # softmax_i = exp(score_i / T) / sum(exp(score_j / T)) * 100
+    # 温度T越高，分数越压缩；T越低，分数差距越大
+    T = 50.0  # 提高温度参数，减少分数差距
+    
     for model in models:
         mid = model['model_id']
         for task in ['chat', 'coding', 'reasoning', 'image']:
@@ -105,7 +116,13 @@ def update_models_json():
             if raw is None or raw <= 0:
                 score = 0
             else:
-                score = round((raw / task_max[task]) * 100, 1)
+                # 计算softmax
+                scores_list = [s for _, s in task_scores[task]]
+                exp_sum = sum(math.exp(s / T) for s in scores_list)
+                softmax_val = math.exp(raw / T) / exp_sum
+                # 归一化：最大softmax值映射到100
+                max_softmax = max(math.exp(s / T) for s in scores_list) / exp_sum
+                score = round((softmax_val / max_softmax) * 100, 1)
             model[f'value_score_{task}'] = score
         
         # value_score = chat 类型得分（默认）
