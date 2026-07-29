@@ -136,16 +136,17 @@ def update_models_json():
     
     # 输出结果
     print(f"\n{'模型名称':<25} {'质量':>5} {'价格':>7} {'性价比':>7} {'免费':>5}")
-    print("-" * 80)
-    
+    print("-" * 75)
     sorted_models = sorted(models, key=lambda m: m.get('value_score', 0) or 0, reverse=True)
     for m in sorted_models[:20]:
         name = m['name'][:23]
-        quality = m.get('composite_score', 0)
-        price = m.get('output_price_per_1m', 0)
-        value = m.get('value_score', 0)
-        is_free = "✓" if (price <= 0) else ""
-        print(f"{name:<25} {quality:>5} ${price:>6.2f} {value:>7.1f} {is_free:>5}")
+        quality = m.get('composite_score')
+        quality_str = str(quality) if quality is not None else 'N/A'
+        price = m['output_price_per_1m']
+        value = m.get('value_score_chat')
+        value_str = f"{value:.1f}" if value is not None else 'N/A'
+        is_free = '✓' if price == 0 else ''
+        print(f"{name:<25} {quality_str:>5} ${price:>6.2f} {value_str:>7} {is_free:>5}")
     
     print("\n" + "=" * 80)
     print(f"已更新 {len(models)} 个模型的性价比评分")
