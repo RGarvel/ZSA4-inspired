@@ -737,7 +737,7 @@
     
     function renderTable() {
       const models = getFilteredModels();
-      const activeTask = domCache.taskType?.value || 'chat';
+      const activeTask = $el.taskType?.value || 'chat';
       
       // 根据任务类型选择对应的质量和性价比字段
       const taskNames = { chat: '文本', coding: '代码', reasoning: '推理', image: '图像' };
