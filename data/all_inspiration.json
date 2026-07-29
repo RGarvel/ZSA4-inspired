@@ -8697,5 +8697,77 @@
     "date": "2026-07-27",
     "created_at": 1785124878,
     "source": "web_search"
+  },
+  {
+    "title": "India Startup Funding Shifts: Manufacturing & DeepTech Overtake AI in Q3 2026",
+    "summary": "Indian startups raised $209M week ending July 25; manufacturing, aerospace, enterprise software and healthtech replaced AI as top investment themes.",
+    "category": "startup",
+    "importance": 8,
+    "source": "tice.news",
+    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "date": "2026-07-25",
+    "importance_mapped": 4,
+    "is_major_event": true
+  },
+  {
+    "title": "H1 2026 VC Review: Structural Rotation to Defence, Space, Fusion",
+    "summary": "Six of eight largest DACH rounds in H1 2026 went to defence, space, fusion, quantum, robotics or energy infrastructure; software-only rounds absent from top tier.",
+    "category": "startup",
+    "importance": 8,
+    "source": "youtube.com",
+    "url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
+    "date": "2026-07-26",
+    "importance_mapped": 4,
+    "is_major_event": true
+  },
+  {
+    "title": "Grok 4.5 Drops July 25 — 56 on Intelligence Index, Just Behind GPT-5.5",
+    "summary": "xAI releases Grok 4.5 scoring 56 on intelligence index, trailing OpenAI GPT-5.5 by narrow margin.",
+    "category": "ai_tech",
+    "importance": 8,
+    "source": "hermes",
+    "date": "2026-07-25",
+    "importance_mapped": 4,
+    "is_major_event": true
+  },
+  {
+    "title": "APEC Digital and AI Ministerial Endorses Open-Source AI",
+    "summary": "APEC ministers formally endorse open-source AI development, signalling multilateral policy support.",
+    "category": "ai_tech",
+    "importance": 7,
+    "source": "hermes",
+    "date": "2026-07-29",
+    "importance_mapped": 4,
+    "is_major_event": false
+  },
+  {
+    "title": "Inference Startup Infinity Raises $15M from Touring Capital",
+    "summary": "Inference-focused startup Infinity closes $15M round backed by Touring Capital with OpenAI and Anthropic research talent.",
+    "category": "startup",
+    "importance": 7,
+    "source": "techcrunch.com",
+    "date": "2026-07-24",
+    "importance_mapped": 4,
+    "is_major_event": false
+  },
+  {
+    "title": "Africa Startup Funding: Tanzania, Morocco, Cote d Ivoire Rising in H1 2026",
+    "summary": "Emerging African markets grow VC share; suggests innovation economy no longer defined by traditional leaders alone.",
+    "category": "startup",
+    "importance": 6,
+    "source": "businessday.ng",
+    "date": "2026-07-26",
+    "importance_mapped": 4,
+    "is_major_event": false
+  },
+  {
+    "title": "MENA Startup Funding Down 22% in H1 2026 Amid Regional Conflict",
+    "summary": "Dubai venture data platform reports H1 2026 MENA funding fell 22%; full effect of tighter cross-border capital flows may show in Q3.",
+    "category": "startup",
+    "importance": 6,
+    "source": "arabnews.com",
+    "date": "2026-07-13",
+    "importance_mapped": 4,
+    "is_major_event": false
   }
 ]
