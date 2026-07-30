@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-30",
+  "total_new": 17,
+  "categories": {
+    "academic_paper": 17,
+    "ai_tech": 0,
+    "startup": 0,
+    "product_tool": 0
+  },
+  "is_major_event": false,
+  "insights": [
+    {
+      "type": "industry_insight",
+      "title": "多智能体系统成为研究热点",
+      "body": "今日多篇论文聚焦于多智能体协作、通信优化和集体决策，显示多智能体系统正从理论走向实用阶段。",
+      "importance": 4,
+      "score": 80,
+      "summary": "多智能体系统从理论走向实用阶段"
+    },
+    {
+      "type": "industry_insight",
+      "title": "医疗AI持续突破",
+      "body": "医学影像分析、药物发现和临床决策支持系统相关论文数量增加，AI在医疗领域的应用深度持续拓展。",
+      "importance": 4,
+      "score": 75,
+      "summary": "AI在医疗领域应用深度持续拓展"
+    },
+    {
+      "type": "industry_insight",
+      "title": "模型效率优化受关注",
+      "body": "多篇论文探讨模型压缩、推理加速和计算资源优化，反映业界对降低成本和能耗的强烈需求。",
+      "importance": 3,
+      "score": 65,
+      "summary": "业界对降低AI成本和能耗需求强烈"
+    }
+  ],
+  "items": []
+}
