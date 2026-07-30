@@ -849,8 +849,11 @@
       const iconMap = { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' };
       const labelMap = { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' };
       
-      for (const cat in grouped) {
+      const categoryOrder = ['ai_tech', 'startup', 'product_tool', 'academic_paper', 'inspiration'];
+      
+      for (const cat of categoryOrder) {
         const items = grouped[cat];
+        if (!items || !items.length) continue;
         const hasMore = items.length > MAX_SHOW;
         const secId = 'sec-' + cat.replace(/[_\s]+/g, '-');
         
