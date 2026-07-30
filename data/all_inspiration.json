@@ -9029,5 +9029,289 @@
       "地缘冲突"
     ],
     "original_language": "zh"
+  },
+  {
+    "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+    "summary": "论文 Pass the Baton: Trajectory-Relayed On-Policy Distillation 提出一种新的方法，解决模型训练中的关键问题。",
+    "url": "https://arxiv.org/abs/2607.26057v1",
+    "source": "arXiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "模型训练"
+    ],
+    "id": "cron-450"
+  },
+  {
+    "title": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "summary": "新 arXiv 论文：$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "url": "https://arxiv.org/abs/2607.26055v1",
+    "source": "arXiv",
+    "importance": 2,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv"
+    ],
+    "id": "cron-451"
+  },
+  {
+    "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+    "summary": "论文提出置信度自适应路由方法，优化 MoE LoRA 的专家分配策略。",
+    "url": "https://arxiv.org/abs/2607.26052v1",
+    "source": "arXiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "MoE",
+      "LoRA",
+      "自适应路由"
+    ],
+    "id": "cron-452"
+  },
+  {
+    "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+    "summary": "论文提出数据集信息迁移学习框架，提升乳腺 X 线筛查分类性能。",
+    "url": "https://arxiv.org/abs/2607.26043v1",
+    "source": "arXiv",
+    "importance": 2,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "医疗AI",
+      "迁移学习"
+    ],
+    "id": "cron-453"
+  },
+  {
+    "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+    "summary": "论文提出 VetClaw 边缘-云多模态代理系统，用于兽医疾病早期筛查。",
+    "url": "https://arxiv.org/abs/2607.26042v1",
+    "source": "arXiv",
+    "importance": 2,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "边缘计算",
+      "多模态",
+      "兽医"
+    ],
+    "id": "cron-454"
+  },
+  {
+    "title": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+    "summary": "论文提出 Desktop-Delta Bench 基准，评估计算机使用代理对桌面 GUI 转换的理解能力。",
+    "url": "https://arxiv.org/abs/2607.26041v1",
+    "source": "arXiv",
+    "importance": 4,
+    "category": "academic",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "Computer-Use",
+      "GUI",
+      "基准测试"
+    ],
+    "id": "cron-455"
+  },
+  {
+    "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+    "summary": "论文提出 Desktop-Delta Bench 基准，评估计算机使用代理对桌面 GUI 转换的理解能力。",
+    "url": "https://arxiv.org/abs/2607.26040v1",
+    "source": "arXiv",
+    "importance": 4,
+    "category": "academic",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "Computer-Use",
+      "GUI",
+      "基准测试"
+    ],
+    "id": "cron-456"
+  },
+  {
+    "title": "Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment",
+    "summary": "论文研究 AI 竞赛中落后如何驱动不安全开发，揭示速度与安全的张力。",
+    "url": "https://arxiv.org/abs/2607.26034v1",
+    "source": "arXiv",
+    "importance": 4,
+    "category": "academic",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "AI安全",
+      "AI竞赛"
+    ],
+    "id": "cron-457"
+  },
+  {
+    "title": "AI Company Employees Petition US Government to Facilitate Industry Slowdown",
+    "summary": "Euronews 报道，多家头部 AI 公司的员工联合请愿，要求美国政府支持国际努力，以有意减缓前沿自动化 AI 开发的速度。请愿书指出，全球领先 AI 公司可能已接近自动化 AI 研究的临界点。",
+    "url": "https://www.euronews.com/next/2026/07/29/ai-company-employees-petition-us-government-to-facilitate-industry-slowdown-after-security",
+    "source": "Euronews",
+    "importance": 5,
+    "category": "ai_tech",
+    "keywords": [
+      "AI安全",
+      "请愿",
+      "政府监管",
+      "行业减速"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": true,
+    "id": "cron-458"
+  },
+  {
+    "title": "Sequoia Capital Raises $950M in New Early-Stage Funds",
+    "summary": "红杉资本宣布募集 9.5 亿美元新早期基金，其中 7.5 亿美元投向 A 轮创业公司，2 亿美元投向种子轮。这 reaffirm 了红杉对最早期创业者的承诺，在 AI 泡沫背景下释放强烈信号。",
+    "url": "https://www.linkedin.com/posts/minhtran_venturecapital-startupfunding-activity-7384845805456785408-Csgx",
+    "source": "LinkedIn / Forbes",
+    "importance": 4,
+    "category": "startup",
+    "keywords": [
+      "红杉资本",
+      "早期基金",
+      "种子轮",
+      "A轮"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": true,
+    "id": "cron-459"
+  },
+  {
+    "title": "Act Security Raises $60M from Team8 and Bessemer",
+    "summary": "网络安全创业公司 Act Security 完成 6000 万美元融资，由 Team8 和 Bessemer Venture Partners 领投。公司处于种子+A 轮阶段，以隐身模式启动后首次公开融资。",
+    "url": "https://techstartups.com/2026/07/28/venture-capital-startup-funding-roundup-july-28-2026-battery-ventures-bessemer-gradient-team8-y-combinator-more/",
+    "source": "TechStartups",
+    "importance": 3,
+    "category": "startup",
+    "keywords": [
+      "网络安全",
+      "Act Security",
+      "Team8",
+      "Bessemer"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-460"
+  },
+  {
+    "title": "Apple May Take on Meta, Google with AI Glasses Early Next Year",
+    "summary": "Indian Express 报道，Apple 可能于明年初推出 AI 眼镜，直接与 Meta 和 Google 竞争。这标志着 AI 硬件竞争进入新阶段，可穿戴设备成为大厂必争之地。",
+    "url": "https://indianexpress.com/",
+    "source": "Indian Express",
+    "importance": 4,
+    "category": "ai_tech",
+    "keywords": [
+      "Apple",
+      "AI眼镜",
+      "Meta",
+      "Google",
+      "可穿戴"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": true,
+    "id": "cron-461"
+  },
+  {
+    "title": "OpenAI Introduces GPT-Live and Presence 1x1",
+    "summary": "OpenAI 推出 GPT-Live 新功能和 Presence 1x1 产品。Gradient Labs 为银行客户提供 AI 客户经理服务。OpenAI 持续扩展其产品矩阵。",
+    "url": "https://openai.com/",
+    "source": "OpenAI",
+    "importance": 3,
+    "category": "product_tool",
+    "keywords": [
+      "OpenAI",
+      "GPT-Live",
+      "Presence",
+      "银行AI"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-462"
+  },
+  {
+    "title": "SVR-R1: Self-Verified Reasoner for Multi-modal Reasoning",
+    "summary": "Papers with Code 展示 SVR-R1 论文，提出自验证推理者框架，通过多轮 RL 将模型自身的验证信号转化为多模态推理的学习信号。模型对每个查询提出答案并发出二元自判定（Yes/No）。",
+    "url": "https://paperswithcode.co/paper/2607.10966",
+    "source": "Papers with Code",
+    "importance": 3,
+    "category": "academic",
+    "keywords": [
+      "多模态推理",
+      "RL",
+      "自验证",
+      "SVR-R1"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-463"
+  },
+  {
+    "title": "Meta Launches KernelLLM for Translating PyTorch to Triton",
+    "summary": "Meta 发布 KernelLLM，用于将 PyTorch 代码翻译为 Triton 内核的工具。O'Reilly 和微软联合推出开源 NLWeb。微软为 Edge 浏览器推出新 AI API。",
+    "url": "https://www.linkedin.com/pulse/metas-kernelllm-launch-microsofts-ai-tools-googles-mobile-notebooklm-sb5ie",
+    "source": "LinkedIn",
+    "importance": 3,
+    "category": "product_tool",
+    "keywords": [
+      "Meta",
+      "KernelLLM",
+      "PyTorch",
+      "Triton",
+      "Edge"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-464"
+  },
+  {
+    "title": "YouTube Announces Veo 3 Integration for Shorts Creators",
+    "summary": "YouTube 在 Made on YouTube 活动上宣布将 Google 文生视频模型 Veo 3 集成到 Shorts 创作工具中，同时推出新混音工具和 AI 编辑功能。",
+    "url": "https://techcrunch.com/2025/09/16/youtube-announces-new-generative-ai-tools-for-shorts-creators/",
+    "source": "TechCrunch",
+    "importance": 3,
+    "category": "product_tool",
+    "keywords": [
+      "YouTube",
+      "Veo 3",
+      "短视频",
+      "文生视频"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-465"
+  },
+  {
+    "title": "Google AI Mode Launches in UK Search",
+    "summary": "Google 在英国推出 AI Mode 新搜索功能，用户可直接在搜索中看到 AI 驱动的标签页。该功能可能对电商企业产生重大影响。",
+    "url": "https://startups.co.uk/news/google-ai-mode/",
+    "source": "Startups.co.uk",
+    "importance": 3,
+    "category": "product_tool",
+    "keywords": [
+      "Google",
+      "AI Mode",
+      "搜索",
+      "英国"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-466"
   }
 ]
