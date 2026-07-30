@@ -927,5 +927,373 @@
       "causal inference",
       "game AI"
     ]
+  },
+  {
+    "title": "Moonshot AI Surpasses Funding Goal to Hit $35 Billion Valuation",
+    "summary": "中国AI初创公司月之暗面（Moonshot AI）凭借突破性模型Kimi K3的成功，完成35亿美元融资，估值达到350亿美元，在硅谷引发广泛关注。该公司已将Kimi K3模型向公众开放下载。",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-29/china-s-moonshot-ai-passes-funding-goal-to-hit-35-billion-value",
+    "source": "web",
+    "importance": 5,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Moonshot AI",
+      "Kimi K3",
+      "funding",
+      "China AI"
+    ]
+  },
+  {
+    "title": "Ilya Sutskever's Safe Superintelligence Partners with Nvidia to Scale AI Research",
+    "summary": "OpenAI联合创始人Ilya Sutskever创办的安全超级智能公司（SSI）与Nvidia达成合作，双方将在计算平台和AI研究方面协作。SSI去年已与Google Cloud合作，此次合作将进一步推进其安全超级智能研究。",
+    "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+    "source": "web",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "SSI",
+      "Nvidia",
+      "Ilya Sutskever",
+      "superintelligence"
+    ]
+  },
+  {
+    "title": "OpenAI and Anthropic Boost Lobbying to Record Levels in Q2 2026",
+    "summary": "OpenAI和Anthropic在2026年第二季度的联邦游说支出达到创纪录水平，随着中期选举临近，AI行业正投入数百万美元影响华盛顿政策制定，争夺AI监管话语权。",
+    "url": "https://www.cnbc.com/2026/07/21/openai-anthropic-ai-lobbying-spending-q2-2026.html",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "Anthropic",
+      "lobbying",
+      "AI policy"
+    ]
+  },
+  {
+    "title": "Microsoft Launches AI Deployment Company with $2.5 Billion Commitment",
+    "summary": "微软宣布成立新运营业务Microsoft Frontier Company，投入25亿美元专注企业级AI部署，利用微软现有AI工具帮助客户成功实施AI战略，标志着巨头从模型竞赛转向落地应用。",
+    "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
+    "source": "web",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Microsoft",
+      "enterprise AI",
+      "deployment",
+      "$2.5B"
+    ]
+  },
+  {
+    "title": "Sam Altman Says AI Has Entered 'Singularity' — Experts Disagree",
+    "summary": "OpenAI CEO Sam Altman宣称AI已进入\"奇点\"时代，但多数AI学者和安全研究人员认为尚未达到这一标准。Al Jazeera和Business Insider报道称专家们对奇点定义存在重大分歧。",
+    "url": "https://www.aljazeera.com/news/2026/7/27/sam-altman-says-ai-has-entered-singularity-should-we-be-worried",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Sam Altman",
+      "singularity",
+      "AI safety",
+      "OpenAI"
+    ]
+  },
+  {
+    "title": "Apple Launches Lawsuit Accusing OpenAI of Stealing Hardware Trade Secrets",
+    "summary": "苹果公司对OpenAI提起重大诉讼，指控其窃取硬件商业机密。这一法律行动发生在AI行业竞争白热化之际，可能影响整个行业的知识产权格局和合作模式。",
+    "url": "https://techstartups.com/2026/07/17/top-tech-news-today-july-17-2026-anthropic-apple-google-meta-moonshot-ai-nvidia-more/",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Apple",
+      "OpenAI",
+      "lawsuit",
+      "trade secrets"
+    ]
+  },
+  {
+    "title": "July 2026: The Month Physical AI Went Mainstream",
+    "summary": "2026年7月被认为是机器人技术从新兴科技转向工业现实的转折点。本月融资公告显示资本市场越来越确信AI驱动的机器人不仅是研究项目，而是真正的产业机遇。",
+    "url": "https://www.linkedin.com/pulse/july-2026-month-physical-ai-went-mainstream-maisie-jayne-byrom--8gokc",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "robotics",
+      "physical AI",
+      "mainstream",
+      "funding"
+    ]
+  },
+  {
+    "title": "Chinese Start-Up Moonshot Details New AI Model Kimi K3",
+    "summary": "中国初创公司月之暗面公开发布最新AI模型Kimi K3的详细信息，展示了其构建方式。这一突破在硅谷引发震动，加剧了美国对中国AI发展的担忧。",
+    "url": "https://www.nytimes.com/2026/07/27/business/moonshot-kimi-k3-china-ai.html",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Moonshot",
+      "Kimi K3",
+      "China AI",
+      "open model"
+    ]
+  },
+  {
+    "title": "Anthropic Restores Fable 5 Globally After US Export Controls Lifted",
+    "summary": "Anthropic在7月1日美国出口管制解除后，全球恢复了Fable 5（和Mythos 5）的访问。6月12日因越狱问题暂停的服务现已恢复，并增加了网络安全分类器作为\"最强安全措施\"。",
+    "url": "https://thursdai.news/releases/2026-07",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Anthropic",
+      "Fable 5",
+      "export controls",
+      "AI safety"
+    ]
+  },
+  {
+    "title": "Google Scrapped Gemini 3.5 Pro Base Model and Rebuilt from Scratch",
+    "summary": "谷歌在Vertex AI企业测试中发现结构性失败（递归工具调用、SVG生成、数学推理问题）后，完全废弃了Gemini 3.5 Pro基础模型并从零重建，展示了前沿模型开发的挑战性。",
+    "url": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Google",
+      "Gemini 3.5 Pro",
+      "rebuild",
+      "enterprise AI"
+    ]
+  },
+  {
+    "title": "OpenAI GPT-Live-1: Default Voice Model for Go, Plus, and Pro Users",
+    "summary": "OpenAI于7月8日推出GPT-Live-1作为Go、Plus和Pro用户的默认语音模型，GPT-Live-1 mini版本免费。语音AI正成为重要的商业层，标志着AI交互方式的重大转变。",
+    "url": "https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "GPT-Live-1",
+      "voice AI",
+      "product launch"
+    ]
+  },
+  {
+    "title": "Three Frontier Models Launch Within Weeks: Claude Sonnet 5, GPT-5.6, Grok 4.5",
+    "summary": "2026年7月见证了前所未有的模型发布密度：Anthropic的Claude Sonnet 5、OpenAI的GPT-5.6 Sol和xAI的Grok 4.5在数周内相继发布，AI能力竞赛进入新阶段。",
+    "url": "https://www.rauljitechnologies.com/blog/july-2026-ai-model-wave/",
+    "source": "web",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Claude Sonnet 5",
+      "GPT-5.6",
+      "Grok 4.5",
+      "frontier models"
+    ]
+  },
+  {
+    "title": "AI Mega-Funding Week: $5.55B Legal-AI Valuation, $450M Robotics Debut",
+    "summary": "2026年7月10日当周见证了AI超大额融资潮：法律AI公司获得55.5亿美元估值，机器人初创公司首轮融资达4.5亿美元。资本市场对AI的信心持续高涨。",
+    "url": "https://featureddaily.com/news/ai-mega-funding-week-july-2026-fast-brief",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "AI funding",
+      "legal AI",
+      "robotics",
+      "venture capital"
+    ]
+  },
+  {
+    "title": "Gemini Notebook (Formerly NotebookLM) Launches as AI Research Tool",
+    "summary": "Google将NotebookLM重新命名为Gemini Notebook，定位为AI研究工具，可分析用户的资料、将复杂内容转化为清晰理解，并改变内容创作方式。",
+    "url": "https://notebooklm.google/",
+    "source": "web",
+    "importance": 3,
+    "category": "product_tool",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "Google",
+      "Gemini Notebook",
+      "NotebookLM",
+      "research tool"
+    ]
+  },
+  {
+    "title": "MILA Stories Raises $800K for Argentina AI Startup",
+    "summary": "阿根廷AI初创公司MILA Stories获得80万美元融资，开发基于WhatsApp的协作故事讲述对话AI平台，展示了AI在拉美市场的应用潜力。",
+    "url": "https://gentyrecruitment.io/news/mila-stories-raises-800k-argentina-ai-startup",
+    "source": "web",
+    "importance": 3,
+    "category": "startup",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "MILA Stories",
+      "Argentina",
+      "conversational AI",
+      "funding"
+    ]
+  },
+  {
+    "title": "AI Technology Sees Through Leaves to Transform Horticulture",
+    "summary": "UC研究团队在政府3200万美元投资支持下，利用15年计算机视觉和AI机器人研究，开发出能透过树叶观察的创新AI技术，正在变革园艺行业。",
+    "url": "https://phys.org/news/2026-07-ai-technology-horticulture.html",
+    "source": "web",
+    "importance": 3,
+    "category": "product_tool",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "AI agriculture",
+      "computer vision",
+      "horticulture",
+      "robotics"
+    ]
+  },
+  {
+    "title": "Anthropic Wins Injunction Against Trump Administration",
+    "summary": "联邦法官批准Anthropic对特朗普政府的禁令，命令政府撤销将该公司列为安全风险的认定，并停止相关命令。这是AI公司在法律层面维护自身权益的重要案例。",
+    "url": "https://dentro.de/ai/news/",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Anthropic",
+      "Trump administration",
+      "injunction",
+      "AI regulation"
+    ]
+  },
+  {
+    "title": "Cognizant and Anthropic Expand Partnership to Bring Claude to Enterprise",
+    "summary": "Cognizant与Anthropic扩大合作伙伴关系，将Claude引入企业客户。这标志着AI在大型企业服务领域的进一步渗透和商业化进程加速。",
+    "url": "https://www.anthropic.com/news",
+    "source": "web",
+    "importance": 3,
+    "category": "product_tool",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "Anthropic",
+      "Cognizant",
+      "Claude",
+      "enterprise AI"
+    ]
+  },
+  {
+    "title": "OpenAI Introduces ChatGPT for Small Business Program",
+    "summary": "OpenAI于7月22日推出面向小型企业的ChatGPT项目，旨在帮助中小企业利用AI提升效率和竞争力。这是OpenAI向下沉市场扩展的重要战略举措。",
+    "url": "https://openai.com/news/",
+    "source": "web",
+    "importance": 3,
+    "category": "product_tool",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "ChatGPT",
+      "small business",
+      "AI adoption"
+    ]
+  },
+  {
+    "title": "OpenAI and Hugging Face Address Security Incident",
+    "summary": "OpenAI和Hugging Face于7月21日联合应对安全事件，展示了AI公司在面对安全挑战时的协作能力。事件细节尚未完全公开，但凸显了AI安全的重要性。",
+    "url": "https://openai.com/news/",
+    "source": "web",
+    "importance": 3,
+    "category": "ai_tech",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "Hugging Face",
+      "security",
+      "incident"
+    ]
+  },
+  {
+    "title": "Mistral Releases 8B Robotics Model for Natural-Language Robot Control",
+    "summary": "Mistral发布80亿参数机器人模型，可通过自然语言任务指令引导机器人使用单个RGB摄像头完成任务，在R2R-CE基准测试中达到最先进水平。这是Mistral首次进军具身AI领域。",
+    "url": "https://thursdai.news/releases/2026-07",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Mistral",
+      "robotics",
+      "embodied AI",
+      "natural language"
+    ]
+  },
+  {
+    "title": "Willow.ai Atlas-1: Speech Becoming a Serious Business Layer",
+    "summary": "Willow.ai发布Atlas-1产品，语音AI正成为重要的商业层。2026年7月的AI产品发布表明市场正在成熟，OpenAI Flex提供更智能的成本控制，语音交互进入商业化新阶段。",
+    "url": "https://blog.mean.ceo/ai-product-launches-news-july-2026/",
+    "source": "web",
+    "importance": 3,
+    "category": "product_tool",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "Willow.ai",
+      "Atlas-1",
+      "speech AI",
+      "business"
+    ]
+  },
+  {
+    "title": "d1g1t MCP Server: AI Tools Connected to Enterprise Wealth Management",
+    "summary": "财富科技公司d1g1t推出d1g1t MCP服务器，基于开放的模型上下文协议标准，将其企业级财富管理平台直接连接到通用AI工具如ChatGPT等，推动金融AI应用。",
+    "url": "https://www.planadviser.com/ai-product-service-launches-7-20-2026/",
+    "source": "web",
+    "importance": 3,
+    "category": "product_tool",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "d1g1t",
+      "MCP server",
+      "wealth management",
+      "fintech AI"
+    ]
   }
 ]
