@@ -303,5 +303,324 @@
       "cs.CV",
       "cs.CV"
     ]
+  },
+  {
+    "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
+    "summary": "Large language model (LLM) agents are increasingly expected to assist users in completing tasks. However, existing benchmarks provide…",
+    "url": "http://arxiv.org/abs/2607.27155v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.AI",
+      "cs.CL",
+      "cs.HC",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Explainable and Resource-Efficient Spatial Reasoning in Multimodal LLMs for Decision-Critical Applications",
+    "summary": "As Multimodal Large Language Models (MLLMs) are increasingly deployed in decision-critical pipelines such as robotics, embodied AI, and…",
+    "url": "http://arxiv.org/abs/2607.27145v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "AgentMap: Joint Equivalence and Subsumption Discovery for Ontology Matching",
+    "summary": "Ontology matching (OM) has traditionally been formulated as either equivalence discovery or subsumption matching. The existing OM…",
+    "url": "http://arxiv.org/abs/2607.27130v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced AIGI Detection",
+    "summary": "The growing capability of image generation models has made synthetic images a routine presence in open media, making robust and…",
+    "url": "http://arxiv.org/abs/2607.27113v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Penetration Agents",
+    "summary": "Large language model (LLM) agents automate penetration testing through an observation-action loop, selecting actions based on…",
+    "url": "http://arxiv.org/abs/2607.26998v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CR",
+      "cs.CL",
+      "cs.LG",
+      "cs.CR"
+    ]
+  },
+  {
+    "title": "Dual-Path LLM Reasoning for Multimodal Few-Shot Knowledge Graph Completion",
+    "summary": "Knowledge graph completion (KGC) aims to infer missing facts in knowledge graphs (KGs), thereby improving their completeness and…",
+    "url": "http://arxiv.org/abs/2607.26909v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CL",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "Materials Behavior as Mechanism Ensembles: A Probabilistic Framework for Emergent Behaviors",
+    "summary": "Materials behavior is often treated as a deterministic mapping from structure to properties, yet many important phenomena emerge from…",
+    "url": "http://arxiv.org/abs/2607.27163v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cond-mat.mtrl-sci",
+      "cond-mat.mtrl-sci"
+    ]
+  },
+  {
+    "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
+    "summary": "Energy-Based Models (EBMs) provide an interpretable framework for generative modeling of scientific data, but poor Markov Chain Monte…",
+    "url": "http://arxiv.org/abs/2607.27077v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.LG",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Visual Credit Audit for Multimodal Spatial Reasoning",
+    "summary": "Closed yes/no spatial benchmarks can reward a correct answer even when the image adds little support beyond no-image contexts. Under a…",
+    "url": "http://arxiv.org/abs/2607.27069v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence",
+    "summary": "Scientific figure assessment in peer review differs fundamentally from general image quality evaluation: a figure must be visually…",
+    "url": "http://arxiv.org/abs/2607.27066v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CV",
+      "cs.AI",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "What Can Latent World Models Know? Physical Parameter Identifiability in Multimodal Predictive Representations",
+    "summary": "A central premise of latent world models is that predicting the future forces a representation to internalize the physics of its…",
+    "url": "http://arxiv.org/abs/2607.27017v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.LG",
+      "cs.RO",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "SERPO: Self-Evolving Rubric Policy Optimization for Open-Ended Test-Time Reinforcement Learning",
+    "summary": "Test-time reinforcement learning (TTRL) enables language models to self-evolve at inference time without labeled feedback. Existing…",
+    "url": "http://arxiv.org/abs/2607.26873v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CL",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "DHRCL:Training Code LLMs with Dense Hierarchical Rewards and Curriculum Learning",
+    "summary": "Reinforcement learning is a natural post-training paradigm for code-oriented large language models because generated programs can be…",
+    "url": "http://arxiv.org/abs/2607.26457v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.LG",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Reinforcement Learning on Cost-Constrained Quadrupedal Hardware",
+    "summary": "Deploying learned control policies on low-cost robotic platforms introduces transport latencies and noisy motor feedback that…",
+    "url": "http://arxiv.org/abs/2607.26434v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.RO",
+      "cs.AI",
+      "cs.RO"
+    ]
+  },
+  {
+    "title": "CaM-Wolf: Causal-Aware Multimodal Agents for Social Deduction Games",
+    "summary": "Social deduction games (SDGs) such as Werewolf have become challenging testbeds for AI agents. These games require complex social skills…",
+    "url": "http://arxiv.org/abs/2607.26393v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition",
+    "summary": "LLMs are widely regarded as alien intelligences, systems whose cognitive operations are fundamentally unlike our own. Apparent…",
+    "url": "http://arxiv.org/abs/2607.26179v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "q-bio.NC",
+      "cs.AI",
+      "cs.CL",
+      "q-bio.NC"
+    ]
+  },
+  {
+    "title": "Modelling Anomalous Diffusion: The Role of CTRWs and Non-Local Dynamics",
+    "summary": "These notes provide a self-consistent summary of the stochastic approach to anomalous diffusion based on Continuous Time Random Walks…",
+    "url": "http://arxiv.org/abs/2607.27150v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "math.PR",
+      "math.PR"
+    ]
+  },
+  {
+    "title": "FreqForcing: Autoregressive Long Video Generation via Spectral Self-Anchoring",
+    "summary": "Autoregressive video diffusion models enable real-time streaming video generation. However, errors introduced during self-rollout…",
+    "url": "http://arxiv.org/abs/2607.27110v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "A New Paradigm for 3D Turbomachinery Design: Generative Diffusion Model Based Framework with Direct Geometry Encoding",
+    "summary": "The aerodynamic design of turbomachinery is critical to the performance of the overall energy system, yet it is challenging due to the…",
+    "url": "http://arxiv.org/abs/2607.27093v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "physics.flu-dyn",
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "Herding, Momentum, and Reversal in China's A-Share Market: An Agent-Based Network Model with Information Diffusion",
+    "summary": "This study develops an agent-based financial market model to explain stock-price momentum and reversal through the joint effects of…",
+    "url": "http://arxiv.org/abs/2607.27063v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "q-fin.TR",
+      "q-fin.TR"
+    ]
+  },
+  {
+    "title": "Mitigating Compounding Error via Video Representation Regularization",
+    "summary": "Video diffusion-based world models enable long autoregressive video generation for robotics, autonomous driving and simulation tasks,…",
+    "url": "http://arxiv.org/abs/2607.27036v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "cs.CV",
+      "cs.LG",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Qwen-Audio-3.0-Gen-Preview Technical Report",
+    "summary": "Existing single-domain and multi-task audio systems remain limited in directly organizing speech, music, sound effects, ambience, and…",
+    "url": "http://arxiv.org/abs/2607.27011v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "eess.AS",
+      "eess.AS"
+    ]
   }
 ]

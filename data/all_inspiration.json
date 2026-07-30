@@ -9036,7 +9036,7 @@
     "url": "https://arxiv.org/abs/2607.26057v1",
     "source": "arXiv",
     "importance": 3,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": false,
     "date": "2026-07-30",
     "keywords": [
@@ -9051,7 +9051,7 @@
     "url": "https://arxiv.org/abs/2607.26055v1",
     "source": "arXiv",
     "importance": 2,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": false,
     "date": "2026-07-30",
     "keywords": [
@@ -9065,7 +9065,7 @@
     "url": "https://arxiv.org/abs/2607.26052v1",
     "source": "arXiv",
     "importance": 3,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": false,
     "date": "2026-07-30",
     "keywords": [
@@ -9082,7 +9082,7 @@
     "url": "https://arxiv.org/abs/2607.26043v1",
     "source": "arXiv",
     "importance": 2,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": false,
     "date": "2026-07-30",
     "keywords": [
@@ -9098,7 +9098,7 @@
     "url": "https://arxiv.org/abs/2607.26042v1",
     "source": "arXiv",
     "importance": 2,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": false,
     "date": "2026-07-30",
     "keywords": [
@@ -9115,7 +9115,7 @@
     "url": "https://arxiv.org/abs/2607.26041v1",
     "source": "arXiv",
     "importance": 4,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": true,
     "date": "2026-07-30",
     "keywords": [
@@ -9132,7 +9132,7 @@
     "url": "https://arxiv.org/abs/2607.26040v1",
     "source": "arXiv",
     "importance": 4,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": true,
     "date": "2026-07-30",
     "keywords": [
@@ -9149,7 +9149,7 @@
     "url": "https://arxiv.org/abs/2607.26034v1",
     "source": "arXiv",
     "importance": 4,
-    "category": "academic",
+    "category": "academic_paper",
     "is_major_event": true,
     "date": "2026-07-30",
     "keywords": [
@@ -9251,7 +9251,7 @@
     "url": "https://paperswithcode.co/paper/2607.10966",
     "source": "Papers with Code",
     "importance": 3,
-    "category": "academic",
+    "category": "academic_paper",
     "keywords": [
       "多模态推理",
       "RL",
