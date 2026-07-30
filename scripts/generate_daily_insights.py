@@ -39,17 +39,9 @@ def load_today_news(date_str: str) -> list:
     with open(ALL_DATA_FILE, "r", encoding="utf-8") as f:
         all_data = json.load(f)
     
-    # all_inspiration.json 可能是数组或对象
-    if isinstance(all_data, dict):
-        # 如果是对象，尝试获取 records 或 items
-        news_list = all_data.get("records", all_data.get("items", []))
-    else:
-        # 如果是数组，直接使用
-        news_list = all_data
-    
     # 过滤指定日期的新闻
     today_news = [
-        item for item in news_list 
+        item for item in all_data 
         if item.get("date") == date_str
     ]
     
@@ -123,22 +115,11 @@ def call_llm(system_prompt: str, user_prompt: str) -> dict:
         return None
 
 
-def generate_insights_batch(news_text: str, insight_type: str, min_count: int = 1) -> list:
-    """
-    批量生成指定类型的 insights
+def generate_industry_insight(news_text: str) -> dict:
+    """生成行业趋势洞察"""
+    system_prompt = "你是一个专业的 AI 行业分析师，擅长从新闻中提炼洞察。输出严格的 JSON 格式。"
     
-    Args:
-        news_text: 新闻文本
-        insight_type: insight 类型 (industry_insight/startup_advice/side_project)
-        min_count: 最少生成数量
-    
-    Returns:
-        list of insights
-    """
-    type_config = {
-        "industry_insight": {
-            "role": "你是一个专业的 AI 行业分析师，擅长从新闻中提炼洞察。输出严格的 JSON 格式。",
-            "prompt_template": """你是一个 AI 行业分析师。根据以下今日 AI 领域的新闻动态，总结 {count} 个重要的行业趋势洞察。
+    user_prompt = f"""你是一个 AI 行业分析师。根据以下今日 AI 领域的新闻动态，总结 1 个重要的行业趋势洞察。
 
 今日新闻：
 {news_text}
@@ -147,26 +128,26 @@ def generate_insights_batch(news_text: str, insight_type: str, min_count: int = 
 1. 识别跨新闻的共性主题
 2. 分析技术发展方向
 3. 预测可能的行业影响
-4. 每个洞察用 100 字以内总结趋势
-5. 按重要性排序
+4. 用 100 字以内总结趋势
 
 输出严格的 JSON 格式（不要包含 markdown 代码块标记）：
 {{
-  "insights": [
-    {{
-      "type": "industry_insight",
-      "title": "趋势标题（20字以内）",
-      "body": "100字以内的趋势分析",
-      "importance": 4,
-      "score": 80,
-      "summary": "一句话概括（15字以内）"
-    }}
-  ]
+  "type": "industry_insight",
+  "title": "趋势标题（20字以内）",
+  "body": "100字以内的趋势分析",
+  "importance": 4,
+  "score": 80,
+  "summary": "一句话概括（15字以内）"
 }}"""
-        },
-        "startup_advice": {
-            "role": "你是一个专业的创业顾问，擅长发现商业机会。输出严格的 JSON 格式。",
-            "prompt_template": """你是一个创业顾问。根据以下今日 AI 新闻动态，为创业者提供 {count} 条实用建议。
+    
+    return call_llm(system_prompt, user_prompt)
+
+
+def generate_startup_advice(news_text: str) -> dict:
+    """生成创业建议"""
+    system_prompt = "你是一个专业的创业顾问，擅长发现商业机会。输出严格的 JSON 格式。"
+    
+    user_prompt = f"""你是一个创业顾问。根据以下今日 AI 新闻动态，为创业者提供 1 条实用建议。
 
 今日新闻：
 {news_text}
@@ -176,27 +157,26 @@ def generate_insights_batch(news_text: str, insight_type: str, min_count: int = 
 2. 识别未被满足的市场需求
 3. 给出具体的创业方向建议
 4. 说明为什么现在是好时机
-5. 每条建议包含可执行的步骤
-6. 按重要性排序
 
 输出严格的 JSON 格式（不要包含 markdown 代码块标记）：
 {{
-  "insights": [
-    {{
-      "type": "startup_advice",
-      "title": "建议标题（20字以内）",
-      "body": "150字以内的创业建议",
-      "importance": 4,
-      "score": 75,
-      "summary": "一句话概括（15字以内）",
-      "actionable_steps": ["步骤1", "步骤2", "步骤3"]
-    }}
-  ]
+  "type": "startup_advice",
+  "title": "建议标题（20字以内）",
+  "body": "150字以内的创业建议",
+  "importance": 4,
+  "score": 75,
+  "summary": "一句话概括（15字以内）",
+  "actionable_steps": ["步骤1", "步骤2", "步骤3"]
 }}"""
-        },
-        "side_project": {
-            "role": "你是一个技术创意导师，擅长设计可执行的小项目。输出严格的 JSON 格式。",
-            "prompt_template": """你是一个技术创意导师。根据以下今日 AI 新闻动态，提出 {count} 个可以做的小项目创意。
+    
+    return call_llm(system_prompt, user_prompt)
+
+
+def generate_side_project(news_text: str) -> dict:
+    """生成项目创意"""
+    system_prompt = "你是一个技术创意导师，擅长设计可执行的小项目。输出严格的 JSON 格式。"
+    
+    user_prompt = f"""你是一个技术创意导师。根据以下今日 AI 新闻动态，提出 1 个可以做的小项目创意。
 
 今日新闻：
 {news_text}
@@ -206,51 +186,20 @@ def generate_insights_batch(news_text: str, insight_type: str, min_count: int = 
 2. 项目规模适合独立开发者
 3. 1-2周可完成
 4. 有实际应用价值
-5. 按实用性和创新性排序
 
 输出严格的 JSON 格式（不要包含 markdown 代码块标记）：
 {{
-  "insights": [
-    {{
-      "type": "side_project",
-      "title": "项目名称（20字以内）",
-      "body": "100字以内的项目描述",
-      "importance": 3,
-      "score": 70,
-      "summary": "一句话概括（15字以内）",
-      "tech_stack": ["技术1", "技术2"],
-      "estimated_time": "1周"
-    }}
-  ]
+  "type": "side_project",
+  "title": "项目名称（20字以内）",
+  "body": "100字以内的项目描述",
+  "importance": 3,
+  "score": 70,
+  "summary": "一句话概括（15字以内）",
+  "tech_stack": ["技术1", "技术2"],
+  "estimated_time": "1周"
 }}"""
-        }
-    }
     
-    if insight_type not in type_config:
-        print(f"错误：未知的 insight 类型: {insight_type}")
-        return []
-    
-    config = type_config[insight_type]
-    system_prompt = config["role"]
-    
-    # 尝试生成多个 insights（2-3条）
-    for count in [3, 2, 1]:
-        user_prompt = config["prompt_template"].format(count=count, news_text=news_text)
-        
-        result = call_llm(system_prompt, user_prompt)
-        
-        if result and "insights" in result:
-            insights = result["insights"]
-            # 验证每条 insight
-            valid_insights = []
-            for insight in insights:
-                if insight.get("type") == insight_type and insight.get("title"):
-                    valid_insights.append(insight)
-            
-            if len(valid_insights) >= min_count:
-                return valid_insights
-    
-    return []
+    return call_llm(system_prompt, user_prompt)
 
 
 def save_daily_insights(date_str: str, insights: list, records: list):
@@ -311,39 +260,30 @@ def main():
     # 格式化新闻
     news_text = format_news_for_prompt(news_items)
     
-    # 生成三类洞察（每类至少1条，最多3条）
+    # 生成三类洞察
     insights = []
     
-    # 1. 行业趋势洞察
     print("\n🔍 生成行业趋势洞察...")
-    industry_insights = generate_insights_batch(news_text, "industry_insight", min_count=1)
-    if industry_insights:
-        insights.extend(industry_insights)
-        print(f"  ✓ 生成 {len(industry_insights)} 条行业趋势洞察")
-        for insight in industry_insights:
-            print(f"    - {insight['title']}")
+    insight1 = generate_industry_insight(news_text)
+    if insight1:
+        insights.append(insight1)
+        print(f"  ✓ {insight1['title']}")
     else:
         print("  ✗ 生成失败")
     
-    # 2. 创业建议
     print("\n💡 生成创业建议...")
-    startup_insights = generate_insights_batch(news_text, "startup_advice", min_count=1)
-    if startup_insights:
-        insights.extend(startup_insights)
-        print(f"  ✓ 生成 {len(startup_insights)} 条创业建议")
-        for insight in startup_insights:
-            print(f"    - {insight['title']}")
+    insight2 = generate_startup_advice(news_text)
+    if insight2:
+        insights.append(insight2)
+        print(f"  ✓ {insight2['title']}")
     else:
         print("  ✗ 生成失败")
     
-    # 3. 项目创意
     print("\n🚀 生成项目创意...")
-    project_insights = generate_insights_batch(news_text, "side_project", min_count=1)
-    if project_insights:
-        insights.extend(project_insights)
-        print(f"  ✓ 生成 {len(project_insights)} 条项目创意")
-        for insight in project_insights:
-            print(f"    - {insight['title']}")
+    insight3 = generate_side_project(news_text)
+    if insight3:
+        insights.append(insight3)
+        print(f"  ✓ {insight3['title']}")
     else:
         print("  ✗ 生成失败")
     
