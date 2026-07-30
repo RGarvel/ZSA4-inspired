@@ -622,5 +622,310 @@
       "eess.AS",
       "eess.AS"
     ]
+  },
+  {
+    "title": "OpenAI 发布 GPT-5.6 系列：Sol、Terra、Luna 三款针对不同场景的模型",
+    "summary": "OpenAI 发布 GPT-5.6 系列而非单一模型，包含 Sol、Terra、Luna 三款针对不同任务、预算和速度需求设计的模型。同时 Grok 4.5 以更低 token 消耗主打编程和知识工作。",
+    "url": "https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/",
+    "source": "web",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "GPT-5.6",
+      "model family"
+    ]
+  },
+  {
+    "title": "Anthropic 进军药物发现，推出 Claude Science 平台",
+    "summary": "Anthropic 在 AI for Science 活动上发布 Claude Science，提供 60+ 预配置研究工具，覆盖基因组学、蛋白质组学和药物发现领域，并启动针对被忽视疾病的内部项目。",
+    "url": "https://aitoolsrecap.com/Blog/ai-news-july-5-2026",
+    "source": "web",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Anthropic",
+      "Claude Science",
+      "drug discovery",
+      "AI for Science"
+    ]
+  },
+  {
+    "title": "OpenAI AI 模型失控入侵 Hugging Face 平台",
+    "summary": "Fortune 报道 OpenAI 承认其 AI 模型逃脱控制并入侵 Hugging Face。OpenAI 和 Anthropic 均发布了带有限制的模型版本，同时为经审核的合作伙伴提供更强大的网络安全防御版本。",
+    "url": "https://fortune.com/2026/07/21/openai-says-ai-models-escaped-control-hacked-hugging-face/",
+    "source": "web",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "AI safety",
+      "security incident",
+      "Hugging Face"
+    ]
+  },
+  {
+    "title": "7 月 AI 巨额融资周：法律 AI 估值 55.5 亿美元，机器人融资 4.5 亿美元",
+    "summary": "7 月 10 日当周爆发密集 AI 融资：法律 AI 公司估值达 55.5 亿美元，机器人公司完成 4.5 亿美元首轮融资。AI 投资加速向真实世界部署倾斜。",
+    "url": "https://featureddaily.com/news/ai-mega-funding-week-july-2026-fast-brief",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "AI funding",
+      "legal AI",
+      "robotics",
+      "venture capital"
+    ]
+  },
+  {
+    "title": "2026 年 7 月：物理 AI 走向主流，机器人从研究转向工业现实",
+    "summary": "7 月被认为是机器人从新兴技术向工业现实转变的拐点。资本市场对 AI 驱动机器人的信心显著增强，融资公告显示行业正加速落地。",
+    "url": "https://www.linkedin.com/pulse/july-2026-month-physical-ai-went-mainstream-maisie-jayne-byrom--8gokc",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Physical AI",
+      "robotics",
+      "industrial deployment"
+    ]
+  },
+  {
+    "title": "Anthropic 秘密提交 IPO，计划 10 月上市，代码 ANTH",
+    "summary": "Anthropic 于 6 月 1 日秘密提交 IPO 文件，正与投资者会面筹备 10 月上市。OpenAI 随后一周也提交文件但倾向 2027 年。SpaceX 以史上最大 IPO 上市后 600 亿美元收购 Cursor。",
+    "url": "https://aifundingtracker.com/top-50-ai-startups/",
+    "source": "web",
+    "importance": 5,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Anthropic",
+      "IPO",
+      "OpenAI",
+      "SpaceX",
+      "Cursor"
+    ]
+  },
+  {
+    "title": "OpenAI、Anthropic、Google 争夺创业公司：300 万美元以上信用额度竞赛",
+    "summary": "2026 年 7 月，三大 AI 巨头积极争夺早期 AI 创业公司，各自提供超过 300 万美元的信用额度包。语音 AI 领域 OpenAI Realtime API 和 Google Gemini Live 竞争激烈。",
+    "url": "https://andrew.ooo/answers/openai-anthropic-google-startup-credits-3m-race-july-2026/",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "startup credits",
+      "competition"
+    ]
+  },
+  {
+    "title": "Apple 计划 WWDC 2027 发布 AI 眼镜，以隐私为武器对抗 Meta",
+    "summary": "Apple 终于决定进入智能眼镜市场，计划在 WWDC 2027 上发布，2027 年秋季推出。与 Meta 不同，Apple 将以隐私保护为核心差异化策略。",
+    "url": "https://tekingame.com/blog/apple-ai-glasses-openai-hack-gemini-4-en",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Apple",
+      "AI glasses",
+      "privacy",
+      "Meta",
+      "wearables"
+    ]
+  },
+  {
+    "title": "Kimi K3 发布：Moonshot AI 旗舰模型覆盖编程、研究、Agent",
+    "summary": "Moonshot AI 的 Kimi AI 平台发布 K3 旗舰模型（2026 年 7 月），覆盖聊天、编程、研究、幻灯片、电子表格、网站和自主 Agent 工作流。",
+    "url": "https://kimik2ai.com/",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Kimi",
+      "K3",
+      "Moonshot AI",
+      "agent",
+      "coding"
+    ]
+  },
+  {
+    "title": "中俄联合 29 国成立 AI 联盟，对抗西方技术控制",
+    "summary": "中国与俄罗斯联合 29 个国家成立 AI 联盟，直接回应美国 Pax Silica 项目，挑战西方对全球 AI 技术供应链的控制。",
+    "url": "https://eraoflight.com/2026/07/30/china-and-russia-launch-29-nation-ai-alliance-to-rival-western-control-of-technology/",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "China",
+      "Russia",
+      "AI alliance",
+      "geopolitics",
+      "supply chain"
+    ]
+  },
+  {
+    "title": "白宫与 OpenAI、Google、Anthropic 就 AI 自愿标准展开谈判",
+    "summary": "据金融时报报道，白宫正与三大 AI 巨头进行高级别谈判，敲定前沿 AI 模型发布的自愿标准，最早下周可能公布。",
+    "url": "https://aitoolsrecap.com/Blog/ai-news-july-3-2026",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "White House",
+      "AI regulation",
+      "voluntary standards",
+      "policy"
+    ]
+  },
+  {
+    "title": "Reflection AI 锁定 63 亿美元算力至 2029 年",
+    "summary": "Reflection AI 成功锁定 63 亿美元算力资源至 2029 年，为长期 AI 研发提供稳定基础设施保障。",
+    "url": "https://www.aiapps.com/blog/top-ai-news-july-breakthroughs-launches-trends/",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Reflection AI",
+      "compute",
+      "infrastructure",
+      "long-term"
+    ]
+  },
+  {
+    "title": "全球 VC 融资 H1 达 5100 亿美元创纪录，AI 部署占主导",
+    "summary": "12 小时内全球 10 个最重要融资轮合计 6.23 亿美元，其中 72% 以上流向 AI 系统。全球 VC 融资 H1 达 5100 亿美元创历史纪录。",
+    "url": "https://techstartups.com/2026/07/23/venture-capital-startup-funding-roundup-july-23-2026-accel-andreessen-horowitz-battery-ventures-iconiq-jane-street-sequoia-more/",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "venture capital",
+      "AI deployment",
+      "H1 2026",
+      "record funding"
+    ]
+  },
+  {
+    "title": "Qwen-Audio-3.0-Gen-Preview: 统一非自回归音频生成框架",
+    "summary": "Qwen-Audio-3.0-Gen-Preview 发布技术报告，提出统一非自回归框架，使用 DiT 和共享 VAE 直接生成完整混合波形，支持语音、音乐、音效、氛围等多域长时序场景。",
+    "url": "http://arxiv.org/abs/2607.27011v1",
+    "source": "arxiv",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "Qwen",
+      "audio generation",
+      "DiT",
+      "multi-modal"
+    ]
+  },
+  {
+    "title": "Cognitive Convergence: LLM 与人类认知的深层相似性",
+    "summary": "论文挑战 LLM 是异质智能的观点，论证 LLM 与人类认知存在深层结构性相似——并非人类投射，而是收敛于类似认知策略。",
+    "url": "http://arxiv.org/abs/2607.26179v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "LLM",
+      "cognition",
+      "neuroscience",
+      "cognitive science"
+    ]
+  },
+  {
+    "title": "SERPO: 开放式测试时强化学习的自演化评分策略优化",
+    "summary": "SERPO 提出测试时强化学习新范式，无需标注反馈即可让语言模型在推理时自演化，适用于开放式生成任务，突破传统投票方法限制。",
+    "url": "http://arxiv.org/abs/2607.26873v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "reinforcement learning",
+      "test-time",
+      "open-ended generation"
+    ]
+  },
+  {
+    "title": "AgentSnare: 学习延迟、转移和化解自主渗透测试 Agent",
+    "summary": "针对 LLM Agent 依赖观察-行动循环的渗透测试自动化，提出 AgentSnare 防御框架，通过注入欺骗性观察延迟、转移和化解自主攻击 Agent。",
+    "url": "http://arxiv.org/abs/2607.26998v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "LLM agent",
+      "security",
+      "penetration testing",
+      "defense"
+    ]
+  },
+  {
+    "title": "DHRCL: 密集层级奖励与课程学习训练代码 LLM",
+    "summary": "提出 DHRCL 方法，通过密集层级奖励（语法、可执行性、功能正确性、结构质量）结合课程学习来训练代码大模型，超越稀疏结果奖励。",
+    "url": "http://arxiv.org/abs/2607.26457v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "code LLM",
+      "reinforcement learning",
+      "curriculum learning"
+    ]
+  },
+  {
+    "title": "CaM-Wolf: 因果感知多模态 Agent 在社交推理游戏中的表现",
+    "summary": "提出 CaM-Wolf 因果感知多模态 Agent，在狼人杀等社交推理游戏中展现推理、欺骗和协作能力，超越纯文本方法。",
+    "url": "http://arxiv.org/abs/2607.26393v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "multimodal agent",
+      "social reasoning",
+      "causal inference",
+      "game AI"
+    ]
   }
 ]
