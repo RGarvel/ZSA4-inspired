@@ -723,6 +723,9 @@
         if (search && !m.name.toLowerCase().includes(search) && !m.model_id.toLowerCase().includes(search)) continue;
         // If a task type is selected, filter models that support it
         if (taskType && taskType !== '' && m.categories && !m.categories.includes(taskType)) continue;
+        // 过滤掉质量分为0的模型
+        const qField = taskType ? ('score_' + taskType) : 'composite_score';
+        if (!Number(m[qField]) || Number(m[qField]) === 0) continue;
         out.push(m);
       }
       return out;
