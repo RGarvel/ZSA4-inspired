@@ -145,40 +145,39 @@
   "insights": [
     {
       "type": "industry_insight",
-      "title": "AI算力寡头化与主权AI并行崛起",
-      "body": "本周资本与算力双重集中：$5.55B法律AI、SSI×NVIDIA战略合作、NVIDIA连接初创与云商GPU，形成头部寡头化格局；同时印度Sarvam主权AI独角兽、中俄29国联盟抗衡西方Pax Silica，主权AI运动加速。技术端多模态(Gemini Omni Flash)与安全(MAI-Cyber)成新战场，早期融资反而沉寂，资源向头部与主权方倾斜。",
+      "title": "算力主权与资本集中并行",
+      "body": "融资向晚期集中、主权AI崛起（印度Sarvam、中俄29国联盟）、NVIDIA开放算力通道三重趋势叠加。地缘割裂下算力基础设施成为战略博弈焦点，早期市场虽冷清，资金正加速涌向头部算力与主权模型玩家。",
       "importance": 4,
-      "score": 82,
-      "summary": "算力寡头化与主权AI分庭抗礼"
+      "score": 85,
+      "summary": "算力主权成新焦点"
     },
     {
       "type": "startup_advice",
-      "title": "区域垂直AI：新兴市场蓝海",
-      "body": "法律AI赛道55.5亿美元估值验证了垂直AI在监管行业的价值，但玩家集中于欧美。中俄29国AI联盟与印度Sarvam独角兽化表明新兴市场正寻求主权化AI方案。建议在拉美、东南亚、中东构建法律合规或医疗垂直AI，借NVIDIA云GPU计划降低算力门槛，抢在早期市场回暖前卡位。本地化数据与合规know-how是核心护城河。",
+      "title": "布局主权AI合规与安全",
+      "body": "SSI与NVIDIA合作、Sarvam AI成印度独角兽、中俄牵头29国AI联盟，主权AI已成全球共识。微软刚推出MAI-Cyber-1-Flash印证网络安全AI需求爆发。建议瞄准新兴市场企业，打造本地化AI合规审计+威胁检测一体化平台，填补主权AI生态的安全缺口。NVIDIA正开放GPU接入，算力门槛已大幅降低。",
       "importance": 4,
-      "score": 80,
-      "summary": "新兴市场垂直AI蓝海",
+      "score": 82,
+      "summary": "主权AI+网络安全融合机会",
       "actionable_steps": [
-        "选定一个新兴市场（拉美/东南亚/中东）及一个监管型垂直行业（法律/医疗/金融合规），做需求与合规调研",
-        "申请加入NVIDIA云GPU计划获取算力，组建本地数据与法律合规顾问团队",
-        "6个月内交付MVP验证本地监管场景，瞄准早期市场回暖窗口融资"
+        "调研东南亚/拉美/中东数据本地化法规，锁定合规刚需行业",
+        "基于开源多模态模型(如Kimi K3)构建轻量化威胁检测引擎，降低训练成本",
+        "接入NVIDIA GPU云计划获取算力，优先服务金融与政务客户做MVP验证"
       ]
     },
     {
       "type": "side_project",
-      "title": "多模态会议纪要生成器",
-      "body": "基于 Gemini Omni Flash 原生多模态能力，将会议音频、白板截图与文字笔记一并输入，自动生成结构化纪要、行动项与决策记录，支持 Whisper 离线预处理与多语言输出。",
-      "importance": 4,
+      "title": "AI创业GPU云比价仪表盘",
+      "body": "基于NVIDIA连接初创企业与云厂商提供GPU的动态，抓取主流云（AWS、GCP、CoreWeave、Lambda）GPU实例价格与规格，构建静态HTML比价仪表盘，支持按显存/时薪/区域筛选排序，帮助独立开发者快速找到最经济的算力来源。",
+      "importance": 3,
       "score": 78,
-      "summary": "音频视频一键生成会议纪要",
+      "summary": "GPU云实例比价与筛选工具",
       "tech_stack": [
-        "Gemini Omni Flash API",
-        "OpenAI Whisper",
-        "FastAPI",
-        "SQLite"
+        "HTML+Bootstrap5",
+        "Chart.js",
+        "Python数据抓取"
       ],
-      "estimated_time": "1-2周"
+      "estimated_time": "1周"
     }
   ],
-  "generated_at": "2026-07-31T10:47:54.249548"
+  "generated_at": "2026-07-31T11:14:20.471879"
 }

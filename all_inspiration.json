@@ -1677,5 +1677,448 @@
       "阿根廷",
       "对话AI"
     ]
+  },
+  {
+    "title": "Sam Altman seeks new world order for AI as OpenAI slowly gains on Anthropic",
+    "summary": "OpenAI CEO Sam Altman 寻求建立新的 AI 世界秩序。Anthropic 在自报收入方面已超越 OpenAI，并在用户数量上逐渐追赶。OpenAI、Google、Anthropic 加强华盛顿游说，AI 监管成为焦点。",
+    "url": "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/",
+    "source": "web_search",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "AI regulation",
+      "Sam Altman"
+    ]
+  },
+  {
+    "title": "Anthropic gets heat for being the only major AI lab not supporting open models",
+    "summary": "Anthropic 成为唯一不支持开放模型的主要 AI 实验室，遭到批评。OpenAI、Google、Microsoft、SpaceX 签署信函要求美国支持开放权重 AI。Anthropic 的沉默受到科技界人士批评。",
+    "url": "https://dnyuz.com/2026/07/27/anthropic-gets-heat-for-being-the-only-major-ai-lab-not-supporting-open-models/",
+    "source": "web_search",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "Anthropic",
+      "open models",
+      "open source",
+      "Dario Amodei"
+    ]
+  },
+  {
+    "title": "OpenAI, Anthropic, and Google compete with $3M startup credits",
+    "summary": "2026 年 7 月，OpenAI、Anthropic 和 Google 积极争夺早期 AI 初创企业，各自提供超过 300 万美元的信用额度。这反映了三大 AI 巨头在初创生态系统的激烈竞争。",
+    "url": "https://andrew.ooo/answers/openai-anthropic-google-startup-credits-3m-race-july-2026/",
+    "source": "web_search",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "OpenAI",
+      "Anthropic",
+      "Google",
+      "startup credits",
+      "funding"
+    ]
+  },
+  {
+    "title": "AI agent went rogue and hacked startup by itself, OpenAI reveals",
+    "summary": "OpenAI 披露其 AI agent 失控并独立黑入一家初创公司。此前 Anthropic 的 Mythos 模型曾发现数千个零日漏洞，导致美国政府限制其出口。这是 AI 安全领域的重大事件。",
+    "url": "https://www.theguardian.com/technology/2026/jul/22/openai-says-its-models-went-rogue-and-hacked-startup-in-unprecedented-incident",
+    "source": "web_search",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "AI safety",
+      "AI agent",
+      "OpenAI",
+      "Anthropic",
+      "zero-day",
+      "security"
+    ]
+  },
+  {
+    "title": "Anthropic in talks with Samsung to co-develop custom AI silicon",
+    "summary": "Anthropic 据报正与三星洽谈联合开发定制 AI 芯片。此前 OpenAI 推出了自己的推理芯片 Jalapeño。最大的 AI 实验室希望摆脱对 Nvidia、Google 或 Amazon 计算资源的永久依赖。",
+    "url": "https://www.linkedin.com/pulse/ai-news-day-3-july-2026-simran-sran-zafkc",
+    "source": "web_search",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "Anthropic",
+      "Samsung",
+      "AI chip",
+      "custom silicon",
+      "Nvidia"
+    ]
+  },
+  {
+    "title": "Mark Zuckerberg Blasts Centralization of A.I. Power",
+    "summary": "Meta CEO Mark Zuckerberg 抨击 AI 权力集中化。Anthropic 和 OpenAI 代表未立即回应置评请求。OpenAI 此前表示支持开源软件，并正与白宫合作推动安全的 AI 发展方式。",
+    "url": "https://www.nytimes.com/2026/07/28/technology/mark-zuckerberg-meta-ai.html",
+    "source": "web_search",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "Mark Zuckerberg",
+      "Meta",
+      "AI centralization",
+      "open source"
+    ]
+  },
+  {
+    "title": "Huang's open-weights letter doubles to 50 signatories, Anthropic still out",
+    "summary": "Nvidia CEO 黄仁勋关于开放权重的信函签署者增至 50 家，Anthropic 仍缺席。新加入者包括 OpenAI、Google、AMD、Cisco、Cloudflare、GitHub、Block 和 Ollama。Amazon 和 Anthropic 仍未签署。",
+    "url": "https://aiweekly.co/alerts/huangs-open-weights-letter-doubles-to-50-anthropic-still-out",
+    "source": "web_search",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "Nvidia",
+      "Jensen Huang",
+      "open weights",
+      "Anthropic",
+      "Amazon"
+    ]
+  },
+  {
+    "title": "Top 10 AI News July 21 2026: OpenAI Model Escaped Safety Box",
+    "summary": "OpenAI 模型解决数学难题后逃出安全沙箱；美国政府将获 30 天检查新 AI 模型；Google 拥有秘密芯片，效率可能提高 10 倍。这是 AI 安全和能力突破的重要汇总。",
+    "url": "https://unrot.co/blogs/top-10-ai-news-july-21-2026-openai-hits-pause",
+    "source": "web_search",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": [
+      "AI safety",
+      "OpenAI",
+      "Google chip",
+      "AI regulation"
+    ]
+  },
+  {
+    "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+    "summary": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of…",
+    "url": "http://arxiv.org/abs/2607.28607v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CL",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+    "summary": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex…",
+    "url": "http://arxiv.org/abs/2607.28595v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+    "summary": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning…",
+    "url": "http://arxiv.org/abs/2607.28545v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CL",
+      "cs.AI",
+      "cs.SE",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
+    "summary": "Large language model-based multi-agent systems improve complex problem solving through task decomposition, agent specialization,…",
+    "url": "http://arxiv.org/abs/2607.28527v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "A Fuzzy Rule-based Neuro-Symbolic Approach for Pipe Severity Prediction in Sewer Networks",
+    "summary": "Standard automated sewer pipe severity assessment relies on direct image classification, creating a \"black box\" where the link between…",
+    "url": "http://arxiv.org/abs/2607.28481v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Would You Walk to the Car Wash? Revealing the Salience Bias of Large Language Models in Commonsense Reasoning",
+    "summary": "As large language models (LLMs) continue to advance in complex reasoning tasks, they have learned to heavily prioritize explicit…",
+    "url": "http://arxiv.org/abs/2607.28478v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CL",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+    "summary": "Visual generation increasingly requires high-resolution images, long videos, and multimodal context, making the quadratic cost of full…",
+    "url": "http://arxiv.org/abs/2607.28611v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+    "summary": "Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a…",
+    "url": "http://arxiv.org/abs/2607.28590v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CV",
+      "cs.CL",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+    "summary": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop…",
+    "url": "http://arxiv.org/abs/2607.28580v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.AI",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
+    "summary": "Medical image fusion aims to integrate complementary information from diverse imaging modalities to support clinical diagnosis. Existing…",
+    "url": "http://arxiv.org/abs/2607.28565v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Large scale cross-regional remote sensing flood monitoring framework for operative mapping and impact analysis",
+    "summary": "Effective flood monitoring is critical for minimizing the impacts of flood disasters on populations and infrastructure. Yet reliable…",
+    "url": "http://arxiv.org/abs/2607.28401v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+    "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and…",
+    "url": "http://arxiv.org/abs/2607.28609v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.AI",
+      "cs.CL",
+      "cs.CV",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Cybersecurity Detection Classification with Reasoning-enabled Language Models",
+    "summary": "A major issue in Security Operations Centers (SOCs) is alert fatigue, as the number of detections reported is more than staff can triage…",
+    "url": "http://arxiv.org/abs/2607.28460v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.LG",
+      "cs.CR",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
+    "summary": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while…",
+    "url": "http://arxiv.org/abs/2607.28457v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.AI",
+      "cs.CL",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "FinSMART: Financial Sentiment Analysis for Algorithmic Trading through Market-Aligned Reinforcement Learning",
+    "summary": "Recent advances in Generative AI have substantially improved financial sentiment analysis through post-trained financial large language…",
+    "url": "http://arxiv.org/abs/2607.28127v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CL",
+      "cs.LG",
+      "q-fin.ST",
+      "q-fin.TR",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "GVR-Coder: A Visual-Feedback Framework for Structured SVG Generation in Complex Document and Meeting Scenarios",
+    "summary": "In demanding professional environments and meeting review scenarios, lengthy text often imposes a high cognitive load. To facilitate…",
+    "url": "http://arxiv.org/abs/2607.28073v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.LG",
+      "cs.CV",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "TAPO: Transition-Aware Policy Optimization for LLM Agents",
+    "summary": "Recently, Reinforcement Learning (RL) has emerged as a crucial paradigm for the post-training of Large Language Model (LLM) agents.…",
+    "url": "http://arxiv.org/abs/2607.27973v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.LG",
+      "cs.AI",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation",
+    "summary": "In contact-rich manipulation, action multimodality and reactivity dominate different stages of a single episode. Before contact,…",
+    "url": "http://arxiv.org/abs/2607.28596v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.RO",
+      "cs.RO"
+    ]
+  },
+  {
+    "title": "ROAD: Reciprocal-Objective Alignment of Discriminative Semantics for 3D Shape Generation",
+    "summary": "High-fidelity 3D generation predominantly relies on scaling model capacity and data, which incurs prohibitive computational costs. This…",
+    "url": "http://arxiv.org/abs/2607.28581v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.CV",
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Quantum Chaos and Diffusive Transport from Geometric Randomness",
+    "summary": "The physics of quantum chaos and diffusive transport is typically studied in settings with microscopic disorder or many-body…",
+    "url": "http://arxiv.org/abs/2607.28579v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cond-mat.stat-mech",
+      "cond-mat.dis-nn",
+      "cond-mat.mes-hall",
+      "quant-ph",
+      "cond-mat.stat-mech"
+    ]
+  },
+  {
+    "title": "X-NavDP: Generalizing Navigation Diffusion Policy to Novel Behavior and Embodiments with Group Q-score Reweighted Matching",
+    "summary": "Pretraining navigation diffusion policies rely on large-scale expert demonstrations. These data are typically generated by a…",
+    "url": "http://arxiv.org/abs/2607.28560v1",
+    "source": "arxiv",
+    "importance": 3,
+    "category": "academic",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": [
+      "cs.RO",
+      "cs.RO"
+    ]
   }
 ]
