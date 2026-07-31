@@ -299,44 +299,59 @@ for m in data['models']:
         # Clamp between composite and max(benchmark) — never below overall ability
         return max(blended, m['composite_score'])
 
+    # 检查模型支持的任务类型
+    categories = m.get('categories', [])
+    
     # 编码：SWE-bench(55%) + FrontierCode(30%) + Knowledge(15%)
-    m['score_coding'] = blend(
-        [('benchmark_swe_verified', 55), ('benchmark_reasoning', 30), ('benchmark_knowledge', 15)],
-        {
-            'benchmark_swe_verified': m['benchmark_swe_verified'],
-            'benchmark_reasoning': m['benchmark_reasoning'],
-            'benchmark_knowledge': m['benchmark_knowledge'],
-        }
-    )
+    if 'coding' in categories:
+        m['score_coding'] = blend(
+            [('benchmark_swe_verified', 55), ('benchmark_reasoning', 30), ('benchmark_knowledge', 15)],
+            {
+                'benchmark_swe_verified': m['benchmark_swe_verified'],
+                'benchmark_reasoning': m['benchmark_reasoning'],
+                'benchmark_knowledge': m['benchmark_knowledge'],
+            }
+        )
+    else:
+        m['score_coding'] = 0
 
     # 推理：FrontierCode(50%) + SWE-bench(25%) + Chat(25%)
-    m['score_reasoning'] = blend(
-        [('benchmark_reasoning', 50), ('benchmark_swe_verified', 25), ('benchmark_chat', 25)],
-        {
-            'benchmark_reasoning': m['benchmark_reasoning'],
-            'benchmark_swe_verified': m['benchmark_swe_verified'],
-            'benchmark_chat': m['benchmark_chat'],
-        }
-    )
+    if 'reasoning' in categories:
+        m['score_reasoning'] = blend(
+            [('benchmark_reasoning', 50), ('benchmark_swe_verified', 25), ('benchmark_chat', 25)],
+            {
+                'benchmark_reasoning': m['benchmark_reasoning'],
+                'benchmark_swe_verified': m['benchmark_swe_verified'],
+                'benchmark_chat': m['benchmark_chat'],
+            }
+        )
+    else:
+        m['score_reasoning'] = 0
 
     # 文本生成：Chat(45%) + MMLU/Knowledge(35%) + Reasoning(20%)
-    m['score_chat'] = blend(
-        [('benchmark_chat', 45), ('benchmark_knowledge', 35), ('benchmark_reasoning', 20)],
-        {
-            'benchmark_chat': m['benchmark_chat'],
-            'benchmark_knowledge': m['benchmark_knowledge'],
-            'benchmark_reasoning': m['benchmark_reasoning'],
-        }
-    )
+    if 'chat' in categories:
+        m['score_chat'] = blend(
+            [('benchmark_chat', 45), ('benchmark_knowledge', 35), ('benchmark_reasoning', 20)],
+            {
+                'benchmark_chat': m['benchmark_chat'],
+                'benchmark_knowledge': m['benchmark_knowledge'],
+                'benchmark_reasoning': m['benchmark_reasoning'],
+            }
+        )
+    else:
+        m['score_chat'] = 0
 
     # 图像生成：目前无直接benchmark，用Knowledge(60%) + Chat(40%)作为代理
-    m['score_image'] = blend(
-        [('benchmark_knowledge', 60), ('benchmark_chat', 40)],
-        {
-            'benchmark_knowledge': m['benchmark_knowledge'],
-            'benchmark_chat': m['benchmark_chat'],
-        }
-    )
+    if 'image' in categories:
+        m['score_image'] = blend(
+            [('benchmark_knowledge', 60), ('benchmark_chat', 40)],
+            {
+                'benchmark_knowledge': m['benchmark_knowledge'],
+                'benchmark_chat': m['benchmark_chat'],
+            }
+        )
+    else:
+        m['score_image'] = 0
 # Print summary
 print("Updated models with 4-benchmark scores:")
 for m in data['models']:

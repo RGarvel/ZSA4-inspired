@@ -14,6 +14,7 @@
 import json
 import sys
 import subprocess
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -52,47 +53,58 @@ def format_news_for_prompt(news_items: list) -> str:
     return "\n".join(lines)
 
 
-def call_llm(system_prompt: str, user_prompt: str) -> dict:
-    """通过 hermes -z 调用 LLM，返回 JSON"""
+def call_llm(system_prompt: str, user_prompt: str, max_retries: int = 3) -> dict:
+    """通过 hermes -z 调用 LLM，返回 JSON（带重试和速率限制）"""
     full_prompt = f"{system_prompt}\n\n{user_prompt}"
 
-    try:
-        result = subprocess.run(
-            ["hermes", "-z", full_prompt, "--no-restore-cwd"],
-            capture_output=True,
-            text=True,
-            timeout=60,
-            encoding="utf-8",
-        )
+    for attempt in range(max_retries):
+        try:
+            result = subprocess.run(
+                ["hermes", "-z", full_prompt, "--no-restore-cwd"],
+                capture_output=True,
+                text=True,
+                timeout=60,
+                encoding="utf-8",
+            )
 
-        if result.returncode != 0:
-            print(f"hermes CLI 调用失败 (exit {result.returncode})")
-            print(f"stderr: {result.stderr[:200]}")
+            if result.returncode != 0:
+                stderr = result.stderr.lower()
+                # 检测 429 速率限制错误
+                if "429" in stderr or "rate" in stderr or "exhaust" in stderr or "quota" in stderr:
+                    wait_time = 2 ** attempt * 10  # 指数退避: 10s, 20s, 40s
+                    print(f"⚠ 速率限制 (429)，等待 {wait_time}s 后重试 ({attempt+1}/{max_retries})...")
+                    time.sleep(wait_time)
+                    continue
+                print(f"hermes CLI 调用失败 (exit {result.returncode})")
+                print(f"stderr: {result.stderr[:200]}")
+                return None
+
+            content = result.stdout.strip()
+
+            # 清理 markdown 代码块标记
+            if content.startswith("```json"):
+                content = content[7:]
+            if content.startswith("```"):
+                content = content[3:]
+            if content.endswith("```"):
+                content = content[:-3]
+            content = content.strip()
+
+            return json.loads(content)
+
+        except subprocess.TimeoutExpired:
+            print(f"hermes CLI 超时 (60s)，重试 ({attempt+1}/{max_retries})...")
+            time.sleep(2 ** attempt * 5)
+        except json.JSONDecodeError as e:
+            print(f"JSON 解析失败: {e}")
+            print(f"原始内容: {content[:200]}")
+            return None
+        except Exception as e:
+            print(f"调用异常: {e}")
             return None
 
-        content = result.stdout.strip()
-
-        # 清理 markdown 代码块标记
-        if content.startswith("```json"):
-            content = content[7:]
-        if content.startswith("```"):
-            content = content[3:]
-        if content.endswith("```"):
-            content = content[:-3]
-        content = content.strip()
-
-        return json.loads(content)
-
-    except subprocess.TimeoutExpired:
-        print("hermes CLI 超时（60s）")
-        return None
-    except json.JSONDecodeError as e:
-        print(f"JSON 解析失败: {e}")
-        print(f"原始内容: {content[:200]}")
-        return None
-    except Exception as e:
-        print(f"调用异常: {e}")
-        return None
+    print(f"✗ 达到最大重试次数 ({max_retries})，放弃")
+    return None
 
 
 def generate_industry_insight(news_text: str) -> dict:
@@ -242,6 +254,9 @@ def main():
     else:
         print("  ✗ 生成失败")
 
+    # 速率控制：等待 2 秒再调用下一个
+    time.sleep(2)
+
     print("\n💡 生成创业建议...")
     insight2 = generate_startup_advice(news_text)
     if insight2:
@@ -249,6 +264,9 @@ def main():
         print(f"  ✓ {insight2['title']}")
     else:
         print("  ✗ 生成失败")
+
+    # 速率控制：等待 2 秒再调用下一个
+    time.sleep(2)
 
     print("\n🚀 生成项目创意...")
     insight3 = generate_side_project(news_text)
