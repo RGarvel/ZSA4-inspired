@@ -97,34 +97,34 @@ def format_report(date_str: str) -> str:
     rec = get_recommendation(models_data)
     updated_at = models_data.get("updated_at", "N/A")
 
-    # 构建 report
+    # 构建 report（精简版：每条≤20字）
     lines = []
-    sep = "=" * 70
+    sep = "━" * 30
 
     lines.append(sep)
     lines.append(f"📅 灵感日报 · {date_str}")
-    lines.append(sep)
-    lines.append("")
-    lines.append("【采集统计】")
-    lines.append(f"• 新增 {total_new} 条 | AI技术 {ai_tech} · 创业 {startup} · 产品 {product_tool} · 学术 {academic_paper}")
-    lines.append("")
+    lines.append(f"新增{total_new}条 | 技术{ai_tech}·创业{startup}·产品{product_tool}·学术{academic_paper}")
     lines.append(sep)
     lines.append("")
 
-    # 重大事件
+    # 重大事件（标题截断20字）
     lines.append("【🔥 重大事件】")
     if major_events:
         for i, e in enumerate(major_events, 1):
-            lines.append(f"{i}. {e.get('title', '')} — {e.get('summary', '')[:80]}")
+            t = e.get('title', '')[:20]
+            s = e.get('summary', '')[:20]
+            lines.append(f"{i}. {t} — {s}")
     else:
         lines.append("无")
     lines.append("")
 
-    # arXiv 论文推荐
+    # arXiv 论文推荐（标题截断20字）
     lines.append("【📄 论文推荐】")
     if arxiv_papers:
         for i, p in enumerate(arxiv_papers, 1):
-            lines.append(f"{i}. {p.get('title', '')} — {p.get('summary', '')[:80]}")
+            t = p.get('title', '')[:20]
+            s = p.get('summary', '')[:20]
+            lines.append(f"{i}. {t} — {s}")
     else:
         lines.append("无")
     lines.append("")
@@ -133,7 +133,9 @@ def format_report(date_str: str) -> str:
     lines.append("【💡 行业趋势】")
     if industry:
         for item in industry:
-            lines.append(f"• {item.get('title', '')} — {item.get('summary', '')}")
+            t = item.get('title', '')[:20]
+            s = item.get('summary', '')[:20]
+            lines.append(f"• {t} — {s}")
     else:
         lines.append("无")
     lines.append("")
@@ -142,7 +144,9 @@ def format_report(date_str: str) -> str:
     lines.append("【🚀 创业建议】")
     if startup_adv:
         for item in startup_adv:
-            lines.append(f"• {item.get('title', '')} — {item.get('summary', '')}")
+            t = item.get('title', '')[:20]
+            s = item.get('summary', '')[:20]
+            lines.append(f"• {t} — {s}")
     else:
         lines.append("无")
     lines.append("")
@@ -151,7 +155,9 @@ def format_report(date_str: str) -> str:
     lines.append("【🛠️ 项目创意】")
     if side_proj:
         for item in side_proj:
-            lines.append(f"• {item.get('title', '')} — {item.get('summary', '')}")
+            t = item.get('title', '')[:20]
+            s = item.get('summary', '')[:20]
+            lines.append(f"• {t} — {s}")
     else:
         lines.append("无")
     lines.append("")
@@ -159,23 +165,17 @@ def format_report(date_str: str) -> str:
     lines.append("")
 
     # AI 模型推荐
-    lines.append(f"【🤖 AI 模型推荐】（仪表盘更新于 {updated_at}）")
+    lines.append(f"【🤖 模型推荐】（{updated_at}）")
     if rec:
-        name = rec.get("name", "N/A")
+        name = rec.get("name", "N/A")[:15]
         cs = rec.get("composite_score", 0)
         vs = rec.get("value_score", 0)
         op = rec.get("output_price_per_1m", 0)
-        lines.append(f"• 综合推荐：{name} | 质量{cs} | 性价比{vs} | ${op}/M tokens")
+        lines.append(f"• {name} | 质{cs}·性{vs}·${op}/M")
     else:
         lines.append("• 无推荐数据")
     lines.append("")
-
-    # GitHub
-    lines.append("【📦 GitHub】")
-    lines.append("✓ 已推送 https://github.com/RGarvel/ZSA4-inspired")
-    lines.append("")
-    lines.append("📰 灵感日报：https://rgarvel.github.io/ZSA4-inspired/")
-    lines.append("")
+    lines.append("📦✓GitHub · 📰 rgarvel.github.io/ZSA4-inspired/")
     lines.append(sep)
 
     return "\n".join(lines)
