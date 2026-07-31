@@ -659,7 +659,8 @@
         allModels = data.models;
         
         // Set task-type specific value_score from pre-computed JSON values
-        const activeTask = $el.taskType?.value || 'chat';
+        // 默认（未选中任务类型）用 composite，选中时用对应任务
+        const activeTask = $el.taskType?.value || 'composite';
         const scoreField = 'value_score_' + activeTask;
         for (const m of allModels) {
           // If value_score exists for this task type, use it
