@@ -455,41 +455,40 @@
   "insights": [
     {
       "type": "industry_insight",
-      "title": "AI垂直专业化加速",
-      "body": "法律AI获$5.55B估值、网络安全推专用模型、机器人融$450M，垂直领域AI加速专业化。多模态原生处理与Agent自主执行成为基础能力，AI从通用工具向行业专用解决方案结构性转变。行业know-how取代模型规模成新壁垒，通用玩家需与垂直专家深度合作。",
+      "title": "Agentic AI产品化加速",
+      "body": "Agentic AI正从概念走向产品化，Kimi K3等模型原生集成Agent能力，垂直领域（法律、网安、机器人）获巨额融资。多模态融合成为Agent标配，Google Gemini Omni Flash等原生多模态模型涌现。预示AI从对话工具向自主行动系统演进，垂直Agent市场将快速膨胀。",
       "importance": 4,
       "score": 85,
-      "summary": "垂直专业化成新主线"
+      "summary": "AI Agent生态快速成型"
     },
     {
       "type": "startup_advice",
-      "title": "AI值班根因分析Agent",
-      "body": "ORCA-bench与MAI-Cyber-1-Flash验证：LLM已能胜任oncall RCA，而SOC报警疲劳和DevOps值班倦怠是真实痛点。NVIDIA刚推出GPU接入计划，创业公司可免费获得数千GPU算力，入场成本骤降。建议构建垂直领域（金融/电商/SaaS）的值班Agent：接入日志、监控、告警，自动定位根因并给出处置建议。早期聚焦单一行业打穿，用benchmark分数做卖点，避开通用大模型正面竞争。",
+      "title": "网络安全AI自动化平台",
+      "body": "安全运营中心面临警报疲劳，人工处理效率低。Microsoft刚推出MAI-Cyber验证市场需求，学术研究表明LLM适合根因分析。建议构建专注SOC自动化的AI Agent平台，整合多模态分析能力，自动分类、调查、响应安全事件。目标客户：中小企业IT团队、MSSP提供商。商业模式：SaaS订阅+事件响应增值服务。",
       "importance": 4,
-      "score": 82,
-      "summary": "用LLM做值班根因分析",
+      "score": 80,
+      "summary": "AI安全运营自动化",
       "actionable_steps": [
-        "申请NVIDIA Startup GPU Access计划，获取免费算力",
-        "选取单一垂直行业（如SaaS）对接Datadog/PagerDuty API做MVP",
-        "在ORCA-bench类评测上跑出分数，作为B端销售核心卖点"
+        "研究SOC工作流程，与5-10家企业访谈验证痛点",
+        "基于开源LLM构建MVP，专注告警分类和根因分析",
+        "接入SIEM工具（Splunk/Elastic），提供30天免费试用"
       ]
     },
     {
       "type": "side_project",
-      "title": "AI安全告警分诊助手",
-      "body": "基于LLM的SOC告警自动分诊工具，分析安全日志、识别误报、分类严重程度并建议修复方案，缓解安全团队告警疲劳问题。",
+      "title": "网络安全告警智能分类助手",
+      "body": "基于LLM的网络安全告警自动分类与优先级排序工具。接收SOC日志，利用大模型分析告警严重性、误报概率和建议处置动作，输出结构化报告，减轻安全运营团队的告警疲劳问题。",
       "importance": 4,
       "score": 75,
-      "summary": "LLM驱动的告警分诊",
+      "summary": "LLM驱动的安全告警分类",
       "tech_stack": [
         "Python",
-        "LangChain",
-        "OpenAI API",
         "FastAPI",
-        "Streamlit"
+        "OpenAI API",
+        "Redis"
       ],
       "estimated_time": "1周"
     }
   ],
-  "generated_at": "2026-07-31T16:31:11.175536"
+  "generated_at": "2026-07-31T17:08:02.965071"
 }
