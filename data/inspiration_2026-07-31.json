@@ -144,32 +144,41 @@
   "is_major_event": true,
   "insights": [
     {
-      "type": "startup_advice",
-      "title": "中小企业AI网络安全工具",
-      "body": "微软发布MAI-Cyber验证企业级AI安全需求，但中小企业仍缺负担得起的方案。基于Kimi K3开源细节+Gemini多模态构建轻量化威胁检测与合规审计工具，瞄准SMB市场。NVIDIA GPU云计划降低算力门槛，早期市场冷清=低竞争入局窗口。",
+      "type": "industry_insight",
+      "title": "AI算力寡头化与主权AI并行崛起",
+      "body": "本周资本与算力双重集中：$5.55B法律AI、SSI×NVIDIA战略合作、NVIDIA连接初创与云商GPU，形成头部寡头化格局；同时印度Sarvam主权AI独角兽、中俄29国联盟抗衡西方Pax Silica，主权AI运动加速。技术端多模态(Gemini Omni Flash)与安全(MAI-Cyber)成新战场，早期融资反而沉寂，资源向头部与主权方倾斜。",
       "importance": 4,
-      "score": 78,
-      "summary": "瞄准SMB网络安全缺口",
+      "score": 82,
+      "summary": "算力寡头化与主权AI分庭抗礼"
+    },
+    {
+      "type": "startup_advice",
+      "title": "区域垂直AI：新兴市场蓝海",
+      "body": "法律AI赛道55.5亿美元估值验证了垂直AI在监管行业的价值，但玩家集中于欧美。中俄29国AI联盟与印度Sarvam独角兽化表明新兴市场正寻求主权化AI方案。建议在拉美、东南亚、中东构建法律合规或医疗垂直AI，借NVIDIA云GPU计划降低算力门槛，抢在早期市场回暖前卡位。本地化数据与合规know-how是核心护城河。",
+      "importance": 4,
+      "score": 80,
+      "summary": "新兴市场垂直AI蓝海",
       "actionable_steps": [
-        "调研中小企业网络安全痛点与年预算区间，锁定支付意愿高的细分行业",
-        "基于Kimi K3开源架构与Gemini多模态构建威胁检测+合规审计MVP",
-        "申请NVIDIA GPU云计划低成本获取算力，在3个垂直行业验证付费转化"
+        "选定一个新兴市场（拉美/东南亚/中东）及一个监管型垂直行业（法律/医疗/金融合规），做需求与合规调研",
+        "申请加入NVIDIA云GPU计划获取算力，组建本地数据与法律合规顾问团队",
+        "6个月内交付MVP验证本地监管场景，瞄准早期市场回暖窗口融资"
       ]
     },
     {
       "type": "side_project",
-      "title": "多模态会议纪要助手",
-      "body": "基于Gemini Omni Flash多模态能力，输入录音/截图/PPT/文本，自动生成结构化纪要与行动项，支持中英双语导出Markdown，适合独立开发者1周完成。",
+      "title": "多模态会议纪要生成器",
+      "body": "基于 Gemini Omni Flash 原生多模态能力，将会议音频、白板截图与文字笔记一并输入，自动生成结构化纪要、行动项与决策记录，支持 Whisper 离线预处理与多语言输出。",
       "importance": 4,
       "score": 78,
-      "summary": "一键多模态会议纪要生成器",
+      "summary": "音频视频一键生成会议纪要",
       "tech_stack": [
         "Gemini Omni Flash API",
-        "Python",
-        "Streamlit"
+        "OpenAI Whisper",
+        "FastAPI",
+        "SQLite"
       ],
-      "estimated_time": "1周"
+      "estimated_time": "1-2周"
     }
   ],
-  "generated_at": "2026-07-31T10:09:26.659396"
+  "generated_at": "2026-07-31T10:47:54.249548"
 }
