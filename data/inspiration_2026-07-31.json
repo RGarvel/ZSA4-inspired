@@ -132,52 +132,363 @@
       "is_major_event": false,
       "date": "2026-07-31",
       "keywords": []
+    },
+    {
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "summary": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of…",
+      "url": "http://arxiv.org/abs/2607.28607v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CL",
+        "cs.CL"
+      ]
+    },
+    {
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "summary": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex…",
+      "url": "http://arxiv.org/abs/2607.28595v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "summary": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning…",
+      "url": "http://arxiv.org/abs/2607.28545v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE",
+        "cs.CL"
+      ]
+    },
+    {
+      "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
+      "summary": "Large language model-based multi-agent systems improve complex problem solving through task decomposition, agent specialization,…",
+      "url": "http://arxiv.org/abs/2607.28527v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.AI",
+        "cs.AI"
+      ]
+    },
+    {
+      "title": "A Fuzzy Rule-based Neuro-Symbolic Approach for Pipe Severity Prediction in Sewer Networks",
+      "summary": "Standard automated sewer pipe severity assessment relies on direct image classification, creating a \"black box\" where the link between…",
+      "url": "http://arxiv.org/abs/2607.28481v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.AI",
+        "cs.AI"
+      ]
+    },
+    {
+      "title": "Would You Walk to the Car Wash? Revealing the Salience Bias of Large Language Models in Commonsense Reasoning",
+      "summary": "As large language models (LLMs) continue to advance in complex reasoning tasks, they have learned to heavily prioritize explicit…",
+      "url": "http://arxiv.org/abs/2607.28478v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CL",
+        "cs.CL"
+      ]
+    },
+    {
+      "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+      "summary": "Visual generation increasingly requires high-resolution images, long videos, and multimodal context, making the quadratic cost of full…",
+      "url": "http://arxiv.org/abs/2607.28611v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+      "summary": "Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a…",
+      "url": "http://arxiv.org/abs/2607.28590v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CV",
+        "cs.CL",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+      "summary": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop…",
+      "url": "http://arxiv.org/abs/2607.28580v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.AI",
+        "cs.AI"
+      ]
+    },
+    {
+      "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
+      "summary": "Medical image fusion aims to integrate complementary information from diverse imaging modalities to support clinical diagnosis. Existing…",
+      "url": "http://arxiv.org/abs/2607.28565v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Large scale cross-regional remote sensing flood monitoring framework for operative mapping and impact analysis",
+      "summary": "Effective flood monitoring is critical for minimizing the impacts of flood disasters on populations and infrastructure. Yet reliable…",
+      "url": "http://arxiv.org/abs/2607.28401v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "summary": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and…",
+      "url": "http://arxiv.org/abs/2607.28609v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.AI"
+      ]
+    },
+    {
+      "title": "Cybersecurity Detection Classification with Reasoning-enabled Language Models",
+      "summary": "A major issue in Security Operations Centers (SOCs) is alert fatigue, as the number of detections reported is more than staff can triage…",
+      "url": "http://arxiv.org/abs/2607.28460v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.LG",
+        "cs.CR",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
+      "summary": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while…",
+      "url": "http://arxiv.org/abs/2607.28457v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.AI",
+        "cs.CL",
+        "cs.AI"
+      ]
+    },
+    {
+      "title": "FinSMART: Financial Sentiment Analysis for Algorithmic Trading through Market-Aligned Reinforcement Learning",
+      "summary": "Recent advances in Generative AI have substantially improved financial sentiment analysis through post-trained financial large language…",
+      "url": "http://arxiv.org/abs/2607.28127v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CL",
+        "cs.LG",
+        "q-fin.ST",
+        "q-fin.TR",
+        "cs.CL"
+      ]
+    },
+    {
+      "title": "GVR-Coder: A Visual-Feedback Framework for Structured SVG Generation in Complex Document and Meeting Scenarios",
+      "summary": "In demanding professional environments and meeting review scenarios, lengthy text often imposes a high cognitive load. To facilitate…",
+      "url": "http://arxiv.org/abs/2607.28073v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.LG",
+        "cs.CV",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "TAPO: Transition-Aware Policy Optimization for LLM Agents",
+      "summary": "Recently, Reinforcement Learning (RL) has emerged as a crucial paradigm for the post-training of Large Language Model (LLM) agents.…",
+      "url": "http://arxiv.org/abs/2607.27973v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.LG",
+        "cs.AI",
+        "cs.LG"
+      ]
+    },
+    {
+      "title": "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation",
+      "summary": "In contact-rich manipulation, action multimodality and reactivity dominate different stages of a single episode. Before contact,…",
+      "url": "http://arxiv.org/abs/2607.28596v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.RO",
+        "cs.RO"
+      ]
+    },
+    {
+      "title": "ROAD: Reciprocal-Objective Alignment of Discriminative Semantics for 3D Shape Generation",
+      "summary": "High-fidelity 3D generation predominantly relies on scaling model capacity and data, which incurs prohibitive computational costs. This…",
+      "url": "http://arxiv.org/abs/2607.28581v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ]
+    },
+    {
+      "title": "Quantum Chaos and Diffusive Transport from Geometric Randomness",
+      "summary": "The physics of quantum chaos and diffusive transport is typically studied in settings with microscopic disorder or many-body…",
+      "url": "http://arxiv.org/abs/2607.28579v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cond-mat.stat-mech",
+        "cond-mat.dis-nn",
+        "cond-mat.mes-hall",
+        "quant-ph",
+        "cond-mat.stat-mech"
+      ]
+    },
+    {
+      "title": "X-NavDP: Generalizing Navigation Diffusion Policy to Novel Behavior and Embodiments with Group Q-score Reweighted Matching",
+      "summary": "Pretraining navigation diffusion policies rely on large-scale expert demonstrations. These data are typically generated by a…",
+      "url": "http://arxiv.org/abs/2607.28560v1",
+      "source": "arxiv",
+      "importance": 3,
+      "category": "academic",
+      "is_major_event": false,
+      "date": "2026-07-31",
+      "keywords": [
+        "cs.RO",
+        "cs.RO"
+      ]
     }
   ],
-  "total_new": 12,
+  "total_new": 33,
   "categories": {
     "ai_tech": 4,
     "startup": 4,
     "product_tool": 4,
-    "academic_paper": 0
+    "academic_paper": 0,
+    "academic": 21
   },
   "is_major_event": true,
   "insights": [
     {
       "type": "industry_insight",
-      "title": "算力主权与资本集中并行",
-      "body": "融资向晚期集中、主权AI崛起（印度Sarvam、中俄29国联盟）、NVIDIA开放算力通道三重趋势叠加。地缘割裂下算力基础设施成为战略博弈焦点，早期市场虽冷清，资金正加速涌向头部算力与主权模型玩家。",
-      "importance": 4,
-      "score": 85,
-      "summary": "算力主权成新焦点"
+      "title": "AI资本向算力主权与原生多模态集中",
+      "body": "本周巨额融资（55.5亿法律AI、4.5亿机器人、SSI联手NVIDIA）与主权AI崛起（Sarvam印度独角兽、中俄29国联盟）共振，NVIDIA推出GPU云对接计划破解算力瓶颈。资金正向基础设施主权与原生多模态模型（Gemini Omni Flash、Kimi K3）双线集中，区域化算力控制成为新竞争维度。",
+      "importance": 5,
+      "score": 88,
+      "summary": "资本涌向算力主权与多模态"
     },
     {
       "type": "startup_advice",
-      "title": "布局主权AI合规与安全",
-      "body": "SSI与NVIDIA合作、Sarvam AI成印度独角兽、中俄牵头29国AI联盟，主权AI已成全球共识。微软刚推出MAI-Cyber-1-Flash印证网络安全AI需求爆发。建议瞄准新兴市场企业，打造本地化AI合规审计+威胁检测一体化平台，填补主权AI生态的安全缺口。NVIDIA正开放GPU接入，算力门槛已大幅降低。",
+      "title": "垂直AI+GPU云代理赛道",
+      "body": "本周Legal AI估值55.5亿美元、微软推出MAI-Cyber网络安全模型，垂直AI正获超额融资；同时NVIDIA新计划让创业公司免购硬件即获千级GPU。建议聚焦受监管且未被巨头覆盖的垂直领域（如医疗合规、金融反洗钱、建筑工程审计），以SaaS+Agent形式切入，利用NVIDIA云计划降低算力门槛，抢占早期市场看似沉寂实则缺竞争者的窗口期。",
       "importance": 4,
-      "score": 82,
-      "summary": "主权AI+网络安全融合机会",
+      "score": 78,
+      "summary": "垂直AI+GPU按需云是窗口期",
       "actionable_steps": [
-        "调研东南亚/拉美/中东数据本地化法规，锁定合规刚需行业",
-        "基于开源多模态模型(如Kimi K3)构建轻量化威胁检测引擎，降低训练成本",
-        "接入NVIDIA GPU云计划获取算力，优先服务金融与政务客户做MVP验证"
+        "调研受监管行业（医疗/金融/工程）的合规痛点，锁定一个巨头未覆盖的垂直场景",
+        "申请加入NVIDIA GPU云计划，以按需算力替代自建集群，将初期基础设施成本压至最低",
+        "构建行业专属Agent+RAG管线，用小模型+领域知识蒸馏实现低成本差异化，3个月内出MVP验证付费意愿"
       ]
     },
     {
       "type": "side_project",
-      "title": "AI创业GPU云比价仪表盘",
-      "body": "基于NVIDIA连接初创企业与云厂商提供GPU的动态，抓取主流云（AWS、GCP、CoreWeave、Lambda）GPU实例价格与规格，构建静态HTML比价仪表盘，支持按显存/时薪/区域筛选排序，帮助独立开发者快速找到最经济的算力来源。",
+      "title": "GPU云算力比价看板",
+      "body": "聚合NVIDIA新倡议对接的云厂商GPU实例价格数据（CoreWeave/Lambda/RunPod等），构建静态比价看板：按卡型(H100/A100/L40S)、小时单价、区域、起租门槛筛选排序，localStorage缓存+每日抓取管道+Chart.js趋势图，供AI初创团队快速定位最省成本的GPU租用路径。",
       "importance": 3,
-      "score": 78,
-      "summary": "GPU云实例比价与筛选工具",
+      "score": 74,
+      "summary": "GPU租赁价格聚合比价看板",
       "tech_stack": [
-        "HTML+Bootstrap5",
+        "静态HTML+Bootstrap5",
         "Chart.js",
-        "Python数据抓取"
+        "Python抓取管道",
+        "GitHub Pages"
       ],
       "estimated_time": "1周"
     }
   ],
-  "generated_at": "2026-07-31T11:14:20.471879"
+  "generated_at": "2026-07-31T12:11:57.580261"
 }

@@ -188,7 +188,8 @@ def save_daily_insights(date_str: str, insights: list, records: list):
         "ai_tech": 0,
         "startup": 0,
         "product_tool": 0,
-        "academic_paper": 0
+        "academic_paper": 0,
+        "academic": 0
     }
     for record in records:
         cat = record.get("category", "unknown")

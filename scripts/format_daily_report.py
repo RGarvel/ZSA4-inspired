@@ -67,11 +67,23 @@ def format_report(date_str: str) -> str:
     # 重大事件（importance >= 4）
     major_events = [r for r in records if r.get("importance", 0) >= 4][:5]
 
-    # 分类统计
+    # 分类统计（兼容 academic 和 academic_paper 两种命名）
     ai_tech = categories.get("ai_tech", 0)
     startup = categories.get("startup", 0)
     product_tool = categories.get("product_tool", 0)
+    # 优先用 academic_paper，如果为 0 则回退到 academic
     academic_paper = categories.get("academic_paper", 0)
+    if not academic_paper:
+        academic_paper = categories.get("academic", 0)
+
+    # 如果 categories 为空，从 records 手动统计
+    if not categories:
+        for r in records:
+            cat = r.get("category", "unknown")
+            if cat == "ai_tech": ai_tech += 1
+            elif cat == "startup": startup += 1
+            elif cat == "product_tool": product_tool += 1
+            elif cat in ("academic", "academic_paper"): academic_paper += 1
 
     # 分组 insights
     industry = [i for i in insights if i.get("type") == "industry_insight"]

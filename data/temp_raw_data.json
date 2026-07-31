@@ -1,52 +1,319 @@
 {
-  "date": "2026-07-29",
-  "existing_count": 433,
-  "search_queries": [
-    "AI technology news today",
-    "startup funding venture capital today",
-    "new AI tools software launch today",
-    "arXiv AI machine learning papers"
-  ],
+  "date": "2026-07-31",
   "arxiv_papers": [
     {
-      "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
-      "summary": "On-policy distillation (OPD) grounds token-level supervision in the student's own trajectory, yet suffers from prefix failure: once the student commits to a wrong reasoning direction, all subsequent g",
-      "url": "https://arxiv.org/abs/2607.26057v1"
+      "title": "Inducing language models to assert their own consciousness restores human beliefs and values",
+      "url": "http://arxiv.org/abs/2607.28607v1",
+      "description": "Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of mindedness in other entities alongside human beliefs and values. We demonstrate that safety fine-tuning suppresses models' tendencies to attribute minds not only to themselves, but also to non-human animals and natural objects, while also driving a reduction in spiri",
+      "keywords": [
+        "cs.CL",
+        "cs.CL"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     },
     {
-      "title": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
-      "summary": "Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones. Such chunks run open-loop, so the policy cannot react to sensory input",
-      "url": "https://arxiv.org/abs/2607.26055v1"
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "url": "http://arxiv.org/abs/2607.28595v1",
+      "description": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet inefficient reasoning paradigm. In this work, we rethink agentic visual reasoning through two key dimensions of tool use: Mode Adaptiveness (MA) and Tool Effect (TE). Mode Adaptiveness characterizes ",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     },
     {
-      "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
-      "summary": "Mixture-of-Experts (MoE) variants of Low-Rank Adaptation (LoRA) route every token to a fixed number of experts $k$. Tokens differ in how uncertain the model is about them, so a single k over-spends on",
-      "url": "https://arxiv.org/abs/2607.26052v1"
+      "title": "ORCA-bench: How Ready Are Language Model Agents for Oncall?",
+      "url": "http://arxiv.org/abs/2607.28545v1",
+      "description": "Large language models can write, patch, and search code, but oncall root cause analysis (RCA) demands something different: reasoning over noisy metrics, logs, traces, and source code, starting from ambiguous user-facing reports, often hours after the incident began. We introduce ORCA-bench, a benchmark that puts general-purpose coding agents in a production-fidelity oncall setting. ORCA-bench pair",
+      "keywords": [
+        "cs.CL",
+        "cs.AI",
+        "cs.SE",
+        "cs.CL"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     },
     {
-      "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
-      "summary": "Enhancing classification performance in mammography remains a persistent challenge across both small curated datasets and large-scale clinical cohorts. Conventional transfer learning approaches often ",
-      "url": "https://arxiv.org/abs/2607.26043v1"
+      "title": "MANTA: Multi-Agent Network Topology Adaptation for Self-Evolving Multi-Agent Systems",
+      "url": "http://arxiv.org/abs/2607.28527v1",
+      "description": "Large language model-based multi-agent systems improve complex problem solving through task decomposition, agent specialization, information exchange, and intermediate validation. However, existing systems typically treat communication topology as a fixed design choice or an offline optimization target. We introduce MANTA, a framework for Multi-Agent Network Topology Adaptation that enables commun",
+      "keywords": [
+        "cs.AI",
+        "cs.AI"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     },
     {
-      "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
-      "summary": "We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an edge sensing device and sends captured images, together with opti",
-      "url": "https://arxiv.org/abs/2607.26042v1"
+      "title": "A Fuzzy Rule-based Neuro-Symbolic Approach for Pipe Severity Prediction in Sewer Networks",
+      "url": "http://arxiv.org/abs/2607.28481v1",
+      "description": "Standard automated sewer pipe severity assessment relies on direct image classification, creating a \"black box\" where the link between visual defects and final severity scores remains implicit. This study introduces a modular, fuzzy rule-based neuro-symbolic framework that bridges this gap by decoupling neural perception from symbolic reasoning. The perception module utilizes a Swin Transformer to",
+      "keywords": [
+        "cs.AI",
+        "cs.AI"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     },
     {
-      "title": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
-      "summary": "Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks. Current benchmarks primarily measure end-task success or single-frame grounding. Neither isolates wheth",
-      "url": "https://arxiv.org/abs/2607.26041v1"
+      "title": "Would You Walk to the Car Wash? Revealing the Salience Bias of Large Language Models in Commonsense Reasoning",
+      "url": "http://arxiv.org/abs/2607.28478v1",
+      "description": "As large language models (LLMs) continue to advance in complex reasoning tasks, they have learned to heavily prioritize explicit conditions provided in the input. However, in everyday commonsense reasoning, this mechanism exposes a critical vulnerability which we term Salience Bias: models become easily hijacked by useless explicit distractors (e.g., numerical values), leading them to ignore the i",
+      "keywords": [
+        "cs.CL",
+        "cs.CL"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     },
     {
-      "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
-      "summary": "Much like humans benefit from guidance while learning, reinforcement learning algorithms may benefit from additional supervision beyond rewards. Leveraging additional information during training to le",
-      "url": "https://arxiv.org/abs/2607.26040v1"
+      "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+      "url": "http://arxiv.org/abs/2607.28611v1",
+      "description": "Visual generation increasingly requires high-resolution images, long videos, and multimodal context, making the quadratic cost of full attention prohibitive. We introduce Chimera, a hybrid visual diffusion backbone with a principled scaling recipe. Chimera processes text, image, and video tokens in one raster-ordered stream without positional embeddings. It combines Kimi Delta Attention (KDA) for ",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     },
     {
-      "title": "Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment",
-      "summary": "Technological races create tension between speed and safety: actors may gain by moving faster than competitors, even when risky development is harmful. This is prominent in debates about artificial in",
-      "url": "https://arxiv.org/abs/2607.26034v1"
+      "title": "Beacon: Knowing When and How to Perform Agentic Visual Reasoning",
+      "url": "http://arxiv.org/abs/2607.28595v1",
+      "description": "The fundamental goal of agentic visual reasoning is to improve the success rate of multimodal large language models (MLLMs) on complex tasks, rather than merely equipping them with a sophisticated yet inefficient reasoning paradigm. In this work, we rethink agentic visual reasoning through two key dimensions of tool use: Mode Adaptiveness (MA) and Tool Effect (TE). Mode Adaptiveness characterizes ",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation",
+      "url": "http://arxiv.org/abs/2607.28590v1",
+      "description": "Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a privileged-view teacher. Yet its next-token corrections are source-mixed, combining visual signals with linguistic priors and teacher-specific effects. The key challenge is to estimate which corrections are supported by visual evidence, not merely where or how strong",
+      "keywords": [
+        "cs.CV",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "DualG-MRAG: Decoupling Macro-Reasoning and Micro-Matching for Multimodal Retrieval-Augmented Generation",
+      "url": "http://arxiv.org/abs/2607.28580v1",
+      "description": "While Multimodal Retrieval-Augmented Generation (MM-RAG) has shown promising results, it still struggles with complex multi-hop reasoning tasks. Existing methods primarily focus on independent instance-level matching, which often fails to capture explicit relationships across modalities and documents. Although Graph-enhanced methods introduce structural modeling, they face a fundamental challenge ",
+      "keywords": [
+        "cs.AI",
+        "cs.AI"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
+      "url": "http://arxiv.org/abs/2607.28565v1",
+      "description": "Medical image fusion aims to integrate complementary information from diverse imaging modalities to support clinical diagnosis. Existing methods typically apply uniform fusion rules globally, lacking a deep understanding of diagnostic intents and pathological structures. To address these limitations, we propose MIND, a Multimodal Intent-Driven Network via Diffusion Transformers (DiTs) for medical ",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "Large scale cross-regional remote sensing flood monitoring framework for operative mapping and impact analysis",
+      "url": "http://arxiv.org/abs/2607.28401v1",
+      "description": "Effective flood monitoring is critical for minimizing the impacts of flood disasters on populations and infrastructure. Yet reliable remote sensing across extensive and environmentally diverse regions remains challenging, as most segmentation algorithms lack the generalisation capacity required for large-scale application, while annotated flood data are scarce and unevenly distributed. This study ",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "url": "http://arxiv.org/abs/2607.28609v1",
+      "description": "Computer-using agents (CUAs) are advancing rapidly across the digital world. A CUA trajectory records the agent's actions, states, and reasoning. Verifying whether it fulfilled the task instruction is central to CUA evaluation, data curation, and reinforcement learning. Neither human-written verifiers nor human annotators can provide such verification at scale, so the field increasingly turns to v",
+      "keywords": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.AI"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "Cybersecurity Detection Classification with Reasoning-enabled Language Models",
+      "url": "http://arxiv.org/abs/2607.28460v1",
+      "description": "A major issue in Security Operations Centers (SOCs) is alert fatigue, as the number of detections reported is more than staff can triage in a given day. Prior work prompts or fine-tunes large language models (LLMs) to emit a triage label directly, but does not train them to reason about whether a detection is a genuine threat. We train a chain-of-thought (CoT) reasoning-enabled triage classifier o",
+      "keywords": [
+        "cs.LG",
+        "cs.CR",
+        "cs.LG"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "SVR: Self-Verifying Refinement via Joint Verdict-Confidence Reinforcement Learning for Adaptive Test-Time Compute",
+      "url": "http://arxiv.org/abs/2607.28457v1",
+      "description": "Scaling test-time computation can improve language-model reasoning, but uniform budgets waste computation on easy inputs, while verifier-guided refinement relies on external feedback. We introduce Self-Verifying Refinement (SVR), an oracle-free multi-turn reinforcement learning framework that learns to use self-verification as a compute-control policy. At each turn, the model produces a solution t",
+      "keywords": [
+        "cs.AI",
+        "cs.CL",
+        "cs.AI"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "FinSMART: Financial Sentiment Analysis for Algorithmic Trading through Market-Aligned Reinforcement Learning",
+      "url": "http://arxiv.org/abs/2607.28127v1",
+      "description": "Recent advances in Generative AI have substantially improved financial sentiment analysis through post-trained financial large language models (LLMs). However, existing approaches remain confined to a market-agnostic, supervised learning paradigm that relies on limited, static and human-annotated datasets, and thus are incapable of adapting to evolving market conditions. To address this limitation",
+      "keywords": [
+        "cs.CL",
+        "cs.LG",
+        "q-fin.ST",
+        "q-fin.TR",
+        "cs.CL"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "GVR-Coder: A Visual-Feedback Framework for Structured SVG Generation in Complex Document and Meeting Scenarios",
+      "url": "http://arxiv.org/abs/2607.28073v1",
+      "description": "In demanding professional environments and meeting review scenarios, lengthy text often imposes a high cognitive load. To facilitate efficient information communication, transforming verbose text into logically clear diagrams is essential. Scalable Vector Graphics (SVG) provide an effective representation for this purpose due to their editability and resolution independence. However, current resea",
+      "keywords": [
+        "cs.LG",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "TAPO: Transition-Aware Policy Optimization for LLM Agents",
+      "url": "http://arxiv.org/abs/2607.27973v1",
+      "description": "Recently, Reinforcement Learning (RL) has emerged as a crucial paradigm for the post-training of Large Language Model (LLM) agents. However, existing methods predominantly rely on sparse task rewards for policy optimization, failing to fully exploit another class of inherently dense supervisory signals naturally present during online interaction: environmental feedback following action execution. ",
+      "keywords": [
+        "cs.LG",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "Chimera: Designing and Chinchilla-Scaling Hybrid Visual Diffusion Transformers",
+      "url": "http://arxiv.org/abs/2607.28611v1",
+      "description": "Visual generation increasingly requires high-resolution images, long videos, and multimodal context, making the quadratic cost of full attention prohibitive. We introduce Chimera, a hybrid visual diffusion backbone with a principled scaling recipe. Chimera processes text, image, and video tokens in one raster-ordered stream without positional embeddings. It combines Kimi Delta Attention (KDA) for ",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation",
+      "url": "http://arxiv.org/abs/2607.28596v1",
+      "description": "In contact-rich manipulation, action multimodality and reactivity dominate different stages of a single episode. Before contact, multiple trajectories might be equally valid, making it important to preserve diverse action modes. After contact, geometric constraints and force limits narrow the solution space, while successful execution demands rapid responses to force feedback. However, standard di",
+      "keywords": [
+        "cs.RO",
+        "cs.RO"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "ROAD: Reciprocal-Objective Alignment of Discriminative Semantics for 3D Shape Generation",
+      "url": "http://arxiv.org/abs/2607.28581v1",
+      "description": "High-fidelity 3D generation predominantly relies on scaling model capacity and data, which incurs prohibitive computational costs. This paradigm typically requires learning geometry from scratch and overlooks the rich semantic and structural priors already encapsulated in discriminative 3D foundation models. We contend that leveraging the profound understanding of the 3D world possessed by these d",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "Quantum Chaos and Diffusive Transport from Geometric Randomness",
+      "url": "http://arxiv.org/abs/2607.28579v1",
+      "description": "The physics of quantum chaos and diffusive transport is typically studied in settings with microscopic disorder or many-body interactions. In this Letter, we demonstrate that these phenomena can arise purely from geometric randomness. By studying non-interacting quantum particles on random locally tree-like layered graphs with uniform couplings, we show that the geometric randomness and effective ",
+      "keywords": [
+        "cond-mat.stat-mech",
+        "cond-mat.dis-nn",
+        "cond-mat.mes-hall",
+        "quant-ph",
+        "cond-mat.stat-mech"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion",
+      "url": "http://arxiv.org/abs/2607.28565v1",
+      "description": "Medical image fusion aims to integrate complementary information from diverse imaging modalities to support clinical diagnosis. Existing methods typically apply uniform fusion rules globally, lacking a deep understanding of diagnostic intents and pathological structures. To address these limitations, we propose MIND, a Multimodal Intent-Driven Network via Diffusion Transformers (DiTs) for medical ",
+      "keywords": [
+        "cs.CV",
+        "cs.CV"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
+    },
+    {
+      "title": "X-NavDP: Generalizing Navigation Diffusion Policy to Novel Behavior and Embodiments with Group Q-score Reweighted Matching",
+      "url": "http://arxiv.org/abs/2607.28560v1",
+      "description": "Pretraining navigation diffusion policies rely on large-scale expert demonstrations. These data are typically generated by a fully-informed oracle planner suited to a single nominal robot. This limits the policy's generalization to diverse embodiments and challenging scenarios (e.g., escaping dead ends or detouring long obstacles) that demand diverse local reactive behaviors with only onboard loca",
+      "keywords": [
+        "cs.RO",
+        "cs.RO"
+      ],
+      "_source": "arxiv",
+      "_cat": "academic",
+      "_imp": 3
     }
-  ]
+  ],
+  "search_queries": [
+    "AI news July 2026 OpenAI Google Anthropic",
+    "AI startup funding July 2026",
+    "new AI product launch July 2026",
+    "AI research breakthrough July 2026",
+    "all:\"large language model\" AND (agent OR reasoning)",
+    "all:\"multimodal\" AND (vision OR model)",
+    "all:\"reinforcement learning\" AND (feedback OR human)",
+    "all:\"diffusion\" AND (video OR generation)"
+  ],
+  "search_results": []
 }
