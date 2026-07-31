@@ -1295,5 +1295,137 @@
       "wealth management",
       "fintech AI"
     ]
+  },
+  {
+    "title": "AI Mega-Funding Week July 2026: $5.55B Legal AI, $450M Robotics Debut",
+    "summary": "The week of 10 July 2026 delivered a burst of outsized AI rounds — from a $5.55B legal-AI valuation to a $450M robotics debut. The FeaturedDaily Desk·...",
+    "url": "https://featureddaily.com/news/ai-mega-funding-week-july-2026-fast-brief",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "Sarvam AI Hits Unicorn Status: $234M at $1.5B Valuation Led by HCLTech",
+    "summary": "India startup funding in July 2026 is accelerating. Sarvam AI, the Bengaluru-based sovereign AI platform, has reached unicorn status after closing $23...",
+    "url": "https://beststartup.in/india-startup-funding-july-2026/",
+    "source": "web",
+    "importance": 4,
+    "category": "startup",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "MILA Stories Raises $800K for Argentina Conversational AI Startup",
+    "summary": "Conversational AI platform for WhatsApp-based collaborative storytelling raises seed round. July 25, 2026.",
+    "url": "https://gentyrecruitment.io/news/mila-stories-raises-800k-argentina-ai-startup",
+    "source": "web",
+    "importance": 3,
+    "category": "startup",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "Ilya Sutskever's SSI Partners with NVIDIA to Scale AI Research",
+    "summary": "Safe Superintelligence Inc (SSI) partners with NVIDIA to advance compute platforms, leveraging SSI's unique insights into the future of AI. SSI also p...",
+    "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
+    "source": "web",
+    "importance": 5,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "Chinese Startup Moonshot Publicly Releases Kimi K3 AI Model Details",
+    "summary": "Chinese startup Moonshot publicly released the details of its latest AI model Kimi K3 on July 27, showing the world how it was built.",
+    "url": "https://www.nytimes.com/2026/07/27/business/moonshot-kimi-k3-china-ai.html",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "Google Launches Gemini Omni Flash: Natively Multimodal Model for Text, Image, Audio, Video",
+    "summary": "Google has officially launched Gemini Omni Flash — a groundbreaking, natively multimodal AI model capable of simultaneously processing text, images, a...",
+    "url": "https://delante.co/gemini-omni-flash/",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "Microsoft Introduces MAI-Cyber-1-Flash for Cybersecurity Inside MDASH",
+    "summary": "Mustafa Suleyman announces MAI-Cyber-1-Flash inside MDASH on July 27, 2026. Progress in AI has been startling and so has the new generation of cyber t...",
+    "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "Kimi K3: Moonshot AI's Latest Flagship Model Spanning Chat, Coding, Research, and Agents",
+    "summary": "Kimi AI is Moonshot AI's platform - a complete ecosystem of models, tools, and agents. The model family runs from K2 (July 2025) through the new K3 fl...",
+    "url": "https://kimik2ai.com/",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "OpenAI Introduces Presence: New Product Announced July 22, 2026",
+    "summary": "OpenAI introduces Presence, a new product announced on July 22, 2026 by David Vélez and Robin Vince.",
+    "url": "https://openai.com/",
+    "source": "web",
+    "importance": 4,
+    "category": "product_tool",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "China and Russia Launch 29-Nation AI Alliance to Rival Western Control",
+    "summary": "Beijing's pitch is a direct answer to Washington's 'Pax Silica' project, unveiled last year to build the global technology supply chain for AI.",
+    "url": "https://eraoflight.com/2026/07/30/china-and-russia-launch-29-nation-ai-alliance-to-rival-western-control-of-technology/",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "NVIDIA Launches Initiative Connecting AI Startups with Cloud Providers for GPU Access",
+    "summary": "Nvidia launched a new initiative connecting AI startups with cloud providers so they can access thousands of GPUs without purchasing the hardware dire...",
+    "url": "https://www.linkedin.com/pulse/ai-news-day-6-july-2026-simran-sran-bdruc",
+    "source": "web",
+    "importance": 4,
+    "category": "ai_tech",
+    "is_major_event": true,
+    "date": "2026-07-31",
+    "keywords": []
+  },
+  {
+    "title": "Startup Market Trends July 2026: Early-Stage Market Deceptively Quiet",
+    "summary": "July 2026 scan across 31,000+ companies shows an early-stage market that looks deceptively quiet. Public rounds skew later-stage and concentrated.",
+    "url": "https://earlyfinder.co/blog/startup-market-trends-july-2026-signals-before-funding-1784786523562",
+    "source": "web",
+    "importance": 3,
+    "category": "startup",
+    "is_major_event": false,
+    "date": "2026-07-31",
+    "keywords": []
   }
 ]
