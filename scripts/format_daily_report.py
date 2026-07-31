@@ -67,6 +67,9 @@ def format_report(date_str: str) -> str:
     # 重大事件（importance >= 4）
     major_events = [r for r in records if r.get("importance", 0) >= 4][:5]
 
+    # arXiv 论文推荐（source == "arxiv"）
+    arxiv_papers = [r for r in records if r.get("source", "").lower() == "arxiv"][:5]
+
     # 分类统计（兼容 academic 和 academic_paper 两种命名）
     ai_tech = categories.get("ai_tech", 0)
     startup = categories.get("startup", 0)
@@ -113,6 +116,15 @@ def format_report(date_str: str) -> str:
     if major_events:
         for i, e in enumerate(major_events, 1):
             lines.append(f"{i}. {e.get('title', '')} — {e.get('summary', '')[:80]}")
+    else:
+        lines.append("无")
+    lines.append("")
+
+    # arXiv 论文推荐
+    lines.append("【📄 论文推荐】")
+    if arxiv_papers:
+        for i, p in enumerate(arxiv_papers, 1):
+            lines.append(f"{i}. {p.get('title', '')} — {p.get('summary', '')[:80]}")
     else:
         lines.append("无")
     lines.append("")
