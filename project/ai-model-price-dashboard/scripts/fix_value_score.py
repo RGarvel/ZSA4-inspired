@@ -36,8 +36,14 @@ def calc_value_score_improved(model, task_type='chat'):
     if task_type == 'image':
         quality = float(model.get('score_image', 0) or 0)
         pg = model.get('image_generation_price')
-        price = float(pg) if pg and pg != '/' and float(pg) > 0 else 0
-        if price == 0:
+        # 优先用图像生成价格，无则回退到 output_price（多模态理解场景）
+        if pg and pg != '/' and float(pg) > 0:
+            price = float(pg)
+        elif op > 0:
+            price = op
+        elif ip > 0:
+            price = ip
+        else:
             return None
     elif task_type == 'coding':
         quality = float(model.get('score_coding', 0) or model.get('composite_score', 0) or 0)

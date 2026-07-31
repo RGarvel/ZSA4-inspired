@@ -33,7 +33,7 @@
       "value_score_chat": 36.7,
       "value_score_coding": 40.6,
       "value_score_reasoning": 41.0,
-      "value_score_image": 0,
+      "value_score_image": 56.3,
       "value_score": 38.9,
       "value_score_composite": 38.9
     },
@@ -67,7 +67,7 @@
       "value_score_chat": 36.9,
       "value_score_coding": 37.4,
       "value_score_reasoning": 37.5,
-      "value_score_image": 0,
+      "value_score_image": 57.1,
       "value_score": 36.9,
       "value_score_composite": 36.9
     },
@@ -101,7 +101,7 @@
       "value_score_chat": 39.1,
       "value_score_coding": 42.7,
       "value_score_reasoning": 47.1,
-      "value_score_image": 0,
+      "value_score_image": 58.2,
       "value_score": 42.0,
       "value_score_composite": 42.0
     },
@@ -135,7 +135,7 @@
       "value_score_chat": 42.5,
       "value_score_coding": 42.5,
       "value_score_reasoning": 40.7,
-      "value_score_image": 0,
+      "value_score_image": 62.4,
       "value_score": 41.6,
       "value_score_composite": 41.6
     },
@@ -169,7 +169,7 @@
       "value_score_chat": 40.4,
       "value_score_coding": 43.2,
       "value_score_reasoning": 43.0,
-      "value_score_image": 0,
+      "value_score_image": 60.0,
       "value_score": 42.0,
       "value_score_composite": 42.0
     },
@@ -203,7 +203,7 @@
       "value_score_chat": 47.3,
       "value_score_coding": 52.4,
       "value_score_reasoning": 50.8,
-      "value_score_image": 0,
+      "value_score_image": 64.9,
       "value_score": 49.6,
       "value_score_composite": 49.6
     },
@@ -235,7 +235,7 @@
       "value_score_chat": 52.5,
       "value_score_coding": 52.7,
       "value_score_reasoning": 50.8,
-      "value_score_image": 0,
+      "value_score_image": 70.4,
       "value_score": 51.9,
       "value_score_composite": 51.9
     },
@@ -269,7 +269,7 @@
       "value_score_chat": 100.0,
       "value_score_coding": 100.0,
       "value_score_reasoning": 100.0,
-      "value_score_image": 0,
+      "value_score_image": 100.0,
       "value_score": 100.0,
       "value_score_composite": 100.0
     },
@@ -303,7 +303,7 @@
       "value_score_chat": 39.2,
       "value_score_coding": 43.7,
       "value_score_reasoning": 42.2,
-      "value_score_image": 0,
+      "value_score_image": 58.7,
       "value_score": 41.2,
       "value_score_composite": 41.2
     },

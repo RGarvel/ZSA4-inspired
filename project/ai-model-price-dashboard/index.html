@@ -1021,8 +1021,16 @@
       
       if (taskType === 'image') {
         quality = model.score_image || 0;
-        outputPrice = (pg != null && pg !== '/' && Number(pg) > 0) ? Number(pg) : 0;
-        if (outputPrice === 0) return -1;
+        // 优先用图像生成价格，无则回退到 output_price（多模态理解场景）
+        if (pg != null && pg !== '/' && Number(pg) > 0) {
+          outputPrice = Number(pg);
+        } else if (op > 0) {
+          outputPrice = op;
+        } else if (ip > 0) {
+          outputPrice = ip;
+        } else {
+          return -1;
+        }
       } else if (taskType === 'coding') {
         quality = model.score_coding || model.score_chat || model.composite_score || 0;
         outputPrice = op > 0 ? op : (ip > 0 ? ip : 1);
