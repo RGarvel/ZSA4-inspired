@@ -455,39 +455,41 @@
   "insights": [
     {
       "type": "industry_insight",
-      "title": "AI主权与算力博弈升温",
-      "body": "本周呈现双重信号：资本高度集中于头部（55亿法律AI、Sarvam获独角兽），同时地缘算力博弈激化——中俄29国联盟对标美国Pax Silica，NVIDIA联手SSI并启动云GPU分发计划。主权AI崛起叠加算力民主化诉求，预示全球AI格局正从单极垄断走向多极竞合，区域模型与基础设施自主权成为新焦点。",
+      "title": "AI垂直专业化加速",
+      "body": "法律AI获$5.55B估值、网络安全推专用模型、机器人融$450M，垂直领域AI加速专业化。多模态原生处理与Agent自主执行成为基础能力，AI从通用工具向行业专用解决方案结构性转变。行业know-how取代模型规模成新壁垒，通用玩家需与垂直专家深度合作。",
       "importance": 4,
-      "score": 82,
-      "summary": "算力主权博弈重塑全球AI格局"
+      "score": 85,
+      "summary": "垂直专业化成新主线"
     },
     {
       "type": "startup_advice",
-      "title": "AI驱动的SOC告警智能分诊",
-      "body": "新闻显示推理型LLM与网络安全AI正爆发(Microsoft MAI-Cyber-1-Flash、学术论文直指SOC告警疲劳痛点)。大厂铺路、但中小SOC团队仍靠人工逐条triage。切入方向:用reasoning模型自动聚合+去重+根因关联告警,输出优先级与可执行修复建议。轻量MVP先接SIEM API,按减少MTTR计费。多模态告警(日志+流量+截图)正是Gemini Omni Flash等多模态模型打开的新能力边界,现在进可趁技术成熟窗口期卡位。",
+      "title": "AI值班根因分析Agent",
+      "body": "ORCA-bench与MAI-Cyber-1-Flash验证：LLM已能胜任oncall RCA，而SOC报警疲劳和DevOps值班倦怠是真实痛点。NVIDIA刚推出GPU接入计划，创业公司可免费获得数千GPU算力，入场成本骤降。建议构建垂直领域（金融/电商/SaaS）的值班Agent：接入日志、监控、告警，自动定位根因并给出处置建议。早期聚焦单一行业打穿，用benchmark分数做卖点，避开通用大模型正面竞争。",
       "importance": 4,
-      "score": 78,
-      "summary": "推理LLM破解SOC告警疲劳",
+      "score": 82,
+      "summary": "用LLM做值班根因分析",
       "actionable_steps": [
-        "调研中小SOC团队告警量与MTTR现状,锁定种子客户",
-        "MVP:接Splunk/Elastic API,用reasoning模型聚合去重+根因关联,输出优先级看板",
-        "按减少告警工时/缩短MTTR的效果计费,从1-2家种子客户验证后扩张"
+        "申请NVIDIA Startup GPU Access计划，获取免费算力",
+        "选取单一垂直行业（如SaaS）对接Datadog/PagerDuty API做MVP",
+        "在ORCA-bench类评测上跑出分数，作为B端销售核心卖点"
       ]
     },
     {
       "type": "side_project",
-      "title": "SOC告警智能分诊助手",
-      "body": "用推理型LLM对多源安全告警自动分类、去重与优先级排序，输出可执行分诊报告，缓解SOC告警疲劳。支持自定义规则与误报抑制，CLI一键运行。",
+      "title": "AI安全告警分诊助手",
+      "body": "基于LLM的SOC告警自动分诊工具，分析安全日志、识别误报、分类严重程度并建议修复方案，缓解安全团队告警疲劳问题。",
       "importance": 4,
-      "score": 78,
-      "summary": "LLM驱动的安全告警分诊",
+      "score": 75,
+      "summary": "LLM驱动的告警分诊",
       "tech_stack": [
         "Python",
-        "Reasoning LLM API",
-        "CLI"
+        "LangChain",
+        "OpenAI API",
+        "FastAPI",
+        "Streamlit"
       ],
       "estimated_time": "1周"
     }
   ],
-  "generated_at": "2026-07-31T12:45:17.697246"
+  "generated_at": "2026-07-31T16:31:11.175536"
 }
