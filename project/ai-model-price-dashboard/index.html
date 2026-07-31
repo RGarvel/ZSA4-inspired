@@ -958,7 +958,9 @@
 
       let candidates = getFilteredModels();
       if (taskType) {
-        candidates = candidates.filter(m => m.categories && m.categories.includes(taskType));
+        // 先筛选出该任务分数不为0的模型，再执行推荐逻辑
+        const qField = 'score_' + taskType;
+        candidates = candidates.filter(m => m.categories && m.categories.includes(taskType) && Number(m[qField]) > 0);
       }
       if (!candidates.length) { card.classList.remove('show'); return; }
 
