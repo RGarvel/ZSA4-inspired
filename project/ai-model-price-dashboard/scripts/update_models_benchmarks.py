@@ -68,6 +68,9 @@ BENCHMARK_MAP = {
     "claude-opus-4.6-thinking": {"swe_verified": 82.0}, # Thinking variant slightly higher
     "grok-4.3":               {"swe_verified": 58.6},   # SWE-bench Pro 58.6% (verified via Contra Collective)
     "step-3.5-flash":        {"swe_verified": 74.4},   # Step 3.5 Flash: SWE-bench Verified 74.4%
+    # --- 联网搜索填充 ---
+    "claude-opus-5":          {"swe_verified": 88.0},   # BenchLM #1 (85.88), SWE-bench Pro 79.2%, below Fable5(95)
+    "dall-e-3":               {"swe_verified": None},    # Image-only model, no coding benchmark
 }
 
 # Reasoning: FrontierCode / Cognition Diamond (proxy for reasoning+agentic coding)
@@ -107,6 +110,9 @@ REASONING_MAP = {
     "claude-opus-4.6-thinking": 88.0, # Thinking variant stronger reasoning
     "grok-4.3":           65.0,   # AI Index 53, Terminal-Bench 82.7 → mid-tier reasoning
     "step-3.5-flash":     84.0,   # Step 3.5 Flash frontier-level agentic reasoning
+    # --- 联网搜索填充 ---
+    "claude-opus-5":      93.0,   # BenchLM #1, IMO 42/42, below Fable5(100)
+    "dall-e-3":           30.0,   # Image-only model, minimal reasoning
 }
 KNOWLEDGE_MAP = {
     "claude-opus-4.8":    94.0,
@@ -148,6 +154,9 @@ KNOWLEDGE_MAP = {
     "claude-opus-4.6-thinking": 93.0,
     "grok-4.3":           72.0,   # Grok 4.3 mid-tier knowledge (below Grok 4.5)
     "step-3.5-flash":     84.0,   # Step 3.5 Flash mid-high knowledge
+    # --- 联网搜索填充 ---
+    "claude-opus-5":      94.0,   # BenchLM #1, top-tier knowledge
+    "dall-e-3":           35.0,   # Image-only, minimal knowledge
 }
 
 # Chat: Frontier + general capability indicator
@@ -189,6 +198,9 @@ CHAT_MAP = {
     "claude-opus-4.6-thinking": 91.0,
     "grok-4.3":           78.0,   # Grok 4.3 mid-tier chat (below Grok 4.5's 87)
     "step-3.5-flash":     82.0,   # Step 3.5 Flash capable chat
+    # --- 联网搜索填充 ---
+    "claude-opus-5":      92.0,   # Top-tier chat, below Fable5(96)
+    "dall-e-3":           30.0,   # Image-only, minimal chat
 }
 
 
