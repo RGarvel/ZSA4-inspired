@@ -455,40 +455,42 @@
   "insights": [
     {
       "type": "industry_insight",
-      "title": "Agentic AI产品化加速",
-      "body": "Agentic AI正从概念走向产品化，Kimi K3等模型原生集成Agent能力，垂直领域（法律、网安、机器人）获巨额融资。多模态融合成为Agent标配，Google Gemini Omni Flash等原生多模态模型涌现。预示AI从对话工具向自主行动系统演进，垂直Agent市场将快速膨胀。",
+      "title": "AI资本加速流向垂直与主权赛道",
+      "body": "本周超大额融资集中涌现（法律AI $5.55B、机器人 $450M、印度Sarvam独角兽），资本正从通用大模型转向垂直应用与主权AI基础设施。与此同时，基础模型竞争焦点已明确转向原生多模态+智能体化（Gemini Omni Flash、Kimi K3），叠加中俄29国AI联盟与NVIDIA算力对接计划，行业呈现\"上层能力多模态化、下层落地垂直化、地缘格局阵营化\"三条主线并行演进。",
       "importance": 4,
-      "score": 85,
-      "summary": "AI Agent生态快速成型"
+      "score": 83,
+      "summary": "垂直化+主权化+多模态三线并进"
     },
     {
       "type": "startup_advice",
-      "title": "网络安全AI自动化平台",
-      "body": "安全运营中心面临警报疲劳，人工处理效率低。Microsoft刚推出MAI-Cyber验证市场需求，学术研究表明LLM适合根因分析。建议构建专注SOC自动化的AI Agent平台，整合多模态分析能力，自动分类、调查、响应安全事件。目标客户：中小企业IT团队、MSSP提供商。商业模式：SaaS订阅+事件响应增值服务。",
+      "title": "网络安全AI Agent创业",
+      "body": "聚焦SOC自动化，用多Agent系统解决告警疲劳。Microsoft刚发布网络安全专用模型验证市场，学术研究显示Agent能力快速提升。早期市场融资集中，现在切入可建立垂直壁垒。利用NVIDIA GPU计划降低计算成本，专注中小企业安全运营。",
       "importance": 4,
-      "score": 80,
-      "summary": "AI安全运营自动化",
+      "score": 82,
+      "summary": "网络安全Agent创业时机",
       "actionable_steps": [
-        "研究SOC工作流程，与5-10家企业访谈验证痛点",
-        "基于开源LLM构建MVP，专注告警分类和根因分析",
-        "接入SIEM工具（Splunk/Elastic），提供30天免费试用"
+        "调研SOC分析师痛点，定义自动化场景",
+        "基于开源多Agent框架构建MVP原型",
+        "申请NVIDIA GPU启动计划获取算力支持"
       ]
     },
     {
       "type": "side_project",
-      "title": "网络安全告警智能分类助手",
-      "body": "基于LLM的网络安全告警自动分类与优先级排序工具。接收SOC日志，利用大模型分析告警严重性、误报概率和建议处置动作，输出结构化报告，减轻安全运营团队的告警疲劳问题。",
+      "title": "AI安全告警智能分诊助手",
+      "body": "基于LLM构建安全运营中心告警自动分诊工具，接收SIEM告警日志，自动分析上下文、判断严重程度、关联历史事件并生成处置建议，缓解SOC团队告警疲劳问题。",
       "importance": 4,
-      "score": 75,
-      "summary": "LLM驱动的安全告警分类",
+      "score": 78,
+      "summary": "LLM驱动的安全告警自动分诊",
       "tech_stack": [
         "Python",
         "FastAPI",
+        "LangChain",
         "OpenAI API",
-        "Redis"
+        "SQLite",
+        "React"
       ],
-      "estimated_time": "1周"
+      "estimated_time": "2周"
     }
   ],
-  "generated_at": "2026-07-31T17:08:02.965071"
+  "generated_at": "2026-07-31T17:12:16.020845"
 }
