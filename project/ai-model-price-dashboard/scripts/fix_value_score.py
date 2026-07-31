@@ -45,6 +45,10 @@ def calc_value_score_improved(model, task_type='chat'):
     elif task_type == 'reasoning':
         quality = float(model.get('score_reasoning', 0) or model.get('composite_score', 0) or 0)
         price = op if op > 0 else (ip if ip > 0 else 0)
+    elif task_type == 'composite':
+        # composite：用 composite_score 计算，与默认质量列一致
+        quality = float(model.get('composite_score', 0) or 0)
+        price = op if op > 0 else (ip if ip > 0 else 0)
     else:  # chat
         quality = float(model.get('score_chat', 0) or model.get('composite_score', 0) or 0)
         price = op if op > 0 else (ip if ip > 0 else 0)
@@ -86,13 +90,13 @@ def update_models_json():
     for model in models:
         mid = model['model_id']
         raw_scores[mid] = {}
-        for task in ['chat', 'coding', 'reasoning', 'image']:
+        for task in ['chat', 'coding', 'reasoning', 'image', 'composite']:
             raw = calc_value_score_improved(model, task)
             raw_scores[mid][task] = raw
     
     # Step 2: 每个任务类型找最大值
     task_max = {}
-    for task in ['chat', 'coding', 'reasoning', 'image']:
+    for task in ['chat', 'coding', 'reasoning', 'image', 'composite']:
         vals = [raw_scores[mid][task] for mid in raw_scores if raw_scores[mid][task] is not None and raw_scores[mid][task] > 0]
         task_max[task] = max(vals) if vals else 1
         print(f"  {task} 最大值: {task_max[task]:.1f}")
@@ -100,7 +104,7 @@ def update_models_json():
     # Step 3: Softmax压缩，减少差距
     # 先收集所有正数原始分数
     task_scores = {}
-    for task in ['chat', 'coding', 'reasoning', 'image']:
+    for task in ['chat', 'coding', 'reasoning', 'image', 'composite']:
         task_scores[task] = [(mid, raw_scores[mid][task]) for mid in raw_scores
                              if raw_scores[mid][task] is not None and raw_scores[mid][task] > 0]
     
@@ -111,7 +115,7 @@ def update_models_json():
     
     for model in models:
         mid = model['model_id']
-        for task in ['chat', 'coding', 'reasoning', 'image']:
+        for task in ['chat', 'coding', 'reasoning', 'image', 'composite']:
             raw = raw_scores[mid][task]
             if raw is None or raw <= 0:
                 score = 0
@@ -125,8 +129,8 @@ def update_models_json():
                 score = round((softmax_val / max_softmax) * 100, 1)
             model[f'value_score_{task}'] = score
         
-        # value_score = chat 类型得分（默认）
-        model['value_score'] = model['value_score_chat']
+        # value_score = composite 类型得分（默认，与默认质量列一致）
+        model['value_score'] = model['value_score_composite']
     
     # 保存
     from datetime import date
@@ -143,7 +147,7 @@ def update_models_json():
         quality = m.get('composite_score')
         quality_str = str(quality) if quality is not None else 'N/A'
         price = m['output_price_per_1m']
-        value = m.get('value_score_chat')
+        value = m.get('value_score')  # 默认用 composite 性价比
         value_str = f"{value:.1f}" if value is not None else 'N/A'
         is_free = '✓' if price == 0 else ''
         print(f"{name:<25} {quality_str:>5} ${price:>6.2f} {value_str:>7} {is_free:>5}")

@@ -34,7 +34,8 @@
       "value_score_coding": 40.6,
       "value_score_reasoning": 41.0,
       "value_score_image": 0,
-      "value_score": 36.7
+      "value_score": 38.9,
+      "value_score_composite": 38.9
     },
     {
       "model_id": "gpt-5.6-sol",
@@ -67,7 +68,8 @@
       "value_score_coding": 37.4,
       "value_score_reasoning": 37.5,
       "value_score_image": 0,
-      "value_score": 36.9
+      "value_score": 36.9,
+      "value_score_composite": 36.9
     },
     {
       "model_id": "kimi-k3",
@@ -100,7 +102,8 @@
       "value_score_coding": 42.7,
       "value_score_reasoning": 47.1,
       "value_score_image": 0,
-      "value_score": 39.1
+      "value_score": 42.0,
+      "value_score_composite": 42.0
     },
     {
       "model_id": "gemini-3.1-pro",
@@ -133,7 +136,8 @@
       "value_score_coding": 42.5,
       "value_score_reasoning": 40.7,
       "value_score_image": 0,
-      "value_score": 42.5
+      "value_score": 41.6,
+      "value_score_composite": 41.6
     },
     {
       "model_id": "claude-sonnet-5",
@@ -166,7 +170,8 @@
       "value_score_coding": 43.2,
       "value_score_reasoning": 43.0,
       "value_score_image": 0,
-      "value_score": 40.4
+      "value_score": 42.0,
+      "value_score_composite": 42.0
     },
     {
       "model_id": "grok-4.5",
@@ -199,7 +204,8 @@
       "value_score_coding": 52.4,
       "value_score_reasoning": 50.8,
       "value_score_image": 0,
-      "value_score": 47.3
+      "value_score": 49.6,
+      "value_score_composite": 49.6
     },
     {
       "model_id": "qwen3.7-max",
@@ -230,7 +236,8 @@
       "value_score_coding": 52.7,
       "value_score_reasoning": 50.8,
       "value_score_image": 0,
-      "value_score": 52.5
+      "value_score": 51.9,
+      "value_score_composite": 51.9
     },
     {
       "model_id": "deepseek-v4-pro",
@@ -263,7 +270,8 @@
       "value_score_coding": 100.0,
       "value_score_reasoning": 100.0,
       "value_score_image": 0,
-      "value_score": 100.0
+      "value_score": 100.0,
+      "value_score_composite": 100.0
     },
     {
       "model_id": "gemini-3.5-flash",
@@ -296,7 +304,8 @@
       "value_score_coding": 43.7,
       "value_score_reasoning": 42.2,
       "value_score_image": 0,
-      "value_score": 39.2
+      "value_score": 41.2,
+      "value_score_composite": 41.2
     },
     {
       "model_id": "claude-opus-5",
@@ -319,7 +328,8 @@
       "value_score_coding": 44.4,
       "value_score_reasoning": 42.9,
       "value_score_image": 0,
-      "value_score": 39.8
+      "value_score": 41.8,
+      "value_score_composite": 41.8
     },
     {
       "model_id": "amazon-nova-micro",
@@ -352,7 +362,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "claude-opus-4.6",
@@ -385,7 +396,8 @@
       "value_score_reasoning": 0,
       "value_score_image": 0,
       "value_score": 0,
-      "updated_at": "2026-07-29"
+      "updated_at": "2026-07-29",
+      "value_score_composite": 0
     },
     {
       "model_id": "claude-opus-4.6-thinking",
@@ -418,7 +430,8 @@
       "value_score_reasoning": 0,
       "value_score_image": 0,
       "value_score": 0,
-      "updated_at": "2026-07-29"
+      "updated_at": "2026-07-29",
+      "value_score_composite": 0
     },
     {
       "model_id": "cohere-command-r-plus",
@@ -451,7 +464,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "dall-e-3",
@@ -481,7 +495,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "deepseek-v4-flash",
@@ -514,7 +529,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "doubao-seed-2.1-pro",
@@ -547,7 +563,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "flux-2-pro",
@@ -577,7 +594,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "gemini-2.5-flash-lite",
@@ -610,7 +628,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "gemini-3-flash",
@@ -643,7 +662,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "gemini-3.6-flash",
@@ -676,7 +696,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "glm-5.2",
@@ -709,7 +730,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "gpt-5.4-mini",
@@ -742,7 +764,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "gpt-5.6-luna",
@@ -772,7 +795,8 @@
       "value_score_coding": 39.4,
       "value_score_reasoning": 38.0,
       "value_score_image": 0,
-      "value_score": 35.3
+      "value_score": 37.1,
+      "value_score_composite": 37.1
     },
     {
       "model_id": "gpt-5.6-terra",
@@ -805,7 +829,8 @@
       "value_score_coding": 38.7,
       "value_score_reasoning": 37.3,
       "value_score_image": 0,
-      "value_score": 34.6
+      "value_score": 36.4,
+      "value_score_composite": 36.4
     },
     {
       "model_id": "gpt-image-1.5",
@@ -835,7 +860,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "grok-4.3",
@@ -866,7 +892,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "imagen-4-ultra",
@@ -896,7 +923,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "kimi-k2.6",
@@ -929,7 +957,8 @@
       "value_score_coding": 51.0,
       "value_score_reasoning": 49.2,
       "value_score_image": 0,
-      "value_score": 45.7
+      "value_score": 48.0,
+      "value_score_composite": 48.0
     },
     {
       "model_id": "llama-4-maverick",
@@ -962,7 +991,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "llama-4-scout",
@@ -995,7 +1025,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "mistral-large-3",
@@ -1028,7 +1059,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "qwen-max",
@@ -1061,7 +1093,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "step-3.5-flash",
@@ -1094,7 +1127,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     },
     {
       "model_id": "yi-lightning",
@@ -1127,7 +1161,8 @@
       "value_score_coding": 0,
       "value_score_reasoning": 0,
       "value_score_image": 0,
-      "value_score": 0
+      "value_score": 0,
+      "value_score_composite": 0
     }
   ]
 }
