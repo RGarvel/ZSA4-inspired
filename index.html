@@ -649,7 +649,7 @@
         <span class="category-tab" data-category="product_tool" onclick="filterByCategory('product_tool')">
           <i class="bi bi-tools"></i> 产品工具 (<span class="cat-count">0</span>)
         </span>
-        <span class="category-tab" data-category="academic_paper" onclick="filterByCategory('academic_paper')">
+        <span class="category-tab" data-category="academic" onclick="filterByCategory('academic')">
           <i class="bi bi-journal-text"></i> 学术论文 (<span class="cat-count">0</span>)
         </span>
         <span class="category-tab" data-category="inspiration" onclick="filterByCategory('inspiration')" id="inspirationTab">
@@ -767,7 +767,7 @@
     // ── Single-pass filter + stats + group ─────────────────
     // Combines filtering, stats calculation, and grouping into ONE array pass
     function computeFiltered() {
-      const cats = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0, inspiration: 0 };
+      const cats = { ai_tech: 0, startup: 0, product_tool: 0, academic_paper: 0, academic: 0, inspiration: 0 };
       const grouped = {};
       let totalCount = 0, majorCount = 0, importanceSum = 0;
       
@@ -846,10 +846,10 @@
       const parts = [];
       const MAX_SHOW = 3;
       
-      const iconMap = { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic_paper: 'journal-text' };
-      const labelMap = { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic_paper: '学术论文' };
+      const iconMap = { ai_tech: 'cpu', startup: 'rocket-takeoff', product_tool: 'tool', academic: 'journal-text' };
+      const labelMap = { ai_tech: 'AI 技术', startup: '创业动态', product_tool: '产品工具', academic: '学术论文' };
       
-      const categoryOrder = ['ai_tech', 'startup', 'product_tool', 'academic_paper', 'inspiration'];
+      const categoryOrder = ['ai_tech', 'startup', 'product_tool', 'academic', 'inspiration'];
       
       for (const cat of categoryOrder) {
         const items = grouped[cat];
