@@ -1,11 +1,11 @@
 📊 **AI模型价格日报**
 
 【💰 性价比 Top 5】
-1. DeepSeek V4 Pro — $0.87/M tokens | 质量83 | 性价比100.0
-2. Qwen 3.7 Max — $3.6/M tokens | 质量81 | 性价比52.5
-3. Grok 4.5 — $6.0/M tokens | 质量87 | 性价比47.3
-4. Kimi K2.6 — $3.41/M tokens | 质量75 | 性价比45.7
-5. Gemini 3.1 Pro — $12.0/M tokens | 质量84 | 性价比42.5
+1. Step 3.5 Flash — $0.3/M tokens | 质量80 | 性价比100.0
+2. DeepSeek V4 Flash — $0.28/M tokens | 质量59 | 性价比98.5
+3. Gemini 3 Flash — $0.4/M tokens | 质量65 | 性价比85.5
+4. DeepSeek V4 Pro — $0.87/M tokens | 质量83 | 性价比76.9
+5. Yi Lightning — $0.3/M tokens | 质量51 | 性价比63.3
 
 【📈 今日变化】
 • 新增模型：1 个

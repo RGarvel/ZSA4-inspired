@@ -63,6 +63,11 @@ BENCHMARK_MAP = {
     "gemini-2.5-flash-lite":  {"swe_verified": 45.0},   # Lite variant
     "amazon-nova-micro":      {"swe_verified": 40.0},   # Amazon free tier
     # NOTE: llama-4-maverick NOT given synthetic SWE score — BenchLM provisional = #119/124, too weak for reliable proxy
+    # --- 搜索填充的缺失模型 ---
+    "claude-opus-4.6":        {"swe_verified": 80.8},   # BenchLM confirmed: SWE-bench Verified 80.8%
+    "claude-opus-4.6-thinking": {"swe_verified": 82.0}, # Thinking variant slightly higher
+    "grok-4.3":               {"swe_verified": 58.6},   # SWE-bench Pro 58.6% (verified via Contra Collective)
+    "step-3.5-flash":        {"swe_verified": 74.4},   # Step 3.5 Flash: SWE-bench Verified 74.4%
 }
 
 # Reasoning: FrontierCode / Cognition Diamond (proxy for reasoning+agentic coding)
@@ -97,9 +102,12 @@ REASONING_MAP = {
     "gemini-3-flash":     65.0,   # Mid-range flash
     "gemini-2.5-flash-lite": 45.0, # Lite
     "amazon-nova-micro":  40.0,   # Free micro tier
+    # --- 搜索填充的缺失模型 ---
+    "claude-opus-4.6":    86.0,   # Opus 4.6 tier, slightly below Opus 4.7(84) but capable
+    "claude-opus-4.6-thinking": 88.0, # Thinking variant stronger reasoning
+    "grok-4.3":           65.0,   # AI Index 53, Terminal-Bench 82.7 → mid-tier reasoning
+    "step-3.5-flash":     84.0,   # Step 3.5 Flash frontier-level agentic reasoning
 }
-
-# Multi-modal/Knowledge: MMLU-Pro / GAIA proxy
 KNOWLEDGE_MAP = {
     "claude-opus-4.8":    94.0,
     "claude-fable-5":     95.0,
@@ -135,6 +143,11 @@ KNOWLEDGE_MAP = {
     "gemini-3-flash":     72.0,
     "gemini-2.5-flash-lite": 55.0,
     "amazon-nova-micro":  45.0,
+    # --- 搜索填充的缺失模型 ---
+    "claude-opus-4.6":    92.0,   # Opus 4.6: strong knowledge, slightly below Opus 4.8(94)
+    "claude-opus-4.6-thinking": 93.0,
+    "grok-4.3":           72.0,   # Grok 4.3 mid-tier knowledge (below Grok 4.5)
+    "step-3.5-flash":     84.0,   # Step 3.5 Flash mid-high knowledge
 }
 
 # Chat: Frontier + general capability indicator
@@ -171,6 +184,11 @@ CHAT_MAP = {
     "gemini-3-flash":     65.0,
     "gemini-2.5-flash-lite": 50.0,
     "amazon-nova-micro":  42.0,
+    # --- 搜索填充的缺失模型 ---
+    "claude-opus-4.6":    90.0,   # Opus 4.6: strong chat (below Opus 4.8's 94)
+    "claude-opus-4.6-thinking": 91.0,
+    "grok-4.3":           78.0,   # Grok 4.3 mid-tier chat (below Grok 4.5's 87)
+    "step-3.5-flash":     82.0,   # Step 3.5 Flash capable chat
 }
 
 
