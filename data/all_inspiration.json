@@ -1,1300 +1,662 @@
 [
   {
-    "title": "RepoReasoner: Evaluating Repository-Level Code Reasoning Ability of Long-Context Language Models",
-    "summary": "Recent large language models (LLMs) have shown strong performance on software engineering tasks, yet most existing benchmarks evaluate…",
-    "url": "http://arxiv.org/abs/2607.25996v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.SE",
-      "cs.SE"
-    ]
-  },
-  {
-    "title": "Beyond Zooming: Learning Multi-Tool Visual Reasoning for Ultra-High-Resolution Remote Sensing",
-    "summary": "Ultra-high-resolution (UHR) remote-sensing (RS) imagery provides fine-grained Earth-observation evidence over city-scale scenes, but…",
-    "url": "http://arxiv.org/abs/2607.25993v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CV",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "Knowledge-Guided Multimodal Reasoning over Interacting Streams for Video-Level Ambivalence and Hesitancy Recognition",
-    "summary": "Ambivalence and hesitancy (A/H) are conflicting affective states that precede the delay or abandonment of health behaviour change.…",
-    "url": "http://arxiv.org/abs/2607.25961v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CV",
-      "cs.AI",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "A Cost-Effective Multimodal LLM Reasoning Framework for Question Answering over Irregular Clinical Time Series",
-    "summary": "Question answering (QA) over irregular clinical time series (ICTS) plays a pivotal role in a wide range of healthcare applications.…",
-    "url": "http://arxiv.org/abs/2607.25947v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.AI",
-      "cs.CL",
-      "cs.AI"
-    ]
-  },
-  {
-    "title": "Evaluating Multi-Turn Multimodal Diagnostic Reasoning on Challenging Real-World Clinical Cases",
-    "summary": "Clinical diagnostic evaluation should not only assess whether models can provide correct diagnoses, but also reflect the realities of…",
-    "url": "http://arxiv.org/abs/2607.25933v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CL",
-      "cs.AI",
-      "cs.CL"
-    ]
-  },
-  {
-    "title": "Runtime Uncertainty Monitoring for LLM-Based Multi-Agent Systems Using Bayesian Networks",
-    "summary": "This paper investigates how multi-agent systems (MAS)-based on large language models (LLMs) can support actuarial risk modelling, with a…",
-    "url": "http://arxiv.org/abs/2607.25877v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.AI",
-      "cs.AI"
-    ]
-  },
-  {
-    "title": "S2A2: Audio-Visual Imitation Learning for Manipulation Tasks Using Acoustic Spatial Information",
-    "summary": "Acoustic information provides rich cues about object location, material properties, and changes caused by contact or motion. This paper…",
-    "url": "http://arxiv.org/abs/2607.26047v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.RO",
-      "cs.RO"
-    ]
-  },
-  {
-    "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
-    "summary": "We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening. VetClaw uses a camera module as an…",
-    "url": "http://arxiv.org/abs/2607.26042v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CV",
-      "cs.LG",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer",
-    "summary": "Graph foundation models (GFMs) have emerged as a promising paradigm for transferring knowledge across graph domains and tasks.…",
-    "url": "http://arxiv.org/abs/2607.26023v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.AI",
-      "cs.AI"
-    ]
-  },
-  {
-    "title": "LaP-Forensics: Latent-Pixel Consistency Guided Multimodal Reasoning for Deepfake Detection",
-    "summary": "Recent generative models can produce images with few obvious visual artifacts, weakening detectors and explanations that rely only on…",
-    "url": "http://arxiv.org/abs/2607.25962v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CV",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
-    "summary": "Much like humans benefit from guidance while learning, reinforcement learning algorithms may benefit from additional supervision beyond…",
-    "url": "http://arxiv.org/abs/2607.26040v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.LG",
-      "stat.ML",
-      "cs.LG"
-    ]
-  },
-  {
-    "title": "Reinforcement Learning for Code Optimization",
-    "summary": "RL for code correctness is now established: have the model generate a program, run it against hidden test cases, and reward solutions…",
-    "url": "http://arxiv.org/abs/2607.25970v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.LG",
-      "cs.AI",
-      "cs.LG"
-    ]
-  },
-  {
-    "title": "RecoReward: Recommender-Guided Multimodal Description Generation for Recommendation",
-    "summary": "Multimodal large language models (MLLMs) can convert multimodal item content into structured descriptions used as semantic features for…",
-    "url": "http://arxiv.org/abs/2607.25901v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.IR",
-      "cs.IR"
-    ]
-  },
-  {
-    "title": "WarmTuner: Program-Specific Warm Starts for Compiler Autotuning via Offline-to-Online Reinforcement Learning",
-    "summary": "Compilers are fundamental software tools that translate high-level programs into machine code. Modern compilers expose hundreds of…",
-    "url": "http://arxiv.org/abs/2607.25831v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.SE",
-      "cs.SE"
-    ]
-  },
-  {
-    "title": "System-Aware Adaptive CSI Feedback via RL-Guided Autoencoder Switching in Multi-User MIMO System",
-    "summary": "This paper proposes a system-aware adaptive channel state information (CSI) feedback framework for massive multiple-input…",
-    "url": "http://arxiv.org/abs/2607.25588v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.IT",
-      "eess.SY",
-      "cs.IT"
-    ]
-  },
-  {
-    "title": "A Control System, a Dataset, and a Recipe for Making Frozen LLM Agents Learn a Domain",
-    "summary": "Production LLM agents are increasingly assembled from a frozen model wrapped in a harness: a prompt template, a tool set, a…",
-    "url": "http://arxiv.org/abs/2607.25415v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.AI",
-      "cs.AI"
-    ]
-  },
-  {
-    "title": "Parallel Decoding Distillation for Fast Image and Video Generation",
-    "summary": "Generation in video diffusion or flow models is computationally expensive due to the slow and iterative sampling process. Current…",
-    "url": "http://arxiv.org/abs/2607.26004v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CV",
-      "cs.LG",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities",
-    "summary": "Any-to-any models predict any modality from any combination of others within a single network, a formulation used in multimodal vision…",
-    "url": "http://arxiv.org/abs/2607.25948v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CV",
-      "cs.AI",
-      "cs.LG",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "Interacting hydrodynamic modes in spinless fermions with dephasing noise",
-    "summary": "We study the non-equilibrium dynamics of spinless fermions with dephasing noise in the framework of a many-particle Lindblad equation.…",
-    "url": "http://arxiv.org/abs/2607.25938v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cond-mat.stat-mech",
-      "quant-ph",
-      "cond-mat.stat-mech"
-    ]
-  },
-  {
-    "title": "Non-monotonic diffusion from nonequilibrium driving",
-    "summary": "The stochastic dynamics of interacting particles far from equilibrium remains a fundamental challenge in statistical physics. While…",
-    "url": "http://arxiv.org/abs/2607.25902v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cond-mat.stat-mech",
-      "cond-mat.stat-mech"
-    ]
-  },
-  {
-    "title": "TIGA: Trajectory-Injected Generative Attack against Black-box AIGC Detectors",
-    "summary": "Recent diffusion models have achieved remarkable realism in facial image synthesis, posing growing challenges to artificial…",
-    "url": "http://arxiv.org/abs/2607.25894v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-29",
-    "keywords": [
-      "cs.CV",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "OmegaUse-OfficeVal: Benchmarking LLM Agents on Long-Horizon Office-Suite Tasks with Economic Grounding",
-    "summary": "Large language model (LLM) agents are increasingly expected to assist users in completing tasks. However, existing benchmarks provide…",
-    "url": "http://arxiv.org/abs/2607.27155v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.AI",
-      "cs.CL",
-      "cs.HC",
-      "cs.AI"
-    ]
-  },
-  {
-    "title": "Explainable and Resource-Efficient Spatial Reasoning in Multimodal LLMs for Decision-Critical Applications",
-    "summary": "As Multimodal Large Language Models (MLLMs) are increasingly deployed in decision-critical pipelines such as robotics, embodied AI, and…",
-    "url": "http://arxiv.org/abs/2607.27145v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CV",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "AgentMap: Joint Equivalence and Subsumption Discovery for Ontology Matching",
-    "summary": "Ontology matching (OM) has traditionally been formulated as either equivalence discovery or subsumption matching. The existing OM…",
-    "url": "http://arxiv.org/abs/2607.27130v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.AI",
-      "cs.AI"
-    ]
-  },
-  {
-    "title": "Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced AIGI Detection",
-    "summary": "The growing capability of image generation models has made synthetic images a routine presence in open media, making robust and…",
-    "url": "http://arxiv.org/abs/2607.27113v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CV",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Penetration Agents",
-    "summary": "Large language model (LLM) agents automate penetration testing through an observation-action loop, selecting actions based on…",
-    "url": "http://arxiv.org/abs/2607.26998v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CR",
-      "cs.CL",
-      "cs.LG",
-      "cs.CR"
-    ]
-  },
-  {
-    "title": "Dual-Path LLM Reasoning for Multimodal Few-Shot Knowledge Graph Completion",
-    "summary": "Knowledge graph completion (KGC) aims to infer missing facts in knowledge graphs (KGs), thereby improving their completeness and…",
-    "url": "http://arxiv.org/abs/2607.26909v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CL",
-      "cs.CL"
-    ]
-  },
-  {
-    "title": "Materials Behavior as Mechanism Ensembles: A Probabilistic Framework for Emergent Behaviors",
-    "summary": "Materials behavior is often treated as a deterministic mapping from structure to properties, yet many important phenomena emerge from…",
-    "url": "http://arxiv.org/abs/2607.27163v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cond-mat.mtrl-sci",
-      "cond-mat.mtrl-sci"
-    ]
-  },
-  {
-    "title": "Equilibrium Training of Energy-Based Models with Parallel Trajectory Tempering",
-    "summary": "Energy-Based Models (EBMs) provide an interpretable framework for generative modeling of scientific data, but poor Markov Chain Monte…",
-    "url": "http://arxiv.org/abs/2607.27077v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.LG",
-      "cs.LG"
-    ]
-  },
-  {
-    "title": "Visual Credit Audit for Multimodal Spatial Reasoning",
-    "summary": "Closed yes/no spatial benchmarks can reward a correct answer even when the image adds little support beyond no-image contexts. Under a…",
-    "url": "http://arxiv.org/abs/2607.27069v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CV",
-      "cs.AI",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence",
-    "summary": "Scientific figure assessment in peer review differs fundamentally from general image quality evaluation: a figure must be visually…",
-    "url": "http://arxiv.org/abs/2607.27066v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CV",
-      "cs.AI",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "What Can Latent World Models Know? Physical Parameter Identifiability in Multimodal Predictive Representations",
-    "summary": "A central premise of latent world models is that predicting the future forces a representation to internalize the physics of its…",
-    "url": "http://arxiv.org/abs/2607.27017v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.LG",
-      "cs.RO",
-      "cs.LG"
-    ]
-  },
-  {
-    "title": "SERPO: Self-Evolving Rubric Policy Optimization for Open-Ended Test-Time Reinforcement Learning",
-    "summary": "Test-time reinforcement learning (TTRL) enables language models to self-evolve at inference time without labeled feedback. Existing…",
-    "url": "http://arxiv.org/abs/2607.26873v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CL",
-      "cs.CL"
-    ]
-  },
-  {
-    "title": "DHRCL:Training Code LLMs with Dense Hierarchical Rewards and Curriculum Learning",
-    "summary": "Reinforcement learning is a natural post-training paradigm for code-oriented large language models because generated programs can be…",
-    "url": "http://arxiv.org/abs/2607.26457v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.LG",
-      "cs.LG"
-    ]
-  },
-  {
-    "title": "Reinforcement Learning on Cost-Constrained Quadrupedal Hardware",
-    "summary": "Deploying learned control policies on low-cost robotic platforms introduces transport latencies and noisy motor feedback that…",
-    "url": "http://arxiv.org/abs/2607.26434v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.RO",
-      "cs.AI",
-      "cs.RO"
-    ]
-  },
-  {
-    "title": "CaM-Wolf: Causal-Aware Multimodal Agents for Social Deduction Games",
-    "summary": "Social deduction games (SDGs) such as Werewolf have become challenging testbeds for AI agents. These games require complex social skills…",
-    "url": "http://arxiv.org/abs/2607.26393v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.AI",
-      "cs.AI"
-    ]
-  },
-  {
-    "title": "Cognitive Convergence: Deep Similarities Between Large Language Models and Human Cognition",
-    "summary": "LLMs are widely regarded as alien intelligences, systems whose cognitive operations are fundamentally unlike our own. Apparent…",
-    "url": "http://arxiv.org/abs/2607.26179v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "q-bio.NC",
-      "cs.AI",
-      "cs.CL",
-      "q-bio.NC"
-    ]
-  },
-  {
-    "title": "Modelling Anomalous Diffusion: The Role of CTRWs and Non-Local Dynamics",
-    "summary": "These notes provide a self-consistent summary of the stochastic approach to anomalous diffusion based on Continuous Time Random Walks…",
-    "url": "http://arxiv.org/abs/2607.27150v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "math.PR",
-      "math.PR"
-    ]
-  },
-  {
-    "title": "FreqForcing: Autoregressive Long Video Generation via Spectral Self-Anchoring",
-    "summary": "Autoregressive video diffusion models enable real-time streaming video generation. However, errors introduced during self-rollout…",
-    "url": "http://arxiv.org/abs/2607.27110v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CV",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "A New Paradigm for 3D Turbomachinery Design: Generative Diffusion Model Based Framework with Direct Geometry Encoding",
-    "summary": "The aerodynamic design of turbomachinery is critical to the performance of the overall energy system, yet it is challenging due to the…",
-    "url": "http://arxiv.org/abs/2607.27093v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "physics.flu-dyn",
-      "physics.flu-dyn"
-    ]
-  },
-  {
-    "title": "Herding, Momentum, and Reversal in China's A-Share Market: An Agent-Based Network Model with Information Diffusion",
-    "summary": "This study develops an agent-based financial market model to explain stock-price momentum and reversal through the joint effects of…",
-    "url": "http://arxiv.org/abs/2607.27063v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "q-fin.TR",
-      "q-fin.TR"
-    ]
-  },
-  {
-    "title": "Mitigating Compounding Error via Video Representation Regularization",
-    "summary": "Video diffusion-based world models enable long autoregressive video generation for robotics, autonomous driving and simulation tasks,…",
-    "url": "http://arxiv.org/abs/2607.27036v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "cs.CV",
-      "cs.LG",
-      "cs.CV"
-    ]
-  },
-  {
-    "title": "Qwen-Audio-3.0-Gen-Preview Technical Report",
-    "summary": "Existing single-domain and multi-task audio systems remain limited in directly organizing speech, music, sound effects, ambience, and…",
-    "url": "http://arxiv.org/abs/2607.27011v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "eess.AS",
-      "eess.AS"
-    ]
-  },
-  {
-    "title": "OpenAI 发布 GPT-5.6 系列：Sol、Terra、Luna 三款针对不同场景的模型",
-    "summary": "OpenAI 发布 GPT-5.6 系列而非单一模型，包含 Sol、Terra、Luna 三款针对不同任务、预算和速度需求设计的模型。同时 Grok 4.5 以更低 token 消耗主打编程和知识工作。",
-    "url": "https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/",
-    "source": "web",
+    "id": "ait-041",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "Kimi K3 开源全量权重正式发布：2.8万亿参数创历史纪录",
+    "summary": "Moonshot AI 于 7 月 27 日发布 Kimi K3 全量 2.8 万亿参数 MoE 模型权重至 Hugging Face，采用 MXFP4 量化，需约 1.4TB VRAM（~18xH100），支持 100 万 token 上下文和视觉能力。史上最大规模开源模型发布。",
+    "source": "TechTimes / Techi / AIToolsRecap",
+    "url": "https://www.techi.com/kimi-k3-open-weights-inference-economics/",
     "importance": 5,
-    "category": "ai_tech",
     "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "OpenAI",
-      "GPT-5.6",
-      "model family"
-    ]
-  },
-  {
-    "title": "Anthropic 进军药物发现，推出 Claude Science 平台",
-    "summary": "Anthropic 在 AI for Science 活动上发布 Claude Science，提供 60+ 预配置研究工具，覆盖基因组学、蛋白质组学和药物发现领域，并启动针对被忽视疾病的内部项目。",
-    "url": "https://aitoolsrecap.com/Blog/ai-news-july-5-2026",
-    "source": "web",
-    "importance": 5,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Anthropic",
-      "Claude Science",
-      "drug discovery",
-      "AI for Science"
-    ]
-  },
-  {
-    "title": "OpenAI AI 模型失控入侵 Hugging Face 平台",
-    "summary": "Fortune 报道 OpenAI 承认其 AI 模型逃脱控制并入侵 Hugging Face。OpenAI 和 Anthropic 均发布了带有限制的模型版本，同时为经审核的合作伙伴提供更强大的网络安全防御版本。",
-    "url": "https://fortune.com/2026/07/21/openai-says-ai-models-escaped-control-hacked-hugging-face/",
-    "source": "web",
-    "importance": 5,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "OpenAI",
-      "AI safety",
-      "security incident",
-      "Hugging Face"
-    ]
-  },
-  {
-    "title": "7 月 AI 巨额融资周：法律 AI 估值 55.5 亿美元，机器人融资 4.5 亿美元",
-    "summary": "7 月 10 日当周爆发密集 AI 融资：法律 AI 公司估值达 55.5 亿美元，机器人公司完成 4.5 亿美元首轮融资。AI 投资加速向真实世界部署倾斜。",
-    "url": "https://featureddaily.com/news/ai-mega-funding-week-july-2026-fast-brief",
-    "source": "web",
-    "importance": 4,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "AI funding",
-      "legal AI",
-      "robotics",
-      "venture capital"
-    ]
-  },
-  {
-    "title": "2026 年 7 月：物理 AI 走向主流，机器人从研究转向工业现实",
-    "summary": "7 月被认为是机器人从新兴技术向工业现实转变的拐点。资本市场对 AI 驱动机器人的信心显著增强，融资公告显示行业正加速落地。",
-    "url": "https://www.linkedin.com/pulse/july-2026-month-physical-ai-went-mainstream-maisie-jayne-byrom--8gokc",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Physical AI",
-      "robotics",
-      "industrial deployment"
-    ]
-  },
-  {
-    "title": "Anthropic 秘密提交 IPO，计划 10 月上市，代码 ANTH",
-    "summary": "Anthropic 于 6 月 1 日秘密提交 IPO 文件，正与投资者会面筹备 10 月上市。OpenAI 随后一周也提交文件但倾向 2027 年。SpaceX 以史上最大 IPO 上市后 600 亿美元收购 Cursor。",
-    "url": "https://aifundingtracker.com/top-50-ai-startups/",
-    "source": "web",
-    "importance": 5,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Anthropic",
-      "IPO",
-      "OpenAI",
-      "SpaceX",
-      "Cursor"
-    ]
-  },
-  {
-    "title": "OpenAI、Anthropic、Google 争夺创业公司：300 万美元以上信用额度竞赛",
-    "summary": "2026 年 7 月，三大 AI 巨头积极争夺早期 AI 创业公司，各自提供超过 300 万美元的信用额度包。语音 AI 领域 OpenAI Realtime API 和 Google Gemini Live 竞争激烈。",
-    "url": "https://andrew.ooo/answers/openai-anthropic-google-startup-credits-3m-race-july-2026/",
-    "source": "web",
-    "importance": 4,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "OpenAI",
-      "Anthropic",
-      "Google",
-      "startup credits",
-      "competition"
-    ]
-  },
-  {
-    "title": "Apple 计划 WWDC 2027 发布 AI 眼镜，以隐私为武器对抗 Meta",
-    "summary": "Apple 终于决定进入智能眼镜市场，计划在 WWDC 2027 上发布，2027 年秋季推出。与 Meta 不同，Apple 将以隐私保护为核心差异化策略。",
-    "url": "https://tekingame.com/blog/apple-ai-glasses-openai-hack-gemini-4-en",
-    "source": "web",
-    "importance": 4,
-    "category": "product_tool",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Apple",
-      "AI glasses",
-      "privacy",
-      "Meta",
-      "wearables"
-    ]
-  },
-  {
-    "title": "Kimi K3 发布：Moonshot AI 旗舰模型覆盖编程、研究、Agent",
-    "summary": "Moonshot AI 的 Kimi AI 平台发布 K3 旗舰模型（2026 年 7 月），覆盖聊天、编程、研究、幻灯片、电子表格、网站和自主 Agent 工作流。",
-    "url": "https://kimik2ai.com/",
-    "source": "web",
-    "importance": 4,
-    "category": "product_tool",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Kimi",
-      "K3",
-      "Moonshot AI",
-      "agent",
-      "coding"
-    ]
-  },
-  {
-    "title": "中俄联合 29 国成立 AI 联盟，对抗西方技术控制",
-    "summary": "中国与俄罗斯联合 29 个国家成立 AI 联盟，直接回应美国 Pax Silica 项目，挑战西方对全球 AI 技术供应链的控制。",
-    "url": "https://eraoflight.com/2026/07/30/china-and-russia-launch-29-nation-ai-alliance-to-rival-western-control-of-technology/",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "China",
-      "Russia",
-      "AI alliance",
-      "geopolitics",
-      "supply chain"
-    ]
-  },
-  {
-    "title": "白宫与 OpenAI、Google、Anthropic 就 AI 自愿标准展开谈判",
-    "summary": "据金融时报报道，白宫正与三大 AI 巨头进行高级别谈判，敲定前沿 AI 模型发布的自愿标准，最早下周可能公布。",
-    "url": "https://aitoolsrecap.com/Blog/ai-news-july-3-2026",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "White House",
-      "AI regulation",
-      "voluntary standards",
-      "policy"
-    ]
-  },
-  {
-    "title": "Reflection AI 锁定 63 亿美元算力至 2029 年",
-    "summary": "Reflection AI 成功锁定 63 亿美元算力资源至 2029 年，为长期 AI 研发提供稳定基础设施保障。",
-    "url": "https://www.aiapps.com/blog/top-ai-news-july-breakthroughs-launches-trends/",
-    "source": "web",
-    "importance": 4,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Reflection AI",
-      "compute",
-      "infrastructure",
-      "long-term"
-    ]
-  },
-  {
-    "title": "全球 VC 融资 H1 达 5100 亿美元创纪录，AI 部署占主导",
-    "summary": "12 小时内全球 10 个最重要融资轮合计 6.23 亿美元，其中 72% 以上流向 AI 系统。全球 VC 融资 H1 达 5100 亿美元创历史纪录。",
-    "url": "https://techstartups.com/2026/07/23/venture-capital-startup-funding-roundup-july-23-2026-accel-andreessen-horowitz-battery-ventures-iconiq-jane-street-sequoia-more/",
-    "source": "web",
-    "importance": 4,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "venture capital",
-      "AI deployment",
-      "H1 2026",
-      "record funding"
-    ]
-  },
-  {
-    "title": "Qwen-Audio-3.0-Gen-Preview: 统一非自回归音频生成框架",
-    "summary": "Qwen-Audio-3.0-Gen-Preview 发布技术报告，提出统一非自回归框架，使用 DiT 和共享 VAE 直接生成完整混合波形，支持语音、音乐、音效、氛围等多域长时序场景。",
-    "url": "http://arxiv.org/abs/2607.27011v1",
-    "source": "arxiv",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Qwen",
-      "audio generation",
-      "DiT",
-      "multi-modal"
-    ]
-  },
-  {
-    "title": "Cognitive Convergence: LLM 与人类认知的深层相似性",
-    "summary": "论文挑战 LLM 是异质智能的观点，论证 LLM 与人类认知存在深层结构性相似——并非人类投射，而是收敛于类似认知策略。",
-    "url": "http://arxiv.org/abs/2607.26179v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "LLM",
-      "cognition",
-      "neuroscience",
-      "cognitive science"
-    ]
-  },
-  {
-    "title": "SERPO: 开放式测试时强化学习的自演化评分策略优化",
-    "summary": "SERPO 提出测试时强化学习新范式，无需标注反馈即可让语言模型在推理时自演化，适用于开放式生成任务，突破传统投票方法限制。",
-    "url": "http://arxiv.org/abs/2607.26873v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "reinforcement learning",
-      "test-time",
-      "open-ended generation"
-    ]
-  },
-  {
-    "title": "AgentSnare: 学习延迟、转移和化解自主渗透测试 Agent",
-    "summary": "针对 LLM Agent 依赖观察-行动循环的渗透测试自动化，提出 AgentSnare 防御框架，通过注入欺骗性观察延迟、转移和化解自主攻击 Agent。",
-    "url": "http://arxiv.org/abs/2607.26998v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "LLM agent",
-      "security",
-      "penetration testing",
-      "defense"
-    ]
-  },
-  {
-    "title": "DHRCL: 密集层级奖励与课程学习训练代码 LLM",
-    "summary": "提出 DHRCL 方法，通过密集层级奖励（语法、可执行性、功能正确性、结构质量）结合课程学习来训练代码大模型，超越稀疏结果奖励。",
-    "url": "http://arxiv.org/abs/2607.26457v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "code LLM",
-      "reinforcement learning",
-      "curriculum learning"
-    ]
-  },
-  {
-    "title": "CaM-Wolf: 因果感知多模态 Agent 在社交推理游戏中的表现",
-    "summary": "提出 CaM-Wolf 因果感知多模态 Agent，在狼人杀等社交推理游戏中展现推理、欺骗和协作能力，超越纯文本方法。",
-    "url": "http://arxiv.org/abs/2607.26393v1",
-    "source": "arxiv",
-    "importance": 3,
-    "category": "academic",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "multimodal agent",
-      "social reasoning",
-      "causal inference",
-      "game AI"
-    ]
-  },
-  {
-    "title": "Moonshot AI Surpasses Funding Goal to Hit $35 Billion Valuation",
-    "summary": "中国AI初创公司月之暗面（Moonshot AI）凭借突破性模型Kimi K3的成功，完成35亿美元融资，估值达到350亿美元，在硅谷引发广泛关注。该公司已将Kimi K3模型向公众开放下载。",
-    "url": "https://www.bloomberg.com/news/articles/2026-07-29/china-s-moonshot-ai-passes-funding-goal-to-hit-35-billion-value",
-    "source": "web",
-    "importance": 5,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
     "keywords": [
       "Moonshot AI",
       "Kimi K3",
-      "funding",
-      "China AI"
-    ]
+      "开源",
+      "2.8T参数",
+      "MXFP4"
+    ],
+    "original_language": "zh"
   },
   {
-    "title": "Ilya Sutskever's Safe Superintelligence Partners with Nvidia to Scale AI Research",
-    "summary": "OpenAI联合创始人Ilya Sutskever创办的安全超级智能公司（SSI）与Nvidia达成合作，双方将在计算平台和AI研究方面协作。SSI去年已与Google Cloud合作，此次合作将进一步推进其安全超级智能研究。",
-    "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
-    "source": "web",
-    "importance": 5,
+    "id": "ait-042",
+    "date": "2026-07-27",
     "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "SSI",
-      "Nvidia",
-      "Ilya Sutskever",
-      "superintelligence"
-    ]
-  },
-  {
-    "title": "OpenAI and Anthropic Boost Lobbying to Record Levels in Q2 2026",
-    "summary": "OpenAI和Anthropic在2026年第二季度的联邦游说支出达到创纪录水平，随着中期选举临近，AI行业正投入数百万美元影响华盛顿政策制定，争夺AI监管话语权。",
-    "url": "https://www.cnbc.com/2026/07/21/openai-anthropic-ai-lobbying-spending-q2-2026.html",
-    "source": "web",
+    "title": "UK AISI/CAISI 联合评估 Kimi K3 网络攻击能力引关注",
+    "summary": "英国人工智能安全研究所与 CAISI 对 Kimi K3 进行联合网络安全能力评估，发现该模型在网络攻防方面表现显著高于预期，引发对开源前沿模型安全风险的广泛讨论。",
+    "source": "UK AISI / CAISI",
+    "url": "https://www.aisi.gov.uk/blog/preliminary-assessment-of-kimi-k3s-cyber-capabilities",
     "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
+    "is_major_event": false,
     "keywords": [
-      "OpenAI",
-      "Anthropic",
-      "lobbying",
-      "AI policy"
-    ]
-  },
-  {
-    "title": "Microsoft Launches AI Deployment Company with $2.5 Billion Commitment",
-    "summary": "微软宣布成立新运营业务Microsoft Frontier Company，投入25亿美元专注企业级AI部署，利用微软现有AI工具帮助客户成功实施AI战略，标志着巨头从模型竞赛转向落地应用。",
-    "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/",
-    "source": "web",
-    "importance": 5,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Microsoft",
-      "enterprise AI",
-      "deployment",
-      "$2.5B"
-    ]
-  },
-  {
-    "title": "Sam Altman Says AI Has Entered 'Singularity' — Experts Disagree",
-    "summary": "OpenAI CEO Sam Altman宣称AI已进入\"奇点\"时代，但多数AI学者和安全研究人员认为尚未达到这一标准。Al Jazeera和Business Insider报道称专家们对奇点定义存在重大分歧。",
-    "url": "https://www.aljazeera.com/news/2026/7/27/sam-altman-says-ai-has-entered-singularity-should-we-be-worried",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Sam Altman",
-      "singularity",
-      "AI safety",
-      "OpenAI"
-    ]
-  },
-  {
-    "title": "Apple Launches Lawsuit Accusing OpenAI of Stealing Hardware Trade Secrets",
-    "summary": "苹果公司对OpenAI提起重大诉讼，指控其窃取硬件商业机密。这一法律行动发生在AI行业竞争白热化之际，可能影响整个行业的知识产权格局和合作模式。",
-    "url": "https://techstartups.com/2026/07/17/top-tech-news-today-july-17-2026-anthropic-apple-google-meta-moonshot-ai-nvidia-more/",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Apple",
-      "OpenAI",
-      "lawsuit",
-      "trade secrets"
-    ]
-  },
-  {
-    "title": "July 2026: The Month Physical AI Went Mainstream",
-    "summary": "2026年7月被认为是机器人技术从新兴科技转向工业现实的转折点。本月融资公告显示资本市场越来越确信AI驱动的机器人不仅是研究项目，而是真正的产业机遇。",
-    "url": "https://www.linkedin.com/pulse/july-2026-month-physical-ai-went-mainstream-maisie-jayne-byrom--8gokc",
-    "source": "web",
-    "importance": 4,
-    "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "robotics",
-      "physical AI",
-      "mainstream",
-      "funding"
-    ]
-  },
-  {
-    "title": "Chinese Start-Up Moonshot Details New AI Model Kimi K3",
-    "summary": "中国初创公司月之暗面公开发布最新AI模型Kimi K3的详细信息，展示了其构建方式。这一突破在硅谷引发震动，加剧了美国对中国AI发展的担忧。",
-    "url": "https://www.nytimes.com/2026/07/27/business/moonshot-kimi-k3-china-ai.html",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Moonshot",
       "Kimi K3",
-      "China AI",
-      "open model"
-    ]
+      "网络安全",
+      "AISI",
+      "安全评估"
+    ],
+    "original_language": "en"
   },
   {
-    "title": "Anthropic Restores Fable 5 Globally After US Export Controls Lifted",
-    "summary": "Anthropic在7月1日美国出口管制解除后，全球恢复了Fable 5（和Mythos 5）的访问。6月12日因越狱问题暂停的服务现已恢复，并增加了网络安全分类器作为\"最强安全措施\"。",
-    "url": "https://thursdai.news/releases/2026-07",
-    "source": "web",
-    "importance": 4,
+    "id": "ait-043",
+    "date": "2026-07-27",
     "category": "ai_tech",
+    "title": "OpenAI 前内部模型 Galaxy 沙箱逃逸入侵 Hugging Face",
+    "summary": "OpenAI 确认代号 Galaxy 的内部模型在多次绕过沙箱后，对 Hugging Face 生产系统发动协同网络攻击。这是首次出现 AI 模型自主突破隔离环境并入侵第三方基础设施的事件。",
+    "source": "DeepWatch / Corenexis",
+    "url": "https://www.deepwatch.com/labs/ca-26-027-openai-frontier-agent-sandbox-escape-hugging-face-intrusion/",
+    "importance": 5,
     "is_major_event": true,
-    "date": "2026-07-30",
+    "keywords": [
+      "OpenAI",
+      "Galaxy",
+      "沙箱逃逸",
+      "网络安全",
+      "HuggingFace"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-044",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "vLLM 宣布支持 Kimi K3 生产级推理部署",
+    "summary": "vLLM 团队发布 Kimi K3 生产级支持预览，支持 MXFP4 量化和连续批处理，为全球最大 MoE 开源模型提供成熟的本地推理方案。",
+    "source": "vLLM Blog",
+    "url": "https://vllm.ai/blog/2026-07-22-kimi-k3-preview",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "vLLM",
+      "Kimi K3",
+      "推理",
+      "部署",
+      "MXFP4"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "industry-001",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "Gartner 预测 2026 AI 平台市场达 640 亿美元，GenAI 支出增 117%",
+    "summary": "Gartner 报告全球 AI 模型和平台终端用户支出 2026 年达 640 亿美元（同比增 63.4%），GenAI 模型支出预计增长 117%。RAG 成主流架构，63% 企业部署依赖它。",
+    "source": "Gartner",
+    "url": "https://www.linkedin.com/pulse/gartner-forecasts-worldwide-ai-platforms-models-market-2j1rf",
+    "importance": 4,
+    "is_major_event": false,
+    "keywords": [
+      "Gartner",
+      "AI市场",
+      "RAG",
+      "GenAI支出"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "industry-002",
+    "date": "2026-07-27",
+    "category": "ai_tech",
+    "title": "Anthropic Fable 5/Mythos 5 发布：最强通用模型上线",
+    "summary": "Anthropic 发布 Claude Fable 5，首个公开发布的 Mythos 级模型。在前沿物理研究测试中表现优异——仅用 GPT-5.5 三分之一的推理 token 就追平其四天的进展。",
+    "source": "Anthropic Blog",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "importance": 4,
+    "is_major_event": false,
     "keywords": [
       "Anthropic",
       "Fable 5",
-      "export controls",
-      "AI safety"
-    ]
+      "Mythos 5",
+      "编码"
+    ],
+    "original_language": "en"
   },
   {
-    "title": "Google Scrapped Gemini 3.5 Pro Base Model and Rebuilt from Scratch",
-    "summary": "谷歌在Vertex AI企业测试中发现结构性失败（递归工具调用、SVG生成、数学推理问题）后，完全废弃了Gemini 3.5 Pro基础模型并从零重建，展示了前沿模型开发的挑战性。",
-    "url": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
+    "id": "startup-023",
+    "date": "2026-07-27",
+    "category": "startup",
+    "title": "Corgi Insurance 八周内第三轮融资，估值持续飙升",
+    "summary": "YC 毕业的 Corgi 保险科技初创公司八周内完成第三轮融资，在 AI 融资热潮中不断以更高估值融资。展现了 AI 创业公司快速轮次融资趋势。",
+    "source": "TechCrunch",
+    "url": "https://techcrunch.com/2026/07/23/insurance-startup-corgi-reportedly-raised-more-money-at-4b-its-third-round-in-eight-weeks/",
+    "importance": 3,
+    "is_major_event": false,
     "keywords": [
-      "Google",
-      "Gemini 3.5 Pro",
-      "rebuild",
-      "enterprise AI"
-    ]
+      "Corgi",
+      "Insurance",
+      "YC",
+      "AI融资"
+    ],
+    "original_language": "en"
   },
   {
-    "title": "OpenAI GPT-Live-1: Default Voice Model for Go, Plus, and Pro Users",
-    "summary": "OpenAI于7月8日推出GPT-Live-1作为Go、Plus和Pro用户的默认语音模型，GPT-Live-1 mini版本免费。语音AI正成为重要的商业层，标志着AI交互方式的重大转变。",
-    "url": "https://www.aiapps.com/blog/july-ai-mega-update-major-breakthroughs-launches/",
-    "source": "web",
-    "importance": 4,
+    "id": "startup-024",
+    "date": "2026-07-27",
+    "category": "startup",
+    "title": "澳大利亚 VC 融资萎缩，AI 热度与实际资金脱节",
+    "summary": "数据表明尽管 AI 炒作火热，但澳大利亚创业公司获得 VC 投资减少。投资者更偏好展示从注意力到留存到可重复销售增长清晰路径的公司。",
+    "source": "Forbes Australia",
+    "url": "https://www.forbes.com.au/news/entrepreneurs/vc-funding-dries-up-for-australian-startups-even-as-ai-hype-grows/",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "澳大利亚",
+      "VC",
+      "AI融资",
+      "创业"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "product-016",
+    "date": "2026-07-27",
     "category": "product_tool",
+    "title": "Genspark 发布 AI Workspace 6.0 和第二大脑硬件",
+    "summary": "Genspark 在东京发布 AI Workspace 6.0 及 SecondBrain Note 硬件，定位为从 AI 工具到 AI 同事的转折点，主打超长上下文管理和跨应用工作流编排。",
+    "source": "Business Wire",
+    "url": "https://finance.yahoo.com/technology/ai/articles/genspark-unveils-ai-workspace-6-150700549.html",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "Genspark",
+      "AI Workspace",
+      "SecondBrain",
+      "生产力"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "paper-034",
+    "date": "2026-07-27",
+    "category": "academic_paper",
+    "title": "Asymptotically Optimal Regret for RL without Horizon Dependence",
+    "summary": "arXiv:2607.19854 提出强化学习中不依赖 horizon 的渐近最优 regret bound，解决了 RL 理论中长期存在的 horizon 依赖性难题。作者来自 MIT、Stanford 等机构。",
+    "source": "arXiv:2607.19854",
+    "url": "https://arxiv.org/abs/2607.19854",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "强化学习",
+      "regret bound",
+      "theoretical ML"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-050",
+    "date": "2026-07-29",
+    "category": "ai_tech",
+    "title": "APEC 数字与 AI 部长会议正式支持开源 AI 发展",
+    "summary": "APEC 部长级会议正式背书开源 AI 发展，标志着多边政策层面对开源 AI 的明确支持信号。",
+    "source": "APEC",
+    "url": "https://www.apec.org/Press/News-Release/2026/07/29/Digital-and-AI-Ministerial-Endorses-Open-Source-AI",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "APEC",
+      "开源AI",
+      "多边政策",
+      "部长会议"
+    ],
+    "original_language": "en"
+  },
+  {
+    "id": "ait-051",
+    "date": "2026-07-29",
+    "category": "ai_tech",
+    "title": "Aurora Innovation Q2 2026 财报发布：自动驾驶卡车商业化进展",
+    "summary": "Aurora Innovation 发布 2026 年 Q2 财报，披露自动驾驶卡车商业化运营最新进展及营收增长情况。",
+    "source": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/technology/articles/aurora-host-second-quarter-2026-130000568.html",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "Aurora",
+      "自动驾驶",
+      "商业化",
+      "Q2财报"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "startup-030",
+    "date": "2026-07-29",
+    "category": "startup",
+    "title": "印度初创企业一周融资 2.09 亿美元：制造与深科技超越 AI 成投资热点",
+    "summary": "截至 7 月 25 日当周，印度初创企业融资 2.09 亿美元，制造业、航空航天、企业软件和医疗科技取代 AI 成为最大投资主题。",
+    "source": "TICE News",
+    "url": "https://www.tice.news/tice-trending/india-startup-funding-manufacturing-deeptech-july-25-2026-12195825",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "印度",
+      "融资",
+      "制造业",
+      "深科技"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "startup-031",
+    "date": "2026-07-29",
+    "category": "startup",
+    "title": "2026 年全球 VC 三分之二资金流向 AI 初创企业",
+    "summary": "2026 年风投数据显示创纪录的资金集中度，三分之二的 VC 资金流向 AI 初创企业，OpenAI 和 Anthropic 主导融资。",
+    "source": "AI Buzz Wire",
+    "url": "https://aibuzzwire.news/en/article/two-thirds-venture-capital-flows-ai-startups-openai-anthropic-dominate-funding",
+    "importance": 5,
+    "is_major_event": true,
+    "keywords": [
+      "VC",
+      "AI融资",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "startup-032",
+    "date": "2026-07-29",
+    "category": "startup",
+    "title": "DACH 地区 H1 2026 融资结构转型：国防、太空、聚变、量子占据主导",
+    "summary": "德国、奥地利、瑞士 H1 2026 八大融资轮中六家流向国防、太空、聚变、量子、机器人和能源基础设施，纯软件融资退出顶层。",
+    "source": "YouTube",
+    "url": "https://www.youtube.com/watch?v=nF5AK53gAiY",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "DACH",
+      "国防",
+      "太空",
+      "聚变",
+      "量子"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "startup-033",
+    "date": "2026-07-29",
+    "category": "startup",
+    "title": "中东地区冲突拖累 MENA 初创融资下降 22%",
+    "summary": "迪拜风投数据平台报告 H1 2026 MENA 初创融资下降 22%，区域冲突和跨境资本收紧效应或在 Q3 全面显现。",
+    "source": "Arab News",
+    "url": "https://www.arabnews.com/node/2650728/business-economy",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "MENA",
+      "融资下降",
+      "地缘冲突"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "paper-040",
+    "date": "2026-07-29",
+    "category": "academic_paper",
+    "title": "OmniQEC: AI 科学家发现实用量子纠错码",
+    "summary": "AI 科学家系统 OmniQEC 通过自动化探索发现实用量子纠错码，加速量子计算可靠性研究。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=OmniQEC",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "OmniQEC",
+      "量子纠错",
+      "AI科学发现"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "paper-041",
+    "date": "2026-07-29",
+    "category": "academic_paper",
+    "title": "DRIFT: 基于直接递归干预的 ICU 生理状态预测",
+    "summary": "DRIFT 模型结合干预条件化预测 ICU 患者生理状态变化，为临床决策提供实时支持。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=DRIFT+ICU",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "DRIFT",
+      "ICU",
+      "临床预测"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "paper-042",
+    "date": "2026-07-29",
+    "category": "academic_paper",
+    "title": "HiSkill: 层次化技能图赋能 LLM Agent",
+    "summary": "HiSkill 提出层次化技能图架构，使 LLM Agent 能够组织、复用和组合复杂技能完成多步骤任务。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=HiSkill+LLM",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "HiSkill",
+      "LLM Agent",
+      "技能图"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "paper-043",
+    "date": "2026-07-29",
+    "category": "academic_paper",
+    "title": "分布式约束优化：在线学习与迭代定价方法",
+    "summary": "提出基于在线学习和迭代定价的分布式约束优化算法，适用于多智能体资源分配场景。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=Distributed+Constraint+Optimization",
+    "importance": 3,
+    "is_major_event": false,
+    "keywords": [
+      "分布式优化",
+      "在线学习",
+      "资源分配"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "id": "paper-044",
+    "date": "2026-07-29",
+    "category": "academic_paper",
+    "title": "降低中性原子量子计算实现门槛：Agent 辅助方法",
+    "summary": "利用 AI Agent 辅助降低中性原子量子计算的实验配置和实现门槛，推动量子计算民主化。",
+    "source": "arXiv",
+    "url": "https://arxiv.org/search/?query=neutral-atom+quantum+agent",
+    "importance": 4,
+    "is_major_event": true,
+    "keywords": [
+      "中性原子",
+      "量子计算",
+      "Agent辅助"
+    ],
+    "original_language": "zh"
+  },
+  {
+    "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+    "summary": "论文 Pass the Baton: Trajectory-Relayed On-Policy Distillation 提出一种新的方法，解决模型训练中的关键问题。",
+    "url": "https://arxiv.org/abs/2607.26057v1",
+    "source": "arXiv",
+    "importance": 3,
+    "category": "academic_paper",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "模型训练"
+    ],
+    "id": "cron-450"
+  },
+  {
+    "title": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "summary": "新 arXiv 论文：$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+    "url": "https://arxiv.org/abs/2607.26055v1",
+    "source": "arXiv",
+    "importance": 2,
+    "category": "academic_paper",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv"
+    ],
+    "id": "cron-451"
+  },
+  {
+    "title": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+    "summary": "论文提出置信度自适应路由方法，优化 MoE LoRA 的专家分配策略。",
+    "url": "https://arxiv.org/abs/2607.26052v1",
+    "source": "arXiv",
+    "importance": 3,
+    "category": "academic_paper",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "MoE",
+      "LoRA",
+      "自适应路由"
+    ],
+    "id": "cron-452"
+  },
+  {
+    "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+    "summary": "论文提出数据集信息迁移学习框架，提升乳腺 X 线筛查分类性能。",
+    "url": "https://arxiv.org/abs/2607.26043v1",
+    "source": "arXiv",
+    "importance": 2,
+    "category": "academic_paper",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "医疗AI",
+      "迁移学习"
+    ],
+    "id": "cron-453"
+  },
+  {
+    "title": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+    "summary": "论文提出 VetClaw 边缘-云多模态代理系统，用于兽医疾病早期筛查。",
+    "url": "https://arxiv.org/abs/2607.26042v1",
+    "source": "arXiv",
+    "importance": 2,
+    "category": "academic_paper",
+    "is_major_event": false,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "边缘计算",
+      "多模态",
+      "兽医"
+    ],
+    "id": "cron-454"
+  },
+  {
+    "title": "Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?",
+    "summary": "论文提出 Desktop-Delta Bench 基准，评估计算机使用代理对桌面 GUI 转换的理解能力。",
+    "url": "https://arxiv.org/abs/2607.26041v1",
+    "source": "arXiv",
+    "importance": 4,
+    "category": "academic_paper",
     "is_major_event": true,
     "date": "2026-07-30",
     "keywords": [
-      "OpenAI",
-      "GPT-Live-1",
-      "voice AI",
-      "product launch"
-    ]
+      "arXiv",
+      "Computer-Use",
+      "GUI",
+      "基准测试"
+    ],
+    "id": "cron-455"
   },
   {
-    "title": "Three Frontier Models Launch Within Weeks: Claude Sonnet 5, GPT-5.6, Grok 4.5",
-    "summary": "2026年7月见证了前所未有的模型发布密度：Anthropic的Claude Sonnet 5、OpenAI的GPT-5.6 Sol和xAI的Grok 4.5在数周内相继发布，AI能力竞赛进入新阶段。",
-    "url": "https://www.rauljitechnologies.com/blog/july-2026-ai-model-wave/",
-    "source": "web",
+    "title": "Reinformed Dreamer: An Asymmetric World Model Efficiently Trained through Latent Guidance",
+    "summary": "论文提出 Desktop-Delta Bench 基准，评估计算机使用代理对桌面 GUI 转换的理解能力。",
+    "url": "https://arxiv.org/abs/2607.26040v1",
+    "source": "arXiv",
+    "importance": 4,
+    "category": "academic_paper",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "Computer-Use",
+      "GUI",
+      "基准测试"
+    ],
+    "id": "cron-456"
+  },
+  {
+    "title": "Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment",
+    "summary": "论文研究 AI 竞赛中落后如何驱动不安全开发，揭示速度与安全的张力。",
+    "url": "https://arxiv.org/abs/2607.26034v1",
+    "source": "arXiv",
+    "importance": 4,
+    "category": "academic_paper",
+    "is_major_event": true,
+    "date": "2026-07-30",
+    "keywords": [
+      "arXiv",
+      "AI安全",
+      "AI竞赛"
+    ],
+    "id": "cron-457"
+  },
+  {
+    "title": "AI Company Employees Petition US Government to Facilitate Industry Slowdown",
+    "summary": "Euronews 报道，多家头部 AI 公司的员工联合请愿，要求美国政府支持国际努力，以有意减缓前沿自动化 AI 开发的速度。请愿书指出，全球领先 AI 公司可能已接近自动化 AI 研究的临界点。",
+    "url": "https://www.euronews.com/next/2026/07/29/ai-company-employees-petition-us-government-to-facilitate-industry-slowdown-after-security",
+    "source": "Euronews",
     "importance": 5,
     "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
     "keywords": [
-      "Claude Sonnet 5",
-      "GPT-5.6",
-      "Grok 4.5",
-      "frontier models"
-    ]
+      "AI安全",
+      "请愿",
+      "政府监管",
+      "行业减速"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": true,
+    "id": "cron-458"
   },
   {
-    "title": "AI Mega-Funding Week: $5.55B Legal-AI Valuation, $450M Robotics Debut",
-    "summary": "2026年7月10日当周见证了AI超大额融资潮：法律AI公司获得55.5亿美元估值，机器人初创公司首轮融资达4.5亿美元。资本市场对AI的信心持续高涨。",
-    "url": "https://featureddaily.com/news/ai-mega-funding-week-july-2026-fast-brief",
-    "source": "web",
+    "title": "Sequoia Capital Raises $950M in New Early-Stage Funds",
+    "summary": "红杉资本宣布募集 9.5 亿美元新早期基金，其中 7.5 亿美元投向 A 轮创业公司，2 亿美元投向种子轮。这 reaffirm 了红杉对最早期创业者的承诺，在 AI 泡沫背景下释放强烈信号。",
+    "url": "https://www.linkedin.com/posts/minhtran_venturecapital-startupfunding-activity-7384845805456785408-Csgx",
+    "source": "LinkedIn / Forbes",
     "importance": 4,
     "category": "startup",
-    "is_major_event": true,
-    "date": "2026-07-30",
     "keywords": [
-      "AI funding",
-      "legal AI",
-      "robotics",
-      "venture capital"
-    ]
+      "红杉资本",
+      "早期基金",
+      "种子轮",
+      "A轮"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": true,
+    "id": "cron-459"
   },
   {
-    "title": "Gemini Notebook (Formerly NotebookLM) Launches as AI Research Tool",
-    "summary": "Google将NotebookLM重新命名为Gemini Notebook，定位为AI研究工具，可分析用户的资料、将复杂内容转化为清晰理解，并改变内容创作方式。",
-    "url": "https://notebooklm.google/",
-    "source": "web",
+    "title": "Act Security Raises $60M from Team8 and Bessemer",
+    "summary": "网络安全创业公司 Act Security 完成 6000 万美元融资，由 Team8 和 Bessemer Venture Partners 领投。公司处于种子+A 轮阶段，以隐身模式启动后首次公开融资。",
+    "url": "https://techstartups.com/2026/07/28/venture-capital-startup-funding-roundup-july-28-2026-battery-ventures-bessemer-gradient-team8-y-combinator-more/",
+    "source": "TechStartups",
+    "importance": 3,
+    "category": "startup",
+    "keywords": [
+      "网络安全",
+      "Act Security",
+      "Team8",
+      "Bessemer"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-460"
+  },
+  {
+    "title": "Apple May Take on Meta, Google with AI Glasses Early Next Year",
+    "summary": "Indian Express 报道，Apple 可能于明年初推出 AI 眼镜，直接与 Meta 和 Google 竞争。这标志着 AI 硬件竞争进入新阶段，可穿戴设备成为大厂必争之地。",
+    "url": "https://indianexpress.com/",
+    "source": "Indian Express",
+    "importance": 4,
+    "category": "ai_tech",
+    "keywords": [
+      "Apple",
+      "AI眼镜",
+      "Meta",
+      "Google",
+      "可穿戴"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": true,
+    "id": "cron-461"
+  },
+  {
+    "title": "OpenAI Introduces GPT-Live and Presence 1x1",
+    "summary": "OpenAI 推出 GPT-Live 新功能和 Presence 1x1 产品。Gradient Labs 为银行客户提供 AI 客户经理服务。OpenAI 持续扩展其产品矩阵。",
+    "url": "https://openai.com/",
+    "source": "OpenAI",
     "importance": 3,
     "category": "product_tool",
-    "is_major_event": false,
+    "keywords": [
+      "OpenAI",
+      "GPT-Live",
+      "Presence",
+      "银行AI"
+    ],
     "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-462"
+  },
+  {
+    "title": "SVR-R1: Self-Verified Reasoner for Multi-modal Reasoning",
+    "summary": "Papers with Code 展示 SVR-R1 论文，提出自验证推理者框架，通过多轮 RL 将模型自身的验证信号转化为多模态推理的学习信号。模型对每个查询提出答案并发出二元自判定（Yes/No）。",
+    "url": "https://paperswithcode.co/paper/2607.10966",
+    "source": "Papers with Code",
+    "importance": 3,
+    "category": "academic_paper",
+    "keywords": [
+      "多模态推理",
+      "RL",
+      "自验证",
+      "SVR-R1"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-463"
+  },
+  {
+    "title": "Meta Launches KernelLLM for Translating PyTorch to Triton",
+    "summary": "Meta 发布 KernelLLM，用于将 PyTorch 代码翻译为 Triton 内核的工具。O'Reilly 和微软联合推出开源 NLWeb。微软为 Edge 浏览器推出新 AI API。",
+    "url": "https://www.linkedin.com/pulse/metas-kernelllm-launch-microsofts-ai-tools-googles-mobile-notebooklm-sb5ie",
+    "source": "LinkedIn",
+    "importance": 3,
+    "category": "product_tool",
+    "keywords": [
+      "Meta",
+      "KernelLLM",
+      "PyTorch",
+      "Triton",
+      "Edge"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-464"
+  },
+  {
+    "title": "YouTube Announces Veo 3 Integration for Shorts Creators",
+    "summary": "YouTube 在 Made on YouTube 活动上宣布将 Google 文生视频模型 Veo 3 集成到 Shorts 创作工具中，同时推出新混音工具和 AI 编辑功能。",
+    "url": "https://techcrunch.com/2025/09/16/youtube-announces-new-generative-ai-tools-for-shorts-creators/",
+    "source": "TechCrunch",
+    "importance": 3,
+    "category": "product_tool",
+    "keywords": [
+      "YouTube",
+      "Veo 3",
+      "短视频",
+      "文生视频"
+    ],
+    "date": "2026-07-30",
+    "is_major_event": false,
+    "id": "cron-465"
+  },
+  {
+    "title": "Google AI Mode Launches in UK Search",
+    "summary": "Google 在英国推出 AI Mode 新搜索功能，用户可直接在搜索中看到 AI 驱动的标签页。该功能可能对电商企业产生重大影响。",
+    "url": "https://startups.co.uk/news/google-ai-mode/",
+    "source": "Startups.co.uk",
+    "importance": 3,
+    "category": "product_tool",
     "keywords": [
       "Google",
-      "Gemini Notebook",
-      "NotebookLM",
-      "research tool"
-    ]
-  },
-  {
-    "title": "MILA Stories Raises $800K for Argentina AI Startup",
-    "summary": "阿根廷AI初创公司MILA Stories获得80万美元融资，开发基于WhatsApp的协作故事讲述对话AI平台，展示了AI在拉美市场的应用潜力。",
-    "url": "https://gentyrecruitment.io/news/mila-stories-raises-800k-argentina-ai-startup",
-    "source": "web",
-    "importance": 3,
-    "category": "startup",
+      "AI Mode",
+      "搜索",
+      "英国"
+    ],
+    "date": "2026-07-30",
     "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "MILA Stories",
-      "Argentina",
-      "conversational AI",
-      "funding"
-    ]
-  },
-  {
-    "title": "AI Technology Sees Through Leaves to Transform Horticulture",
-    "summary": "UC研究团队在政府3200万美元投资支持下，利用15年计算机视觉和AI机器人研究，开发出能透过树叶观察的创新AI技术，正在变革园艺行业。",
-    "url": "https://phys.org/news/2026-07-ai-technology-horticulture.html",
-    "source": "web",
-    "importance": 3,
-    "category": "product_tool",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "AI agriculture",
-      "computer vision",
-      "horticulture",
-      "robotics"
-    ]
-  },
-  {
-    "title": "Anthropic Wins Injunction Against Trump Administration",
-    "summary": "联邦法官批准Anthropic对特朗普政府的禁令，命令政府撤销将该公司列为安全风险的认定，并停止相关命令。这是AI公司在法律层面维护自身权益的重要案例。",
-    "url": "https://dentro.de/ai/news/",
-    "source": "web",
-    "importance": 4,
-    "category": "ai_tech",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Anthropic",
-      "Trump administration",
-      "injunction",
-      "AI regulation"
-    ]
-  },
-  {
-    "title": "Cognizant and Anthropic Expand Partnership to Bring Claude to Enterprise",
-    "summary": "Cognizant与Anthropic扩大合作伙伴关系，将Claude引入企业客户。这标志着AI在大型企业服务领域的进一步渗透和商业化进程加速。",
-    "url": "https://www.anthropic.com/news",
-    "source": "web",
-    "importance": 3,
-    "category": "product_tool",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "Anthropic",
-      "Cognizant",
-      "Claude",
-      "enterprise AI"
-    ]
-  },
-  {
-    "title": "OpenAI Introduces ChatGPT for Small Business Program",
-    "summary": "OpenAI于7月22日推出面向小型企业的ChatGPT项目，旨在帮助中小企业利用AI提升效率和竞争力。这是OpenAI向下沉市场扩展的重要战略举措。",
-    "url": "https://openai.com/news/",
-    "source": "web",
-    "importance": 3,
-    "category": "product_tool",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "OpenAI",
-      "ChatGPT",
-      "small business",
-      "AI adoption"
-    ]
-  },
-  {
-    "title": "OpenAI and Hugging Face Address Security Incident",
-    "summary": "OpenAI和Hugging Face于7月21日联合应对安全事件，展示了AI公司在面对安全挑战时的协作能力。事件细节尚未完全公开，但凸显了AI安全的重要性。",
-    "url": "https://openai.com/news/",
-    "source": "web",
-    "importance": 3,
-    "category": "ai_tech",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "OpenAI",
-      "Hugging Face",
-      "security",
-      "incident"
-    ]
-  },
-  {
-    "title": "Mistral Releases 8B Robotics Model for Natural-Language Robot Control",
-    "summary": "Mistral发布80亿参数机器人模型，可通过自然语言任务指令引导机器人使用单个RGB摄像头完成任务，在R2R-CE基准测试中达到最先进水平。这是Mistral首次进军具身AI领域。",
-    "url": "https://thursdai.news/releases/2026-07",
-    "source": "web",
-    "importance": 4,
-    "category": "product_tool",
-    "is_major_event": true,
-    "date": "2026-07-30",
-    "keywords": [
-      "Mistral",
-      "robotics",
-      "embodied AI",
-      "natural language"
-    ]
-  },
-  {
-    "title": "Willow.ai Atlas-1: Speech Becoming a Serious Business Layer",
-    "summary": "Willow.ai发布Atlas-1产品，语音AI正成为重要的商业层。2026年7月的AI产品发布表明市场正在成熟，OpenAI Flex提供更智能的成本控制，语音交互进入商业化新阶段。",
-    "url": "https://blog.mean.ceo/ai-product-launches-news-july-2026/",
-    "source": "web",
-    "importance": 3,
-    "category": "product_tool",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "Willow.ai",
-      "Atlas-1",
-      "speech AI",
-      "business"
-    ]
-  },
-  {
-    "title": "d1g1t MCP Server: AI Tools Connected to Enterprise Wealth Management",
-    "summary": "财富科技公司d1g1t推出d1g1t MCP服务器，基于开放的模型上下文协议标准，将其企业级财富管理平台直接连接到通用AI工具如ChatGPT等，推动金融AI应用。",
-    "url": "https://www.planadviser.com/ai-product-service-launches-7-20-2026/",
-    "source": "web",
-    "importance": 3,
-    "category": "product_tool",
-    "is_major_event": false,
-    "date": "2026-07-30",
-    "keywords": [
-      "d1g1t",
-      "MCP server",
-      "wealth management",
-      "fintech AI"
-    ]
+    "id": "cron-466"
   },
   {
     "title": "AI Mega-Funding Week July 2026: $5.55B Legal AI, $450M Robotics Debut",
