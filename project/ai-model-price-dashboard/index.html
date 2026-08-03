@@ -648,7 +648,7 @@
       populateVendorFilter();
       refreshFilterCache(); // sync _filterCache with actual DOM values after populateVendorFilter
       renderTable();
-      updateRecommendation(); // 页面加载时显示默认推荐（综合质量前5中性价比最高）
+      updateRecommendation(); // 页面加载时显示默认推荐（综合质量前3中性价比最高）
     });
 
     async function loadModels() {
@@ -967,20 +967,20 @@
       }
       if (!candidates.length) { card.classList.remove('show'); return; }
 
-      // Step 1: sort by quality, take top 5
+      // Step 1: sort by quality, take top 3
       // - 选中任务类型：按该任务的质量分 (score_<task>) 排序
       // - 默认（无任务类型）：按综合质量 (composite_score) 排序
       const qualityField = taskType ? ('score_' + taskType) : 'composite_score';
-      const top5 = [...candidates]
+      const top3 = [...candidates]
         .sort((a, b) => (Number(b[qualityField]) || 0) - (Number(a[qualityField]) || 0))
-        .slice(0, 5);
+        .slice(0, 3);
 
-      // Step 2: from top 5, pick the one with highest value_score
+      // Step 2: from top 3, pick the one with highest value_score
       // - 选中任务类型：按该任务的性价比 (value_score_<task>)
       // - 默认（无任务类型）：按综合性价比 (value_score)
       const valueField = taskType ? ('value_score_' + taskType) : 'value_score';
-      let best = top5[0];
-      for (const m of top5) {
+      let best = top3[0];
+      for (const m of top3) {
         const mv = Number(m[valueField]);
         const bv = Number(best[valueField]);
         if (mv > bv) best = m;
@@ -996,13 +996,13 @@
       content.innerHTML = `
         <div class="d-flex align-items-center mb-2">
           <span class="badge bg-primary me-2">${recBadge}</span>
-          <small class="text-muted">从质量前5中选出${vLabel}最高</small>
+          <small class="text-muted">从质量前3中选出${vLabel}最高</small>
         </div>
         <div class="row">
           <div class="col-md-6">
             <h4 class="mb-2">${best.name}</h4>
             <p class="mb-1"><strong>厂商:</strong> ${best.vendor}</p>
-            <p class="mb-1"><strong>${qLabel}:</strong> <span class="quality-score ${bestQuality >= 90 ? 'high' : bestQuality >= 75 ? 'medium' : 'low'}">${bestQuality}</span> <small class="text-muted">(Top5 第${top5.indexOf(best)+1}位)</small></p>
+            <p class="mb-1"><strong>${qLabel}:</strong> <span class="quality-score ${bestQuality >= 90 ? 'high' : bestQuality >= 75 ? 'medium' : 'low'}">${bestQuality}</span> <small class="text-muted">(Top3 第${top3.indexOf(best)+1}位)</small></p>
             <p class="mb-1"><strong>${vLabel}:</strong> <span style="color: var(--accent-green); font-weight: 600;">${bestValue}</span></p>
           </div>
           <div class="col-md-6">
